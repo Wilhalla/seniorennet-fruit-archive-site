@@ -1,0 +1,5914 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-27T16:11:48Z",
+  "notes": [
+    "Curated aggregation map for multi-part archive posts.",
+    "Primary post remains canonical; continuation/deel/aanvulling posts remain individually addressable.",
+    "This file intentionally lives outside the ML topic pipeline."
+  ],
+  "seriesCount": 361,
+  "aggregatedPostCount": 964,
+  "series": [
+    {
+      "id": "series-2310069",
+      "title": "Kleur in mijn Tuin De foto’s dateren van een week terug De gele bloemen ",
+      "primaryPostId": "2310069",
+      "postIds": [
+        "2310069",
+        "2310068"
+      ],
+      "postCount": 2,
+      "imageCount": 14,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2308631",
+      "title": "Kroos Krozen Kroosjes",
+      "primaryPostId": "2308631",
+      "postIds": [
+        "2308631",
+        "2308707"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2302253",
+      "title": "Breugel Tekeningen Black en White Brussel",
+      "primaryPostId": "2302253",
+      "postIds": [
+        "2302253",
+        "2302252"
+      ],
+      "postCount": 2,
+      "imageCount": 12,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2300129",
+      "title": "Internationele PfanzenMesse IPM Essen",
+      "primaryPostId": "2300129",
+      "postIds": [
+        "2300129",
+        "2300124"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2289167",
+      "title": "Ferienstrasse 13-14-15 dec.",
+      "primaryPostId": "2289167",
+      "postIds": [
+        "2289167",
+        "2289166",
+        "2289164",
+        "2289162"
+      ],
+      "postCount": 4,
+      "imageCount": 35,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2286314",
+      "title": "North & South Expositie Utrecht",
+      "primaryPostId": "2286314",
+      "postIds": [
+        "2286314",
+        "2286311",
+        "2286309"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2276564",
+      "title": "EUROPOM te Alden Biezen",
+      "primaryPostId": "2276564",
+      "postIds": [
+        "2276564",
+        "2276562"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2276532",
+      "title": "Pikant",
+      "primaryPostId": "2276532",
+      "postIds": [
+        "2276532",
+        "2276525",
+        "2276523"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2274541",
+      "title": "Park van Mariemont KVDV",
+      "primaryPostId": "2274541",
+      "postIds": [
+        "2274541",
+        "2274540"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2271003",
+      "title": "Met de VOC naar de Zuiderzeestadjes",
+      "primaryPostId": "2271003",
+      "postIds": [
+        "2271003",
+        "2271000",
+        "2270999",
+        "2270997",
+        "2270982"
+      ],
+      "postCount": 5,
+      "imageCount": 44,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2269620",
+      "title": "Landgoed De Hertgang",
+      "primaryPostId": "2269620",
+      "postIds": [
+        "2269620",
+        "2269619"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2263767",
+      "title": "Ludo Fierens 70",
+      "primaryPostId": "2263767",
+      "postIds": [
+        "2263767",
+        "2263766"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2263203",
+      "title": "Brugge en Omstreken",
+      "primaryPostId": "2263203",
+      "postIds": [
+        "2263203",
+        "2263201"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2261065",
+      "title": "Museumtuin Gaasbeek",
+      "primaryPostId": "2261065",
+      "postIds": [
+        "2261065",
+        "2261068"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2261055",
+      "title": "Coloma Sint- Pieters- Leeuw",
+      "primaryPostId": "2261055",
+      "postIds": [
+        "2261055",
+        "2261052"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2255607",
+      "title": "Stijn Derammelaere",
+      "primaryPostId": "2255607",
+      "postIds": [
+        "2255607",
+        "2255606"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2254280",
+      "title": "Wandeling in Antwerpen",
+      "primaryPostId": "2254280",
+      "postIds": [
+        "2254280",
+        "2254279"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2248441",
+      "title": "Landbouwlus door Zoersel",
+      "primaryPostId": "2248441",
+      "postIds": [
+        "2248441",
+        "2248439"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2247412",
+      "title": "Met OKRA Zoersel naar Visserijmuseum Oostduinkerke",
+      "primaryPostId": "2247412",
+      "postIds": [
+        "2247412",
+        "2247411"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2246649",
+      "title": "Boedapest (7 -10/06) met dochter Leen",
+      "primaryPostId": "2246649",
+      "postIds": [
+        "2246649",
+        "2246648",
+        "2246646",
+        "2246643",
+        "2246638"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2237513",
+      "title": "Feedbacck Krieken",
+      "primaryPostId": "2237513",
+      "postIds": [
+        "2237513",
+        "2237573"
+      ],
+      "postCount": 2,
+      "imageCount": 4,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2235540",
+      "title": "Naar de Vulkaaneifel 12-13-15/04",
+      "primaryPostId": "2235540",
+      "postIds": [
+        "2235540",
+        "2235539",
+        "2235537"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2232787",
+      "title": "Familiefeest met Andre 90",
+      "primaryPostId": "2232787",
+      "postIds": [
+        "2232787",
+        "2232785"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2230196",
+      "title": "Mechelen met Egenhoven 11/4",
+      "primaryPostId": "2230196",
+      "postIds": [
+        "2230196",
+        "2230194"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2193893",
+      "title": "XANTEN OKRA 21/8/2018",
+      "primaryPostId": "2193893",
+      "postIds": [
+        "2193893",
+        "2193885"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2187330",
+      "title": "Rubenshuis –St.Paulus – Carolus Borromeus",
+      "primaryPostId": "2187330",
+      "postIds": [
+        "2187330",
+        "2187329",
+        "2187326"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 3,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2182897",
+      "title": "Barokreis Duitsland",
+      "primaryPostId": "2182897",
+      "postIds": [
+        "2182897",
+        "2182896",
+        "2182892",
+        "2182891",
+        "2182887"
+      ],
+      "postCount": 5,
+      "imageCount": 44,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2182132",
+      "title": "Mahieupeer en NBS bochure nr5",
+      "primaryPostId": "2182132",
+      "postIds": [
+        "2182132",
+        "2182109"
+      ],
+      "postCount": 2,
+      "imageCount": 2,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2180977",
+      "title": "Groep Egenhoven (Heverlee) te Zoersel",
+      "primaryPostId": "2180977",
+      "postIds": [
+        "2180977",
+        "2180975",
+        "2180973",
+        "2180970"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2178782",
+      "title": "Pethworth",
+      "primaryPostId": "2178782",
+      "postIds": [
+        "2178782",
+        "2178780"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2178222",
+      "title": "Dag 3 Waddesdon",
+      "primaryPostId": "2178222",
+      "postIds": [
+        "2178222",
+        "2178218"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2174749",
+      "title": "Dag 2 naar Wisley Gardens",
+      "primaryPostId": "2174749",
+      "postIds": [
+        "2174749",
+        "2176252"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-2169847",
+      "title": "Open Tuindag Kwekerij Zoetewei",
+      "primaryPostId": "2169847",
+      "postIds": [
+        "2169847",
+        "2169842"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2165698",
+      "title": "Daguitstap met de Fruittelers",
+      "primaryPostId": "2165698",
+      "postIds": [
+        "2165698",
+        "2165689"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2154873",
+      "title": "Japanse TUIN Hasselt",
+      "primaryPostId": "2154873",
+      "postIds": [
+        "2154873",
+        "2154867"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2154855",
+      "title": "Domein Herkenrode",
+      "primaryPostId": "2154855",
+      "postIds": [
+        "2154855",
+        "2154857"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2142935",
+      "title": "Bosreservaat Regenwoud op Vancouver Eiland",
+      "primaryPostId": "2142935",
+      "postIds": [
+        "2142935",
+        "2142930"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2115977",
+      "title": "De Friezen en de entbeurs op Tivoli te Mechelen",
+      "primaryPostId": "2115977",
+      "postIds": [
+        "2115977",
+        "2115974",
+        "2115973"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2105307",
+      "title": "Herentals",
+      "primaryPostId": "2105307",
+      "postIds": [
+        "2105307",
+        "2105288",
+        "2105294"
+      ],
+      "postCount": 3,
+      "imageCount": 23,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2096047",
+      "title": "Tweedaagse Voc-Antwerpen naar Amsterdam en Utrecht (3-4/11)",
+      "primaryPostId": "2096047",
+      "postIds": [
+        "2096047",
+        "2096043",
+        "2096036"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2094212",
+      "title": "Abdij van het Park Heverlee en tentoonstelling Parcum",
+      "primaryPostId": "2094212",
+      "postIds": [
+        "2094212",
+        "2094210"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2093824",
+      "title": "Notenshow te Sint-Pieters-Leeuw",
+      "primaryPostId": "2093824",
+      "postIds": [
+        "2093824",
+        "2093819"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2090656",
+      "title": "Biobieren proeven op de Dobbelhoeve",
+      "primaryPostId": "2090656",
+      "postIds": [
+        "2090656",
+        "2090655"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2087890",
+      "title": "Villeneuve d’Ascq (",
+      "primaryPostId": "2087890",
+      "postIds": [
+        "2087890",
+        "2087871"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2079121",
+      "title": "17/9 Maastricht",
+      "primaryPostId": "2079121",
+      "postIds": [
+        "2079121",
+        "2079120",
+        "2079116"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2077088",
+      "title": "15/9 Orval, Avioth",
+      "primaryPostId": "2077088",
+      "postIds": [
+        "2077088",
+        "2077080"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2075535",
+      "title": "TRIER",
+      "primaryPostId": "2075535",
+      "postIds": [
+        "2075535",
+        "2075530",
+        "2075528"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2062204",
+      "title": "Oostenrijk Abtenau Salzburgerland",
+      "primaryPostId": "2062204",
+      "postIds": [
+        "2062204",
+        "2062202"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2046841",
+      "title": "Van Waaslandhaven, Doel, Liefkenshoekfort tot Cortewalle in Beveren.",
+      "primaryPostId": "2046841",
+      "postIds": [
+        "2046841",
+        "2046838"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2032930",
+      "title": "Maastricht",
+      "primaryPostId": "2032930",
+      "postIds": [
+        "2032930",
+        "2032922",
+        "2032918"
+      ],
+      "postCount": 3,
+      "imageCount": 26,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2016668",
+      "title": "Lissabon 2",
+      "primaryPostId": "2016668",
+      "postIds": [
+        "2016668",
+        "2016658"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-2014135",
+      "title": "Lissabon",
+      "primaryPostId": "2014135",
+      "postIds": [
+        "2014135",
+        "2014133"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1997957",
+      "title": "Slechte Waterafvoer",
+      "primaryPostId": "1997957",
+      "postIds": [
+        "1997957",
+        "1997953"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1977183",
+      "title": "Tivoli",
+      "primaryPostId": "1977183",
+      "postIds": [
+        "1977183",
+        "1977182"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1976147",
+      "title": "ELZAS met Davidsfonds Zoersel",
+      "primaryPostId": "1976147",
+      "postIds": [
+        "1976147",
+        "1976146",
+        "1976094",
+        "1976092",
+        "1976091",
+        "1976087"
+      ],
+      "postCount": 6,
+      "imageCount": 54,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1974634",
+      "title": "DAG 3 Frans-Vlaanderen",
+      "primaryPostId": "1974634",
+      "postIds": [
+        "1974634",
+        "1974632"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1973290",
+      "title": "Lac du Der",
+      "primaryPostId": "1973290",
+      "postIds": [
+        "1973290",
+        "1973287",
+        "1973286"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1972099",
+      "title": "Park Tenbosch Elsene",
+      "primaryPostId": "1972099",
+      "postIds": [
+        "1972099",
+        "1972098",
+        "1972096"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1966972",
+      "title": "Senioren Zoersel op Verkenning",
+      "primaryPostId": "1966972",
+      "postIds": [
+        "1966972",
+        "1966966"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1965144",
+      "title": "In de fruittuin van de POMologische Verening Noord-Holland",
+      "primaryPostId": "1965144",
+      "postIds": [
+        "1965144",
+        "1965159"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1963681",
+      "title": "Europom Luxemburg",
+      "primaryPostId": "1963681",
+      "postIds": [
+        "1963681",
+        "1963678"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1963099",
+      "title": "Tweedaagse Engeland Wisley Canterbury Brogdale",
+      "primaryPostId": "1963099",
+      "postIds": [
+        "1963099",
+        "1963093",
+        "1963087",
+        "1963286"
+      ],
+      "postCount": 4,
+      "imageCount": 31,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1960667",
+      "title": "Gembloux",
+      "primaryPostId": "1960667",
+      "postIds": [
+        "1960667",
+        "1960664"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1958487",
+      "title": "Chateau de Talcy",
+      "primaryPostId": "1958487",
+      "postIds": [
+        "1958487",
+        "1958485",
+        "1958483"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1958439",
+      "title": "Vandaar rijden we naar het in tuinmiddens gerenommeerde Chateau Chaumont",
+      "primaryPostId": "1958439",
+      "postIds": [
+        "1958439",
+        "1958435"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1952899",
+      "title": "Op de middag worden we verwacht te Montlouis sur Loire op het Chateau de",
+      "primaryPostId": "1952899",
+      "postIds": [
+        "1952899",
+        "1952897"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1952461",
+      "title": "CHAMBORD",
+      "primaryPostId": "1952461",
+      "postIds": [
+        "1952461",
+        "1952457"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1952455",
+      "title": "Botanische Tuin Orleans",
+      "primaryPostId": "1952455",
+      "postIds": [
+        "1952455",
+        "1952448"
+      ],
+      "postCount": 2,
+      "imageCount": 14,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1945280",
+      "title": "Parijs en Kunstenaarsdorpen",
+      "primaryPostId": "1945280",
+      "postIds": [
+        "1945280",
+        "1945277",
+        "1945273",
+        "1945270",
+        "1945265",
+        "1945264"
+      ],
+      "postCount": 6,
+      "imageCount": 54,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1940906",
+      "title": "Studiedaguitstap in Limburg",
+      "primaryPostId": "1940906",
+      "postIds": [
+        "1940906",
+        "1940905",
+        "1940901"
+      ],
+      "postCount": 3,
+      "imageCount": 24,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1939023",
+      "title": "Naar de Adennen",
+      "primaryPostId": "1939023",
+      "postIds": [
+        "1939023",
+        "1939020",
+        "1939018"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1937474",
+      "title": "Staphorst en Giethoorn",
+      "primaryPostId": "1937474",
+      "postIds": [
+        "1937474",
+        "1937468",
+        "1937457"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1931767",
+      "title": "Gorinchem – Woudrichem",
+      "primaryPostId": "1931767",
+      "postIds": [
+        "1931767",
+        "1931765",
+        "1931754"
+      ],
+      "postCount": 3,
+      "imageCount": 24,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1930650",
+      "title": "Op bezoek bij Ger Van Santvoort op di 21/06 en de hagelstorm van do. 23/06",
+      "primaryPostId": "1930650",
+      "postIds": [
+        "1930650",
+        "1930646"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1927716",
+      "title": "Wenen (22-27 mei)",
+      "primaryPostId": "1927716",
+      "postIds": [
+        "1927716",
+        "1927713"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1927711",
+      "title": "Dag 3 di. 24 mei",
+      "primaryPostId": "1927711",
+      "postIds": [
+        "1927711",
+        "1927706",
+        "1927699"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1927675",
+      "title": "Dag 4 25/05",
+      "primaryPostId": "1927675",
+      "postIds": [
+        "1927675",
+        "1927670",
+        "1927664"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1925013",
+      "title": "Dag 5 26/05",
+      "primaryPostId": "1925013",
+      "postIds": [
+        "1925013",
+        "1925009"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1921322",
+      "title": "Lage Weg en Emma-pad",
+      "primaryPostId": "1921322",
+      "postIds": [
+        "1921322",
+        "1921320"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1919791",
+      "title": "Amsterdam",
+      "primaryPostId": "1919791",
+      "postIds": [
+        "1919791",
+        "1919788"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1909849",
+      "title": "Naar Haspengouw met KVLV 25/4",
+      "primaryPostId": "1909849",
+      "postIds": [
+        "1909849",
+        "1909838",
+        "1909836"
+      ],
+      "postCount": 3,
+      "imageCount": 23,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1905917",
+      "title": "Zevenbergenbos",
+      "primaryPostId": "1905917",
+      "postIds": [
+        "1905917",
+        "1905913",
+        "1905910"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1904144",
+      "title": "Rivierenhof",
+      "primaryPostId": "1904144",
+      "postIds": [
+        "1904144",
+        "1904140"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1901332",
+      "title": "Abdij Vlierbeek",
+      "primaryPostId": "1901332",
+      "postIds": [
+        "1901332",
+        "1901329",
+        "1901327"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1898394",
+      "title": "HOres en Willem I",
+      "primaryPostId": "1898394",
+      "postIds": [
+        "1898394",
+        "1898391"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1897207",
+      "title": "Schoonheid te O.-L.-Vrouw-Waver",
+      "primaryPostId": "1897207",
+      "postIds": [
+        "1897207",
+        "1897208"
+      ],
+      "postCount": 2,
+      "imageCount": 11,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1894427",
+      "title": "Cogels-Osylei Met Davidsfonds Zoersel ter gelegenheid van de Nacht van d",
+      "primaryPostId": "1894427",
+      "postIds": [
+        "1894427",
+        "1894430",
+        "1894432"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1875565",
+      "title": "Kew Gardens",
+      "primaryPostId": "1875565",
+      "postIds": [
+        "1875565",
+        "1875550",
+        "1875545",
+        "1875538"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1865939",
+      "title": "Beeldhouwer Jan Dries",
+      "primaryPostId": "1865939",
+      "postIds": [
+        "1865939",
+        "1865926"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1853795",
+      "title": "Kalmthoutse Heide",
+      "primaryPostId": "1853795",
+      "postIds": [
+        "1853795",
+        "1853794"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1847083",
+      "title": "Mons 3",
+      "primaryPostId": "1847083",
+      "postIds": [
+        "1847083",
+        "1847077",
+        "1846652",
+        "1846645"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1839859",
+      "title": "O'Bio",
+      "primaryPostId": "1839859",
+      "postIds": [
+        "1839859",
+        "1839858"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 3,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1837637",
+      "title": "Sapmobiel",
+      "primaryPostId": "1837637",
+      "postIds": [
+        "1837637",
+        "1837635"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1837050",
+      "title": "Pomexpo Villeneuve d’Ascq",
+      "primaryPostId": "1837050",
+      "postIds": [
+        "1837050",
+        "1837039"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1829344",
+      "title": "VOETEN 3",
+      "primaryPostId": "1829344",
+      "postIds": [
+        "1829344",
+        "1829332"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 3,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1829325",
+      "title": "De Beeldentuin te Geel",
+      "primaryPostId": "1829325",
+      "postIds": [
+        "1829325",
+        "1829327"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1825174",
+      "title": "Viering van de 80 tigers van Ichtegem",
+      "primaryPostId": "1825174",
+      "postIds": [
+        "1825174",
+        "1825173"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1821183",
+      "title": "Schildehof",
+      "primaryPostId": "1821183",
+      "postIds": [
+        "1821183",
+        "1821181"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1819888",
+      "title": "OKRA Halle-Kempen",
+      "primaryPostId": "1819888",
+      "postIds": [
+        "1819888",
+        "1819884"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1819454",
+      "title": "In de Boomgaard van Louis Hoegaerts",
+      "primaryPostId": "1819454",
+      "postIds": [
+        "1819454",
+        "1819447"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1817896",
+      "title": "Weekend Engelse Tuinen 12-13 september",
+      "primaryPostId": "1817896",
+      "postIds": [
+        "1817896",
+        "1817899"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1816598",
+      "title": "Normandië Terugreis",
+      "primaryPostId": "1816598",
+      "postIds": [
+        "1816598",
+        "1816344",
+        "1816336"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1815396",
+      "title": "Normandië Dag 3",
+      "primaryPostId": "1815396",
+      "postIds": [
+        "1815396",
+        "1815378"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1815217",
+      "title": "Normandië Dag 2",
+      "primaryPostId": "1815217",
+      "postIds": [
+        "1815217",
+        "1815212"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1813573",
+      "title": "Normandië Senioren Landelijke Gilde Kontich Dag 1 Na een ochtendstop bij",
+      "primaryPostId": "1813573",
+      "postIds": [
+        "1813573",
+        "1813571"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1797802",
+      "title": "Met PPV O-Vlaanderen naar Limburg",
+      "primaryPostId": "1797802",
+      "postIds": [
+        "1797802",
+        "1797800"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1797284",
+      "title": "Lissewege Beeldenroute",
+      "primaryPostId": "1797284",
+      "postIds": [
+        "1797284",
+        "1797282",
+        "1797279",
+        "1797277",
+        "1797275"
+      ],
+      "postCount": 5,
+      "imageCount": 42,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1793938",
+      "title": "Stamkalken",
+      "primaryPostId": "1793938",
+      "postIds": [
+        "1793938",
+        "1793984"
+      ],
+      "postCount": 2,
+      "imageCount": 8,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1790914",
+      "title": "Boomkweker Ger Van Santvoort",
+      "primaryPostId": "1790914",
+      "postIds": [
+        "1790914",
+        "1790912",
+        "1790910"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1788328",
+      "title": "Tuingroep Antwerpen Landelijke Gilde voor de vierde maal naar Engeland",
+      "primaryPostId": "1788328",
+      "postIds": [
+        "1788328",
+        "1788321"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1785040",
+      "title": "Saeftinghe bis",
+      "primaryPostId": "1785040",
+      "postIds": [
+        "1785040",
+        "1785039"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1782453",
+      "title": "Het verdronken Land van Saeftinghe",
+      "primaryPostId": "1782453",
+      "postIds": [
+        "1782453",
+        "1782449",
+        "1782447"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1781030",
+      "title": "Red Star",
+      "primaryPostId": "1781030",
+      "postIds": [
+        "1781030",
+        "1781022"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1778669",
+      "title": "Natuurgebonden Franky Michielsen & Griet Van Steen",
+      "primaryPostId": "1778669",
+      "postIds": [
+        "1778669",
+        "1778668"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1776949",
+      "title": "Insel Hombroich Neuss 31/5",
+      "primaryPostId": "1776949",
+      "postIds": [
+        "1776949",
+        "1776931",
+        "1776922",
+        "1776917"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1776472",
+      "title": "Kaasboerderij – Brugge",
+      "primaryPostId": "1776472",
+      "postIds": [
+        "1776472",
+        "1776470",
+        "1776469"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1768899",
+      "title": "Haven Rotterdam",
+      "primaryPostId": "1768899",
+      "postIds": [
+        "1768899",
+        "1768898"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1768553",
+      "title": "Rivierenhof Deurne",
+      "primaryPostId": "1768553",
+      "postIds": [
+        "1768553",
+        "1768549",
+        "1768546"
+      ],
+      "postCount": 3,
+      "imageCount": 24,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1764368",
+      "title": "Alblasserwaard met OKRA Halle-Kempen (13/5) Uilenshow",
+      "primaryPostId": "1764368",
+      "postIds": [
+        "1764368",
+        "1764364",
+        "1764360",
+        "1764357"
+      ],
+      "postCount": 4,
+      "imageCount": 31,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1762747",
+      "title": "Salamanca 12-19/4",
+      "primaryPostId": "1762747",
+      "postIds": [
+        "1762747",
+        "1762746",
+        "1762745",
+        "1762743",
+        "1762742"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1759539",
+      "title": "Sierteeltmuseum Zaffelare-Lochristi & Oudenaarde",
+      "primaryPostId": "1759539",
+      "postIds": [
+        "1759539",
+        "1759534",
+        "1759530",
+        "1759328"
+      ],
+      "postCount": 4,
+      "imageCount": 35,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1755427",
+      "title": "Haak",
+      "primaryPostId": "1755427",
+      "postIds": [
+        "1755427",
+        "1755053"
+      ],
+      "postCount": 2,
+      "imageCount": 6,
+      "reactionCount": 2,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1745265",
+      "title": "Jardin Majorelle Marrakech",
+      "primaryPostId": "1745265",
+      "postIds": [
+        "1745265",
+        "1745260",
+        "1745256"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1743731",
+      "title": "Volkskundemuseum Augustijns Wuustwezel",
+      "primaryPostId": "1743731",
+      "postIds": [
+        "1743731",
+        "1743729",
+        "1743715",
+        "1743705",
+        "1743508"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1743525",
+      "title": "Mons",
+      "primaryPostId": "1743525",
+      "postIds": [
+        "1743525",
+        "1743522"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1741800",
+      "title": "Binche – Mons",
+      "primaryPostId": "1741800",
+      "postIds": [
+        "1741800",
+        "1741797",
+        "1741789"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1741665",
+      "title": "Pensioneringsfeest Luk Van Der Auwera op Coloma",
+      "primaryPostId": "1741665",
+      "postIds": [
+        "1741665",
+        "1741663"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1740548",
+      "title": "Wandeling in de Hoge Atlas",
+      "primaryPostId": "1740548",
+      "postIds": [
+        "1740548",
+        "1740547",
+        "1740545",
+        "1740544"
+      ],
+      "postCount": 4,
+      "imageCount": 35,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1734825",
+      "title": "Mark Rothko",
+      "primaryPostId": "1734825",
+      "postIds": [
+        "1734825",
+        "1734818",
+        "1734804"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1734273",
+      "title": "Gemeentemuseum Den Haag",
+      "primaryPostId": "1734273",
+      "postIds": [
+        "1734273",
+        "1734263"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1730997",
+      "title": "Den Haag: Mauritshuis en de tijdelijke tentoonstelling Frick",
+      "primaryPostId": "1730997",
+      "postIds": [
+        "1730997",
+        "1730984",
+        "1730977",
+        "1730972"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1727638",
+      "title": "Internationale PflanzenMesse (IPM) Essen",
+      "primaryPostId": "1727638",
+      "postIds": [
+        "1727638",
+        "1727633"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1714786",
+      "title": "Naar Krakau",
+      "primaryPostId": "1714786",
+      "postIds": [
+        "1714786",
+        "1714756"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1714717",
+      "title": "De Grote Dagwandeling",
+      "primaryPostId": "1714717",
+      "postIds": [
+        "1714717",
+        "1714691"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1707040",
+      "title": "Over Konya naar Antalya",
+      "primaryPostId": "1707040",
+      "postIds": [
+        "1707040",
+        "1707028"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1704803",
+      "title": "De wonderbaarlijke Dag 2 in Cappadocië",
+      "primaryPostId": "1704803",
+      "postIds": [
+        "1704803",
+        "1704802",
+        "1704800"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1703266",
+      "title": "Naar Cappadocië",
+      "primaryPostId": "1703266",
+      "postIds": [
+        "1703266",
+        "1703262"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1694765",
+      "title": "Turkije 28 nov - 5 dec. 2014",
+      "primaryPostId": "1694765",
+      "postIds": [
+        "1694765",
+        "1694790",
+        "1694757"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1675745",
+      "title": "RONDRIT ZOERSEL met de senioren van Zoersel",
+      "primaryPostId": "1675745",
+      "postIds": [
+        "1675745",
+        "1675736",
+        "1675734",
+        "1675724"
+      ],
+      "postCount": 4,
+      "imageCount": 35,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1672430",
+      "title": "Vaals en Aachen met KVLV Halle-Schilde",
+      "primaryPostId": "1672430",
+      "postIds": [
+        "1672430",
+        "1672301"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1670180",
+      "title": "BEELDENTUIN GEEL (15 Ha)",
+      "primaryPostId": "1670180",
+      "postIds": [
+        "1670180",
+        "1670176",
+        "1670175",
+        "1670170"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1669990",
+      "title": "Art Center Hugo Voeten",
+      "primaryPostId": "1669990",
+      "postIds": [
+        "1669990",
+        "1669744",
+        "1669743",
+        "1669740"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1666991",
+      "title": "EUROPOM Alden Biezen",
+      "primaryPostId": "1666991",
+      "postIds": [
+        "1666991",
+        "1666989",
+        "1666988",
+        "1666983",
+        "1666980",
+        "1666978"
+      ],
+      "postCount": 6,
+      "imageCount": 54,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1665113",
+      "title": "Collectieboomgaarden in Noord Nederland",
+      "primaryPostId": "1665113",
+      "postIds": [
+        "1665113",
+        "1665098",
+        "1665094",
+        "1665089",
+        "1665082"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1663556",
+      "title": "Frederiksoord, 2 jaarlijkse Fruittentoonstelling Souvenirs van Eeuwen.",
+      "primaryPostId": "1663556",
+      "postIds": [
+        "1663556",
+        "1663545",
+        "1663540"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1659640",
+      "title": "Bezoek aan Boomkwekerij De Bruyn Begijnendijk",
+      "primaryPostId": "1659640",
+      "postIds": [
+        "1659640",
+        "1659637",
+        "1659636",
+        "1659633",
+        "1659632"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1657988",
+      "title": "Arboretum Wespelaar",
+      "primaryPostId": "1657988",
+      "postIds": [
+        "1657988",
+        "1657987",
+        "1657985",
+        "1657974",
+        "1657951"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1655417",
+      "title": "Bezoek aan Soniën te Overijse",
+      "primaryPostId": "1655417",
+      "postIds": [
+        "1655417",
+        "1655415"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1653411",
+      "title": "De grote Wandeling",
+      "primaryPostId": "1653411",
+      "postIds": [
+        "1653411",
+        "1653409"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1650652",
+      "title": "Gdansk",
+      "primaryPostId": "1650652",
+      "postIds": [
+        "1650652",
+        "1650649",
+        "1650646"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1648916",
+      "title": "Opening Tentoonstelling Fred Bervoets",
+      "primaryPostId": "1648916",
+      "postIds": [
+        "1648916",
+        "1648908",
+        "1648906"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1644257",
+      "title": "Met familie en Vrienden naar Polen 1-18 augustus",
+      "primaryPostId": "1644257",
+      "postIds": [
+        "1644257",
+        "1644254"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1643380",
+      "title": "Keizelboomgaard Diepenbeek",
+      "primaryPostId": "1643380",
+      "postIds": [
+        "1643380",
+        "1643359"
+      ],
+      "postCount": 2,
+      "imageCount": 12,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1631896",
+      "title": "Bezoek Frambiosa y Besos Bauwvoorde",
+      "primaryPostId": "1631896",
+      "postIds": [
+        "1631896",
+        "1631893"
+      ],
+      "postCount": 2,
+      "imageCount": 13,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1628755",
+      "title": "Gedichtenwandeling",
+      "primaryPostId": "1628755",
+      "postIds": [
+        "1628755",
+        "1628748"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1618615",
+      "title": "Vruchten Braambozen",
+      "primaryPostId": "1618615",
+      "postIds": [
+        "1618615",
+        "1618614"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1613071",
+      "title": "Met Davidsfonds Halle-Kempen naar de Westhoek",
+      "primaryPostId": "1613071",
+      "postIds": [
+        "1613071",
+        "1613068",
+        "1613063",
+        "1613060",
+        "1613056"
+      ],
+      "postCount": 5,
+      "imageCount": 38,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1612128",
+      "title": "Naar de streek van ‘de Groote Oorlog’",
+      "primaryPostId": "1612128",
+      "postIds": [
+        "1612128",
+        "1612127",
+        "1612117"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1610965",
+      "title": "Koninklijke Vlaamse Dendrologische Vereniging bij Michel Boutsen en Veruska Nieto Borja te Geel",
+      "primaryPostId": "1610965",
+      "postIds": [
+        "1610965",
+        "1610942",
+        "1610940",
+        "1610961",
+        "1610937"
+      ],
+      "postCount": 5,
+      "imageCount": 44,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1604620",
+      "title": "Goodnestone- Sandwich",
+      "primaryPostId": "1604620",
+      "postIds": [
+        "1604620",
+        "1604617",
+        "1604611",
+        "1604605"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1604597",
+      "title": "SANDWICH",
+      "primaryPostId": "1604597",
+      "postIds": [
+        "1604597",
+        "1604589"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1604582",
+      "title": "SANDWICH",
+      "primaryPostId": "1604582",
+      "postIds": [
+        "1604582",
+        "1604574",
+        "1604567"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1592565",
+      "title": "Infoavond biologische Aardbei en Kleinfruitteelt 29/4 Provinciaal Proefcentrum Kleinfruit (PPK)",
+      "primaryPostId": "1592565",
+      "postIds": [
+        "1592565",
+        "1592563"
+      ],
+      "postCount": 2,
+      "imageCount": 14,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1590917",
+      "title": "Bloei Braambozen (op 25-4-2014)",
+      "primaryPostId": "1590917",
+      "postIds": [
+        "1590917",
+        "1590916",
+        "1590913"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1589269",
+      "title": "Afscheid Veerle",
+      "primaryPostId": "1589269",
+      "postIds": [
+        "1589269",
+        "1589264"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1585848",
+      "title": "Keda, 21 lentes, 13 april",
+      "primaryPostId": "1585848",
+      "postIds": [
+        "1585848",
+        "1588296",
+        "1588295",
+        "1588290",
+        "1588289",
+        "1588281"
+      ],
+      "postCount": 6,
+      "imageCount": 49,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1577644",
+      "title": "Feedback Kiwibessen",
+      "primaryPostId": "1577644",
+      "postIds": [
+        "1577644",
+        "1577693",
+        "1577692",
+        "1577688"
+      ],
+      "postCount": 4,
+      "imageCount": 32,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1560431",
+      "title": "2 maart Gent Designmuseum en Museum Dr Guislain",
+      "primaryPostId": "1560431",
+      "postIds": [
+        "1560431",
+        "1560430"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1560424",
+      "title": "Museum Dr Guislain",
+      "primaryPostId": "1560424",
+      "postIds": [
+        "1560424",
+        "1560419"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1545355",
+      "title": "Bodemkundige Dienst van België te Heverlee",
+      "primaryPostId": "1545355",
+      "postIds": [
+        "1545355",
+        "1545348"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1509577",
+      "title": "Kerstmarkt Zoersel",
+      "primaryPostId": "1509577",
+      "postIds": [
+        "1509577",
+        "1509574"
+      ],
+      "postCount": 2,
+      "imageCount": 13,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1490854",
+      "title": "Brogdale",
+      "primaryPostId": "1490854",
+      "postIds": [
+        "1490854",
+        "1490846"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1490782",
+      "title": "Rivers Nursery Orchard",
+      "primaryPostId": "1490782",
+      "postIds": [
+        "1490782",
+        "1490775"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1487923",
+      "title": "Nog de Pomexpo",
+      "primaryPostId": "1487923",
+      "postIds": [
+        "1487923",
+        "1487917"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1482090",
+      "title": "Fruitexpo NBS Tuinbouwschool Melle",
+      "primaryPostId": "1482090",
+      "postIds": [
+        "1482090",
+        "1482087"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 7,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1477704",
+      "title": "Dag 6 (23-8) Waddesdon Manor en Wrest Park",
+      "primaryPostId": "1477704",
+      "postIds": [
+        "1477704",
+        "1477694",
+        "1477686"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 2,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1477683",
+      "title": "Wrest Park",
+      "primaryPostId": "1477683",
+      "postIds": [
+        "1477683",
+        "1477676"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1472478",
+      "title": "Het Fransmansmuseum te Koekelare en de kerk van Bambeke",
+      "primaryPostId": "1472478",
+      "postIds": [
+        "1472478",
+        "1472470",
+        "1472461",
+        "1472456",
+        "1472448"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1471210",
+      "title": "De Strooper LO & ’t Hoppecruyt PROVEN",
+      "primaryPostId": "1471210",
+      "postIds": [
+        "1471210",
+        "1471205"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1471194",
+      "title": "t Hoppecruyt",
+      "primaryPostId": "1471194",
+      "postIds": [
+        "1471194",
+        "1471174"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1465871",
+      "title": "Dag 5 Cidermuseum Hereford en James Marsden",
+      "primaryPostId": "1465871",
+      "postIds": [
+        "1465871",
+        "1465768",
+        "1465763"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1465269",
+      "title": "Op Bezoek in de Boomgaard van Fik Denissen",
+      "primaryPostId": "1465269",
+      "postIds": [
+        "1465269",
+        "1465252",
+        "1465249"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1463174",
+      "title": "Problemen met Physalis",
+      "primaryPostId": "1463174",
+      "postIds": [
+        "1463174",
+        "1463167"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1458998",
+      "title": "Bij Adrian Baggeley te Woodborough",
+      "primaryPostId": "1458998",
+      "postIds": [
+        "1458998",
+        "1458990"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1455270",
+      "title": "Op naar Sir John Starkey",
+      "primaryPostId": "1455270",
+      "postIds": [
+        "1455270",
+        "1455267"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1455057",
+      "title": "Dag 4 21 aug. Peter Glazebrook, Sir John Starkey en Adrian Baggeley",
+      "primaryPostId": "1455057",
+      "postIds": [
+        "1455057",
+        "1455051",
+        "1455046"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1453933",
+      "title": "31 aug. 1 ste Oogstfeest Project Veldstraat Zoersel",
+      "primaryPostId": "1453933",
+      "postIds": [
+        "1453933",
+        "1453928"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1453449",
+      "title": "Levens Hall",
+      "primaryPostId": "1453449",
+      "postIds": [
+        "1453449",
+        "1453446",
+        "1453438",
+        "1453404"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1452429",
+      "title": "Dag 3 20 aug. Saltaire en Levens Hall",
+      "primaryPostId": "1452429",
+      "postIds": [
+        "1452429",
+        "1452428"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1450907",
+      "title": "19 aug. Fountains Abbey & Studley Royal Water Garden",
+      "primaryPostId": "1450907",
+      "postIds": [
+        "1450907",
+        "1450905",
+        "1450901",
+        "1450897"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1437995",
+      "title": "Perzikenwandeling te Gelrode Ludo Rosseel en de NBS",
+      "primaryPostId": "1437995",
+      "postIds": [
+        "1437995",
+        "1437994"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1435752",
+      "title": "Fruitfocus te East Malling",
+      "primaryPostId": "1435752",
+      "postIds": [
+        "1435752",
+        "1435750"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1427278",
+      "title": "PPV OVL te Bekkevoort",
+      "primaryPostId": "1427278",
+      "postIds": [
+        "1427278",
+        "1427276",
+        "1427275",
+        "1427260",
+        "1427258"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1416133",
+      "title": "NAMUR",
+      "primaryPostId": "1416133",
+      "postIds": [
+        "1416133",
+        "1416130",
+        "1416126",
+        "1416124",
+        "1416106"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1398917",
+      "title": "Naar de Bruinkoolontginning bij Aken",
+      "primaryPostId": "1398917",
+      "postIds": [
+        "1398917",
+        "1398916",
+        "1398915",
+        "1398913"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1397037",
+      "title": "Kasteel van Freÿr",
+      "primaryPostId": "1397037",
+      "postIds": [
+        "1397037",
+        "1397036",
+        "1397034",
+        "1397031"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1396494",
+      "title": "Grotten van Han",
+      "primaryPostId": "1396494",
+      "postIds": [
+        "1396494",
+        "1396486"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1387982",
+      "title": "BLOEISTADIA OP ZO. 5 Mei",
+      "primaryPostId": "1387982",
+      "postIds": [
+        "1387982",
+        "1387980",
+        "1387976"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1383918",
+      "title": "Op Bezoek bij Pruimenman Louis Eelen",
+      "primaryPostId": "1383918",
+      "postIds": [
+        "1383918",
+        "1383916"
+      ],
+      "postCount": 2,
+      "imageCount": 13,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1381334",
+      "title": "De Groep Engelse Conversatie Zoersel in Lier (26/4)",
+      "primaryPostId": "1381334",
+      "postIds": [
+        "1381334",
+        "1381333",
+        "1381326"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1380350",
+      "title": "Communiefeest Jonathan (20/4)",
+      "primaryPostId": "1380350",
+      "postIds": [
+        "1380350",
+        "1380347",
+        "1380344",
+        "1380340"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1378516",
+      "title": "Communiefeest Isis",
+      "primaryPostId": "1378516",
+      "postIds": [
+        "1378516",
+        "1378512",
+        "1378508"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1369086",
+      "title": "Met KVLV Halle en Schilde naar Brussel",
+      "primaryPostId": "1369086",
+      "postIds": [
+        "1369086",
+        "1369080",
+        "1369076",
+        "1369073"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1296221",
+      "title": "TABEL 1",
+      "primaryPostId": "1296221",
+      "postIds": [
+        "1296221",
+        "1296231"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1292741",
+      "title": "Ledenavond VELT-Voorkempen 27/11",
+      "primaryPostId": "1292741",
+      "postIds": [
+        "1292741",
+        "1292699",
+        "1292690",
+        "1292678"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1287876",
+      "title": "Met Velt en Natuurpunt proeven bij BIOTIEK",
+      "primaryPostId": "1287876",
+      "postIds": [
+        "1287876",
+        "1287872"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1268471",
+      "title": "BIOBIEREN Geroen Vansteenbrugge",
+      "primaryPostId": "1268471",
+      "postIds": [
+        "1268471",
+        "1268467"
+      ],
+      "postCount": 2,
+      "imageCount": 14,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1266028",
+      "title": "Leo en Marie-Anne Lagrou- De Wulf",
+      "primaryPostId": "1266028",
+      "postIds": [
+        "1266028",
+        "1266025",
+        "1266018",
+        "1266013"
+      ],
+      "postCount": 4,
+      "imageCount": 33,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1262894",
+      "title": "Heenreis Gräfenhainichen en bezoek Ferropolis",
+      "primaryPostId": "1262894",
+      "postIds": [
+        "1262894",
+        "1262879",
+        "1262871"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1261193",
+      "title": "Bezoek Verger Conservatoire Villeneuve D’Ascq Vorig weekend kon men met ",
+      "primaryPostId": "1261193",
+      "postIds": [
+        "1261193",
+        "1261186"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 2,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1246254",
+      "title": "Met Gids door Wittenberg",
+      "primaryPostId": "1246254",
+      "postIds": [
+        "1246254",
+        "1246240"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1242920",
+      "title": "Berlijn (31/8)",
+      "primaryPostId": "1242920",
+      "postIds": [
+        "1242920",
+        "1242903",
+        "1242882"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1238311",
+      "title": "Verkenning van Gräfenhainichen",
+      "primaryPostId": "1238311",
+      "postIds": [
+        "1238311",
+        "1238305",
+        "1238298"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1233993",
+      "title": "Vuurwerk op Ferropolis te Grävenhainichen",
+      "primaryPostId": "1233993",
+      "postIds": [
+        "1233993",
+        "1233988"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1222371",
+      "title": "Met Guvelingen naar Oost-Duitsland",
+      "primaryPostId": "1222371",
+      "postIds": [
+        "1222371",
+        "1222357",
+        "1222356"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1221062",
+      "title": "Oost-Duitsland 1/8",
+      "primaryPostId": "1221062",
+      "postIds": [
+        "1221062",
+        "1221056",
+        "1221049"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1219193",
+      "title": "Oost-Duitsland 3/8",
+      "primaryPostId": "1219193",
+      "postIds": [
+        "1219193",
+        "1219176",
+        "1219172"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1214391",
+      "title": "Pillnitz Oost-Duitsland 3/8",
+      "primaryPostId": "1214391",
+      "postIds": [
+        "1214391",
+        "1214386"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1208149",
+      "title": "Kleinfruit in het groot Jos Holtappels te Gellik-Lanaken",
+      "primaryPostId": "1208149",
+      "postIds": [
+        "1208149",
+        "1208144"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1207673",
+      "title": "Wijnkasteel Genoels-Elderen",
+      "primaryPostId": "1207673",
+      "postIds": [
+        "1207673",
+        "1207666"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1206854",
+      "title": "Met PPV-OVL bij Jean Moors",
+      "primaryPostId": "1206854",
+      "postIds": [
+        "1206854",
+        "1206833"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1194158",
+      "title": "Met Davidsfonds Halle-Kempen naar Maastricht De jaarlijkse reis ging op ",
+      "primaryPostId": "1194158",
+      "postIds": [
+        "1194158",
+        "1194152"
+      ],
+      "postCount": 2,
+      "imageCount": 13,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1194134",
+      "title": "Verpozing aan de Maas, maar niet op het Terras",
+      "primaryPostId": "1194134",
+      "postIds": [
+        "1194134",
+        "1194127"
+      ],
+      "postCount": 2,
+      "imageCount": 14,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1193967",
+      "title": "AFRIKAANS TUINFEEST",
+      "primaryPostId": "1193967",
+      "postIds": [
+        "1193967",
+        "1193964",
+        "1193963"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1183465",
+      "title": "Guy, Nynke en Teun in Friesland",
+      "primaryPostId": "1183465",
+      "postIds": [
+        "1183465",
+        "1183459",
+        "1183445"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1173949",
+      "title": "Met de Halse Landelijke Gilde op Antwerpse Havenrondvaart",
+      "primaryPostId": "1173949",
+      "postIds": [
+        "1173949",
+        "1173948",
+        "1173928",
+        "1173911"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1166729",
+      "title": "Koninklijke Vlaamse Dendrologische Vereniging in Vordenstein",
+      "primaryPostId": "1166729",
+      "postIds": [
+        "1166729",
+        "1166725",
+        "1166712"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1157103",
+      "title": "Natuurwandeling Zoerselbos",
+      "primaryPostId": "1157103",
+      "postIds": [
+        "1157103",
+        "1157100"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1152594",
+      "title": "Natuurpunt Lille Visbeekwandeling",
+      "primaryPostId": "1152594",
+      "postIds": [
+        "1152594",
+        "1152592"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1151157",
+      "title": "Haven van Zeebrugge",
+      "primaryPostId": "1151157",
+      "postIds": [
+        "1151157",
+        "1151150"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1149745",
+      "title": "Kasteel van Loppem- Haven van Zeebrugge",
+      "primaryPostId": "1149745",
+      "postIds": [
+        "1149745",
+        "1149742",
+        "1149728"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1145973",
+      "title": "De Berg van Stijn Derammelaere te Buissenal",
+      "primaryPostId": "1145973",
+      "postIds": [
+        "1145973",
+        "1145966",
+        "1145957"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1135987",
+      "title": "Met OKRA naar Horn en Thorn",
+      "primaryPostId": "1135987",
+      "postIds": [
+        "1135987",
+        "1135984",
+        "1135975"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1129883",
+      "title": "Met de KVLV naar de Zwalmstreek",
+      "primaryPostId": "1129883",
+      "postIds": [
+        "1129883",
+        "1129878",
+        "1129873",
+        "1129837",
+        "1129828"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1124679",
+      "title": "Uien telen op Kameroense wijze",
+      "primaryPostId": "1124679",
+      "postIds": [
+        "1124679",
+        "1139117"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1124150",
+      "title": "Viering pensionering CLB-ster Maria De Beuckelaer",
+      "primaryPostId": "1124150",
+      "postIds": [
+        "1124150",
+        "1124138"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1086118",
+      "title": "Op Bezoek bij Gerard en Irene Ameeuw-Debergh",
+      "primaryPostId": "1086118",
+      "postIds": [
+        "1086118",
+        "1086114",
+        "1086107"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1082257",
+      "title": "Op Bezoek bij Pierre Demeulenaere te Wevelgem",
+      "primaryPostId": "1082257",
+      "postIds": [
+        "1082257",
+        "1082253",
+        "1082240",
+        "1082234"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1049830",
+      "title": "Zwarte Bessen (Ribes nigrum)",
+      "primaryPostId": "1049830",
+      "postIds": [
+        "1049830",
+        "1050596",
+        "1051302",
+        "1052788",
+        "1053369",
+        "1054594",
+        "1055311",
+        "1056662"
+      ],
+      "postCount": 8,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1024459",
+      "title": "Een onwaarschijnlijk Verhaal",
+      "primaryPostId": "1024459",
+      "postIds": [
+        "1024459",
+        "1024810"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1013798",
+      "title": "Steenbakkerij Desta te Minderhout en de Scheldebrouwerij te Meer",
+      "primaryPostId": "1013798",
+      "postIds": [
+        "1013798",
+        "1013786",
+        "1013777"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1009509",
+      "title": "Arboretum Bokrijk",
+      "primaryPostId": "1009509",
+      "postIds": [
+        "1009509",
+        "1009499",
+        "1009497"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1001307",
+      "title": "Adieu Odenwald 2/9",
+      "primaryPostId": "1001307",
+      "postIds": [
+        "1001307",
+        "1001304",
+        "1001301"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-999372",
+      "title": "Odenwald Dag 4 1/9 Amorbach",
+      "primaryPostId": "999372",
+      "postIds": [
+        "999372",
+        "999363",
+        "999333"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-996399",
+      "title": "Odenwald Dag 3 Heidelberg 31/08 Vandaag bezoeken we Heidelberg, de roman",
+      "primaryPostId": "996399",
+      "postIds": [
+        "996399",
+        "996395"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-993276",
+      "title": "Blauwe Bessen Schrijnwerkers en Stevensweert (Ned.)",
+      "primaryPostId": "993276",
+      "postIds": [
+        "993276",
+        "993269"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-992422",
+      "title": "Tomaten proeven met het tuingroepje Velt Voorkempen",
+      "primaryPostId": "992422",
+      "postIds": [
+        "992422",
+        "992414"
+      ],
+      "postCount": 2,
+      "imageCount": 12,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-990138",
+      "title": "ODENWALD Dag 2 30/08/2011",
+      "primaryPostId": "990138",
+      "postIds": [
+        "990138",
+        "990135",
+        "990132"
+      ],
+      "postCount": 3,
+      "imageCount": 26,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-987140",
+      "title": "Senioren van de Landelijke Gilde naar het Odenwald",
+      "primaryPostId": "987140",
+      "postIds": [
+        "987140",
+        "987101",
+        "987097",
+        "987059"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-982295",
+      "title": "Met het Davidsfonds naar het MAS",
+      "primaryPostId": "982295",
+      "postIds": [
+        "982295",
+        "982294",
+        "982292",
+        "982289"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-978165",
+      "title": "Pruimen Brogdale",
+      "primaryPostId": "978165",
+      "postIds": [
+        "978165",
+        "978164"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-963584",
+      "title": "Pruimendag Fruitmuseum Kapelle",
+      "primaryPostId": "963584",
+      "postIds": [
+        "963584",
+        "963578"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-955947",
+      "title": "Met het Davidsfonds naar Zondereigen en de Dodendraad",
+      "primaryPostId": "955947",
+      "postIds": [
+        "955947",
+        "955936",
+        "955920"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-952885",
+      "title": "Reis Natuurpunt Les Dombes – Jura",
+      "primaryPostId": "952885",
+      "postIds": [
+        "952885",
+        "952883"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-943521",
+      "title": "Davidsfonds Halle-in-de-Kempen Zwalm, Vlaamse Ardennen 20 juni 2011",
+      "primaryPostId": "943521",
+      "postIds": [
+        "943521",
+        "943515",
+        "943509",
+        "943501",
+        "943489",
+        "943479",
+        "943446"
+      ],
+      "postCount": 7,
+      "imageCount": 60,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-933156",
+      "title": "Kruidenwandeling in Vrieselhof",
+      "primaryPostId": "933156",
+      "postIds": [
+        "933156",
+        "933152",
+        "933147"
+      ],
+      "postCount": 3,
+      "imageCount": 26,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-932896",
+      "title": "Met de Vlaamse Dendrologen op bezoek bij Albert De Raedt te Asper Ik voe",
+      "primaryPostId": "932896",
+      "postIds": [
+        "932896",
+        "932891",
+        "932874"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-922652",
+      "title": "Met Louis naar de Werktuigendagen te Sint-Truiden",
+      "primaryPostId": "922652",
+      "postIds": [
+        "922652",
+        "922651"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-922649",
+      "title": "Plechtige Communie Jasmien Dhondt",
+      "primaryPostId": "922649",
+      "postIds": [
+        "922649",
+        "922647",
+        "922645"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-921519",
+      "title": "Pensioneringsfeest CLB op Coloma, Mechelen",
+      "primaryPostId": "921519",
+      "postIds": [
+        "921519",
+        "921517"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-919054",
+      "title": "Met VELT Zoersel op bezoek bij Peter Bauwens",
+      "primaryPostId": "919054",
+      "postIds": [
+        "919054",
+        "919051"
+      ],
+      "postCount": 2,
+      "imageCount": 17,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-905681",
+      "title": "Lieven David en VELT, Rillaar en Eerste Wereldoorlog",
+      "primaryPostId": "905681",
+      "postIds": [
+        "905681",
+        "905673"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-876914",
+      "title": "Citroenvlinder en Dagpauwoog ontwaakt",
+      "primaryPostId": "876914",
+      "postIds": [
+        "876914",
+        "876360"
+      ],
+      "postCount": 2,
+      "imageCount": 9,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-798815",
+      "title": "Grootouderfeest Basisschool De Wingerd Poederlee",
+      "primaryPostId": "798815",
+      "postIds": [
+        "798815",
+        "798812"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-784118",
+      "title": "Brogdale Apple Festival zat. 23 okt.",
+      "primaryPostId": "784118",
+      "postIds": [
+        "784118",
+        "784110",
+        "783164",
+        "783153",
+        "783133"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-781006",
+      "title": "De Fruitweelde te Wisley",
+      "primaryPostId": "781006",
+      "postIds": [
+        "781006",
+        "781002"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-774683",
+      "title": "Europom 2010 te Wisley",
+      "primaryPostId": "774683",
+      "postIds": [
+        "774683",
+        "774662"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-769712",
+      "title": "Henk Houtman en de collectieboomgaard van de Noord- Hollandse POMologische vereniniging",
+      "primaryPostId": "769712",
+      "postIds": [
+        "769712",
+        "769710"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-768905",
+      "title": "Te gast op de Terp bij Frits en Jet Doornenbal-Steinmetz",
+      "primaryPostId": "768905",
+      "postIds": [
+        "768905",
+        "768901",
+        "768584"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-768593",
+      "title": "FREDERIKSOORD",
+      "primaryPostId": "768593",
+      "postIds": [
+        "768593",
+        "768589"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-763389",
+      "title": "De Kruidhof te Buitenpost (Friesland) 9/10",
+      "primaryPostId": "763389",
+      "postIds": [
+        "763389",
+        "763379",
+        "763335",
+        "763328"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-753047",
+      "title": "Brogdale (12 sept.)",
+      "primaryPostId": "753047",
+      "postIds": [
+        "753047",
+        "753042",
+        "753032"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-745854",
+      "title": "Yalding Gardens",
+      "primaryPostId": "745854",
+      "postIds": [
+        "745854",
+        "745840"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-745755",
+      "title": "Engelse Tuinenreis - Wisley Gardens",
+      "primaryPostId": "745755",
+      "postIds": [
+        "745755",
+        "745710",
+        "745649",
+        "745634"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-737436",
+      "title": "De Keizelboomgaard met conservator Erno Eersels",
+      "primaryPostId": "737436",
+      "postIds": [
+        "737436",
+        "737432"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-730464",
+      "title": "Bezoekerscentrum Zoerselbos",
+      "primaryPostId": "730464",
+      "postIds": [
+        "730464",
+        "730458"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-726087",
+      "title": "In de Leifruittuin van Johan Baecke te Balen",
+      "primaryPostId": "726087",
+      "postIds": [
+        "726087",
+        "726068"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-723602",
+      "title": "De beste Appelwijn",
+      "primaryPostId": "723602",
+      "postIds": [
+        "723602",
+        "723601"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-704432",
+      "title": "HEUVELLAND Over Ieper en Dikkebus reden we tot in het heuvelland naar he",
+      "primaryPostId": "704432",
+      "postIds": [
+        "704432",
+        "704440",
+        "704436",
+        "704430"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-704429",
+      "title": "CLAIRMARAIS",
+      "primaryPostId": "704429",
+      "postIds": [
+        "704429",
+        "704427"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-704417",
+      "title": "Op terugweg",
+      "primaryPostId": "704417",
+      "postIds": [
+        "704417",
+        "704415"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-693938",
+      "title": "3. Op het eerste bedrijf",
+      "primaryPostId": "693938",
+      "postIds": [
+        "693938",
+        "693935",
+        "693930"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-692322",
+      "title": "Reis naar het Scottish Crop Research Instituut",
+      "primaryPostId": "692322",
+      "postIds": [
+        "692322",
+        "692314"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-680454",
+      "title": "KEULEN 20/6",
+      "primaryPostId": "680454",
+      "postIds": [
+        "680454",
+        "680451",
+        "680437",
+        "680428",
+        "680120"
+      ],
+      "postCount": 5,
+      "imageCount": 45,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-676090",
+      "title": "Luchthaven Deurne",
+      "primaryPostId": "676090",
+      "postIds": [
+        "676090",
+        "676088",
+        "676084"
+      ],
+      "postCount": 3,
+      "imageCount": 26,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-671076",
+      "title": "Zonnepanelen",
+      "primaryPostId": "671076",
+      "postIds": [
+        "671076",
+        "671062"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-664435",
+      "title": "Provinciaal Groendomein Pulhof",
+      "primaryPostId": "664435",
+      "postIds": [
+        "664435",
+        "664429"
+      ],
+      "postCount": 2,
+      "imageCount": 12,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-663472",
+      "title": "Speciale Tentoonstelling",
+      "primaryPostId": "663472",
+      "postIds": [
+        "663472",
+        "663471"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-659178",
+      "title": "Een vindingrijke Tuin te Vorselaar",
+      "primaryPostId": "659178",
+      "postIds": [
+        "659178",
+        "659176"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-657008",
+      "title": "Sissinghurst",
+      "primaryPostId": "657008",
+      "postIds": [
+        "657008",
+        "657006",
+        "657001",
+        "656992"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-655450",
+      "title": "Rochester",
+      "primaryPostId": "655450",
+      "postIds": [
+        "655450",
+        "655449"
+      ],
+      "postCount": 2,
+      "imageCount": 15,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-654867",
+      "title": "Dag van de Biodiversiteit 22 mei",
+      "primaryPostId": "654867",
+      "postIds": [
+        "654867",
+        "655431"
+      ],
+      "postCount": 2,
+      "imageCount": 11,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-643685",
+      "title": "Koninklijke Serres van Laken",
+      "primaryPostId": "643685",
+      "postIds": [
+        "643685",
+        "643681",
+        "643675",
+        "643240"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 1,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-635043",
+      "title": "Met Art Fan(Zoersel) naar Brussel (El Greco en stadsbezoek) zo 18 april",
+      "primaryPostId": "635043",
+      "postIds": [
+        "635043",
+        "635041"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-610612",
+      "title": "Bezoek Colruyt, rondrit in het Pajottenland en Bezoek Geuzebrouwerij Boon",
+      "primaryPostId": "610612",
+      "postIds": [
+        "610612",
+        "610608"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-603916",
+      "title": "The Axil of the Mountain",
+      "primaryPostId": "603916",
+      "postIds": [
+        "603916",
+        "603909"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-599302",
+      "title": "Fotografie Museum te Mont- sur- Marchienne (Charleroi)",
+      "primaryPostId": "599302",
+      "postIds": [
+        "599302",
+        "599292"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-597593",
+      "title": "Pruimenzaagwespen",
+      "primaryPostId": "597593",
+      "postIds": [
+        "597593",
+        "689956"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-583251",
+      "title": "Londen Dag 2",
+      "primaryPostId": "583251",
+      "postIds": [
+        "583251",
+        "583238"
+      ],
+      "postCount": 2,
+      "imageCount": 16,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-532462",
+      "title": "Namiddagfeest",
+      "primaryPostId": "532462",
+      "postIds": [
+        "532462",
+        "532456"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-483089",
+      "title": "'˜Klein maar duurzaam' Studienamiddag Randwijk 4-11",
+      "primaryPostId": "483089",
+      "postIds": [
+        "483089",
+        "483084"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-477910",
+      "title": "Een Weekend naar Engeland met VELT 12-13 sept.",
+      "primaryPostId": "477910",
+      "postIds": [
+        "477910",
+        "477898"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-475212",
+      "title": "40 Jaar Red de Voorkempen 24 okt. Viering in het Kasteel van Schoten",
+      "primaryPostId": "475212",
+      "postIds": [
+        "475212",
+        "475208"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-472645",
+      "title": "Mechelse Veilingen Proefstation Sint-Katelijne-Waver",
+      "primaryPostId": "472645",
+      "postIds": [
+        "472645",
+        "472643"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-458249",
+      "title": "Engeland laatste Dag Laatste Stop BROGDALE FARM National Fruit Collection",
+      "primaryPostId": "458249",
+      "postIds": [
+        "458249",
+        "458244",
+        "458241",
+        "458245"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-457342",
+      "title": "Engeland laatste Dag De Hatton Fruit Garden te East Malling",
+      "primaryPostId": "457342",
+      "postIds": [
+        "457342",
+        "457337"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-455940",
+      "title": "NBS Engeland 28/08 Laatste Avond",
+      "primaryPostId": "455940",
+      "postIds": [
+        "455940",
+        "455930"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-454832",
+      "title": "NBS DAG 6 (28/08) De ganse dag Wisley",
+      "primaryPostId": "454832",
+      "postIds": [
+        "454832",
+        "454764",
+        "454811"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-449484",
+      "title": "CHOCOLADE",
+      "primaryPostId": "449484",
+      "postIds": [
+        "449484",
+        "449471"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-445525",
+      "title": "Bedrijf van Dirk en Nicole Hebben-Van Driessche 25 jaar",
+      "primaryPostId": "445525",
+      "postIds": [
+        "445525",
+        "445522"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-442840",
+      "title": "Stowe Landscape Gardens",
+      "primaryPostId": "442840",
+      "postIds": [
+        "442840",
+        "442835"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-439757",
+      "title": "NBS Dag 5 27 aug. Lyveden New Bield",
+      "primaryPostId": "439757",
+      "postIds": [
+        "439757",
+        "439754"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-431137",
+      "title": "Bij ADRIAN BAGGALEY",
+      "primaryPostId": "431137",
+      "postIds": [
+        "431137",
+        "431118",
+        "431101"
+      ],
+      "postCount": 3,
+      "imageCount": 26,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-431473",
+      "title": "Bramley's Seedling en Southwell Minster",
+      "primaryPostId": "431473",
+      "postIds": [
+        "431473",
+        "431471"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-426096",
+      "title": "De Nationale Boomgaardenstichting (NBS) 4 de maal Engeland",
+      "primaryPostId": "426096",
+      "postIds": [
+        "426096",
+        "428670",
+        "428669"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-423994",
+      "title": "2009 leverde ons een weelde aan Kerspruimen",
+      "primaryPostId": "423994",
+      "postIds": [
+        "423994",
+        "423993"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-412534",
+      "title": "Bij Georges Cooman te Lochristi 14/08",
+      "primaryPostId": "412534",
+      "postIds": [
+        "412534",
+        "412511"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-410278",
+      "title": "Een Zomer met meer Vlinders",
+      "primaryPostId": "410278",
+      "postIds": [
+        "410278",
+        "410276"
+      ],
+      "postCount": 2,
+      "imageCount": 14,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-402514",
+      "title": "Insecten op de Hegte Heide",
+      "primaryPostId": "402514",
+      "postIds": [
+        "402514",
+        "402504"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-401846",
+      "title": "Warmrood",
+      "primaryPostId": "401846",
+      "postIds": [
+        "401846",
+        "401825"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-396781",
+      "title": "FRUITFOCUS ENGELAND 22 Juli",
+      "primaryPostId": "396781",
+      "postIds": [
+        "396781",
+        "396759"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-392265",
+      "title": "Excursie van de '˜Werkgroep Eigen Zaadteelt'",
+      "primaryPostId": "392265",
+      "postIds": [
+        "392265",
+        "392262",
+        "392258",
+        "392255"
+      ],
+      "postCount": 4,
+      "imageCount": 36,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-391543",
+      "title": "8 ste Afrikaans Tuinfeest",
+      "primaryPostId": "391543",
+      "postIds": [
+        "391543",
+        "391546",
+        "392234"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-379972",
+      "title": "Een zomerdag aan de kust (4/7)",
+      "primaryPostId": "379972",
+      "postIds": [
+        "379972",
+        "379978"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-377488",
+      "title": "De Pomologische Kring Oost-Vlaanderen naar Limburg",
+      "primaryPostId": "377488",
+      "postIds": [
+        "377488",
+        "377485",
+        "377480"
+      ],
+      "postCount": 3,
+      "imageCount": 25,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-369817",
+      "title": "Van Antwerpen - Noord over Doel tot Emmadorp",
+      "primaryPostId": "369817",
+      "postIds": [
+        "369817",
+        "369786",
+        "369756"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-369748",
+      "title": "DEEI 4",
+      "primaryPostId": "369748",
+      "postIds": [
+        "369748",
+        "369726",
+        "369706"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-363685",
+      "title": "Heusden",
+      "primaryPostId": "363685",
+      "postIds": [
+        "363685",
+        "363682"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-349935",
+      "title": "Open Tuinendagen",
+      "primaryPostId": "349935",
+      "postIds": [
+        "349935",
+        "349924"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 4,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-314278",
+      "title": "Bloei op 18 april",
+      "primaryPostId": "314278",
+      "postIds": [
+        "314278",
+        "314264"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-304562",
+      "title": "Met de Australiers naar Brugge",
+      "primaryPostId": "304562",
+      "postIds": [
+        "304562",
+        "304559",
+        "304538"
+      ],
+      "postCount": 3,
+      "imageCount": 27,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-294453",
+      "title": "FOTO'S RENE (1)",
+      "primaryPostId": "294453",
+      "postIds": [
+        "294453",
+        "294462"
+      ],
+      "postCount": 2,
+      "imageCount": 12,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-294490",
+      "title": "ROUNDTRIP (Slot)",
+      "primaryPostId": "294490",
+      "postIds": [
+        "294490",
+        "294482"
+      ],
+      "postCount": 2,
+      "imageCount": 18,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-199340",
+      "title": "Hebt u nog plaats voor een okkernoot?",
+      "primaryPostId": "199340",
+      "postIds": [
+        "199340",
+        "199060"
+      ],
+      "postCount": 2,
+      "imageCount": 10,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-119110",
+      "title": "Ballonkaartje uit Nederland",
+      "primaryPostId": "119110",
+      "postIds": [
+        "119110",
+        "119131"
+      ],
+      "postCount": 2,
+      "imageCount": 11,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-106647",
+      "title": "Met de Fruitwerkgroep van Velt-Beernem op stap",
+      "primaryPostId": "106647",
+      "postIds": [
+        "106647",
+        "108256"
+      ],
+      "postCount": 2,
+      "imageCount": 13,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1135",
+      "title": "Prunus cerasifera met rozige bloei",
+      "primaryPostId": "1135",
+      "postIds": [
+        "1135",
+        "1134"
+      ],
+      "postCount": 2,
+      "imageCount": 6,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1100",
+      "title": "Overzicht van de Belgische Pomologie",
+      "primaryPostId": "1100",
+      "postIds": [
+        "1100",
+        "1103",
+        "1108",
+        "1121"
+      ],
+      "postCount": 4,
+      "imageCount": 1,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-1074",
+      "title": "CLAPP'S FAVOURITE",
+      "primaryPostId": "1074",
+      "postIds": [
+        "1074",
+        "1075"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-1061",
+      "title": "Welke peren planten",
+      "primaryPostId": "1061",
+      "postIds": [
+        "1061",
+        "1070"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-780",
+      "title": "GRAUWE VLIEGENVANGER",
+      "primaryPostId": "780",
+      "postIds": [
+        "780",
+        "792"
+      ],
+      "postCount": 2,
+      "imageCount": 1,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-746",
+      "title": "TAART VAN YAMSI",
+      "primaryPostId": "746",
+      "postIds": [
+        "746",
+        "745"
+      ],
+      "postCount": 2,
+      "imageCount": 1,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-689",
+      "title": "HET ECOLOGISCH HOUDEN VAN KIPPEN",
+      "primaryPostId": "689",
+      "postIds": [
+        "689",
+        "690",
+        "693",
+        "699",
+        "700",
+        "701",
+        "702",
+        "703"
+      ],
+      "postCount": 8,
+      "imageCount": 6,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-676",
+      "title": "JUNO NIEUWE FRAMBOOS",
+      "primaryPostId": "676",
+      "postIds": [
+        "676",
+        "678"
+      ],
+      "postCount": 2,
+      "imageCount": 2,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-659",
+      "title": "DE NAAKTE KIWI",
+      "primaryPostId": "659",
+      "postIds": [
+        "659",
+        "665"
+      ],
+      "postCount": 2,
+      "imageCount": 1,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-470",
+      "title": "NOG ROLSCHOFFELS",
+      "primaryPostId": "470",
+      "postIds": [
+        "470",
+        "469"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 1,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-398",
+      "title": "MET GUIDO NAAR DUITSLAND",
+      "primaryPostId": "398",
+      "postIds": [
+        "398",
+        "399"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-392",
+      "title": "GM GEWASSEN KUNNEN HET BODEMLEVEN VERSTOREN",
+      "primaryPostId": "392",
+      "postIds": [
+        "392",
+        "395",
+        "396",
+        "397"
+      ],
+      "postCount": 4,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-295",
+      "title": "VRIEZEGANZEN",
+      "primaryPostId": "295",
+      "postIds": [
+        "295",
+        "304"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-291",
+      "title": "HONINGZWAM / VERANKERING.",
+      "primaryPostId": "291",
+      "postIds": [
+        "291",
+        "290"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-283",
+      "title": "DE EEN ZIJN DOOD, DE ANDER ZIJN BROOD",
+      "primaryPostId": "283",
+      "postIds": [
+        "283",
+        "282"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-270",
+      "title": "KIPPEN ALS OPRUIMERS",
+      "primaryPostId": "270",
+      "postIds": [
+        "270",
+        "271"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-210",
+      "title": "RUBINOLA",
+      "primaryPostId": "210",
+      "postIds": [
+        "210",
+        "211"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-196",
+      "title": "LAAGSTAMMEN ZIJN NA 10 JAAR VERSLETEN",
+      "primaryPostId": "196",
+      "postIds": [
+        "196",
+        "198"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-188",
+      "title": "GEZONDE DRUIVEN",
+      "primaryPostId": "188",
+      "postIds": [
+        "188",
+        "190",
+        "192"
+      ],
+      "postCount": 3,
+      "imageCount": 0,
+      "reactionCount": 1,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-184",
+      "title": "NIEUWE KLEREN, OUDE STREKEN",
+      "primaryPostId": "184",
+      "postIds": [
+        "184",
+        "183"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-144",
+      "title": "Amerikaanse Bramen",
+      "primaryPostId": "144",
+      "postIds": [
+        "144",
+        "145"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-140",
+      "title": "Bramen en braambozen ...",
+      "primaryPostId": "140",
+      "postIds": [
+        "140",
+        "141",
+        "142"
+      ],
+      "postCount": 3,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-137",
+      "title": "WORCESTERBESSEN",
+      "primaryPostId": "137",
+      "postIds": [
+        "137",
+        "138"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    },
+    {
+      "id": "series-84",
+      "title": "WELKE BRAAM HEB IN JE TUIN?",
+      "primaryPostId": "84",
+      "postIds": [
+        "84",
+        "85"
+      ],
+      "postCount": 2,
+      "imageCount": 0,
+      "reactionCount": 1,
+      "source": "same-day continuation curation"
+    },
+    {
+      "id": "series-6",
+      "title": "De Generatieboom",
+      "primaryPostId": "6",
+      "postIds": [
+        "6",
+        "73",
+        "472",
+        "716",
+        "768",
+        "74863"
+      ],
+      "postCount": 6,
+      "imageCount": 4,
+      "reactionCount": 0,
+      "source": "LLM-curated cross-date/title continuation"
+    }
+  ],
+  "postToSeries": {
+    "2310069": "series-2310069",
+    "2310068": "series-2310069",
+    "2308631": "series-2308631",
+    "2308707": "series-2308631",
+    "2302253": "series-2302253",
+    "2302252": "series-2302253",
+    "2300129": "series-2300129",
+    "2300124": "series-2300129",
+    "2289167": "series-2289167",
+    "2289166": "series-2289167",
+    "2289164": "series-2289167",
+    "2289162": "series-2289167",
+    "2286314": "series-2286314",
+    "2286311": "series-2286314",
+    "2286309": "series-2286314",
+    "2276564": "series-2276564",
+    "2276562": "series-2276564",
+    "2276532": "series-2276532",
+    "2276525": "series-2276532",
+    "2276523": "series-2276532",
+    "2274541": "series-2274541",
+    "2274540": "series-2274541",
+    "2271003": "series-2271003",
+    "2271000": "series-2271003",
+    "2270999": "series-2271003",
+    "2270997": "series-2271003",
+    "2270982": "series-2271003",
+    "2269620": "series-2269620",
+    "2269619": "series-2269620",
+    "2263767": "series-2263767",
+    "2263766": "series-2263767",
+    "2263203": "series-2263203",
+    "2263201": "series-2263203",
+    "2261065": "series-2261065",
+    "2261068": "series-2261065",
+    "2261055": "series-2261055",
+    "2261052": "series-2261055",
+    "2255607": "series-2255607",
+    "2255606": "series-2255607",
+    "2254280": "series-2254280",
+    "2254279": "series-2254280",
+    "2248441": "series-2248441",
+    "2248439": "series-2248441",
+    "2247412": "series-2247412",
+    "2247411": "series-2247412",
+    "2246649": "series-2246649",
+    "2246648": "series-2246649",
+    "2246646": "series-2246649",
+    "2246643": "series-2246649",
+    "2246638": "series-2246649",
+    "2237513": "series-2237513",
+    "2237573": "series-2237513",
+    "2235540": "series-2235540",
+    "2235539": "series-2235540",
+    "2235537": "series-2235540",
+    "2232787": "series-2232787",
+    "2232785": "series-2232787",
+    "2230196": "series-2230196",
+    "2230194": "series-2230196",
+    "2193893": "series-2193893",
+    "2193885": "series-2193893",
+    "2187330": "series-2187330",
+    "2187329": "series-2187330",
+    "2187326": "series-2187330",
+    "2182897": "series-2182897",
+    "2182896": "series-2182897",
+    "2182892": "series-2182897",
+    "2182891": "series-2182897",
+    "2182887": "series-2182897",
+    "2182132": "series-2182132",
+    "2182109": "series-2182132",
+    "2180977": "series-2180977",
+    "2180975": "series-2180977",
+    "2180973": "series-2180977",
+    "2180970": "series-2180977",
+    "2178782": "series-2178782",
+    "2178780": "series-2178782",
+    "2178222": "series-2178222",
+    "2178218": "series-2178222",
+    "2174749": "series-2174749",
+    "2176252": "series-2174749",
+    "2169847": "series-2169847",
+    "2169842": "series-2169847",
+    "2165698": "series-2165698",
+    "2165689": "series-2165698",
+    "2154873": "series-2154873",
+    "2154867": "series-2154873",
+    "2154855": "series-2154855",
+    "2154857": "series-2154855",
+    "2142935": "series-2142935",
+    "2142930": "series-2142935",
+    "2115977": "series-2115977",
+    "2115974": "series-2115977",
+    "2115973": "series-2115977",
+    "2105307": "series-2105307",
+    "2105288": "series-2105307",
+    "2105294": "series-2105307",
+    "2096047": "series-2096047",
+    "2096043": "series-2096047",
+    "2096036": "series-2096047",
+    "2094212": "series-2094212",
+    "2094210": "series-2094212",
+    "2093824": "series-2093824",
+    "2093819": "series-2093824",
+    "2090656": "series-2090656",
+    "2090655": "series-2090656",
+    "2087890": "series-2087890",
+    "2087871": "series-2087890",
+    "2079121": "series-2079121",
+    "2079120": "series-2079121",
+    "2079116": "series-2079121",
+    "2077088": "series-2077088",
+    "2077080": "series-2077088",
+    "2075535": "series-2075535",
+    "2075530": "series-2075535",
+    "2075528": "series-2075535",
+    "2062204": "series-2062204",
+    "2062202": "series-2062204",
+    "2046841": "series-2046841",
+    "2046838": "series-2046841",
+    "2032930": "series-2032930",
+    "2032922": "series-2032930",
+    "2032918": "series-2032930",
+    "2016668": "series-2016668",
+    "2016658": "series-2016668",
+    "2014135": "series-2014135",
+    "2014133": "series-2014135",
+    "1997957": "series-1997957",
+    "1997953": "series-1997957",
+    "1977183": "series-1977183",
+    "1977182": "series-1977183",
+    "1976147": "series-1976147",
+    "1976146": "series-1976147",
+    "1976094": "series-1976147",
+    "1976092": "series-1976147",
+    "1976091": "series-1976147",
+    "1976087": "series-1976147",
+    "1974634": "series-1974634",
+    "1974632": "series-1974634",
+    "1973290": "series-1973290",
+    "1973287": "series-1973290",
+    "1973286": "series-1973290",
+    "1972099": "series-1972099",
+    "1972098": "series-1972099",
+    "1972096": "series-1972099",
+    "1966972": "series-1966972",
+    "1966966": "series-1966972",
+    "1965144": "series-1965144",
+    "1965159": "series-1965144",
+    "1963681": "series-1963681",
+    "1963678": "series-1963681",
+    "1963099": "series-1963099",
+    "1963093": "series-1963099",
+    "1963087": "series-1963099",
+    "1963286": "series-1963099",
+    "1960667": "series-1960667",
+    "1960664": "series-1960667",
+    "1958487": "series-1958487",
+    "1958485": "series-1958487",
+    "1958483": "series-1958487",
+    "1958439": "series-1958439",
+    "1958435": "series-1958439",
+    "1952899": "series-1952899",
+    "1952897": "series-1952899",
+    "1952461": "series-1952461",
+    "1952457": "series-1952461",
+    "1952455": "series-1952455",
+    "1952448": "series-1952455",
+    "1945280": "series-1945280",
+    "1945277": "series-1945280",
+    "1945273": "series-1945280",
+    "1945270": "series-1945280",
+    "1945265": "series-1945280",
+    "1945264": "series-1945280",
+    "1940906": "series-1940906",
+    "1940905": "series-1940906",
+    "1940901": "series-1940906",
+    "1939023": "series-1939023",
+    "1939020": "series-1939023",
+    "1939018": "series-1939023",
+    "1937474": "series-1937474",
+    "1937468": "series-1937474",
+    "1937457": "series-1937474",
+    "1931767": "series-1931767",
+    "1931765": "series-1931767",
+    "1931754": "series-1931767",
+    "1930650": "series-1930650",
+    "1930646": "series-1930650",
+    "1927716": "series-1927716",
+    "1927713": "series-1927716",
+    "1927711": "series-1927711",
+    "1927706": "series-1927711",
+    "1927699": "series-1927711",
+    "1927675": "series-1927675",
+    "1927670": "series-1927675",
+    "1927664": "series-1927675",
+    "1925013": "series-1925013",
+    "1925009": "series-1925013",
+    "1921322": "series-1921322",
+    "1921320": "series-1921322",
+    "1919791": "series-1919791",
+    "1919788": "series-1919791",
+    "1909849": "series-1909849",
+    "1909838": "series-1909849",
+    "1909836": "series-1909849",
+    "1905917": "series-1905917",
+    "1905913": "series-1905917",
+    "1905910": "series-1905917",
+    "1904144": "series-1904144",
+    "1904140": "series-1904144",
+    "1901332": "series-1901332",
+    "1901329": "series-1901332",
+    "1901327": "series-1901332",
+    "1898394": "series-1898394",
+    "1898391": "series-1898394",
+    "1897207": "series-1897207",
+    "1897208": "series-1897207",
+    "1894427": "series-1894427",
+    "1894430": "series-1894427",
+    "1894432": "series-1894427",
+    "1875565": "series-1875565",
+    "1875550": "series-1875565",
+    "1875545": "series-1875565",
+    "1875538": "series-1875565",
+    "1865939": "series-1865939",
+    "1865926": "series-1865939",
+    "1853795": "series-1853795",
+    "1853794": "series-1853795",
+    "1847083": "series-1847083",
+    "1847077": "series-1847083",
+    "1846652": "series-1847083",
+    "1846645": "series-1847083",
+    "1839859": "series-1839859",
+    "1839858": "series-1839859",
+    "1837637": "series-1837637",
+    "1837635": "series-1837637",
+    "1837050": "series-1837050",
+    "1837039": "series-1837050",
+    "1829344": "series-1829344",
+    "1829332": "series-1829344",
+    "1829325": "series-1829325",
+    "1829327": "series-1829325",
+    "1825174": "series-1825174",
+    "1825173": "series-1825174",
+    "1821183": "series-1821183",
+    "1821181": "series-1821183",
+    "1819888": "series-1819888",
+    "1819884": "series-1819888",
+    "1819454": "series-1819454",
+    "1819447": "series-1819454",
+    "1817896": "series-1817896",
+    "1817899": "series-1817896",
+    "1816598": "series-1816598",
+    "1816344": "series-1816598",
+    "1816336": "series-1816598",
+    "1815396": "series-1815396",
+    "1815378": "series-1815396",
+    "1815217": "series-1815217",
+    "1815212": "series-1815217",
+    "1813573": "series-1813573",
+    "1813571": "series-1813573",
+    "1797802": "series-1797802",
+    "1797800": "series-1797802",
+    "1797284": "series-1797284",
+    "1797282": "series-1797284",
+    "1797279": "series-1797284",
+    "1797277": "series-1797284",
+    "1797275": "series-1797284",
+    "1793938": "series-1793938",
+    "1793984": "series-1793938",
+    "1790914": "series-1790914",
+    "1790912": "series-1790914",
+    "1790910": "series-1790914",
+    "1788328": "series-1788328",
+    "1788321": "series-1788328",
+    "1785040": "series-1785040",
+    "1785039": "series-1785040",
+    "1782453": "series-1782453",
+    "1782449": "series-1782453",
+    "1782447": "series-1782453",
+    "1781030": "series-1781030",
+    "1781022": "series-1781030",
+    "1778669": "series-1778669",
+    "1778668": "series-1778669",
+    "1776949": "series-1776949",
+    "1776931": "series-1776949",
+    "1776922": "series-1776949",
+    "1776917": "series-1776949",
+    "1776472": "series-1776472",
+    "1776470": "series-1776472",
+    "1776469": "series-1776472",
+    "1768899": "series-1768899",
+    "1768898": "series-1768899",
+    "1768553": "series-1768553",
+    "1768549": "series-1768553",
+    "1768546": "series-1768553",
+    "1764368": "series-1764368",
+    "1764364": "series-1764368",
+    "1764360": "series-1764368",
+    "1764357": "series-1764368",
+    "1762747": "series-1762747",
+    "1762746": "series-1762747",
+    "1762745": "series-1762747",
+    "1762743": "series-1762747",
+    "1762742": "series-1762747",
+    "1759539": "series-1759539",
+    "1759534": "series-1759539",
+    "1759530": "series-1759539",
+    "1759328": "series-1759539",
+    "1755427": "series-1755427",
+    "1755053": "series-1755427",
+    "1745265": "series-1745265",
+    "1745260": "series-1745265",
+    "1745256": "series-1745265",
+    "1743731": "series-1743731",
+    "1743729": "series-1743731",
+    "1743715": "series-1743731",
+    "1743705": "series-1743731",
+    "1743508": "series-1743731",
+    "1743525": "series-1743525",
+    "1743522": "series-1743525",
+    "1741800": "series-1741800",
+    "1741797": "series-1741800",
+    "1741789": "series-1741800",
+    "1741665": "series-1741665",
+    "1741663": "series-1741665",
+    "1740548": "series-1740548",
+    "1740547": "series-1740548",
+    "1740545": "series-1740548",
+    "1740544": "series-1740548",
+    "1734825": "series-1734825",
+    "1734818": "series-1734825",
+    "1734804": "series-1734825",
+    "1734273": "series-1734273",
+    "1734263": "series-1734273",
+    "1730997": "series-1730997",
+    "1730984": "series-1730997",
+    "1730977": "series-1730997",
+    "1730972": "series-1730997",
+    "1727638": "series-1727638",
+    "1727633": "series-1727638",
+    "1714786": "series-1714786",
+    "1714756": "series-1714786",
+    "1714717": "series-1714717",
+    "1714691": "series-1714717",
+    "1707040": "series-1707040",
+    "1707028": "series-1707040",
+    "1704803": "series-1704803",
+    "1704802": "series-1704803",
+    "1704800": "series-1704803",
+    "1703266": "series-1703266",
+    "1703262": "series-1703266",
+    "1694765": "series-1694765",
+    "1694790": "series-1694765",
+    "1694757": "series-1694765",
+    "1675745": "series-1675745",
+    "1675736": "series-1675745",
+    "1675734": "series-1675745",
+    "1675724": "series-1675745",
+    "1672430": "series-1672430",
+    "1672301": "series-1672430",
+    "1670180": "series-1670180",
+    "1670176": "series-1670180",
+    "1670175": "series-1670180",
+    "1670170": "series-1670180",
+    "1669990": "series-1669990",
+    "1669744": "series-1669990",
+    "1669743": "series-1669990",
+    "1669740": "series-1669990",
+    "1666991": "series-1666991",
+    "1666989": "series-1666991",
+    "1666988": "series-1666991",
+    "1666983": "series-1666991",
+    "1666980": "series-1666991",
+    "1666978": "series-1666991",
+    "1665113": "series-1665113",
+    "1665098": "series-1665113",
+    "1665094": "series-1665113",
+    "1665089": "series-1665113",
+    "1665082": "series-1665113",
+    "1663556": "series-1663556",
+    "1663545": "series-1663556",
+    "1663540": "series-1663556",
+    "1659640": "series-1659640",
+    "1659637": "series-1659640",
+    "1659636": "series-1659640",
+    "1659633": "series-1659640",
+    "1659632": "series-1659640",
+    "1657988": "series-1657988",
+    "1657987": "series-1657988",
+    "1657985": "series-1657988",
+    "1657974": "series-1657988",
+    "1657951": "series-1657988",
+    "1655417": "series-1655417",
+    "1655415": "series-1655417",
+    "1653411": "series-1653411",
+    "1653409": "series-1653411",
+    "1650652": "series-1650652",
+    "1650649": "series-1650652",
+    "1650646": "series-1650652",
+    "1648916": "series-1648916",
+    "1648908": "series-1648916",
+    "1648906": "series-1648916",
+    "1644257": "series-1644257",
+    "1644254": "series-1644257",
+    "1643380": "series-1643380",
+    "1643359": "series-1643380",
+    "1631896": "series-1631896",
+    "1631893": "series-1631896",
+    "1628755": "series-1628755",
+    "1628748": "series-1628755",
+    "1618615": "series-1618615",
+    "1618614": "series-1618615",
+    "1613071": "series-1613071",
+    "1613068": "series-1613071",
+    "1613063": "series-1613071",
+    "1613060": "series-1613071",
+    "1613056": "series-1613071",
+    "1612128": "series-1612128",
+    "1612127": "series-1612128",
+    "1612117": "series-1612128",
+    "1610965": "series-1610965",
+    "1610942": "series-1610965",
+    "1610940": "series-1610965",
+    "1610961": "series-1610965",
+    "1610937": "series-1610965",
+    "1604620": "series-1604620",
+    "1604617": "series-1604620",
+    "1604611": "series-1604620",
+    "1604605": "series-1604620",
+    "1604597": "series-1604597",
+    "1604589": "series-1604597",
+    "1604582": "series-1604582",
+    "1604574": "series-1604582",
+    "1604567": "series-1604582",
+    "1592565": "series-1592565",
+    "1592563": "series-1592565",
+    "1590917": "series-1590917",
+    "1590916": "series-1590917",
+    "1590913": "series-1590917",
+    "1589269": "series-1589269",
+    "1589264": "series-1589269",
+    "1585848": "series-1585848",
+    "1588296": "series-1585848",
+    "1588295": "series-1585848",
+    "1588290": "series-1585848",
+    "1588289": "series-1585848",
+    "1588281": "series-1585848",
+    "1577644": "series-1577644",
+    "1577693": "series-1577644",
+    "1577692": "series-1577644",
+    "1577688": "series-1577644",
+    "1560431": "series-1560431",
+    "1560430": "series-1560431",
+    "1560424": "series-1560424",
+    "1560419": "series-1560424",
+    "1545355": "series-1545355",
+    "1545348": "series-1545355",
+    "1509577": "series-1509577",
+    "1509574": "series-1509577",
+    "1490854": "series-1490854",
+    "1490846": "series-1490854",
+    "1490782": "series-1490782",
+    "1490775": "series-1490782",
+    "1487923": "series-1487923",
+    "1487917": "series-1487923",
+    "1482090": "series-1482090",
+    "1482087": "series-1482090",
+    "1477704": "series-1477704",
+    "1477694": "series-1477704",
+    "1477686": "series-1477704",
+    "1477683": "series-1477683",
+    "1477676": "series-1477683",
+    "1472478": "series-1472478",
+    "1472470": "series-1472478",
+    "1472461": "series-1472478",
+    "1472456": "series-1472478",
+    "1472448": "series-1472478",
+    "1471210": "series-1471210",
+    "1471205": "series-1471210",
+    "1471194": "series-1471194",
+    "1471174": "series-1471194",
+    "1465871": "series-1465871",
+    "1465768": "series-1465871",
+    "1465763": "series-1465871",
+    "1465269": "series-1465269",
+    "1465252": "series-1465269",
+    "1465249": "series-1465269",
+    "1463174": "series-1463174",
+    "1463167": "series-1463174",
+    "1458998": "series-1458998",
+    "1458990": "series-1458998",
+    "1455270": "series-1455270",
+    "1455267": "series-1455270",
+    "1455057": "series-1455057",
+    "1455051": "series-1455057",
+    "1455046": "series-1455057",
+    "1453933": "series-1453933",
+    "1453928": "series-1453933",
+    "1453449": "series-1453449",
+    "1453446": "series-1453449",
+    "1453438": "series-1453449",
+    "1453404": "series-1453449",
+    "1452429": "series-1452429",
+    "1452428": "series-1452429",
+    "1450907": "series-1450907",
+    "1450905": "series-1450907",
+    "1450901": "series-1450907",
+    "1450897": "series-1450907",
+    "1437995": "series-1437995",
+    "1437994": "series-1437995",
+    "1435752": "series-1435752",
+    "1435750": "series-1435752",
+    "1427278": "series-1427278",
+    "1427276": "series-1427278",
+    "1427275": "series-1427278",
+    "1427260": "series-1427278",
+    "1427258": "series-1427278",
+    "1416133": "series-1416133",
+    "1416130": "series-1416133",
+    "1416126": "series-1416133",
+    "1416124": "series-1416133",
+    "1416106": "series-1416133",
+    "1398917": "series-1398917",
+    "1398916": "series-1398917",
+    "1398915": "series-1398917",
+    "1398913": "series-1398917",
+    "1397037": "series-1397037",
+    "1397036": "series-1397037",
+    "1397034": "series-1397037",
+    "1397031": "series-1397037",
+    "1396494": "series-1396494",
+    "1396486": "series-1396494",
+    "1387982": "series-1387982",
+    "1387980": "series-1387982",
+    "1387976": "series-1387982",
+    "1383918": "series-1383918",
+    "1383916": "series-1383918",
+    "1381334": "series-1381334",
+    "1381333": "series-1381334",
+    "1381326": "series-1381334",
+    "1380350": "series-1380350",
+    "1380347": "series-1380350",
+    "1380344": "series-1380350",
+    "1380340": "series-1380350",
+    "1378516": "series-1378516",
+    "1378512": "series-1378516",
+    "1378508": "series-1378516",
+    "1369086": "series-1369086",
+    "1369080": "series-1369086",
+    "1369076": "series-1369086",
+    "1369073": "series-1369086",
+    "1296221": "series-1296221",
+    "1296231": "series-1296221",
+    "1292741": "series-1292741",
+    "1292699": "series-1292741",
+    "1292690": "series-1292741",
+    "1292678": "series-1292741",
+    "1287876": "series-1287876",
+    "1287872": "series-1287876",
+    "1268471": "series-1268471",
+    "1268467": "series-1268471",
+    "1266028": "series-1266028",
+    "1266025": "series-1266028",
+    "1266018": "series-1266028",
+    "1266013": "series-1266028",
+    "1262894": "series-1262894",
+    "1262879": "series-1262894",
+    "1262871": "series-1262894",
+    "1261193": "series-1261193",
+    "1261186": "series-1261193",
+    "1246254": "series-1246254",
+    "1246240": "series-1246254",
+    "1242920": "series-1242920",
+    "1242903": "series-1242920",
+    "1242882": "series-1242920",
+    "1238311": "series-1238311",
+    "1238305": "series-1238311",
+    "1238298": "series-1238311",
+    "1233993": "series-1233993",
+    "1233988": "series-1233993",
+    "1222371": "series-1222371",
+    "1222357": "series-1222371",
+    "1222356": "series-1222371",
+    "1221062": "series-1221062",
+    "1221056": "series-1221062",
+    "1221049": "series-1221062",
+    "1219193": "series-1219193",
+    "1219176": "series-1219193",
+    "1219172": "series-1219193",
+    "1214391": "series-1214391",
+    "1214386": "series-1214391",
+    "1208149": "series-1208149",
+    "1208144": "series-1208149",
+    "1207673": "series-1207673",
+    "1207666": "series-1207673",
+    "1206854": "series-1206854",
+    "1206833": "series-1206854",
+    "1194158": "series-1194158",
+    "1194152": "series-1194158",
+    "1194134": "series-1194134",
+    "1194127": "series-1194134",
+    "1193967": "series-1193967",
+    "1193964": "series-1193967",
+    "1193963": "series-1193967",
+    "1183465": "series-1183465",
+    "1183459": "series-1183465",
+    "1183445": "series-1183465",
+    "1173949": "series-1173949",
+    "1173948": "series-1173949",
+    "1173928": "series-1173949",
+    "1173911": "series-1173949",
+    "1166729": "series-1166729",
+    "1166725": "series-1166729",
+    "1166712": "series-1166729",
+    "1157103": "series-1157103",
+    "1157100": "series-1157103",
+    "1152594": "series-1152594",
+    "1152592": "series-1152594",
+    "1151157": "series-1151157",
+    "1151150": "series-1151157",
+    "1149745": "series-1149745",
+    "1149742": "series-1149745",
+    "1149728": "series-1149745",
+    "1145973": "series-1145973",
+    "1145966": "series-1145973",
+    "1145957": "series-1145973",
+    "1135987": "series-1135987",
+    "1135984": "series-1135987",
+    "1135975": "series-1135987",
+    "1129883": "series-1129883",
+    "1129878": "series-1129883",
+    "1129873": "series-1129883",
+    "1129837": "series-1129883",
+    "1129828": "series-1129883",
+    "1124679": "series-1124679",
+    "1139117": "series-1124679",
+    "1124150": "series-1124150",
+    "1124138": "series-1124150",
+    "1086118": "series-1086118",
+    "1086114": "series-1086118",
+    "1086107": "series-1086118",
+    "1082257": "series-1082257",
+    "1082253": "series-1082257",
+    "1082240": "series-1082257",
+    "1082234": "series-1082257",
+    "1049830": "series-1049830",
+    "1050596": "series-1049830",
+    "1051302": "series-1049830",
+    "1052788": "series-1049830",
+    "1053369": "series-1049830",
+    "1054594": "series-1049830",
+    "1055311": "series-1049830",
+    "1056662": "series-1049830",
+    "1024459": "series-1024459",
+    "1024810": "series-1024459",
+    "1013798": "series-1013798",
+    "1013786": "series-1013798",
+    "1013777": "series-1013798",
+    "1009509": "series-1009509",
+    "1009499": "series-1009509",
+    "1009497": "series-1009509",
+    "1001307": "series-1001307",
+    "1001304": "series-1001307",
+    "1001301": "series-1001307",
+    "999372": "series-999372",
+    "999363": "series-999372",
+    "999333": "series-999372",
+    "996399": "series-996399",
+    "996395": "series-996399",
+    "993276": "series-993276",
+    "993269": "series-993276",
+    "992422": "series-992422",
+    "992414": "series-992422",
+    "990138": "series-990138",
+    "990135": "series-990138",
+    "990132": "series-990138",
+    "987140": "series-987140",
+    "987101": "series-987140",
+    "987097": "series-987140",
+    "987059": "series-987140",
+    "982295": "series-982295",
+    "982294": "series-982295",
+    "982292": "series-982295",
+    "982289": "series-982295",
+    "978165": "series-978165",
+    "978164": "series-978165",
+    "963584": "series-963584",
+    "963578": "series-963584",
+    "955947": "series-955947",
+    "955936": "series-955947",
+    "955920": "series-955947",
+    "952885": "series-952885",
+    "952883": "series-952885",
+    "943521": "series-943521",
+    "943515": "series-943521",
+    "943509": "series-943521",
+    "943501": "series-943521",
+    "943489": "series-943521",
+    "943479": "series-943521",
+    "943446": "series-943521",
+    "933156": "series-933156",
+    "933152": "series-933156",
+    "933147": "series-933156",
+    "932896": "series-932896",
+    "932891": "series-932896",
+    "932874": "series-932896",
+    "922652": "series-922652",
+    "922651": "series-922652",
+    "922649": "series-922649",
+    "922647": "series-922649",
+    "922645": "series-922649",
+    "921519": "series-921519",
+    "921517": "series-921519",
+    "919054": "series-919054",
+    "919051": "series-919054",
+    "905681": "series-905681",
+    "905673": "series-905681",
+    "876914": "series-876914",
+    "876360": "series-876914",
+    "798815": "series-798815",
+    "798812": "series-798815",
+    "784118": "series-784118",
+    "784110": "series-784118",
+    "783164": "series-784118",
+    "783153": "series-784118",
+    "783133": "series-784118",
+    "781006": "series-781006",
+    "781002": "series-781006",
+    "774683": "series-774683",
+    "774662": "series-774683",
+    "769712": "series-769712",
+    "769710": "series-769712",
+    "768905": "series-768905",
+    "768901": "series-768905",
+    "768584": "series-768905",
+    "768593": "series-768593",
+    "768589": "series-768593",
+    "763389": "series-763389",
+    "763379": "series-763389",
+    "763335": "series-763389",
+    "763328": "series-763389",
+    "753047": "series-753047",
+    "753042": "series-753047",
+    "753032": "series-753047",
+    "745854": "series-745854",
+    "745840": "series-745854",
+    "745755": "series-745755",
+    "745710": "series-745755",
+    "745649": "series-745755",
+    "745634": "series-745755",
+    "737436": "series-737436",
+    "737432": "series-737436",
+    "730464": "series-730464",
+    "730458": "series-730464",
+    "726087": "series-726087",
+    "726068": "series-726087",
+    "723602": "series-723602",
+    "723601": "series-723602",
+    "704432": "series-704432",
+    "704440": "series-704432",
+    "704436": "series-704432",
+    "704430": "series-704432",
+    "704429": "series-704429",
+    "704427": "series-704429",
+    "704417": "series-704417",
+    "704415": "series-704417",
+    "693938": "series-693938",
+    "693935": "series-693938",
+    "693930": "series-693938",
+    "692322": "series-692322",
+    "692314": "series-692322",
+    "680454": "series-680454",
+    "680451": "series-680454",
+    "680437": "series-680454",
+    "680428": "series-680454",
+    "680120": "series-680454",
+    "676090": "series-676090",
+    "676088": "series-676090",
+    "676084": "series-676090",
+    "671076": "series-671076",
+    "671062": "series-671076",
+    "664435": "series-664435",
+    "664429": "series-664435",
+    "663472": "series-663472",
+    "663471": "series-663472",
+    "659178": "series-659178",
+    "659176": "series-659178",
+    "657008": "series-657008",
+    "657006": "series-657008",
+    "657001": "series-657008",
+    "656992": "series-657008",
+    "655450": "series-655450",
+    "655449": "series-655450",
+    "654867": "series-654867",
+    "655431": "series-654867",
+    "643685": "series-643685",
+    "643681": "series-643685",
+    "643675": "series-643685",
+    "643240": "series-643685",
+    "635043": "series-635043",
+    "635041": "series-635043",
+    "610612": "series-610612",
+    "610608": "series-610612",
+    "603916": "series-603916",
+    "603909": "series-603916",
+    "599302": "series-599302",
+    "599292": "series-599302",
+    "597593": "series-597593",
+    "689956": "series-597593",
+    "583251": "series-583251",
+    "583238": "series-583251",
+    "532462": "series-532462",
+    "532456": "series-532462",
+    "483089": "series-483089",
+    "483084": "series-483089",
+    "477910": "series-477910",
+    "477898": "series-477910",
+    "475212": "series-475212",
+    "475208": "series-475212",
+    "472645": "series-472645",
+    "472643": "series-472645",
+    "458249": "series-458249",
+    "458244": "series-458249",
+    "458241": "series-458249",
+    "458245": "series-458249",
+    "457342": "series-457342",
+    "457337": "series-457342",
+    "455940": "series-455940",
+    "455930": "series-455940",
+    "454832": "series-454832",
+    "454764": "series-454832",
+    "454811": "series-454832",
+    "449484": "series-449484",
+    "449471": "series-449484",
+    "445525": "series-445525",
+    "445522": "series-445525",
+    "442840": "series-442840",
+    "442835": "series-442840",
+    "439757": "series-439757",
+    "439754": "series-439757",
+    "431137": "series-431137",
+    "431118": "series-431137",
+    "431101": "series-431137",
+    "431473": "series-431473",
+    "431471": "series-431473",
+    "426096": "series-426096",
+    "428670": "series-426096",
+    "428669": "series-426096",
+    "423994": "series-423994",
+    "423993": "series-423994",
+    "412534": "series-412534",
+    "412511": "series-412534",
+    "410278": "series-410278",
+    "410276": "series-410278",
+    "402514": "series-402514",
+    "402504": "series-402514",
+    "401846": "series-401846",
+    "401825": "series-401846",
+    "396781": "series-396781",
+    "396759": "series-396781",
+    "392265": "series-392265",
+    "392262": "series-392265",
+    "392258": "series-392265",
+    "392255": "series-392265",
+    "391543": "series-391543",
+    "391546": "series-391543",
+    "392234": "series-391543",
+    "379972": "series-379972",
+    "379978": "series-379972",
+    "377488": "series-377488",
+    "377485": "series-377488",
+    "377480": "series-377488",
+    "369817": "series-369817",
+    "369786": "series-369817",
+    "369756": "series-369817",
+    "369748": "series-369748",
+    "369726": "series-369748",
+    "369706": "series-369748",
+    "363685": "series-363685",
+    "363682": "series-363685",
+    "349935": "series-349935",
+    "349924": "series-349935",
+    "314278": "series-314278",
+    "314264": "series-314278",
+    "304562": "series-304562",
+    "304559": "series-304562",
+    "304538": "series-304562",
+    "294453": "series-294453",
+    "294462": "series-294453",
+    "294490": "series-294490",
+    "294482": "series-294490",
+    "199340": "series-199340",
+    "199060": "series-199340",
+    "119110": "series-119110",
+    "119131": "series-119110",
+    "106647": "series-106647",
+    "108256": "series-106647",
+    "1135": "series-1135",
+    "1134": "series-1135",
+    "1100": "series-1100",
+    "1103": "series-1100",
+    "1108": "series-1100",
+    "1121": "series-1100",
+    "1074": "series-1074",
+    "1075": "series-1074",
+    "1061": "series-1061",
+    "1070": "series-1061",
+    "780": "series-780",
+    "792": "series-780",
+    "746": "series-746",
+    "745": "series-746",
+    "689": "series-689",
+    "690": "series-689",
+    "693": "series-689",
+    "699": "series-689",
+    "700": "series-689",
+    "701": "series-689",
+    "702": "series-689",
+    "703": "series-689",
+    "676": "series-676",
+    "678": "series-676",
+    "659": "series-659",
+    "665": "series-659",
+    "470": "series-470",
+    "469": "series-470",
+    "398": "series-398",
+    "399": "series-398",
+    "392": "series-392",
+    "395": "series-392",
+    "396": "series-392",
+    "397": "series-392",
+    "295": "series-295",
+    "304": "series-295",
+    "291": "series-291",
+    "290": "series-291",
+    "283": "series-283",
+    "282": "series-283",
+    "270": "series-270",
+    "271": "series-270",
+    "210": "series-210",
+    "211": "series-210",
+    "196": "series-196",
+    "198": "series-196",
+    "188": "series-188",
+    "190": "series-188",
+    "192": "series-188",
+    "184": "series-184",
+    "183": "series-184",
+    "144": "series-144",
+    "145": "series-144",
+    "140": "series-140",
+    "141": "series-140",
+    "142": "series-140",
+    "137": "series-137",
+    "138": "series-137",
+    "84": "series-84",
+    "85": "series-84",
+    "6": "series-6",
+    "73": "series-6",
+    "472": "series-6",
+    "716": "series-6",
+    "768": "series-6",
+    "74863": "series-6"
+  }
+}

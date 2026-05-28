@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import GalleryApp from '../../components/gallery/GalleryApp'
+import initialImages from '../../data/generated/image-index.initial.json'
+import galleryGroups from '../../data/generated/gallery-groups.json'
+---
+<BaseLayout title="Beeldarchief · Daniel Willaeys archief" description="Chronologisch en semantisch beeldarchief van alle foto’s uit het fruitarchief.">
+  <div id="gallery-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Beeldarchief laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Daniel Willaeys</span>
+      <small>beeldarchief laden</small>
+    </div>
+  </div>
+  <GalleryApp initialImages={initialImages} initialGroups={galleryGroups} client:load />
+</BaseLayout>

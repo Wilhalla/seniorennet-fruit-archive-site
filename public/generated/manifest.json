@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-28T22:08:40Z",
+  "postCount": 3281,
+  "embeddingModel": "BAAI/bge-m3",
+  "textEmbeddingModel": "BAAI/bge-m3",
+  "imageEmbeddingModel": "sentence-transformers/clip-ViT-B-32",
+  "imageCount": 13144,
+  "imagePostCoverage": 0.6574,
+  "fusionMethod": "balanced-text-visual-concept-fusion-image-concat",
+  "textWeight": 1.0,
+  "imageWeight": 1.0,
+  "visualSemanticWeight": 1.0,
+  "clusterMethod": "category+agglomerative-cosine",
+  "clusterMode": "category",
+  "projectionMethod": "umap",
+  "relatedK": 10,
+  "contractVersion": 2
+}

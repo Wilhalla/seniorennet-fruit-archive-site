@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ChronologicalFeed from '../components/ChronologicalFeed'
+import { aggregatedPostIndex } from '../lib/postIndex'
+---
+<BaseLayout
+  title="Chronologische tijdlijn · Daniel Willaeys fruitarchief"
+  description="Alle berichten uit het fruitarchief van Daniel Willaeys."
+>
+  <ChronologicalFeed posts={aggregatedPostIndex} />
+</BaseLayout>

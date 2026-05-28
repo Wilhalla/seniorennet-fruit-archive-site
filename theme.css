@@ -1,0 +1,83 @@
+@theme {
+  /* ElevenLabs-inspired warm editorial palette */
+  --color-eggshell: #fdfcfc;
+  --color-powder: #f5f3f1;
+  --color-chalk: #e5e5e5;
+  --color-fog: #b1b0b0;
+  --color-gravel: #777169;
+  --color-slate: #a59f97;
+  --color-cinder: #57534e;
+  --color-obsidian: #000000;
+  --color-signal-blue: #0447ff;
+  --color-ember: #ff4704;
+  --color-voice-spectrum: #3d75d8;
+
+  /* Legacy semantic aliases kept for existing components */
+  --color-midnight-navy: var(--color-obsidian);
+  --color-deep-cosmos: var(--color-obsidian);
+  --color-hero-gradient: var(--color-gravel);
+  --color-blue-glow-radial: var(--color-signal-blue);
+  --color-ice-veil: var(--color-powder);
+  --color-ghost-canvas: var(--color-eggshell);
+  --color-pure-surface: #ffffff;
+  --color-slate-ink: var(--color-gravel);
+  --color-ash-medium: var(--color-slate);
+  --color-storm-gray: var(--color-cinder);
+  --color-fog-border: var(--color-fog);
+  --color-chartreuse-pulse: var(--color-obsidian);
+  --color-destructive: #c43333;
+  --color-rule: var(--color-chalk);
+  --color-data-chip: var(--color-powder);
+
+  /* Fonts: Waldenburg tokens map to available refined substitutes. */
+  --font-waldenburg: 'Fraunces Variable', ui-serif, Georgia, serif;
+  --font-waldenburgfh: 'DM Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-inter: 'DM Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-geist-mono: 'Geist Variable', 'IoskeleyMono', ui-monospace, monospace;
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-waldenburg);
+  --font-mono: var(--font-geist-mono);
+
+  /* Typography scale */
+  --text-caption: 10px;
+  --leading-caption: 1.2;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.44;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.4;
+  --text-heading: 32px;
+  --leading-heading: 1.17;
+  --tracking-heading: -0.64px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.13;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 48px;
+  --leading-display: 1.08;
+  --tracking-display: -0.96px;
+
+  /* Site scales */
+  --spacing-shell: var(--spacing-8);
+  --spacing-readable: 58ch;
+  --spacing-page: 75rem;
+  --spacing-prose: 52rem;
+  --container-readable: 58ch;
+  --container-page: 75rem;
+  --container-prose: 52rem;
+
+  /* Semantic radii */
+  --radius-card: var(--radius-2xl);
+  --radius-panel: var(--radius-3xl);
+  --radius-pill: calc(infinity * 1rem);
+
+  /* Hairline elevation */
+  --shadow-soft: rgba(0, 0, 0, 0.4) 0px 0px 1px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+  --shadow-blue: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+  --shadow-inset-ice: rgba(0, 0, 0, 0.075) 0px 0px 0px 0.5px inset;
+  --shadow-subtle: rgba(0, 0, 0, 0.075) 0px 0px 0px 0.5px inset;
+  --shadow-subtle-2: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+  --shadow-subtle-4: rgba(0, 0, 0, 0.4) 0px 0px 1px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+}

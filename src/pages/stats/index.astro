@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import StatsDashboard from '../../components/stats/StatsDashboard'
+import { buildArchiveStatsData } from '../../lib/archiveStats'
+
+const stats = buildArchiveStatsData()
+---
+<BaseLayout
+  title="Statistieken · Daniel Willaeys fruitarchief"
+  description="Data-inzichten over berichten, beelden, reacties, ritme en thema’s in het fruitarchief van Daniel Willaeys."
+>
+  <StatsDashboard stats={stats} client:load />
+</BaseLayout>

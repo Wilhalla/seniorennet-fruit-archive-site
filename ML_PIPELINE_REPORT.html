@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seniorennet Fruit Archive — Multimodal ML Pipeline Report</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbfaf8;
+      --paper: #ffffff;
+      --ink: #171717;
+      --muted: #66615b;
+      --line: #ded8cf;
+      --accent: #4f6f52;
+      --accent-soft: #eef4eb;
+      --code: #f3f0eb;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    h1, h2, h3 { line-height: 1.12; }
+    h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 12px; letter-spacing: -0.04em; }
+    h2 { font-size: 1.75rem; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 28px; }
+    h3 { font-size: 1.2rem; margin-top: 28px; }
+    p, li { color: var(--muted); }
+    strong { color: var(--ink); }
+    .lede { font-size: 1.15rem; max-width: 760px; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 20px;
+      margin: 18px 0;
+    }
+    code, pre {
+      background: var(--code);
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
+    code { padding: 0.12em 0.32em; }
+    pre { padding: 16px; overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+      padding: 10px 12px;
+    }
+    th { color: var(--ink); background: var(--accent-soft); }
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 1px solid var(--line);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-right: 6px;
+    }
+    .mermaid {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 18px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p><span class="pill">ML pipeline</span><span class="pill">multimodal archive</span><span class="pill">CPU-friendly</span></p>
+    <h1>Seniorennet Fruit Archive: Multimodal Topic Atlas Pipeline</h1>
+    <p class="lede">
+      This report documents the current machine-learning pipeline used to build the archive atlas from blog text and images. The goal is to produce useful topic clusters for a historic fruit archive where many posts are image-heavy and the text is often short captions.
+    </p>
+  </header>
+
+  <section>
+    <h2>Executive summary</h2>
+    <div class="card">
+      <p>
+        The pipeline now treats <strong>text and images as peer signals</strong>. Every post can receive a text embedding, a raw image embedding, and an embedded visual-concept representation derived from image/text CLIP similarity. Posts are first assigned to broad archive categories, then clustered within those categories using cosine-distance agglomerative clustering. This avoids one global clustering problem where travel, fruit, family, animals, and garden posts interfere with each other.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pipeline diagram</h2>
+    <div class="mermaid">
+flowchart TD
+  A[Archive posts<br/>Markdown/JSON/HTML] --> B[Normalize post records]
+  B --> B1[Clean HTML<br/>extract title, excerpt, body]
+  B --> B2[Extract dates<br/>year, month, season]
+  B --> B3[Resolve image paths]
+
+  B1 --> C[Text input<br/>title + excerpt + body sample]
+  C --> D[Text embedding<br/>BAAI/bge-m3]
+
+  B3 --> E[Image files]
+  E --> F[Image embedding<br/>CLIP via sentence-transformers]
+  F --> G[Average image vectors<br/>per post]
+
+  F --> H[Visual concept matching<br/>CLIP image ↔ prompt bank]
+  H --> I[Visual concept text<br/>e.g. Beeldinhoud: reizen & erfgoed]
+  I --> J[Visual concept embedding<br/>BAAI/bge-m3]
+
+  D --> K[Peer multimodal fusion]
+  G --> K
+  J --> K
+  K --> L[Final post vector]
+
+  B1 --> M[Broad category classifier<br/>rules + visual concepts]
+  H --> M
+  M --> N[Category buckets<br/>Fruit, Travel, Garden, Animals, Family...]
+
+  L --> O[Cluster inside each category<br/>Agglomerative cosine clustering]
+  N --> O
+  O --> P[Stable topic IDs]
+  O --> Q[Topic labels<br/>category + text keywords + visual concepts]
+
+  L --> R[2D projection<br/>UMAP]
+  R --> S[map-points.json]
+  P --> T[posts-index.json]
+  Q --> U[topics.json]
+  L --> V[related-posts.json<br/>nearest neighbors]
+  U --> W[topic-calendar.json]
+    </div>
+  </section>
+
+  <section>
+    <h2>Inputs and normalization</h2>
+    <p>The pipeline starts from archive posts and normalizes them into a stable internal structure:</p>
+    <ul>
+      <li><strong>Post identity:</strong> id, slug, URL.</li>
+      <li><strong>Text:</strong> title, excerpt, cleaned body text.</li>
+      <li><strong>Time:</strong> normalized date, year, month, season.</li>
+      <li><strong>Media:</strong> local paths to images in <code>public/archive-images/...</code>.</li>
+    </ul>
+    <p>
+      HTML tags are removed, whitespace is normalized, and common archive/spam/noise words are excluded from keyword-based labels. This matters because the original archive contains continuation posts, imported HTML, old reactions, and photo-album style entries.
+    </p>
+  </section>
+
+  <section>
+    <h2>Text embeddings</h2>
+    <table>
+      <tr><th>Choice</th><th>Reason</th></tr>
+      <tr><td><code>BAAI/bge-m3</code></td><td>Strong general-purpose multilingual embedding model; handles Dutch archive text better than older English-only models.</td></tr>
+      <tr><td><code>sentence-transformers</code></td><td>Runs locally on CPU; no API dependency; deterministic enough for static preprocessing.</td></tr>
+      <tr><td>Input = title + excerpt + body sample</td><td>Keeps the author’s own text dominant while avoiding very long noisy tails such as reactions/spam.</td></tr>
+    </table>
+    <p>
+      Text embeddings turn each post’s language into a vector where semantically similar posts should be closer together.
+    </p>
+  </section>
+
+  <section>
+    <h2>Image embeddings</h2>
+    <table>
+      <tr><th>Choice</th><th>Reason</th></tr>
+      <tr><td><code>sentence-transformers/clip-ViT-B-32</code></td><td>CPU-friendly CLIP model already compatible with the local stack. It is not the strongest possible visual model, but it can run on this laptop.</td></tr>
+      <tr><td>Embed every image</td><td>Many archive posts are primarily photographic; ignoring images would make those posts nearly invisible to topic modeling.</td></tr>
+      <tr><td>Average image vectors per post</td><td>Creates one compact post-level visual vector from potentially many images. This is simple and scalable, though imperfect for mixed albums.</td></tr>
+    </table>
+    <p>
+      The image vector represents visual similarity directly: apples should be closer to apples, churches closer to churches, groups of people closer to other group photos, etc.
+    </p>
+  </section>
+
+  <section>
+    <h2>Visual concept extraction</h2>
+    <p>
+      Raw image embeddings are useful but hard to label. The pipeline therefore compares each image vector against a curated bank of CLIP text prompts, such as:
+    </p>
+    <pre><code>appels
+peren
+pruimen
+bessen
+snoeien & enten
+reizen & erfgoed
+kerken & kastelen
+musea & steden
+mensen & familie
+dieren & insecten
+documenten</code></pre>
+    <p>
+      This produces lightweight visual concepts for every image. These concepts are then summarized per post and converted into text such as:
+    </p>
+    <pre><code>Beeldinhoud: reizen & erfgoed, kerken & kastelen, musea & steden.</code></pre>
+    <p>
+      That visual-concept sentence is embedded with the same text embedding model. This gives the clusterer a semantic bridge between image content and Dutch archive concepts without requiring a heavy generative vision-language model.
+    </p>
+  </section>
+
+  <section>
+    <h2>Multimodal fusion</h2>
+    <p>Each post can have three vector representations:</p>
+    <ol>
+      <li><strong>Text vector</strong> from title/excerpt/body.</li>
+      <li><strong>Raw image vector</strong> from CLIP image embeddings.</li>
+      <li><strong>Visual-concept vector</strong> from CLIP-derived visual concepts embedded as text.</li>
+    </ol>
+    <p>The current fusion method is weighted concatenation followed by L2 normalization:</p>
+    <pre><code>final_vector = normalize(concat(
+  text_vector           * text_weight,
+  image_vector          * image_weight,
+  visual_concept_vector * visual_semantic_weight
+))</code></pre>
+    <p>Defaults:</p>
+    <pre><code>text_weight = 1.0
+image_weight = 1.0
+visual_semantic_weight = 1.0</code></pre>
+    <p>
+      Short, image-heavy posts receive extra image influence. This is intentional: a post with twelve images and one short caption should not be treated as weak text; the images are the post.
+    </p>
+  </section>
+
+  <section>
+    <h2>Broad category classification</h2>
+    <p>
+      Before clustering, posts are assigned to a broad category using a lightweight rule-assisted classifier. It uses both text terms and visual concepts.
+    </p>
+    <table>
+      <tr><th>Category</th><th>Example evidence</th></tr>
+      <tr><td>Reizen & erfgoed</td><td>travel visuals, churches, castles, museums, Antwerp, Brogdale, Davidsfonds</td></tr>
+      <tr><td>Fruit & rassen</td><td>apple/pear/plum/berry visuals, cultivar names, orchard fruit terms</td></tr>
+      <tr><td>Tuin & teelt</td><td>garden, pruning, grafting, compost, soil, greenhouse</td></tr>
+      <tr><td>Dieren & insecten</td><td>birds, bees, chickens, caterpillars, pests</td></tr>
+      <tr><td>Mensen & familie</td><td>family names, visits, parties, people/group visuals</td></tr>
+      <tr><td>Documenten & bronnen</td><td>documents, tables, charts, scans, articles</td></tr>
+      <tr><td>Overig</td><td>insufficient evidence for the above</td></tr>
+    </table>
+    <p>
+      This preprocessing step is deliberately not pure ML. Archive domains often have obvious high-level structure. Encoding that structure reduces nonsense clusters and makes the downstream ML problem easier.
+    </p>
+  </section>
+
+  <section>
+    <h2>Clustering algorithm</h2>
+    <h3>Current default: category-aware agglomerative clustering</h3>
+    <p>
+      The current default is <strong>not</strong> one global KMeans run. Instead:
+    </p>
+    <ol>
+      <li>Split posts into broad category buckets.</li>
+      <li>Inside each bucket, cluster final multimodal vectors.</li>
+      <li>Use cosine distance because embeddings are directional semantic vectors.</li>
+      <li>Merge tiny clusters into the nearest larger cluster.</li>
+    </ol>
+    <p>
+      Algorithmically, agglomerative clustering starts with each post as its own cluster and repeatedly merges the closest clusters until a distance threshold is reached. We use average linkage over cosine distance.
+    </p>
+
+    <h3>Why agglomerative clustering?</h3>
+    <table>
+      <tr><th>Reason</th><th>Explanation</th></tr>
+      <tr><td>No forced global geometry</td><td>Unlike KMeans, it does not assume spherical clusters around centroids.</td></tr>
+      <tr><td>Works on cosine distances</td><td>Good fit for normalized text/image embeddings.</td></tr>
+      <tr><td>CPU-friendly at this archive size</td><td>~3k posts is manageable locally; the expensive part is image embedding, not clustering.</td></tr>
+      <tr><td>Category-local thresholds</td><td>Travel posts and fruit posts can form clusters independently instead of competing in one space.</td></tr>
+    </table>
+
+    <h3>Why not global KMeans?</h3>
+    <p>
+      KMeans always forces every post into exactly one of <em>K</em> clusters. That produced flat and sometimes unnatural themes, such as travel posts labeled by repeated terms like “Rijden, Kerk, Antwerpen”. It also mixes broad themes with fine themes because the whole archive is compressed into one clustering problem.
+    </p>
+
+    <h3>Why not rely only on HDBSCAN?</h3>
+    <p>
+      HDBSCAN was tried as the preferred density-based option, but on this corpus it often produced very few large/skewed clusters and then required a fallback. That indicates the embedding space is not naturally density-separated enough at the global level. HDBSCAN remains available in legacy/global mode, but it is not currently the best default for this archive.
+    </p>
+  </section>
+
+  <section>
+    <h2>Topic labeling</h2>
+    <p>
+      A cluster label is built from:
+    </p>
+    <ul>
+      <li>the broad category label, e.g. <strong>Reizen & erfgoed</strong>;</li>
+      <li>cluster-specific frequent text terms;</li>
+      <li>cluster-specific visual concepts.</li>
+    </ul>
+    <p>Example labels:</p>
+    <pre><code>Reizen & Erfgoed, Antwerpen, Kerk, Voc, Noorwegen
+Fruit & Rassen, Appels, Pruimen, Lescovacz
+Tuin & Teelt, Arboretum, Tuin, Museumtuin
+Mensen & Familie, Ludo, Jonathan, Tinneke</code></pre>
+    <p>
+      This is still not as good as true LLM labeling, but it is a major improvement over raw keyword-only labels. Future improvement: send representative titles, excerpts, and image concepts for each cluster to an LLM and ask it to produce a concise Dutch archive label.
+    </p>
+  </section>
+
+  <section>
+    <h2>2D atlas projection</h2>
+    <p>
+      The final multimodal vectors are projected to two dimensions with <strong>UMAP</strong>. UMAP is used only for visualization, not as the source of truth for topic labels.
+    </p>
+    <table>
+      <tr><th>Choice</th><th>Reason</th></tr>
+      <tr><td>UMAP</td><td>Preserves local neighborhoods well, giving a map where nearby posts are usually related.</td></tr>
+      <tr><td>Cosine metric</td><td>Appropriate for normalized semantic embeddings.</td></tr>
+      <tr><td>Static preprocessing</td><td>The browser only reads JSON; it never runs UMAP or ML.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Outputs</h2>
+    <p>The pipeline writes static JSON to:</p>
+    <pre><code>public/generated/
+src/data/generated/</code></pre>
+    <table>
+      <tr><th>File</th><th>Purpose</th></tr>
+      <tr><td><code>map-points.json</code></td><td>2D coordinates and display metadata for each post.</td></tr>
+      <tr><td><code>topics.json</code></td><td>Cluster/topic definitions, labels, keywords, counts.</td></tr>
+      <tr><td><code>posts-index.json</code></td><td>Full post index with topic IDs; data-side only.</td></tr>
+      <tr><td><code>related-posts.json</code></td><td>Nearest-neighbor related posts by final multimodal vector.</td></tr>
+      <tr><td><code>manifest.json</code></td><td>Model names, weights, counts, clustering mode, generated timestamp.</td></tr>
+      <tr><td><code>topic-calendar.json</code></td><td>Topic × month/season heatmap data.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Operational notes</h2>
+    <p>Smoke test with a subset before a full run:</p>
+    <pre><code>.venv/bin/python scripts/semantic_atlas.py \
+  --limit 80 \
+  --image-limit 120 \
+  --batch-size 8 \
+  --image-batch-size 16 \
+  --output-public /tmp/semantic-atlas-smoke-public \
+  --output-data /tmp/semantic-atlas-smoke-data</code></pre>
+    <p>Full run:</p>
+    <pre><code>.venv/bin/python scripts/semantic_atlas.py && .venv/bin/python scripts/topic_calendar.py</code></pre>
+    <p>Current background run convention:</p>
+    <pre><code>semantic-atlas-full.pid
+semantic-atlas-full.log</code></pre>
+  </section>
+
+  <section>
+    <h2>Known limitations and future improvements</h2>
+    <ul>
+      <li><strong>Image averaging can blur mixed albums.</strong> A future version could use multiple image prototypes per post or max/attention pooling.</li>
+      <li><strong>CLIP ViT-B/32 is CPU-friendly but old.</strong> Better models such as SigLIP or Jina CLIP v2 may improve visual semantics, if they can run acceptably on the laptop.</li>
+      <li><strong>Labels are still heuristic.</strong> LLM-based cluster naming would produce more natural labels such as “Culturele daguitstappen” instead of lists of terms.</li>
+      <li><strong>Category rules need tuning.</strong> The taxonomy is intentionally editable and should evolve as bad clusters are observed.</li>
+      <li><strong>OCR is not included.</strong> Document/sign images could become much better with OCR text extraction.</li>
+    </ul>
+  </section>
+</main>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+</script>
+</body>
+</html>

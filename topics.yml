@@ -1,0 +1,103 @@
+# Human-reviewed labels for the semantic atlas.
+#
+# These labels were generated after the latest full multimodal/category
+# clustering run and reviewed against representative posts, text keywords, and
+# visual keywords. Topic IDs can shift after changing clustering settings or
+# regenerating from a changed corpus; when that happens, regenerate label
+# suggestions.
+
+topics:
+  topic-01:
+    label: "Culturele daguitstappen"
+  topic-02:
+    label: "Tuin en moestuin"
+  topic-03:
+    label: "Biologische kleinfruitteelt"
+  topic-04:
+    label: "Reisreportages"
+  topic-05:
+    label: "Appelrassen"
+  topic-06:
+    label: "Bessen en bramen"
+  topic-07:
+    label: "Pomologische uitstappen"
+  topic-08:
+    label: "Historische stadsuitstappen"
+  topic-09:
+    label: "Pruimenrassen"
+  topic-10:
+    label: "Fruitvragen en problemen"
+  topic-11:
+    label: "Fruitcollecties"
+  topic-12:
+    label: "Tuinbezoeken"
+  topic-13:
+    label: "Perenrassen"
+  topic-14:
+    label: "Bramen en frambozen"
+  topic-15:
+    label: "Erfgoedreizen"
+  topic-16:
+    label: "Velt en ecotuinen"
+  topic-17:
+    label: "Bezoeken en feesten"
+  topic-18:
+    label: "Appelbloesem"
+  topic-19:
+    label: "Vogels en bijen"
+  topic-20:
+    label: "Herfstframbozen"
+  topic-21:
+    label: "Bomen en natuur"
+  topic-22:
+    label: "Vlinders"
+  topic-23:
+    label: "Aardbeienteelt"
+  topic-24:
+    label: "Biologische landbouw"
+  topic-25:
+    label: "Wateroverlast in tuin"
+  topic-26:
+    label: "Vlinders en rupsen"
+  topic-27:
+    label: "Vorst en weer"
+  topic-28:
+    label: "Kerspruimen"
+  topic-29:
+    label: "Reisfoto's"
+  topic-30:
+    label: "Familiefeesten"
+  topic-31:
+    label: "Pomologische exposities"
+  topic-32:
+    label: "Tuinwerk"
+  topic-33:
+    label: "Kippen houden"
+  topic-34:
+    label: "Engelse tuinen"
+  topic-35:
+    label: "Uilen en kauwen"
+  topic-36:
+    label: "Vogelzang"
+  topic-37:
+    label: "Koekoekroep"
+  topic-38:
+    label: "Walnoten"
+  topic-39:
+    label: "Afrikaans tuinfeest"
+  topic-40:
+    label: "Biologische voeding"
+  topic-41:
+    label: "Resistente rassen"
+  topic-42:
+    label: "Kleine zoogdieren"
+  topic-43:
+    label: "Leen en kinderen"
+  topic-44:
+    label: "Genetisch teeltonderzoek"
+  topic-45:
+    label: "Familiefoto's"
+  topic-46:
+    label: "Keda's feest"
+  topic-47:
+    label: "Pomologische artikels"

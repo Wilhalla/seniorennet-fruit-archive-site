@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import GalleryViewerApp from '../../../components/gallery/GalleryViewerApp'
+import initialImages from '../../../data/generated/image-index.initial.json'
+---
+<BaseLayout title="Diashow · Daniel Willaeys archief" description="Bekijk beelden uit het archief als diashow." hideFooter={true}>
+  <GalleryViewerApp initialImages={initialImages} client:load />
+</BaseLayout>

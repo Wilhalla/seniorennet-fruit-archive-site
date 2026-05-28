@@ -1,0 +1,103 @@
+---
+import { Image } from 'astro:assets'
+import * as cheerio from 'cheerio'
+import { archiveAssetUrl, rewriteArchiveAssetUrls } from '../lib/assetUrls'
+import { imageMetadata } from '../lib/imageAssets'
+
+type Props = {
+  html: string
+  maxWidth?: number
+}
+
+type HtmlPart = {
+  type: 'html'
+  html: string
+}
+
+type ImagePart = {
+  type: 'image'
+  src: string
+  alt: string
+  className?: string
+  title?: string
+  loading: 'eager' | 'lazy'
+  decoding: 'async' | 'auto' | 'sync'
+  width: number
+  height: number
+}
+
+type Part = HtmlPart | ImagePart
+
+const { html, maxWidth = 896 } = Astro.props
+
+function attrsFromImgTag(imgTag: string) {
+  const $ = cheerio.load(imgTag, null, false)
+  return $('img').first().attr() ?? {}
+}
+
+async function htmlParts(sourceHtml: string): Promise<Part[]> {
+  const parts: Part[] = []
+  const imgTagPattern = /<img\b[^>]*>/gi
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+
+  while ((match = imgTagPattern.exec(sourceHtml)) !== null) {
+    const matchIndex = match.index
+    const imgTag = match[0]
+
+    if (matchIndex > lastIndex) {
+      parts.push({ type: 'html', html: rewriteArchiveAssetUrls(sourceHtml.slice(lastIndex, matchIndex)) })
+    }
+
+    const attrs = attrsFromImgTag(imgTag)
+    const src = attrs.src ?? ''
+    const metadata = src.startsWith('/archive-images/') ? await imageMetadata(src) : undefined
+
+    if (metadata) {
+      const width = Math.max(1, Math.min(metadata.width, maxWidth))
+      const height = Math.max(1, Math.round((metadata.height / metadata.width) * width))
+      const requestedDecoding = attrs.decoding === 'auto' || attrs.decoding === 'sync' ? attrs.decoding : 'async'
+
+      parts.push({
+        type: 'image',
+        src: archiveAssetUrl(src),
+        alt: attrs.alt ?? '',
+        className: attrs.class,
+        title: attrs.title,
+        loading: attrs.loading === 'eager' ? 'eager' : 'lazy',
+        decoding: requestedDecoding,
+        width,
+        height,
+      })
+    } else {
+      parts.push({ type: 'html', html: rewriteArchiveAssetUrls(imgTag) })
+    }
+
+    lastIndex = matchIndex + imgTag.length
+  }
+
+  if (lastIndex < sourceHtml.length) {
+    parts.push({ type: 'html', html: rewriteArchiveAssetUrls(sourceHtml.slice(lastIndex)) })
+  }
+
+  return parts
+}
+
+const parts = await htmlParts(html)
+---
+{parts.map((part) => (
+  part.type === 'html' ? (
+    <Fragment set:html={part.html} />
+  ) : (
+    <Image
+      src={part.src}
+      alt={part.alt}
+      class={part.className}
+      title={part.title}
+      loading={part.loading}
+      decoding={part.decoding}
+      width={part.width}
+      height={part.height}
+    />
+  )
+))}

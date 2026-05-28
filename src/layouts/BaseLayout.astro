@@ -1,0 +1,57 @@
+---
+import '../styles/global.css'
+import SiteHeader from '../components/SiteHeader'
+import { s3AssetBaseUrl, useRemoteImageAssets } from '../lib/assetUrls'
+
+type Props = {
+  title?: string
+  description?: string
+  hideFooter?: boolean
+}
+
+const {
+  title = 'Daniel Willaeys fruitarchief',
+  description = 'Bewaarde berichten, foto’s en reacties uit het fruitarchief van Daniel Willaeys.',
+  hideFooter = false,
+} = Astro.props
+
+const imageAssetOrigin = (() => {
+  if (!useRemoteImageAssets || !s3AssetBaseUrl) return ''
+  try {
+    return new URL(s3AssetBaseUrl).origin
+  } catch {
+    return ''
+  }
+})()
+---
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    {imageAssetOrigin && <link rel="dns-prefetch" href={imageAssetOrigin} />}
+    {imageAssetOrigin && <link rel="preconnect" href={imageAssetOrigin} crossorigin />}
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="apple-page-ornament apple-page-ornament--left" aria-hidden="true"></div>
+    <div class="apple-page-ornament apple-page-ornament--right" aria-hidden="true"></div>
+    <SiteHeader client:load />
+    <main>
+      <slot />
+    </main>
+    {!hideFooter && (
+      <footer class="source-note site-shell" aria-label="Bronvermelding">
+        <p>
+          Dit archief is geëxtraheerd uit Daniel Willaeys’ oorspronkelijke blogposts op
+          <a href="https://blog.seniorennet.be/fruit/" rel="noreferrer" target="_blank">fruit</a>
+          en
+          <a href="https://blog.seniorennet.be/fruit2/" rel="noreferrer" target="_blank">fruit2</a>.
+        </p>
+      </footer>
+    )}
+  </body>
+</html>

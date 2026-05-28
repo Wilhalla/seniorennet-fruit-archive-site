@@ -1,0 +1,909 @@
+[
+  {
+    "id": "image-cluster-01",
+    "postCount": 222,
+    "imageCount": 483,
+    "generatedLabel": "tuin, pruimen, bessen, bloesem",
+    "representativeImageIds": [
+      "img-cd7f538c888c1dfa",
+      "img-aeaa8eae2429ad22",
+      "img-beee383412ca5d54",
+      "img-df8413ea3e27163e",
+      "img-677752686b409505",
+      "img-567e6621ce147741",
+      "img-23c334a44c8f3522",
+      "img-e8a8737db01409ea"
+    ]
+  },
+  {
+    "id": "image-cluster-02",
+    "postCount": 187,
+    "imageCount": 422,
+    "generatedLabel": "appels, peren, pruimen, tuin",
+    "representativeImageIds": [
+      "img-eda2e598f69f283a",
+      "img-f10f97bab57b1424",
+      "img-7586d21818c1da78",
+      "img-75f4aa2f9bfff56e",
+      "img-4c8dfbf84a947900",
+      "img-b585a17e8a61e66d",
+      "img-f459a42bafc861f9",
+      "img-576e7a8c12080b29"
+    ]
+  },
+  {
+    "id": "image-cluster-03",
+    "postCount": 243,
+    "imageCount": 381,
+    "generatedLabel": "mensen, tuin, dieren, erfgoed",
+    "representativeImageIds": [
+      "img-20395613e10fcc2f",
+      "img-5a53c5818094e2b7",
+      "img-2a07549775d95131",
+      "img-7d703d6984b61adf",
+      "img-6daf96d584f22ca0",
+      "img-e1a5758a16b15620",
+      "img-35e7c777f0bb976f",
+      "img-f497f942900483b0"
+    ]
+  },
+  {
+    "id": "image-cluster-04",
+    "postCount": 178,
+    "imageCount": 381,
+    "generatedLabel": "mensen, dieren, documenten, tuin",
+    "representativeImageIds": [
+      "img-45f481e3eb822248",
+      "img-e0bc50c8e2137f61",
+      "img-e96d322e8e6b3c0a",
+      "img-cc07c044311386f8",
+      "img-a4a2c4d6adef43e1",
+      "img-47ca95db09d6f048",
+      "img-b1b9b813d1fbb9ba",
+      "img-2a9ec4a163f9591a"
+    ]
+  },
+  {
+    "id": "image-cluster-05",
+    "postCount": 192,
+    "imageCount": 351,
+    "generatedLabel": "tuin, mensen, dieren, erfgoed",
+    "representativeImageIds": [
+      "img-65d5d0c135bfd912",
+      "img-8da7cd0aa53ce5be",
+      "img-11c5873701ca64ad",
+      "img-33aa5e463f9e26f1",
+      "img-054895a5b0ac16b6",
+      "img-90589ff8762920fa",
+      "img-2b0890dd0623ff79",
+      "img-ee8f7902e8f2e0f3"
+    ]
+  },
+  {
+    "id": "image-cluster-06",
+    "postCount": 193,
+    "imageCount": 350,
+    "generatedLabel": "peren, appels, pruimen, tuin",
+    "representativeImageIds": [
+      "img-e02e3ad39d93d185",
+      "img-7cee4bfe4777232f",
+      "img-85e3af8dd901a4f8",
+      "img-c3a3563792196100",
+      "img-15404c1c98bfc7bd",
+      "img-654b03c6a60e2ae3",
+      "img-0810b13e753170fb",
+      "img-d4fa3d8188fac02b"
+    ]
+  },
+  {
+    "id": "image-cluster-07",
+    "postCount": 164,
+    "imageCount": 323,
+    "generatedLabel": "tuin, peren, dieren, bessen",
+    "representativeImageIds": [
+      "img-92e100d46dfc9099",
+      "img-8761030ada121372",
+      "img-8747fcf8bdcf633d",
+      "img-26e44a869d06b71d",
+      "img-342115e6ff934c6c",
+      "img-d12c109fe1185003",
+      "img-c847244cc7ba2026",
+      "img-79d8319d4fa65d51"
+    ]
+  },
+  {
+    "id": "image-cluster-08",
+    "postCount": 169,
+    "imageCount": 316,
+    "generatedLabel": "mensen, dieren, tuin, erfgoed",
+    "representativeImageIds": [
+      "img-56e730c3be666b8b",
+      "img-9602a601d56ed5ab",
+      "img-f4a7ff048affe315",
+      "img-7ac8034c07a3a4cf",
+      "img-ed4f0682e78fd7af",
+      "img-38a801e327e334b2",
+      "img-8c931169a7d273dc",
+      "img-a249ed5b477257b6"
+    ]
+  },
+  {
+    "id": "image-cluster-09",
+    "postCount": 154,
+    "imageCount": 304,
+    "generatedLabel": "tuin, dieren, pruimen, bessen",
+    "representativeImageIds": [
+      "img-d7a262d4a2556703",
+      "img-862dfeec863b38b8",
+      "img-f33f9faa3a7b954b",
+      "img-0ae66ceab1f7bb02",
+      "img-c8543f427109b6f5",
+      "img-a8031aac15c98073",
+      "img-3aa43d548fea4af6",
+      "img-a54110e7f2bfeb6d"
+    ]
+  },
+  {
+    "id": "image-cluster-10",
+    "postCount": 204,
+    "imageCount": 303,
+    "generatedLabel": "tuin, dieren, peren, appels",
+    "representativeImageIds": [
+      "img-e19148c653f8f0c7",
+      "img-5363053855117195",
+      "img-7146aebd447fd40f",
+      "img-dbcefb022897add8",
+      "img-ff15790be3f26f96",
+      "img-667fb4817fd3b252",
+      "img-801ad5bc777026eb",
+      "img-1274778bff5c111e"
+    ]
+  },
+  {
+    "id": "image-cluster-11",
+    "postCount": 196,
+    "imageCount": 301,
+    "generatedLabel": "tuin, mensen, dieren, appels",
+    "representativeImageIds": [
+      "img-6dc42c728c70cc8e",
+      "img-7509aa7f6f66db6e",
+      "img-3cec76e3ed112dc7",
+      "img-7969910bb55353bb",
+      "img-28e475df7424d268",
+      "img-cdd58dc754971651",
+      "img-2c7bc5cee8a6eedf",
+      "img-ff93a69ee86a01ec"
+    ]
+  },
+  {
+    "id": "image-cluster-12",
+    "postCount": 90,
+    "imageCount": 299,
+    "generatedLabel": "appels, peren, tuin, pruimen",
+    "representativeImageIds": [
+      "img-18c3940777833e59",
+      "img-108d5754b3b2b700",
+      "img-b7f9d5d995a610f8",
+      "img-939002123e08406f",
+      "img-d5728b9846dc65d1",
+      "img-49757591f9f56d6c",
+      "img-94429fcec472aeb7",
+      "img-d847d1f53d7dda2a"
+    ]
+  },
+  {
+    "id": "image-cluster-13",
+    "postCount": 199,
+    "imageCount": 294,
+    "generatedLabel": "mensen, erfgoed, tuin, dieren",
+    "representativeImageIds": [
+      "img-53d685c663b22a92",
+      "img-fd196ec5b28932a7",
+      "img-98694e819735157d",
+      "img-4e5b4e416e743188",
+      "img-8e3c568f400724d6",
+      "img-35704e37c5743fc6",
+      "img-395bc65585d34e51",
+      "img-eaa181961048bfa7"
+    ]
+  },
+  {
+    "id": "image-cluster-14",
+    "postCount": 161,
+    "imageCount": 294,
+    "generatedLabel": "mensen, erfgoed, tuin, peren",
+    "representativeImageIds": [
+      "img-e428c4267c42b358",
+      "img-821975963bd80dc7",
+      "img-f2606b7fd89ce85c",
+      "img-3b8dc8b1e6ea6cba",
+      "img-4387603fcd309942",
+      "img-0ddb51c5a2be0ca1",
+      "img-d4f727f8de84f7e3",
+      "img-0d739f1cf1531f20"
+    ]
+  },
+  {
+    "id": "image-cluster-15",
+    "postCount": 118,
+    "imageCount": 284,
+    "generatedLabel": "peren, appels, pruimen, tuin",
+    "representativeImageIds": [
+      "img-939bcedc7ce01e3a",
+      "img-47ec8c0454641d15",
+      "img-7bfcb9c3ced513c6",
+      "img-67167b3a929cb32a",
+      "img-dc511062ef1c3116",
+      "img-b8f05cc1d95865de",
+      "img-df6dde27a5b218e1",
+      "img-1c40a73ed7a88259"
+    ]
+  },
+  {
+    "id": "image-cluster-16",
+    "postCount": 163,
+    "imageCount": 283,
+    "generatedLabel": "tuin, mensen, dieren, erfgoed",
+    "representativeImageIds": [
+      "img-252a7f70efd17e59",
+      "img-f05652672ded63f5",
+      "img-c8cd87b3a9bd0541",
+      "img-e0e7de00b3f17f6e",
+      "img-73f893e345a9c693",
+      "img-53ef831b00593da0",
+      "img-ba7d5da94f56eb8f",
+      "img-e3762135ba5c539a"
+    ]
+  },
+  {
+    "id": "image-cluster-17",
+    "postCount": 105,
+    "imageCount": 281,
+    "generatedLabel": "mensen, documenten, dieren, tuin",
+    "representativeImageIds": [
+      "img-f4fc3e2eff1a3008",
+      "img-3f8d872429357e3f",
+      "img-6a8afb67fc4c4d45",
+      "img-67524d717529e796",
+      "img-1f5aec8de28a12a0",
+      "img-fa243111bc305a0e",
+      "img-5b14ec848d129bb0",
+      "img-898060608f1e9b46"
+    ]
+  },
+  {
+    "id": "image-cluster-18",
+    "postCount": 168,
+    "imageCount": 281,
+    "generatedLabel": "tuin, mensen, appels, dieren",
+    "representativeImageIds": [
+      "img-70867cc2f161fe4f",
+      "img-626cbbe8832b51c8",
+      "img-6f8ff60e5c8b7d8d",
+      "img-c126e6237a81cfb1",
+      "img-76469cb81ec652ec",
+      "img-d35b793e2f959a52",
+      "img-40b5c09ff8dfeb20",
+      "img-631caaeb52c43794"
+    ]
+  },
+  {
+    "id": "image-cluster-19",
+    "postCount": 179,
+    "imageCount": 279,
+    "generatedLabel": "mensen, erfgoed, tuin, dieren",
+    "representativeImageIds": [
+      "img-44edef0e7c7c5513",
+      "img-c4d3d6d38daa666b",
+      "img-36a0289b2f590031",
+      "img-20942a2bf5cc73ad",
+      "img-f8454a633d6c5587",
+      "img-b26ce18339e600cc",
+      "img-2f822ccd991fdfc9",
+      "img-8e05ee1088d2595d"
+    ]
+  },
+  {
+    "id": "image-cluster-20",
+    "postCount": 174,
+    "imageCount": 278,
+    "generatedLabel": "mensen, dieren, tuin, documenten",
+    "representativeImageIds": [
+      "img-06af4188c06ed36e",
+      "img-1156497fc2e72e12",
+      "img-f10b2cf65d66cf82",
+      "img-36ecb7bab10d24dd",
+      "img-5019091e593f17de",
+      "img-e227d8decf2dd1a3",
+      "img-e2e5e5d974c8beb4",
+      "img-3ddf59dc662692ea"
+    ]
+  },
+  {
+    "id": "image-cluster-21",
+    "postCount": 135,
+    "imageCount": 274,
+    "generatedLabel": "tuin, dieren, bloesem, bessen",
+    "representativeImageIds": [
+      "img-b5c42141eaadabd7",
+      "img-a573c1a46a07e958",
+      "img-79fc7ae46f28db5c",
+      "img-a345ae0f7fb1b7a5",
+      "img-63ebb950f7320a27",
+      "img-2852dec0d874f72a",
+      "img-da5cf1a38b843c60",
+      "img-9f588a5e2c26dd43"
+    ]
+  },
+  {
+    "id": "image-cluster-22",
+    "postCount": 104,
+    "imageCount": 266,
+    "generatedLabel": "mensen, erfgoed, dieren, tuin",
+    "representativeImageIds": [
+      "img-810ac4fd82aada95",
+      "img-d0382ba3ec850c20",
+      "img-0437329577ec9b30",
+      "img-f65ee9f44c16080d",
+      "img-c3e1a709ecc2eda3",
+      "img-e8fca7a6d453e043",
+      "img-290de1e8a225891b",
+      "img-8953952ba7d85c6e"
+    ]
+  },
+  {
+    "id": "image-cluster-23",
+    "postCount": 112,
+    "imageCount": 254,
+    "generatedLabel": "mensen, dieren, erfgoed, tuin",
+    "representativeImageIds": [
+      "img-5f228492d4d5c937",
+      "img-0d3efa97ad49cc5a",
+      "img-f7c2f42d6783e0ab",
+      "img-402e3c9a4ddf2e76",
+      "img-00f8d2780f1455d1",
+      "img-8b2aae29093e441e",
+      "img-bafee4a934e1f62a",
+      "img-0a550d12f2ab4939"
+    ]
+  },
+  {
+    "id": "image-cluster-24",
+    "postCount": 132,
+    "imageCount": 251,
+    "generatedLabel": "tuin, appels, peren, dieren",
+    "representativeImageIds": [
+      "img-a042baf72a16b99b",
+      "img-d4cef5630da774fd",
+      "img-931fc2d8da5a7334",
+      "img-713a319dd23a2cd5",
+      "img-ad3c8b5331be7f24",
+      "img-40f077465f381f2a",
+      "img-8879ef2b87aea440",
+      "img-10bfa0f1bad81b42"
+    ]
+  },
+  {
+    "id": "image-cluster-25",
+    "postCount": 135,
+    "imageCount": 248,
+    "generatedLabel": "tuin, dieren, mensen, peren",
+    "representativeImageIds": [
+      "img-08d466361264da55",
+      "img-895a350115c5ca18",
+      "img-a5aacbc2d9756294",
+      "img-fa5e9a8b618f5abe",
+      "img-05a07455ef59bada",
+      "img-4bc004e64c4654d6",
+      "img-c07aee9b50b9e444",
+      "img-2ea063187392ddbf"
+    ]
+  },
+  {
+    "id": "image-cluster-26",
+    "postCount": 184,
+    "imageCount": 246,
+    "generatedLabel": "documenten, mensen, tuin, erfgoed",
+    "representativeImageIds": [
+      "img-ee5f2a8c35faf194",
+      "img-4fa834b390ea93ce",
+      "img-143a781ada8cb0fc",
+      "img-6514520221cb3525",
+      "img-bf88a4455e6a35d2",
+      "img-9f241096e2a3b0e3",
+      "img-b477ad7a928b8475",
+      "img-5bd04f81fecd5f95"
+    ]
+  },
+  {
+    "id": "image-cluster-27",
+    "postCount": 142,
+    "imageCount": 237,
+    "generatedLabel": "erfgoed, mensen, dieren, peren",
+    "representativeImageIds": [
+      "img-e9cfcb11ddc2b426",
+      "img-35b0953e91b4f616",
+      "img-46e554bd17544aa3",
+      "img-d4e7bc172de871df",
+      "img-3b93220d1b2ed825",
+      "img-aa964ad3ad684b81",
+      "img-06d14e9cff1ed8d4",
+      "img-7700296b7fb34dc6"
+    ]
+  },
+  {
+    "id": "image-cluster-28",
+    "postCount": 88,
+    "imageCount": 233,
+    "generatedLabel": "bloesem, pruimen, appels, peren",
+    "representativeImageIds": [
+      "img-f299ccf647b6382e",
+      "img-59622c508696cd18",
+      "img-8e656a7730a74af6",
+      "img-b0cc052c9779fc7d",
+      "img-5b40804c8eb18c89",
+      "img-991dbbc65d8180c4",
+      "img-1555e8d22636c50f",
+      "img-413c7be454782982"
+    ]
+  },
+  {
+    "id": "image-cluster-29",
+    "postCount": 101,
+    "imageCount": 223,
+    "generatedLabel": "erfgoed, mensen, dieren, documenten",
+    "representativeImageIds": [
+      "img-cc603aa616746bb0",
+      "img-3a8f4e0e433a5705",
+      "img-cd8f8be44b2aed8b",
+      "img-a105ce2a8887317f",
+      "img-06bef9c189ffb495",
+      "img-361e7c205fb4b018",
+      "img-f84fd7478c720a40",
+      "img-5d655633c54b1baa"
+    ]
+  },
+  {
+    "id": "image-cluster-30",
+    "postCount": 153,
+    "imageCount": 221,
+    "generatedLabel": "mensen, dieren, tuin, documenten",
+    "representativeImageIds": [
+      "img-b3b8b02808e642fd",
+      "img-b1f979efbedd8cdd",
+      "img-faa07de5bfa7e317",
+      "img-073ec41db345b447",
+      "img-59b961c68a146f59",
+      "img-2cee3f5cbace7be0",
+      "img-297870a181554e23",
+      "img-38507236ddd60d39"
+    ]
+  },
+  {
+    "id": "image-cluster-31",
+    "postCount": 126,
+    "imageCount": 216,
+    "generatedLabel": "dieren, tuin, pruimen, peren",
+    "representativeImageIds": [
+      "img-dcfd3f32206c3d41",
+      "img-ea34ccfb262cba11",
+      "img-13282f8a03b97f5a",
+      "img-e70af715a87e7649",
+      "img-19493a3cc4e7c4f5",
+      "img-87e2513f885e9114",
+      "img-f26738d0951ede57",
+      "img-bb1ebb630d992241"
+    ]
+  },
+  {
+    "id": "image-cluster-32",
+    "postCount": 136,
+    "imageCount": 216,
+    "generatedLabel": "mensen, dieren, tuin, documenten",
+    "representativeImageIds": [
+      "img-97f3255ade9e4d13",
+      "img-c23c0fa3b7e1b0ea",
+      "img-b0d36d51b72b90dd",
+      "img-ab07f33bc4abea84",
+      "img-d4e009c12a34d72a",
+      "img-20d383aeb256e4ed",
+      "img-85920c477ad581cf",
+      "img-c140804bc6a58543"
+    ]
+  },
+  {
+    "id": "image-cluster-33",
+    "postCount": 131,
+    "imageCount": 211,
+    "generatedLabel": "mensen, erfgoed, tuin, peren",
+    "representativeImageIds": [
+      "img-a70d556765e6365b",
+      "img-ff0bc798d2071eb7",
+      "img-ddaed40af485f87e",
+      "img-4b4f193d3dfc5274",
+      "img-d4c11858f7e4c6e8",
+      "img-096644539b83499e",
+      "img-644336184970d094",
+      "img-8d02aa449b07e0fe"
+    ]
+  },
+  {
+    "id": "image-cluster-34",
+    "postCount": 138,
+    "imageCount": 208,
+    "generatedLabel": "tuin, appels, dieren, peren",
+    "representativeImageIds": [
+      "img-b171660939fa790b",
+      "img-582f59b4f1cc720e",
+      "img-f7206f8b1356761a",
+      "img-566836e23c62ecab",
+      "img-50bb6dad73a0bbca",
+      "img-75d1e6cebdb38a15",
+      "img-ab7a3f33c55081de",
+      "img-0dcb43459322892b"
+    ]
+  },
+  {
+    "id": "image-cluster-35",
+    "postCount": 135,
+    "imageCount": 197,
+    "generatedLabel": "mensen, tuin, dieren, documenten",
+    "representativeImageIds": [
+      "img-39444123baef5463",
+      "img-3c1a233d14e91ea6",
+      "img-bc53b887e440ec2e",
+      "img-1b53b7ce871ed999",
+      "img-0c2e52b9bb9f70e9",
+      "img-5828faf5e3c417ba",
+      "img-cea396e108ab82e8",
+      "img-1f38ca55a581b078"
+    ]
+  },
+  {
+    "id": "image-cluster-36",
+    "postCount": 133,
+    "imageCount": 193,
+    "generatedLabel": "documenten, mensen, tuin, dieren",
+    "representativeImageIds": [
+      "img-e067052f4b0934b2",
+      "img-fcde56f6f8f6bf77",
+      "img-678fbc9497983aed",
+      "img-6735073b1872f5a8",
+      "img-001533e5ae9f3c76",
+      "img-36a793cbeb4932b0",
+      "img-6a119c8645c0c93b",
+      "img-5641cfb2ca839b91"
+    ]
+  },
+  {
+    "id": "image-cluster-37",
+    "postCount": 106,
+    "imageCount": 190,
+    "generatedLabel": "mensen, tuin, dieren, documenten",
+    "representativeImageIds": [
+      "img-c17d53b5069c2920",
+      "img-fb1f714cddbe5890",
+      "img-421c15c0699d6145",
+      "img-1061ee5b16c9b01c",
+      "img-3f0947004b781313",
+      "img-4f2e5bff465d7375",
+      "img-74b5b06ebe3e338a",
+      "img-8eb967063bf6d786"
+    ]
+  },
+  {
+    "id": "image-cluster-38",
+    "postCount": 102,
+    "imageCount": 188,
+    "generatedLabel": "tuin, mensen, dieren, documenten",
+    "representativeImageIds": [
+      "img-ebaeb25178251f5d",
+      "img-743636738c01d2e6",
+      "img-26b259eaf6f8fb53",
+      "img-615936c6de7ab4a0",
+      "img-64a1906156231657",
+      "img-9acbda21eb1151be",
+      "img-53c76af6ff0cf4b1",
+      "img-df6163c5f2e5d803"
+    ]
+  },
+  {
+    "id": "image-cluster-39",
+    "postCount": 188,
+    "imageCount": 188,
+    "generatedLabel": "tuin, pruimen, peren, appels",
+    "representativeImageIds": [
+      "img-afb6548010e6a40f",
+      "img-1742fd444511c528",
+      "img-370eb8ca14d4134b",
+      "img-fc089104ed55dd41",
+      "img-78493a2cae1d0d87",
+      "img-c17938a92223d217",
+      "img-61cd095632893aa3",
+      "img-43dbf3a00f08f8c7"
+    ]
+  },
+  {
+    "id": "image-cluster-40",
+    "postCount": 102,
+    "imageCount": 188,
+    "generatedLabel": "mensen, dieren, tuin, documenten",
+    "representativeImageIds": [
+      "img-e1520c65c8640909",
+      "img-29e6de5449e91560",
+      "img-30a03bb8e0bcaec5",
+      "img-3a983c7d8d8f290f",
+      "img-537aa9c580ac392b",
+      "img-4a18f28f727ebe34",
+      "img-42ed673b51c41a4b",
+      "img-5922440d4bbb7f1b"
+    ]
+  },
+  {
+    "id": "image-cluster-41",
+    "postCount": 45,
+    "imageCount": 187,
+    "generatedLabel": "tuin, peren, appels, dieren",
+    "representativeImageIds": [
+      "img-e688a7e71f11acca",
+      "img-55d1ddc265d295c3",
+      "img-14d16a3c63d50d1c",
+      "img-0dc50815664c0761",
+      "img-a86d2367d79460c8",
+      "img-e1fc647065230b3a",
+      "img-b175cf4a46cdb5e1",
+      "img-a6caf14e73161278"
+    ]
+  },
+  {
+    "id": "image-cluster-42",
+    "postCount": 122,
+    "imageCount": 185,
+    "generatedLabel": "mensen, tuin, dieren, documenten",
+    "representativeImageIds": [
+      "img-f0a0ac22a900749e",
+      "img-55dfaf9ceb3a554f",
+      "img-9c8d8d2f7b7fe7f6",
+      "img-5e900e7ba884124a",
+      "img-c72c97fe3d5ddd6f",
+      "img-6cf8831d468d7abb",
+      "img-7a12c1333e94bfda",
+      "img-cb77c90e4ec7052d"
+    ]
+  },
+  {
+    "id": "image-cluster-43",
+    "postCount": 131,
+    "imageCount": 183,
+    "generatedLabel": "tuin, dieren, mensen, erfgoed",
+    "representativeImageIds": [
+      "img-cf72ee7baf1879ca",
+      "img-c40be13921aa57a7",
+      "img-8f6e0025cd46eaae",
+      "img-50cb92b4f5fbf46a",
+      "img-70663037f2e72ba6",
+      "img-c3ee45a2a74b5002",
+      "img-f160b0b999e445c2",
+      "img-4d2aa143f88692eb"
+    ]
+  },
+  {
+    "id": "image-cluster-44",
+    "postCount": 76,
+    "imageCount": 179,
+    "generatedLabel": "erfgoed, mensen, dieren, tuin",
+    "representativeImageIds": [
+      "img-ace845e1755acb77",
+      "img-5ea5caac47c00dee",
+      "img-980e3fdd6a801649",
+      "img-9f76e0a4a5966019",
+      "img-88ae876dd0461b92",
+      "img-912af11b92063574",
+      "img-05bf463c49c6bc6b",
+      "img-8ed36b0b5bd268c2"
+    ]
+  },
+  {
+    "id": "image-cluster-45",
+    "postCount": 39,
+    "imageCount": 170,
+    "generatedLabel": "mensen, dieren, erfgoed, tuin",
+    "representativeImageIds": [
+      "img-0f2ee28c40794de8",
+      "img-f660388999bc247f",
+      "img-b3f8a9b724b17fa1",
+      "img-ebcfb9437b1a48fe",
+      "img-e2febad5c0176f57",
+      "img-81773af9d74f4604",
+      "img-09710037261a769c",
+      "img-8e0c62fcb07e9ce9"
+    ]
+  },
+  {
+    "id": "image-cluster-46",
+    "postCount": 104,
+    "imageCount": 163,
+    "generatedLabel": "tuin, mensen, dieren, documenten",
+    "representativeImageIds": [
+      "img-f4bc42878e2862eb",
+      "img-500e2bc753e76ed4",
+      "img-6f6d0b9fb065a730",
+      "img-1208148693a52009",
+      "img-be41f25d7e147a0c",
+      "img-4362b67e4883cf50",
+      "img-ee6b81bb7777de8b",
+      "img-ced21894b57da350"
+    ]
+  },
+  {
+    "id": "image-cluster-47",
+    "postCount": 88,
+    "imageCount": 161,
+    "generatedLabel": "dieren, mensen, tuin, documenten",
+    "representativeImageIds": [
+      "img-d964ef72d91c6269",
+      "img-271aac4e533c045f",
+      "img-248c745ca1546601",
+      "img-fc9fb120b90b6823",
+      "img-b67fca94c4cf7509",
+      "img-be1ed6901b8b4c32",
+      "img-807ad84302be2630",
+      "img-ed46911305362557"
+    ]
+  },
+  {
+    "id": "image-cluster-48",
+    "postCount": 129,
+    "imageCount": 159,
+    "generatedLabel": "mensen, tuin, dieren, bessen",
+    "representativeImageIds": [
+      "img-ea1da00b8713056e",
+      "img-6225319a808a109a",
+      "img-7e071b4c55936893",
+      "img-d9cb1e15b5730ee8",
+      "img-f6bdd49e899aab79",
+      "img-73466d97f07a91b9",
+      "img-02f2b39804e00fe9",
+      "img-120a0f23670453ff"
+    ]
+  },
+  {
+    "id": "image-cluster-49",
+    "postCount": 72,
+    "imageCount": 145,
+    "generatedLabel": "mensen, dieren, tuin, documenten",
+    "representativeImageIds": [
+      "img-04c6ef6b73533c20",
+      "img-357d91959090bde9",
+      "img-b099b140f960ce28",
+      "img-bcc2ae3ebcb85fbb",
+      "img-1d19c5736d34c744",
+      "img-3679e29810569abe",
+      "img-faf1d68eedf97ded",
+      "img-c75a0f9eb94db560"
+    ]
+  },
+  {
+    "id": "image-cluster-50",
+    "postCount": 60,
+    "imageCount": 115,
+    "generatedLabel": "documenten, tuin, dieren, mensen",
+    "representativeImageIds": [
+      "img-2823d45166e9410d",
+      "img-ec1660e2dc4d68f6",
+      "img-40c34bcfce715a62",
+      "img-79c9f1e82f1a29d7",
+      "img-abaae538fbc3f941",
+      "img-697757ff39d11669",
+      "img-90f594a54ae8b930",
+      "img-93724f8d5ffb751e"
+    ]
+  },
+  {
+    "id": "image-cluster-51",
+    "postCount": 55,
+    "imageCount": 105,
+    "generatedLabel": "tuin, dieren, mensen, peren",
+    "representativeImageIds": [
+      "img-318c026836c33233",
+      "img-846cedceb3c9f887",
+      "img-747fb9bb77e1d5fe",
+      "img-cb383e91adc9b406",
+      "img-f28e64ad87f740af",
+      "img-0040cc8eeb452400",
+      "img-fb5019fccc857550",
+      "img-1ed1d84d4bcb6ff6"
+    ]
+  },
+  {
+    "id": "image-cluster-52",
+    "postCount": 62,
+    "imageCount": 103,
+    "generatedLabel": "tuin, dieren, documenten, appels",
+    "representativeImageIds": [
+      "img-243b826294295979",
+      "img-ce7ee9390537187a",
+      "img-4c728a4bd42b7be7",
+      "img-5a28ae8385765bc3",
+      "img-f7bfd3b965a69c5a",
+      "img-088054f97fe4411b",
+      "img-b4b25a6d446e8847",
+      "img-c22305ccd528d90f"
+    ]
+  },
+  {
+    "id": "image-cluster-53",
+    "postCount": 44,
+    "imageCount": 102,
+    "generatedLabel": "dieren, tuin, bloesem, mensen",
+    "representativeImageIds": [
+      "img-5cf7d9c298a7e7cb",
+      "img-e8965449d5cfddbc",
+      "img-fbcecd016808fd1d",
+      "img-24262537f7a3012b",
+      "img-d24e97dcb88da47a",
+      "img-25e5437215f306f8",
+      "img-3e12a01c633253e9",
+      "img-24fc8ed79e6d86f2"
+    ]
+  },
+  {
+    "id": "image-cluster-54",
+    "postCount": 59,
+    "imageCount": 97,
+    "generatedLabel": "tuin, appels, dieren, mensen",
+    "representativeImageIds": [
+      "img-3b00dce394301dcd",
+      "img-d9343c5c93005768",
+      "img-71ac14499d823aef",
+      "img-74934091a39d64af",
+      "img-192f5bd3bd0e9582",
+      "img-d0288f5ae4002021",
+      "img-562fe684ecdfaedd",
+      "img-a2a665ca55474595"
+    ]
+  },
+  {
+    "id": "image-cluster-55",
+    "postCount": 55,
+    "imageCount": 79,
+    "generatedLabel": "documenten, tuin, dieren, mensen",
+    "representativeImageIds": [
+      "img-ceef5fff947db144",
+      "img-8a63617de5bd352a",
+      "img-f8f1d5bc0513e338",
+      "img-6e6bf84f21813a60",
+      "img-b3b3187fa4a1a459",
+      "img-61d03aa4addec1b7",
+      "img-ea95a5b2eabfc6bf",
+      "img-d8185c11c5498a03"
+    ]
+  },
+  {
+    "id": "image-cluster-56",
+    "postCount": 72,
+    "imageCount": 72,
+    "generatedLabel": "tuin, dieren, mensen, documenten",
+    "representativeImageIds": [
+      "img-49d9fb12a2a2da95",
+      "img-a2efc3731fe90cad",
+      "img-4af91856371a9e5a",
+      "img-e96a9f63ce0bddff",
+      "img-1b97c6a2bcc42f91",
+      "img-2a0ba6d3f53accba",
+      "img-469ddac60b913f9e",
+      "img-f3c679ce3f8000df"
+    ]
+  },
+  {
+    "id": "image-cluster-57",
+    "postCount": 3,
+    "imageCount": 3,
+    "generatedLabel": "tuin, documenten, dieren, bessen",
+    "representativeImageIds": [
+      "img-5fbf6f4b0a59e14f",
+      "img-76cd8a8feeb5a7a0",
+      "img-4ea6fd6378b2e9d7"
+    ]
+  }
+]

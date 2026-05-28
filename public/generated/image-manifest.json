@@ -1,0 +1,6 @@
+{
+  "generatedAt": "2026-05-27T13:12:34Z",
+  "imageCount": 13144,
+  "embeddingModel": "sentence-transformers/clip-ViT-B-32",
+  "contractVersion": 1
+}

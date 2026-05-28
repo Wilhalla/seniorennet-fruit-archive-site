@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets'
+import { ArrowRight, ChevronLeft, ChevronRight, ImageIcon, Layers2, MessageCircle } from 'lucide-react'
+import type { Post } from '../lib/postDetails'
+import { archiveSmallThumbUrl, archiveThumbUrl } from '../lib/assetUrls'
+import { formatArchiveDate } from '../lib/date'
+import { archivePostPartHtml, archivePostPartLabel, archivePostSidebarImageSizes, archivePostSidebarThumbSizes, buildArchivePostRendering } from '../lib/archivePostRendering'
+import LegacyHtmlImages from './LegacyHtmlImages.astro'
+
+type Props = {
+  post: Post
+  seriesPosts?: Post[]
+  currentPostId?: string
+}
+
+const { post, seriesPosts, currentPostId } = Astro.props
+const { isSeries, parts, imageEntries, hasImages, sidebarImages } = await buildArchivePostRendering(post, seriesPosts)
+---
+<article class="post-reading-layout" data-post-layout>
+  <div class={hasImages ? 'post-reading-grid post-reading-grid--with-images' : 'mx-auto max-w-5xl'}>
+    <div class="post-reading-main min-w-0">
+      <header class="border-b border-chalk pb-8">
+        <p class="eyebrow">{formatArchiveDate(post)} · {post.time || 'tijd onbekend'} · door {post.author}</p>
+        <h1 class="m-0 mt-4 max-w-5xl font-heading text-4xl font-normal leading-[1.05] tracking-tight text-midnight-navy md:text-6xl xl:text-7xl">{post.title}</h1>
+        <p class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-ink" aria-label={`${imageEntries.length} beelden, ${post.reactionCount} reacties${isSeries ? `, samengevoegde reeks van ${parts.length} berichten` : ''}`}>
+          {isSeries && <span class="inline-flex items-center gap-1.5"><Layers2 className="size-4" aria-hidden="true" />{parts.length} delen</span>}
+          <span class="inline-flex items-center gap-1.5"><ImageIcon className="size-4" aria-hidden="true" />{imageEntries.length} beelden</span>
+          <span class="inline-flex items-center gap-1.5"><MessageCircle className="size-4" aria-hidden="true" />{post.reactionCount} reacties</span>
+        </p>
+      </header>
+
+      {isSeries && (
+        <nav class="border-b border-chalk py-6" aria-label="Reeksindex">
+          <div class="mb-4 flex items-end justify-between gap-4">
+            <div>
+              <p class="eyebrow">Reeksindex</p>
+              <h2 class="m-0 mt-1 font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy">Samengevoegde berichten</h2>
+            </div>
+            <span class="text-sm text-slate-ink">{parts.length} delen</span>
+          </div>
+          <ol class="m-0 grid list-none gap-0 p-0">
+            {parts.map((part, index) => (
+              <li class="border-t border-chalk">
+                <a class={`group grid gap-3 py-4 no-underline transition-colors md:grid-cols-[7rem_minmax(0,1fr)_auto] ${part.id === currentPostId ? 'text-obsidian' : 'text-slate-ink hover:text-obsidian'}`} href={`/posts/${part.slug}/#part-${part.id}`}>
+                  <span class="font-mono text-xs uppercase tracking-[0.08em] text-slate-ink">{archivePostPartLabel(index, parts.length)}</span>
+                  <span class="min-w-0">
+                    <span class="block text-xs text-slate-ink">{formatArchiveDate(part)} {part.time ? `· ${part.time}` : ''}</span>
+                    <strong class="mt-1 block truncate font-medium text-current">{part.title}</strong>
+                  </span>
+                  <span class="inline-flex items-center gap-1 text-xs font-medium text-slate-ink group-hover:text-obsidian">Open <ArrowRight className="size-3.5" aria-hidden="true" /></span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
+
+      <div class="grid">
+        {parts.map((part, index) => {
+          const postHtml = archivePostPartHtml(part)
+          return (
+            <section class="legacy-content max-w-4xl border-b border-chalk py-9 last:border-b-0" id={`part-${part.id}`}>
+              {isSeries && (
+                <header class="mb-6">
+                  <p class="eyebrow">{archivePostPartLabel(index, parts.length)} · {formatArchiveDate(part)} {part.time ? `· ${part.time}` : ''}</p>
+                  <h2 class="m-0 font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy">{part.title}</h2>
+                </header>
+              )}
+              <LegacyHtmlImages html={postHtml} />
+            </section>
+          )
+        })}
+      </div>
+    </div>
+
+    {hasImages && (
+      <aside class="post-photo-panel min-w-0 lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:self-start lg:overflow-y-auto lg:pr-1" aria-label="Beelden in dit bericht">
+        <button class="post-photo-toggle" type="button" data-photo-toggle aria-expanded="true" aria-label="Fotopaneel inklappen">
+          <span class="post-photo-toggle__expanded"><ChevronRight className="size-4" aria-hidden="true" /> Inklappen</span>
+          <span class="post-photo-toggle__collapsed"><ChevronLeft className="size-4" aria-hidden="true" /></span>
+        </button>
+        <div class="post-photo-panel__content">
+          <div class="mb-4 flex items-end justify-between gap-4 border-b border-chalk pb-3">
+            <div>
+              <p class="eyebrow">Beelden</p>
+              <h2 class="m-0 font-heading text-4xl font-normal leading-none tracking-tight text-midnight-navy">Fotoreeks</h2>
+            </div>
+            <p class="m-0 text-sm text-slate-ink">{imageEntries.length.toLocaleString('nl-BE')}</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+            {sidebarImages.map((image, index) => {
+              const featured = index === 0
+              const imageClass = featured
+                ? 'aspect-[4/3] h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]'
+                : 'aspect-square h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]'
+
+              return (
+                <a class={featured ? 'group col-span-2 row-span-2 block overflow-hidden bg-powder' : 'group block overflow-hidden bg-powder'} href={image.viewerHref} aria-label={`Open beeld ${index + 1} in het beeldarchief`}>
+                  {image.metadata ? (
+                    <Image
+                      class={imageClass}
+                      src={featured ? archiveThumbUrl(image.src) : archiveSmallThumbUrl(image.src)}
+                      width={featured ? 480 : 240}
+                      height={featured ? 360 : 240}
+                      sizes={featured ? archivePostSidebarImageSizes : archivePostSidebarThumbSizes}
+                      alt=""
+                      loading={index < 3 ? 'eager' : 'lazy'}
+                      decoding="async"
+                    />
+                  ) : (
+                    <img class={imageClass} src={archiveSmallThumbUrl(image.src)} srcset={`${archiveSmallThumbUrl(image.src)} 240w, ${archiveThumbUrl(image.src)} 480w`} sizes={featured ? archivePostSidebarImageSizes : archivePostSidebarThumbSizes} alt="" loading={index < 3 ? 'eager' : 'lazy'} decoding="async" />
+                  )}
+                </a>
+              )
+            })}
+          </div>
+        </div>
+      </aside>
+    )}
+  </div>
+</article>

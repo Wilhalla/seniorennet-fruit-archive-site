@@ -1,0 +1,14 @@
+# Optional manual additions/overrides for scripts/species_atlas.py.
+# Keep candidates restricted to species/cultivars actually expected in this archive.
+# Exact cultivar tags become high confidence only when aliases are found in
+# title, caption, filename, excerpt, post text, or future OCR output.
+#
+# candidates:
+#   - label: "Sterappel"
+#     type: "apple_cultivar"
+#     aliases: ["sterappel", "ster appelen"]
+#   - label: "Rubus 'Autumn First'"
+#     type: "raspberry_cultivar"
+#     aliases: ["autumn first", "rubus autumn first"]
+
+candidates: []

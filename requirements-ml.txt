@@ -1,0 +1,9 @@
+torch
+sentence-transformers
+umap-learn
+hdbscan
+scikit-learn
+pyyaml
+beautifulsoup4
+pillow
+numpy

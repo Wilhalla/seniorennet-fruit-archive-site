@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import GalleryViewerApp from '../../../components/gallery/GalleryViewerApp'
+import initialImages from '../../../data/generated/image-index.initial.json'
+---
+<BaseLayout title="Beeldviewer · Daniel Willaeys archief" description="Bekijk een foto uit het beeldarchief op een eigen pagina." hideFooter={true}>
+  <GalleryViewerApp initialImages={initialImages} client:load />
+</BaseLayout>

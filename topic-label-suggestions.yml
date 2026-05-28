@@ -1,0 +1,228 @@
+'#': Review these suggestions, then copy accepted labels to topics.yml. Topic IDs
+  can shift after reclustering.
+topics:
+  topic-01:
+    label: Culturele daguitstappen
+    confidence: high
+    reason: Posts describe group trips to regions, museums, cities, and heritage sites.
+  topic-02:
+    label: Tuin en moestuin
+    confidence: high
+    reason: Evidence centers on garden work, vegetables, berries, pruning, weather,
+      and seasonal growth.
+  topic-03:
+    label: Biologische kleinfruitteelt
+    confidence: high
+    reason: Representative posts focus on VELT, biological gardens, Pamel, and small
+      fruit cultivation.
+  topic-04:
+    label: Reisreportages
+    confidence: medium
+    reason: Mostly continuation posts from trips with landscapes, museums, castles,
+      and heritage scenes.
+  topic-05:
+    label: Appelrassen
+    confidence: high
+    reason: Representative posts discuss named apple varieties, apple harvests, and
+      apple characteristics.
+  topic-06:
+    label: Bessen en bramen
+    confidence: high
+    reason: Posts focus on blackcurrants, honeyberries, brambles, tayberries, and
+      related small fruit.
+  topic-07:
+    label: Pomologische uitstappen
+    confidence: high
+    reason: Posts describe visits to orchards, fruit collections, fruit expos, and
+      pomological groups.
+  topic-08:
+    label: Historische stadsuitstappen
+    confidence: high
+    reason: Evidence features churches, towers, city halls, old streets, and guided
+      city visits.
+  topic-09:
+    label: Pruimenrassen
+    confidence: high
+    reason: Representative posts are mainly about plum varieties, thinning, collections,
+      and identification.
+  topic-10:
+    label: Fruitvragen en problemen
+    confidence: medium
+    reason: Mixed text-only posts include feedback and questions about medlars, pests,
+      strawberries, and fruit issues.
+  topic-11:
+    label: Fruitcollecties
+    confidence: medium
+    reason: Posts show fruit varieties, tastings, espalier fruit, and orchard visit
+      follow-ups.
+  topic-12:
+    label: Tuinbezoeken
+    confidence: medium
+    reason: Representative posts are mostly photo follow-ups from garden visits and
+      tours.
+  topic-13:
+    label: Perenrassen
+    confidence: high
+    reason: Posts focus clearly on named pear varieties and pear harvest observations.
+  topic-14:
+    label: Bramen en frambozen
+    confidence: high
+    reason: Evidence centers on brambles, autumn raspberries, wineberries, and blackberry
+      varieties.
+  topic-15:
+    label: Erfgoedreizen
+    confidence: medium
+    reason: Posts mainly show churches, cathedrals, town halls, castles, and travel
+      groups.
+  topic-16:
+    label: Velt en ecotuinen
+    confidence: high
+    reason: Representative posts mention VELT eco-garden days, ecological gardens,
+      and VELT orchards.
+  topic-17:
+    label: Bezoeken en feesten
+    confidence: medium
+    reason: Evidence mixes VELT visits, family visits, and social celebrations.
+  topic-18:
+    label: Appelbloesem
+    confidence: high
+    reason: Posts consistently discuss apple trees in bloom and flowering apple varieties.
+  topic-19:
+    label: Vogels en bijen
+    confidence: high
+    reason: Representative posts cover bird feeding, nest boxes, flycatchers, and
+      solitary bees.
+  topic-20:
+    label: Herfstframbozen
+    confidence: high
+    reason: Most posts focus on autumn raspberries, with related autumn brambles and
+      raspberry mutations.
+  topic-21:
+    label: Bomen en natuur
+    confidence: medium
+    reason: Evidence mixes dendrology visits, tree species, insects, and some fruit
+      disease content.
+  topic-22:
+    label: Vlinders
+    confidence: high
+    reason: Representative posts are clearly about butterfly observations and species.
+  topic-23:
+    label: Aardbeienteelt
+    confidence: high
+    reason: Posts focus on strawberry beds, planting, raised beds, and fruit cage
+      cultivation.
+  topic-24:
+    label: Biologische landbouw
+    confidence: high
+    reason: Posts discuss organic farming, pesticides, GGO concerns, organic wine,
+      and bio consumers.
+  topic-25:
+    label: Wateroverlast in tuin
+    confidence: high
+    reason: Representative posts focus on heavy rain, flooded garden areas, ditches,
+      and drainage.
+  topic-26:
+    label: Vlinders en rupsen
+    confidence: high
+    reason: Evidence includes butterflies, caterpillars, winter moth damage, and trapping
+      bands.
+  topic-27:
+    label: Vorst en weer
+    confidence: high
+    reason: Posts discuss frost, temperature, weather station readings, and cold damage.
+  topic-28:
+    label: Kerspruimen
+    confidence: high
+    reason: Representative posts consistently cover cherry plum or myrobalan bloom
+      and fruiting.
+  topic-29:
+    label: Reisfoto's
+    confidence: low
+    reason: Evidence is sparse, but visuals and keywords suggest continuation photo
+      posts from trips.
+  topic-30:
+    label: Familiefeesten
+    confidence: high
+    reason: Posts show daughters, grandchildren, family groups, birthdays, and family
+      gatherings.
+  topic-31:
+    label: Pomologische exposities
+    confidence: high
+    reason: Posts focus on Pomexpo, Villeneuve d'Ascq, and displays of apple and fruit
+      varieties.
+  topic-32:
+    label: Tuinwerk
+    confidence: low
+    reason: Representative evidence is mostly generic, but keywords and visuals point
+      to garden work.
+  topic-33:
+    label: Kippen houden
+    confidence: high
+    reason: Representative posts clearly discuss chickens, breeds, hybrids, and poultry
+      keeping.
+  topic-34:
+    label: Engelse tuinen
+    confidence: high
+    reason: Posts describe trips to English gardens such as Sissinghurst, Yalding,
+      Wisley, and Wrest.
+  topic-35:
+    label: Uilen en kauwen
+    confidence: high
+    reason: Evidence centers on steenuilen, bosuilen, kauwen, and nest boxes.
+  topic-36:
+    label: Vogelzang
+    confidence: high
+    reason: Posts focus on hearing blackcaps, thrushes, geese, robins, and other birds.
+  topic-37:
+    label: Koekoekroep
+    confidence: high
+    reason: Representative posts track first and repeated cuckoo calls in spring.
+  topic-38:
+    label: Walnoten
+    confidence: high
+    reason: Posts are clearly about walnut trees, walnut harvests, and walnut questions.
+  topic-39:
+    label: Afrikaans tuinfeest
+    confidence: high
+    reason: Representative posts repeatedly mention the Afrikaans Tuinfeest, COZOEGO,
+      and Africa-related events.
+  topic-40:
+    label: Biologische voeding
+    confidence: high
+    reason: Posts discuss research on organic food, antioxidants, salvestrolen, and
+      bio products.
+  topic-41:
+    label: Resistente rassen
+    confidence: high
+    reason: Evidence covers resistant apple and potato varieties, disease resistance,
+      and Phytophthora.
+  topic-42:
+    label: Kleine zoogdieren
+    confidence: high
+    reason: Representative posts focus on voles, weasels, cats catching mammals, and
+      related observations.
+  topic-43:
+    label: Leen en kinderen
+    confidence: high
+    reason: Posts center on daughter Leen and her children Keda, Isis, Kael, and family
+      events.
+  topic-44:
+    label: Genetisch teeltonderzoek
+    confidence: high
+    reason: Most posts discuss genetic modification, crop resistance, INAGRO trials,
+      and agricultural research.
+  topic-45:
+    label: Familiefoto's
+    confidence: low
+    reason: Evidence is very limited, but visual categories point mainly to family
+      and visit photos.
+  topic-46:
+    label: Keda's feest
+    confidence: high
+    reason: Most posts are continuation photo posts from Keda's celebration with family
+      and guests.
+  topic-47:
+    label: Pomologische artikels
+    confidence: medium
+    reason: Posts are mixed but mostly discuss fruit-related articles, Little Cherry
+      Virus, and pomological topics.

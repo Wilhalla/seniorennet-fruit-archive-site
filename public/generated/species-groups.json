@@ -1,0 +1,642 @@
+[
+  {
+    "id": "tuin-boomgaard",
+    "label": "tuin / boomgaard",
+    "type": "place_or_habitat",
+    "count": 9750,
+    "confidenceCounts": {
+      "medium": 9750
+    }
+  },
+  {
+    "id": "dier-insect",
+    "label": "dier / insect",
+    "type": "animal_broad",
+    "count": 8097,
+    "confidenceCounts": {
+      "medium": 8097
+    }
+  },
+  {
+    "id": "peer",
+    "label": "peer",
+    "type": "fruit_kind",
+    "count": 4330,
+    "confidenceCounts": {
+      "medium": 4330
+    }
+  },
+  {
+    "id": "appel",
+    "label": "appel",
+    "type": "fruit_kind",
+    "count": 3682,
+    "confidenceCounts": {
+      "medium": 3682
+    }
+  },
+  {
+    "id": "pruim",
+    "label": "pruim",
+    "type": "fruit_kind",
+    "count": 2918,
+    "confidenceCounts": {
+      "medium": 2918
+    }
+  },
+  {
+    "id": "bes-kleinfruit",
+    "label": "bes / kleinfruit",
+    "type": "fruit_kind",
+    "count": 2327,
+    "confidenceCounts": {
+      "medium": 2327
+    }
+  },
+  {
+    "id": "bloesem",
+    "label": "bloesem",
+    "type": "plant_stage",
+    "count": 1132,
+    "confidenceCounts": {
+      "medium": 1132
+    }
+  },
+  {
+    "id": "braam",
+    "label": "Braam",
+    "type": "berry_species",
+    "count": 553,
+    "confidenceCounts": {
+      "high": 553
+    }
+  },
+  {
+    "id": "reinette",
+    "label": "Reinette",
+    "type": "apple_cultivar_group",
+    "count": 452,
+    "confidenceCounts": {
+      "high": 452
+    }
+  },
+  {
+    "id": "rode-bes",
+    "label": "Rode bes",
+    "type": "berry_species",
+    "count": 251,
+    "confidenceCounts": {
+      "high": 251
+    }
+  },
+  {
+    "id": "taybes",
+    "label": "Taybes",
+    "type": "berry_cultivar",
+    "count": 246,
+    "confidenceCounts": {
+      "high": 246
+    }
+  },
+  {
+    "id": "kornoelje",
+    "label": "Kornoelje",
+    "type": "plant_species",
+    "count": 229,
+    "confidenceCounts": {
+      "high": 229
+    }
+  },
+  {
+    "id": "vlinder",
+    "label": "Vlinder",
+    "type": "animal_species_group",
+    "count": 217,
+    "confidenceCounts": {
+      "high": 217
+    }
+  },
+  {
+    "id": "zwarte-bes",
+    "label": "Zwarte bes",
+    "type": "berry_species",
+    "count": 211,
+    "confidenceCounts": {
+      "high": 211
+    }
+  },
+  {
+    "id": "schone-van-boskoop",
+    "label": "Schone van Boskoop",
+    "type": "apple_cultivar",
+    "count": 203,
+    "confidenceCounts": {
+      "high": 203
+    }
+  },
+  {
+    "id": "bij",
+    "label": "Bij",
+    "type": "animal_species_group",
+    "count": 167,
+    "confidenceCounts": {
+      "high": 167
+    }
+  },
+  {
+    "id": "herfstframboos",
+    "label": "Herfstframboos",
+    "type": "berry_group",
+    "count": 166,
+    "confidenceCounts": {
+      "high": 25,
+      "medium": 141
+    }
+  },
+  {
+    "id": "kiwi",
+    "label": "Kiwi",
+    "type": "plant_species",
+    "count": 155,
+    "confidenceCounts": {
+      "high": 155
+    }
+  },
+  {
+    "id": "kruisbes",
+    "label": "Kruisbes",
+    "type": "berry_species",
+    "count": 153,
+    "confidenceCounts": {
+      "high": 153
+    }
+  },
+  {
+    "id": "bellefleur",
+    "label": "Bellefleur",
+    "type": "apple_cultivar",
+    "count": 148,
+    "confidenceCounts": {
+      "high": 148
+    }
+  },
+  {
+    "id": "kerspruim-myrobolaan",
+    "label": "Kerspruim / myrobolaan",
+    "type": "plant_species",
+    "count": 148,
+    "confidenceCounts": {
+      "high": 148
+    }
+  },
+  {
+    "id": "kip",
+    "label": "Kip",
+    "type": "animal_species_group",
+    "count": 143,
+    "confidenceCounts": {
+      "high": 143
+    }
+  },
+  {
+    "id": "conference",
+    "label": "Conference",
+    "type": "pear_cultivar",
+    "count": 136,
+    "confidenceCounts": {
+      "high": 136
+    }
+  },
+  {
+    "id": "merel",
+    "label": "Merel",
+    "type": "bird_species",
+    "count": 133,
+    "confidenceCounts": {
+      "high": 133
+    }
+  },
+  {
+    "id": "cox-orange",
+    "label": "Cox Orange",
+    "type": "apple_cultivar",
+    "count": 128,
+    "confidenceCounts": {
+      "high": 128
+    }
+  },
+  {
+    "id": "rups",
+    "label": "Rups",
+    "type": "animal_species_group",
+    "count": 122,
+    "confidenceCounts": {
+      "high": 122
+    }
+  },
+  {
+    "id": "kweepeer",
+    "label": "Kweepeer",
+    "type": "plant_species",
+    "count": 117,
+    "confidenceCounts": {
+      "high": 117
+    }
+  },
+  {
+    "id": "jonagold",
+    "label": "Jonagold",
+    "type": "apple_cultivar",
+    "count": 115,
+    "confidenceCounts": {
+      "high": 115
+    }
+  },
+  {
+    "id": "otava",
+    "label": "Otava",
+    "type": "apple_cultivar",
+    "count": 108,
+    "confidenceCounts": {
+      "high": 108
+    }
+  },
+  {
+    "id": "comtesse-de-paris",
+    "label": "Comtesse de Paris",
+    "type": "pear_cultivar",
+    "count": 101,
+    "confidenceCounts": {
+      "high": 101
+    }
+  },
+  {
+    "id": "elstar",
+    "label": "Elstar",
+    "type": "apple_cultivar",
+    "count": 96,
+    "confidenceCounts": {
+      "high": 96
+    }
+  },
+  {
+    "id": "ecolette",
+    "label": "Ecolette",
+    "type": "apple_cultivar",
+    "count": 95,
+    "confidenceCounts": {
+      "high": 95
+    }
+  },
+  {
+    "id": "vijg",
+    "label": "Vijg",
+    "type": "plant_species",
+    "count": 90,
+    "confidenceCounts": {
+      "high": 90
+    }
+  },
+  {
+    "id": "reine-claude",
+    "label": "Reine Claude",
+    "type": "plum_cultivar_group",
+    "count": 85,
+    "confidenceCounts": {
+      "high": 85
+    }
+  },
+  {
+    "id": "victoria",
+    "label": "Victoria",
+    "type": "plum_cultivar",
+    "count": 78,
+    "confidenceCounts": {
+      "high": 78
+    }
+  },
+  {
+    "id": "japanse-wijnbes",
+    "label": "Japanse wijnbes",
+    "type": "berry_species",
+    "count": 75,
+    "confidenceCounts": {
+      "high": 75
+    }
+  },
+  {
+    "id": "sterappel",
+    "label": "Sterappel",
+    "type": "apple_cultivar",
+    "count": 75,
+    "confidenceCounts": {
+      "high": 75
+    }
+  },
+  {
+    "id": "steenuil",
+    "label": "Steenuil",
+    "type": "bird_species",
+    "count": 74,
+    "confidenceCounts": {
+      "high": 74
+    }
+  },
+  {
+    "id": "topaz",
+    "label": "Topaz",
+    "type": "apple_cultivar",
+    "count": 74,
+    "confidenceCounts": {
+      "high": 74
+    }
+  },
+  {
+    "id": "catillac",
+    "label": "Catillac",
+    "type": "pear_cultivar",
+    "count": 63,
+    "confidenceCounts": {
+      "high": 63
+    }
+  },
+  {
+    "id": "jacques-lebel",
+    "label": "Jacques Lebel",
+    "type": "apple_cultivar",
+    "count": 54,
+    "confidenceCounts": {
+      "high": 54
+    }
+  },
+  {
+    "id": "saint-remy",
+    "label": "Saint Remy",
+    "type": "pear_cultivar",
+    "count": 50,
+    "confidenceCounts": {
+      "high": 50
+    }
+  },
+  {
+    "id": "wesp",
+    "label": "Wesp",
+    "type": "animal_species_group",
+    "count": 49,
+    "confidenceCounts": {
+      "high": 49
+    }
+  },
+  {
+    "id": "notarisappel",
+    "label": "Notarisappel",
+    "type": "apple_cultivar",
+    "count": 48,
+    "confidenceCounts": {
+      "high": 48
+    }
+  },
+  {
+    "id": "mutsu",
+    "label": "Mutsu",
+    "type": "apple_cultivar",
+    "count": 45,
+    "confidenceCounts": {
+      "high": 45
+    }
+  },
+  {
+    "id": "karmijn-de-sonnaville",
+    "label": "Karmijn de Sonnaville",
+    "type": "apple_cultivar",
+    "count": 41,
+    "confidenceCounts": {
+      "high": 41
+    }
+  },
+  {
+    "id": "pinova",
+    "label": "Pinova",
+    "type": "apple_cultivar",
+    "count": 39,
+    "confidenceCounts": {
+      "high": 39
+    }
+  },
+  {
+    "id": "mirabelle",
+    "label": "Mirabelle",
+    "type": "plum_cultivar_group",
+    "count": 37,
+    "confidenceCounts": {
+      "high": 37
+    }
+  },
+  {
+    "id": "discovery",
+    "label": "Discovery",
+    "type": "apple_cultivar",
+    "count": 36,
+    "confidenceCounts": {
+      "high": 36
+    }
+  },
+  {
+    "id": "alkmene",
+    "label": "Alkmene",
+    "type": "apple_cultivar",
+    "count": 35,
+    "confidenceCounts": {
+      "high": 35
+    }
+  },
+  {
+    "id": "doyenné-du-comice",
+    "label": "Doyenné du Comice",
+    "type": "pear_cultivar",
+    "count": 34,
+    "confidenceCounts": {
+      "high": 34
+    }
+  },
+  {
+    "id": "autumn-first",
+    "label": "Autumn First",
+    "type": "raspberry_cultivar",
+    "count": 33,
+    "confidenceCounts": {
+      "high": 33
+    }
+  },
+  {
+    "id": "beth",
+    "label": "Beth",
+    "type": "pear_cultivar",
+    "count": 32,
+    "confidenceCounts": {
+      "high": 32
+    }
+  },
+  {
+    "id": "japanse-kwee",
+    "label": "Japanse kwee",
+    "type": "plant_species",
+    "count": 27,
+    "confidenceCounts": {
+      "high": 27
+    }
+  },
+  {
+    "id": "reinette-dubois",
+    "label": "Reinette Dubois",
+    "type": "apple_cultivar",
+    "count": 27,
+    "confidenceCounts": {
+      "high": 27
+    }
+  },
+  {
+    "id": "santana",
+    "label": "Santana",
+    "type": "apple_cultivar",
+    "count": 26,
+    "confidenceCounts": {
+      "high": 26
+    }
+  },
+  {
+    "id": "anna-späth",
+    "label": "Anna Späth",
+    "type": "plum_cultivar",
+    "count": 22,
+    "confidenceCounts": {
+      "high": 22
+    }
+  },
+  {
+    "id": "opal",
+    "label": "Opal",
+    "type": "plum_cultivar",
+    "count": 22,
+    "confidenceCounts": {
+      "high": 22
+    }
+  },
+  {
+    "id": "james-grieve",
+    "label": "James Grieve",
+    "type": "apple_cultivar",
+    "count": 21,
+    "confidenceCounts": {
+      "high": 21
+    }
+  },
+  {
+    "id": "rubinola",
+    "label": "Rubinola",
+    "type": "apple_cultivar",
+    "count": 19,
+    "confidenceCounts": {
+      "high": 19
+    }
+  },
+  {
+    "id": "beurré-hardy",
+    "label": "Beurré Hardy",
+    "type": "pear_cultivar",
+    "count": 18,
+    "confidenceCounts": {
+      "high": 18
+    }
+  },
+  {
+    "id": "loganbes",
+    "label": "Loganbes",
+    "type": "berry_cultivar",
+    "count": 18,
+    "confidenceCounts": {
+      "high": 18
+    }
+  },
+  {
+    "id": "transparente-blanche",
+    "label": "Transparente Blanche",
+    "type": "apple_cultivar",
+    "count": 13,
+    "confidenceCounts": {
+      "high": 13
+    }
+  },
+  {
+    "id": "czar",
+    "label": "Czar",
+    "type": "plum_cultivar",
+    "count": 12,
+    "confidenceCounts": {
+      "high": 12
+    }
+  },
+  {
+    "id": "excalibur",
+    "label": "Excalibur",
+    "type": "plum_cultivar",
+    "count": 12,
+    "confidenceCounts": {
+      "high": 12
+    }
+  },
+  {
+    "id": "mahieupeer",
+    "label": "Mahieupeer",
+    "type": "pear_cultivar",
+    "count": 11,
+    "confidenceCounts": {
+      "high": 11
+    }
+  },
+  {
+    "id": "prune-de-prince",
+    "label": "Prune de Prince",
+    "type": "plum_cultivar",
+    "count": 11,
+    "confidenceCounts": {
+      "high": 11
+    }
+  },
+  {
+    "id": "koekoek",
+    "label": "Koekoek",
+    "type": "bird_species",
+    "count": 9,
+    "confidenceCounts": {
+      "high": 9
+    }
+  },
+  {
+    "id": "fallgold",
+    "label": "Fallgold",
+    "type": "raspberry_cultivar",
+    "count": 5,
+    "confidenceCounts": {
+      "high": 5
+    }
+  },
+  {
+    "id": "tydemans-late-orange",
+    "label": "Tydeman's Late Orange",
+    "type": "apple_cultivar",
+    "count": 2,
+    "confidenceCounts": {
+      "high": 2
+    }
+  },
+  {
+    "id": "doyenné-dhiver",
+    "label": "Doyenné d'Hiver",
+    "type": "pear_cultivar",
+    "count": 1,
+    "confidenceCounts": {
+      "high": 1
+    }
+  }
+]

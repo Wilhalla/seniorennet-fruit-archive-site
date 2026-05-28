@@ -1,0 +1,254 @@
+[
+  {
+    "topicId": "topic-01",
+    "label": "Fruitrassen",
+    "confidence": "high",
+    "reason": "The cluster broadly covers apples, pears, berries, plums and named varieties."
+  },
+  {
+    "topicId": "topic-02",
+    "label": "Tuin en moestuin",
+    "confidence": "high",
+    "reason": "Posts describe gardens, vegetable plots, plants and general cultivation visits."
+  },
+  {
+    "topicId": "topic-03",
+    "label": "Historische stadsuitstappen",
+    "confidence": "high",
+    "reason": "Representative posts focus on churches, cathedrals, castles, old towns and guided visits."
+  },
+  {
+    "topicId": "topic-04",
+    "label": "Engelse tuinen",
+    "confidence": "high",
+    "reason": "Most evidence points to trips to English gardens and estates such as Wisley and Brogdale."
+  },
+  {
+    "topicId": "topic-05",
+    "label": "Fruitvragen en feedback",
+    "confidence": "medium",
+    "reason": "The posts are mostly text-based fruit and garden questions, replies and observations."
+  },
+  {
+    "topicId": "topic-06",
+    "label": "Boomgaardonderhoud",
+    "confidence": "high",
+    "reason": "Posts cover compost, replanting, soil, tree care and work around fruit trees."
+  },
+  {
+    "topicId": "topic-07",
+    "label": "Tuinbouwstudiedagen",
+    "confidence": "medium",
+    "reason": "The cluster centers on study days, excursions and fruit-related horticultural events."
+  },
+  {
+    "topicId": "topic-08",
+    "label": "Familiefeesten",
+    "confidence": "high",
+    "reason": "The posts feature family gatherings, birthdays, relatives and celebrations."
+  },
+  {
+    "topicId": "topic-09",
+    "label": "Bessenrassen",
+    "confidence": "high",
+    "reason": "The evidence is strongly about red, white, black and blue berry varieties."
+  },
+  {
+    "topicId": "topic-10",
+    "label": "Bramen",
+    "confidence": "high",
+    "reason": "Posts focus on blackberries, blackberry varieties and related cultivation notes."
+  },
+  {
+    "topicId": "topic-11",
+    "label": "Pruimenrassen",
+    "confidence": "high",
+    "reason": "The cluster is mainly about plums, plum fruiting, tasting and varieties."
+  },
+  {
+    "topicId": "topic-12",
+    "label": "Pomologische uitstappen",
+    "confidence": "high",
+    "reason": "Posts describe fruit exhibitions, pomological society trips and visits to fruit regions."
+  },
+  {
+    "topicId": "topic-13",
+    "label": "Appelrassen",
+    "confidence": "high",
+    "reason": "Representative posts discuss apple varieties, picking, seedlings and named cultivars."
+  },
+  {
+    "topicId": "topic-14",
+    "label": "Vogels en insecten",
+    "confidence": "high",
+    "reason": "The evidence includes cuckoos, tits, flycatchers, bees, butterflies and other garden wildlife."
+  },
+  {
+    "topicId": "topic-15",
+    "label": "Velt en ecotuinen",
+    "confidence": "high",
+    "reason": "Posts repeatedly mention Velt, eco-garden days, ecological gardening and related initiatives."
+  },
+  {
+    "topicId": "topic-16",
+    "label": "Kunsttentoonstellingen",
+    "confidence": "high",
+    "reason": "The cluster focuses on art centers, exhibitions, sculptures and artists."
+  },
+  {
+    "topicId": "topic-17",
+    "label": "Herfstframbozen",
+    "confidence": "high",
+    "reason": "Most representative posts are about autumn raspberries, pruning and related Rubus fruits."
+  },
+  {
+    "topicId": "topic-18",
+    "label": "Biologische landbouw",
+    "confidence": "high",
+    "reason": "Posts discuss organic farming, bio products, pesticides and GMOs."
+  },
+  {
+    "topicId": "topic-19",
+    "label": "Vorst en weer",
+    "confidence": "high",
+    "reason": "The cluster is about frost, temperatures, weather stations and cold damage."
+  },
+  {
+    "topicId": "topic-20",
+    "label": "Perenrassen",
+    "confidence": "high",
+    "reason": "Representative posts focus on pear varieties and named cultivars."
+  },
+  {
+    "topicId": "topic-21",
+    "label": "Culturele daguitstappen",
+    "confidence": "high",
+    "reason": "Posts describe museum visits, towns, churches, routes and cultural excursions."
+  },
+  {
+    "topicId": "topic-22",
+    "label": "Bio-appels en onderzoek",
+    "confidence": "high",
+    "reason": "The cluster covers organic apples, pesticide tests, health claims and fruit research."
+  },
+  {
+    "topicId": "topic-23",
+    "label": "Uilen en kauwen",
+    "confidence": "medium",
+    "reason": "Most representative posts concern little owls, tawny owls and jackdaws, despite some mixed content."
+  },
+  {
+    "topicId": "topic-24",
+    "label": "Natuuruitstappen",
+    "confidence": "medium",
+    "reason": "The evidence is mixed but often describes nature observations and outdoor visits."
+  },
+  {
+    "topicId": "topic-25",
+    "label": "Vlinders en rupsen",
+    "confidence": "high",
+    "reason": "Representative posts focus on butterflies, caterpillars and butterfly counting."
+  },
+  {
+    "topicId": "topic-26",
+    "label": "Tuinvondsten",
+    "confidence": "medium",
+    "reason": "Posts contain varied garden observations such as mushrooms, insects, birds, chickens and plants."
+  },
+  {
+    "topicId": "topic-27",
+    "label": "Vogelzang",
+    "confidence": "high",
+    "reason": "The cluster centers on hearing and observing birds such as blackcaps, thrushes and geese."
+  },
+  {
+    "topicId": "topic-28",
+    "label": "Vlinderwaarnemingen",
+    "confidence": "high",
+    "reason": "Posts mainly record sightings of butterflies including brimstones and other species."
+  },
+  {
+    "topicId": "topic-29",
+    "label": "Walnoten",
+    "confidence": "high",
+    "reason": "The evidence is consistently about walnut trees, nuts and harvests."
+  },
+  {
+    "topicId": "topic-30",
+    "label": "Kameroenproject",
+    "confidence": "high",
+    "reason": "Posts repeatedly concern Cameroon, family links and development-related updates."
+  },
+  {
+    "topicId": "topic-31",
+    "label": "Solitaire bijen",
+    "confidence": "high",
+    "reason": "Representative posts focus on solitary bees, bee stands and pollination projects."
+  },
+  {
+    "topicId": "topic-32",
+    "label": "Biologische voeding",
+    "confidence": "high",
+    "reason": "The posts discuss research on organic food, antioxidants, strawberries and salvestrols."
+  },
+  {
+    "topicId": "topic-33",
+    "label": "Resistente rassen",
+    "confidence": "high",
+    "reason": "The cluster concerns disease-resistant apple and potato varieties."
+  },
+  {
+    "topicId": "topic-34",
+    "label": "Familieverhalen",
+    "confidence": "medium",
+    "reason": "Posts mix family members, personal memories, Aleide and garden-related family events."
+  },
+  {
+    "topicId": "topic-35",
+    "label": "Bijen en nestkasten",
+    "confidence": "medium",
+    "reason": "The cluster includes solitary bees as well as nest boxes and garden wildlife."
+  },
+  {
+    "topicId": "topic-36",
+    "label": "Kleine zoogdieren",
+    "confidence": "high",
+    "reason": "Representative posts focus on voles, weasels, cats and small mammals in the garden."
+  },
+  {
+    "topicId": "topic-37",
+    "label": "Tuinbezoekers",
+    "confidence": "medium",
+    "reason": "Posts show various small garden visitors including birds and butterflies."
+  },
+  {
+    "topicId": "topic-38",
+    "label": "Kippen houden",
+    "confidence": "high",
+    "reason": "The cluster is clearly about chickens, roosters, hybrids and poultry keeping."
+  },
+  {
+    "topicId": "topic-39",
+    "label": "Afrikaans tuinfeest",
+    "confidence": "high",
+    "reason": "Representative posts repeatedly mention the African garden party and Cozoego."
+  },
+  {
+    "topicId": "topic-40",
+    "label": "Aleide en Velt",
+    "confidence": "high",
+    "reason": "Posts focus on Aleide Lagrou, her role in Velt and related memorial texts."
+  },
+  {
+    "topicId": "topic-41",
+    "label": "Genetisch teeltonderzoek",
+    "confidence": "medium",
+    "reason": "Posts cover genetic modification, genetic narrowing, resistant crops and agricultural research."
+  },
+  {
+    "topicId": "topic-42",
+    "label": "Pomologische artikels",
+    "confidence": "medium",
+    "reason": "The small cluster contains comments on fruit-related articles, including Little Cherry Virus and quinces."
+  }
+]
