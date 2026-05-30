@@ -32,10 +32,26 @@ function escapeHtml(value: string) {
     .replace(/>/g, '&gt;')
 }
 
-function firstElementChild($: cheerio.CheerioAPI, root: cheerio.Cheerio<any>) {
+function hasOnlyElementAndWhitespaceChildren($: cheerio.CheerioAPI, block: cheerio.Cheerio<any>) {
+  const children = block.contents().toArray()
+  return children.length > 0 && children.every((child) => child.type === 'tag' || (child.type === 'text' && $(child).text().trim() === ''))
+}
+
+function isTransparentLeadingContainer($: cheerio.CheerioAPI, block: cheerio.Cheerio<any>) {
+  const tag = String(block.prop('tagName') ?? '').toLowerCase()
+  return ['article', 'div', 'section'].includes(tag)
+    && block.find('img').length === 0
+    && hasOnlyElementAndWhitespaceChildren($, block)
+}
+
+function firstElementChild($: cheerio.CheerioAPI, root: cheerio.Cheerio<any>): cheerio.Cheerio<any> | undefined {
   for (const child of root.contents().toArray()) {
     if (child.type === 'text' && $(child).text().trim() === '') continue
-    if (child.type === 'tag') return $(child)
+    if (child.type === 'tag') {
+      const element = $(child)
+      if (isTransparentLeadingContainer($, element)) return firstElementChild($, element) ?? element
+      return element
+    }
     return undefined
   }
   return undefined

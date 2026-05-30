@@ -36,6 +36,13 @@ describe('stripDuplicateTitleFromArchiveHtml', () => {
     expect(stripDuplicateTitleFromArchiveHtml(html, 'Rouwregister Daniël')).toBe(html)
   })
 
+  it('preserves paragraph structure when removing a duplicate title inside a wrapper', () => {
+    const html = '<div>\n\n<p>Bath</p>\n\n<p>Op de terugweg.</p>\n\n<p>We zagen de <b>Royal Crescent</b>.</p>\n\n</div>'
+
+    expect(stripDuplicateTitleFromArchiveHtml(html, 'Bath'))
+      .toBe('<div>\n\n\n\n<p>Op de terugweg.</p>\n\n<p>We zagen de <b>Royal Crescent</b>.</p>\n\n</div>')
+  })
+
   it('leaves leading image blocks untouched', () => {
     const html = '<p><img src="/archive-images/example.jpg" alt=""></p><p><strong>Title</strong></p>'
 
