@@ -6,7 +6,7 @@ title: "Vlinders"
 date: "24-07-2016"
 isoDate: "2016-07-24T13:59:00"
 time: "13:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vlinders Met het zomerweer van de laatste week vliegen er weer vlinders. O.a. verschillende citroenvlinders gezien, dagpauwogen, atalanta’s. De struik moederkruid tegen de veranda krijgt vooral bezoek van zandoogjes. Tegen de middag landde "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1938900.html"

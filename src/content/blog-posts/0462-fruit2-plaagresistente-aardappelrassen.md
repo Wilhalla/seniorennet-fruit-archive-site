@@ -6,7 +6,7 @@ title: "Plaagresistente aardappelrassen"
 date: "21-07-2016"
 isoDate: "2016-07-21T23:18:00"
 time: "23:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Plaagresistente aardappelrassen (2015) In de rassenproeven biologische aardappel van Inagro(*) halen verschillende plaagresistente rassen een goede opbrengst, zelfs onder hoge plaagdruk. Een aantal van deze rassen worden nu geïntroduceerd i"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1938032.html"

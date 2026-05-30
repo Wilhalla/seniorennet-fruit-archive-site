@@ -6,7 +6,7 @@ title: "Wlen –Wroclaw"
 date: "15-05-2016"
 isoDate: "2016-05-15T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wlen –Wroclaw Mijn jongste dochter Tinneke rijdt met Kleinzoon Jonathan, die met de Suzuki methode een behoorlijke violist is geworden naar Vilnius, de hoofdstad van Lithouwen. We waren er in 2005 voor het wereldcongres der Esperantisten. A"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1914718.html"

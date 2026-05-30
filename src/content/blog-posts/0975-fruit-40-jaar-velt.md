@@ -50,7 +50,7 @@ reactions: []
 <p><em>Over HOE we zullen zorgen voor gezond voedsel en een gezonde grond laat ik liever het woord aan een deskundige ter zake.</em></p>
 <p><em>We hebben voor U de heer Luc Chaltin van Bonheiden uitgeno­digd. Hij is de auteur van de "Gids voor de Biologische Tuin". Hier te verkrijgen aan de prijs van 60 fr.</em></p>
 <p><em>We zullen veel van hem kunnen leren. Hij zal eerst zijn spreekbeurt houden. Achteraf is hij bereid uw vele vragen te beantwoorden.</em></p>
-<h1> Daniel Willaeys</h1>
+<h1> Daniël Willaeys</h1>
 
 <p>Drie weken later op 23 maart volgde de stich­tings­avond. Omer Vandeursen was er met een diaserie om de "Vrienden van de Biologische Land en Tuinbouw" voor te stellen: hun symbool de zonnebloem en gecentreerd rond het Zonnebloemhof, biologisch bedrijf en winkel te Beveren-Roeselare.</p>
 <p>Onze groep kreeg de naam "Vrienden van de Biologische Land- en Tuinbouw Voorkempen".</p>

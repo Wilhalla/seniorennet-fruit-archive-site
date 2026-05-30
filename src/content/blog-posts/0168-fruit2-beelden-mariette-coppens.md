@@ -6,7 +6,7 @@ title: "Beelden Mariette Coppens"
 date: "24-09-2018"
 isoDate: "2018-09-24T23:08:00"
 time: "23:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mariette Coppens bewerkte de dikke spillen van de Linde Jan en Trien . . Zalvende handen Het koppel De 2 dochters? Trien met haar 2 kinderen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2180131.html"

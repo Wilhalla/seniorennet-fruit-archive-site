@@ -6,7 +6,7 @@ title: "Feedback Huiszwaluwentillen"
 date: "06-01-2016"
 isoDate: "2016-01-06T16:07:00"
 time: "16:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback Huiszwaluwentillen In Vlaanderen kennen dergelijke tillen vooralsnog geen succes. Vele tillen zijn te klein of niet ideaal geplaatst. Maar het is een cultuur die je moet kweken bij vogels, en eens er een til bezet is, is het aangew"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1860382.html"

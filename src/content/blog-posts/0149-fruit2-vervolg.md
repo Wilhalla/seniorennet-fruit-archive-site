@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "22-10-2018"
 isoDate: "2018-10-22T23:29:00"
 time: "23:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "St Paulus, de Dominicanerkerk Eerst bezoeken we de monumentale Calvarieberg, nagebouwd omdat men niet meer op bedevaart kon naar het afgesloten Jeruzalem."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2187329.html"

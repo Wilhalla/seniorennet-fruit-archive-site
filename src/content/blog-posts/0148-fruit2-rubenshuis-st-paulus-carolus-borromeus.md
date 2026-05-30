@@ -6,7 +6,7 @@ title: "Rubenshuis –St.Paulus – Carolus Borromeus"
 date: "22-10-2018"
 isoDate: "2018-10-22T23:35:00"
 time: "23:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Rubenshuis –St.Paulus – Carolus Borromeus 19/10 Al de 4de activiteit van VOC in het kader van de Barok Aan het Rubenshuis is het wat wachten, want een voorname Chinese delegatie gaat voor. Met Hilde Eykens hebben we een uitstekende gids. De"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2187330.html"

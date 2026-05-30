@@ -6,7 +6,7 @@ title: "Tuingroep Antwerpen Landelijke Gilde voor de vierde maal naar Engeland"
 date: "09-07-2015"
 isoDate: "2015-07-09T09:59:00"
 time: "09:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tuingroep Antwerpen Landelijke Gilde voor de vierde maal naar Engeland Chartwell Bij de verkaveling van het oorspronkelijke domein in 1921 kocht Winston Churchill het huis met 32 Ha grond. Vooral de glooiende omgeving is mooi. Bezoek aan he"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1788328.html"

@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "18-12-2019"
 isoDate: "2019-12-18T21:45:00"
 time: "21:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Fruitbomen met maretakken 20. Uitgebloeide heggerank, feeëriek in het zonlicht Bad Sooden-Allendorf 21. Gradeerwerk 22. Idem 23. Idem 24. Gidse Annie Van Look 25. Gaanderij 26. Wand met de sleedoorntakjes 27. Park"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2289164.html"

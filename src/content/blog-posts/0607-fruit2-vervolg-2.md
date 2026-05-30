@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "21-09-2015"
 isoDate: "2015-09-21T23:24:00"
 time: "23:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Kathedraal toren We wandelen terug door een staat met vakwerkhuizen Idem Naar de église Ste Jeanne d’ Arq Ludo geedt uitleg over de kerk In de kerk Idem Idem Avondwolken"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1816336.html"

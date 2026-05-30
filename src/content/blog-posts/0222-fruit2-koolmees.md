@@ -6,7 +6,7 @@ title: "Koolmees"
 date: "25-04-2018"
 isoDate: "2018-04-25T14:29:00"
 time: "14:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Koolmeesfilm link Els Arnauts zag vandaag hoe een koolmees wol verzamelde uit mijn sloef."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2141254.html"

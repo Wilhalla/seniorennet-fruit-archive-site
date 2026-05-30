@@ -6,7 +6,7 @@ title: "Bezoek tuin Daniël Willaeys te Zoersel"
 date: "30-09-2017"
 isoDate: "2017-09-30T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "FRUITWERKGROEP Kempen Bezoek tuin Daniël Willaeys te Zoersel 23.09.2017 GROOTFRUIT Zoals de moestuin, is ook het groot-fruit aan een revival bezig: er was een opkomst van een 25tal geïnteresseerden aanwezig in de tuin van Daniël, die daar t"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2077500.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "05-11-2016"
 isoDate: "2016-11-05T12:45:00"
 time: "12:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Kaart Lac de Der – Chantecrocq ( een van de verdwenen dorpen) Uitleg kraanvogels Kraanvogels Idem Idem Uitleg kraanvogels Idem Idem Groep bij hoeve waar ze vroeger gevoederd werden."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1973287.html"

@@ -6,7 +6,7 @@ title: "Mahieupeer en NBS bochure nr5"
 date: "02-10-2018"
 isoDate: "2018-10-02T20:49:00"
 time: "20:49"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mahieupeer en NBS bochure nr5 €15 Op initiatief van de Velt-Fruitwerkgroep Wevelgem-Menen werd, met steun van de provincie, de laatste, honderdjarige Mahieupeer verplant en overleefde dank zij de goede zorgen de hete, droge zomer. Met plezi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2182132.html"

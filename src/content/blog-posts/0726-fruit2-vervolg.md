@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "29-03-2015"
 isoDate: "2015-03-29T23:15:00"
 time: "23:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Nog een hoekje 11. Kruidenierswinkel van vroeger 12. Bakkerstriporteur 13. Wanmolen om het kaf van het graan te scheiden 14. Groentekar 15. De groep 16. Bij de vroegere, fijn gerestaureerde woonwagen van Jean-Marie Pfaff. 17. Ou"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743729.html"

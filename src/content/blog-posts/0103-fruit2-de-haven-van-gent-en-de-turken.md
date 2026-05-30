@@ -6,7 +6,7 @@ title: "De haven van Gent en de Turken"
 date: "20-05-2019"
 isoDate: "2019-05-20T23:02:00"
 time: "23:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De haven van Gent en de Turken 16-5-2019 met Egenhoven De koffie met koek was in ’t Boerenhof te Oostakker., dicht bij het Bedevaartsoord. We hadden de twee torens van de basiliek opgemerkt. Met gids Dirk vatten we daarop de havenrondrit aa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2239859.html"

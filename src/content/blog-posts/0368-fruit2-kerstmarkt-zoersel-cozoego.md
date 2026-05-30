@@ -6,7 +6,7 @@ title: "Kerstmarkt Zoersel COZOEGO"
 date: "12-12-2016"
 isoDate: "2016-12-12T20:00:00"
 time: "20:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kerstmarkt Zoersel COZOEGO 10-11/12 We stonden met Comité Zoersel Going op de kerstmarkt met 2 luiken duurzame producten: uit het hoge noorden van Kameroen, in het dorp zelf bereide neemolie ( * ) en neemzeep, gefabriceerd in het buurdorp L"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1986211.html"

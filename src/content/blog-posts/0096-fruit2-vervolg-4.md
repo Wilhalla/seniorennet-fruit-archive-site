@@ -6,7 +6,7 @@ title: "VERVOLG 4"
 date: "17-06-2019"
 isoDate: "2019-06-17T23:07:00"
 time: "23:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 4 37. De engel Gabriel 38. Renoir: Gebrielle 1903 39. Pieter Breugel de oude Prediking van Johannes de Doper 1566 40. Beelden op de burcht van Buda 41. Panorama 42. Idem 43. Brug met de oudste kerk van Boedapest 44. Beeld van de bur"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2246638.html"

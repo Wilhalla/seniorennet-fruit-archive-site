@@ -6,7 +6,7 @@ title: "Ecotuindagen"
 date: "06-06-2017"
 isoDate: "2017-06-06T11:21:00"
 time: "11:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ecotuindagen 3 en 4 /06/2017 De Ecotuindagen van VELT zijn weer achter de rug. De 100 bezoekers hebben ervan genoten en ik ook. Prachtig weer. Het had in lang niet meer geregend en nu eindelijk regen. Gelukkig heb ik een betere grond dankzi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2043964.html"

@@ -6,7 +6,7 @@ title: "Crinum of Haaklelie"
 date: "11-08-2015"
 isoDate: "2015-08-11T09:29:00"
 time: "09:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Crinum of Haaklelie Al een tijd staat de Crinum te bloeien met zijn zacht-roze bloemen. Dertig jaar terug werd de bol gekocht in de abdij Maria-Laach in de Eifel en gewoon in de grond gestopt. Voor de rest werd er niet naar omgekeken en toc"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1800656.html"

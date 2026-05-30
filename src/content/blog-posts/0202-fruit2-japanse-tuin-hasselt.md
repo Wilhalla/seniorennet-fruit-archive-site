@@ -6,7 +6,7 @@ title: "Japanse TUIN Hasselt"
 date: "14-06-2018"
 isoDate: "2018-06-14T22:06:00"
 time: "22:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Japanse TUIN Hasselt met Egenhoven 13-6-2018 De stad ITAMI in Japan en Hasselt hebben vriendsschapsbanden. Hasselt schonk Itami in november 1991 een beiaard, en Hasselt kreeg van hen een uitgewerkt plan en medewerking voor een Japanse Tuin."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2154873.html"

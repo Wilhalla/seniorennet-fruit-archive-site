@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "26-12-2017"
 isoDate: "2017-12-26T12:53:00"
 time: "12:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Te zien aan de horizontale groei der harttakken een kunstig gesnoeide Schone van Boskoop appel. 11. Lakenhalle 12. Idem 13. Boerenkrijgmonument 14. Lakenhalle 15. Idem met gidse 16. Het Beloken Hof 17. Monument ter gedachtenis a"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2105294.html"

@@ -6,7 +6,7 @@ title: "Proximus negeert Taalwetgeving"
 date: "12-06-2018"
 isoDate: "2018-06-12T14:38:00"
 time: "14:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Proximus negeert Taalwetgeving Tot op heden kreeg ik alle E-mails in het Frans en vandaag een eerste afrekening ook in het Frans! Een maand geleden kreeg ik een ronselaar over de vloer. Alle diensten die telenet levert: internet, TV, vaste "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2154225.html"

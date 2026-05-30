@@ -6,7 +6,7 @@ title: "Een healing Giant."
 date: "03-06-2015"
 isoDate: "2015-06-03T23:38:00"
 time: "23:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een healing Giant. Daniel blijkbaar heb je in een ver verleden ook nog je roets evrdiend in de Dodoenstuin te schilde intussen onderhouden wij met een groep vrijwilligers een openbare Dodoens kruidentuin in Schilde sinds een 3 tal jaar, nad"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1773198.html"

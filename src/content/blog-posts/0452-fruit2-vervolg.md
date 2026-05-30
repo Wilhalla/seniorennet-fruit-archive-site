@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "31-07-2016"
 isoDate: "2016-07-31T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Eric Janssen Frambozen Idem Aantrekkelijk Amerikaans ras van Descroll’s Bramen Victoria idem Bramen Brouwerij Wilderen Bieren Stolerijproducten Gids met Rino"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1940905.html"

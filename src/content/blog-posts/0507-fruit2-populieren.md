@@ -6,7 +6,7 @@ title: "Populieren"
 date: "15-05-2016"
 isoDate: "2016-05-15T21:15:00"
 time: "21:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Populieren Op de foto van 11 mei zie je twee populieren. De linkse, een Robusta begint pas uit te lopen. De rechtse, een Gelrica staat al volop in het blad. De Robusta ik veruit de dikste. In 1963 stak ik die terplaatse als tak in de grond."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1914452.html"

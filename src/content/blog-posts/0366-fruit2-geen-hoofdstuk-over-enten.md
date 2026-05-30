@@ -6,7 +6,7 @@ title: "Geen Hoofdstuk over Enten"
 date: "15-12-2016"
 isoDate: "2016-12-15T17:38:00"
 time: "17:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Geen Hoofdstuk over Enten Dat er in het Fruitboek niets staat over (zelf) enten vind ik ergerlijk. Ook de gewone consument-lezer wil toch weten hoe men een fruitboom maakt? Voor Velt, die in mijn ogen aanzet tot zelf doen en zelfredzaamheid"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1987381.html"

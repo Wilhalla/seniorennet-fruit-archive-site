@@ -6,7 +6,7 @@ title: "KWEEPEREN"
 date: "28-09-2015"
 isoDate: "2015-09-28T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "KWEEPEREN Vorige week de kweeperen geplukt. Vooral voor Vranja en Rhea’s Mammout was het hoogtij. Meerdere waren al gevallen en begonnen snel te rotten. Vruchten die volledig in de schaduw hangen vertonen veel zwarte vlekjes. Deze rassen di"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819408.html"

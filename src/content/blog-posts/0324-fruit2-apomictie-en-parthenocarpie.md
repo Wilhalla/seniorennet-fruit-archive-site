@@ -6,7 +6,7 @@ title: "Apomictie en Parthenocarpie"
 date: "08-06-2017"
 isoDate: "2017-06-08T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Apomictie en Parthenocarpie Gisteren is mijn frank gevallen, alhoewel het nu euro’s zijn. De prachtige, gestekelde braam aan de achterinkom, die er vanzelf gekomen is, is een geval van apomictie. Altijd is al opgevallen dat deze struik zeer"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2044556.html"

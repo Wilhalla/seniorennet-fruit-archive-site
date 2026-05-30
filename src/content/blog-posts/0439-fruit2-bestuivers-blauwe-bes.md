@@ -6,7 +6,7 @@ title: "Bestuivers Blauwe Bes"
 date: "31-08-2016"
 isoDate: "2016-08-31T10:11:00"
 time: "10:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Teelt van blauwe bes gebaat bij mix van bestuivers Onderzoek in Limburg toont aan juist de combinatie van bestuivers positief uitpakt voor de opbrengst. De opbrengst van blauwe bessenteelt is sterk afhankelijk van een goede bestuiving. Wann"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1950859.html"

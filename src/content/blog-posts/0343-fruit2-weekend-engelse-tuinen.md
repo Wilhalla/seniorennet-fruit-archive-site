@@ -6,7 +6,7 @@ title: "Weekend Engelse Tuinen"
 date: "30-03-2017"
 isoDate: "2017-03-30T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Weekend Engelse Tuinen Zat. en Zo. 9 -10 sept 2017 : Kew Gardens, Canterbury, Chilham, Brogdale (org. VELT Voorkempen / CoZoeGo) Met de bus van Lauwers naar Calais. Deze keer wel met de Shuttle. We rijden Kent en Groot-Londen door tot aan d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2022674.html"

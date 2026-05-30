@@ -6,7 +6,7 @@ title: "Villandry"
 date: "23-09-2016"
 isoDate: "2016-09-23T22:48:00"
 time: "22:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dag 2 woe. 24 aug. Villandry Het laatst gebouwd kasteel in de Loirestreek in Renaissancestijl, niet zover van Tours. Villandry is vooral bekend voor zijn tuin en dan speciaal de moestuin bestaande uit negen vierkanten in verschillende patro"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1959126.html"

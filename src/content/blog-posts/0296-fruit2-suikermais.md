@@ -6,7 +6,7 @@ title: "Suikermaïs"
 date: "03-09-2017"
 isoDate: "2017-09-03T06:18:00"
 time: "06:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Suikermaïs Een heerlijk middagmaal Al meer dan 50 jaar teel ik suikermaïs. Vroeger waren dit de zaadvaste rassen als bv Golden Bantam, maar nu zijn de hybride, suikerzoete rassen nog beter."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2069374.html"

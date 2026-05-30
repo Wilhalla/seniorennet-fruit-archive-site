@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "30-09-2019"
 isoDate: "2019-09-30T23:31:00"
 time: "23:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Weiden voor de kaas Kerk Edammerkaas De speeltoren De klokken hangen aan de buitenkant Scheepsbouw Gevels Monnickendam Hefe Weissbier Giethoorn"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2270997.html"

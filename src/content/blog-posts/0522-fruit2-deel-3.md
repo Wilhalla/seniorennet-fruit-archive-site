@@ -6,7 +6,7 @@ title: "Deel 3"
 date: "23-04-2016"
 isoDate: "2016-04-23T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Deel 3 De man met de bruine frak is gids John Maes Omgewaaide beuk Idem Zevenbergen Aanpalende weiden Eenbes Idem De balk boven de open haard Genieten bij het open vuur"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1905910.html"

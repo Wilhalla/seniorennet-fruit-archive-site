@@ -6,7 +6,7 @@ title: "Wielewaal"
 date: "11-05-2015"
 isoDate: "2015-05-11T15:44:00"
 time: "15:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wielewaal Vandaag (11/5) hoorde ik vanaf half 12 een tijd de welluidende geluiden van een wielewaal-doortrekker. Het was al een heel aantal jaren dat ik de vogel nog gehoord had. Tot een 25 jaar geleden broedde hij steeds in de Schijnvallei"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1762955.html"

@@ -6,7 +6,7 @@ title: "Mijn oudste boom: een Bellefleur"
 date: "18-05-2016"
 isoDate: "2016-05-18T23:37:00"
 time: "23:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mijn oudste boom: een Bellefleur Toen we hier 54 jaar geleden kwamen was dit al een oude boom, meer dan vijftig jaar. De boom werd geveld door de zware augustusstorm van 1992. De eerste opschietende tak heb ik omgeënt met Reinette de Flandr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1915868.html"

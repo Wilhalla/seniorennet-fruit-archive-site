@@ -6,7 +6,7 @@ title: "Feedback Distelvlinder"
 date: "28-07-2016"
 isoDate: "2016-07-28T23:32:00"
 time: "23:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback Distelvlinder Bij mij zitten er ook alle dagen +/- 4 stuks. En laat ze maar komen ik bedoel die invasie, het zijn prachtige vlinders. Aldus Walter d’Hertefelt, Oostmalle. In de lectuur zie ik dat ze hier zorgen voor één generatie n"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1940144.html"

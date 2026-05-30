@@ -6,7 +6,7 @@ title: "Op-Goede Grond/ Brixmeting"
 date: "15-10-2017"
 isoDate: "2017-10-15T23:43:00"
 time: "23:43"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Op-Goede Grond/ Brixmeting"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2082736.html"

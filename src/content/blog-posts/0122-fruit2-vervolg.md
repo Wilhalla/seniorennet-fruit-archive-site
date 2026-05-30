@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "11-04-2019"
 isoDate: "2019-04-11T23:55:00"
 time: "23:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "10. Gekwetst hoofd 11. Toren 12. Ingang Groot Semenarie 13. Inschepen tegenover de vismarkt 14 Dijle 15. Huizen 16. Vismarkt Huis (Renaissance) 17. Huizen 18. Oud Sashuis"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2230194.html"

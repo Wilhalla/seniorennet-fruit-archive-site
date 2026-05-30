@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "17-06-2015"
 isoDate: "2015-06-17T23:51:00"
 time: "23:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Franky Michielsen 11. Specht 12. Hond 13. Kraai 14. Griet Van Steen 15. Broer en zus (moeder van Franky) 16. met zijn tweeën 17. Groep 18. Groep"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1778668.html"

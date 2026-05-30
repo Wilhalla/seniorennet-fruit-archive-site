@@ -6,7 +6,7 @@ title: "Amsterdam"
 date: "29-05-2016"
 isoDate: "2016-05-29T16:14:00"
 time: "16:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Amsterdam 19/5 Senioren Landelijke Gilde, Malle-Broechem 2 volle bussen. We troffen het met het weer. Onze gids Staf Als je de stad binnenrijdt zie je overal massas fietsen. We stappen uit bij het stadhuis met ernaast de opera. In de hall v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1919791.html"

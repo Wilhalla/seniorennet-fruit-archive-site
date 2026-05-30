@@ -6,7 +6,7 @@ title: "Fourberry - Crandallberry"
 date: "11-01-2016"
 isoDate: "2016-01-11T13:50:00"
 time: "13:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Fourberry - Crandallberry Ik kreeg een mail waarin er sprake was van ‘Black Pearl’. Ik wou er meer over weten. Fourberry: More than just a new fruit Posted by Graham Rice (RHS in Engeland) on 12 Nov 2011 The blackcurrants, redcurrants, whit"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1862784.html"

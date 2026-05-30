@@ -6,7 +6,7 @@ title: "Normandië Dag 4 3/9"
 date: "20-09-2015"
 isoDate: "2015-09-20T23:01:00"
 time: "23:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Normandië Dag 4 3/9 Vanmorgen staat de verkenning van de streek, het Marais-gedeelte van de Contentin op het programma. Onder Contentin verstaat men het schiereiland, dat uitsteekt in het kanaal, met als bekendste punt Cherbourg met zijn ha"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1815914.html"

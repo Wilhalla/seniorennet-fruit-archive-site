@@ -34,7 +34,7 @@ reactions:
 <p>Pionier voor een gezonde en rechtvaardige levenswijze</p>
 <p>Oprichtster en spil van COZOEGO</p>
 <p>(Comité Zoersel - Going Kameroen)</p>
-<p>echtgenote van Daniel Willaeys</p>
+<p>echtgenote van Daniël Willaeys</p>
 <p>geboren in Antwerpen op 5 december 1933</p>
 <p>en overleden te Halle-Zoersel op 7 juli 2014.</p>
 
@@ -60,7 +60,7 @@ reactions:
 <p><em>een weerspiegeling</em></p>
 <p><em>van de hemel.</em></p>
 
-<p>Daniel Willaeys, <em>haar man,</em></p>
+<p>Daniël Willaeys, <em>haar man,</em></p>
 <p>Peter Willaeys,</p>
 <p> Jochen en Michiel,</p>
 <p>Leen Willaeys en Aminou Hillé,</p>

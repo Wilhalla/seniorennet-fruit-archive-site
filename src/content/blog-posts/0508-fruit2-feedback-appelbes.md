@@ -6,7 +6,7 @@ title: "Feedback Appelbes"
 date: "15-05-2016"
 isoDate: "2016-05-15T12:55:00"
 time: "12:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback Appelbes Mijn 2 struiken hebben ook meerdere stammen (en blijven maar onderaan uitschieten) - ze werden mij indertijd door Mampaey (viersel) als appelbessen verkocht, maar op het kaartje staat ook niet meer dan ' Aronia melanocarpa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1914515.html"

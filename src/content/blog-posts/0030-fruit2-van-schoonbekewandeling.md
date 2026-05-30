@@ -6,7 +6,7 @@ title: "Van Schoonbekewandeling"
 date: "22-11-2019"
 isoDate: "2019-11-22T20:21:00"
 time: "20:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Van Schoonbekewandeling 19/11 Met VOC Antwerpen Gids Katty Borgers Gilbert Van Schoonbeke 1519-1556 (37j) Vertrek aan de Bourla. Daar richtte hij het pand op voor de tapijthandel. We wandelen tot de vrijdagmarkt, ook een van zijn verwezenli"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2283365.html"

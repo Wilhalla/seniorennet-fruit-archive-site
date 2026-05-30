@@ -6,7 +6,7 @@ title: "Lac du Der"
 date: "05-11-2016"
 isoDate: "2016-11-05T12:50:00"
 time: "12:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lac du Der met Natuurpunt Voorkempen 22-25 okt. We reden met 3 busjes Vivaro en Eric met zijn Camper. Het gaat over Brussel, Namen, Bouillon en verder voor een stop aan het Lac du Belval. Natuurpunt had een hand in de aanleg van de kijkhutt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1973290.html"

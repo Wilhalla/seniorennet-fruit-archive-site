@@ -6,7 +6,7 @@ title: "Chateau de Talcy"
 date: "21-09-2016"
 isoDate: "2016-09-21T22:55:00"
 time: "22:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Donderdag 25 augustus Vanmorgen staat Chateau de Talcy op het programma. Talcy ligt niet zo ver van Blois, middenin een landbouwgebied met uitgestrekte graanvelden. Het kasteel van Talcy beheerde meerdere boerderijen en vele gronden. Heden "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958487.html"

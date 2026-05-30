@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "29-06-2016"
 isoDate: "2016-06-29T10:38:00"
 time: "10:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Rijk beladen Kioto 11. Robusta, de enige abrikoos met rozig vlees 12. Groep 13. Ger met Marc Ballat 14. Ger maakte ons attent op de onderstammen voor abrikoos: Krimsk vva1 met opvallende streepjes. Het ras groeit feller dan de o"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1930646.html"

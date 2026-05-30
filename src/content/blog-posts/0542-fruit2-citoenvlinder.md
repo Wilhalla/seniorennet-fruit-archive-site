@@ -6,7 +6,7 @@ title: "Citoenvlinder"
 date: "01-04-2016"
 isoDate: "2016-04-01T13:13:00"
 time: "13:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lente in aantocht Om 12u30 de eerste citroenvlinder gezien."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1896991.html"

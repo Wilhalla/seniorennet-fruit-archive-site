@@ -6,7 +6,7 @@ title: "Haven Rotterdam"
 date: "25-05-2015"
 isoDate: "2015-05-25T10:46:00"
 time: "10:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Haven Rotterdam Senioren Landelijke Gilde (21/5) Goed weer, twee bussen. Stop voor koffie-taart op wegrestaurant Hendrik-ido-ambacht (Dordrecht). Over een hele infrastructuur van autowegen rijden we aan de westkant van de Rotterdamse haven."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1768899.html"

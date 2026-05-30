@@ -6,7 +6,7 @@ title: "Gevaar lichte Nachtvorst"
 date: "17-04-2016"
 isoDate: "2016-04-17T22:46:00"
 time: "22:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gevaar lichte Nachtvorst Ik heb 4 verhoogde bedden aardbeien liggen op worteldoek. Gisteren heb ik het soigneren beeindigd; eerst onkruid verwijderd, dan de dode bladeren weggehaald. Het grote voordeel is de door het worteldoek sterk geredu"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1903788.html"

@@ -6,7 +6,7 @@ title: "Volkstuinder"
 date: "22-09-2016"
 isoDate: "2016-09-22T15:13:00"
 time: "15:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "‘Iedere volkstuinder weet hoe moeilijk productie is zonder chemicaliën’ (De Standaard 22 sept. P 32 Louise o. Fresco) Moeilijk voor een volkstuinder vind ik een dooddoener. Ik tuinier al 54 jaar op een natuurlijke manier en zonder met wat m"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958647.html"

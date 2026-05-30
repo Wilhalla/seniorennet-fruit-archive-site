@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "25-06-2015"
 isoDate: "2015-06-25T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Groep Geul Groepsfoto Knolbies Botten spoelen Turfblok met herkenbare berkenschors We verlaten de brede arm en gaan naar de rijksdam. Men heeft er stenen voor gebruikt,want eerst overwoog men inpolderen. We komen aan de ringdijk K"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1782447.html"

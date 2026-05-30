@@ -6,7 +6,7 @@ title: "De Fietsboot van Ivo Dierckx"
 date: "06-08-2015"
 isoDate: "2015-08-06T21:30:00"
 time: "21:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Fietsboot van Ivo Dierckx van Deurne Op het laatste Afrikafeest hadden we een opmerkelijke bezoeker Ivo met zijn fietsboot. Hij had in zijn eigen schepping de daaropvolgende nacht hier gekampeerd. ’s Morgens kreeg ik de uitleg. Je kan me"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1799172.html"

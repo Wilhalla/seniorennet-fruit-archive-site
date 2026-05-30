@@ -6,7 +6,7 @@ title: "Bezoek van de K.V.D.V. aan de Boomkwekerijen Van den Berk"
 date: "29-08-2015"
 isoDate: "2015-08-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bezoek van de Koninklijke Vlaamse Dendrologische Vereniging aan de Boomkwekerijen Van den Berk Te Sint Oedensrode in het Nederlandse Brabant reden we per wagen de vele tientallen hectaren grote boomkwekerij rond. We zien alleen de grote bom"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1807300.html"

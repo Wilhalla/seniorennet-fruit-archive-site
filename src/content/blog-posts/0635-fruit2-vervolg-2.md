@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "01-08-2015"
 isoDate: "2015-08-01T11:22:00"
 time: "11:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Meisjes Rita Creaynest Kunst met wegwerpmateriaal Jan De Maeyer Idem Idem Jan De Maeyer als wielertoerist Zijmuur met perziken Op de Toren, in de verte de zee Op de Toren De achterhaven van zeebrugge aan de noord-oostkant Het witt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797279.html"

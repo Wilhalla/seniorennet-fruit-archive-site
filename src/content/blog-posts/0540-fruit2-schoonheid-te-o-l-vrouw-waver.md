@@ -6,7 +6,7 @@ title: "Schoonheid te O.-L.-Vrouw-Waver"
 date: "01-04-2016"
 isoDate: "2016-04-01T22:48:00"
 time: "22:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Schoonheid te O.-L.-Vrouw-Waver Een uitstap met KVLV Halle en Schilde We krijgen een rondleiding in de gebouwen van het vroeger internationaal vermaard pensionaat van de Ursulinen te O.L.Vrouw-Waver. We bezoeken het historisch gedeelte met "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1897207.html"

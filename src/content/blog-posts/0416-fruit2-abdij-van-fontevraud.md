@@ -6,7 +6,7 @@ title: "abdij van Fontevraud"
 date: "23-09-2016"
 isoDate: "2016-09-23T22:43:00"
 time: "22:43"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vandaar rijden we naar de abdij van Fontevraud, gesticht in 1101. Aan het hoofd stond steeds een abdis. In de loop der tijd werden priorijen voor monikken opgericht en groeide er een kleine stad rond. In de kapel zie je 4 graftombes: Hendri"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1959123.html"

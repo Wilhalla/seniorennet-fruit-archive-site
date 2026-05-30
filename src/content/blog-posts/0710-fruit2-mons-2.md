@@ -6,7 +6,7 @@ title: "Mons 2"
 date: "03-05-2015"
 isoDate: "2015-05-03T13:03:00"
 time: "13:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mons 2 Nu met de groep Egenhoven Op de tentoonstelling Van Gogh geen foto’s, behalve de eindnoot. Voor de gegidsste wandeling verwijs ik naar de blog van 29/03 Enkele aanvullingen FOTO’S Creatieve uitleving Idem Iderm Renaissancegebouw naas"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1759330.html"

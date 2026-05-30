@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "19-11-2018"
 isoDate: "2018-11-19T20:12:00"
 time: "20:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Gids 11. Thermen 12. Tempel met beeld van de omgeving 13. Hafentempel 14 Tempel 15. Uitleg 16. Herberggebouw –Wachttorens 17. Bus"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2193885.html"

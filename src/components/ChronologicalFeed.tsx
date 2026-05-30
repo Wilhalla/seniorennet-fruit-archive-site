@@ -1,64 +1,16 @@
 import { Images, Search } from "lucide-react";
 import { archiveAssetUrl } from "../lib/assetUrls";
-import { archiveDayLabel, archiveMonthKey, archiveMonthLabel, archiveShortMonthLabel, archiveTimestamp, archiveYear, displayArchiveYear, formatArchiveDate, sortArchiveChronologically } from "../lib/archiveDateTime";
+import { archiveDayLabel, archiveTimestamp, archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate } from "../lib/archiveDateTime";
 import type { PostSummary } from "../lib/postIndex";
 
 type Props = { posts: PostSummary[]; limit?: number };
-type MonthGroup = {
-  key: string;
-  label: string;
-  shortLabel: string;
-  year: string;
-  posts: PostSummary[];
-  startsYear: boolean;
-};
-type YearGroup = { year: string; posts: PostSummary[]; firstMonthKey: string };
-
 const countPill =
   "inline-flex min-h-6 items-center rounded-full px-2.5 font-mono text-[11px] leading-none";
 
-function groupPosts(posts: PostSummary[], limit?: number) {
-  const sortedPosts = sortArchiveChronologically(posts);
-  const chronologicalPosts =
-    typeof limit === "number" ? sortedPosts.slice(0, limit) : sortedPosts;
-
-  const yearMap = new Map<string, YearGroup>();
-  const monthMap = new Map<string, MonthGroup>();
-  const monthGroups: MonthGroup[] = [];
-
-  for (const post of chronologicalPosts) {
-    const year = archiveYear(post);
-    const key = archiveMonthKey(post);
-    let yearGroup = yearMap.get(year);
-    if (!yearGroup) {
-      yearGroup = { year, posts: [], firstMonthKey: key };
-      yearMap.set(year, yearGroup);
-    }
-    yearGroup.posts.push(post);
-
-    let month = monthMap.get(key);
-    if (!month) {
-      month = {
-        key,
-        year,
-        label: archiveMonthLabel(key),
-        shortLabel: archiveShortMonthLabel(post),
-        posts: [],
-        startsYear: yearGroup.posts.length === 1,
-      };
-      monthMap.set(key, month);
-      monthGroups.push(month);
-    }
-    month.posts.push(post);
-  }
-
-  return { chronologicalPosts, yearGroups: [...yearMap.values()], monthGroups };
-}
-
 export default function ChronologicalFeed({ posts, limit }: Props) {
-  const { chronologicalPosts, yearGroups, monthGroups } = groupPosts(
+  const { chronologicalItems: chronologicalPosts, yearGroups, monthGroups } = buildArchiveChronology(
     posts,
-    limit,
+    { limit },
   );
   const validPosts = chronologicalPosts.filter((post) =>
     Number.isFinite(archiveTimestamp(post)),
@@ -85,7 +37,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
               id="chronology-title"
               className="display-title max-w-3xl max-md:mx-auto"
             >
-              Archief Daniël Willaeys
+              Blogarchief Daniël Willaeys
             </h1>
           </div>
           <div className="max-w-md justify-self-center md:justify-self-end md:pb-2">
@@ -134,12 +86,12 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                         : "flex min-h-8 w-full items-center justify-center gap-3 whitespace-nowrap rounded-full px-2 text-center text-sm text-slate-ink no-underline hover:bg-powder hover:text-obsidian md:justify-between md:px-3 md:text-left md:text-base"
                     }
                     key={group.year}
-                    aria-label={`Spring naar ${displayArchiveYear(group.year)}, ${group.posts.length} berichten`}
+                    aria-label={`Spring naar ${displayArchiveYear(group.year)}, ${group.count} berichten`}
                     href={`#year-${group.year}`}
                   >
                     <span>{displayArchiveYear(group.year)}</span>
                     <span className="hidden shrink-0 font-mono text-xs md:inline">
-                      {group.posts.length}
+                      {group.count}
                     </span>
                   </a>
                 ))}
@@ -171,7 +123,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                     <p className="m-0 text-sm text-slate-ink">
                       {yearGroups
                         .find((group) => group.year === month.year)
-                        ?.posts.length.toLocaleString("nl-BE")}{" "}
+                        ?.count.toLocaleString("nl-BE")}{" "}
                       berichten
                     </p>
                     <h2 className="m-0 font-heading text-5xl font-normal leading-none tracking-tight text-midnight-navy md:text-7xl">
@@ -190,7 +142,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                       {month.label}
                     </p>
                   </div>
-                  {month.posts.map((post, index) => {
+                  {month.items.map((post, index) => {
                     const image = post.images[0];
                     const dateId = post.isoDate?.slice(0, 10) || "";
                     const timeLabel = displayTime(post);
@@ -203,7 +155,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                           className={
                             image
                               ? "grid min-w-0 gap-4 text-inherit no-underline md:grid-cols-[13rem_minmax(0,1fr)] md:items-center md:gap-8"
-                              : "grid min-w-0 gap-4 text-inherit no-underline md:grid-cols-[4rem_minmax(0,1fr)] md:gap-6"
+                              : "grid min-w-0 gap-4 text-inherit no-underline md:grid-cols-[2.75rem_minmax(0,1fr)] md:gap-4"
                           }
                           href={`/posts/${post.slug}/`}
                           aria-label={`Lees ${post.title}`}
@@ -213,18 +165,12 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                               className={
                                 image
                                   ? "flex items-baseline gap-2 text-gravel md:block md:text-left"
-                                  : "flex items-baseline gap-2 text-gravel md:block md:pt-1 md:text-right"
+                                  : "flex items-baseline gap-2 text-gravel"
                               }
                               dateTime={dateId}
                               aria-label={formatArchiveDate(post)}
                             >
-                              <span
-                                className={
-                                  image
-                                    ? "font-mono text-2xl leading-none tracking-[-0.04em] text-obsidian md:text-[40px]"
-                                    : "font-mono text-2xl leading-none tracking-[-0.04em] text-obsidian md:text-[26px]"
-                                }
-                              >
+                              <span className="text-sm font-medium leading-none text-obsidian">
                                 {archiveDayLabel(post)}
                               </span>
                               <span className="text-xs uppercase tracking-[0.14em] text-slate-ink md:hidden">

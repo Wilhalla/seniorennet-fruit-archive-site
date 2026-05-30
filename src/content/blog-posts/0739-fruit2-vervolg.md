@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "23-03-2015"
 isoDate: "2015-03-23T11:42:00"
 time: "11:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. kronkelweg 11. Afdalen 12 Jeneverbes 13. kudde 14. Jeneverbessen 15. Vruchten van de jeneverbes 16. Brahim en Peter, met het dorp in de diepte 17. Rode rotsen 18. Terrassen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1740547.html"

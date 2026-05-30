@@ -6,7 +6,7 @@ title: "Vervog 2"
 date: "09-03-2015"
 isoDate: "2015-03-09T23:40:00"
 time: "23:40"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: ""
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1734258.html"

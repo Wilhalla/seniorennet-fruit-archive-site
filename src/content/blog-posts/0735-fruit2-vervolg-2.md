@@ -6,7 +6,7 @@ title: "Vervolg 2"
 date: "25-03-2015"
 isoDate: "2015-03-25T23:12:00"
 time: "23:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Op de tweede foto zie je het typische masker van Binche: grote, rode snor en groene bril (om de kleur van de ogen niet te kunnen zien)."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1741789.html"

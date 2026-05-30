@@ -6,7 +6,7 @@ title: "Zadenstudiedag VELT"
 date: "06-12-2019"
 isoDate: "2019-12-06T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zadenstudiedag VELT Merksplas 1-12-2019 op ‘De kleine Boerderij’ bij Merksplas Kolonie. Ze hebben er ook een te bezoeken plantentuin. Er is een eerste uiteenzetting door Annick Hollebeke over ‘Eetbare Bloemen in de Tuin’. Voor mij al een la"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2286359.html"

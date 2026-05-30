@@ -6,7 +6,7 @@ title: "Insel Hombroich Neuss 31/5"
 date: "13-06-2015"
 isoDate: "2015-06-13T22:18:00"
 time: "22:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Insel Hombroich Neuss 31/5 met Art Fan van Zoersel Het Museum Insel Hombroich is een speciaal museum in openlucht met als motto „kunst parallel aan de natuur\". Het museum bestaat uit meerdere delen. Op de eerste plaats een parkachtig landsc"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776949.html"

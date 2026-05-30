@@ -6,7 +6,7 @@ title: "Rechtzetting"
 date: "25-09-2019"
 isoDate: "2019-09-25T23:48:00"
 time: "23:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Rechtzetting Klik op https://www.bnnvara.nl/zembla Skrol op het startblad naar beneden: Toon meer Video's. Rechts onder zie je Parkinson op het platteland"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2269900.html"

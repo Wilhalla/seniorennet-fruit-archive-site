@@ -6,7 +6,7 @@ title: "Waarnemingen"
 date: "01-05-2016"
 isoDate: "2016-05-01T21:00:00"
 time: "21:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Waarnemingen Vandaag, 1 mei, een stralende dag, geen wolkje aan de hemel. Ik stond vanmorgen om 6u aan ‘De Kluis’, het reservaat van Natuurpunt , te Blommerschot, waar Zoersel grenst aan de buurgemeenten Malle, Vorselaar en Zandhoven. De co"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1909324.html"

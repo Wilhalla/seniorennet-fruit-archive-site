@@ -6,7 +6,7 @@ title: "Neushoornkever"
 date: "09-08-2016"
 isoDate: "2016-08-09T20:45:00"
 time: "20:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Neushoornkever We waren vanmiddag mest aan het scheppen voor de opbouw van de aardbeienbedden. Plots twee zeer grote larven opgemerkt, beduidend groter dan de engerlingenlarve van de meikever. De snuit van deze larve is veel donkerder bruin"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1944278.html"

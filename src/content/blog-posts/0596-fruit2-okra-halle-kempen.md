@@ -6,7 +6,7 @@ title: "OKRA Halle-Kempen"
 date: "29-09-2015"
 isoDate: "2015-09-29T23:07:00"
 time: "23:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "OKRA Halle-Kempen 16/9 We rijden Antwerpen binnen via een stukje haven en passeren het nieuwe Havenhuis Antwerpen in aanbouw. Boven de geklasseerde oude brandweerkazerne bouwt men een indrukwekkende, van ver zichtbare constructie die veel w"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819888.html"

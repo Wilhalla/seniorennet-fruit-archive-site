@@ -6,7 +6,7 @@ title: "Weekend Engelse Tuinen"
 date: "13-07-2015"
 isoDate: "2015-07-13T14:00:00"
 time: "14:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Weekend Engelse Tuinen Zat. en Zo 12 -13 sept ‘15 : Wisley Gardens, Canterbury, Brogdale (org. VELT Voorkempen / CoZoeGo) Met de bus op de Shuttle. We rijden Kent door tot in Surrey, onder Groot-Londen. Tussendoor genieten we van het typisc"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1790073.html"

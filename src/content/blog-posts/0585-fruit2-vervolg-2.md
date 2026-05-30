@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "21-10-2015"
 isoDate: "2015-10-21T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Vrouwenhoofd (1975) Mark MackenMark Macken Belg 1913-1977 Moeders Atanos Yaranov Bulg. 1940-1988 De eenzame Ernest Barlach Duitser 1870-1938 14 juli Frans Masereel Belg 1889-1972 Buste (ca 1914 Rik Wouters Belg 1882-1916 Bather (1"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1829327.html"

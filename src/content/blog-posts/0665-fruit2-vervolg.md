@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "22-06-2015"
 isoDate: "2015-06-22T17:08:00"
 time: "17:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Ruimte Zijderoute Pythagoras Landverhuizers Eugeen Laermans 1896 Eugeen Van Mieghem, havenschilder (1/10/1875- 24/03/1930), buur in een café in dezelfde Montevideostraat. Op het dak Schelde met de museumkranen Scheldebocht In de ver"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1781022.html"

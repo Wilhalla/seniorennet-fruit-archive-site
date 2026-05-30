@@ -6,7 +6,7 @@ title: "Sapmobiel"
 date: "11-11-2015"
 isoDate: "2015-11-11T12:50:00"
 time: "12:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Sapmobiel 3/11/15 Dit jaar hebben mijn appelbomen gedragen als nooit tevoren. Dat was te verwachten na de totale misoogst vorig jaar, ook als nooit tevoren! Velt Voorkempen had het persen gepland als activiteit. Frédéric Lerouge had voor mi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1837637.html"

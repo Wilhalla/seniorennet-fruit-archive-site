@@ -6,7 +6,7 @@ title: "FEEDBACK AARDAPPELPLAAG"
 date: "13-12-2012"
 isoDate: "2012-12-13"
 time: ""
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "FEEDBACK AARDAPPELPLAAG Hallo Daniël, Blijkbaar speelt de grond toch een grote rol voor de aardappelplaag. Ik heb tot nu toe de beste resultaten met Biogold: niks geen aantasting. Toluca gaf weinig aantasting in het blad maar bijna een kwar"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit/archief.php?ID=1295458.html"

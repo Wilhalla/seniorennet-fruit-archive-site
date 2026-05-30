@@ -13,7 +13,35 @@ const archiveShortMonthFormatter = new Intl.DateTimeFormat('nl-BE', {
 const archiveDayFormatter = new Intl.DateTimeFormat('nl-BE', { day: '2-digit' })
 const collator = new Intl.Collator('nl-BE')
 
-export type ArchiveDatetimeInput = Pick<{ date: string; isoDate: string; title: string }, 'isoDate'> & Partial<Pick<{ date: string; title: string }, 'date' | 'title'>>
+export type ArchiveDatetimeInput = {
+  isoDate?: string
+  date?: string
+  title?: string
+}
+
+export type ArchiveYearGroup<T> = {
+  year: string
+  items: T[]
+  count: number
+  firstIndex: number
+  firstMonthKey: string
+}
+
+export type ArchiveMonthGroup<T> = {
+  key: string
+  label: string
+  shortLabel: string
+  year: string
+  items: T[]
+  count: number
+  startsYear: boolean
+}
+
+export type ArchiveChronology<T> = {
+  chronologicalItems: T[]
+  yearGroups: ArchiveYearGroup<T>[]
+  monthGroups: ArchiveMonthGroup<T>[]
+}
 
 export function parseSeniorennetDateTime(date = '', time = '') {
   const match = date.match(/(\d{2})-(\d{2})-(\d{4})/)
@@ -22,9 +50,12 @@ export function parseSeniorennetDateTime(date = '', time = '') {
   return `${yyyy}-${mm}-${dd}${time ? `T${time}:00` : ''}`
 }
 
+function archiveDateValue(value: string | ArchiveDatetimeInput) {
+  return typeof value === 'string' ? value : value.isoDate || value.date || ''
+}
+
 export function archiveDate(value: string | ArchiveDatetimeInput) {
-  const isoDate = typeof value === 'string' ? value : value.isoDate
-  const date = new Date(isoDate)
+  const date = new Date(archiveDateValue(value))
   return Number.isNaN(date.valueOf()) ? null : date
 }
 
@@ -33,8 +64,7 @@ export function archiveTimestamp(value: string | ArchiveDatetimeInput) {
 }
 
 export function archiveYear(value: string | ArchiveDatetimeInput) {
-  const isoDate = typeof value === 'string' ? value : value.isoDate
-  return isoDate?.slice(0, 4) || 'ongedateerd'
+  return archiveDate(value) ? archiveDateValue(value).slice(0, 4) : 'ongedateerd'
 }
 
 export function displayArchiveYear(year: string) {
@@ -43,7 +73,7 @@ export function displayArchiveYear(year: string) {
 
 export function archiveMonthKey(value: string | ArchiveDatetimeInput) {
   const date = archiveDate(value)
-  return date ? `m-${(typeof value === 'string' ? value : value.isoDate).slice(0, 7)}` : `m-${archiveYear(value)}`
+  return date ? `m-${archiveDateValue(value).slice(0, 7)}` : `m-${archiveYear(value)}`
 }
 
 export function archiveMonthLabel(monthKey: string) {
@@ -75,8 +105,8 @@ export function seasonForMonth(month: number | null | undefined) {
   return 'winter'
 }
 
-export function sortArchiveChronologically<T extends ArchiveDatetimeInput>(posts: readonly T[]) {
-  return [...posts].sort((a, b) => {
+export function sortArchiveChronologically<T extends ArchiveDatetimeInput>(items: readonly T[]) {
+  return [...items].sort((a, b) => {
     const aTime = archiveTimestamp(a)
     const bTime = archiveTimestamp(b)
     if (!Number.isFinite(aTime) && !Number.isFinite(bTime)) return collator.compare(a.title ?? '', b.title ?? '')
@@ -84,4 +114,45 @@ export function sortArchiveChronologically<T extends ArchiveDatetimeInput>(posts
     if (!Number.isFinite(bTime)) return -1
     return bTime - aTime || collator.compare(a.title ?? '', b.title ?? '')
   })
+}
+
+export function buildArchiveChronology<T extends ArchiveDatetimeInput>(items: readonly T[], options: { limit?: number; sort?: boolean } = {}): ArchiveChronology<T> {
+  const sortedItems = options.sort === false ? [...items] : sortArchiveChronologically(items)
+  const chronologicalItems = typeof options.limit === 'number' ? sortedItems.slice(0, options.limit) : sortedItems
+  const yearMap = new Map<string, ArchiveYearGroup<T>>()
+  const monthMap = new Map<string, ArchiveMonthGroup<T>>()
+  const yearGroups: ArchiveYearGroup<T>[] = []
+  const monthGroups: ArchiveMonthGroup<T>[] = []
+
+  chronologicalItems.forEach((item, index) => {
+    const year = archiveYear(item)
+    const key = archiveMonthKey(item)
+    let yearGroup = yearMap.get(year)
+    if (!yearGroup) {
+      yearGroup = { year, items: [], count: 0, firstIndex: index, firstMonthKey: key }
+      yearMap.set(year, yearGroup)
+      yearGroups.push(yearGroup)
+    }
+    yearGroup.items.push(item)
+    yearGroup.count += 1
+
+    let monthGroup = monthMap.get(key)
+    if (!monthGroup) {
+      monthGroup = {
+        key,
+        year,
+        label: archiveMonthLabel(key),
+        shortLabel: archiveShortMonthLabel(item),
+        items: [],
+        count: 0,
+        startsYear: yearGroup.count === 1,
+      }
+      monthMap.set(key, monthGroup)
+      monthGroups.push(monthGroup)
+    }
+    monthGroup.items.push(item)
+    monthGroup.count += 1
+  })
+
+  return { chronologicalItems, yearGroups, monthGroups }
 }

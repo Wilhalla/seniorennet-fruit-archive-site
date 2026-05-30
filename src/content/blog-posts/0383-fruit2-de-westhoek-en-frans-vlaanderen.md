@@ -6,7 +6,7 @@ title: "De Westhoek en Frans-Vlaanderen"
 date: "08-11-2016"
 isoDate: "2016-11-08T20:56:00"
 time: "20:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Westhoek en Frans-Vlaanderen Met De Stille Kempen 26-28 okt. Na een lekkere boterkoek te Diksmuide gaat het naar De Moeren. De eerste drooglegging gebeurde door Wencelas Coebergher in 1626. Men had een dijk opgeworpen en een 8 km lange r"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1974643.html"

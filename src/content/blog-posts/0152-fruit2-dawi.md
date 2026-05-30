@@ -6,7 +6,7 @@ title: "Dawi"
 date: "08-10-2018"
 isoDate: "2018-10-08T22:00:00"
 time: "22:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dawi Dit is mijn zaailingpeer. Vorig jaar had hij voor het eerst vruchten - en dit in een behoorlijk aantal – in tegenstelling tot de meeste perenrassen die bevroren met de lentenachtvorsten eind april 2017. Dit jaar was de productiviteit z"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2183749.html"

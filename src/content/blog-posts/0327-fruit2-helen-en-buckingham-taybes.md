@@ -6,7 +6,7 @@ title: "Helen en Buckingham Taybes"
 date: "25-05-2017"
 isoDate: "2017-05-25T23:36:00"
 time: "23:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Helen en Buckingham Taybes Deze week viel het al op dat de braamboos Helen zo uitbundig bloeit. Helen is de laatste braamboos die Derek Jennings gecreëerd heeft. Na zijn fantastisch werk aan het Scottish Crop Research insitute met het schep"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2040680.html"

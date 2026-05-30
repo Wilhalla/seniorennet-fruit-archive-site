@@ -6,7 +6,7 @@ title: "Brugge en Omstreken"
 date: "28-08-2019"
 isoDate: "2019-08-28T11:01:00"
 time: "11:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Brugge en Omstreken 27/8 met Okra Zoersel Marc, die we leerden kennen op de vorige uitstap naar de Eifel was weer chauffeur en Willem Verhoeven van de Stille Kempen gids. Marc zal de bus door menige nauwe plaatsen loodsen. Ontbijtkoek en 1 "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2263203.html"

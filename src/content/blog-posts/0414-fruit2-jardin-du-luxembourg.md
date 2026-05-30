@@ -6,7 +6,7 @@ title: "Jardin du Luxembourg"
 date: "26-09-2016"
 isoDate: "2016-09-26T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "NBS Zomertoer 2016 Een stukje Loire tussen Tours en Orleans 23 – 28 augustus Vandaag staat de Jardin du Luxembourg op het programma, eerst de fruittuin en daarna de verkenning van het park. De huidige fruittuin vindt zijn oorsprong in de fr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1960110.html"

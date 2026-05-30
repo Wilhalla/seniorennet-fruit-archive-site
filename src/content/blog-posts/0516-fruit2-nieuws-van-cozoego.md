@@ -6,7 +6,7 @@ title: "Nieuws van Cozoego"
 date: "01-05-2016"
 isoDate: "2016-05-01T18:28:00"
 time: "18:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuws van Cozoego Cozoego is het ontwikkelingsproject van Aleide. Toen zij in 2002 Going in het droge, hoge noorden van Kameroen, het geboortedorp van Aminou, de echtgenoot van dochter Leen bezocht, zag zij dat er veel te doen was. Voor de"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1909146.html"

@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "29-03-2015"
 isoDate: "2015-03-29T22:08:00"
 time: "22:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 28. Werkbank hoefsmid 29. Scharensliep 30. Luxe Leuvense stoof 31. Verstelbare kinderwagen. Men kon de zitjes draaien zodat de kinderen naar elkaar keken of achter elkaar zaten. 32. lijkenwagen (corbiliard) 33. Karn om boter te ka"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743705.html"

@@ -6,7 +6,7 @@ title: "Barokreis Duitsland"
 date: "05-10-2018"
 isoDate: "2018-10-05T20:25:00"
 time: "20:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Barokreis Duitsland met Davidsfonds Zoersel en VOC Antwerpen ( 4 – 8/9 ) Voor de derde keer Paul Koop als excellente gids Op de eerste dag hebben we de lunch te Speyer met achteraf het bezoek aan de oude Romaanse kathedraal. We logeren in h"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2182897.html"

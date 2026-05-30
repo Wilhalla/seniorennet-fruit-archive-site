@@ -6,7 +6,7 @@ title: "Gris Braibant RGF"
 date: "21-10-2018"
 isoDate: "2018-10-21T10:56:00"
 time: "10:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gris Braibant RGF Nynke Zijlstra, voorzitster van ‘Stichting Fruit yn Fryslân’ vroeg deze appel te fotograferen. Dit blijkt een Franse appel. Staat in Brogdale als Reinette de Mâcon. Joan Morgan omschrijft de appel als ’ Quite richly flavou"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2186940.html"

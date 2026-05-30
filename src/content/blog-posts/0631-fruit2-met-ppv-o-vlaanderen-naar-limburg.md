@@ -6,7 +6,7 @@ title: "Met PPV O-Vlaanderen naar Limburg"
 date: "02-08-2015"
 isoDate: "2015-08-02T22:51:00"
 time: "22:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Met PPV O-Vlaanderen naar Limburg Op 30/8 hield de Provinciale Pomomologische Vereniging Oost-Vlaanderen haar jaarlijkse uitstap, dit keer naar Limburg. Eerste halte te Hoepertingen (Borgloon) bij het bedrijf Hellingenfort van Karel Vaes. D"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797802.html"

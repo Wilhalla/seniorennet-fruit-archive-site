@@ -6,7 +6,7 @@ title: "Atavisme bij Medana Taybes"
 date: "23-06-2017"
 isoDate: "2017-06-23T14:44:00"
 time: "14:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Atavisme bij Medana Taybes (de gestekelde) Een van mijn Taybessen vertoont atavisme: terug verschijnen van verborgen erfelijke eigenschappen. De braamboos Taybes is immers een samenstelling van verschillende bramen en verschillende (?) fram"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2049203.html"

@@ -6,7 +6,7 @@ title: "Nieuwe Vogel Waarnemingen"
 date: "02-11-2017"
 isoDate: "2017-11-02T11:52:00"
 time: "11:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuwe Vogel Waarnemingen Pas onlangs de mezenbollen opgehangen. Gisterenmorgen kwam een bonte specht mee snoepen met de pimpel – en koolmezen. ’s Namiddags ging ik in de tuin en zag een speciale vogel, was het lopen op laag vliegen? En zic"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2088317.html"

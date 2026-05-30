@@ -6,7 +6,7 @@ title: "Haak"
 date: "24-04-2015"
 isoDate: "2015-04-24T23:45:00"
 time: "23:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Haak Voor het effenen van de geploegde grond heb ik weer gebruik gemaakt van de oude haak. Te Ichtegem noemde wij die ‘viertander’, met 4 tanden dus. Deze haak heeft er 7, een ‘zeventander’. Ik weet niet meer hoe ik die in bezit heb gekrege"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1755427.html"

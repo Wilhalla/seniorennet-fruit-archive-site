@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "25-06-2015"
 isoDate: "2015-06-25T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG De Groep Idem Zeekraal, een gezonde, zoute lekkernij Weer een slenk Ploeteren Idem Lepelblad De kleine, speciale garnaal. Piepkleine gaatjes in de bodem verraden zijn aanwezigheid De groep"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1782449.html"

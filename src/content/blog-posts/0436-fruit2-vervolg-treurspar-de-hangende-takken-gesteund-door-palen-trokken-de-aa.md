@@ -6,7 +6,7 @@ title: "VERVOLG Treurspar. De hangende takken, gesteund door palen trokken de aa
 date: "04-09-2016"
 isoDate: "2016-09-04T20:42:00"
 time: "20:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Treurspar. De hangende takken, gesteund door palen trokken de aandacht van Monique en mij. Zeer esthetisch. Geen naamplaatje gezien. Dezelfde boom aan de achterkant Idem Takje Goudbes, Physalis pruinosa. Eronder lagen de rijpe besse"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952448.html"

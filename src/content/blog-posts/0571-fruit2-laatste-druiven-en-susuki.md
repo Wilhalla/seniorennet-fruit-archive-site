@@ -6,7 +6,7 @@ title: "Laatste Druiven en Susuki"
 date: "19-11-2015"
 isoDate: "2015-11-19T14:19:00"
 time: "14:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Laatste Druiven en Susuki Vorige week plukte ik de laatste druiven. Daarbij viel op dat dat de witte meer last ondervinden van insecten. Een van de witte rassen (Phoenix?) toonde meer beschadiging dan de andere (Bianca). Bij deze laatste is"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1840765.html"

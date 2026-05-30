@@ -6,7 +6,7 @@ title: "Daguitstap met de Fruittelers"
 date: "27-07-2018"
 isoDate: "2018-07-27T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Daguitstap met de Fruittelers van Antwerpen, Brabant en Oost-Vlaanderen naar Nederland 23/7/2018 Onder leiding van Vincent Turkelboom Eerste stop Fruitmasters te Geldermalsen in de Betuwe, de fruitstreek van Nederland. Henk Nooteboom hield "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2165698.html"

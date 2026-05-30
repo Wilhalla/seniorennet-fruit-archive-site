@@ -6,7 +6,7 @@ title: "Weekend Engelse Tuinen"
 date: "12-04-2016"
 isoDate: "2016-04-12T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Weekend Engelse Tuinen Zat. en Zo 10 -11 sept ‘16 : Wisley Gardens, Canterbury, Brogdale (org. VELT Voorkempen / CoZoeGo) Met de bus van Lauwers naar Calais. Met P&O naar Dover. We rijden Kent door tot in Surrey, onder Groot-London. Tussend"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1901721.html"

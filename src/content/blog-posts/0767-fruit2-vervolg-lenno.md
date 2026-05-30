@@ -6,7 +6,7 @@ title: "VERVOLG LENNO"
 date: "28-01-2015"
 isoDate: "2015-01-28T21:50:00"
 time: "21:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG LENNO De volgende morgen (15/8) hebben luc en ik een afspraak met zijn buur. Deze heeft nogal wat bessen staan: zwarte en rode. Hij heeft vooral een zwak voor zomerframbozen, omwille van de betere smaak. Als druiven kweekt hij Rondo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714691.html"

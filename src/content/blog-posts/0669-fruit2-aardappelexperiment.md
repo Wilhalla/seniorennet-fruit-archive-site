@@ -6,7 +6,7 @@ title: "Aardappelexperiment"
 date: "17-06-2015"
 isoDate: "2015-06-17T12:01:00"
 time: "12:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Aardappelexperiment ongewild Eind mei ontdekte ik in de kelder een emmertje vergeten pootaardappelen van het ras Zweedse rode. Nog nooit zo’n lange scheuten gezien: +/- 30 cm De aardappelen voorzichtig uitgeplant, wat vrij gemakkelijk lukte"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1778414.html"

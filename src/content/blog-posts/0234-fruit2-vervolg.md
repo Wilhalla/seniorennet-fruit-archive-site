@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "29-01-2018"
 isoDate: "2018-01-29T22:58:00"
 time: "22:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Opalescent u.s.a. Erg zacht, op zijn einde. Let op de schurftplekken. 11. Otava Tjecks Nog erg lekker, bewaart tot april zonder veel sapverlies. Mijn appel nr 1. 12. Een zaailing uit Wallonië, meegebracht door Vincent. We proefd"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2115974.html"

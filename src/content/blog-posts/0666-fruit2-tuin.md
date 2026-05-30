@@ -6,7 +6,7 @@ title: "TUIN"
 date: "19-06-2015"
 isoDate: "2015-06-19T12:25:00"
 time: "12:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tuin Achterinkom met braam Braam Bloei Dormanred, Japanse Wijnbes in ‘t groot. Papavers achter de met insectennet – wat gemakkelijk in vergelijking met vogelnet! –afgedekte aardbeien. Idem Idem Look, vingerhoedskruid, labbonen Bloei tuin-/ "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1779260.html"

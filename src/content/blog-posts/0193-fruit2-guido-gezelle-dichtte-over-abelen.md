@@ -6,7 +6,7 @@ title: "Guido Gezelle dichtte over Abelen"
 date: "06-08-2018"
 isoDate: "2018-08-06T22:12:00"
 time: "22:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Guido Gezelle dichtte over Abelen Wit als watte, en teenegader groen, is 't bonte abeelgeblader. Wakker, als een wekkerspel, wikkelwakkelwaait het snel. Groen vanboven is 't en, zonder minke, wit als melk, vanonder. Onstandvastig volgt het,"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2167864.html"

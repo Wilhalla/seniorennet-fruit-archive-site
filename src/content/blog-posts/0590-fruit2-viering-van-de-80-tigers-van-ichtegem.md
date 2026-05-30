@@ -6,7 +6,7 @@ title: "Viering van de 80 tigers van Ichtegem"
 date: "11-10-2015"
 isoDate: "2015-10-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Viering van de 80 tigers van Ichtegem Salons De Vrede 11/10/2015 De 30 opgekomen tactigers Manil Vierstraete en echtgenote Michel Muylle en echtgenote Irené Tyvaert N Roger Muylle N N N"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1825174.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "17-10-2016"
 isoDate: "2016-10-17T22:37:00"
 time: "22:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Zoldergedeelte met slaapplaatsen bedienden Een Du Bus, eerste directeur Koninklijk Instituut Natuurwetenschappen Brussel Litho abdij Westmalle Idem Een identiteitspapier ten tijde van de Franse besetting +/- 1800 Houtsnijwerk Idem K"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1966966.html"

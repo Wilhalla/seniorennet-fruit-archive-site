@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "31-10-2017"
 isoDate: "2017-10-31T20:27:00"
 time: "20:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10 . Cabarette – President van Dievoet 11. Ontario Mijn vruchten zijn al geel. Had ook dit jaar een grote dracht. 12. Idem 13. Reinette des Capucins 14. Chataignier 15. Reinette du Mans 16. Bellefleur Double. Hier heb ik die ook sta"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2087871.html"

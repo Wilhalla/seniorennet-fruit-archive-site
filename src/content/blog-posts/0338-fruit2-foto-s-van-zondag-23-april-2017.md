@@ -6,7 +6,7 @@ title: "Foto’s van zondag 23 april 2017"
 date: "25-04-2017"
 isoDate: "2017-04-25T22:36:00"
 time: "22:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Foto’s van zondag 23 april 2017 In de voormiddag maakte ik de wandeling in Zevenbergenbos te Ranst van Natuurpunt mee; 14 dagen te laat voor de bloementapijten in de oude bospartij. Alles uitgebloeid. Blijkbaar heeft het hier minder gevrore"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2030878.html"

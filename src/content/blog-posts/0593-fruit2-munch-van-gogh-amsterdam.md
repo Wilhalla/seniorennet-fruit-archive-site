@@ -6,7 +6,7 @@ title: "Munch-Van Gogh Amsterdam"
 date: "08-10-2015"
 isoDate: "2015-10-08T00:40:00"
 time: "00:40"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Munch-Van Gogh Amsterdam ( 3/10 met Art Travel) In het vernieuwde Van Gogh Museum te Amsterdam loopt tot 17 januari 2016 deze superieure tentoonstelling. In 1955 zag ik een eerste maal Van Gogh in de stadsfeestzaal te Antwerpen; jaren later"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1823565.html"

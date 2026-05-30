@@ -6,7 +6,7 @@ title: "Bramen plukken"
 date: "07-08-2015"
 isoDate: "2015-08-07T20:28:00"
 time: "20:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bramen plukken Frans Nauwelaerts van Duffel, oud voorzitter van NBS Mechelen, plaatste de boodschap ‘Bramen plukken’ op Facebook. Geweldig veel reacties! Als kind was dit ook een van mijn geliefkoosde bezigheden. Ik trok er hele namiddagen "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1799453.html"

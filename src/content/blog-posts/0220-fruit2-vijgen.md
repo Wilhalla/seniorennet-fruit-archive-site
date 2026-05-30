@@ -6,7 +6,7 @@ title: "Vijgen"
 date: "29-04-2018"
 isoDate: "2018-04-29T13:06:00"
 time: "13:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vijgen Op Vancouver Eiland, iets groter dan Balgië, kwamen we bij de fruitboomkweker Bob Duncan in de streek van Victoria, de hoofdstad van Brittish Columbia. Het klimaat is nog zachter dan bij ons. Kweker Bob Duncan legt zich toe op meer m"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2142349.html"

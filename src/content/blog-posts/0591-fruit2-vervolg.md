@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "11-10-2015"
 isoDate: "2015-10-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG N N N N Irené en Irenee Tyvaert en Duriez, de beeldhouwer was bij de gevierde 65 tigers. Cadeau van de Ichtegemse brouwerij Strubbe. Voor zover ik weet reeds de zevende generatie. Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1825173.html"

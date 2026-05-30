@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "13-06-2015"
 isoDate: "2015-06-13T22:01:00"
 time: "22:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Kant met rododendrons en azaleas Bij de Rododendrons Rodo’s en Azaleas Witte rodo’s Is dit een soort vogelmelk? Idem Welke bloem? Salie? Blauwe Iris"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776922.html"

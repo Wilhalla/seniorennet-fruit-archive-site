@@ -6,7 +6,7 @@ title: "Familiefeest met Andre 90"
 date: "22-04-2019"
 isoDate: "2019-04-22T23:45:00"
 time: "23:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Familiefeest met Andre Lagrou 90 Op Paasmaandag (22-4) kwamen familie en vrienden te Leffinge samen om de 90 jaar van Andre Lagrou te vieren. 1. Aan de ingangspoort. Andre, een paardenliefhebber, met mijn dochter Mieke en zoon Peter 2. Pete"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232787.html"

@@ -6,7 +6,7 @@ title: "Cassandra"
 date: "27-01-2019"
 isoDate: "2019-01-27T17:51:00"
 time: "17:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Cassandra Kruising Joséphine de Malines en Doyenné du Comice, goed bewaarbaar, uitmuntende kwaliteit. (Gegevens uit de plantfolder van de Nationale Boomgaarden Stichting) Met zo’n knappe voorouders kan dat niet slecht zijn. Waar werd de pee"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2211076.html"

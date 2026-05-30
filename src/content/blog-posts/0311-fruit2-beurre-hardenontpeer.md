@@ -6,7 +6,7 @@ title: "Beurré Hardenontpeer"
 date: "01-07-2017"
 isoDate: "2017-07-01T18:08:00"
 time: "18:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Beurré Hardenpontpeer Met Dank aan Wim van Velzen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2051631.html"

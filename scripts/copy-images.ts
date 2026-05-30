@@ -12,6 +12,7 @@ const assetRoot = join(siteRoot, 'src/assets/archive-images')
 const publicRoot = join(siteRoot, 'public/archive-images')
 const thumbRoot = join(siteRoot, 'public/archive-thumbs')
 const smallThumbRoot = join(siteRoot, 'public/archive-thumbs-240')
+const tinyThumbRoot = join(siteRoot, 'public/archive-thumbs-96')
 const oldSymlink = join(siteRoot, 'src/assets/blogimages.seniorennet.be')
 const imagePattern = /\/archive-images\/(fruit2?|fruit)\/([^"'\s>]+)/g
 
@@ -57,6 +58,10 @@ function smallThumbnailPath(relative: string) {
   return join(smallThumbRoot, relative).replace(/\.[^.\/]+$/, '.webp')
 }
 
+function tinyThumbnailPath(relative: string) {
+  return join(tinyThumbRoot, relative).replace(/\.[^.\/]+$/, '.webp')
+}
+
 async function createThumbnail(source: string, target: string, width: number) {
   mkdirSync(dirname(target), { recursive: true })
   if (existsSync(target)) {
@@ -67,7 +72,7 @@ async function createThumbnail(source: string, target: string, width: number) {
     await sharp(source)
       .rotate()
       .resize({ width, withoutEnlargement: true })
-      .webp({ quality: width <= 240 ? 68 : 72, effort: 4 })
+      .webp({ quality: width <= 96 ? 62 : width <= 240 ? 68 : 72, effort: 4 })
       .toFile(target)
     thumbsCreated += 1
   } catch (error) {
@@ -101,9 +106,10 @@ for (const image of collectImagePaths()) {
   copyTo(source, join(publicRoot, relative))
   thumbnailJobs.push([source, thumbnailPath(relative), 480])
   thumbnailJobs.push([source, smallThumbnailPath(relative), 240])
+  thumbnailJobs.push([source, tinyThumbnailPath(relative), 96])
 }
 
 await runThumbnailJobs(thumbnailJobs)
 
 console.log(`Images copied: ${copied}; already present: ${reused}; missing: ${missing}; targets: ${assetRoot}, ${publicRoot}`)
-console.log(`Thumbnails created: ${thumbsCreated}; already present: ${thumbsReused}; failed: ${thumbsFailed}; targets: ${thumbRoot}, ${smallThumbRoot}`)
+console.log(`Thumbnails created: ${thumbsCreated}; already present: ${thumbsReused}; failed: ${thumbsFailed}; targets: ${thumbRoot}, ${smallThumbRoot}, ${tinyThumbRoot}`)

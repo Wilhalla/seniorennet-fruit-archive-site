@@ -6,7 +6,7 @@ title: "Groep Egenhoven (Heverlee) te Zoersel"
 date: "28-09-2018"
 isoDate: "2018-09-28T23:31:00"
 time: "23:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Groep Egenhoven (Heverlee) te Zoersel (13 sept.) In de voormiddag had ik de eer en het genoegen de groep te ontvangen en rond te leiden op de Velthoeve, Lage Weg 60 te Halle-Kempen. ’s Middags hadden we een uitstekend maal in ‘De Wandeling’"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2180977.html"

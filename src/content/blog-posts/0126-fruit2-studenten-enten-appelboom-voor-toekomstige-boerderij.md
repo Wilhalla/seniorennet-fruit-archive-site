@@ -6,7 +6,7 @@ title: "Studenten enten appelboom voor toekomstige boerderij"
 date: "31-03-2019"
 isoDate: "2019-03-31T11:39:00"
 time: "11:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Studenten enten appelboom voor toekomstige boerderij De tweedejaars voltijdstudenten van Warmonderhof hebben de eerste appelboom van hun toekomstige boomgaard geënt. In de les vruchtboomkwekerij van Joke Bloksma zetten zij een appelboom op "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2227355.html"

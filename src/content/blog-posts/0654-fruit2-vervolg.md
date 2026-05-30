@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "09-07-2015"
 isoDate: "2015-07-09T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG De Taybes staat hier nog niet zover als bij ons waar de eerste bessen al rijpen Roosjes De bekoorlijke Fuchsia. De prachtigste zijn te zien in de Koninklijke Serres van Laken De old timer van 1901 De Cryptomeria japonica, Japanse ce"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1788321.html"

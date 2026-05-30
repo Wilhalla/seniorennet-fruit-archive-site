@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "20-11-2017"
 isoDate: "2017-11-20T12:16:00"
 time: "12:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Stand 11. Pieter De Ridder 12. Hij toonde mij het oxalisplantje Oxalis tet ’Iron Cross’ 13. Notenliefhebber met Vincent 14. Bezoekers mevr en mr Jef Peeters 15. Peter Rita Andre Willy 16. Peter De Rycke van Migino met Dorothea L"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2093819.html"

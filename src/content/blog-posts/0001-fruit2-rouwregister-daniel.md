@@ -6,7 +6,7 @@ title: "Rouwregister Daniël"
 date: "08-04-2020"
 isoDate: "2020-04-08T16:14:00"
 time: "16:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Om u de gelegenheid te geven te delen wat Daniël voor u betekend heeft, hebben we in Google een rouwregister aangemaakt. Voel u vrij om een bijdrage te schrijven: Link: Rouwregister Indien het toevoegen niet lukt, kan je je bijdrage mailen "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2314543.html"

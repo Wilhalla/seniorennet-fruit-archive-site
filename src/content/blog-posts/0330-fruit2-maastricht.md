@@ -6,7 +6,7 @@ title: "Maastricht"
 date: "02-05-2017"
 isoDate: "2017-05-02T22:44:00"
 time: "22:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Maastricht Met de Verenigde Oostindische Compagnie-Kamer Antwerpen vzw 29/4/17 Het was weer een plezier op de volle bus naar de historische inleiding van Paul Koop, voorzitter te luisteren. We reden eerst naar de Canneberg of Jezuietenberg "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2032930.html"

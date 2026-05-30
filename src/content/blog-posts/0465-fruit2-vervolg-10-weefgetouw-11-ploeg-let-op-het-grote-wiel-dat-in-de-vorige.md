@@ -6,7 +6,7 @@ title: "VERVOLG 10. Weefgetouw 11. Ploeg, let op het grote wiel dat in de vorige
 date: "19-07-2016"
 isoDate: "2016-07-19T23:09:00"
 time: "23:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Weefgetouw 11. Ploeg, let op het grote wiel dat in de vorige ploegvoor liep 12. Hondekar 13. Uitleg 14. Klederdracht 15. Uitleg 16. Rouw en klederdracht meisjes 17. Bus De Stille Kempen met eigenaar Theo Verhoeven 18. Een goed t"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1937468.html"

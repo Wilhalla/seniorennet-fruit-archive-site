@@ -6,7 +6,7 @@ title: "Reis Davidsfonds Zoersel 13-17 sept"
 date: "21-09-2017"
 isoDate: "2017-09-21T09:51:00"
 time: "09:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Reis Davidsfonds Zoersel 13-17 sept Om 6u vertrokken in de regen, met een stop langs de autoweg. Net als vorig jaar is Paul Koop onze gids. Hij zorgt voor een grondig inzicht in de geschiedenis en kunstgeschiedenis. Nog in de voormiddag bez"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2074730.html"

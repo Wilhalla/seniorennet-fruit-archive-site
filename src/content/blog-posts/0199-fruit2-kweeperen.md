@@ -6,7 +6,7 @@ title: "Kweeperen"
 date: "05-07-2018"
 isoDate: "2018-07-05T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kweeperen Ik heb net het artikel in Pomologia (het kwartaalblad van de Nationale Boomgaardenstichting) over Kweeperen gelezen. Misschien is het nuttig voor leden met weinig ervaring. Ik verwacht toch in een gewaardeerd tijdschrift als Pomol"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2160156.html"

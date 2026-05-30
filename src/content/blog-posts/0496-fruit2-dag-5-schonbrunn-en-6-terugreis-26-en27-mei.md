@@ -6,7 +6,7 @@ title: "DAG 5 SCHÖNBRUNN en 6 Terugreis (26 en27 mei)"
 date: "12-06-2016"
 isoDate: "2016-06-12T20:56:00"
 time: "20:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "DAG 5 SCHÖNBRUNN en 6 Terugreis (26 en27 mei) Na het middagmaal staat het meest indrukkendwekkend bezoek van deze reis op het programma: de keizerlijke vertrekken van Schloss Schönbrunn, de zomerresidentie. Eerst kan wie wil de klimtocht na"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1924771.html"

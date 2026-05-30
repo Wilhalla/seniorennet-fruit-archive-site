@@ -6,7 +6,7 @@ title: "Groombridge Place en Royal Tunbridge Wells"
 date: "10-07-2015"
 isoDate: "2015-07-10T23:52:00"
 time: "23:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Groombridge Place en Royal Tunbridge Wells In de namiddag stond ofwel Groombridge Place of Tunbridge Wells op het programma. Doch er kwam een programmawisseling. Het werd en en. Groombridge Place heeft een formele tuin. De Manor, herenhuis "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1789031.html"

@@ -9,7 +9,7 @@ export default function PostList({ posts, title, intro, limit }: Props) {
     <section className="site-shell py-14">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="eyebrow">Archief</p>
+          <p className="eyebrow">Blogarchief</p>
           <h2 className="section-title">{title}</h2>
           {intro && <p className="section-kicker">{intro}</p>}
         </div>

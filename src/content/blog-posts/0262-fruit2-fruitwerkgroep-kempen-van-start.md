@@ -6,7 +6,7 @@ title: "Fruitwerkgroep Kempen van start"
 date: "01-11-2017"
 isoDate: "2017-11-01T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Fruitwerkgroep Kempen van start Vorige vrijdag 27/10 hield de nieuwe Fruitwerkgroep Kempen zijn eerste bijeenkomst in café Hoebenschot te Lichtaart. Jef Peeters verzorgde de avond met een uiteenzetting over de meting van suiker in appels en"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2088212.html"

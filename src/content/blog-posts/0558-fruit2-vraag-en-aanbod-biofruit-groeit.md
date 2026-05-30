@@ -6,7 +6,7 @@ title: "Vraag en Aanbod biofruit groeit"
 date: "12-01-2016"
 isoDate: "2016-01-12T12:47:00"
 time: "12:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "1.01.2016 BFV ziet vraag en aanbod biofruit geleidelijk groeien De boodschap ‘bio zit in de lift’ hoeft niet altijd van BioForum Vlaanderen te komen. In het driemaandelijks tijdschrift BFVision meldt de Belgische Fruitveiling dat de vraag n"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1863251.html"

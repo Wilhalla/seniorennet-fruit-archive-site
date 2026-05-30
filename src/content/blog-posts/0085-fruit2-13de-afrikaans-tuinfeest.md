@@ -6,7 +6,7 @@ title: "13de Afrikaans Tuinfeest"
 date: "21-06-2019"
 isoDate: "2019-06-21T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "13de Afrikaans Tuinfeest Zaterdag 6 juli http://users.telenet.be/aleide.lagrou/ www.cozoego.be Voor de maaltijd dient vooraf betaald te worden op rekening BE87 9793 3726 8294 van COZOEGO ‘Comité Zoersel Going). Keuze tussen gegrilde Tilapia"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247502.html"

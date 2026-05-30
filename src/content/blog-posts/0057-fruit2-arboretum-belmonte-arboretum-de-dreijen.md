@@ -6,7 +6,7 @@ title: "Arboretum Belmonte - Arboretum De Dreijen"
 date: "23-09-2019"
 isoDate: "2019-09-23T23:15:00"
 time: "23:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Arboretum Belmonte - Arboretum De Dreijen We overnachten in het Fletcher hotel, prachtig gelegen op de Wageningsche Berg met aansluitend het Belmonte Arboretum; in de vijftigerjaren aangelegd door de universiteit. Het beheer is sinds 2012 o"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2269383.html"

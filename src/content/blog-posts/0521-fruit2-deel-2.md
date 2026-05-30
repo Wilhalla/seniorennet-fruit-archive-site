@@ -6,7 +6,7 @@ title: "Deel 2"
 date: "23-04-2016"
 isoDate: "2016-04-23T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Deel 2 Beuk; zo'n korte stam Maarts viooltje Klaverzuring Bosanemonen Oude gedenksteen in de muur van een kasteelgebouw Ingekorte oude beuk Bij de oude tulpenboom Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1905913.html"

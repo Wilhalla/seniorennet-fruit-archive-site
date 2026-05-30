@@ -6,7 +6,7 @@ title: "Nieuwe Perzik"
 date: "13-02-2015"
 isoDate: "2015-02-13T11:52:00"
 time: "11:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuw Perzikras te Wommelgem In de boomgaard van Fik Denissen te Wommelgem is een nieuw perzikras ontstaan. Hoogst waarschijnlijk is het de kruising van twee rassen uit zijn eigen boomgaard : de ene is de kogelvormige Grosse Mignonne, en de"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1722092.html"

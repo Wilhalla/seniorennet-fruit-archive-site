@@ -6,7 +6,7 @@ title: "Noten"
 date: "02-10-2017"
 isoDate: "2017-10-02T23:22:00"
 time: "23:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "NOTEN Zaterdag 11 en zondag 12 november 2017 van 10- 15 uur KOM NOTEN KRAKEN Kom kennismaken met de smaken en smaakverschillen van okkernoten,walnoten,hazelnoten en pecannoten. Groendekorwil U met een tentoonstelling en een proeverij van me"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2078293.html"

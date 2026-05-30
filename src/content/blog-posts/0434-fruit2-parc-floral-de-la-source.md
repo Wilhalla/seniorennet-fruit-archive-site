@@ -6,7 +6,7 @@ title: "Parc Floral de la Source"
 date: "04-09-2016"
 isoDate: "2016-09-04T21:05:00"
 time: "21:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "In de nmiddag trekken we naar Orleans; 2 tuinen staan op het programma Parc Floral de la Source Dit is een stadspark-plantentuin, een eind buiten het centrum. Het irisveld is zo goed als uitgebloeid. Er is een tropische vlindertuin. Er is o"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952456.html"

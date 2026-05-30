@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "08-08-2017"
 isoDate: "2017-08-08T22:39:00"
 time: "22:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg Naar de Alm (Bergweidengebied Idem Dagsteingebergte Gezelschap De Alm Idem Gezelschap met Theo Bergkapel Uitrusten"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2062202.html"

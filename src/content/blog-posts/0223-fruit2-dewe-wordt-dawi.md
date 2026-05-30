@@ -6,7 +6,7 @@ title: "Dewe wordt DaWi"
 date: "23-04-2018"
 isoDate: "2018-04-23T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dewe wordt DaWi De suggestie kwam van Vincent en inderdaad DaWi klinkt beter en is duidelijker. Mijn zaailingpeer die vorig jaar voor ’t eerst, ondanks de vorst van 20 april, ruim vruchten droeg krijgt als naam DaWi: Da(niel)Wi(llaeys). De "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2140853.html"

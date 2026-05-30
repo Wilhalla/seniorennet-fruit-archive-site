@@ -6,7 +6,7 @@ title: "NAAR DRESDEN"
 date: "28-01-2015"
 isoDate: "2015-01-28T21:36:00"
 time: "21:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "NAAR DRESDEN Zo. 17-8. De reis in Polen is afgelopen en op terugweg bezoeken we Dresden. ’s Morgens vroeg met Peter nog een wandeling naar de Burcht. Alhoewel het zondag is, wordt er toch gewerkt. Na nog een formidabel ontbijt reizen we af:"
 reactionCount: 5
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714688.html"

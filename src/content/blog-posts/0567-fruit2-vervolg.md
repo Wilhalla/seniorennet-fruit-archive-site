@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "03-12-2015"
 isoDate: "2015-12-03T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Ingang Mundaneum Uitleg Mundaneum Oud gebouw Idem Idem Idem Idem Belfort van Mons"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1847077.html"

@@ -6,7 +6,7 @@ title: "Botanische Tuin Orleans"
 date: "04-09-2016"
 isoDate: "2016-09-04T20:56:00"
 time: "20:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Botanische Tuin Orleans We hadden nog tijd om ook de botanische tuin van Orleans, daterend van 1834 te bezoeken. FOTO’S Bessen van de Gelderse roos Viburnum Opulus. Er waren nog enkele andere Viburnum soorten. Speciaal gevormde naaldbomen, "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952455.html"

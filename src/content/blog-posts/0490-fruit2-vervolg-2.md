@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "20-06-2016"
 isoDate: "2016-06-20T21:11:00"
 time: "21:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Het Rad Anna Palowna Groep Johan Straus Belvedère Idem Bonte kraai Monument van de Russische soldaat Spot: zo hoog gezet om er niet op te kunnen spuwen. ‘s Avonds dinnershow in een kelder van het stadhuis."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927664.html"

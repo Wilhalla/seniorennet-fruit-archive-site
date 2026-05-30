@@ -6,7 +6,7 @@ title: "Leiden Rijks Museum Oudheid en Nigrum Pullum Zwammerdam"
 date: "07-07-2016"
 isoDate: "2016-07-07T22:25:00"
 time: "22:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Leiden Rijks Museum Oudheid en Nigrum Pullum Zwammerdam Met de Antwerpse Vereniging Romeinse Archeologie (19/06) Naar Leiden gingen we in eerste instantie voor de tentoonstelling “De Romeinse Kust in Nederland”. Tom Hanzenberg, archeoloog e"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1933679.html"

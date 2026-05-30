@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "18-08-2019"
 isoDate: "2019-08-18T16:31:00"
 time: "16:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Sierappel Georgeous 11. Lens, rozenkweker met wereldfaam 12. Echtpaar De Cuyper 13. Johan Baecke kent ook veel van rozen 14. Idem bij de Perennial Blue 15. Jean Pierre verrast 16. De Coloma-rozen 17. Nu ken ik de naam : Cana, mo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2261052.html"

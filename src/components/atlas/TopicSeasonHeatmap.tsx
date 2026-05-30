@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { fetchJson, isAbortError } from '../../lib/clientFetch'
 
 const monthLabels = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec']
 const seasonLabels = ['winter', 'winter', 'lente', 'lente', 'lente', 'zomer', 'zomer', 'zomer', 'herfst', 'herfst', 'herfst', 'winter']
@@ -36,11 +37,16 @@ export default function TopicSeasonHeatmap({ initialData }: Props) {
   const [data, setData] = useState<TopicCalendar | null>(initialData ?? null)
 
   useEffect(() => {
-    if (initialData) return
-    fetch('/generated/topic-calendar.json')
-      .then((response) => response.json())
+    if (initialData) return undefined
+
+    const controller = new AbortController()
+    fetchJson<TopicCalendar>('/generated/topic-calendar.json', { signal: controller.signal })
       .then(setData)
-      .catch(console.error)
+      .catch((error) => {
+        if (!isAbortError(error)) console.error(error)
+      })
+
+    return () => controller.abort()
   }, [initialData])
 
   const rows = useMemo(() => {

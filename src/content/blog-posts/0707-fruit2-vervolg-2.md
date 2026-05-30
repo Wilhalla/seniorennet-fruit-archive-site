@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "03-05-2015"
 isoDate: "2015-05-03T21:26:00"
 time: "21:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Oudenaarde MOU Wandtapijt Idem Idem Idem ‘made in Oudenaarde’: het herkenningsbrilletje Conserveringswerk Idem Edelsmeedkunst"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1759534.html"

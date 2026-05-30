@@ -6,7 +6,7 @@ title: "VERVOLG 2 Augsburg"
 date: "05-10-2018"
 isoDate: "2018-10-05T20:14:00"
 time: "20:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Augsburg Op dag 3 gaat het naar het grote Augsburg. Weer met wandeling. 1. Groep 2. Fuggerplatz Fugger was de grote handelaar-bankier 3. Evangelische kerk 4. Stadhuis 5. Idem 6. Huizen 7. Fuggerei van 1521 De oudste sociale woonwi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2182892.html"

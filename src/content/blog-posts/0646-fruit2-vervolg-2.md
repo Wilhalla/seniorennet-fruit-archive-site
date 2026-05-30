@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "15-07-2015"
 isoDate: "2015-07-15T09:43:00"
 time: "09:43"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Kioto abrikoos De vruchten van de Kioto abrikoos waren al te proeven Bijenplant Idem Idem Noch bijenplanten (Engelwortel?) Idem Huiszwaluwtil Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1790910.html"

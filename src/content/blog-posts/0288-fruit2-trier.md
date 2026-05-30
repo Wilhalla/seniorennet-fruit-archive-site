@@ -6,7 +6,7 @@ title: "TRIER"
 date: "23-09-2017"
 isoDate: "2017-09-23T22:55:00"
 time: "22:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "TRIER In de namiddag staat de wandeling door Trier – al gesticht in 17 v C. - op het programma. En weer hebben we geluk: droog, net als op alle wandelingen tot nogtoe. Het grote complex (4de eeuw) van de Kaisar Thermen staat gedeeltelijk in"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2075535.html"

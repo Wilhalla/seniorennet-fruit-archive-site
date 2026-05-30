@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "21-09-2015"
 isoDate: "2015-09-21T23:39:00"
 time: "23:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Torens van de h Kathedraal van Rouen We wandelen voorbij een voormalig paleis: nu 5 sterren hotel Naar de Italiaan Aan de andere kant dtaat de Egide Ste. Jeanne d’Arq Groep Idem Uurwerk Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1816344.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "09-11-2017"
 isoDate: "2017-11-09T18:38:00"
 time: "18:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Nr 10 Jessenhofke Pimpernel 8% Goed Smaakt inderdaad lang na. 11. De leger flessen 12. Deelnemers 13. Bij de bierstand van de Dobbelhoeve. Carl Grillet lin ks. 14. Bieren 15. Bieren 16. Nog nagenieten"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2090655.html"

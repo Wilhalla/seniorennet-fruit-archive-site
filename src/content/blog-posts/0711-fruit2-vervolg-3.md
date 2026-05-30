@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "03-05-2015"
 isoDate: "2015-05-03T12:57:00"
 time: "12:57"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG De groep Idem Eltsabethkerk Vanop het balkon van het stadhuis Vanop het hoogste punt van Mons: 79m. Hier werd het belfort opgetrokken. Nog eens 84m St. Walburgis, een prachtige, gotische kerk Bij de gouden koets Dit schrijn bevat he"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1759328.html"

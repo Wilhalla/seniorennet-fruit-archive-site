@@ -6,7 +6,7 @@ title: "Tweedaagse Engeland Wisley Canterbury Brogdale"
 date: "04-10-2016"
 isoDate: "2016-10-04T23:59:00"
 time: "23:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tweedaagse Engeland Wisley Canterbury Brogdale 10 en 11/09 Met een volle bus naar Engeland. In Calais was het uiterst rustig. Wij waren de enige bus, nooit meegemaakt. De obstructies door de vluchtelingen bij het begin van de week was welli"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1963099.html"

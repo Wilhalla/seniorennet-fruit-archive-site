@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "15-07-2015"
 isoDate: "2015-07-15T09:46:00"
 time: "09:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Platte perzik Idem Idem Gewone perzik Des Bejonnières geldt als een van de allerbeste wat smaak betreft. Nectarine zaailing Platte perzik Platicarpe Bianca Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1790912.html"

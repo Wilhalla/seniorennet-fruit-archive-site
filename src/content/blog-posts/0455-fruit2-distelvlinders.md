@@ -6,7 +6,7 @@ title: "Distelvlinders"
 date: "27-07-2016"
 isoDate: "2016-07-27T13:45:00"
 time: "13:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Distelvlinders Drie dagen terug merkte ik een eerste distelvlinder op. Daarstraks zaten er twee op de moederkruidstruik. Nu kon ik wel fotograferen; ook een gehakkelde aurelia."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1939713.html"

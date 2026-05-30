@@ -209,7 +209,7 @@ men de kroosjes? Waar zijn de Brabantse, blauwe palokes te plaatsen? Kennissen
 gaven mij gele pruimen die al vijftien jaar ze goed als onvruchtbaar blijken.
 Waarom? Enz.</p>
 <p>Wat zijn uw bevindingen? </p>
-<p>Daniel Willaeys, Zoersel, aug. 2010</p>
+<p>Daniël Willaeys, Zoersel, aug. 2010</p>
 <p>Foto’s</p>
 </div>
 <div>

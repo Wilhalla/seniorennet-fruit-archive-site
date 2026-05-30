@@ -6,7 +6,7 @@ title: "Feed back : Haarlem (Wim)"
 date: "10-03-2015"
 isoDate: "2015-03-10T19:17:00"
 time: "19:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feed back : Haarlem (Wim) Leuk dat je een dagje in Den Haag bent geweest om de schilderijen te bekijken. Als je nog eens een museum in Nederland wilt bezoeken, wil ik je attanderen op Haarlem, halverwegen Den Haag en Midden Beemster. Het Fr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1734742.html"

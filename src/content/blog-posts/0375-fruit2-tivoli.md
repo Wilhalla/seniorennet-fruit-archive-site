@@ -6,7 +6,7 @@ title: "Tivoli"
 date: "15-11-2016"
 isoDate: "2016-11-15T23:52:00"
 time: "23:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tivoli Vorige zondag hield de Nationale Boomgaardenstichting zijn grote tentoonstelling in het kasteel Tivoli te Mechelen. Dit ter gelegenheid van het 30 tig jarige bestaan van de afdeling Mechelen. Een gelegenheid om fruitkennissen te ontm"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1977183.html"

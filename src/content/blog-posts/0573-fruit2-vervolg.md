@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "16-11-2015"
 isoDate: "2015-11-16T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Het Haagsysteem Op de voorgrond twee oudleraars van de Tuinbouwschool Mechelen Vincent Turkelboom en Guy De Kinder, bekend van de fruitberichten op het Internet. Prof Filip Debersaques Kiwibessen en kippen De heer Frank Coopman , Un"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1839858.html"

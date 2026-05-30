@@ -6,7 +6,7 @@ title: "Uitstap KVLV"
 date: "04-10-2019"
 isoDate: "2019-10-04T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Uitstap KVLV 1okt. Eerst naar een vlasweverij te Meulebeke. Libeco is nog de enige overgebleven weverij, doch behoort tot de top 3 in Europa. Bestaat al van 1858. In België is er echter geen spinnerij meer en het garen komt dus uit het buit"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2272127.html"

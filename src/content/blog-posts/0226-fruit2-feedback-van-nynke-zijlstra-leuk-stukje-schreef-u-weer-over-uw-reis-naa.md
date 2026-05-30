@@ -6,7 +6,7 @@ title: "Feedback van Nynke Zijlstra Leuk stukje schreef u weer, over uw reis naa
 date: "09-04-2018"
 isoDate: "2018-04-09T23:21:00"
 time: "23:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback van Nynke Zijlstra Leuk stukje schreef u weer, over uw reis naar Canada. Ik heb ook geleerd dat bij het enten het enthout in rust moet zijn, maar heb inmiddels ook de ervaring dat dat niet noodzakelijk is. Ook met flink schuivende "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2136780.html"

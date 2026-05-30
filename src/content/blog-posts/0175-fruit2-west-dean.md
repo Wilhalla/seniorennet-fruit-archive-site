@@ -6,7 +6,7 @@ title: "West Dean"
 date: "17-09-2018"
 isoDate: "2018-09-17T20:29:00"
 time: "20:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "West Dean West Dean ligt in de South Downs, een mooie, golvende streek. In een ver verleden hebben we West Dean in West Sussex al bezocht. Toen was er nog een fantastische hoofd-tuinier die ons de tuin met leifruit tegen de muren liet zien."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178547.html"

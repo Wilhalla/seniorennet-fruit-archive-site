@@ -6,7 +6,7 @@ title: "VERVOLG FOTO’S"
 date: "02-10-2015"
 isoDate: "2015-10-02T23:24:00"
 time: "23:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG FOTO’S Bij de New Forestpony’s van Exmoor Idem Amoniet met reststukjes op de hoed Ijle zeggegras Purpere Paddenstoel Parelamoniet Witte Bultzwam, een houtzwam Inktvlekkenziekte van Esdoorn Resten van het badhuis van de baron Van de "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1821181.html"

@@ -6,7 +6,7 @@ title: "Sierteeltmuseum Zaffelare-Lochristi & Oudenaarde"
 date: "03-05-2015"
 isoDate: "2015-05-03T21:32:00"
 time: "21:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Sierteeltmuseum Zaffelare-Lochristi & Oudenaarde Met KVLV In de knap gerestaureerde, grote pastorij van Zaffelare. Eerst krijgen we een uiteenzetting over het ontstaan van de sierteeelt in het Gentse. Te Zaffelare is Charles Vuylsteke (1844"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1759539.html"

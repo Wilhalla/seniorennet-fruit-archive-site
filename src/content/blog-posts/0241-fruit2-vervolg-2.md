@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "26-12-2017"
 isoDate: "2017-12-26T14:18:00"
 time: "14:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 St. Waltrudisch herinnert aan de welvarende stad tijdens de Middeleeuwen. De scherpe torenspits bereikt een hoogte van 33m. Interieur Schilderij Oud beeldje van St. Catherina Het te donkere retabel Nog een schat uit het begijnhof,"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2105288.html"

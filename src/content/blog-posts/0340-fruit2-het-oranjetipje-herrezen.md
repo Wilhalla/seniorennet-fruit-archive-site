@@ -6,7 +6,7 @@ title: "Het Oranjetipje herrezen"
 date: "11-04-2017"
 isoDate: "2017-04-11T20:47:00"
 time: "20:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Het Oranjetipje herrezen Sinds vorige week zie ik elke dag en soms meerdere keren lieflijke oranjetipjes (Anthocaris cardamines). Vorig jaar vroeg ik mij af waar dit vlindertje bleef. Ik zag het nooit meer. Vroeger was het steeds aanwezig. "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2026351.html"

@@ -6,7 +6,7 @@ title: "Bio-consumenten hebben minder pesticiden in hun lichaam"
 date: "06-02-2015"
 isoDate: "2015-02-06T15:58:00"
 time: "15:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bio-consumenten hebben minder pesticiden in hun lichaam Wetenschappers hebben ontdekt dat mensen die biologische producten eten minder pesticiden in hun lichaam hebben. De studie is gepubliceerd in Environmental Health Perspectives van 5 fe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1718855.html"

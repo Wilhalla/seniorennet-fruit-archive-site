@@ -6,7 +6,7 @@ title: "Nelens Rode Winterappel"
 date: "13-11-2019"
 isoDate: "2019-11-13T14:53:00"
 time: "14:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nelens Rode Winterappel Ik kreeg de ent in 1990 van Piet Nelen van Kapellen, in 2018 op 90 jarige leeftijd overleden, destijds medestichter van Velt Stabroek. Hij was geboren te Essen en daar was destijds een boomkwekerij Nelen. Ik ken zijn"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2281235.html"

@@ -6,7 +6,7 @@ title: "Zoerselbos en Bezoekerscentrum"
 date: "13-05-2019"
 isoDate: "2019-05-13T10:22:00"
 time: "10:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zoerselbos en Bezoekerscentrum Al in 1962, ons eerste jaar in Halle, kocht ik een elzenkant in de beemden. Er stond ook wat es tussen. En wat mij nog het meest trof: zwarte bes;. blijkbaar een halve moerasplant. Vele jaren kocht ik er hout."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2237823.html"

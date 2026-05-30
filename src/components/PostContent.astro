@@ -1,20 +1,19 @@
 ---
 import { Image } from 'astro:assets'
 import { ArrowRight, ChevronLeft, ChevronRight, ImageIcon, Layers2, MessageCircle } from 'lucide-react'
-import type { Post } from '../lib/postDetails'
 import { archiveSmallThumbUrl, archiveThumbUrl } from '../lib/assetUrls'
 import { formatArchiveDate } from '../lib/date'
-import { archivePostPartHtml, archivePostPartLabel, archivePostSidebarImageSizes, archivePostSidebarThumbSizes, buildArchivePostRendering } from '../lib/archivePostRendering'
+import { archivePostPartHtml, archivePostPartLabel, archivePostSidebarImageSizes, archivePostSidebarThumbSizes, type ArchivePostReading } from '../lib/archivePostReading'
+import { buildArchivePostRendering } from '../lib/archivePostRendering'
 import LegacyHtmlImages from './LegacyHtmlImages.astro'
 
 type Props = {
-  post: Post
-  seriesPosts?: Post[]
-  currentPostId?: string
+  reading: ArchivePostReading
 }
 
-const { post, seriesPosts, currentPostId } = Astro.props
-const { isSeries, parts, imageEntries, hasImages, sidebarImages } = await buildArchivePostRendering(post, seriesPosts)
+const { reading } = Astro.props
+const { displayPost: post, series, currentPostId } = reading
+const { isSeries, parts, imageEntries, hasImages, sidebarImages } = await buildArchivePostRendering(post, series?.posts)
 ---
 <article class="post-reading-layout" data-post-layout>
   <div class={hasImages ? 'post-reading-grid post-reading-grid--with-images' : 'mx-auto max-w-5xl'}>

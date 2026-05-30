@@ -6,7 +6,7 @@ title: "Met de KVDV naar Wageningen"
 date: "18-09-2019"
 isoDate: "2019-09-18T23:05:00"
 time: "23:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Met de KVDV naar Wageningen 14-15/9 De Koninklijke Vlaamse Dendrologische Vereniging werd al gesticht in 1937 in het Rivierenhof (Deurne) en is aldus de oudste bomenkundige vereniging. Met 2 busjes rijden we naar Nederland. Het is weer een "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2268394.html"

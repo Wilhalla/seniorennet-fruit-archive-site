@@ -6,7 +6,7 @@ title: "Leuven 6/4"
 date: "10-04-2019"
 isoDate: "2019-04-10T00:17:00"
 time: "00:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Leuven 6/4 De landelijke gilde Halle- St. Antonius sloot aan bij Zoersel De bus parkeert aan de oude Philips site en dan is het nog 20’ stappen naar het Centrum. Afspaak met Luc Rombouts, beiaardier van Universiteitsbibliotheek, eveneens Zo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2229730.html"

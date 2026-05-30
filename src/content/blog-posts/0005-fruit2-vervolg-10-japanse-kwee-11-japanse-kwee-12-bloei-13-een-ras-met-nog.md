@@ -6,7 +6,7 @@ title: "VERVOLG 10. Japanse Kwee 11. Japanse kwee 12. bloei 13. Een ras met nog 
 date: "20-03-2020"
 isoDate: "2020-03-20T15:01:00"
 time: "15:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Japanse Kwee 11. Japanse kwee 12. bloei 13. Een ras met nog rodere bloei 14. bloei"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2310068.html"

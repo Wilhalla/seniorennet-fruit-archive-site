@@ -6,7 +6,7 @@ title: "Feedback Prunus Spinosa"
 date: "24-06-2017"
 isoDate: "2017-06-24T11:33:00"
 time: "11:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback Prunus Spinosa Via Liefhebbers Fruit en Fruitteelt Marc Geens Prunus spinosa kan hermafrodiet zijn terwijl andere enkel door insecten worden bestoven. In het geval dat je opgeeft dat er geen vruchten kwamen, waren er dan wel bloeme"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2049432.html"

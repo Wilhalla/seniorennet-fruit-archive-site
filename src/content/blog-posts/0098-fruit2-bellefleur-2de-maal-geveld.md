@@ -6,7 +6,7 @@ title: "Bellefleur 2de maal geveld"
 date: "12-06-2019"
 isoDate: "2019-06-12T13:49:00"
 time: "13:49"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bellefleur 2de maal geveld Vorige zaterdag heeft het gestormd en de al een boom geworden opslag werd door een torsiewind geveld. Drie jaar terug hadden we hem al eens rechtgetrokken en met 2 kabels vastgelegd. Nu is hij tegendraads door een"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2245342.html"

@@ -6,7 +6,7 @@ title: "‘Ons voedsel moet twee keer zo duur worden’"
 date: "14-08-2018"
 isoDate: "2018-08-14T10:47:00"
 time: "10:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "‘Ons voedsel moet twee keer zo duur worden’ MARJOLEIN VISSER: LIEVER DUURZAME LANDBOUW DAN GENTECHNIEK Meer produceren en teelten hittebestendig maken: lukt dat met nieuwe gentechnieken? Agro-ecologe Marjolein Visser gelooft er niet in. ‘De"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2169671.html"

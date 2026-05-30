@@ -6,7 +6,7 @@ title: "Deel 3"
 date: "09-02-2016"
 isoDate: "2016-02-09T20:44:00"
 time: "20:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Deel 3 Living Stones Living Stones Living Stones Living Stones Uitleg Ons gezelschap Worm in een aquarium in de kelder Uitleg Pieter en Ellen in de top van de Palmserre"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1875545.html"

@@ -6,7 +6,7 @@ title: "Fietssleutel verloren"
 date: "10-09-2015"
 isoDate: "2015-09-10T10:05:00"
 time: "10:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Fietssleutel verloren Gisteren hier een fietssleutel gevonden met een penning van de Grand Canyon."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1811894.html"

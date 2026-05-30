@@ -11,240 +11,21 @@ import {
   YAxis,
 } from 'recharts'
 import { CalendarDays, Image, MessageCircle, Ruler, Sparkles } from 'lucide-react'
-import type { LucideIcon } from 'lucide-react'
-import type { ArchiveStatsData, DistributionBucket, RankPost } from '@/lib/archiveStats'
+import type { ArchiveStatsData } from '@/lib/archiveStats'
 import { Badge } from '@/components/ui/badge'
 import { CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { ChartContainer, ChartTooltip, ChartTooltipContent, type ChartConfig } from '@/components/ui/chart'
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart'
 import { Separator } from '@/components/ui/separator'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import TopicSeasonHeatmap from '@/components/atlas/TopicSeasonHeatmap'
-
-const yearChartConfig = {
-  posts: { label: 'Berichten', color: 'var(--color-obsidian)' },
-  images: { label: 'Beelden', color: 'var(--color-slate)' },
-  reactions: { label: 'Reacties', color: 'var(--color-ember)' },
-} satisfies ChartConfig
-
-const postChartConfig = {
-  posts: { label: 'Berichten', color: 'var(--color-obsidian)' },
-} satisfies ChartConfig
-
-const topicChartConfig = {
-  posts: { label: 'Berichten', color: 'var(--color-obsidian)' },
-  images: { label: 'Beelden', color: 'var(--color-slate)' },
-} satisfies ChartConfig
-
-const densityChartConfig = {
-  avgChars: { label: 'Gem. tekens', color: 'var(--color-signal-blue)' },
-} satisfies ChartConfig
-
-const valueChartConfig = {
-  value: { label: 'Waarde', color: 'var(--color-obsidian)' },
-} satisfies ChartConfig
-
-const WEEKDAY_LABELS = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za']
-
-type BarDatum = {
-  label: string
-  value: number
-  detail?: string
-}
-
-function formatNumber(value: number) {
-  return value.toLocaleString('nl-BE')
-}
-
-function formatCompact(value: number) {
-  return new Intl.NumberFormat('nl-BE', { notation: 'compact', maximumFractionDigits: 1 }).format(value)
-}
-
-function formatLabelNumber(value: unknown) {
-  return typeof value === 'number' ? formatNumber(value) : String(value ?? '')
-}
-
-function formatLabelCompact(value: unknown) {
-  return typeof value === 'number' ? formatCompact(value) : String(value ?? '')
-}
-
-function formatMetric(value: number, maximumFractionDigits = 1) {
-  return new Intl.NumberFormat('nl-BE', { maximumFractionDigits }).format(value)
-}
-
-function formatLabelMetric(value: unknown) {
-  return typeof value === 'number' ? formatMetric(value) : String(value ?? '')
-}
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat('nl-BE', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(`${value}T00:00:00`))
-}
-
-function pct(value: number, total: number) {
-  if (!total) return '0%'
-  return `${Math.round((value / total) * 100)}%`
-}
-
-function MinimalCard({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  return (
-    <section className={`min-w-0 border-t border-chalk pt-5 ${className}`}>
-      {children}
-    </section>
-  )
-}
-
-function Kpi({ label, value, detail, icon: Icon }: { label: string; value: string; detail: string; icon: LucideIcon }) {
-  return (
-    <div className="border-t border-chalk pt-4">
-      <div className="mb-5 flex items-center justify-between gap-3 text-gravel">
-        <span className="text-caption uppercase tracking-[0.22em]">{label}</span>
-        <Icon className="size-4" aria-hidden="true" />
-      </div>
-      <div className="font-heading text-[34px] font-light leading-none tracking-[-0.05em] text-obsidian md:text-[42px]">
-        {value}
-      </div>
-      <p className="mt-3 max-w-[22ch] text-sm leading-5 text-gravel">{detail}</p>
-    </div>
-  )
-}
-
-function ChartBlock({ title, description, children }: { title: string; description: string; children: React.ReactNode }) {
-  return (
-    <MinimalCard>
-      <CardHeader className="px-0 pb-4">
-        <CardTitle>{title}</CardTitle>
-        <CardDescription className="max-w-2xl text-gravel">{description}</CardDescription>
-      </CardHeader>
-      <CardContent className="px-0">{children}</CardContent>
-    </MinimalCard>
-  )
-}
-
-function RankingTable({ title, description, posts, metric }: {
-  title: string
-  description: string
-  posts: RankPost[]
-  metric: 'charCount' | 'imageCount' | 'reactionCount'
-}) {
-  const metricLabel = {
-    charCount: 'tekens',
-    imageCount: 'beelden',
-    reactionCount: 'reacties',
-  }[metric]
-
-  return (
-    <MinimalCard>
-      <CardHeader className="px-0 pb-4">
-        <CardTitle>{title}</CardTitle>
-        <CardDescription className="text-gravel">{description}</CardDescription>
-      </CardHeader>
-      <CardContent className="px-0">
-        <Table>
-          <TableHeader>
-            <TableRow className="hover:bg-transparent">
-              <TableHead className="w-8 px-0 text-caption uppercase tracking-[0.18em] text-gravel">#</TableHead>
-              <TableHead className="px-0 text-caption uppercase tracking-[0.18em] text-gravel">Bericht</TableHead>
-              <TableHead className="px-0 text-right text-caption uppercase tracking-[0.18em] text-gravel">{metricLabel}</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {posts.map((post, index) => (
-              <TableRow className="hover:bg-powder/40" key={post.id}>
-                <TableCell className="px-0 font-mono text-xs text-slate">{String(index + 1).padStart(2, '0')}</TableCell>
-                <TableCell className="max-w-[20rem] px-0 whitespace-normal py-3">
-                  <a className="line-clamp-2 text-sm font-medium no-underline hover:underline" href={post.url}>{post.title}</a>
-                  <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-gravel">
-                    <span>{post.year}</span>
-                    <span aria-hidden="true">·</span>
-                    <span>{post.topicLabel}</span>
-                  </div>
-                </TableCell>
-                <TableCell className="px-0 text-right font-mono text-sm tabular-nums">
-                  {formatNumber(post[metric])}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </CardContent>
-    </MinimalCard>
-  )
-}
-
-function DistributionChart({ data }: { data: DistributionBucket[] }) {
-  return (
-    <ChartContainer config={postChartConfig} className="h-[210px] w-full aspect-auto">
-      <BarChart data={data} margin={{ top: 20, right: 8, left: 0, bottom: 0 }}>
-        <CartesianGrid vertical={false} stroke="var(--color-chalk)" />
-        <XAxis dataKey="label" tickLine={false} axisLine={false} />
-        <YAxis hide />
-        <ChartTooltip content={<ChartTooltipContent className="border-chalk bg-pure-surface shadow-none" />} />
-        <Bar dataKey="posts" fill="var(--color-posts)" radius={[2, 2, 0, 0]}>
-          <LabelList dataKey="posts" position="top" className="fill-gravel text-[11px]" formatter={formatLabelCompact} />
-        </Bar>
-      </BarChart>
-    </ChartContainer>
-  )
-}
-
-function ValueBarChart({ data, height = 280, labelWidth = 96, formatter = formatLabelMetric }: {
-  data: BarDatum[]
-  height?: number
-  labelWidth?: number
-  formatter?: (value: unknown) => string
-}) {
-  return (
-    <ChartContainer config={valueChartConfig} className="w-full aspect-auto" style={{ height }}>
-      <BarChart data={data} layout="vertical" margin={{ top: 0, right: 42, left: 0, bottom: 0 }}>
-        <CartesianGrid horizontal={false} stroke="var(--color-chalk)" />
-        <XAxis type="number" hide />
-        <YAxis dataKey="label" type="category" tickLine={false} axisLine={false} width={labelWidth} className="text-xs" />
-        <ChartTooltip content={<ChartTooltipContent className="border-chalk bg-pure-surface shadow-none" />} />
-        <Bar dataKey="value" fill="var(--color-value)" radius={[0, 2, 2, 0]}>
-          <LabelList dataKey="value" position="right" className="fill-gravel text-[11px]" formatter={formatter} />
-        </Bar>
-      </BarChart>
-    </ChartContainer>
-  )
-}
-
-function WeekHeatmap({ data }: { data: ArchiveStatsData['weekdayHour'] }) {
-  const max = Math.max(...data.map((cell) => cell.posts), 1)
-  const byKey = new Map(data.map((cell) => [`${cell.day}-${cell.hour}`, cell.posts]))
-
-  return (
-    <div className="overflow-x-auto pb-2">
-      <div className="grid min-w-[760px] grid-cols-[2rem_repeat(24,minmax(1.4rem,1fr))] gap-px text-xs">
-        <div />
-        {Array.from({ length: 24 }, (_, hour) => (
-          <div className="pb-2 text-center font-mono text-[10px] text-slate" key={hour}>{hour % 3 === 0 ? hour : ''}</div>
-        ))}
-        {WEEKDAY_LABELS.map((dayLabel, day) => (
-          <div className="contents" key={dayLabel}>
-            <div className="pr-2 pt-1.5 text-right font-mono text-[10px] uppercase text-gravel">{dayLabel}</div>
-            {Array.from({ length: 24 }, (_, hour) => {
-              const posts = byKey.get(`${day}-${hour}`) ?? 0
-              const intensity = posts / max
-              return (
-                <div
-                  className="h-7 rounded-[3px] bg-powder"
-                  key={hour}
-                  title={`${dayLabel} ${hour}:00 · ${posts} berichten`}
-                  style={{
-                    backgroundColor: posts
-                      ? `color-mix(in srgb, var(--color-obsidian) ${Math.max(12, intensity * 92)}%, var(--color-powder))`
-                      : 'var(--color-powder)',
-                  }}
-                />
-              )
-            })}
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+import { useDismissHydrationLoader } from '@/components/gallery/useGracefulLoader'
+import { ChartBlock, Kpi, MinimalCard, RankingTable } from './StatsBlocks'
+import { DistributionChart, ValueBarChart, WeekHeatmap } from './StatsCharts'
+import { densityChartConfig, postChartConfig, topicChartConfig, yearChartConfig } from './statsChartConfig'
+import { formatCompact, formatDate, formatLabelCompact, formatLabelNumber, formatNumber, pct, WEEKDAY_LABELS } from './statsFormat'
 
 export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
+  useDismissHydrationLoader('stats-hydration-loader', false)
+
   const mostActiveYear = [...stats.byYear].sort((a, b) => b.posts - a.posts)[0]
   const mostVisualYear = [...stats.byYear].sort((a, b) => b.images - a.images)[0]
   const tempoYears = [...stats.byYear]
@@ -283,13 +64,9 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
     <div className="site-shell pb-20">
       <section className="relative overflow-hidden py-16 md:py-24">
         <div className="max-w-5xl">
-          <p className="eyebrow">Archiefstatistieken</p>
-          <h1 className="mt-3 max-w-4xl font-heading text-[56px] font-light leading-[0.95] tracking-[-0.075em] text-obsidian md:text-[92px]">
-            Het fruitarchief als dataset.
+          <h1 className="display-title max-w-4xl">
+            Blogarchiefstatistieken
           </h1>
-          <p className="mt-7 max-w-2xl text-[18px] leading-7 text-gravel">
-            Een compacte, data-dichte lezing van Daniel Willaeys’ blog: ritme, uitschieters, beeldgebruik, reacties en thema’s tussen {stats.totals.firstYear} en {stats.totals.lastYear}.
-          </p>
         </div>
         <div className="mt-10 flex flex-wrap gap-2">
           <Badge variant="secondary" className="rounded-full bg-powder text-gravel">{formatDate(stats.totals.firstDate)} → {formatDate(stats.totals.lastDate)}</Badge>

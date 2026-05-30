@@ -6,7 +6,7 @@ title: "Wordt het toch nog Winter?"
 date: "19-12-2015"
 isoDate: "2015-12-19T17:33:00"
 time: "17:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wordt het toch nog Winter? We beleven weer een warme week, 15° graden is het geweest. Vandaag was het eerder een donkere dag, maar droog. 13° tegen de avond. Ik was aan het snoeien en plots hoorde ik vriezeganzen. Zeer luidruchtig waren ze "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1853235.html"

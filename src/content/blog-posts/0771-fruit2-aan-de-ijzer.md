@@ -6,7 +6,7 @@ title: "Aan de IJzer"
 date: "28-01-2015"
 isoDate: "2015-01-28T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Aan de IJzer We sliepen in boerenschuren. Daar er geen eten was, deed de commandant een boer brood bakken. We lagen achter de Ijzer. ’s Nachts trokken enkele soldaten de wacht op. De anderen zochten slaapgelegenheid in schuren en hooizolder"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714673.html"

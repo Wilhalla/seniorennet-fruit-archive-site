@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "03-05-2019"
 isoDate: "2019-05-03T23:19:00"
 time: "23:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg 2 Schalkenmehrener Maar en dorp Mijn jongste dochters Tin en Mieke Idem Bij het Weinfelder Maar Maarts viooltje Uitrusten Idem"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2235537.html"

@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "05-10-2018"
 isoDate: "2018-10-05T20:10:00"
 time: "20:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Dag 4 Voormiddag rondleiding in de grote Benediktijnerabdij met schitterende barokkerk te Ottobeuren zelf. 1. De abdij 2. Ons hotel Hirsch 3. Marktplaats, met in het midden het stadhuis (geel) 4. De barokkerk van de abdij 5. Idem "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2182891.html"

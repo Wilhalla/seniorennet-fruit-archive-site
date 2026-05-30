@@ -6,7 +6,7 @@ title: "Namiddag kasteel-burcht Veves"
 date: "21-04-2019"
 isoDate: "2019-04-21T23:05:00"
 time: "23:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Namiddag kasteel-burcht Veves Geleid bezoek aan de kasteel-burcht Veves, gebouwd op een heuvel, met ziijn 5 torens, waarvan de donjon de meest impressionantste is, het doornroosje-kasteel. Na vele jaren leegstand werd het kasteel heringeric"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232575.html"

@@ -6,7 +6,7 @@ title: "De Grote Dagwandeling"
 date: "28-01-2015"
 isoDate: "2015-01-28T23:00:00"
 time: "23:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Grote Dagwandeling Vandaag (14/8) staat een grote dagwandeling op het programma. We klimmen eerst naar de nieuwe woning die Luc – naar eigen ontwerp- aan het bouwen is bovenop de heuvel met wijds uitzicht op het verder gelegen Reuzengebe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714717.html"

@@ -6,7 +6,7 @@ title: "De DEWE peer eind februari"
 date: "13-03-2018"
 isoDate: "2018-03-13T22:16:00"
 time: "22:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De DEWE peer eind februari Dit is mijn zaaipeer, die dit jaar voor het eerst droeg, in een jaar dat de meeste ander peren bevroren. Goede vruchtzetting, zie vroegere foto’s. Eind februari ontdekten we nog een peertje. Samen met dochter Tinn"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2128579.html"

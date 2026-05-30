@@ -6,7 +6,7 @@ title: "Internationele PfanzenMesse IPM Essen"
 date: "06-02-2020"
 isoDate: "2020-02-06T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Internationale PfLanzenMesse IPM Essen Ik kon opstappen op de P&R Zoersel Op de bus van de Oost- en West-Vlaamse siertelers vond ik een plaats naast de zaakvoerder van ‘Bloemenweelde’ te Kortemark, destijds mijn buurgemeente. Er waren diver"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2300129.html"

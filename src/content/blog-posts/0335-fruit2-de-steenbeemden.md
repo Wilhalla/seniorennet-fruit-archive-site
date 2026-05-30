@@ -6,7 +6,7 @@ title: "De Steenbeemden"
 date: "30-04-2017"
 isoDate: "2017-04-30T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wandeling in het Reservaat van Natuurpunt De Steenbeemden te Kessel – Emblem Gids Wim Veraghtert Tot voor kort lagen hier tal van vijvers met weekendverblijven. Natuurpunt kon die opkopen en liet grote werken uitvoeren voor herstel: afbreke"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2032182.html"

@@ -6,7 +6,7 @@ title: "Bomen met gele bladeren"
 date: "29-07-2019"
 isoDate: "2019-07-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bomen met gele bladeren Het viel mij op dat mijn oudste bomen er allemaal bijstaan met een erg geel bladerdak. Het zijn bomen op M7 onderstam en minstens 55 jaar oud. De droge periode (tot 27 juli was hier in de julimaand slechts 11,5 mm re"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2256625.html"

@@ -6,7 +6,7 @@ title: "Zaailing Peer"
 date: "23-10-2017"
 isoDate: "2017-10-23T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zaailing Peer Vorige week heb ik de vruchten geplukt van de nieuwe zaailing peer. De zaailing staat er reeds lang. Een paar jaar terug heb ik die flink ingekort. Met de vorst van 19 en 20 april had ik zo goed als geen peren, behalve David, "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2085281.html"

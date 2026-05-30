@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "29-03-2015"
 isoDate: "2015-03-29T22:44:00"
 time: "22:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Legermateriaal 20. Klompenmakersalaam 21. De dom met een paar spaken 22. Plooimachine 23. Het wiel is beslagen 24. Wagen voor het vervoer van boomstammen 25. Groep 26. Wagens 27. Pikmachine. De er op volgende pikbinder ontbree"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743715.html"

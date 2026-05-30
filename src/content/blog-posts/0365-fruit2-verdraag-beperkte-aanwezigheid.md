@@ -6,7 +6,7 @@ title: "Verdraag beperkte aanwezigheid"
 date: "16-12-2016"
 isoDate: "2016-12-16T13:54:00"
 time: "13:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Verdraag beperkte aanwezigheid ‘Verdraagzaamheid is een sleutelwoord om succesvol Ecologisch fruit te telen’ Proficiat voor deze paragraaf. Ik zou er nog graag iets aan toevoegen over NATUURLIJKE TEELT. Hier grijpt men niet in met de toegel"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1987647.html"

@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "26-11-2017"
 isoDate: "2017-11-26T22:04:00"
 time: "22:04"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Interieur Dom 20. Luther 21. Luther 22. Het muzikale gezin Luther 23. Cranach De overspelige vrouw 24. Slot Zuylen. Let op de slangenmuur om meer beschutting te geven aan warmteminnend fruit. ( perziken, abrikozen) 25. Voorkan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2096036.html"

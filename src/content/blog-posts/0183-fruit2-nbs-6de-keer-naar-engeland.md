@@ -6,7 +6,7 @@ title: "NBS 6de Keer naar Engeland"
 date: "03-09-2018"
 isoDate: "2018-09-03T21:13:00"
 time: "21:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "NBS 6de Keer naar Engeland 22-26 aug. Steeds onder leiding van Jeanpierre Billen trok de Nationale Boomgaaardenstichting een 6 de keer naar Engeland. Op de eerste dag stond het wereldberoemde Onzoekingstation East Malling op het programma. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2174728.html"

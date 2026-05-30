@@ -6,7 +6,7 @@ title: "KIWIBESSEN (Actinidia arguta)"
 date: "08-05-2018"
 isoDate: "2018-05-08T23:59:00"
 time: "23:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "KIWIBESSEN (Actinidia arguta) Bij mij verschijnen de mannelijke bloemen het eerst. Ze zijn wat takvormig. Enkel aan de Weiki verschijnt al een begin van vruchtzetting. Geneva die ernaast staat en veertien dagen vroeger rijp is, laat zijn b "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2144915.html"

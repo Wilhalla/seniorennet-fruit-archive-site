@@ -14,8 +14,8 @@ export default function Hero({ leadPost, postCount }: Props) {
     <section className="site-shell relative grid min-h-[32rem] items-end gap-14 overflow-hidden py-14 md:grid-cols-[minmax(0,1fr)_minmax(20rem,0.6fr)]">
       <img className="apple-image absolute right-8 top-8 hidden w-28 rotate-6 md:block" src="/apple-assets/apple-2-192.png" alt="" aria-hidden="true" loading="eager" decoding="async" />
       <div className="grid gap-5">
-        <p className="eyebrow">Daniel Willaeys</p>
-        <h1 className="display-title">Fruitarchief</h1>
+        <p className="eyebrow">Bewaarde blogberichten</p>
+        <h1 className="display-title">Blogarchief Daniël Willaeys</h1>
         <p className="m-0 max-w-3xl text-lg leading-snug text-slate-ink">{postCount.toLocaleString('nl-BE')} bewaarde berichten met foto’s en reacties.</p>
         <div className="flex flex-wrap items-center gap-3">
           <a className="button-link" href="/archive/">Bekijk alle berichten</a>

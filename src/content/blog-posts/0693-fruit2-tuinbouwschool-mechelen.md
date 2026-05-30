@@ -6,7 +6,7 @@ title: "Tuinbouwschool Mechelen"
 date: "16-05-2015"
 isoDate: "2015-05-16T12:37:00"
 time: "12:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tuinbouwschool Mechelen Stekelloze Braam nog halflevend. De rechtse stengel is wel afgestorven. Dit verschijnsel heb ik nog nooit gezien bij mijn stekelloze bramen; wel bij de gestekelde. Bij mij sterven de stekelloze bramen helemaal af. Ik"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1765059.html"

@@ -6,7 +6,7 @@ title: "Okkernoten"
 date: "28-09-2015"
 isoDate: "2015-09-28T19:54:00"
 time: "19:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Okkernoten De okkernoten of walnoten beginnen te vallen. Na enkele magere jaren heb ik weer noten aan alle bomen. De geënte noot Broadview die er steeds staat, heeft ook dit jaar de meeste vruchten. Na jaren verstek draagt ook het Nederland"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819387.html"

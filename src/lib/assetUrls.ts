@@ -3,6 +3,7 @@ const DEFAULT_S3_ASSET_BUCKET = 'wilhalla-vake-blog'
 const ARCHIVE_IMAGE_PREFIX = '/archive-images/'
 const ARCHIVE_THUMB_PREFIX = '/archive-thumbs/'
 const ARCHIVE_SMALL_THUMB_PREFIX = '/archive-thumbs-240/'
+const ARCHIVE_TINY_THUMB_PREFIX = '/archive-thumbs-96/'
 
 function envString(value: unknown) {
   return typeof value === 'string' ? value.trim() : ''
@@ -62,8 +63,8 @@ function archiveThumbPath(assetPath: string, prefix: string) {
     ? pathname
     : pathname.startsWith(ARCHIVE_IMAGE_PREFIX)
       ? pathname.replace(ARCHIVE_IMAGE_PREFIX, prefix).replace(/\.[^/.]+$/, '.webp')
-      : pathname.startsWith(ARCHIVE_THUMB_PREFIX) || pathname.startsWith(ARCHIVE_SMALL_THUMB_PREFIX)
-        ? pathname.replace(/^\/archive-thumbs(?:-240)?\//, prefix).replace(/\.[^/.]+$/, '.webp')
+      : pathname.startsWith(ARCHIVE_THUMB_PREFIX) || pathname.startsWith(ARCHIVE_SMALL_THUMB_PREFIX) || pathname.startsWith(ARCHIVE_TINY_THUMB_PREFIX)
+        ? pathname.replace(/^\/archive-thumbs(?:-240|-96)?\//, prefix).replace(/\.[^/.]+$/, '.webp')
         : ''
   return { thumbPath, suffix }
 }
@@ -78,6 +79,13 @@ export function archiveThumbUrl(assetPath: string) {
 export function archiveSmallThumbUrl(assetPath: string) {
   if (!assetPath) return assetPath
   const { thumbPath, suffix } = archiveThumbPath(assetPath, ARCHIVE_SMALL_THUMB_PREFIX)
+  if (!thumbPath) return archiveAssetUrl(assetPath)
+  return remoteArchivePath(thumbPath, suffix)
+}
+
+export function archiveTinyThumbUrl(assetPath: string) {
+  if (!assetPath) return assetPath
+  const { thumbPath, suffix } = archiveThumbPath(assetPath, ARCHIVE_TINY_THUMB_PREFIX)
   if (!thumbPath) return archiveAssetUrl(assetPath)
   return remoteArchivePath(thumbPath, suffix)
 }

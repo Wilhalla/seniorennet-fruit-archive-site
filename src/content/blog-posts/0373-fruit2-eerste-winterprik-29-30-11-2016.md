@@ -6,7 +6,7 @@ title: "Eerste Winterprik 29-30/11/2016"
 date: "30-11-2016"
 isoDate: "2016-11-30T10:47:00"
 time: "10:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Eerste Winterprik 29-30/11/2016 Gisteren was het al koud en zonnig. www.weersstationzoersel.be mat -6.3° en aan de grond is het dan dicht tegen -10°. Het zou tijdelijk wat warmer worden maar volgende maandag kan al een nieuwe winterprik vol"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1982056.html"

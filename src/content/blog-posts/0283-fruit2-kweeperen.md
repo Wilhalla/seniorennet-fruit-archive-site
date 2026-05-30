@@ -6,7 +6,7 @@ title: "Kweeperen"
 date: "29-09-2017"
 isoDate: "2017-09-29T10:37:00"
 time: "10:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kweeperen Enkele dagen terug heb ik de kweeperen geoogst. Slechts 1 boom droeg dit jaar: Leskovacka of toch Leskovacz? De appelvormige kwee. Het is de meest gezond groeiende en blijkbaar de laatst bloeiende en daardoor ontsnapt aan de vorst"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2077174.html"

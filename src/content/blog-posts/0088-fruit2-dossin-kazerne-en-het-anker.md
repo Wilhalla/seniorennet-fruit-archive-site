@@ -6,7 +6,7 @@ title: "Dossin Kazerne en het Anker"
 date: "20-06-2019"
 isoDate: "2019-06-20T22:09:00"
 time: "22:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dossin Kazerne en het Anker Met Verenigde Oostindische Companie Antwerpen 14-6-2019 Naast de oorspronkelijke kazerne staat het nieuwe gebouw van Bob Van Reeth. Memoriaal, Museum & Documentatiecentrum over Holocaut & Mensenrechten. Kazerne D"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247393.html"

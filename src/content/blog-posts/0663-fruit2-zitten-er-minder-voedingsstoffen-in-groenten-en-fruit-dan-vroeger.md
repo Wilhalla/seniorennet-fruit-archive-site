@@ -6,7 +6,7 @@ title: "Zitten er minder Voedingsstoffen in Groenten en Fruit dan vroeger?"
 date: "22-06-2015"
 isoDate: "2015-06-22T17:34:00"
 time: "17:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zitten er minder Voedingsstoffen in Groenten en Fruit dan vroeger? De Standaard 22 juni 2015 ‘Daar lijkt het wel op’, zegt de Britse landbouwexpert Anne-Marie Mayer. ‘En ik denk dat dat komt door rassenveredeling en uitputting van de grond’"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1781033.html"

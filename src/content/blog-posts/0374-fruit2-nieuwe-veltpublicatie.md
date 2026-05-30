@@ -6,7 +6,7 @@ title: "Nieuwe Veltpublicatie"
 date: "29-11-2016"
 isoDate: "2016-11-29T12:46:00"
 time: "12:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuwe Veltpublicatie Appel, Peer en Meer Fruitbomen in je Tuin Op de laatste Jaarvergadering van Velt Voorkempen schafte ik mij het boek aan, doch omdat er ook een andere gegadigde was gaf ik het door. Een eerste doorbladering geeft een go"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1981784.html"

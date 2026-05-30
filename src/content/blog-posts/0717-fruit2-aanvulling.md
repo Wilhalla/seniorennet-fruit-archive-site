@@ -6,7 +6,7 @@ title: "Aanvulling"
 date: "23-04-2015"
 isoDate: "2015-04-23T23:42:00"
 time: "23:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Aanvulling Ook Carolina blijkt een vroege bloeier. Het is een gezond groeiend ras dat een tiental jaar terug vooral aangeplant werd door bio-telers in West-europa. H’et is een prachtig gekleurde, grote, lekkere appel, rijp begin september e"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1755053.html"

@@ -6,7 +6,7 @@ title: "Greenpeace onderwerpt appels aan pesticidentes"
 date: "22-10-2015"
 isoDate: "2015-10-22T11:48:00"
 time: "11:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "21.10.2015 Greenpeace onderwerpt appels aan pesticidentest Milieuorganisatie Greenpeace heeft supermarktappels uit 11 Europese landen getest en laat weten dat 83 procent van de geteste appels uit de gangbare fruitteelt restanten van gewasbe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1829457.html"

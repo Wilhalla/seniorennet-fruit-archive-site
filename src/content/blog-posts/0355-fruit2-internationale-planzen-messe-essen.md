@@ -6,7 +6,7 @@ title: "Internationale Planzen Messe Essen"
 date: "27-01-2017"
 isoDate: "2017-01-27T17:15:00"
 time: "17:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Internationale Planzen Messe Essen Deze week weer de IPM Essen bezocht; wellicht de grootste plantenbeurs. 1547 standen uit 49 landen op een oppervlakte van meer dan 10 Ha. Slechts een gedeelte gezien. Te vermoeiend voor mijn oude leden. Va"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2002186.html"

@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "29-03-2015"
 isoDate: "2015-03-29T14:23:00"
 time: "14:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Slinger van Foucault 20. Gouden koets 21. Glasraam 22. Basreliëf van Jacques Du Broeucq (1510-1584) 23. Koor 24. Beeld van Du Broeucq 25. Idem St Bartholomëus 26. Jacques Du Broeucq (de Mons) 27. Terug"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743508.html"

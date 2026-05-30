@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "05-09-2016"
 isoDate: "2016-09-05T23:29:00"
 time: "23:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Coeur-de-boeuf tomaat Daliaperceel Bij de dalia’s Zeer gelijkend op het ras ‘Roi Albert’ Hapet Perfect Pompondalia ‘Othello’ Verwerkte tomaten"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952897.html"

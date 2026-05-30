@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "20-06-2016"
 isoDate: "2016-06-20T22:07:00"
 time: "22:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Middeleeuwse fontein met aanslag Begraafplaats paters Kapel Mayerling Voor de opera Interieur Ontvangstzaal voor de hoogste genodigden Groep Idem Zaal"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927706.html"

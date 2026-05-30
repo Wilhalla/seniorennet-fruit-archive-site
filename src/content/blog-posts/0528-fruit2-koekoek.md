@@ -6,7 +6,7 @@ title: "Koekoek"
 date: "18-04-2016"
 isoDate: "2016-04-18T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "KOEKOEK Vanmorgen riep de koekoek herhaaldelijk dichtbij in de tuin. Hij is nog niet buiten adem na een reis van 15.000 km ten zuiden van de Sahara. Van de frisse ochtend, 0° op de thermometer trok hij zich blijkbaar niets aan. Daarna de vo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1903829.html"

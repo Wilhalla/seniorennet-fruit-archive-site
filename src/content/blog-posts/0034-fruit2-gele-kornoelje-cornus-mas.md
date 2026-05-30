@@ -6,7 +6,7 @@ title: "Gele Kornoelje (Cornus mas)"
 date: "28-10-2019"
 isoDate: "2019-10-28T20:48:00"
 time: "20:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gele Kornoelje (Cornus mas) Elk voorjaar verheug ik mij over de gouden bloemplekken van de kornoeljes in mijn tuin. In de struiken hoor ik het bekoorlijk gezoem van de vele bijen van de bijenstand hier van Dennis en bezoekersbijen tijdens d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2277786.html"

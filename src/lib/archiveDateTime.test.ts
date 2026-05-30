@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { archiveDayLabel, archiveMonthKey, archiveTimestamp, archiveYear, displayArchiveYear, formatArchiveDate, parseSeniorennetDateTime, seasonForMonth, sortArchiveChronologically } from './archiveDateTime'
+import { archiveDayLabel, archiveMonthKey, archiveTimestamp, archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate, parseSeniorennetDateTime, seasonForMonth, sortArchiveChronologically } from './archiveDateTime'
 
 describe('archive datetime', () => {
   it('normalizes Seniorennet date and time into an ISO datetime', () => {
@@ -36,5 +36,25 @@ describe('archive datetime', () => {
 
     expect(sortArchiveChronologically(posts).map((post) => post.title)).toEqual(['Newer', 'Older', 'A', 'B'])
     expect(archiveTimestamp(posts[0])).toBe(Number.POSITIVE_INFINITY)
+  })
+
+  it('builds chronology groups behind the archive datetime module', () => {
+    const posts = [
+      { title: 'Older', isoDate: '2006-02-01T00:00:00' },
+      { title: 'Newer', isoDate: '2007-03-07T00:00:00' },
+      { title: 'Same month', isoDate: '2007-03-01T00:00:00' },
+    ]
+
+    const chronology = buildArchiveChronology(posts)
+
+    expect(chronology.chronologicalItems.map((post) => post.title)).toEqual(['Newer', 'Same month', 'Older'])
+    expect(chronology.yearGroups.map((group) => [group.year, group.count, group.firstIndex])).toEqual([
+      ['2007', 2, 0],
+      ['2006', 1, 2],
+    ])
+    expect(chronology.monthGroups.map((group) => [group.key, group.count, group.startsYear])).toEqual([
+      ['m-2007-03', 2, true],
+      ['m-2006-02', 1, true],
+    ])
   })
 })

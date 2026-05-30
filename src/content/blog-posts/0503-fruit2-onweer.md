@@ -6,7 +6,7 @@ title: "Onweer"
 date: "29-05-2016"
 isoDate: "2016-05-29T16:21:00"
 time: "16:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Onweer Gisterenavond, 28/5 zaten we op de rand van het onweer over de streek, toch 11 liter. Vorige week viel er 33 liter, maar toen zat ik in Wenen met de senioren van Zoersel. We hadden de ganse week praktisch prachtig zomerweer van 25°. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1919816.html"

@@ -6,7 +6,7 @@ title: "Een Ontdekking: Mutatie van Glen Coe"
 date: "13-08-2019"
 isoDate: "2019-08-13T19:16:00"
 time: "19:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een Ontdekking: Mutatie van Glen Coe Een paarse framboos In 1992 zag ik een annonce voor bramen in het Engels fruitteeltblad Fruit. Derek Jennings, de grote onderzoeker van het Scottish Crop Research institute, nu herdoopt in het James Hutt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2259889.html"

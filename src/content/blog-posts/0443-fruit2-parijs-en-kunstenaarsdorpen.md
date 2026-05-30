@@ -6,7 +6,7 @@ title: "Parijs en Kunstenaarsdorpen"
 date: "13-08-2016"
 isoDate: "2016-08-13T09:48:00"
 time: "09:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Parijs en Kunstenaarsdorpen Met Art Fan, Zoersel 5-7 augustus 2016 We vertrekken om 7 u met een ontbijtstop in Nazareth-Deinze naar Auvers sur Oise waar Vincent Van Gogh zijn laatste levensmaanden doorbracht en waar hij begraven ligt. Hij s"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1945280.html"

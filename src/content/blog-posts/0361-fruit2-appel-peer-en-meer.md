@@ -6,7 +6,7 @@ title: "Appel, Peer en Meer"
 date: "21-12-2016"
 isoDate: "2016-12-21T11:07:00"
 time: "11:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Appel, Peer en Meerr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1989406.html"

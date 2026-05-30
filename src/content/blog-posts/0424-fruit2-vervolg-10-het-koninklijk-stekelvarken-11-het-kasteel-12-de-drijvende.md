@@ -6,7 +6,7 @@ title: "VERVOLG 10. Het koninklijk stekelvarken 11. Het kasteel 12. De drijvende
 date: "21-09-2016"
 isoDate: "2016-09-21T21:32:00"
 time: "21:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Het koninklijk stekelvarken 11. Het kasteel 12. De drijvende tuin van de Nederlander 13. Ananaskers 14. Groene kikker 15. Verkoeling in de mistvallei 16. Idem 17. Idem 18. Japanse tuin"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958435.html"

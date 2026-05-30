@@ -6,7 +6,7 @@ title: "Rondleiding met Gids"
 date: "29-05-2018"
 isoDate: "2018-05-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Rondleiding met Gids Eerst kwam het stadhuis, geflankeerd door het Belfort aan de beurt. Dit was eerst lakenhal in witte zandsteen van Balegem en arduin van Doornik in sobere rococo-stijl. Men bouwde tegen het al bestaande belfort (1369). ("
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2150654.html"

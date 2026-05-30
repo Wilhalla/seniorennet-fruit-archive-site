@@ -6,7 +6,7 @@ title: "Gummarus ‘Marus’ Roelants"
 date: "22-12-2015"
 isoDate: "2015-12-22T23:08:00"
 time: "23:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gummarus ‘Marus’ Roelants is op 7 dec. Overleden Geboten te Pulderbos op 6 jan. 1930 Vele jaren was hij dagbuurman op zijn Mollenhoeve. Altijd kreeg hij bezoek. Ik nam deze foto op 10 sept., een van de laatste keren dat hij hier nog geraakt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1854681.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "18-01-2016"
 isoDate: "2016-01-18T22:24:00"
 time: "22:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Uitleg Werk Idem Idem Idem Idem Idem Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1865926.html"

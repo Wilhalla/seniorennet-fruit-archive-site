@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "28-09-2018"
 isoDate: "2018-09-28T23:17:00"
 time: "23:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Twee figuren Conscience Trommelman Trommelaar, achter hem 2 kinderen Zelfportret met 2 hoorntjes De linde in zijn glorietijd Het vellen Bio van het kunstenaarskoppel Hun portret"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2180973.html"

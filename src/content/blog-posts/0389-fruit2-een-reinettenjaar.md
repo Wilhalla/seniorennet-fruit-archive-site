@@ -6,7 +6,7 @@ title: "Een Reinettenjaar"
 date: "06-11-2016"
 isoDate: "2016-11-06T14:42:00"
 time: "14:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een Reinettenjaar Dit jaar, 2016 was een topjaar voor Reinetten en aanverwanten. Vooral de Boskopen droegen als nooit tevoren. In een verloren hoek heb ik al 30 jaar een Court Pendu en een Karmijn de Sonnaville staan. Die droegen zo goed al"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1973734.html"

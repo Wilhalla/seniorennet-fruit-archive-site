@@ -6,7 +6,7 @@ title: "VELT Opentuinendagen 6 en 7 /06"
 date: "08-06-2015"
 isoDate: "2015-06-08T22:59:00"
 time: "22:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VELT Opentuinendagen 6 en 7 /06 Ik ben blij nog eens meegedaan te hebben aan de Oepentuinendagen. Met plezier heb ik gezien dat zoveel jonge gezinnen met soms nog heel jonge kinderen kwamen kijken. Voor het tellen van de bezoekers had ik te"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1775031.html"

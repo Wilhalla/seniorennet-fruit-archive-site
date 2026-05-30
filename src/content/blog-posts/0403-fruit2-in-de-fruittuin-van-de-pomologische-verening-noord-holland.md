@@ -6,7 +6,7 @@ title: "In de fruittuin van de POMologische Verening Noord-Holland"
 date: "11-10-2016"
 isoDate: "2016-10-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "In de fruittuin van de POMologische Verening Noord-Holland Schone van Boskoop hoog type Met Henk Houtman , de 92 jarige stamvader Eva Baltet, ca 1870 Frankrijk handpeer Gieser Wildeman 4840 Nederland keuken Durondeau 1823 Frankrijk hand Ide"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1965144.html"

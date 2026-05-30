@@ -6,7 +6,7 @@ title: "Worrying level of pesticides found in 'Bee Friendly' plants"
 date: "08-06-2017"
 isoDate: "2017-06-08T23:08:00"
 time: "23:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Van Garden Organic, de Engelse Velt Worrying level of pesticides found in 'Bee Friendly' plants New research has found that many of the plants sold in garden centres as 'Bee or Pollinator Friendly' in fact contain dangerous levels of pestic"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2044759.html"

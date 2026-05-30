@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "04-09-2016"
 isoDate: "2016-09-04T21:13:00"
 time: "21:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Nog op het 5de verdiep Aan tafel in het kasteel Idem Idem Idem Kasteel Idem Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952457.html"

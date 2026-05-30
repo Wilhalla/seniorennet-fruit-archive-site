@@ -6,7 +6,7 @@ title: "Naar de Adennen"
 date: "24-07-2016"
 isoDate: "2016-07-24T23:08:00"
 time: "23:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Naar de Adennen 11&12 juli Senioren Zoersel, Reizen Lauwers en gidse Chantal We bezoeken Durbuy, het kleinste stadje van België. We maken er een fijne wandeling langs de rotswand met welving in de rotslagen, een inclinatie. Het oudste vakwe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1939023.html"

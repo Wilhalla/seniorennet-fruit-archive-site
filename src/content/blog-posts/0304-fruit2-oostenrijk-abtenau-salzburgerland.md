@@ -6,7 +6,7 @@ title: "Oostenrijk Abtenau Salzburgerland"
 date: "08-08-2017"
 isoDate: "2017-08-08T22:56:00"
 time: "22:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Oostenrijk Abtenau Salzburgerland Met De Stille Kempen 17 -22 juli 2017 2 Chauffeurs: Theo (eigenaar) en Eddy. Reisgezelschap: senioren Landelijke Gilde en Okra Malle. Op de heenrit een beetje per vergissing van dichtbij de Arena van Bayern"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2062204.html"

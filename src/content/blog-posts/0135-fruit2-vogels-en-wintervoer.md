@@ -6,7 +6,7 @@ title: "Vogels en Wintervoer"
 date: "01-02-2019"
 isoDate: "2019-02-01T21:34:00"
 time: "21:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vogels en Wintervoer Voor het ophangen van de mezenbollen had ik een nieuw idee: Voor een gedeelte vlak achter het raam van de keuken aan de druiventakken. Wij zien de vogels van zeer nabij, terwijl zij ons niet zien! Vroeger waren de koolm"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2212452.html"

@@ -6,7 +6,7 @@ title: "VELT FRUITWERKGROEP KEMPEN"
 date: "24-07-2017"
 isoDate: "2017-07-24T21:19:00"
 time: "21:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VELT FRUITWERKGROEP KEMPEN Bezoek: tuin Daniël Willaeys Datum: 15 07 2017 KLEINFFRUIT De blauwe bes is duidelijk aan een opmars bezig. Het laatste jaar steeg het verbruik met liefst 500%, zo werd het nog pas in de media vermeld. De meeste b"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2058155.html"

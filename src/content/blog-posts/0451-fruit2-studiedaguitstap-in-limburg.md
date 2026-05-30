@@ -6,7 +6,7 @@ title: "Studiedaguitstap in Limburg"
 date: "31-07-2016"
 isoDate: "2016-07-31T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Provinciale Pomologische Vereniging O-VL vzw Studiedaguitstap in Limburg 28/07 Fruithandel Kris Wouters te Rummen We reden eerst de kant in tussen de vrachtwagens die naar de zaak kwamen. Dit gaf direct al een idee van de schaal van dit bed"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1940906.html"

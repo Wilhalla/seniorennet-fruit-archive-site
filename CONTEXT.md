@@ -13,8 +13,12 @@ A curated set of archive posts that should read as one entry in aggregated timel
 _Avoid_: merged post, combined item
 
 **Archive datetime**:
-The normalized date/time facts derived from Seniorennet date strings, including sortable timestamps, archive years, month keys, seasons, and Dutch display labels.
+The normalized date/time facts derived from Seniorennet date strings, including sortable timestamps, archive years, month keys, seasons, chronology groups, and Dutch display labels.
 _Avoid_: date helper, time utility
+
+**Archive post reading**:
+The resolved reading view for one requested archive post, including whether it displays as a post series, which archive post remains addressable, rendered post parts, image entries, reactions, and related navigation context.
+_Avoid_: post details payload, article page props
 
 **Image gallery session**:
 The user's current image gallery browsing state: loaded image records, filters, active year, selected image, related images, species/cultivar tags, URL state, and virtual rows.

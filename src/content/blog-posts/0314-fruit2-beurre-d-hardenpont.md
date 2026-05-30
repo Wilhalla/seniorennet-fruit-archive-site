@@ -6,7 +6,7 @@ title: "Beurré d’Hardenpont"
 date: "24-06-2017"
 isoDate: "2017-06-24T11:03:00"
 time: "11:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Beurré d’Hardenpont Nicolas d’Hardenpont (1705-1774) studeerde eerst wetenschappen aan de universiteit te Leuven en werd daarna priester te Mons. Hij werd de eerste van de befaamde pomologen uit de 18de en 19de eeuw die een reeks merkwaardi"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2049425.html"

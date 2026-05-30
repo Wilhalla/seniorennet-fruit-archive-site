@@ -6,7 +6,7 @@ title: "Bij Andre Verbist te Schoten"
 date: "11-06-2018"
 isoDate: "2018-06-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bij Andre Verbist te Schoten Dankzij de e-mails van Hugo Dhooghe van Brasschaat, de man van de zadenwerkgroep Velt, was ik op de hoogte van deze Veltactiviteit. Andre Verbist had voor de afdeling Brasschaat een uiteenzetting gegeven over de"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2154092.html"

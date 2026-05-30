@@ -6,7 +6,7 @@ title: "Schone van Boskoop?"
 date: "01-12-2016"
 isoDate: "2016-12-01T19:07:00"
 time: "19:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Schone van Boskoop? Ik heb nu 50 blz. Van het Velt fruitboek doorgemaakt. De foto’s met kinderen kan ik zeer waarderen. Fruit is al van in mijn kindertijd een van mijn hobby’s. Zij het toen ook om de eieren uit de hooinesten van huismussen "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1982536.html"

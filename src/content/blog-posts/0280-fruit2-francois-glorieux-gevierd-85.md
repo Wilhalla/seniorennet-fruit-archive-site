@@ -6,7 +6,7 @@ title: "François Glorieux, gevierd 85"
 date: "02-10-2017"
 isoDate: "2017-10-02T23:00:00"
 time: "23:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "François Glorieux, gevierd 85 ZOERSEL - De wereldberoemde pianist en componist François Glorieux, die vijftien jaar in Zoersel woont, werd ter gelegenheid van zijn 85ste verjaardag gehuldigd door het gemeentebestuur met een concert. Uitvoer"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2078095.html"

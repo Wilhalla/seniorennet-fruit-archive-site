@@ -102,7 +102,7 @@ disease free.</p>
 <p>Only the caterpillars of the sawfly (Nematus
 ribesii) can be a problem, but they can not eat the whole shrub as with
 gooseberries!</p>
-<p>Daniel Willaeys, Zoersel,
+<p>Daniël Willaeys, Zoersel,
 Antwerpen, Belgium</p>
 
 <p>FOTO’S van vorige week<strong><em></em></strong></p>

@@ -6,7 +6,7 @@ title: "Weekend Engelse Tuinen 12-13 september"
 date: "24-09-2015"
 isoDate: "2015-09-24T23:48:00"
 time: "23:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Weekend Engelse Tuinen 12-13 september Voor de 43 medereizeigers en mij werd het weer een heugelijk evenement. Iedereen was perfect tijdig op de afspraak. We hebben getracht te Calais de P&O boot van 8u40 te halen, doch dit lukte net niet. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1817896.html"

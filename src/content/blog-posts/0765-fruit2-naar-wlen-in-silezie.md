@@ -6,7 +6,7 @@ title: "NAAR WLEN IN SILEZIË"
 date: "28-01-2015"
 isoDate: "2015-01-28T23:21:00"
 time: "23:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "NAAR WLEN IN SILEZIË Vanmiddag (12/8) vertrekken we naar het Pension Lenno van Luc Vanhauwaert op het berggehucht Lenno te Wlen in het vroegere Duitse Silezië. (+/- 500km rijden). Ik raad aan op Google bij zoeken in te vullen: Luc Vanhauwae"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714746.html"

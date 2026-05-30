@@ -6,7 +6,7 @@ title: "Correcties"
 date: "16-08-2016"
 isoDate: "2016-08-16T09:42:00"
 time: "09:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Correcties Ik zet die hier apart, omdat anders de volgorde in de oorspronkrlijke tekst danig verspringt. Weg van St-Antonius naar Zoersel : begint als Zoerselsteenweg. Op grondgebied van de vroegere gemeente Zoersel wordt het St-Antoniusbaa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1946110.html"

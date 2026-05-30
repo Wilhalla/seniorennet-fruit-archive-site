@@ -6,7 +6,7 @@ title: "Abdij Vlierbeek"
 date: "11-04-2016"
 isoDate: "2016-04-11T22:23:00"
 time: "22:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Abdij Vlierbeek Met groep Egenhoven 8/4/2016 (Tussen haakjes, naar ik vernam is deze groep een van de meest actieve socio-culturele groepen in Leuven) In 1125 schonk Godfried I met de baard, graaf van Leuven en eerste hertog van Brabant een"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1901332.html"

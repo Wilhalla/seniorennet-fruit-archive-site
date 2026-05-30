@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "23-10-2019"
 isoDate: "2019-10-23T20:56:00"
 time: "20:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 Dirk Martens, de drukker Pikant Fernand Huts van de Katoennatie, de man achter de Phoebus stichting Kant Putter of distelvink Kant voor koningin Astrid Kant Albrecht en Isabella (heersers over zuid Nederland 1598 – 1621) onder Spa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2276525.html"

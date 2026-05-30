@@ -6,7 +6,7 @@ title: "Laatbloeiende appelrassen op 7-5-2019"
 date: "08-05-2019"
 isoDate: "2019-05-08T11:10:00"
 time: "11:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Laatbloeiende appelrassen op 7-5-2019 Het boompje is een Reinette Dubois, 3de groeijaar op MM106. Het is een toevalszaailing uit het Land van Herve, 1858. Terug onder de aandacht gebracht door RGF Gembloux (Ressources Génétiques Fruitières)"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2236537.html"

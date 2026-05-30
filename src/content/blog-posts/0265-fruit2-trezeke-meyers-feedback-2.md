@@ -6,7 +6,7 @@ title: "Trezeke Meyers Feedback 2"
 date: "28-10-2017"
 isoDate: "2017-10-28T12:01:00"
 time: "12:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Trezeke Meyers Feedback 2 Trezeke Meyers geeft zeer goede appelmoes, bewaarde lang en gezonde boom. Mogelijk waren er nog culinaire toepassingen. 'Jaques Lebel' werd vroeger de koning van de appelmoes genoemd. Dit ras bewaart echter niet zo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2086797.html"

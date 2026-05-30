@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "30-09-2019"
 isoDate: "2019-09-30T23:41:00"
 time: "23:41"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 Trapgevel Paul Koop Kerk van Workum De groep Jopie Huisman Pop 1967 Verkoping per opbod van oud ijzer 1968 Vraatzucht 1969 Feestgangers"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2271000.html"

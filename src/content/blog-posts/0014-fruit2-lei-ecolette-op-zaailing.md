@@ -6,7 +6,7 @@ title: "Lei-Ecolette op zaailing"
 date: "02-02-2020"
 isoDate: "2020-02-02T20:09:00"
 time: "20:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lei-Ecolette op zaailing Op de Internationele PfanzenMesse IPM te Essen kwam ik ook op de stand van Boomkwekerij Gerrit Luyten VDF van Middelburg Walcheren. Hij toonde mij een foto van een geleide Ecolette in 5 etages. En het bijzonderste: "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2299220.html"

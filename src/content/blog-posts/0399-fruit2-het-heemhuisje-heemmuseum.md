@@ -6,7 +6,7 @@ title: "het Heemhuisje-Heemmuseum"
 date: "17-10-2016"
 isoDate: "2016-10-17T22:22:00"
 time: "22:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vandaar gaat het naar het Heemhuisje-Heemmuseum van de Heemkundige Kring van Zoersel Voorzitter Jan Denissen heeft heel veel te vertellen. Vooreerst de 3 geschiedenissen van de fusiedorpen: Zoersel als dubbeldorp met West-Malle; Halle als o"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1966954.html"

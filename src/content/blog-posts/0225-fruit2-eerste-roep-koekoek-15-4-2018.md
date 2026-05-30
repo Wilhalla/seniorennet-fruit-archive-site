@@ -6,7 +6,7 @@ title: "Eerste Roep Koekoek 15/4/2018"
 date: "15-04-2018"
 isoDate: "2018-04-15T13:03:00"
 time: "13:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Eerste Roep Koekoek 15/4/2018 Op de middag voor het eerst hier dit jaar een roepende koekoek gehoord. Al een goede week verblijdt mij de heldere zang van de Zwartkop- grasmus. In mijn eerste vogelboek “Zien is Kennen” heette hij nog Zwartko"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2138568.html"

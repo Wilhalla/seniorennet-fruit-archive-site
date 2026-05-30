@@ -6,7 +6,7 @@ title: "Op de middag worden we verwacht te Montlouis sur Loire op het Chateau de
 date: "05-09-2016"
 isoDate: "2016-09-05T23:34:00"
 time: "23:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Op de middag worden we verwacht te Montlouis sur Loire op het Chateau de la bourdaisiére voor de lunch en daarna voor het bezoek aan de tuin. Die herbergt le Conservatoire national de la tomate met 650 oude rassen. De gids vertelt hoe eerst"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952899.html"

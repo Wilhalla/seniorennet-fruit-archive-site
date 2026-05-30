@@ -6,7 +6,7 @@ title: "NIEUWJAARSWENSEN"
 date: "01-01-2006"
 isoDate: "2006-01-01"
 time: ""
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Daantje wenst de lezer en kijker een vreugdevol, gezond en ervaringsrijk 2006 Moge uw mand rijk gevuld worden 0 1 2 3 4 5 - Gemiddelde waardering: 2/5 - (5 Stemmen)"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit/archief.php?ID=344.html"

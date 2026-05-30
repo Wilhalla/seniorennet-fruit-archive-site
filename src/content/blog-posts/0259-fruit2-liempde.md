@@ -6,7 +6,7 @@ title: "Liempde"
 date: "05-11-2017"
 isoDate: "2017-11-05T13:38:00"
 time: "13:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Liempde De DAG VAN HET FRUIT te Liempde op 22/10/2017 werd georganiseerd door de Stichting FRUITcultuur Brabant en werd gehouden in de Liempdsen Herd in Liempde (halverwege Eindhoven- ’s Hertogenbos). De stichting FRUITcultuur Brabant is op"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2089218.html"

@@ -6,7 +6,7 @@ title: "Vruchten van de Pruimenonderstam St Julien A"
 date: "18-08-2018"
 isoDate: "2018-08-18T13:38:00"
 time: "13:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vruchten van de Pruimenonderstam St Julien A Op de Facebook site Liefhebbers van Fruit en Fruitteelt plaatste Jolanda Cammans een foto van volgens mij vruchten van de pruimenonderstam St Julien A. Anderen zagen er de Reine Claude Verte in. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2170603.html"

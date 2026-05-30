@@ -6,7 +6,7 @@ title: "Appelvinken"
 date: "07-11-2017"
 isoDate: "2017-11-07T13:26:00"
 time: "13:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Appelvinken Nature Today 7-NOV-2017 - Dit najaar worden opvallend grote aantallen appelvinken gezien. Zowel in Nederland als in de omringende landen. Het is de grootste invasie die tot nu toe is opgemerkt. Appelvinken in Nederland leven in "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2089982.html"

@@ -6,7 +6,7 @@ title: "Boodschap van Veruska"
 date: "01-06-2016"
 isoDate: "2016-06-01T21:36:00"
 time: "21:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Boodschap van Veruska Veruska Nieto Borja veruskanb@gmail.com (Veruska is Colombiaanse en woont in Geel) Beste Daniel, Wensen voor jou allen de mooiste van de wereld, ik ben deze mand heel druk met een heel belangrijk bezoek: en MAMO van de"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1921066.html"

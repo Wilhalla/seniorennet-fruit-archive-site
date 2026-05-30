@@ -6,7 +6,7 @@ title: "International Soft Fruit Conference"
 date: "25-01-2019"
 isoDate: "2019-01-25T12:03:00"
 time: "12:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "International Soft Fruit Conference ‘s Hertogenbosch 10 jan. Voor de 5de keer de Kleinfruitdag meeemaakt. Alles in het Engels. Een ontmoeting die mij plezier deed was met Niki Jennings van het James Hutton Limited, de nieuwe naam voor het b"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2210497.html"

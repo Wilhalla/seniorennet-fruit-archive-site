@@ -6,7 +6,7 @@ title: "Gorinchem – Woudrichem"
 date: "02-07-2016"
 isoDate: "2016-07-02T15:32:00"
 time: "15:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gorinchem – Woudrichem Met de Vereniging Oostindische Compagnie Kamer Antwerpen 17/06 Geleid door voorzitter Paul Koop In Gorinchem of Gorkum, zoals de stad meestal genoemd wordt komen de grote rivieren de Maas en de Waal (Rijn) en de klein"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1931767.html"

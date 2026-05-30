@@ -6,7 +6,7 @@ title: "Teek verwijderen met vloeibare zeep en prop watten"
 date: "19-05-2018"
 isoDate: "2018-05-19T14:12:00"
 time: "14:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ik kreeg volgend bericht toegestuurd Teek verwijderen met vloeibare zeep en prop watten \"Ik had een kinderarts die mij vertelde dat dit de beste manier is om een teek te verwijderen”. Dit is geweldig, want het werkt op die plaatsen waar het"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2147710.html"

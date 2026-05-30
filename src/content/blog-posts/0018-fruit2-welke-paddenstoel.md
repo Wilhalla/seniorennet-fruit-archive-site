@@ -6,7 +6,7 @@ title: "Welke Paddenstoel?"
 date: "20-12-2019"
 isoDate: "2019-12-20T20:24:00"
 time: "20:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Welke Paddenstoel? Ik ontdekte deze paddenstoel op de boomspiegel van mijn jonge Ecolette (3 takken) en Liberty (1tak). Wie kan die benamen? Op de foto zou je de afmeting overschatten. Een hoed van een 3 tal cm. Misschien is het de Grootspo"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2289681.html"

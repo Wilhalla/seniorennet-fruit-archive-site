@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "30-08-2019"
 isoDate: "2019-08-30T20:21:00"
 time: "20:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10 De zangers 11. Publiek 12. Ludo 13. Ludo met Karine 14. De P.M.S-ploeg van weleer: Boudewijn, Marleen, ik, Ludo, Karin en Miek 15. Ludo 16. Zang met een oud-collega m.a. van Vorselaar 17. Nog eens het koppel 18. De molen van St. "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2263766.html"

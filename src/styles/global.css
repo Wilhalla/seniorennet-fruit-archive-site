@@ -158,10 +158,14 @@
 
 @layer components {
   .post-reading-layout {
+    --post-photo-layout-duration: 760ms;
+    --post-photo-panel-duration: 680ms;
+    --post-photo-ease: cubic-bezier(0.22, 1, 0.36, 1);
     width: 100%;
     max-width: 104rem;
     margin-inline: auto;
     padding: 3.5rem 2rem;
+    transition: max-width var(--post-photo-layout-duration) var(--post-photo-ease);
   }
 
   .post-reading-grid {
@@ -169,7 +173,7 @@
     gap: 3rem;
     align-items: start;
     overflow-x: clip;
-    transition: grid-template-columns 420ms cubic-bezier(0.16, 1, 0.3, 1), max-width 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition: grid-template-columns var(--post-photo-layout-duration) var(--post-photo-ease), gap var(--post-photo-layout-duration) var(--post-photo-ease);
   }
 
   .post-reading-grid--with-images {
@@ -177,7 +181,9 @@
   }
 
   .post-reading-main {
-    transition: max-width 420ms cubic-bezier(0.16, 1, 0.3, 1), margin-inline 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    max-width: 100%;
+    margin-inline: auto;
+    transition: max-width var(--post-photo-layout-duration) var(--post-photo-ease);
   }
 
   .post-photo-panel {
@@ -186,7 +192,7 @@
     padding-inline-start: 1.25rem;
     opacity: 1;
     transform: translateX(0);
-    transition: padding-inline-start 420ms cubic-bezier(0.16, 1, 0.3, 1), opacity 320ms ease, transform 420ms cubic-bezier(0.16, 1, 0.3, 1), visibility 320ms ease;
+    transition: padding-inline-start var(--post-photo-layout-duration) var(--post-photo-ease), opacity 360ms ease, transform var(--post-photo-layout-duration) var(--post-photo-ease), visibility 360ms ease;
   }
 
   .post-reading-layout.is-photo-collapsed {
@@ -217,7 +223,7 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
     transform-origin: right center;
-    transition: transform 460ms cubic-bezier(0.16, 1, 0.3, 1), opacity 260ms ease, visibility 0s linear 0s;
+    transition: transform var(--post-photo-panel-duration) var(--post-photo-ease), opacity 360ms ease, visibility 0s linear 0s;
     will-change: transform, opacity;
   }
 
@@ -227,7 +233,7 @@
     transform: translate3d(calc(100% + 1.5rem), 0, 0);
     visibility: hidden;
     pointer-events: none;
-    transition: transform 460ms cubic-bezier(0.16, 1, 0.3, 1), opacity 220ms ease, visibility 0s linear 460ms;
+    transition: transform var(--post-photo-panel-duration) var(--post-photo-ease), opacity 320ms ease, visibility 0s linear var(--post-photo-panel-duration);
   }
 
   .post-photo-toggle {
@@ -240,9 +246,13 @@
     border-radius: 9999px;
     background: var(--color-obsidian);
     color: var(--color-eggshell);
+    max-inline-size: 8rem;
+    overflow: hidden;
     padding-inline: 0.875rem;
     font-size: 0.875rem;
     font-weight: 500;
+    white-space: nowrap;
+    transition: max-inline-size 420ms var(--post-photo-ease), padding-inline 420ms var(--post-photo-ease);
   }
 
   .post-photo-toggle__expanded,
@@ -259,6 +269,7 @@
   .post-reading-layout.is-photo-collapsed .post-photo-toggle,
   .post-reading-layout.is-photo-sliding-out .post-photo-toggle {
     width: 2.25rem;
+    max-inline-size: 2.25rem;
     padding-inline: 0;
   }
 

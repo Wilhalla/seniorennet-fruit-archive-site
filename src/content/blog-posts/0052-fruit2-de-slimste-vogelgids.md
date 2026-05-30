@@ -6,7 +6,7 @@ title: "De slimste Vogelgids"
 date: "29-09-2019"
 isoDate: "2019-09-29T15:37:00"
 time: "15:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De slimste Vogelgids Alle 192 Broedvogels van België en Nederland Jan Rodts Hoofdredacteur 'Mens en Vogel' van Vogelbescherming Vlaanderen 443 blz € 29,99. Uitgave Houtekiet. Beste koop. Net als Hans Peeters, van het voorwoord Nederland, wa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2270679.html"

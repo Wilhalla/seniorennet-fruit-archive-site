@@ -6,7 +6,7 @@ title: "VERVOLG 4"
 date: "13-08-2016"
 isoDate: "2016-08-13T09:14:00"
 time: "09:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 4 Les nymphéas in de orangerie Pierre-Auguste Renoir (1841-1919) Paul Cezanne Paysage uu toit rouge (vers 1875-76) Paul Gauguin Paysage (1901) Amedeo Modogliani Antonia (vers 1915) Maurice Utrillo La Mairie au drapeau (1924) Chaim S"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1945265.html"

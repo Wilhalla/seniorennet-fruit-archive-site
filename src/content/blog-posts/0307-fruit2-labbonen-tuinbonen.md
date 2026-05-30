@@ -6,7 +6,7 @@ title: "Labbonen Tuinbonen"
 date: "28-07-2017"
 isoDate: "2017-07-28T21:36:00"
 time: "21:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Labbonen Tuinbonen Wat een weelde, wat een opbrengst! Vanmiddag de tweede halve rij van de tuinbonen geoogst. Ik sra echt te kijken van de geweldige opbrengst. Vroeger heb ik daar nooit bij stilgestaan. Net voordien had ik de rest van de ca"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2059158.html"

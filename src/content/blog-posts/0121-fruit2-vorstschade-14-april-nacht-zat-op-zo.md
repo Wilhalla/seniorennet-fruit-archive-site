@@ -6,7 +6,7 @@ title: "Vorstschade 14 april, nacht zat.op zo."
 date: "15-04-2019"
 isoDate: "2019-04-15T23:06:00"
 time: "23:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vorstschade 14 april, nacht zat.op zo. Ik zat toen met famille en vrienden in Essinger bij Gerolstein in de vulkaneifel. Het weerstation van Zoersel mat -1,7° onder thermometerhut. Een vluchtige kijk toont dat de kiwibessen voor dit jaar ve"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2231208.html"

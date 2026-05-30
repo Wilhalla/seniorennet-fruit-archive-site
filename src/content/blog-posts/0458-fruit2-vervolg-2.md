@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "24-07-2016"
 isoDate: "2016-07-24T22:46:00"
 time: "22:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Kasteel van Beaufort Kasteel van Vianden Kerk van Clervaux Binnenzicht Mooi zicht op het Kasteel van Clervaux Abdijtoren Abdij"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1939018.html"

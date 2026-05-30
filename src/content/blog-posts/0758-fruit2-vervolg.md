@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "24-02-2015"
 isoDate: "2015-02-24T23:31:00"
 time: "23:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Kruisbes Bekay Kruisbes Süsse Lea Nieuwe zwarte bes Kieroyal Witte aardbei Toscana De mooiste fruitstand van de Italiaan Enzo Maoli Idem Italiaanse oude rassen Maoli + helper Uw dienaar"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1727633.html"

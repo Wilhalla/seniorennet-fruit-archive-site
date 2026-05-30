@@ -1,5 +1,6 @@
-import { archiveMonthLabel } from './archiveDateTime'
+import { archiveMonthLabel, buildArchiveChronology } from './archiveDateTime'
 import { archiveAssetUrl, archiveSmallThumbUrl } from './assetUrls'
+import { fetchJson, type FetchPriority } from './clientFetch'
 
 export type GalleryImageRecord = {
   id: string
@@ -65,16 +66,26 @@ export type GalleryVirtualRow<T extends GalleryImageRecord = GalleryImageRecord>
 
 const peoplePlantTags = ['mensen', 'tuin', 'bloesem', 'appels', 'peren', 'pruimen', 'bessen']
 
-type FetchPriority = 'high' | 'low' | 'auto'
-type PriorityRequestInit = RequestInit & { priority?: FetchPriority }
-
 export const emptyGalleryGroups: GalleryGroups = { years: [], seasons: [], themes: [] }
+export const MIN_HIGH_PRIORITY_THUMBNAILS = 6
+export const MIN_EAGER_THUMBNAILS = 12
 
-export async function fetchGalleryJson<T>(url: string, priority?: FetchPriority): Promise<T> {
-  const init = priority ? ({ priority } satisfies PriorityRequestInit) : undefined
-  const response = await fetch(url, init)
-  if (!response.ok) throw new Error(`Failed to load ${url}: ${response.status}`)
-  return response.json() as Promise<T>
+export type ImageGallerySession<T extends GalleryImageRecord = GalleryImageRecord> = {
+  imageById: Map<string, T>
+  filtered: T[]
+  rows: GalleryVirtualRow<T>[]
+  visibleThemes: GalleryGroups['themes']
+  viewerImage: T | null
+  viewerIndex: number
+  previousImage: T | null
+  nextImage: T | null
+  relatedImages: T[]
+  highPriorityThumbnailIds: Set<string>
+  eagerThumbnailIds: Set<string>
+}
+
+export function fetchGalleryJson<T>(url: string, priority?: FetchPriority, signal?: AbortSignal): Promise<T> {
+  return fetchJson<T>(url, { priority, signal })
 }
 
 export function imageThumbSrc(image: Pick<GalleryImageRecord, 'src'>) {
@@ -168,20 +179,13 @@ export function visibleGalleryThemes<T extends GalleryImageRecord>(filtered: rea
 }
 
 export function groupGalleryImagesByMonth<T extends GalleryImageRecord>(filtered: readonly T[]) {
-  const result = new Map<string, { key: string; year: string; label: string; images: T[]; startsYear: boolean }>()
-  const seenYears = new Set<string>()
-  for (const image of filtered) {
-    const key = galleryMonthKey(image)
-    const year = image.year ? String(image.year) : 'unknown'
-    let group = result.get(key)
-    if (!group) {
-      group = { key, year, label: galleryMonthLabel(key), images: [], startsYear: !seenYears.has(year) }
-      result.set(key, group)
-      seenYears.add(year)
-    }
-    group.images.push(image)
-  }
-  return [...result.values()]
+  return buildArchiveChronology(filtered, { sort: false }).monthGroups.map((month) => ({
+    key: month.key.replace(/^m-/, '') === 'ongedateerd' ? 'unknown' : month.key.replace(/^m-/, ''),
+    year: month.year === 'ongedateerd' ? 'unknown' : month.year,
+    label: month.label,
+    images: month.items,
+    startsYear: month.startsYear,
+  }))
 }
 
 export function buildGalleryRows<T extends GalleryImageRecord>(filtered: readonly T[], columns: number): GalleryVirtualRow<T>[] {
@@ -196,12 +200,52 @@ export function buildGalleryRows<T extends GalleryImageRecord>(filtered: readonl
   return rows
 }
 
+export function buildImageGallerySession<T extends GalleryImageRecord>({
+  images,
+  filters,
+  speciesByImage,
+  groups = emptyGalleryGroups,
+  columns = 0,
+  viewerId = null,
+  related = {},
+}: {
+  images: readonly T[]
+  filters: GalleryFilters
+  speciesByImage: Record<string, SpeciesTag[]>
+  groups?: GalleryGroups
+  columns?: number
+  viewerId?: string | null
+  related?: Record<string, string[]>
+}): ImageGallerySession<T> {
+  const imageById = new Map(images.map((image) => [image.id, image]))
+  const filtered = filterGalleryImages(images, filters, speciesByImage)
+  const viewerImage = viewerId ? imageById.get(viewerId) ?? null : null
+  const viewerIndex = viewerImage ? filtered.findIndex((image) => image.id === viewerImage.id) : -1
+  const previousImage = viewerIndex > 0 ? filtered[viewerIndex - 1] ?? null : null
+  const nextImage = viewerIndex >= 0 && viewerIndex < filtered.length - 1 ? filtered[viewerIndex + 1] ?? null : null
+  const rowColumns = Math.max(0, columns)
+  return {
+    imageById,
+    filtered,
+    rows: rowColumns > 0 ? buildGalleryRows(filtered, rowColumns) : [],
+    visibleThemes: visibleGalleryThemes(filtered, groups),
+    viewerImage,
+    viewerIndex,
+    previousImage,
+    nextImage,
+    relatedImages: relatedGalleryImages(viewerImage, images, imageById, related),
+    highPriorityThumbnailIds: new Set(filtered.slice(0, Math.max(rowColumns, MIN_HIGH_PRIORITY_THUMBNAILS)).map((image) => image.id)),
+    eagerThumbnailIds: new Set(filtered.slice(0, Math.max(rowColumns * 2, MIN_EAGER_THUMBNAILS)).map((image) => image.id)),
+  }
+}
+
 export function shouldLoadGalleryRelated(state: { viewerId: string | null; relatedLoaded: boolean; relatedLoading: boolean }) {
   return Boolean(state.viewerId) && !state.relatedLoaded && !state.relatedLoading
 }
 
 export function shouldLoadGallerySpeciesTags(state: { speciesFilter: string; query: string; speciesTagsLoaded: boolean; speciesTagsLoading: boolean }) {
-  return (state.speciesFilter !== 'all' || Boolean(state.query.trim())) && !state.speciesTagsLoaded && !state.speciesTagsLoading
+  const queryNeedsSpeciesLabels = state.query.trim().length >= 3
+  return (state.speciesFilter !== 'all' || queryNeedsSpeciesLabels) && !state.speciesTagsLoaded && !state.speciesTagsLoading
 }
 
 export function relatedGalleryImages<T extends GalleryImageRecord>(viewerImage: T | null, images: readonly T[], imageById: Map<string, T>, related: Record<string, string[]>, limit = 10) {

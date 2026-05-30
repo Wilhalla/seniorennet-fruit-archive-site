@@ -6,7 +6,7 @@ title: "Dimanche 25 septembre : journée portes ouvertes des activités du CRA-W
 date: "21-09-2016"
 isoDate: "2016-09-21T13:36:00"
 time: "13:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dimanche 25 septembre : journée portes ouvertes des activités du CRA-W pour la sauvegarde et la valorisation des anciennes variétés fruitières de nos régions : Depuis une quarantaine d’année, le CRA-W mène des travaux de recherches en vue d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958318.html"

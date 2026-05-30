@@ -6,7 +6,7 @@ title: "CHAMBORD"
 date: "04-09-2016"
 isoDate: "2016-09-04T21:22:00"
 time: "21:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zat. 27 aug CHAMBORD Vandaag staat het koninklijke Chambord op het programma, gebouwd in opdracht van koning François I (1494-1547). Voor ons het prachtigste kasteel dat wij zagen, Unesco werelderfgoed. Overal zie je de gestilleerde salaman"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952461.html"

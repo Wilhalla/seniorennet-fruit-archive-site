@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "12-11-2016"
 isoDate: "2016-11-12T23:23:00"
 time: "23:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Petit France , oude hart van Strasbourg Idem Idem Idem Naar de kathedraal Idem Idem Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1976146.html"

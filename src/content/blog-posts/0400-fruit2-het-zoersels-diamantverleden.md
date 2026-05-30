@@ -6,7 +6,7 @@ title: "Het Zoersels Diamantverleden"
 date: "17-10-2016"
 isoDate: "2016-10-17T21:59:00"
 time: "21:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Het Zoersels Diamantverleden (Oud-Gemeentehuis Halle) nog tot 31 dec., een openbaring. Vier enthousiaste Hallenaars, Walter Van den Eynden, Manu Jacobs, Aloïs Sluyts en Jef Van de Vel, zijn er in geslaagd om een fraaie collectie van materia"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1966948.html"

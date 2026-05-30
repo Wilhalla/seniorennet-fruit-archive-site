@@ -6,7 +6,7 @@ title: "Dawi"
 date: "24-06-2018"
 isoDate: "2018-06-24T14:15:00"
 time: "14:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dawi Mijn zaailingpeer Vorig jaar,toen er zo weinig peren waren als gevolg van de lentenachtvorsten van 19 en 20 april 2017 droeg de zaailingpeer voor ’t eerst. De peer blijft vrij vast maar heeft een zoete smaak. Er bleef een peertje bewaa"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2157257.html"

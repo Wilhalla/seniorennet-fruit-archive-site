@@ -6,7 +6,7 @@ title: "Rivierenhof Deurne"
 date: "24-05-2015"
 isoDate: "2015-05-24T12:42:00"
 time: "12:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Rivierenhof Deurne Werd in 1921 aangekocht door de Provincie en in 1923 opengesteld voor het publiek. Toen we in Deurne woonden in 1961 gingen we er wandelen met Peter, onze eerstgeborene. Zaterdag (23/5) hadden we er een wandeling met de K"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1768553.html"

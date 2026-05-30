@@ -6,7 +6,7 @@ title: "VERVOLG 5 Hotel Porte des Vosges Kathedraal Metz begonnen in de 13de eeu
 date: "12-11-2016"
 isoDate: "2016-11-12T20:08:00"
 time: "20:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 5 Hotel Porte des Vosges Kathedraal Metz begonnen in de 13de eeuw Sculpturen Idem Interieur Gewelf 41,77m hoog Gotiek Moderne glasramen van Chagal Oude glasramen Roosvenster"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1976087.html"

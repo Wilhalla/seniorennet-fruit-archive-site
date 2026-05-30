@@ -6,7 +6,7 @@ title: "Tuinkriebels"
 date: "03-05-2015"
 isoDate: "2015-05-03T14:20:00"
 time: "14:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tuinkriebels Gisteren en vandaag voor de eerste maal op Vrieselhof te Oelegem. VELT verzorgde de restauratie tegen het kasteel. We waren er met de moestuingroep van Velt Voorkempen. De algemene Veltstand en deze van Velt Schoten met de comp"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1759366.html"

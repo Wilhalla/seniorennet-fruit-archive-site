@@ -6,7 +6,7 @@ title: "North & South Expositie Utrecht"
 date: "06-12-2019"
 isoDate: "2019-12-06T17:04:00"
 time: "17:04"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "North & South Expositie Utrecht Europese topstukken herenigd Met VOC Antwerpen en Vrienden van het Begijnhof Turnhout 3/12/2019 Op de heenrit kregen we van Paul Koop, voorzitter VOC Antwerpen weer heel veel uitleg. Te Utrecht maakten we eer"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2286314.html"

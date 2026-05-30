@@ -6,7 +6,7 @@ title: "Gele Bladeren Mutsu"
 date: "12-08-2015"
 isoDate: "2015-08-12T12:16:00"
 time: "12:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gele Bladeren Mutsu De Mutsu achter het huis staat er lelijk bij: een massa vergeelde bladeren. De Rode Gravenstein ernaast staat er in tegenstelling fleurig bij. Mutsu, met Golden Delicious bloed is een vrij schurftgevoelige appel. Dank zi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1801114.html"

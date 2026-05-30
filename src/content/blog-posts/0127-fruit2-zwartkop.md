@@ -6,7 +6,7 @@ title: "Zwartkop"
 date: "20-03-2019"
 isoDate: "2019-03-20T10:12:00"
 time: "10:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zwartkop Ik kreeg zopas volgend bericht aan Netted, glued and eaten whole – can we keep this songbird free? The Eurasian Blackcap’s beautiful song has inspired humanity for centuries. But in Cyprus today, it is silenced by industrial-level "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2224616.html"

@@ -6,7 +6,7 @@ title: "Trezeke Meyers"
 date: "26-10-2017"
 isoDate: "2017-10-26T20:45:00"
 time: "20:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Trezeke Meyers Van Piet Moesen van Dilbeek die er een hoogstam boomgaard beheert kreeg ik een oorspronkelijk document betreffende de appel Trezeke Meyers. Ik heb die geënt in 1991 op MM106, doch de vruchten vond ik maar middelmatig. Had ik "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2086239.html"

@@ -6,7 +6,7 @@ title: "Senioren Zoersel op Verkenning"
 date: "17-10-2016"
 isoDate: "2016-10-17T22:44:00"
 time: "22:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Senioren Zoersel op Verkenning 4/10 Omdat de inschrijving bedroevend is met 17 is er geen bus en rijden we met private wagens. Kasteel de Renesse te Malle Daar we te vroeg zijn maken we eerst een wandeling door het park en passeren we de ij"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1966972.html"

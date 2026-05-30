@@ -6,7 +6,7 @@ title: "Vandaag di. 29 september"
 date: "29-09-2015"
 isoDate: "2015-09-29T20:55:00"
 time: "20:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vandaag di. 29 september Al een paar dagen is het droog, zonnig weer en 17 °. Er staat een goed voelbare oostenwind die fris aanvoelt. ’s Morgens is het nog vrij koud. Dit weer kan nog een tijdje aanhouden. Thuis in West-Vlaanderen spraken "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819833.html"

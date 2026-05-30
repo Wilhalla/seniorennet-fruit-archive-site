@@ -1,33 +1,7 @@
-import { useEffect, useMemo, useState } from 'react'
-import MiniSearch, { type SearchResult } from 'minisearch'
 import { ArrowRight, FileSearch, ImageIcon, Loader2, Search, Sparkles } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { formatArchiveDate } from '../../lib/archiveDateTime'
-import { currentBrowserPath, writeBrowserPath } from '../../lib/browserHistory'
-
-export type SearchDoc = {
-  id: string
-  postId: string
-  slug: string
-  url: string
-  title: string
-  date: string
-  isoDate: string
-  excerpt: string
-  block: string
-  blockIndex: number
-  imageCount: number
-  topicId: string
-}
-
-type Manifest = {
-  blockCount: number
-  postCount: number
-  algorithm: string
-  fuzzy: number
-}
-
-type Result = SearchResult & SearchDoc
+import { useLazySearchIndex, useSearchManifest, useSearchResults, useUrlBackedSearchQuery } from './searchClientHooks'
 
 function snippet(block: string, terms: string[] = []) {
   const lower = block.toLowerCase()
@@ -50,76 +24,10 @@ function highlight(text: string, terms: string[] = []) {
 }
 
 export default function SearchApp() {
-  const [index, setIndex] = useState<MiniSearch<SearchDoc> | null>(null)
-  const [manifest, setManifest] = useState<Manifest | null>(null)
-  const [query, setQuery] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [urlStateLoaded, setUrlStateLoaded] = useState(false)
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search)
-    setQuery(params.get('q') ?? '')
-    setUrlStateLoaded(true)
-  }, [])
-
-  useEffect(() => {
-    const handlePopState = () => {
-      const params = new URLSearchParams(window.location.search)
-      setQuery(params.get('q') ?? '')
-    }
-
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
-  }, [])
-
-  useEffect(() => {
-    if (!urlStateLoaded) return
-
-    const url = new URL(window.location.href)
-    const nextQuery = query.trim()
-    if (nextQuery) url.searchParams.set('q', nextQuery)
-    else url.searchParams.delete('q')
-
-    const next = `${url.pathname}${url.search}${url.hash}`
-    if (next !== currentBrowserPath()) writeBrowserPath(next, 'replace')
-  }, [query, urlStateLoaded])
-
-  useEffect(() => {
-    fetch('/generated/search-manifest.json')
-      .then((response) => response.json())
-      .then(setManifest)
-      .catch(console.error)
-  }, [])
-
-  useEffect(() => {
-    if (index || loading || query.trim().length < 2) return
-    setLoading(true)
-    fetch('/generated/search-index.json')
-      .then((response) => response.json())
-      .then((serializedIndex) => {
-        const loaded = MiniSearch.loadJS<SearchDoc>(serializedIndex, {
-          fields: ['title', 'excerpt', 'block'],
-          storeFields: ['postId', 'slug', 'url', 'title', 'date', 'isoDate', 'excerpt', 'block', 'blockIndex', 'imageCount', 'topicId'],
-          searchOptions: { boost: { title: 5, excerpt: 2.5, block: 1 }, prefix: true, fuzzy: 0.18, combineWith: 'AND' },
-        })
-        setIndex(loaded)
-      })
-      .catch(console.error)
-      .finally(() => setLoading(false))
-  }, [index, loading, query])
-
-  const results = useMemo(() => {
-    const q = query.trim()
-    if (!index || q.length < 2) return []
-    const strict = index.search(q, { boost: { title: 5, excerpt: 2.5, block: 1 }, prefix: true, fuzzy: 0.18, combineWith: 'AND' }) as Result[]
-    const loose = strict.length ? strict : index.search(q, { boost: { title: 5, excerpt: 2, block: 1 }, prefix: true, fuzzy: 0.24, combineWith: 'OR' }) as Result[]
-    const bestByPost = new Map<string, Result>()
-    for (const result of loose) {
-      const previous = bestByPost.get(result.postId)
-      if (!previous || result.score > previous.score) bestByPost.set(result.postId, result)
-    }
-    return [...bestByPost.values()].slice(0, 40)
-  }, [index, query])
+  const { query, setQuery } = useUrlBackedSearchQuery()
+  const manifest = useSearchManifest()
+  const { index, loading } = useLazySearchIndex(query)
+  const results = useSearchResults(index, query)
 
   return (
     <section className="site-shell py-20" aria-labelledby="search-title">

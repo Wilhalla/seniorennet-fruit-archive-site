@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "17-06-2019"
 isoDate: "2019-06-17T23:16:00"
 time: "23:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Opzij van het Koninklijk paleis 20. Zicht op de kettingbrug 21. Kael 22. Tolul, de mytische arend 23. In het restaurant 24. De halve eend 25. Voorkant van het parlement 26. Voor een zijvleugel van het parlement 27. Parlement a"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2246646.html"

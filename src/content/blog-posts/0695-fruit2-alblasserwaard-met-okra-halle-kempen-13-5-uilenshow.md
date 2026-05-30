@@ -6,7 +6,7 @@ title: "Alblasserwaard met OKRA Halle-Kempen (13/5) Uilenshow"
 date: "14-05-2015"
 isoDate: "2015-05-14T20:45:00"
 time: "20:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Alblasserwaard met OKRA Halle-Kempen (13/5) Uilenshow Dit is een groot poldergebied ten zuiden van Rotterdam. Een waard is een gebied dat omringd is door water. Onze eerste bestemming is de bovenzaal van ‘In ’t Wapen van Ameide’ te Ameide, "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1764368.html"

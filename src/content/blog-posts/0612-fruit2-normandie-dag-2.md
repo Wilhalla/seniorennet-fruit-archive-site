@@ -6,7 +6,7 @@ title: "Normandië Dag 2"
 date: "18-09-2015"
 isoDate: "2015-09-18T23:07:00"
 time: "23:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Normandië Dag 2 We reizen met ‘De Stille Kempen’ en Maarten Verhoeven is onze chauffeur. Ludo weet mij te boeien als gids. We zijn dit jaar de derde groep van senioren van de Landelijke Gilde die hij hier begeleidt en we hebben ’t meest gel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1815217.html"

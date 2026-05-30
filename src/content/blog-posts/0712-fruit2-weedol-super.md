@@ -6,7 +6,7 @@ title: "Weedol Super"
 date: "30-04-2015"
 isoDate: "2015-04-30T15:51:00"
 time: "15:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "promotie van gevaarlijke pesticiden’ 30/04/2015 Pesticiden Reacties (4) Na doe-het-zelfzaak Hubo maakt ook AVEVE schaamteloos promotie voor gevaarlijke en krachtige onkruidbestrijders. ‘Onaanvaardbaar’, reageert Velt. ‘We vragen de onmiddel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1758018.html"

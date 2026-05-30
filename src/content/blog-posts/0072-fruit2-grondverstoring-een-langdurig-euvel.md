@@ -6,7 +6,7 @@ title: "Grondverstoring, een langdurig euvel"
 date: "02-08-2019"
 isoDate: "2019-08-02T12:29:00"
 time: "12:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Grondverstoring, een langdurig Euvel In 2007 werd door de tuin door Fluxys een aardgasleiding gelegd. Na het ploegen in het voorjaar dit jaar, had ik op die plaats nog sporen gezien van het gele zand, en dat na 12 jaar en het telkenjare aan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2257257.html"

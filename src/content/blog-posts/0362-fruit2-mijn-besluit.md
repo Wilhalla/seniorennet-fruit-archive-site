@@ -6,7 +6,7 @@ title: "Mijn Besluit"
 date: "20-12-2016"
 isoDate: "2016-12-20T09:16:00"
 time: "09:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mijn Besluit Ik ben zeer blij dat het fruitboek er eindelijk is. Dankzij Crowdfunding is het gelukt! De onervaren Jasmien Wildemeersch, bioingenieur heeft het voortreffelijk gemaakt. Het boek zal ongetwijfeld bijdragen tot aanplant van meer"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1989038.html"

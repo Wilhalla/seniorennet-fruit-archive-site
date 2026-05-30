@@ -6,7 +6,7 @@ title: "peer 'Madame Verté'"
 date: "06-08-2018"
 isoDate: "2018-08-06T22:18:00"
 time: "22:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "peer 'Madame Verté' Synoniemen Madame Verté Herkomst Aanvankelijk was het niet duidelijk wie de peer bekwam. In ieder geval werd ze vanuit België verspreid door Jean De Jonghe uit Sint-Gillis bij Brussel en verder in Frankrijk vermeerderd d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2167865.html"

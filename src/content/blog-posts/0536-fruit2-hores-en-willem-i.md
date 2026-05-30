@@ -6,7 +6,7 @@ title: "HOres en Willem I"
 date: "04-04-2016"
 isoDate: "2016-04-04T22:50:00"
 time: "22:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "HOres en Willem I Met Art fan naar St-Martens-Latem en STAM Gent 20/3/2016 Hores is de kunstgalerij van NiÑa Van den Bosch Fijne ontvangst met Cava. Het knappe aan Art Center HOres is hoe kunst, interieur en tuin samenkomen in een harmonieu"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1898394.html"

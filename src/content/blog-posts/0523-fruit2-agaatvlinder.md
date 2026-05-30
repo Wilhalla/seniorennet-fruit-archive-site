@@ -6,7 +6,7 @@ title: "agaatvlinder"
 date: "20-04-2016"
 isoDate: "2016-04-20T12:53:00"
 time: "12:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Agaatvlinder Vandaag zat deze mooie nachtvlinder naast het slot van de achterdeur: een agaatvlinder (Phlogophora meticulosa). De vlekken en banden hebben diverse kleuren, van groenachtig tot geelbruin en oudroze. Het is hier een zeer algeme"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1904653.html"

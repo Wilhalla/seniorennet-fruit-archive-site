@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "05-11-2016"
 isoDate: "2016-11-05T12:42:00"
 time: "12:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Huizen in plak en stak zijn nog veel te zien Groepsfoto Idem Bij een speciale rivier Roerdomp Michel Eric Valentijn De ploeg"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1973286.html"

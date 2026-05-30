@@ -6,7 +6,7 @@ title: "Boedapest (7 -10/06) met dochter Leen"
 date: "17-06-2019"
 isoDate: "2019-06-17T23:25:00"
 time: "23:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Boedapest (7 -10/06) met dochter Leen Kael, de oudste zoon van Leen is er Eramusstudent. Leen had een hostel geboekt op de Karoly körut, zeer centraal gelegen in Pest. We vliegen met Wizzair vanuit Eindhoven. De auto wordt ingeleverd voor p"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2246649.html"

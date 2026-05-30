@@ -6,7 +6,7 @@ title: "Boomkweker Ger Van Santvoort"
 date: "15-07-2015"
 isoDate: "2015-07-15T09:52:00"
 time: "09:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Boomkweker Ger Van Santvoort Ik had het genoegen op bezoek te kunnen gaan bij boomkweker Ger Van Santvoort te Someren Noord- Brabant (NL) Ger is een veelzijdig man. Hij is ook imker en houdt zich tevens al 6 jaar bezig met solitaire bijen. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1790914.html"

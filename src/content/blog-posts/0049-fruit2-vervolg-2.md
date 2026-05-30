@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "30-09-2019"
 isoDate: "2019-09-30T23:37:00"
 time: "23:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 2 voorzitters: Remi van de Mernixring Land van Pleysanthiën Paul: VOC kamer Antwerpen Bruggetje in Workum Hindelopen Café De boekanier te Hindelopen (Een boekanier is een vrijbuiter; op zee is dit een piraat. De Rijp in de Beemste"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2270999.html"

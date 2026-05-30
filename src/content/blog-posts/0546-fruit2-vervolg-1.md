@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "25-03-2016"
 isoDate: "2016-03-25T22:02:00"
 time: "22:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 Bij de laatste foto zijn we al in de Waterloostraat"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1894430.html"

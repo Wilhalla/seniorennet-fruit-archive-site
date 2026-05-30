@@ -6,7 +6,7 @@ title: "Herentals"
 date: "26-12-2017"
 isoDate: "2017-12-26T14:09:00"
 time: "14:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Herentals met VOC 9/12 Met gidse Maria Macauter, medelid Start met het begijnhof. Ik miste de inleiding wegens de omleiding. De omgeving is knap heraangelegd. Van het begijnhof schiet maar 1 straat over. Herentals had al een begijnhof in 12"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2105307.html"

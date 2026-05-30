@@ -6,7 +6,7 @@ title: "Luxemburg"
 date: "04-10-2017"
 isoDate: "2017-10-04T22:50:00"
 time: "22:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Luxemburg Dan naar Luxemburg. We wandelen over twee pleinen. Het eerste zeer luidruchtig. In de buurt van het tweede plein belanden we met een groepje in een Italiaans restaurant voor een lekkere, vrije lunch. Daarna hebben we de gegidste r"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2078871.html"

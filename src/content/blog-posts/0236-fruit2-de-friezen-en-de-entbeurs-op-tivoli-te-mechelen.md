@@ -6,7 +6,7 @@ title: "De Friezen en de entbeurs op Tivoli te Mechelen"
 date: "29-01-2018"
 isoDate: "2018-01-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Friezen en de entbeurs op Tivoli te Mechelen Frits en Jet Doornenbal en Nynke Zijlstra, voorzitter van de Stichting Fruit Yn Fryslân’ kwamen al vrijdag. Het werd een zeer gezellige en fruitige avond. Vincent Turkelboom was ook van de par"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2115977.html"

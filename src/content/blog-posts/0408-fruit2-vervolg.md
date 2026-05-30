@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "04-10-2016"
 isoDate: "2016-10-04T23:53:00"
 time: "23:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Woning Kerk Kerktoren In kerk en toren zijn veel silexstenen ingewerkt Kerkhof Groepje Huis Bij de kerk staat een kornoeljestruik (Cornus mas) met rijpe bessen De groep te Brogdale Ted Hobday"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1963093.html"

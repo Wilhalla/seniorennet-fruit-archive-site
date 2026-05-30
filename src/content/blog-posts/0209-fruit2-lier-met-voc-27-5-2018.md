@@ -6,7 +6,7 @@ title: "Lier met VOC (27/5/2018)"
 date: "29-05-2018"
 isoDate: "2018-05-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lier met VOC (27/5/2018) Bezoek aan de kapittelkerk St. Gummarus, in Brabantse gothiek (1378-1540). We hadden een inside gids Dirk De Pillecijn, wiens kritische opmerkingen we zeer konden waarderen. Merkwaardig is het geskulpteerde 16de eeu"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2150655.html"

@@ -6,7 +6,7 @@ title: "Blauwe Bessen"
 date: "24-06-2015"
 isoDate: "2015-06-24T10:11:00"
 time: "10:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Blauwe Bessen Professor Theo de Kok van Universiteit Maastricht presenteerde zijn onderzoek naar de gezondheidseffecten van blauwe bes. Er is nu wetenschappelijk bewijs dat blauwe bessen een positieve invloed hebben op het voorkomen van zie"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1781729.html"

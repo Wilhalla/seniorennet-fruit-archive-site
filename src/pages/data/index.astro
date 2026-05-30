@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import SemanticDataTables from '../../components/data/SemanticDataTables'
+import SemanticPipelineDiagram from '../../components/data/SemanticPipelineDiagram'
+---
+<BaseLayout
+  title="Data · Blogarchief Daniël Willaeys"
+  description="Ruwe tabellen met de uitvoer van de semantische preprocessing voor de atlas van het blogarchief."
+>
+  <SemanticPipelineDiagram client:only="react" />
+  <SemanticDataTables client:only="react" />
+</BaseLayout>

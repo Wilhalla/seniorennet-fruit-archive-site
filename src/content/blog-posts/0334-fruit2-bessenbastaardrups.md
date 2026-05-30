@@ -6,7 +6,7 @@ title: "Bessenbastaardrups"
 date: "30-04-2017"
 isoDate: "2017-04-30T17:17:00"
 time: "17:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bessenbastaardrups Zeker al een week is de rups van de bastaardwesp actief. Tot nog toe zag ik de groen-gele met iets blauwige schijn. Op een kruisbes was nu de groene vorm actief. Gewoonlijk zie je eerst aantasting naar de onderkant. Deze "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2032151.html"

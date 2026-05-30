@@ -6,7 +6,7 @@ title: "Stromen Nederland"
 date: "03-07-2016"
 isoDate: "2016-07-03T14:59:00"
 time: "14:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Stromen Nederland Met dank voor de feedback De riviernamen zijn al lang geleden vastgelegd. Ik sta er versteld van hoe mensen in oude tijden de juiste hoofdtakken toen al goed hebben kunnen traceren. Ik ben bij het begin van de Maas, Rijn, "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1932242.html"

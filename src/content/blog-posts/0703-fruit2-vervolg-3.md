@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "11-05-2015"
 isoDate: "2015-05-11T00:36:00"
 time: "00:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Geert doet ook mee De sfeer zit er in Idem Idem Idem (Foto van Katrien Depessemier) Panorama Toledo Oude poort Poort moorse stijl Oud moors gebouw"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1762743.html"

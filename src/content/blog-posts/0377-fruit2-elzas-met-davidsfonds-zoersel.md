@@ -6,7 +6,7 @@ title: "ELZAS met Davidsfonds Zoersel"
 date: "12-11-2016"
 isoDate: "2016-11-12T23:29:00"
 time: "23:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "ELZAS met Davidsfonds Zoersel 14 - 18 september 2016 Vertrek om 6u. Na de koffiestop geeft gids Paul Koop een inleiding op de reis. Hij boeit mij vooral als hij de bezoeken schetst in een historische context. Na een tijdje ontdekte ik dat i"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1976147.html"

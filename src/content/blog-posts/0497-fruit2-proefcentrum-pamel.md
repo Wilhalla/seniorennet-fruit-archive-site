@@ -6,7 +6,7 @@ title: "Proefcentrum Pamel"
 date: "08-06-2016"
 isoDate: "2016-06-08T22:07:00"
 time: "22:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Proefcentrum Pamel Vorige maandag 6/06 hield het biologische Proefcentrum van Pamel zijn proefveldrondgang. Binnen stonden er bakjes met 20 biologische aardbeirassen. De aanwezigen moesten deze waarderen naar uiterlijk met een 1, een 2 of e"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1923457.html"

@@ -6,7 +6,7 @@ title: "Pomexpo Villeneuve d’Ascq"
 date: "09-11-2015"
 isoDate: "2015-11-09T22:41:00"
 time: "22:41"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Pomexpo Villeneuve d’Ascq Samen met een excellent fruitgezelschap Ger, Jan en Vincent, de tweejaarlijkse expo bezocht. Met leden van de Velt fruitwerkgroep Antwerpen hebben we in 1987 de start meegemaakt op de Ferme du Héron met de Verger C"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1837050.html"

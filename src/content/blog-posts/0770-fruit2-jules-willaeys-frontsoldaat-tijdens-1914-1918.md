@@ -6,7 +6,7 @@ title: "Jules Willaeys Frontsoldaat tijdens 1914-1918"
 date: "28-01-2015"
 isoDate: "2015-01-28T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Jules Willaeys Frontsoldaat tijdens 1914-1918 Onlangs heb ik deze door mij opgeschreven nota’s -systematisch genoteerd tijdens avondlijke vertellingen- teruggevonden (Ik moet toen ongeveer 15-16 jaar zijn geweest). Ook vond ik een gedeelte "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714674.html"

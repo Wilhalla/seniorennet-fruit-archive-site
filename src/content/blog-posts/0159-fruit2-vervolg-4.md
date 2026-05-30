@@ -6,7 +6,7 @@ title: "VERVOLG 4"
 date: "05-10-2018"
 isoDate: "2018-10-05T20:06:00"
 time: "20:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 4 In de namiddag rijden we naar het in de beurt gelegen Memmingen. Voor de verandering krijgen we te maken met zacht regenweer. 1. Memmingen 2. Idem 3. Stadhuis 4. Zadeldakhuis Op de verschillende verdiepingen droogde men vroeger de"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2182887.html"

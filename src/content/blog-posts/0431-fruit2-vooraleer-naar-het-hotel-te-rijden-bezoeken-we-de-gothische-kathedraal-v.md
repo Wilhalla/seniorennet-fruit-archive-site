@@ -6,7 +6,7 @@ title: "Vooraleer naar het hotel te rijden bezoeken we de gothische kathedraal v
 date: "05-09-2016"
 isoDate: "2016-09-05T23:22:00"
 time: "23:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vooraleer naar het hotel te rijden bezoeken we de gothische kathedraal van Orleans (1278) Kathedraal Interieur Koor Orgel Kathedraal Idem Idem Idem Idem Het Ibishotel ligt schuin tegenover het Centraal station van Orleans. Voor het avondmaa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952895.html"

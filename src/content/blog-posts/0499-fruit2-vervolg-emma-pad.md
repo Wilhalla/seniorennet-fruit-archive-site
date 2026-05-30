@@ -6,7 +6,7 @@ title: "VERVOLG Emma-pad"
 date: "02-06-2016"
 isoDate: "2016-06-02T17:27:00"
 time: "17:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Emma-pad Overstroomd pad Het water stroomt van het natuurgedeelte naar de weiden. In het water ontdek ik bloedzuigers. Wellicht al 70 jaar niet meer gezien sinds de tijd dat we stekelbaarsjes achtervolgden. Ze stromen mee met het wa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1921320.html"

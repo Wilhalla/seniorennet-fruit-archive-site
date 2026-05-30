@@ -6,7 +6,7 @@ title: "Pruimen"
 date: "11-12-2017"
 isoDate: "2017-12-11T22:03:00"
 time: "22:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Pruimen Bij mij thuis op De Reiger te Ichtegem (West-Vlaanderen, 20 km van de kust) hadden we 2 pruimenbomen staan. We noemden ze eierpruimen, rijp half augustus. Op de entplaats was er een serieuze knobbel. Later wist ik dat het Monsieur H"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2100629.html"

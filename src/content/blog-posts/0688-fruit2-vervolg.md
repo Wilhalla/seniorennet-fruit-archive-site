@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "24-05-2015"
 isoDate: "2015-05-24T12:34:00"
 time: "12:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Cornus kousa; vormt een eetbare, maar wat wrange bolvrucht. Gedeelte van de vroegere roeivijver Laantje, nieuw beplant met een variëteit els, wegdek in dolomiet. De klit- of kliswortel is er zich spontaan komen vestigen. In de sloot"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1768549.html"

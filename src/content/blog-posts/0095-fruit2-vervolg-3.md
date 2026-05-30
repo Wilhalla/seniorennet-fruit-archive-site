@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "17-06-2019"
 isoDate: "2019-06-17T23:11:00"
 time: "23:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 28. De schoenen 29. Idem 30. Idem 31. Ons gezelschap 32. New York café 33. De grote synagoge 34. Idem 35. Heldenplein 36. De stamvaders"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2246643.html"

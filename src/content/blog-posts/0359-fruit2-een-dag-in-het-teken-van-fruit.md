@@ -6,7 +6,7 @@ title: "Een Dag in het Teken van Fruit"
 date: "08-01-2017"
 isoDate: "2017-01-08T23:18:00"
 time: "23:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een Dag in het Teken van Fruit Gisteren 7 Jan. had ik het genoegen de kern van de Velt Fruitgroep Menen-Wevelgem, Dieter Dewitte, Bart van den Hove, Diego Nayaert, buitendruivenspecialist en Luc Pinoy te ontvangen. Vanaf Gent lagen de wegen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1995706.html"

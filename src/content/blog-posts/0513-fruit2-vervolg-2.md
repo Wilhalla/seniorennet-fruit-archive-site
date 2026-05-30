@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "02-05-2016"
 isoDate: "2016-05-02T23:10:00"
 time: "23:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Kasteel van Rykel. We vernemen dat de kastelen zeer talrijk zijn in de streek. Bedevaartskapel van Helshoven. Ernaast liep een Romeinse heirweg. Ik was hier vorig jaar met de Pomologische kring Oost-Vlaanderen. Zie blog van 2/8/20"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1909836.html"

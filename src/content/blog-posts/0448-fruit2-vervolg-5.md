@@ -6,7 +6,7 @@ title: "VERVOLG 5"
 date: "13-08-2016"
 isoDate: "2016-08-13T09:10:00"
 time: "09:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 5 Place la Concorde Dans op place Saint-Michel Idem St Germain-des-Prés (oudste kerk van Parijs) Moderne fontein Raamsmeedwerk Een laatste drink Idem Het kunstenaarskoppel Charles Pauwels, voorzitter en Dinora De Waele, afkomstig va"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1945264.html"

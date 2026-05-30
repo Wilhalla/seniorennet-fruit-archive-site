@@ -6,7 +6,7 @@ title: "Naar Krakau"
 date: "28-01-2015"
 isoDate: "2015-01-28T23:56:00"
 time: "23:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Naar Krakau (9-8) (Na de beginblogs over de reis in Polen, 26 en 30/8 en 10 en 19/9, neem ik de draad weer op) Het lukte om met ons gezelschap van 12 man toch om 7u te vertrekken! Stop in de stad Torun voor een ontbijt op de markt. We hebbe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714786.html"

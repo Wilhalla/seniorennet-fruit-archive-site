@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "10-03-2015"
 isoDate: "2015-03-10T21:19:00"
 time: "21:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Vervolg zaal met de vergelijking Rothko-Mondriaan. Foto 9 geeft een idee van de Rothko Chapel. In 1964 werd Rothko door het echtpaar John en Dominique de Menil, kunstverzamelaars in Houston gevraagd, een door hen te bouwen kapel v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1734804.html"

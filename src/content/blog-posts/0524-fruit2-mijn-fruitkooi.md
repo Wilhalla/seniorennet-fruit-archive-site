@@ -6,7 +6,7 @@ title: "Mijn Fruitkooi"
 date: "19-04-2016"
 isoDate: "2016-04-19T22:14:00"
 time: "22:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mijn Fruitkooi De eerste kooi moest wijken voor de aanleg van de gasleiding. In het voorjaar 2008 werd de tweede kooi aangelegd. Oriëntatie noord zuid 5 stroken van 2m breed en 25m lang Buitenkant: om de 5m een paal van 3m (75 cm in de gron"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1904455.html"

@@ -1,146 +1,73 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, ExternalLink, Home, Images, LocateFixed, Minus, Plus, RotateCw, Search } from 'lucide-react'
-import { Badge } from '@/components/ui/badge'
+import { ArrowRight, ExternalLink, Home, Images, LocateFixed, Maximize2, Minus, Plus, RotateCw, Search } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { archiveAssetUrl } from '../../lib/assetUrls'
 import { currentBrowserPath, writeBrowserPath } from '../../lib/browserHistory'
-import { ATLAS_X_SPREAD, ATLAS_Y_SPREAD, MAX_ATLAS_SCALE, MIN_ATLAS_SCALE, atlasCategories, atlasCategoryColors, atlasTerritories, categoryFor, clamp, colorMix, fetchJson, formatDate, shortLabel, themeValue, thumbImage, topicDisplayLabel, topicKeywords, topicSearchText, type AtlasCategory as Category, type AtlasFilters as Filters, type AtlasViewMode as ViewMode, type MapPoint, type RenderCluster, type ScreenPoint, type Topic } from '../../lib/archiveAtlas'
-import { generatedDataUrl } from '../../lib/sitePaths'
+import { ATLAS_X_SPREAD, ATLAS_Y_SPREAD, atlasCategories, atlasCategoryColors, atlasViewportBounds, buildAtlasBrowse, buildAtlasSpatialIndex, categoryFor, clamp, colorMix, formatDate, macroAtlasUnitCoordinate, queryAtlasSpatialIndex, shortLabel, smallThumbImage, themeValue, thumbImage, tinyThumbImage, topicDisplayLabel, topicKeywords, topicSearchText, type AtlasCategory as Category, type AtlasFilters as Filters, type AtlasViewMode as ViewMode, type MapPoint, type RenderCluster, type ScreenPoint, type Topic } from '../../lib/archiveAtlas'
+import { macroAtlasCoordinate as macroAtlasCoordinateForBounds, rawAtlasCoordinate, screenFromAtlasPoint } from './atlasDrawingPrimitives'
+import { useDismissHydrationLoader } from '../gallery/useGracefulLoader'
+import { useAtlasData } from './useAtlasData'
+import { useAtlasUrlState } from './useAtlasUrlState'
+import { useAtlasViewport } from './useAtlasViewport'
 
 type Props = {
   initialPoints?: MapPoint[]
   initialTopics?: Topic[]
 }
 
+type TopicPeak = {
+  topicId: string
+  x: number
+  y: number
+  rawX: number
+  rawY: number
+  count: number
+  score: number
+}
+
+type HoverInput = {
+  clientX: number
+  clientY: number
+}
+
 export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [] }: Props) {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const minimapRef = useRef<HTMLCanvasElement | null>(null)
+  const mapShellRef = useRef<HTMLDivElement | null>(null)
   const tooltipRef = useRef<HTMLDivElement | null>(null)
-  const urlSelectionInitialized = useRef(false)
-  const dragStart = useRef({ x: 0, y: 0, panX: 0, panY: 0 })
-  const scaleRef = useRef(1)
-  const panRef = useRef({ x: 0, y: 0 })
-  const [points, setPoints] = useState<MapPoint[]>(initialPoints)
-  const [topics, setTopics] = useState<Topic[]>(initialTopics)
-  const [loadingData, setLoadingData] = useState(initialPoints.length === 0 || initialTopics.length === 0)
-  const [dataError, setDataError] = useState<string | null>(null)
+  const hoverFrameRef = useRef<number | null>(null)
+  const hoverIdleTimerRef = useRef<number | null>(null)
+  const lastHoverProcessAtRef = useRef(0)
+  const pendingHoverRef = useRef<HoverInput | null>(null)
+  const suppressNextClickRef = useRef(false)
+  const { dataError, loadingData, points, topics } = useAtlasData(initialPoints, initialTopics)
+  useDismissHydrationLoader('atlas-hydration-loader', loadingData)
+  const { canvasRef, canvasSize, dragStart, pan, setPan, scale, setScale, zoomAtCanvasPoint } = useAtlasViewport()
   const [filters, setFilters] = useState<Filters>({ topic: 'all', year: 'all', season: 'all', imagesOnly: false, search: '' })
   const [viewMode, setViewMode] = useState<ViewMode>('points')
   const [hoverPoint, setHoverPoint] = useState<MapPoint | null>(null)
   const [selectedPoint, setSelectedPoint] = useState<MapPoint | null>(null)
   const [selectedClusterId, setSelectedClusterId] = useState<string | null>(null)
+  const [hoverClusterId, setHoverClusterId] = useState<string | null>(null)
   const [tooltipPosition, setTooltipPosition] = useState({ left: 0, top: 0 })
-  const [scale, setScale] = useState(1)
-  const [pan, setPan] = useState({ x: 0, y: 0 })
   const [dragging, setDragging] = useState(false)
-  const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 })
+  const [hoveringAtlas, setHoveringAtlas] = useState(false)
 
-  useEffect(() => {
-    scaleRef.current = scale
-  }, [scale])
-
-  useEffect(() => {
-    panRef.current = pan
-  }, [pan])
-
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const handleWheel = (event: WheelEvent) => {
-      event.preventDefault()
-      event.stopPropagation()
-      const rect = canvas.getBoundingClientRect()
-      const mx = event.clientX - rect.left
-      const my = event.clientY - rect.top
-      const scaleValue = scaleRef.current
-      const panValue = panRef.current
-      const nextScale = clamp(scaleValue * (event.deltaY > 0 ? 0.88 : 1.14), MIN_ATLAS_SCALE, MAX_ATLAS_SCALE)
-      setPan({ x: mx - ((mx - panValue.x) / scaleValue) * nextScale, y: my - ((my - panValue.y) / scaleValue) * nextScale })
-      setScale(nextScale)
-    }
-    canvas.addEventListener('wheel', handleWheel, { passive: false })
-    return () => canvas.removeEventListener('wheel', handleWheel)
-  }, [])
-
-  useEffect(() => {
-    if (!loadingData) return
-    setDataError(null)
-    Promise.all([
-      fetchJson<MapPoint[]>(generatedDataUrl('map-points.json')),
-      fetchJson<Topic[]>(generatedDataUrl('topics.json')),
-    ])
-      .then(([loadedPoints, loadedTopics]) => {
-        setPoints(loadedPoints)
-        setTopics(loadedTopics)
-      })
-      .catch((error) => {
-        console.error(error)
-        setDataError(error instanceof Error ? error.message : 'Atlasdata kon niet geladen worden')
-      })
-      .finally(() => setLoadingData(false))
-  }, [loadingData])
-
-  const topicsById = useMemo(() => new Map(topics.map((topic) => [topic.id, topic])), [topics])
-  const sortedTopics = useMemo(() => [...topics].sort((a, b) => b.postCount - a.postCount), [topics])
-  const years = useMemo(() => [...new Set(points.map((point) => point.year).filter(Boolean) as number[])].sort((a, b) => b - a), [points])
-  const categoryBounds = useMemo(() => {
-    const bounds = new Map<string, { minX: number; maxX: number; minY: number; maxY: number }>()
-    for (const point of points) {
-      const categoryId = categoryFor(topicsById.get(point.topicId))?.id ?? 'heritage'
-      const current = bounds.get(categoryId) ?? { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity }
-      current.minX = Math.min(current.minX, point.x)
-      current.maxX = Math.max(current.maxX, point.x)
-      current.minY = Math.min(current.minY, point.y)
-      current.maxY = Math.max(current.maxY, point.y)
-      bounds.set(categoryId, current)
-    }
-    return bounds
-  }, [points, topicsById])
-
-  const visible = useMemo(() => {
-    const query = filters.search.trim().toLowerCase()
-    return points.filter((point) => {
-      if (filters.topic !== 'all' && point.topicId !== filters.topic) return false
-      if (filters.year !== 'all' && String(point.year) !== filters.year) return false
-      if (filters.season !== 'all' && point.season !== filters.season) return false
-      if (filters.imagesOnly && point.imageCount < 1) return false
-      if (query && !`${point.title} ${point.excerpt}`.toLowerCase().includes(query)) return false
-      return true
-    })
-  }, [points, filters])
-
-  const visibleIds = useMemo(() => new Set(visible.map((point) => point.id)), [visible])
-
-  const relatedPointIds = useMemo(() => {
-    if (!selectedPoint) return new Set<string>()
-    return new Set(
-      points
-        .filter((point) => point.id !== selectedPoint.id)
-        .map((point) => ({ id: point.id, distance: (point.x - selectedPoint.x) ** 2 + (point.y - selectedPoint.y) ** 2 }))
-        .sort((a, b) => a.distance - b.distance)
-        .slice(0, 10)
-        .map((point) => point.id),
-    )
-  }, [points, selectedPoint])
-
-  const selectedCluster = selectedClusterId ? topicsById.get(selectedClusterId) : null
-  const selectedClusterPoints = useMemo(() => selectedClusterId ? points.filter((point) => point.topicId === selectedClusterId) : [], [points, selectedClusterId])
-  const selectedClusterStats = useMemo(() => {
-    if (!selectedClusterPoints.length) return null
-    const clusterYears = selectedClusterPoints.map((point) => point.year).filter(Boolean) as number[]
-    const seasons = new Map<string, number>()
-    for (const point of selectedClusterPoints) seasons.set(point.season, (seasons.get(point.season) ?? 0) + 1)
-    const topSeason = [...seasons.entries()].sort((a, b) => b[1] - a[1])[0]?.[0]
+  const atlasBrowse = useMemo(() => buildAtlasBrowse({ points, topics, filters, selectedPoint, selectedClusterId }), [points, topics, filters, selectedPoint, selectedClusterId])
+  const { topicsById, sortedTopics, years, categoryBounds, visible, visibleIds, relatedPointIds, selectedCluster, selectedClusterPoints, selectedClusterStats } = atlasBrowse
+  const semanticBounds = useMemo(() => {
+    if (!points.length) return { minX: 0, maxX: 1, minY: 0, maxY: 1 }
+    const sortedX = points.map((point) => point.x).sort((a, b) => a - b)
+    const sortedY = points.map((point) => point.y).sort((a, b) => a - b)
+    const quantile = (values: number[], q: number) => values[clamp(Math.floor(values.length * q), 0, values.length - 1)] ?? 0
     return {
-      fromYear: Math.min(...clusterYears),
-      toYear: Math.max(...clusterYears),
-      topSeason,
-      imageCount: selectedClusterPoints.reduce((sum, point) => sum + (point.imageCount > 0 ? 1 : 0), 0),
-      representative: selectedClusterPoints.find((point) => point.image) ?? selectedClusterPoints[0],
+      minX: quantile(sortedX, 0.001),
+      maxX: quantile(sortedX, 0.999),
+      minY: quantile(sortedY, 0.001),
+      maxY: quantile(sortedY, 0.999),
     }
-  }, [selectedClusterPoints])
+  }, [points])
 
   function colorFor(topicId: string) {
     const category = categoryFor(topicsById.get(topicId))
@@ -152,31 +79,16 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
   }
 
   function macroAtlasCoordinate(categoryId: string, rawX: number, rawY: number, rect = canvasSize): ScreenPoint {
-    const territory = atlasTerritories[categoryId] ?? atlasTerritories.heritage
-    const bounds = categoryBounds.get(categoryId)
-    const spanX = bounds && Number.isFinite(bounds.maxX - bounds.minX) ? Math.max(0.001, bounds.maxX - bounds.minX) : 1
-    const spanY = bounds && Number.isFinite(bounds.maxY - bounds.minY) ? Math.max(0.001, bounds.maxY - bounds.minY) : 1
-    const nx = bounds ? (rawX - bounds.minX) / spanX : rawX
-    const ny = bounds ? (rawY - bounds.minY) / spanY : rawY
-    const x = clamp(territory.cx + (nx - 0.5) * territory.width, 0.035, 0.965)
-    const y = clamp(territory.cy + (ny - 0.5) * territory.height, 0.055, 0.945)
-    return { x: x * rect.width, y: y * rect.height }
-  }
-
-  function rawAtlasCoordinate(rawX: number, rawY: number, rect = canvasSize): ScreenPoint {
-    const x = 0.5 + (rawX - 0.5) * ATLAS_X_SPREAD
-    const y = 0.5 + (rawY - 0.5) * ATLAS_Y_SPREAD
-    return { x: x * rect.width, y: y * rect.height }
+    return macroAtlasCoordinateForBounds(categoryId, rawX, rawY, rect, categoryBounds)
   }
 
   function atlasPoint(point: MapPoint, rect = canvasSize): ScreenPoint {
     if (viewMode === 'clusters') return macroAtlasCoordinate(categoryIdFor(point.topicId), point.x, point.y, rect)
-    return rawAtlasCoordinate(point.x, point.y, rect)
+    return semanticAtlasCoordinate(point.x, point.y, rect)
   }
 
   function screenPoint(point: MapPoint, rect = canvasSize): ScreenPoint {
-    const p = atlasPoint(point, rect)
-    return { x: p.x * scale + pan.x, y: p.y * scale + pan.y }
+    return screenFromAtlasPoint(atlasPoint(point, rect), scale, pan)
   }
 
   function updateAtlasUrl({ nextFilters = filters, point = selectedPoint, clusterId = selectedClusterId, mode = 'push' }: { nextFilters?: Filters; point?: MapPoint | null; clusterId?: string | null; mode?: 'push' | 'replace' } = {}) {
@@ -232,6 +144,20 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     setPan({ x: 0, y: 0 })
   }
 
+  function zoomAtViewportCenter(factor: number) {
+    const canvas = canvasRef.current
+    const rect = canvas?.getBoundingClientRect()
+    if (!rect) return
+    zoomAtCanvasPoint({ x: rect.width / 2, y: rect.height / 2 }, factor)
+  }
+
+  function fullscreenMap() {
+    const element = mapShellRef.current
+    if (!element || typeof document === 'undefined') return
+    if (document.fullscreenElement === element) document.exitFullscreen().catch(() => {})
+    else element.requestFullscreen().catch(() => {})
+  }
+
   function resetFilters() {
     const nextFilters = { topic: 'all', year: 'all', season: 'all', imagesOnly: false, search: '' }
     resetView()
@@ -241,131 +167,59 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     updateAtlasUrl({ nextFilters, point: null, clusterId: null })
   }
 
-  useEffect(() => {
-    if (!points.length || typeof window === 'undefined') return
+  useAtlasUrlState({
+    points,
+    topicsById,
+    setFilters,
+    setSelectedClusterId,
+    setSelectedPoint,
+  })
 
-    const syncFromUrl = () => {
-      const params = new URLSearchParams(window.location.search)
-      const topicParam = params.get('topic')
-      const yearParam = params.get('year')
-      const seasonParam = params.get('season')
-      const nextFilters: Filters = {
-        topic: topicParam && topicsById.has(topicParam) ? topicParam : 'all',
-        year: yearParam && /^\d{4}$/.test(yearParam) ? yearParam : 'all',
-        season: ['lente', 'zomer', 'herfst', 'winter'].includes(seasonParam ?? '') ? seasonParam as string : 'all',
-        imagesOnly: ['1', 'true', 'yes'].includes((params.get('images') ?? '').toLowerCase()),
-        search: params.get('q') ?? '',
-      }
-      setFilters(nextFilters)
-
-      const pointParam = params.get('point')
-      const clusterParam = params.get('cluster')
-      if (pointParam) {
-        const point = points.find((candidate) => candidate.slug === pointParam || candidate.id === pointParam)
-        if (point) {
-          setSelectedPoint(point)
-          setSelectedClusterId(point.topicId)
-          return
-        }
-      }
-      setSelectedPoint(null)
-      if (clusterParam && topicsById.has(clusterParam)) setSelectedClusterId(clusterParam)
-      else setSelectedClusterId(nextFilters.topic === 'all' ? null : nextFilters.topic)
+  function semanticUnitCoordinate(rawX: number, rawY: number): ScreenPoint {
+    const spanX = Math.max(0.001, semanticBounds.maxX - semanticBounds.minX)
+    const spanY = Math.max(0.001, semanticBounds.maxY - semanticBounds.minY)
+    return {
+      x: clamp(0.025 + ((rawX - semanticBounds.minX) / spanX) * 0.95, 0.025, 0.975),
+      y: clamp(0.045 + ((rawY - semanticBounds.minY) / spanY) * 0.91, 0.045, 0.955),
     }
+  }
 
-    if (!urlSelectionInitialized.current) {
-      syncFromUrl()
-      urlSelectionInitialized.current = true
-    }
-
-    const handlePopState = () => syncFromUrl()
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
-  }, [points, topicsById])
-
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const resize = () => {
-      const rect = canvas.getBoundingClientRect()
-      const dpr = Math.max(1, window.devicePixelRatio || 1)
-      canvas.width = Math.round(rect.width * dpr)
-      canvas.height = Math.round(rect.height * dpr)
-      const context = canvas.getContext('2d')
-      context?.setTransform(dpr, 0, 0, dpr, 0, 0)
-      setCanvasSize({ width: rect.width, height: rect.height })
-    }
-    resize()
-    const observer = new ResizeObserver(resize)
-    observer.observe(canvas)
-    return () => observer.disconnect()
-  }, [])
+  function semanticAtlasCoordinate(rawX: number, rawY: number, rect = canvasSize): ScreenPoint {
+    const unit = semanticUnitCoordinate(rawX, rawY)
+    return { x: unit.x * rect.width, y: unit.y * rect.height }
+  }
 
   function screenAtlasCoordinate(x: number, y: number, rect = canvasSize): ScreenPoint {
-    const p = rawAtlasCoordinate(x, y, rect)
-    return { x: p.x * scale + pan.x, y: p.y * scale + pan.y }
+    return screenFromAtlasPoint(rawAtlasCoordinate(x, y, rect), scale, pan)
   }
 
   function topicScreenAtlasCoordinate(topicId: string, x: number, y: number, rect = canvasSize): ScreenPoint {
-    const p = viewMode === 'clusters' ? macroAtlasCoordinate(categoryIdFor(topicId), x, y, rect) : rawAtlasCoordinate(x, y, rect)
-    return { x: p.x * scale + pan.x, y: p.y * scale + pan.y }
+    const p = viewMode === 'clusters' ? macroAtlasCoordinate(categoryIdFor(topicId), x, y, rect) : semanticAtlasCoordinate(x, y, rect)
+    return screenFromAtlasPoint(p, scale, pan)
   }
 
   function categoryIdFor(topicId: string) {
     return categoryFor(topicsById.get(topicId))?.id ?? 'heritage'
   }
 
-  function clusterRadiusFor(count: number) {
-    return clamp(12 + Math.sqrt(count) * 2.2, 18, 56)
+  function atlasUnitPoint(point: MapPoint): ScreenPoint {
+    if (viewMode === 'clusters') return macroAtlasUnitCoordinate(categoryIdFor(point.topicId), point.x, point.y, categoryBounds)
+    return semanticUnitCoordinate(point.x, point.y)
   }
 
-  function drawHexCell(context: CanvasRenderingContext2D, x: number, y: number, radius: number) {
-    context.beginPath()
-    for (let i = 0; i < 6; i += 1) {
-      const angle = Math.PI / 6 + i * Math.PI / 3
-      const px = x + Math.cos(angle) * radius
-      const py = y + Math.sin(angle) * radius
-      if (i === 0) context.moveTo(px, py)
-      else context.lineTo(px, py)
-    }
-    context.closePath()
-  }
-
-  function drawTechNode(context: CanvasRenderingContext2D, x: number, y: number, size: number, color: string, selected = false) {
-    const half = size / 2
-    context.save()
-    context.translate(x, y)
-    context.rotate(Math.PI / 4)
-    context.fillStyle = selected ? colorMix(color, 0.22) : 'rgba(253, 252, 252, 0.86)'
-    context.strokeStyle = colorMix(color, selected ? 0.92 : 0.62)
-    context.lineWidth = selected ? 2 : 1.35
-    context.beginPath()
-    context.rect(-half, -half, size, size)
-    context.fill()
-    context.stroke()
-    context.restore()
-
-    context.strokeStyle = colorMix(color, selected ? 0.72 : 0.38)
-    context.lineWidth = selected ? 1.2 : 0.8
-    context.beginPath()
-    context.moveTo(x - size * 1.08, y)
-    context.lineTo(x - half * 0.78, y)
-    context.moveTo(x + half * 0.78, y)
-    context.lineTo(x + size * 1.08, y)
-    context.moveTo(x, y - size * 1.08)
-    context.lineTo(x, y - half * 0.78)
-    context.moveTo(x, y + half * 0.78)
-    context.lineTo(x, y + size * 1.08)
-    context.stroke()
-  }
-
-  type TopicPeak = { topicId: string; x: number; y: number; rawX: number; rawY: number; count: number; score: number }
+  const viewportBounds = useMemo(() => atlasViewportBounds(canvasSize, scale, pan, 180), [canvasSize, scale, pan])
+  const allPointIndex = useMemo(() => buildAtlasSpatialIndex(points, atlasUnitPoint), [points, viewMode, categoryBounds, topicsById, semanticBounds])
+  const visiblePointIndex = useMemo(() => buildAtlasSpatialIndex(visible, atlasUnitPoint), [visible, viewMode, categoryBounds, topicsById, semanticBounds])
+  const viewportPoints = useMemo(() => queryAtlasSpatialIndex(allPointIndex, viewportBounds), [allPointIndex, viewportBounds])
+  const visibleViewportPoints = useMemo(() => queryAtlasSpatialIndex(visiblePointIndex, viewportBounds), [visiblePointIndex, viewportBounds])
+  const isCompactAtlas = canvasSize.width < 720 || (typeof window !== 'undefined' && (window.matchMedia?.('(pointer: coarse)').matches ?? false))
+  const drawAtlasAtmosphere = false
 
   function topicDensityPeaks(rect: { width: number; height: number }, topicFilter?: string): TopicPeak[] {
     const gridW = 34
     const gridH = 24
     const cells = new Map<string, { topicId: string; cellX: number; cellY: number; count: number; sumX: number; sumY: number }>()
-    for (const point of visible) {
+    for (const point of visibleViewportPoints) {
       if (topicFilter && point.topicId !== topicFilter) continue
       const cellX = clamp(Math.floor(point.x * gridW), 0, gridW - 1)
       const cellY = clamp(Math.floor(point.y * gridH), 0, gridH - 1)
@@ -403,8 +257,8 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
   function drawAtlasGrid(context: CanvasRenderingContext2D, rect: { width: number; height: number }) {
     context.save()
     context.lineCap = 'butt'
-    const minorAlpha = scale > 1.25 ? 0.04 : 0.024
-    const majorAlpha = scale > 1.25 ? 0.075 : 0.044
+    const minorAlpha = scale > 1.25 ? 0.018 : 0.012
+    const majorAlpha = scale > 1.25 ? 0.034 : 0.022
     for (let i = 0; i <= 20; i += 1) {
       const value = i / 20
       const major = i % 5 === 0
@@ -437,56 +291,11 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     context.restore()
   }
 
-  function drawTerritoryFrames(context: CanvasRenderingContext2D, rect: { width: number; height: number }) {
-    const counts = new Map<string, number>()
-    for (const point of visible) {
-      const categoryId = categoryIdFor(point.topicId)
-      counts.set(categoryId, (counts.get(categoryId) ?? 0) + 1)
-    }
-
-    context.save()
-    context.textBaseline = 'top'
-    for (const category of atlasCategories) {
-      const territory = atlasTerritories[category.id]
-      const count = counts.get(category.id) ?? 0
-      if (!territory || count < 1) continue
-      const color = atlasCategoryColors[category.id] ?? atlasCategoryColors.heritage
-      const left = (territory.cx - territory.width / 2) * rect.width * scale + pan.x
-      const top = (territory.cy - territory.height / 2) * rect.height * scale + pan.y
-      const width = territory.width * rect.width * scale
-      const height = territory.height * rect.height * scale
-      if (left > rect.width + 80 || top > rect.height + 80 || left + width < -80 || top + height < -80) continue
-
-      context.fillStyle = colorMix(color, viewMode === 'clusters' ? 0.025 : 0.014)
-      context.strokeStyle = colorMix(color, viewMode === 'clusters' ? 0.24 : 0.14)
-      context.lineWidth = category.id === (selectedCluster?.id ? categoryIdFor(selectedCluster.id) : selectedPoint?.topicId ? categoryIdFor(selectedPoint.topicId) : '') ? 1.6 : 1
-      context.setLineDash([7, 7])
-      context.beginPath()
-      context.rect(left, top, width, height)
-      context.fill()
-      context.stroke()
-      context.setLineDash([])
-
-      if (scale < 4.2) {
-        const label = category.label.toUpperCase()
-        context.fillStyle = colorMix(color, 0.92)
-        context.font = '700 11px "DM Sans Variable", sans-serif'
-        context.fillText(label, left + 12, top + 10)
-        context.fillStyle = themeValue('--color-gravel')
-        context.globalAlpha = 0.7
-        context.font = '500 10px "DM Sans Variable", sans-serif'
-        context.fillText(`${count.toLocaleString('nl-BE')} berichten`, left + 12, top + 26)
-        context.globalAlpha = 1
-      }
-    }
-    context.restore()
-  }
-
   function drawDensityTerrain(context: CanvasRenderingContext2D, rect: { width: number; height: number }) {
     const gridW = 56
     const gridH = 36
     const grids = new Map<string, Float32Array>()
-    for (const point of visible) {
+    for (const point of visibleViewportPoints) {
       const categoryId = categoryIdFor(point.topicId)
       const grid = grids.get(categoryId) ?? new Float32Array(gridW * gridH)
       const cx = clamp(Math.floor(point.x * gridW), 0, gridW - 1)
@@ -517,11 +326,11 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
           if (value < Math.max(1.35, max * 0.1)) continue
           const rawX = (x + 0.5) / gridW
           const rawY = (y + 0.5) / gridH
-          const p = screenAtlasCoordinate(rawX, rawY, rect)
+          const p = screenFromAtlasPoint(semanticAtlasCoordinate(rawX, rawY, rect), scale, pan)
           if (p.x < -140 || p.y < -140 || p.x > rect.width + 140 || p.y > rect.height + 140) continue
           const strength = value / max
-          const radius = clamp((rect.width * ATLAS_X_SPREAD / gridW) * scale * (2.8 + strength * 2.2), 18, viewMode === 'density' ? 120 : 82)
-          const alpha = clamp(strength * (viewMode === 'density' ? 0.095 : 0.055), 0.008, viewMode === 'density' ? 0.11 : 0.07)
+          const radius = clamp((rect.width * ATLAS_X_SPREAD / gridW) * scale * (2.8 + strength * 2.2), 18, 120)
+          const alpha = clamp(strength * 0.095, 0.008, 0.11)
           const gradient = context.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius)
           gradient.addColorStop(0, colorMix(color, alpha))
           gradient.addColorStop(0.62, colorMix(color, alpha * 0.38))
@@ -556,162 +365,216 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
   }
 
   function visibleRenderClusters(rect: { width: number; height: number }): RenderCluster[] {
-    const groups = new Map<string, { x: number; y: number; count: number }>()
+    const groups = new Map<string, { unitX: number; unitY: number; count: number }>()
     for (const point of visible) {
-      const p = screenPoint(point, rect)
-      if (p.x < -160 || p.y < -160 || p.x > rect.width + 160 || p.y > rect.height + 160) continue
-      const group = groups.get(point.topicId) ?? { x: 0, y: 0, count: 0 }
-      group.x += p.x
-      group.y += p.y
+      const unit = atlasUnitPoint(point)
+      const group = groups.get(point.topicId) ?? { unitX: 0, unitY: 0, count: 0 }
+      group.unitX += unit.x
+      group.unitY += unit.y
       group.count += 1
       groups.set(point.topicId, group)
     }
     return [...groups.entries()]
-      .map(([topicId, group]) => ({ x: group.x / group.count, y: group.y / group.count, count: group.count, topicId }))
+      .map(([topicId, group]) => {
+        const atlas = { x: (group.unitX / group.count) * rect.width, y: (group.unitY / group.count) * rect.height }
+        return { ...screenFromAtlasPoint(atlas, scale, pan), count: group.count, topicId }
+      })
       .sort((a, b) => b.count - a.count)
   }
 
-  function drawPointClusters(context: CanvasRenderingContext2D, rect: { width: number; height: number }) {
+  function drawCloudCore(context: CanvasRenderingContext2D, x: number, y: number, radiusX: number, radiusY: number, color: string, alpha: number) {
+    context.save()
+    context.translate(x, y)
+    context.scale(radiusX / Math.max(1, radiusY), 1)
+    const gradient = context.createRadialGradient(0, 0, 0, 0, 0, radiusY)
+    gradient.addColorStop(0, colorMix(color, alpha))
+    gradient.addColorStop(0.42, colorMix(color, alpha * 0.62))
+    gradient.addColorStop(0.78, colorMix(color, alpha * 0.18))
+    gradient.addColorStop(1, colorMix(color, 0))
+    context.fillStyle = gradient
+    context.beginPath()
+    context.arc(0, 0, radiusY, 0, Math.PI * 2)
+    context.fill()
+    context.restore()
+  }
+
+  function ellipseRadiusAtAngle(radiusX: number, radiusY: number, angle: number) {
+    const cos = Math.cos(angle)
+    const sin = Math.sin(angle)
+    return 1 / Math.sqrt((cos * cos) / (radiusX * radiusX) + (sin * sin) / (radiusY * radiusY))
+  }
+
+  function drawSmoothClosedPath(context: CanvasRenderingContext2D, points: ScreenPoint[]) {
+    if (!points.length) return
+    context.beginPath()
+    for (let i = 0; i < points.length; i += 1) {
+      const current = points[i]!
+      const next = points[(i + 1) % points.length]!
+      const mid = { x: (current.x + next.x) / 2, y: (current.y + next.y) / 2 }
+      if (i === 0) context.moveTo(mid.x, mid.y)
+      context.quadraticCurveTo(next.x, next.y, mid.x, mid.y)
+    }
+    context.closePath()
+  }
+
+  function clusterTerritoryPoints(cluster: RenderCluster, clusters: RenderCluster[], radiusX: number, radiusY: number, seed: number): ScreenPoint[] {
+    const points: ScreenPoint[] = []
+    const sampleCount = 32
+    const ownWeight = Math.sqrt(cluster.count)
+    const minRadius = Math.min(radiusX, radiusY) * 0.34
+    const gap = 10 * Math.sqrt(scale)
+
+    for (let i = 0; i < sampleCount; i += 1) {
+      const angle = (i / sampleCount) * Math.PI * 2
+      const ux = Math.cos(angle)
+      const uy = Math.sin(angle)
+      const wobble = 0.92 + 0.07 * Math.sin(seed * 0.013 + i * 1.73) + 0.035 * Math.sin(seed * 0.031 + i * 3.11)
+      let boundary = ellipseRadiusAtAngle(radiusX, radiusY, angle) * wobble
+
+      for (const other of clusters) {
+        if (other.topicId === cluster.topicId) continue
+        const dx = other.x - cluster.x
+        const dy = other.y - cluster.y
+        const projection = dx * ux + dy * uy
+        if (projection <= 0) continue
+        const distanceSq = dx * dx + dy * dy
+        const weightBias = clamp((ownWeight - Math.sqrt(other.count)) * scale * 1.8, -boundary * 0.28, boundary * 0.28)
+        const neighborBoundary = distanceSq / (2 * projection) + weightBias - gap
+        if (neighborBoundary > 0) boundary = Math.min(boundary, Math.max(minRadius, neighborBoundary))
+      }
+
+      points.push({ x: cluster.x + ux * boundary, y: cluster.y + uy * boundary })
+    }
+    return points
+  }
+
+  function topicSeed(topicId: string) {
+    let seed = 0
+    for (let i = 0; i < topicId.length; i += 1) seed = (seed * 31 + topicId.charCodeAt(i)) % 9973
+    return seed || 1
+  }
+
+  function drawPointClusters(context: CanvasRenderingContext2D, rect: { width: number; height: number }, layer: 'regions' | 'labels' | 'all' = 'all') {
     const clusters = visibleRenderClusters(rect)
     const selectedTopic = selectedPoint?.topicId ?? selectedClusterId
-    const renderedClusters = viewMode === 'clusters' && !selectedTopic ? clusters.slice(0, 34) : clusters
-    const maxCount = Math.max(1, ...renderedClusters.map((cluster) => cluster.count))
-    const clusterTopicIds = new Set(renderedClusters.map((cluster) => cluster.topicId))
+    const majorLimit = selectedTopic ? 34 : viewMode === 'clusters' ? 42 : 36
+    const renderedClusters = clusters
+      .filter((cluster, index) => index < majorLimit || cluster.topicId === selectedTopic || cluster.topicId === hoverClusterId)
+      .sort((a, b) => a.count - b.count)
+    const maxCount = Math.max(1, ...clusters.map((cluster) => cluster.count))
 
-    const cell = clamp(33 / Math.sqrt(scale), 20, 38)
-    const hexes = new Map<string, { x: number; y: number; count: number; topics: Map<string, number> }>()
-    for (const point of visible) {
-      if (!clusterTopicIds.has(point.topicId)) continue
-      const p = screenPoint(point, rect)
-      if (p.x < -80 || p.y < -80 || p.x > rect.width + 80 || p.y > rect.height + 80) continue
-      const qx = Math.round(p.x / (cell * 0.86))
-      const qy = Math.round((p.y - (qx % 2) * cell * 0.5) / cell)
-      const key = `${qx}:${qy}`
-      const hex = hexes.get(key) ?? { x: qx * cell * 0.86, y: qy * cell + (qx % 2) * cell * 0.5, count: 0, topics: new Map<string, number>() }
-      hex.count += 1
-      hex.topics.set(point.topicId, (hex.topics.get(point.topicId) ?? 0) + 1)
-      hexes.set(key, hex)
+    if (layer !== 'labels') {
+    context.save()
+    context.lineJoin = 'round'
+    context.lineCap = 'round'
+    for (const cluster of renderedClusters) {
+      const focused = cluster.topicId === selectedTopic || cluster.topicId === hoverClusterId
+      const mutedBySelection = Boolean(selectedTopic && cluster.topicId !== selectedTopic)
+      const color = colorFor(cluster.topicId)
+      const prominence = clamp(cluster.count / maxCount, 0.12, 1)
+      const atlasRadius = clamp(58 + Math.sqrt(cluster.count) * 7.2, 78, 240)
+      const radiusX = atlasRadius * scale * (1.08 + 0.16 * Math.sin(topicSeed(cluster.topicId)))
+      const radiusY = atlasRadius * scale * (0.72 + 0.18 * Math.cos(topicSeed(cluster.topicId) * 0.7))
+      if (cluster.x + radiusX * 1.4 < 0 || cluster.y + radiusY * 1.4 < 0 || cluster.x - radiusX * 1.4 > rect.width || cluster.y - radiusY * 1.4 > rect.height) continue
+      const seed = topicSeed(cluster.topicId)
+      const territory = clusterTerritoryPoints(cluster, clusters, radiusX, radiusY, seed)
+      const outerAlpha = mutedBySelection ? 0.026 : focused ? 0.18 : 0.07 + prominence * 0.075
+      const innerAlpha = mutedBySelection ? 0.022 : focused ? 0.22 : 0.09 + prominence * 0.075
+      const coreAlpha = mutedBySelection ? 0.026 : focused ? 0.24 : 0.10 + prominence * 0.09
+      const outlineAlpha = mutedBySelection ? 0.04 : focused ? 0.28 : 0.10
+
+      if (!drawAtlasAtmosphere) {
+        context.fillStyle = colorMix(color, focused ? 0.12 : mutedBySelection ? 0.018 : 0.045 + prominence * 0.035)
+        drawSmoothClosedPath(context, territory)
+        context.fill()
+        if (focused || viewMode === 'clusters') {
+          context.strokeStyle = focused ? 'rgba(17, 17, 17, 0.2)' : colorMix(color, outlineAlpha)
+          context.lineWidth = focused ? 1.1 : 0.7
+          context.stroke()
+        }
+        continue
+      }
+
+      drawCloudCore(context, cluster.x, cluster.y, radiusX * 0.42, radiusY * 0.42, color, coreAlpha)
+
+      context.globalAlpha = 1
+      context.filter = 'blur(14px)'
+      context.fillStyle = colorMix(color, outerAlpha)
+      drawSmoothClosedPath(context, clusterTerritoryPoints(cluster, clusters, radiusX * 1.08, radiusY * 1.08, seed + 17))
+      context.fill()
+
+      context.filter = 'blur(8px)'
+      context.fillStyle = colorMix(color, innerAlpha)
+      drawSmoothClosedPath(context, clusterTerritoryPoints(cluster, clusters, radiusX * 0.82, radiusY * 0.82, seed + 41))
+      context.fill()
+      context.filter = 'none'
+
+      if (focused || viewMode === 'clusters') {
+        context.strokeStyle = focused ? 'rgba(17, 17, 17, 0.18)' : colorMix(color, outlineAlpha)
+        context.lineWidth = focused ? 1.15 : 0.75
+        drawSmoothClosedPath(context, territory)
+        context.stroke()
+      }
     }
+    context.restore()
+    }
+    if (layer === 'regions') return
 
     context.save()
-    context.lineJoin = 'miter'
     context.textBaseline = 'middle'
-
-    const hexValues = [...hexes.values()]
-      .map((hex) => ({ ...hex, topicId: [...hex.topics.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'topic-overig' }))
-      .sort((a, b) => a.count - b.count)
-    const maxHexCount = Math.max(1, ...hexValues.map((hex) => hex.count))
-
-    for (const hex of hexValues) {
-      const color = colorFor(hex.topicId)
-      const selected = hex.topicId === selectedTopic
-      const strength = clamp(hex.count / maxHexCount, 0.08, 1)
-      context.fillStyle = colorMix(color, selected ? 0.28 : 0.045 + strength * 0.13)
-      context.strokeStyle = colorMix(color, selected ? 0.52 : 0.10 + strength * 0.16)
-      context.lineWidth = selected ? 1.2 : 0.7
-      drawHexCell(context, hex.x, hex.y, cell * 0.52)
-      context.fill()
-      context.stroke()
-    }
-
-    context.globalAlpha = 0.58
-    context.lineWidth = 0.85
-    context.setLineDash([3, 5])
-    for (const cluster of renderedClusters) {
-      const neighbours = renderedClusters
-        .filter((candidate) => candidate.topicId !== cluster.topicId)
-        .map((candidate) => ({ candidate, distance: (candidate.x - cluster.x) ** 2 + (candidate.y - cluster.y) ** 2 }))
-        .sort((a, b) => a.distance - b.distance)
-        .slice(0, 2)
-      for (const { candidate, distance } of neighbours) {
-        if (distance > 240 ** 2) continue
-        context.strokeStyle = colorMix(colorFor(cluster.topicId), 0.18)
-        context.beginPath()
-        context.moveTo(cluster.x, cluster.y)
-        context.lineTo(candidate.x, candidate.y)
-        context.stroke()
-      }
-    }
-    context.setLineDash([])
-    context.globalAlpha = 1
-
-    context.textAlign = 'center'
-    context.font = '700 10px "DM Sans Variable", sans-serif'
-    for (const cluster of [...renderedClusters].reverse()) {
-      const color = colorFor(cluster.topicId)
-      const selected = cluster.topicId === selectedTopic
-      const prominence = clamp(cluster.count / maxCount, 0.18, 1)
-      const size = clamp(10 + prominence * 11 + (selected ? 7 : 0), 12, 28)
-      drawTechNode(context, cluster.x, cluster.y, size, color, selected)
-
-      if (cluster.count >= 58 || selected) {
-        const text = cluster.count > 999 ? `${Math.round(cluster.count / 100) / 10}k` : String(cluster.count)
-        const w = Math.max(24, context.measureText(text).width + 12)
-        context.fillStyle = 'rgba(253, 252, 252, 0.90)'
-        context.strokeStyle = 'rgba(31, 29, 27, 0.11)'
-        context.lineWidth = 1
-        context.beginPath()
-        context.rect(cluster.x - w / 2, cluster.y + size * 0.72, w, 18)
-        context.fill()
-        context.stroke()
-        context.fillStyle = themeValue('--color-obsidian')
-        context.globalAlpha = 0.82
-        context.fillText(text, cluster.x, cluster.y + size * 0.72 + 9.5)
-        context.globalAlpha = 1
-      }
-    }
-
+    context.font = '500 12px "DM Sans Variable", sans-serif'
     const placed: Array<{ x: number; y: number; width: number; height: number }> = []
-    const labelLimit = selectedTopic ? 14 : viewMode === 'clusters' ? 10 : 7
-    context.font = '700 12px "DM Sans Variable", sans-serif'
-    context.textAlign = 'left'
-    for (const cluster of renderedClusters.slice(0, labelLimit * 2)) {
+    const labelLimit = selectedTopic ? 20 : scale > 2 ? 28 : 22
+    const labelCandidates = [...clusters]
+      .sort((a, b) => {
+        const aActive = a.topicId === selectedTopic || a.topicId === hoverClusterId ? 1 : 0
+        const bActive = b.topicId === selectedTopic || b.topicId === hoverClusterId ? 1 : 0
+        return bActive - aActive || b.count - a.count
+      })
+
+    for (const cluster of labelCandidates) {
       if (placed.length >= labelLimit) break
-      const label = shortLabel(labelFor(cluster.topicId), 25)
-      const meta = `${cluster.count.toLocaleString('nl-BE')} berichten`
-      const width = Math.min(250, Math.max(context.measureText(label).width + 38, context.measureText(meta).width + 38))
-      const height = 42
-      let x = clamp(cluster.x + 16, 10, rect.width - width - 10)
-      let y = clamp(cluster.y - height / 2, 10, rect.height - height - 10)
+      if (cluster.x < -24 || cluster.y < -24 || cluster.x > rect.width + 24 || cluster.y > rect.height + 24) continue
+      if (cluster.count < 18 && cluster.topicId !== selectedTopic && cluster.topicId !== hoverClusterId) continue
+      const focused = cluster.topicId === selectedTopic || cluster.topicId === hoverClusterId
+      const label = `${shortLabel(labelFor(cluster.topicId), focused ? 28 : 22)} · ${cluster.count.toLocaleString('nl-BE')}`
+      const width = Math.min(rect.width - 16, context.measureText(label).width + 34)
+      const height = focused ? 30 : 26
+      let x = clamp(cluster.x - width / 2, 8, rect.width - width - 8)
+      let y = clamp(cluster.y - height / 2 - 8, 8, rect.height - height - 8)
       let fits = false
-      for (let attempt = 0; attempt < 10; attempt += 1) {
-        const overlaps = placed.some((box) => x < box.x + box.width + 10 && x + width + 10 > box.x && y < box.y + box.height + 10 && y + height + 10 > box.y)
+      for (let attempt = 0; attempt < 8; attempt += 1) {
+        const overlaps = placed.some((box) => x < box.x + box.width + 8 && x + width + 8 > box.x && y < box.y + box.height + 8 && y + height + 8 > box.y)
         if (!overlaps) { fits = true; break }
-        const side = attempt % 2 === 0 ? -1 : 1
-        x = clamp(cluster.x + side * (width * 0.42 + 28), 10, rect.width - width - 10)
-        y = clamp(cluster.y - height / 2 + Math.floor(attempt / 2) * 30, 10, rect.height - height - 10)
+        const direction = attempt % 2 === 0 ? 1 : -1
+        y = clamp(cluster.y + direction * (24 + Math.ceil(attempt / 2) * 18), 8, rect.height - height - 8)
+        x = clamp(cluster.x - width / 2 + direction * Math.floor(attempt / 2) * 24, 8, rect.width - width - 8)
       }
       if (!fits) continue
       placed.push({ x, y, width, height })
 
       const color = colorFor(cluster.topicId)
-      context.strokeStyle = colorMix(color, cluster.topicId === selectedTopic ? 0.64 : 0.26)
-      context.lineWidth = cluster.topicId === selectedTopic ? 1.5 : 1
-      context.fillStyle = 'rgba(253, 252, 252, 0.94)'
+      context.fillStyle = focused ? 'rgba(255, 255, 255, 0.92)' : 'rgba(255, 255, 255, 0.84)'
+      context.strokeStyle = focused ? 'rgba(17, 17, 17, 0.18)' : 'rgba(17, 17, 17, 0.095)'
+      context.lineWidth = focused ? 1.1 : 0.8
       context.beginPath()
-      context.rect(x, y, width, height)
+      context.roundRect(x, y, width, height, 999)
       context.fill()
       context.stroke()
-      context.fillStyle = color
-      context.fillRect(x + 12, y + 12, 7, 7)
-      context.fillStyle = themeValue('--color-obsidian')
-      context.globalAlpha = 0.94
-      context.font = '700 12px "DM Sans Variable", sans-serif'
-      context.fillText(label, x + 27, y + 15)
-      context.globalAlpha = 0.58
-      context.font = '500 10px "DM Sans Variable", sans-serif'
-      context.fillText(meta, x + 27, y + 30)
-      context.globalAlpha = 1
-
-      context.strokeStyle = colorMix(color, 0.28)
-      context.lineWidth = 0.8
+      context.fillStyle = colorMix(color, focused ? 0.92 : 0.72)
       context.beginPath()
-      context.moveTo(cluster.x, cluster.y)
-      context.lineTo(x + (cluster.x < x ? 0 : width), y + height / 2)
-      context.stroke()
+      context.arc(x + 13, y + height / 2, 3, 0, Math.PI * 2)
+      context.fill()
+      context.fillStyle = focused ? themeValue('--color-obsidian') : 'rgba(17, 17, 17, 0.72)'
+      context.fillText(label, x + 23, y + height / 2 + 0.5)
     }
     context.restore()
   }
+
+  const hoverClusters = useMemo(() => {
+    if (!canvasSize.width || !canvasSize.height) return []
+    return visibleRenderClusters(canvasSize)
+  }, [visible, scale, pan, canvasSize, viewMode, categoryBounds, topicsById, semanticBounds])
 
   function drawRelatedLinks(context: CanvasRenderingContext2D, rect: { width: number; height: number }) {
     if (!selectedPoint) return
@@ -719,7 +582,7 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     context.save()
     context.strokeStyle = 'rgba(31, 29, 27, 0.13)'
     context.lineWidth = 0.8
-    for (const point of visible) {
+    for (const point of visibleViewportPoints) {
       if (!relatedPointIds.has(point.id)) continue
       const to = screenPoint(point, rect)
       context.beginPath()
@@ -730,138 +593,94 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     context.restore()
   }
 
-  function drawPeakLabels(context: CanvasRenderingContext2D, rect: { width: number; height: number }) {
-    const labelLimit = viewMode === 'density' ? (selectedClusterId || selectedPoint ? 8 : 5) : scale > 2.4 ? 22 : scale > 1.35 ? 14 : 10
-    const peaks = topicDensityPeaks(rect).slice(0, labelLimit * 3)
-    const placed: Array<{ x: number; y: number; width: number; height: number }> = []
-    const labelCounts = new Map<string, number>()
-    context.save()
-    context.font = '700 12px "DM Sans Variable", sans-serif'
-    context.textBaseline = 'middle'
-    for (const peak of peaks) {
-      if (placed.length >= labelLimit) break
-      const label = shortLabel(labelFor(peak.topicId), 22)
-      const currentCount = labelCounts.get(label) ?? 0
-      const maxPerLabel = scale > 2.2 ? 2 : 1
-      if (currentCount >= maxPerLabel) continue
-      const textWidth = context.measureText(label).width
-      const width = Math.min(rect.width - 16, textWidth + 28)
-      const height = 28
-      let x = clamp(peak.x - width / 2, 8, rect.width - width - 8)
-      let y = clamp(peak.y - height / 2, 8, rect.height - height - 8)
-      let blocked = false
-      for (let attempt = 0; attempt < 8; attempt += 1) {
-        const overlaps = placed.some((box) => x < box.x + box.width + 8 && x + width + 8 > box.x && y < box.y + box.height + 8 && y + height + 8 > box.y)
-        if (!overlaps) { blocked = false; break }
-        blocked = true
-        y = clamp(y + 34, 8, rect.height - height - 8)
-      }
-      if (blocked && placed.some((box) => x < box.x + box.width + 8 && x + width + 8 > box.x && y < box.y + box.height + 8 && y + height + 8 > box.y)) continue
-      placed.push({ x, y, width, height })
-      labelCounts.set(label, currentCount + 1)
-      context.fillStyle = 'rgba(253, 252, 252, 0.9)'
-      context.strokeStyle = colorMix(colorFor(peak.topicId), peak.topicId === (selectedPoint?.topicId ?? selectedClusterId) ? 0.42 : 0.18)
-      context.lineWidth = peak.topicId === (selectedPoint?.topicId ?? selectedClusterId) ? 1.4 : 1
+  function drawMainAtlasCanvas() {
+  const canvas = canvasRef.current
+  const context = canvas?.getContext('2d')
+  if (!canvas || !context || !canvasSize.width || !canvasSize.height) return
+  const rect = canvasSize
+  context.clearRect(0, 0, rect.width, rect.height)
+
+  drawAtlasGrid(context, rect)
+  if (drawAtlasAtmosphere) drawDensityTerrain(context, rect)
+  drawPointClusters(context, rect, 'regions')
+  if (drawAtlasAtmosphere && (selectedPoint || selectedClusterId)) drawSelectedTopicIslands(context, rect)
+  if (!isCompactAtlas) drawRelatedLinks(context, rect)
+
+  const filtersActive = filters.topic !== 'all' || filters.year !== 'all' || filters.season !== 'all' || filters.imagesOnly || Boolean(filters.search.trim())
+
+  context.save()
+  if (filtersActive && scale >= 1.1) {
+    for (const point of viewportPoints) {
+      if (visibleIds.has(point.id)) continue
+      const p = screenPoint(point, rect)
+      if (p.x < -8 || p.y < -8 || p.x > rect.width + 8 || p.y > rect.height + 8) continue
+      const radius = clamp(0.9 + scale * 0.1, 1, 2)
+      context.fillStyle = 'rgba(17, 17, 17, 0.055)'
       context.beginPath()
-      context.roundRect(x, y, width, height, 999)
+      context.arc(p.x, p.y, radius, 0, Math.PI * 2)
       context.fill()
-      context.stroke()
-      context.globalAlpha = 0.9
-      context.fillStyle = themeValue('--color-obsidian')
-      context.fillText(label, x + 14, y + height / 2)
-      context.globalAlpha = 1
     }
-    context.restore()
+  }
+
+  for (const point of visibleViewportPoints) {
+    const p = screenPoint(point, rect)
+    if (p.x < -10 || p.y < -10 || p.x > rect.width + 10 || p.y > rect.height + 10) continue
+    const isSelected = point.id === selectedPoint?.id
+    const isRelated = relatedPointIds.has(point.id)
+    const activeTopic = selectedPoint?.topicId ?? selectedClusterId ?? hoverClusterId
+    const isSameCluster = point.topicId === activeTopic
+    const hasFocus = Boolean(selectedPoint || selectedClusterId || hoverClusterId)
+    const radius = isSelected
+      ? 4.3
+      : isRelated
+        ? 3.2
+        : point.imageCount > 0
+          ? clamp(1.2 + scale * 0.2, 1.55, 2.85)
+          : clamp(1.02 + scale * 0.15, 1.35, 2.4)
+    const alpha = !hasFocus ? 0.36 : isSelected || isRelated ? 0.94 : isSameCluster ? 0.62 : 0.095
+    context.fillStyle = `rgba(17, 17, 17, ${alpha})`
+    context.beginPath()
+    context.arc(p.x, p.y, radius, 0, Math.PI * 2)
+    context.fill()
+    if (!isCompactAtlas && point.imageCount > 0 && scale > 1.45 && !isSelected) {
+      context.strokeStyle = `rgba(17, 17, 17, ${Math.min(0.32, alpha + 0.08)})`
+      context.lineWidth = 0.65
+      context.beginPath()
+      context.arc(p.x, p.y, radius + 1.15, 0, Math.PI * 2)
+      context.stroke()
+    }
+  }
+
+  for (const point of [selectedPoint]) {
+    if (!point) continue
+    const p = screenPoint(point, rect)
+    const selected = point === selectedPoint
+    const radius = selected ? 4.8 : 3.8
+    context.globalAlpha = 1
+    context.fillStyle = 'rgba(17, 17, 17, 0.9)'
+    context.beginPath()
+    context.arc(p.x, p.y, radius, 0, Math.PI * 2)
+    context.fill()
+    context.strokeStyle = selected ? 'rgba(17, 17, 17, 0.28)' : 'rgba(17, 17, 17, 0.18)'
+    context.lineWidth = selected ? 8 : 5
+    context.beginPath()
+    context.arc(p.x, p.y, selected ? 12 : 9, 0, Math.PI * 2)
+    context.stroke()
+    context.strokeStyle = selected ? 'rgba(17, 17, 17, 0.82)' : 'rgba(17, 17, 17, 0.46)'
+    context.lineWidth = selected ? 1.2 : 0.9
+    context.beginPath()
+    context.arc(p.x, p.y, selected ? 15 : 11, 0, Math.PI * 2)
+    context.stroke()
+  }
+  context.restore()
+  if (!dragging) drawPointClusters(context, rect, 'labels')
   }
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    const context = canvas?.getContext('2d')
-    if (!canvas || !context || !canvasSize.width || !canvasSize.height) return
-    const rect = canvasSize
-    context.clearRect(0, 0, rect.width, rect.height)
+    drawMainAtlasCanvas()
+  }, [filters, visible, viewportPoints, visibleViewportPoints, visibleIds, relatedPointIds, topicsById, hoverClusterId, selectedPoint, selectedClusterId, viewMode, scale, pan, canvasSize, hoveringAtlas])
 
-    drawAtlasGrid(context, rect)
-    if (viewMode === 'clusters') drawTerritoryFrames(context, rect)
-    if (viewMode === 'density') drawDensityTerrain(context, rect)
-    if (selectedPoint || selectedClusterId) drawSelectedTopicIslands(context, rect)
-    drawRelatedLinks(context, rect)
-
-    const shouldDrawIndividualPoints = scale >= 1.65
-
-    context.save()
-    if (shouldDrawIndividualPoints) {
-      for (const point of points) {
-        if (visibleIds.has(point.id)) continue
-        const p = screenPoint(point, rect)
-        if (p.x < -10 || p.y < -10 || p.x > rect.width + 10 || p.y > rect.height + 10) continue
-        const ghostSize = clamp(1.2 + scale * 0.18, 1.5, 3.2)
-        context.fillStyle = themeValue('--color-slate-ink')
-        context.globalAlpha = selectedPoint || selectedClusterId ? 0.018 : 0.035
-        context.fillRect(p.x - ghostSize / 2, p.y - ghostSize / 2, ghostSize, ghostSize)
-      }
-    }
-
-    if (viewMode !== 'density') {
-      if (shouldDrawIndividualPoints) {
-        for (const point of visible) {
-          const p = screenPoint(point, rect)
-          if (p.x < -12 || p.y < -12 || p.x > rect.width + 12 || p.y > rect.height + 12) continue
-          const isSelected = point.id === selectedPoint?.id
-          const isRelated = relatedPointIds.has(point.id)
-          const isSameCluster = point.topicId === (selectedPoint?.topicId ?? selectedClusterId)
-          const hasFocus = Boolean(selectedPoint || selectedClusterId)
-          const baseSize = clamp(3.4 + scale * 0.58, 4.5, 11)
-          const size = isSelected ? baseSize + 5 : isRelated ? baseSize + 2.5 : point.imageCount > 0 ? baseSize + 1.2 : baseSize
-          const alpha = !hasFocus ? 0.62 : isSelected || isRelated ? 0.96 : isSameCluster ? 0.68 : 0.13
-          const color = colorFor(point.topicId)
-          context.fillStyle = color
-          context.globalAlpha = alpha
-          context.fillRect(p.x - size / 2, p.y - size / 2, size, size)
-          if (point.imageCount > 0 || isSelected || isRelated || scale > 5.5) {
-            context.globalAlpha = Math.min(1, alpha + 0.18)
-            context.strokeStyle = isSelected ? themeValue('--color-obsidian') : colorMix(color, 0.7)
-            context.lineWidth = isSelected ? 1.4 : 0.75
-            context.strokeRect(p.x - size / 2, p.y - size / 2, size, size)
-          }
-        }
-      } else {
-        context.restore()
-        drawPointClusters(context, rect)
-        context.save()
-      }
-    }
-
-    for (const point of [selectedPoint, hoverPoint]) {
-      if (!point) continue
-      const p = screenPoint(point, rect)
-      const selected = point === selectedPoint
-      const color = colorFor(point.topicId)
-      context.globalAlpha = 1
-      context.strokeStyle = selected ? themeValue('--color-obsidian') : color
-      context.fillStyle = colorMix(color, selected ? 0.12 : 0.08)
-      context.lineWidth = selected ? 2 : 1.35
-      const size = selected ? 30 : 22
-      context.beginPath()
-      context.rect(p.x - size / 2, p.y - size / 2, size, size)
-      context.fill()
-      context.stroke()
-      context.beginPath()
-      context.moveTo(p.x - size * 0.85, p.y)
-      context.lineTo(p.x - size * 0.35, p.y)
-      context.moveTo(p.x + size * 0.35, p.y)
-      context.lineTo(p.x + size * 0.85, p.y)
-      context.moveTo(p.x, p.y - size * 0.85)
-      context.lineTo(p.x, p.y - size * 0.35)
-      context.moveTo(p.x, p.y + size * 0.35)
-      context.lineTo(p.x, p.y + size * 0.85)
-      context.stroke()
-    }
-    context.restore()
-    if (viewMode === 'density' || shouldDrawIndividualPoints) drawPeakLabels(context, rect)
-  }, [points, visible, visibleIds, relatedPointIds, topicsById, hoverPoint, selectedPoint, selectedClusterId, viewMode, scale, pan, canvasSize])
-
-  const showMiniMap = scale > 1.08
+  const showMiniMap = scale > 1.08 && !isCompactAtlas && !dragging
 
   useEffect(() => {
     const canvas = minimapRef.current
@@ -870,7 +689,7 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     const bounds = canvas.getBoundingClientRect()
     if (!bounds.width || !bounds.height) return
 
-    const dpr = Math.max(1, window.devicePixelRatio || 1)
+    const dpr = Math.min(1.5, Math.max(1, window.devicePixelRatio || 1))
     canvas.width = Math.round(bounds.width * dpr)
     canvas.height = Math.round(bounds.height * dpr)
 
@@ -943,18 +762,29 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     context.restore()
   }, [points, visible, visibleIds, selectedPoint, selectedClusterId, showMiniMap, scale, pan, canvasSize, topicsById])
 
-  function nearestPoint(event: React.MouseEvent<HTMLCanvasElement> | React.PointerEvent<HTMLCanvasElement>) {
+  useEffect(() => {
+    return () => {
+      if (hoverFrameRef.current !== null) window.cancelAnimationFrame(hoverFrameRef.current)
+      if (hoverIdleTimerRef.current !== null) window.clearTimeout(hoverIdleTimerRef.current)
+    }
+  }, [])
+
+  function canvasLocalPoint(input: HoverInput) {
     const canvas = canvasRef.current
     if (!canvas) return null
     const rect = canvas.getBoundingClientRect()
-    const x = event.clientX - rect.left
-    const y = event.clientY - rect.top
+    return { x: input.clientX - rect.left, y: input.clientY - rect.top, rect: { width: rect.width, height: rect.height } }
+  }
+
+  function nearestPoint(input: HoverInput) {
+    const local = canvasLocalPoint(input)
+    if (!local || scale < 1.65) return null
     let best: MapPoint | null = null
     const hitRadius = clamp(16 + scale * 1.2, 18, 34)
     let bestDistance = hitRadius * hitRadius
-    for (const point of visible) {
-      const p = screenPoint(point, { width: rect.width, height: rect.height })
-      const distance = (p.x - x) ** 2 + (p.y - y) ** 2
+    for (const point of visibleViewportPoints) {
+      const p = screenPoint(point, local.rect)
+      const distance = (p.x - local.x) ** 2 + (p.y - local.y) ** 2
       if (distance < bestDistance) {
         bestDistance = distance
         best = point
@@ -963,31 +793,71 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
     return best
   }
 
-  function nearestCluster(event: React.MouseEvent<HTMLCanvasElement>) {
-    const canvas = canvasRef.current
-    if (!canvas) return null
-    const rect = canvas.getBoundingClientRect()
-    const x = event.clientX - rect.left
-    const y = event.clientY - rect.top
-    return visibleRenderClusters({ width: rect.width, height: rect.height }).find((cluster) => {
-      const radius = clusterRadiusFor(cluster.count) + 18
-      return (cluster.x - x) ** 2 + (cluster.y - y) ** 2 < radius ** 2
-    }) ?? topicDensityPeaks({ width: rect.width, height: rect.height }).find((peak) => (peak.x - x) ** 2 + (peak.y - y) ** 2 < 48 * 48) ?? null
+  function nearestCluster(input: HoverInput) {
+    const local = canvasLocalPoint(input)
+    if (!local) return null
+    return hoverClusters.find((cluster) => {
+      const radius = clamp(56 + Math.sqrt(cluster.count) * 5.5, 72, 170)
+      return (cluster.x - local.x) ** 2 + (cluster.y - local.y) ** 2 < radius ** 2
+    }) ?? null
   }
 
-  function updateHover(event: React.MouseEvent<HTMLCanvasElement>) {
-    if (dragging) return
-    const point = nearestPoint(event)
-    setHoverPoint(point)
+  function processHover(input: HoverInput) {
+    if (dragging || isCompactAtlas) return
+    const point = nearestPoint(input)
+    setHoverPoint((current) => current?.id === point?.id ? current : point)
+    setHoverClusterId((current) => current === null ? current : null)
     if (!point) return
     const tooltip = tooltipRef.current
     const offset = 14
     const width = tooltip?.offsetWidth ?? 360
     const height = tooltip?.offsetHeight ?? 130
-    setTooltipPosition({
-      left: Math.min(event.clientX + offset, Math.max(offset, window.innerWidth - width - offset)),
-      top: Math.min(event.clientY + offset, Math.max(offset, window.innerHeight - height - offset)),
+    const nextPosition = {
+      left: Math.min(input.clientX + offset, Math.max(offset, window.innerWidth - width - offset)),
+      top: Math.min(input.clientY + offset, Math.max(offset, window.innerHeight - height - offset)),
+    }
+    if (tooltip && hoverPoint?.id === point.id) {
+      tooltip.style.left = `${nextPosition.left}px`
+      tooltip.style.top = `${nextPosition.top}px`
+      return
+    }
+    setTooltipPosition((current) => Math.abs(current.left - nextPosition.left) < 2 && Math.abs(current.top - nextPosition.top) < 2 ? current : nextPosition)
+  }
+
+  function updateHover(event: React.MouseEvent<HTMLCanvasElement>) {
+    if (dragging || isCompactAtlas) return
+    if (!hoveringAtlas) setHoveringAtlas(true)
+    if (hoverIdleTimerRef.current !== null) window.clearTimeout(hoverIdleTimerRef.current)
+    hoverIdleTimerRef.current = window.setTimeout(() => {
+      hoverIdleTimerRef.current = null
+      setHoveringAtlas(false)
+    }, 180)
+    pendingHoverRef.current = { clientX: event.clientX, clientY: event.clientY }
+    const now = performance.now()
+    if (now - lastHoverProcessAtRef.current < 48) return
+    lastHoverProcessAtRef.current = now
+    if (hoverFrameRef.current !== null) return
+    hoverFrameRef.current = window.requestAnimationFrame(() => {
+      hoverFrameRef.current = null
+      const input = pendingHoverRef.current
+      pendingHoverRef.current = null
+      if (input) processHover(input)
     })
+  }
+
+  function clearHover() {
+    pendingHoverRef.current = null
+    if (hoverFrameRef.current !== null) {
+      window.cancelAnimationFrame(hoverFrameRef.current)
+      hoverFrameRef.current = null
+    }
+    if (hoverIdleTimerRef.current !== null) {
+      window.clearTimeout(hoverIdleTimerRef.current)
+      hoverIdleTimerRef.current = null
+    }
+    setHoveringAtlas(false)
+    setHoverPoint((current) => current === null ? current : null)
+    setHoverClusterId((current) => current === null ? current : null)
   }
 
   function selectTopic(topicId: string, isolate = false) {
@@ -1022,92 +892,118 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
   const hasDetailSelection = Boolean(selectedPoint || selectedCluster)
 
   return (
-    <section className="mx-auto w-full max-w-[120rem] px-5 py-6 text-obsidian max-md:px-4" data-atlas-root>
-      {loadingData && <div className="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Atlas laden"><div className="site-loader__mark" aria-hidden="true"></div><div className="site-loader__text"><span>Daniel Willaeys</span><small>atlas laden</small></div></div>}
+    <section className="relative z-10 mx-auto w-full max-w-[120rem] bg-[#fbfbfa] px-5 py-4 text-obsidian max-md:px-4" data-atlas-root>
       {dataError && (
         <div className="mb-4 border-y border-chalk bg-powder px-4 py-3 text-sm text-obsidian" role="alert">
           <strong className="font-medium">Atlasdata niet geladen.</strong> Controleer of de gegenereerde JSON-bestanden beschikbaar zijn. <span className="font-mono text-xs">{dataError}</span>
         </div>
       )}
 
-      <header className="grid items-end gap-5 border-b border-chalk pb-5 lg:grid-cols-[1fr_22rem]">
-        <div>
-          <h1 className="m-0 font-heading text-[clamp(2.25rem,5vw,4.75rem)] font-light leading-[0.98] tracking-[-0.04em]">Atlas</h1>
+      <header className="grid gap-4 border-b border-chalk pb-3 lg:grid-cols-[15rem_minmax(0,1fr)] lg:items-end">
+        <div className="min-w-0">
+          <div className="flex items-center gap-3">
+            <h1 className="display-title">Atlas</h1>
+            <details className="group relative z-30">
+              <summary className="flex size-8 cursor-pointer list-none items-center justify-center rounded-full border border-chalk bg-eggshell text-xs text-gravel transition-colors hover:border-obsidian hover:text-obsidian [&::-webkit-details-marker]:hidden" aria-label="Hoe lees je de atlas?">?</summary>
+              <div className="absolute left-0 top-10 w-72 border border-chalk bg-eggshell p-4 text-sm leading-6 text-gravel shadow-[0_24px_70px_rgba(31,29,27,0.14)]">
+                <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.18em] text-obsidian">Hoe lezen</p>
+                <ol className="m-0 grid list-none gap-2 p-0">
+                  <li><strong className="text-obsidian">Punten.</strong> Elke stip is een archiefbericht.</li>
+                  <li><strong className="text-obsidian">Nabijheid.</strong> Dichterbij betekent vaker verwant.</li>
+                  <li><strong className="text-obsidian">Eilanden.</strong> Zachte velden tonen dichte thema’s.</li>
+                </ol>
+              </div>
+            </details>
+          </div>
+          <p className="mt-2 font-mono text-sm text-gravel">{points.length.toLocaleString('nl-BE')} berichten · {sortedTopics.length.toLocaleString('nl-BE')} thema’s</p>
         </div>
-        <label className="relative block">
-          <span className="sr-only">Zoek in de atlas</span>
-          <Input className="h-11 w-full rounded-none border-0 border-b border-chalk bg-transparent px-0 pr-9 shadow-none focus-visible:ring-0" value={filters.search} onChange={(event) => setFiltersWithUrl({ ...filters, search: event.target.value }, 'replace')} type="search" placeholder="Zoek in mijn archief…" />
-          <Search className="absolute right-0 top-1/2 size-4 -translate-y-1/2 text-gravel" aria-hidden="true" />
-        </label>
+        <div className="grid gap-3 lg:grid-cols-[minmax(17rem,26rem)_minmax(0,1fr)] lg:items-end">
+          <label className="relative block">
+            <span className="sr-only">Zoek in de atlas</span>
+            <Input className="h-11 w-full rounded-none border-0 border-b border-chalk bg-transparent px-0 pr-9 font-mono text-sm shadow-none placeholder:text-gravel focus-visible:ring-0" value={filters.search} onChange={(event) => setFiltersWithUrl({ ...filters, search: event.target.value }, 'replace')} type="search" placeholder="[ Zoek archief… ]" />
+            <Search className="absolute right-0 top-1/2 size-4 -translate-y-1/2 text-gravel" aria-hidden="true" />
+          </label>
+          <nav className="flex flex-wrap items-center gap-2 lg:justify-end" aria-label="Thema startpunten">
+            {startpointTopics.map(({ category, topic }) => (
+              <button className="inline-flex min-h-8 items-center gap-2 rounded-full border border-obsidian/10 bg-white/60 px-3 text-xs text-gravel backdrop-blur transition-colors hover:border-obsidian/20 hover:bg-white hover:text-obsidian" key={topic.id} type="button" onClick={() => selectTopic(topic.id, true)}>
+                <span className="size-1.5 rounded-full" style={{ backgroundColor: colorFor(topic.id) }} />
+                <span>{category.label}</span>
+                <span className="font-mono text-[10px] text-gravel/80">{topic.postCount.toLocaleString('nl-BE')}</span>
+              </button>
+            ))}
+          </nav>
+        </div>
       </header>
 
-      <div className={`grid gap-5 pt-5 ${hasDetailSelection ? 'lg:grid-cols-[14rem_minmax(0,1fr)_20rem]' : 'lg:grid-cols-[14rem_minmax(0,1fr)]'}`}>
-        <aside className="self-start lg:sticky lg:top-20" aria-label="Atlas uitleg en filters">
-          <div className="space-y-5 divide-y divide-chalk text-sm">
-            <section className="pb-5">
-              <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.18em] text-gravel">Hoe lezen</p>
-              <ol className="grid list-none gap-3 p-0">
-                <li><strong className="block font-medium">1. Thema-raster</strong><span className="text-gravel">Elke cel hoort bij een inhoudelijk gebied.</span></li>
-                <li><strong className="block font-medium">2. Nabijheid</strong><span className="text-gravel">Dichterbij betekent vaker verwant.</span></li>
-                <li><strong className="block font-medium">3. Inzoomen</strong><span className="text-gravel">Zoom door naar losse berichten.</span></li>
-              </ol>
-            </section>
-
-            <section className="py-5">
+      <div className={`grid gap-4 pt-4 ${hasDetailSelection ? 'xl:grid-cols-[10.5rem_minmax(0,1fr)_20rem]' : 'xl:grid-cols-[10.5rem_minmax(0,1fr)]'}`}>
+        <aside className="self-start border-b border-chalk pb-4 text-sm xl:sticky xl:top-20 xl:border-b-0 xl:pb-0" aria-label="Atlas filters">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-1">
+            <section>
               <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.18em] text-gravel">Filters</p>
               <div className="grid gap-3">
-                <label className="grid gap-1 text-sm text-gravel">Thema<Select value={filters.topic} onValueChange={(value) => setFiltersWithUrl({ ...filters, topic: value }, 'push', { clearPoint: true, clusterId: value === 'all' ? null : value })}><SelectTrigger className="rounded-none border-0 border-b border-chalk bg-transparent px-0 shadow-none"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle thema’s</SelectItem>{sortedTopics.map((topic) => <SelectItem key={topic.id} value={topic.id}>{topicDisplayLabel(topic)} ({topic.postCount})</SelectItem>)}</SelectContent></Select></label>
-                <label className="grid gap-1 text-sm text-gravel">Jaar<Select value={filters.year} onValueChange={(value) => setFiltersWithUrl({ ...filters, year: value })}><SelectTrigger className="rounded-none border-0 border-b border-chalk bg-transparent px-0 shadow-none"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle jaren</SelectItem>{years.map((year) => <SelectItem key={year} value={String(year)}>{year}</SelectItem>)}</SelectContent></Select></label>
-                <label className="grid gap-1 text-sm text-gravel">Seizoen<Select value={filters.season} onValueChange={(value) => setFiltersWithUrl({ ...filters, season: value })}><SelectTrigger className="rounded-none border-0 border-b border-chalk bg-transparent px-0 shadow-none"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle seizoenen</SelectItem><SelectItem value="lente">lente</SelectItem><SelectItem value="zomer">zomer</SelectItem><SelectItem value="herfst">herfst</SelectItem><SelectItem value="winter">winter</SelectItem></SelectContent></Select></label>
-                <button className={`mt-1 flex min-h-9 items-center justify-between border border-chalk px-3 text-left text-sm transition-colors ${filters.imagesOnly ? 'bg-obsidian text-eggshell' : 'bg-eggshell text-obsidian hover:bg-powder'}`} type="button" onClick={() => setFiltersWithUrl({ ...filters, imagesOnly: !filters.imagesOnly })}>Alleen met beelden <Images className="size-4" aria-hidden="true" /></button>
-                <Button className="mt-1 justify-start rounded-none bg-transparent px-0 text-obsidian shadow-none hover:!bg-transparent hover:text-obsidian" variant="ghost" type="button" onClick={resetFilters}>Reset kaart <RotateCw className="size-4" aria-hidden="true" /></Button>
+                <label className="grid gap-1 text-xs text-gravel">Thema<Select value={filters.topic} onValueChange={(value) => setFiltersWithUrl({ ...filters, topic: value }, 'push', { clearPoint: true, clusterId: value === 'all' ? null : value })}><SelectTrigger className="h-8 rounded-none border-0 border-b border-chalk bg-transparent px-0 text-left text-sm shadow-none"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle thema’s</SelectItem>{sortedTopics.map((topic) => <SelectItem key={topic.id} value={topic.id}>{topicDisplayLabel(topic)} ({topic.postCount})</SelectItem>)}</SelectContent></Select></label>
+                <label className="grid gap-1 text-xs text-gravel">Jaar<Select value={filters.year} onValueChange={(value) => setFiltersWithUrl({ ...filters, year: value })}><SelectTrigger className="h-8 rounded-none border-0 border-b border-chalk bg-transparent px-0 text-left text-sm shadow-none"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle jaren</SelectItem>{years.map((year) => <SelectItem key={year} value={String(year)}>{year}</SelectItem>)}</SelectContent></Select></label>
+                <label className="grid gap-1 text-xs text-gravel">Seizoen<Select value={filters.season} onValueChange={(value) => setFiltersWithUrl({ ...filters, season: value })}><SelectTrigger className="h-8 rounded-none border-0 border-b border-chalk bg-transparent px-0 text-left text-sm shadow-none"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle seizoenen</SelectItem><SelectItem value="lente">lente</SelectItem><SelectItem value="zomer">zomer</SelectItem><SelectItem value="herfst">herfst</SelectItem><SelectItem value="winter">winter</SelectItem></SelectContent></Select></label>
+                <button className={`flex min-h-8 items-center justify-between border-b border-chalk px-0 text-left text-sm transition-colors ${filters.imagesOnly ? 'text-obsidian' : 'text-gravel hover:text-obsidian'}`} type="button" onClick={() => setFiltersWithUrl({ ...filters, imagesOnly: !filters.imagesOnly })}><span>Beelden</span><span className="font-mono text-xs">{filters.imagesOnly ? 'aan' : 'alle'}</span></button>
+                <Button className="h-8 justify-start rounded-none bg-transparent px-0 text-xs text-gravel shadow-none hover:!bg-transparent hover:text-obsidian" variant="ghost" type="button" onClick={resetFilters}>Reset <RotateCw className="size-3.5" aria-hidden="true" /></Button>
               </div>
+            </section>
+
+            <section>
+              <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.18em] text-gravel">Weergave</p>
+              <div className="grid gap-1 font-mono text-sm text-gravel" aria-label="Weergave">
+                {(['points', 'clusters'] as ViewMode[]).map((mode) => (
+                  <button key={mode} className={`flex items-center gap-2 py-1 text-left ${viewMode === mode ? 'text-obsidian' : 'hover:text-obsidian'}`} type="button" onClick={() => setViewMode(mode)}>
+                    <span aria-hidden="true">{viewMode === mode ? '•' : '○'}</span>{mode === 'points' ? 'Punten' : 'Thema’s'}
+                  </button>
+                ))}
+              </div>
+              <p className="mt-4 font-mono text-[11px] leading-5 text-gravel">{visibleStatus}</p>
             </section>
           </div>
         </aside>
 
         <main className="min-w-0">
-          <div className="mb-3 flex flex-wrap items-center justify-between gap-3 text-sm text-gravel">
-            <span>Begin op themaniveau, klik een cluster, zoom daarna door naar berichten.</span>
-            <Badge className="rounded-none bg-transparent px-0 py-0 font-mono text-[11px] text-gravel shadow-none" variant="secondary">{visibleStatus}</Badge>
-          </div>
-
-          <div className="relative h-[66vh] min-h-[34rem] max-h-[52rem] overflow-hidden border border-chalk bg-[radial-gradient(circle_at_28%_18%,rgba(139,90,43,0.10),transparent_28%),radial-gradient(circle_at_75%_70%,rgba(86,122,75,0.10),transparent_24%),linear-gradient(180deg,rgba(249,247,244,0.92),rgba(253,252,252,0.66))] shadow-[0_22px_80px_rgba(31,29,27,0.08)]">
+          <div ref={mapShellRef} className="relative h-[76vh] min-h-[38rem] max-h-[58rem] overflow-hidden border border-chalk bg-[#fbfbfa] shadow-[0_22px_80px_rgba(31,29,27,0.06)] max-md:h-[68vh] max-md:min-h-[28rem] fullscreen:h-screen fullscreen:max-h-none fullscreen:min-h-0 fullscreen:w-screen fullscreen:border-0">
             <div className="absolute left-4 top-4 z-10 flex items-center gap-1" aria-label="Kaartbediening">
               <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={resetView} aria-label="Pas kaart in"><Home className="size-4" /></Button>
-              <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={() => setScale((value) => clamp(value * 1.28, MIN_ATLAS_SCALE, MAX_ATLAS_SCALE))} aria-label="Inzoomen"><Plus className="size-4" /></Button>
-              <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={() => setScale((value) => clamp(value / 1.28, MIN_ATLAS_SCALE, MAX_ATLAS_SCALE))} aria-label="Uitzoomen"><Minus className="size-4" /></Button>
-              <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={resetView} aria-label="Centreer kaart"><LocateFixed className="size-4" /></Button>
-            </div>
-
-            <div className="absolute right-4 top-4 z-10 flex bg-eggshell/85 text-xs backdrop-blur" aria-label="Weergave">
-              {(['points', 'clusters', 'density'] as ViewMode[]).map((mode) => (
-                <button key={mode} className={`px-3 py-2 ${viewMode === mode ? 'bg-obsidian text-eggshell' : 'text-gravel hover:text-obsidian'}`} type="button" onClick={() => setViewMode(mode)}>
-                  {mode === 'points' ? 'Punten' : mode === 'clusters' ? 'Thema’s' : 'Dichtheid'}
-                </button>
-              ))}
+              <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={() => zoomAtViewportCenter(1.28)} aria-label="Inzoomen"><Plus className="size-4" /></Button>
+              <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={() => zoomAtViewportCenter(1 / 1.28)} aria-label="Uitzoomen"><Minus className="size-4" /></Button>
+              <Button className="size-9 rounded-full bg-eggshell/85 p-0 shadow-none backdrop-blur hover:bg-powder" variant="ghost" size="icon" type="button" onClick={fullscreenMap} aria-label="Volledig scherm"><Maximize2 className="size-4" /></Button>
             </div>
 
             <canvas
-              className="absolute inset-0 h-full w-full cursor-grab active:cursor-grabbing"
+              className="absolute inset-0 h-full w-full cursor-grab touch-none active:cursor-grabbing"
               ref={canvasRef}
               aria-label="Kaart van het archief"
               onMouseMove={updateHover}
-              onMouseLeave={() => setHoverPoint(null)}
+              onMouseLeave={clearHover}
               onClick={(event) => {
+                if (suppressNextClickRef.current) {
+                  suppressNextClickRef.current = false
+                  return
+                }
                 const point = nearestPoint(event)
                 if (point) { selectPoint(point); return }
                 const cluster = nearestCluster(event)
                 if (cluster) selectTopic(cluster.topicId)
               }}
-              onPointerDown={(event) => { setDragging(true); canvasRef.current?.setPointerCapture(event.pointerId); dragStart.current = { x: event.clientX, y: event.clientY, panX: pan.x, panY: pan.y } }}
-              onPointerMove={(event) => { if (!dragging) return; setPan({ x: dragStart.current.panX + event.clientX - dragStart.current.x, y: dragStart.current.panY + event.clientY - dragStart.current.y }); setHoverPoint(null) }}
+              onPointerDown={(event) => { setDragging(true); suppressNextClickRef.current = false; canvasRef.current?.setPointerCapture(event.pointerId); dragStart.current = { x: event.clientX, y: event.clientY, panX: pan.x, panY: pan.y } }}
+              onPointerMove={(event) => {
+                if (!dragging) return
+                const dx = event.clientX - dragStart.current.x
+                const dy = event.clientY - dragStart.current.y
+                if (dx * dx + dy * dy > 36) suppressNextClickRef.current = true
+                setPan({ x: dragStart.current.panX + dx, y: dragStart.current.panY + dy })
+                setHoverPoint(null)
+              }}
               onPointerUp={(event) => { setDragging(false); canvasRef.current?.releasePointerCapture(event.pointerId) }}
+              onPointerCancel={(event) => { setDragging(false); suppressNextClickRef.current = false; canvasRef.current?.releasePointerCapture(event.pointerId) }}
             />
 
             <div className="absolute bottom-4 left-4 z-10 flex flex-wrap items-center gap-3 bg-eggshell/80 px-3 py-2 text-xs text-gravel backdrop-blur">
-              <span className="inline-flex items-center gap-2"><span className="size-2 bg-obsidian" />Punt = bericht</span>
-              <span className="inline-flex items-center gap-2"><span className="h-4 w-5 border border-ember/35 bg-ember/10" />Raster = clustergebied</span>
+              <span className="inline-flex items-center gap-2"><span className="size-2 rounded-full bg-obsidian" />Stip = bericht</span>
+              <span className="inline-flex items-center gap-2"><span className="h-3 w-5 rounded-full border border-obsidian/10 bg-obsidian/5" />Eiland = dicht thema</span>
               <span>{sortedTopics.length.toLocaleString('nl-BE')} thema’s</span>
             </div>
             {showMiniMap ? (
@@ -1125,7 +1021,7 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
             {hoverPoint && (
               <div ref={tooltipRef} className="fixed z-50 max-w-sm" style={{ left: tooltipPosition.left, top: tooltipPosition.top }}>
                 <div className="grid grid-cols-[4.5rem_1fr] gap-3 bg-eggshell/95 p-3 text-sm backdrop-blur">
-                  {hoverPoint.image ? <img className="size-18 object-cover" src={thumbImage(hoverPoint.image)} data-fallback-src={archiveAssetUrl(hoverPoint.image)} alt="" loading="lazy" onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = event.currentTarget.dataset.fallbackSrc || hoverPoint.image || '' }} /> : <div className="grid size-18 place-items-center bg-powder"><Images className="size-5 text-gravel" /></div>}
+                  {!hoveringAtlas && hoverPoint.image ? <img className="size-18 object-cover" src={tinyThumbImage(hoverPoint.image)} data-fallback-src={smallThumbImage(hoverPoint.image)} alt="" loading="lazy" decoding="async" fetchPriority="low" onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = event.currentTarget.dataset.fallbackSrc || hoverPoint.image || '' }} /> : <div className="grid size-18 place-items-center bg-powder"><Images className="size-5 text-gravel" /></div>}
                   <div><p className="mb-1 text-xs text-gravel">{formatDate(hoverPoint.date)} · {labelFor(hoverPoint.topicId)}</p><strong className="line-clamp-2 font-medium">{hoverPoint.title}</strong><span className="mt-1 inline-flex items-center gap-1 text-xs text-gravel">Klik voor details <ArrowRight className="size-3.5" aria-hidden="true" /></span></div>
                 </div>
               </div>
@@ -1173,18 +1069,6 @@ export default function SemanticAtlasApp({ initialPoints = [], initialTopics = [
           </aside>
         )}
       </div>
-
-      <section className="mt-6 border-t border-chalk pt-4" id="atlas-startpunten" aria-labelledby="atlas-startpoints-title">
-        <div className="mb-3 flex items-center justify-between gap-3"><div><p className="eyebrow">Startpunten</p><h2 id="atlas-startpoints-title" className="m-0 font-heading text-2xl font-normal">Thema’s op de kaart</h2></div><span className="font-mono text-[11px] text-gravel">klik om te focussen</span></div>
-        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-6">
-          {startpointTopics.map(({ category, topic, point, Icon }) => (
-            <button className="group grid grid-cols-[3.5rem_1fr] gap-3 bg-transparent py-3 text-left" key={topic.id} type="button" onClick={() => selectTopic(topic.id, true)}>
-              {point?.image ? <img className="size-14 object-cover" src={thumbImage(point.image)} data-fallback-src={archiveAssetUrl(point.image)} alt="" loading="lazy" onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = event.currentTarget.dataset.fallbackSrc || point.image || '' }} /> : <span className="grid size-14 place-items-center bg-powder"><Icon className="size-5 text-gravel" aria-hidden="true" /></span>}
-              <span className="min-w-0"><span className="flex items-center gap-2 text-sm font-medium"><span className="size-2 rounded-full shrink-0" style={{ backgroundColor: colorFor(topic.id) }} />{category.label}</span><span className="mt-1 block text-xs leading-5 text-gravel">{topic.postCount.toLocaleString('nl-BE')} berichten · {shortLabel(category.description, 48)}</span></span>
-            </button>
-          ))}
-        </div>
-      </section>
     </section>
   )
 }

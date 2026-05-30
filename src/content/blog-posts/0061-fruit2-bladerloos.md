@@ -6,7 +6,7 @@ title: "Bladerloos"
 date: "05-09-2019"
 isoDate: "2019-09-05T19:52:00"
 time: "19:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bladerloos Op 29/7 was er de blog ‘Gele bladeren’. Korte tijd nadien zijn die praktisch allemaal afgevallen. De Mutsu is er wel het ergst aan toe. Volgende winter wordt die afgezaagd en kan de eronder staande okkernoot – wellicht door een e"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2265359.html"

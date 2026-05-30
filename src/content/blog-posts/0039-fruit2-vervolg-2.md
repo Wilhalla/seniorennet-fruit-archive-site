@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "23-10-2019"
 isoDate: "2019-10-23T20:48:00"
 time: "20:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Kanten hoofddeksel Rijke familie (Otto Van Veen) Dreef naar het kasteel kasteel Waterkasteel St Goedele in de kapel Kerk Moorsel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2276523.html"

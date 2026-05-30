@@ -6,7 +6,7 @@ title: "Eerste Koekoekroep"
 date: "10-04-2015"
 isoDate: "2015-04-10T08:31:00"
 time: "08:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Eerste Koekoekroep Vanmorgen, even voor 8u was de koekoek volop aan het roepen in Zoersel. We beleven de eerste warme lentedagen: voor vandaag (10/4) voorspelt weerman Debosere 22°, gisteren 20°. Overdag dartelden af en toe citroenvlinders "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1749146.html"

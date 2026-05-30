@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "01-05-2018"
 isoDate: "2018-05-01T11:44:00"
 time: "11:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Boom 11. Veerle bij Ceder 12. De bast 13. Uitleg 14. Veerle 15. Nog een reuzenceder 16. Uitleg 17. Boom op boom 18. Met Rene"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2142930.html"

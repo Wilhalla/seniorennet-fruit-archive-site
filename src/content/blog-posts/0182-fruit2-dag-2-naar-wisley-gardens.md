@@ -6,7 +6,7 @@ title: "Dag 2 naar Wisley Gardens"
 date: "03-09-2018"
 isoDate: "2018-09-03T22:08:00"
 time: "22:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dag 2 naar Wisley Gardens Zoals 20 jaar terug bezoeken we eerst de mpderne, Angkikaanse kathedraal van Guilford. Deugddoend weerzien met Adrian Baggeley, die speciaal van midden Engeland naar Wisley gekomen is. We hebben zijn tuin in Woodbo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2174749.html"

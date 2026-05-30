@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "22-04-2019"
 isoDate: "2019-04-22T23:36:00"
 time: "23:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "10. Jus de Mer, het bier van Middelkerke 11. De feesttafel in het restaurant van de Luchthaven van Oostende 12. Idem 13. Idem 14. Idem 15. Uw dienaar 16. Monument voor de luchthaven"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232785.html"

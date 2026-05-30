@@ -6,7 +6,7 @@ title: "Mezen"
 date: "15-01-2016"
 isoDate: "2016-01-15T15:24:00"
 time: "15:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mezen Ik heb tot vorige week moeten wachten om het eerste koppeltje pimpelmezen bij de vetbollen te zien. De koolmezen zijn gelukkig nog talrijk. In het pas ontvangen ‘Zoerselbos’, het blad van de Vrienden van Zoerselbos (info@zoerselbos.be"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1864530.html"

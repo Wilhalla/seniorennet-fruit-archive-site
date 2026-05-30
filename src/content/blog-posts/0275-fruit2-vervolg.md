@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "05-10-2017"
 isoDate: "2017-10-05T21:24:00"
 time: "21:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Romaanse Mariakerk.basiliek, 11de- 12 deb eeuw 11. Idem 12. Interieur 13. Huis 14. Hellepoort 15. Restant stadsmuur met wachttoren 16. Uitleg door de gids 17. Stille straat 18. Ook hier voorname huizen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2079120.html"

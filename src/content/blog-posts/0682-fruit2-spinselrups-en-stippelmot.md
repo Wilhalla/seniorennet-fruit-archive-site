@@ -6,7 +6,7 @@ title: "Spinselrups en Stippelmot"
 date: "03-06-2015"
 isoDate: "2015-06-03T15:11:00"
 time: "15:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Spinselrups en Stippelmot Sinds een paar weken zie ik hier en daar spinselnesten. Veel zijn het er niet. De schade is echt verwaarloosbaar.Toen ik de eerste spinsels uitplukte, zaten de rupsjes er meestal nog in. Een week daarna waren die a"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1773007.html"

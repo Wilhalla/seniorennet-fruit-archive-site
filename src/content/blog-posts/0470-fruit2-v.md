@@ -6,7 +6,7 @@ title: "V"
 date: "07-07-2016"
 isoDate: "2016-07-07T22:17:00"
 time: "22:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Groep 11. Hoofdkwartier 12. Groep 13. Wegen in het fort 14. U verlaat het Castellum 15. Opgegraven boot met uitleg 16. Maquette 17. Wilde appelboom 18. Romeins castellum Nigrum Pullum"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1933676.html"

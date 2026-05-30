@@ -6,7 +6,7 @@ title: "Hanenhistorie"
 date: "22-01-2018"
 isoDate: "2018-01-22T12:55:00"
 time: "12:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Hanenhistorie Vorig jaar hoorde ik op een avond in de lente hanengekraai op het erf en zag dit jonge prachtbeest (had nog geen sporen). ’s Anderdaags zag ik hem al temidden van de kippen. Hij was over de afsluiting binnengevlogen in de ren."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2113401.html"

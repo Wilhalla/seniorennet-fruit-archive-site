@@ -6,7 +6,7 @@ title: "Jardin Majorelle Marrakech"
 date: "01-04-2015"
 isoDate: "2015-04-01T22:38:00"
 time: "22:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Jardin Majorelle Marrakech Een schoonheidservaring We logeren in Dar Zemrane niet ver van de Doukala moskee. We wandelen de Medina (oude stad) uit door een van de vele poorten in de muur die de ganse Medina omsluit. De Majorelle tuin ligt n"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1745265.html"

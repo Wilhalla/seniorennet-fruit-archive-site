@@ -6,7 +6,7 @@ title: "Kaartenkasteel Jonathan Dhondt"
 date: "18-11-2017"
 isoDate: "2017-11-18T12:21:00"
 time: "12:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kaartenkasteel Jonathan Dhondt Vorige donderdag 16/11 werd Jonathan, de jongste van de 14 kleinkinderen 16. Van de school St. Jan in Westmalle kregen zij de opdracht een museum te bezoeken en dan iets te maken. Hij koos het kaartenmuseum in"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2093283.html"

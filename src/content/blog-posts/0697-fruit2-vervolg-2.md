@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "14-05-2015"
 isoDate: "2015-05-14T20:35:00"
 time: "20:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Op de rondrit: molen Nog een molen En nog een Zelf een vierde. Het zijn allemaal gemaalmolens om water over te pompen. Ooit waren er in de streek in de twintig, doch die werden door de Fransen , eerst die van Lodewijk XVI en dan d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1764360.html"

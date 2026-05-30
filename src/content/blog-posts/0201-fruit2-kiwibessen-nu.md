@@ -6,7 +6,7 @@ title: "KIWIbessen nu"
 date: "15-06-2018"
 isoDate: "2018-06-15T13:59:00"
 time: "13:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "KIWIbessen nu Aan Geneva: niets Slechts aan de Weiki, de Beierse kiwibes hangen vruchten. Aan Ken’s Red: niets Aan Jumbo: niets Aan Maki: niets De mannelijke kiwibes heeft wel uitbundig gebloeid. Tegens de huismuur staat Issaï er wel goed v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2155023.html"

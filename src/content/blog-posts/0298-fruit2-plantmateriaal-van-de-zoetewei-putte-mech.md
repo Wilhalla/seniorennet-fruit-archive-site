@@ -6,7 +6,7 @@ title: "Plantmateriaal van de Zoetewei Putte (Mech.)"
 date: "03-09-2017"
 isoDate: "2017-09-03T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Plantmateriaal van de Zoetewei Putte (Mech.) www.kwekerijdezoetewei.be Deze kwekerij heeft waarlijk een fantastische collectie! Mijn nieuwe aanwinsten: Kweepeer Miagkoplodnaja Kan ook rauw geproefd worden. Russische selectie met peervormige"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2069385.html"

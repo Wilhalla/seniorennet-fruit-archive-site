@@ -6,7 +6,7 @@ title: "13de Afrikaans Tuinfeest"
 date: "08-07-2019"
 isoDate: "2019-07-08T13:02:00"
 time: "13:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "13de Afrikaans Tuinfeest Wat een feest gisteren ! En wat een volk was er aanwezig ! Een waar succes ! ’n Dikke proficiat aan alle mensen die hieraan hebben meegewerkt, jezelf en je dochters Leen en Tinneke op kop ! Het project in Going zal "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2251365.html"

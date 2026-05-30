@@ -2,12 +2,12 @@
 id: "2221971"
 blog: "fruit2"
 slug: "fruit2-2221971"
-title: "Daniel Willaeys, 84 blikt terug"
+title: "Daniël Willaeys, 84 blikt terug"
 date: "10-03-2019"
 isoDate: "2019-03-10T20:34:00"
 time: "20:34"
-author: "Daniel Willaeys"
-excerpt: "Daniel Willaeys, 84 blikt terug Per 1 dec 1960 verhuisden we van Schaarbeek naar het 2de verdiep van de eerste hoekwoning op de Andre Hermanslaan, 24 en de Antoon Van Den Bosschelaan tegen Den Antwerp te Deurne. Ik zag er toen nog de kuifle"
+author: "Daniël Willaeys"
+excerpt: "Daniël Willaeys, 84 blikt terug Per 1 dec 1960 verhuisden we van Schaarbeek naar het 2de verdiep van de eerste hoekwoning op de Andre Hermanslaan, 24 en de Antoon Van Den Bosschelaan tegen Den Antwerp te Deurne. Ik zag er toen nog de kuifle"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2221971.html"
 images: []
@@ -15,7 +15,7 @@ reactions: []
 ---
 
 <article class="materialized-post" data-blog="fruit2" data-id="2221971">
-<p><strong>Daniel Willaeys, 84 blikt terug</strong></p>
+<p><strong>Daniël Willaeys, 84 blikt terug</strong></p>
 
 <p>Per 1 dec 1960 verhuisden we van Schaarbeek naar het 2<sup>de</sup> verdiep van de eerste hoekwoning op de Andre Hermanslaan, 24 en de Antoon Van Den Bosschelaan tegen Den Antwerp te Deurne. Ik zag er toen nog de kuifleeuwerik op straat! </p>
 <p>Op 30 maart 1962 kochten wij te Halle Kempen de hoeve van louis Geysen, (toen op nr 16 van de Berkemei), die moest stoppen wegens hartproblemen. Boer Geysen ploegde nog de moestuin en op 17 april 1962 begon mijn tuiniersleven. De boer had gezegd dat ik moest spuiten op de prei. Aleide , mijn overleden vrouw, las het pakje. ”Die vuiligheid komt hier niet meer binnen. We eten wat er overblijft”. Later heb ik mij soms een geforcheerde bekeerling voor de bioteelt genoemd. </p>

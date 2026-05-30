@@ -6,7 +6,7 @@ title: "Resistente Buitendruiven Roland en Steuben"
 date: "17-10-2017"
 isoDate: "2017-10-17T22:55:00"
 time: "22:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Resistente Buitendruiven Roland en Steuben Vorige zaterdag bepaalden we de Brixwaarde (suikergehalte) van deze druiven. De naam van de tweekleurige was ik toen vergeten. Het is de druif Roland, een druif uit de Vlaamse Ardennen en verdeeld "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2083293.html"

@@ -6,7 +6,7 @@ title: "VOETEN 3"
 date: "22-10-2015"
 isoDate: "2015-10-22T00:26:00"
 time: "00:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VOETEN 3 Nu met Art Fan Zoersel 10/10 We werden gegidst door de jonge kunsthistorica Melissa. In vergelijking met vorig jaar is de opstelling te Herentals wat gewijzigd en dat geeft iets boeiends. Ik miste bij het binnenkomen wel het tingel"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1829344.html"

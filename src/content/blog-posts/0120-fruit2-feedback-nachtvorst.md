@@ -6,7 +6,7 @@ title: "Feedback nachtvorst"
 date: "21-04-2019"
 isoDate: "2019-04-21T20:14:00"
 time: "20:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback In België vroor daalde de temperatuur half april in de nacht plaatselijk tot 4,5 graden onder nul. “Op onze drie weerstations van PCfruit noteerden we temperaturen tot -2,8 graden”, vertelt directeur Jef Vercammen van Proefcentrum "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232551.html"

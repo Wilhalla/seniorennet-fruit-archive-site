@@ -6,7 +6,7 @@ title: "Naar de Eifel"
 date: "30-07-2019"
 isoDate: "2019-07-30T17:14:00"
 time: "17:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Naar de Eifel Okra 23juli Het was al warm die dag, doch nog niet zo warm als op wo. En zeker niet als op do, de warmste dag ooit. We rijden met ‘De Stille Kempen’ en chauffeur Marc. Voor mij een plezier om met hem te rijden. Steeds geeft hi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2256733.html"

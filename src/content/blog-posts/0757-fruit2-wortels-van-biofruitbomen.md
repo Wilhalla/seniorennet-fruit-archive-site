@@ -6,7 +6,7 @@ title: "Wortels van biofruitbomen"
 date: "03-03-2015"
 isoDate: "2015-03-03T13:17:00"
 time: "13:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wortels van biofruitbomen nemen meer voedingsstoffen op 02.03.2015 Op de wortels van fruitbomen in biologisch beheerde boomgaarden zitten meer schimmels om voedingsstoffen uit de grond te halen. Dat blijkt uit onderzoek van de KU Leuven. De"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1730722.html"

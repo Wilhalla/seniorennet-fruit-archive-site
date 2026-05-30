@@ -6,7 +6,7 @@ title: "Rivierenhof"
 date: "18-04-2016"
 isoDate: "2016-04-18T23:01:00"
 time: "23:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Rivierenhof op 17 april Art Fan nam het initiatief voor een luxeontbijt in het kasteel, gevolgd door een wandeling met een parkwachter. Voor het kasteel passeren voortdurend lopers van de marathon van Antwerpen. Ze hebben er dan al 34km opz"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1904144.html"

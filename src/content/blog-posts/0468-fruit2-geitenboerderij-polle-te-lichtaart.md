@@ -6,7 +6,7 @@ title: "Geitenboerderij Polle te Lichtaart"
 date: "09-07-2016"
 isoDate: "2016-07-09T22:17:00"
 time: "22:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Geitenboerderij Polle te Lichtaart 25/06 met Landelijke Gilde Halle & Sint-Antonius Niet ver van Bobbiaanland te Lichtaart hebben Polle en Veerle hun 600 geiten tellende bedrijf. Ik heb Paul D’Haene leren kennen in 1976. We richtten bij ons"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1934278.html"

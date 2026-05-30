@@ -6,7 +6,7 @@ title: "Brouwerij Het Anker"
 date: "20-06-2019"
 isoDate: "2019-06-20T22:08:00"
 time: "22:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Brouwerij Het Anker We hebben er eerst ons middagmaal met een Gouden Carolus tripel en de hoppige versie die meer in mijn smaak viel. De rondleiding met gids wist ons te boeien; de degustatie achteraf beviel mij maar matig. FOTO’S 1. Het An"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247402.html"

@@ -6,7 +6,7 @@ title: "Avioth"
 date: "28-09-2017"
 isoDate: "2017-09-28T21:54:00"
 time: "21:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Avioth Als we naar Avioth rijden, net over de grens in Frankrijk, wacht ons een parel: een grote, nog originele Vroeg Gothische Basiliek voor de pelgrims op weg naar Santiago de Compostella. De regen is al een tijdje opgehouden. Merkwaardig"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2077077.html"

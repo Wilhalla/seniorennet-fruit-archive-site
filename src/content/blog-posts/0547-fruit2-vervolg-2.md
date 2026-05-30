@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "25-03-2016"
 isoDate: "2016-03-25T22:00:00"
 time: "22:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Foto 26 is het huis nr 30 in de Transvaalstraat Een brozen paard in dit huis De Duivelkens van dit huis in de Tansvaalstraat zijn al niet goed meer te zien"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1894432.html"

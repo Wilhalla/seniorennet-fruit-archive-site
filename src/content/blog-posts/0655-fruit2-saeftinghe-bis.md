@@ -6,7 +6,7 @@ title: "Saeftinghe bis"
 date: "02-07-2015"
 isoDate: "2015-07-02T06:27:00"
 time: "06:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Saeftinghe bis Foto’s Andrea Van Langendonck"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1785040.html"

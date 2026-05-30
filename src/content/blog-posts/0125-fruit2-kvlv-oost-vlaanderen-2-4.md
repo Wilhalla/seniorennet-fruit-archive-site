@@ -6,7 +6,7 @@ title: "KVLV Oost-Vlaanderen (2 /4)"
 date: "02-04-2019"
 isoDate: "2019-04-02T23:21:00"
 time: "23:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "KVLV Oost-Vlaanderen (2 /4) Met Eddy van De Blauvoet. Het bezoek aan de ambachtelijke koffiebranderij Hoorens te Zottegem was een verrassing. Eveline, derde generatie, is namelijk de echtgenote van Panamarenco. Zij vertelde ons over de zach"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2228022.html"

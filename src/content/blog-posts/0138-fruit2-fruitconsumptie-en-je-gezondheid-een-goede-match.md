@@ -6,7 +6,7 @@ title: "Fruitconsumptie en je gezondheid: een goede match"
 date: "28-01-2019"
 isoDate: "2019-01-28T22:25:00"
 time: "22:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Fruitconsumptie en je gezondheid: een goede match Symposium ingericht door o.a. ProefCentrum Fruitteeelt (PCF), 75 j toegepast fruitteeltonderzoek. 23 jan. 2019 Hasselt Matchmaking Belgische fruitsoorten en gezondheidsbevorderende polyfenol"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2211426.html"

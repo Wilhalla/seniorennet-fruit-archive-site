@@ -6,7 +6,7 @@ title: "De Beeldentuin te Geel"
 date: "21-10-2015"
 isoDate: "2015-10-21T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Beeldentuin te Geel bij overtrokken en vrij fris weer. Bij de terugkomst was het te Zoersel zonnig! Gekwetste Arnold Breker Herfstkleuren Idem Idem Bij Panamarenko Saturnaliën Idem Buffel, geassorteerd met de bessen van de schoonvrucht A"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1829325.html"

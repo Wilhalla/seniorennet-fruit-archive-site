@@ -6,7 +6,7 @@ title: "Werken aan een radicaal nieuwe landbouw"
 date: "19-12-2019"
 isoDate: "2019-12-19T12:13:00"
 time: "12:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Werken aan een radicaal nieuwe landbouw op het BD/Demeter congres \"Ze hebben het over stikstof, maar het hele landbouwsysteem is failliet. Vertel gewoon de waarheid!\", aldus Ronald van Marlen. \"Het enige alternatief is het energieverbruik m"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2289251.html"

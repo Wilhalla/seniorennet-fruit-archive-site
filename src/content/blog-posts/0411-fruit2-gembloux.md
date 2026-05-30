@@ -6,7 +6,7 @@ title: "Gembloux"
 date: "28-09-2016"
 isoDate: "2016-09-28T20:18:00"
 time: "20:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gembloux zo. 25/09 In 1979 is prof Populer begonnen met de aanplant. Het was een hele tijd geleden dat ik Gembloux kon bezoeken en de mogelijkheid doet zich met jaren onderbreking voor. Voor de geleide wandeling in de voormiddag waren er tw"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1960667.html"

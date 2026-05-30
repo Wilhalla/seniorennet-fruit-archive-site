@@ -6,7 +6,7 @@ title: "De Turken"
 date: "20-05-2019"
 isoDate: "2019-05-20T22:56:00"
 time: "22:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Turken Voor het middagmaal reden we naar de sleepstraat met veel Turkse handelszaken en eetgelegenheden. Voor ons was dat Gok 2. Er zijn er nog 5 andere van broers van de uitbater. Eerst een kleurige, zeer verscheiden koude schotel. De s"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2239855.html"

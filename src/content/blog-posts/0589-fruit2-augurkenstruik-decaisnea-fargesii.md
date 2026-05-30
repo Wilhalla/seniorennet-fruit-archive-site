@@ -6,7 +6,7 @@ title: "AUGURKENSTRUIK (Decaisnea fargesii)"
 date: "14-10-2015"
 isoDate: "2015-10-14T23:23:00"
 time: "23:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "AUGURKENSTRUIK (Decaisnea fargesii) De blauwe vruchtpeulen leren kennen in de grote beeldentuin van Hugo Voeten te Geel, aangelegd door tuinarchitect Wirtz. Deze behoren tot het fruit. De open peul met vele zaden in de gelatineuze inhoud li"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1826353.html"

@@ -6,7 +6,7 @@ title: "Tweedaagse Voc-Antwerpen naar Amsterdam en Utrecht (3-4/11)"
 date: "26-11-2017"
 isoDate: "2017-11-26T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tweedaagse Voc-Antwerpen naar Amsterdam en Utrecht (3-4/11) Op de heenreis zorgde de welbespraakte voorzitter Paul Koop voor een prachtige situatieschets van de geschiedenis vooral van de 16de eeuw. In Amsterdam stapten we uit dichtbij het "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2096047.html"

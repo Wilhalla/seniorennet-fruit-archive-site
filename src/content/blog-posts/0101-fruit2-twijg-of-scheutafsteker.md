@@ -6,7 +6,7 @@ title: "Twijg- of scheutafsteker"
 date: "24-05-2019"
 isoDate: "2019-05-24T23:04:00"
 time: "23:04"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Twijg- of scheutafsteker Vroeger heb ik al de afgeknakte topscheutjes gezien, maar dit jaar zijn er duidelijk meer. Over welke kever gaat het? Vincent wist raad. Het betreft de twijg- of scheutafsteker , Rhynchites coeruleus, blauwe metaalg"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2240815.html"

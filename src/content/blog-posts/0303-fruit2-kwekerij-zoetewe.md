@@ -6,7 +6,7 @@ title: "Kwekerij Zoetewe"
 date: "12-08-2017"
 isoDate: "2017-08-12T16:46:00"
 time: "16:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Open Deur Kwekerij Zoetewei 120 2580 Putte Vandaag en morgen 13/08 is het open deur bij deze gespecialiseerde kwekerij van Dimitri Jacobs. Ze waren al ver op het veld en ik sloot mij aan. Ze hadden het over de vijgen, doch aan de andere kan"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2063370.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "20-06-2019"
 isoDate: "2019-06-20T22:23:00"
 time: "22:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Voor het restaurant met buschauffeur-gids Theo Verhoeven We waardeerden zeer zijn toelichtingen onderweg en genoten van de moppen. Vandaar is het slechts 12 km naar de Reiger te Ichtegem, op 48 m boven de zeespiegel, waar ik geb"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247411.html"

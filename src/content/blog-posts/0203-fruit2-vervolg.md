@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "14-06-2018"
 isoDate: "2018-06-14T21:30:00"
 time: "21:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Voor de Koi voederplaats 11. Idem 12. Koi 13. Shinto heiligdom 14. idem 15. idem 16. Klok met een prachtig geluid 17. Ginkgo biloba, een oerboom. Enkel de ml. exemplaren worden geplant. De vruchten van de vr. exemplren hebben ee"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2154867.html"

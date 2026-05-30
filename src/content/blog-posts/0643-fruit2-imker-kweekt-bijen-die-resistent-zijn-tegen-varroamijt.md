@@ -6,7 +6,7 @@ title: "Imker kweekt bijen die resistent zijn tegen varroamijt"
 date: "16-07-2015"
 isoDate: "2015-07-16T09:31:00"
 time: "09:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "15.07.2015 Imker kweekt bijen die resistent zijn tegen varroamijt Een imker uit de Vlaams-Brabantse gemeente Schepdaal is er in geslaagd om bijen te kweken die resistent (tolerant is correcter, nvdr.) zijn tegen de varroamijt. Die parasiet "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1791275.html"

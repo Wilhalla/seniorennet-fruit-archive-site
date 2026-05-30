@@ -4,8 +4,33 @@ import ChronologicalFeed from '../components/ChronologicalFeed'
 import { aggregatedPostIndex } from '../lib/postIndex'
 ---
 <BaseLayout
-  title="Chronologische tijdlijn · Daniel Willaeys fruitarchief"
-  description="Alle berichten uit het fruitarchief van Daniel Willaeys."
+  title="Chronologische tijdlijn · Blogarchief Daniël Willaeys"
+  description="Alle berichten uit het blogarchief van Daniël Willaeys."
 >
+  <div id="home-page-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Tijdlijn laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Blogarchief Daniël Willaeys</span>
+      <small>tijdlijn laden</small>
+    </div>
+  </div>
   <ChronologicalFeed posts={aggregatedPostIndex} />
+  <script is:inline>
+    (() => {
+      const loader = document.getElementById('home-page-loader')
+      if (!loader) return
+      const showDelayMs = 420
+      const minVisibleMs = 520
+      const fadeMs = 220
+      const now = performance.now()
+      if (now < showDelayMs) {
+        loader.remove()
+        return
+      }
+      window.setTimeout(() => {
+        loader.classList.add('site-loader--dismissed')
+        window.setTimeout(() => loader.remove(), fadeMs)
+      }, Math.max(0, showDelayMs + minVisibleMs - now))
+    })()
+  </script>
 </BaseLayout>

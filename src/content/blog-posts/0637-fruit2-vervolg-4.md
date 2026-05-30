@@ -6,7 +6,7 @@ title: "VERVOLG 4"
 date: "01-08-2015"
 isoDate: "2015-08-01T11:13:00"
 time: "11:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 4 Bronzen van Irénée Duriez Ichtegem Idem Idem Idem Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797275.html"

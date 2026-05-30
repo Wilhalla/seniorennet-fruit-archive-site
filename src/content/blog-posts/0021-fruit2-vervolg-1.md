@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "18-12-2019"
 isoDate: "2019-12-18T21:51:00"
 time: "21:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 10. Grensmuseum 11. Idem 12. Idem 13. Grensafsluiting 14. Uitkijktoren 15. Grenszuil en mitrailjeurpost 16. Vergelijk 17. Boerderij onderweg 18. Dorp onderweg"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2289166.html"

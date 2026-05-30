@@ -6,7 +6,7 @@ title: "Water weg"
 date: "19-01-2017"
 isoDate: "2017-01-19T13:46:00"
 time: "13:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Water weg Vijf dagen later ‘s morgens stonden de noten nog overstroomd. ’s Anderendaags,18/1 zie ik dat het peil 30 cm gezakt is in nog geen volledig etmaal. En er zit stroming op. Gisteren is men de met riet overgroeide afvoergracht naar h"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1999246.html"

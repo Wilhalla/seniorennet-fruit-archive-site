@@ -6,7 +6,7 @@ title: "Rassenlijsten"
 date: "18-12-2016"
 isoDate: "2016-12-18T20:02:00"
 time: "20:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Rassenlijsten Slechts 1 lijst voor appel en 1 lijst voor peer: zeer ontgoochelend! Eerder in het boek. Bij een boomkweker: ”Vraag een Schone van Boskoop”. Kreeg geen plaats op de lijst! Ook kent men de Collina niet: een kruising tussen Elst"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1988184.html"

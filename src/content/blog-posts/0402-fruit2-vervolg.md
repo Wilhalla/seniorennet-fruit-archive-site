@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "11-10-2016"
 isoDate: "2016-10-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Glorie van Holland keuken Red Love Serena Met Jo J. en Marnix Vincent en Jo Marianne van Lienden Wandeling in de boomgaard (leifruitpad) Te determineren peren = Coneiller de la Cour Nynke Zijlstra, voorzitter van Fruit yn Fryslân en"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1965159.html"

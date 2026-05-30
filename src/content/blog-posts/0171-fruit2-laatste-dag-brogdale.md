@@ -6,7 +6,7 @@ title: "Laatste dag Brogdale"
 date: "22-09-2018"
 isoDate: "2018-09-22T19:33:00"
 time: "19:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Laatste dag Brogdale (26/8/2018) We gaan eerst lunchen in Faversham zelf want op Brogdale is het druk met de Ciderdag. We hebben weer de eer dat Joan Morgan, zoals steeds, ons persoonlijk zal gidsen. Joan Morgan is auteur van 2 basisboeken "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2179666.html"

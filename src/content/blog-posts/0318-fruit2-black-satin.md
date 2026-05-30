@@ -6,7 +6,7 @@ title: "Black Satin"
 date: "16-06-2017"
 isoDate: "2017-06-16T11:56:00"
 time: "11:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Black Satin Is bij mij de braam met de meest opvallende, wit-violette blooeiwijze. Dit ras stond het laatst in de 17de Rassenlijst voor Fruitgewassen 1985, een Nederlandse lijst voor de beroepsteelt. Krachtige groeier met opgaande, stekello"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2046938.html"

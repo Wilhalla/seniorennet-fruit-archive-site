@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "03-03-2015"
 isoDate: "2015-03-03T23:17:00"
 time: "23:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1730984.html"

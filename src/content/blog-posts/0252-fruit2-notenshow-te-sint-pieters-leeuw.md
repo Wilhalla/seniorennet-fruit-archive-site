@@ -6,7 +6,7 @@ title: "Notenshow te Sint-Pieters-Leeuw"
 date: "20-11-2017"
 isoDate: "2017-11-20T12:29:00"
 time: "12:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Notenshow te Sint-Pieters-Leeuw 11-12/11 Pieter De Ridder van het grote Tuincentrum Groendecor te St. Pieters- Leeuw nam het initiatief voor de grootste notenshow. 80 Okkernotenrassen uit België en Nederland werden er samengebracht, van kle"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2093824.html"

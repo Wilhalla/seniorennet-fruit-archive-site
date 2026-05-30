@@ -6,7 +6,7 @@ title: "In de Boomgaard van Louis Hoegaerts"
 date: "28-09-2015"
 isoDate: "2015-09-28T22:02:00"
 time: "22:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "In de Boomgaard van Louis Hoegaerts te Weerde 15/9 Louis Hoegaerts was voor zijn pensioen een van de sterkhouders van het Vrijbroekpark te Mechelen. Jaren geleden heb heb ik zijn plantage ook al eens bezochtt. De boomgaard ligt tegen de Zen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819454.html"

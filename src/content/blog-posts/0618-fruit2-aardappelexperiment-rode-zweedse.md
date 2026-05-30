@@ -6,7 +6,7 @@ title: "Aardappelexperiment Rode Zweedse"
 date: "09-09-2015"
 isoDate: "2015-09-09T20:23:00"
 time: "20:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Aardappelexperiment Rode Zweedse Vervolg van de blog van 17/06/2015 De eind mei, zeer laat geplante aardappelen Rode Zweedse, met de 30 cm lange scheuten, gaven een goede opbrengst."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1811737.html"

@@ -6,7 +6,7 @@ title: "Gemeentemuseum Den Haag"
 date: "09-03-2015"
 isoDate: "2015-03-09T23:51:00"
 time: "23:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gemeentemuseum Den Haag Na de middag brengt de bus ons naar het grote Gemeentemuseum (1935). Ik behoor tot de groep die eerst de vaste collectie kan bezoeken. Hoofdaccent is moderne kunst vanaf het begin van de 19 de eeuw. Het Gemeentemuseu"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1734273.html"

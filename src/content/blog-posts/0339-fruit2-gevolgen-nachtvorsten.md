@@ -6,7 +6,7 @@ title: "Gevolgen Nachtvorsten"
 date: "22-04-2017"
 isoDate: "2017-04-22T17:32:00"
 time: "17:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gevolgen Nachtvorsten Zoersel heeft een eigen weerstation www.weerstationzoersel.be en mat op di.18/4 als laagste temperatuur 0,0° , op woensdag 19/4 -1,1° en op donderdag 20/4 – 2,7°. Dit zijn temperaturen onder termometerhut op 1,5m boven"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2029566.html"

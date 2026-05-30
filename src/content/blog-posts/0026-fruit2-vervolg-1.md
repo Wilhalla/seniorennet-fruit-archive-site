@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "06-12-2019"
 isoDate: "2019-12-06T16:56:00"
 time: "16:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 10. De oude gracht. Door werken aan de Rijn verlaagde de waterstand drastisch. Mooi meegenomen zou men in Nederland zeggen. In de wanden kon men kelders uitgraven voor oppslag van goederen. 11. Idem 12. De groep 13. Op de binnenko"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2286311.html"

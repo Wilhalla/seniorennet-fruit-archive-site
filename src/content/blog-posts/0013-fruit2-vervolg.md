@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "06-02-2020"
 isoDate: "2020-02-06T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. De nieuwe Rusticana appel, te proeven op de stand van Artevos. Kreeg het minste stemmen; toch mijn voorkeur. Geen verdere gegevens. 11. Amandel Papersky, blijkbaar gemakkelijk te kraken in tegenstelling met de zeer harde Robijn."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2300124.html"

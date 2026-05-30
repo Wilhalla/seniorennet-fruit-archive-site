@@ -6,7 +6,7 @@ title: "Pikant"
 date: "23-10-2019"
 isoDate: "2019-10-23T21:06:00"
 time: "21:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Pikant Expo te Moorsel (Aalst) Met Egenhoven 18/10 De draad waarmee men werkt is meestal vlasdraad Mijn dochters hebben nog even leren kantklossen. Op de wijkschool De Reiger te Ichtegem bestond voor de 1ste Wereldoorlog een Spellewerkerskl"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2276532.html"

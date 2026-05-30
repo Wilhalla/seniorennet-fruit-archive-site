@@ -6,7 +6,7 @@ title: "Kornoelje – Cornus mas"
 date: "11-02-2018"
 isoDate: "2018-02-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kornoelje – Cornus mas Ik heb de kornoelje leren kennen via Fik Seymus. Onlangs was er nog iemand die vroeg naar het oorspronkelijk artikeltje in een van de eerste Seizoentjes, het ledenblad van Velt. Fik had het over de ‘kornellebessen’. I"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2119650.html"

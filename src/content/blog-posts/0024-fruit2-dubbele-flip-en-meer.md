@@ -6,7 +6,7 @@ title: "Dubbele Flip en meer"
 date: "07-12-2019"
 isoDate: "2019-12-07T16:00:00"
 time: "16:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dubbele Flip en meer Op 1 dec. reed ik nog eens naar het verre Kemmel. Vroeger had ik al eens een Dubbele Flip geplant, doch achteraf bleek het een Beurré de Naghin. De Dubbele flip, Beurré de Merode, is een Belgische peer van Van Mons, 180"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2286513.html"

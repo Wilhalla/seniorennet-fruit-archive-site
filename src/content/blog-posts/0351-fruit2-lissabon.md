@@ -6,7 +6,7 @@ title: "Lissabon"
 date: "04-03-2017"
 isoDate: "2017-03-04T00:32:00"
 time: "00:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lissabon 22-27 februari 2017 In de zomer van 1974, na de Anjerrevolutie van 25 april, op reis met het gezin in Spanje en Portugal zagen we te Belem, deel van Lissabon, een eerste maal de Torre de Belem, het Zeevaardersmonument en bezochten "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2014135.html"

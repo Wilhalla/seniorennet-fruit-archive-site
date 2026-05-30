@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "01-08-2015"
 isoDate: "2015-08-01T11:26:00"
 time: "11:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Keramiek Petra Vandekerckhove Simonne Lintermans Keramiek Kasper Kerkinterieur Kunst met hout Bruno Jacksens Lissewege Kerk Idem Idem Lekebroeder Willem Van Saeftinghe, held in de Guldensporenslag 1302"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797282.html"

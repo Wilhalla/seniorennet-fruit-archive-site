@@ -6,7 +6,7 @@ title: "Bosuil - Steenuil"
 date: "08-10-2015"
 isoDate: "2015-10-08T21:37:00"
 time: "21:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bosuil - Steenuil Toen ik gisterenavond rond 20u30 even buiten kwam hoorde ik achteraan in de tuin de welluidende roep van de bosuil en even daarop het krijsende geluid van de steenuil. Beiden al een hele tijd niet meer gehoord. Van Valenti"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1823852.html"

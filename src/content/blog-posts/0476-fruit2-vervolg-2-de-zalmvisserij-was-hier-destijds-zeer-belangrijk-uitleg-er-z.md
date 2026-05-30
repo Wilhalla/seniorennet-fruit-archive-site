@@ -6,7 +6,7 @@ title: "VERVOLG 2 De zalmvisserij was hier destijds zeer belangrijk. Uitleg Er z
 date: "02-07-2016"
 isoDate: "2016-07-02T14:48:00"
 time: "14:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 De zalmvisserij was hier destijds zeer belangrijk. Uitleg Er zou terug zalm zitten in de Waal Molen Idem Landschap Wallen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1931754.html"

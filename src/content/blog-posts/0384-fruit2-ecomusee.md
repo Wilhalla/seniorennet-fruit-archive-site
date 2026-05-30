@@ -6,7 +6,7 @@ title: "Ecomusée"
 date: "08-11-2016"
 isoDate: "2016-11-08T20:51:00"
 time: "20:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Over de Schreve (Grens in het West-Vlaams) Ecomusée in Les Moêres, gemeente Ghyvelde. In de stallen van de hoeve is zeer veel materiaal van vroeger verzameld en thematisch opgesteld; Wij zijn nog bij de gelukkigen want in maart 2017 gaat he"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1974639.html"

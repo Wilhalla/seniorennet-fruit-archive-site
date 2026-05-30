@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "28-08-2019"
 isoDate: "2019-08-28T10:49:00"
 time: "10:49"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Nog een beeld van Irénée Duriez 11. Nestwarmte van J.-Pierre Belaen van Tielt 12. Hallen en Belfort van Brugge 13. Stadhuis op de Burcht 14. Gids Willem van De Stille Kempen 15. In de O.l. Vrouwekerk 16. Begijnhof Brugge, een pa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2263201.html"

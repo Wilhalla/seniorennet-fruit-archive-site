@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "25-06-2019"
 isoDate: "2019-06-25T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Geschiedenis Bethanië 11. Psychiatrie St. Antonius 12. Stop Joostens voor het ijsje 13. Joostens 14. Geschiedenis St. Antonius 15. Ontstaanvan Velt op infobord De Bunthoek 16. Jan Vorsselmans, jarenlang journalist voor het gemee"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2248439.html"

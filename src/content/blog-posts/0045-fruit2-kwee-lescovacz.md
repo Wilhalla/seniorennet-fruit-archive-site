@@ -6,7 +6,7 @@ title: "Kwee lescovacz"
 date: "05-10-2019"
 isoDate: "2019-10-05T23:18:00"
 time: "23:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kwee lescovacz Vandaag de kweepeer Lescovacz geplukt. Vorig jaar droegen alle kweeperen als nooit tevoren. Net als in 2017 was er dit jaar opnieuw slechts één goed dragend ras: Lescovacz. Bij Vranja en Rhea’s mammot slechts enkele, maar dan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2272333.html"

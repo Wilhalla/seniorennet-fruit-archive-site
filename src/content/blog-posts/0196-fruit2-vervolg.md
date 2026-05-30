@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "27-07-2018"
 isoDate: "2018-07-27T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Noot in pot 11. Blijkt het Nederlandse ras Coenen 13. Noot Dr Janowski of beter Drajowski 14. Rode Donau 15. Bemerk de dikke wand van de Rode Donau (3de rij); eronder de kleine, doch zeer gevulde noot 16. Bart van de Sluis van d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2165689.html"

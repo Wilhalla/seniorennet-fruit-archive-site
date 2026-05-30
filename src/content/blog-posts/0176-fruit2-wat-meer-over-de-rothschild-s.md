@@ -6,7 +6,7 @@ title: "Wat meer over de Rothschild’s"
 date: "17-09-2018"
 isoDate: "2018-09-17T17:48:00"
 time: "17:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wat meer over de Rothschild’s Medereiziger Johan Staf stuurde volgende link http://www.gewoon-nieuws.nl/2013/11/voor-iedereen-op-aarde-70-miljoen-als-rothschild-zijn-vermogen-deelt/"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178508.html"

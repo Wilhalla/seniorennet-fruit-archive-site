@@ -6,7 +6,7 @@ title: "Dag van de Aardbei (10/5)"
 date: "16-05-2015"
 isoDate: "2015-05-16T14:06:00"
 time: "14:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dag van de Aardbei (10/5) Rondleiding met de heer Jacobs FOTO’S Rondleiding met de heer Jacobs De frambozen staan er uitstekend bij in tegenstelling met vorig jaar. Toen richtten de talrijke wormen van de taxuskever door wortelvraat de aanp"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1765090.html"

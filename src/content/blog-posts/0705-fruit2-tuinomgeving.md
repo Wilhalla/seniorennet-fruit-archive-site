@@ -6,7 +6,7 @@ title: "Tuinomgeving"
 date: "05-05-2015"
 isoDate: "2015-05-05T14:47:00"
 time: "14:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tuinomgeving Als ik in de moestuin sta treffen mij steeds vooral de verticale lijnen. Ik had dit keer vooral oog voor de verschillende populieren. Mijn eerste aanplant hier was het in de grond steken van een tak van de voor de verkoop geroo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1760280.html"

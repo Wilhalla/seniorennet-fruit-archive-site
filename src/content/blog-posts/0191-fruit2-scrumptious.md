@@ -6,7 +6,7 @@ title: "Scrumptious"
 date: "07-08-2018"
 isoDate: "2018-08-07T22:46:00"
 time: "22:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Scrumptious 1985 Hugh Ermen, Faversham (Kent Engeland) Het woord scrumptious is bij ons weinig bekend. De betekenis : verrukkelijk, zeer appetijtelijk, delicieux... Gegevens Joan Morgan ‘New Book of Apples’: Starkspur Golden Delicious x Dis"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2168102.html"

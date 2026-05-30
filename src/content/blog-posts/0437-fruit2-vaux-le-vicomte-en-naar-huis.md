@@ -6,7 +6,7 @@ title: "Vaux-le-Vicomte en naar huis"
 date: "31-08-2016"
 isoDate: "2016-08-31T22:25:00"
 time: "22:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "ZO. 28 Aug. Vaux-le-Vicomte en naar huis Van Orleans rijden we tot het kasteel van Vaux-le-Vicomte ter hoogte van Melun. Een machtig geheel. Hier haalde Louis XIV de mosterd voor Versailles, dat hij liet oprichten met dezelfde meesters als "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1951061.html"

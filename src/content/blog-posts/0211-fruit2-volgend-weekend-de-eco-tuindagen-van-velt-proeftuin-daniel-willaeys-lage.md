@@ -6,7 +6,7 @@ title: "Volgend Weekend de ECO-Tuindagen van Velt Proeftuin Daniël Willaeys Lag
 date: "26-05-2018"
 isoDate: "2018-05-26T06:45:00"
 time: "06:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Volgend Weekend de ECO-Tuindagen van Velt Proeftuin Daniël Willaeys Lage Weg 60 2980 Halle-Zoersel Maak kennis met een landschappelijke, een bloemrijke, een eetbare, een bos-, een moes- en een zeer diverse enorme fruittuin. Op 1 hectare in "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2149455.html"

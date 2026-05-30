@@ -6,7 +6,7 @@ title: "Pethworth"
 date: "18-09-2018"
 isoDate: "2018-09-18T20:55:00"
 time: "20:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Pethworth In de namiddag rijden we door de heuvelende South Downs naar Pethworth. Het kasteel dateert al van de 17 de eeuw en bezit een schat aan kunstwerken, verzameld door vroegere eigenaars waaronder bv 17 Van Dyck’s. De schilderijen han"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178782.html"

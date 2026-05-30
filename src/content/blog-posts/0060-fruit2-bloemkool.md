@@ -6,7 +6,7 @@ title: "Bloemkool"
 date: "15-09-2019"
 isoDate: "2019-09-15T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bloemkool en bodemonderzoek Laatst ontving ik de resultaten van een bodemonderzoek van mijn tuin: Een PH van 6,5 Koolstof C 5,5 Bij een veel vroeger onderzoek was het reeds 3,5. En zeggen dat veel landbouwgronden met enkel kunstmest nog ond"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2267499.html"

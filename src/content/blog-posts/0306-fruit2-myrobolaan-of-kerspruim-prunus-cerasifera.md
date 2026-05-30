@@ -6,7 +6,7 @@ title: "myrobolaan of kerspruim, Prunus cerasifera"
 date: "05-08-2017"
 isoDate: "2017-08-05T15:26:00"
 time: "15:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "s Dit is een oude myrobolaan of kerspruim, Prunus cerasifera.Deze soort plant zich voort uit zaad. Geeft geen uitlopers.De vruchten variëren van geel, rood en mengvormen over blauw tot zwartblauw. Ik heb variëteiten die behoorlijk te eten z"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2061236.html"

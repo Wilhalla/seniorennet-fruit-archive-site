@@ -6,7 +6,7 @@ title: "Vroege Bloei"
 date: "20-03-2019"
 isoDate: "2019-03-20T09:51:00"
 time: "09:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vroege Bloei De foto’s dateren al van een week terug, toen tussen de vlagen door. Komt hier voldoende vruchtzetting van? Wellicht met het komende warmere weer lukt de bestuiving beter bij de kerspruimen/myrobolanen? (foto’s 1,2,3) en de kor"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2224613.html"

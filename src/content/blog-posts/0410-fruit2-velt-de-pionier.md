@@ -6,7 +6,7 @@ title: "VELT, De Pionier"
 date: "29-09-2016"
 isoDate: "2016-09-29T21:12:00"
 time: "21:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een geschiedenis van de biologische landbouw in Vlaanderen aan de hand van de absolute pionier: de Vereniging voor Ecologisch Leven en Tuinieren van 1973 tot 1995 Dries De Wilde Masterproef voorgelegd voor het behalen van de graad van Maste"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1961034.html"

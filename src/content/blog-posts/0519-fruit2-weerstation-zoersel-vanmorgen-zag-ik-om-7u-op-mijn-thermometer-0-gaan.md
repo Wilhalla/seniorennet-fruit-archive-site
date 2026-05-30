@@ -6,7 +6,7 @@ title: "Weerstation Zoersel Vanmorgen zag ik om 7u op mijn thermometer 0°. Gaan
 date: "28-04-2016"
 isoDate: "2016-04-28T08:14:00"
 time: "08:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Weerstation Zoersel Vanmorgen zag ik om 7u op mijn thermometer 0°. Gaan kijken wat ons weerstationzegt: laagste temperatuur – 0,4° om 5:57 (om 00:55 was het nog 3,3°). De zevendaagse voorspelling van het Bodemkundig Instituut te Heverlee ge"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1907703.html"

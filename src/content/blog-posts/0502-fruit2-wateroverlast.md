@@ -6,7 +6,7 @@ title: "Wateroverlast"
 date: "31-05-2016"
 isoDate: "2016-05-31T12:37:00"
 time: "12:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wateroverlast Gisteren heeft het hier ongeveer 50 l geregend. In de vorige eeuw was het eenmaal nog erger, maar toen waren we al begin september. Nu staan de bomen volop in groei en ze zullen zuurstofgebrek lijden, waarop de wortelen zullen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1920533.html"

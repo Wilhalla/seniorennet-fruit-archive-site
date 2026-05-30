@@ -6,7 +6,7 @@ title: "Zorg voor nieuwe aardbeiplanten"
 date: "19-07-2016"
 isoDate: "2016-07-19T18:33:00"
 time: "18:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zorg voor nieuwe aardbeiplanten Vorig jaar met het zeer droge weer, kwamen de uitlopers van de aardbeien maar zeer traag op gang. Dit jaar zijn ze er vlug bij. Van Yves Hendrickx van het biologische proefcentrum te Pamel heb ik geleerd dat "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1937362.html"

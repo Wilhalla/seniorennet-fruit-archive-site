@@ -6,7 +6,7 @@ title: "Breugel Tekeningen Black en White Brussel"
 date: "14-02-2020"
 isoDate: "2020-02-14T23:45:00"
 time: "23:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Breugel Tekeningen Black en White Brussel Met VOC Antwerpen 12-2-2020 Tijdens de 16de eeuw, was Vlaanderen het centrum voor de productie van en de handel in prenten. Bruegel en zijn uitgever, Hiëronymus Cock, speelden een sleutelrol. Veel d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2302253.html"

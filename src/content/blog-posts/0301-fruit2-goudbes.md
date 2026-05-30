@@ -6,7 +6,7 @@ title: "Goudbes"
 date: "15-08-2017"
 isoDate: "2017-08-15T23:49:00"
 time: "23:49"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Goudbes (Physalis pubescens of pruinosa) De Engelse naam : Cape goosberry De goudbes groeit van nature in de bovenste staten van de Verenigde Staten. Nog in de tijd van de zeilvaart werden ze opgemerkt om hun vitamine C en maanden bewaarbaa"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2064739.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "15-11-2016"
 isoDate: "2016-11-15T23:45:00"
 time: "23:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Kiliaan Rode Bonheider twee rassen van Mechelse pomologen. Rubinstep/Pirouette Kanzi, een appel uit de beroepsteelt Redlove Serena Doorrode appels komen in de mode Beurré Bosc, oude peer klassieker Beurré de Montluchon, zou ook een "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1977182.html"

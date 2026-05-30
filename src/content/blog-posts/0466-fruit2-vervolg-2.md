@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "19-07-2016"
 isoDate: "2016-07-19T22:51:00"
 time: "22:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Langs een kanaal 20. Brug boven een kanaal 21. Idem 22. Groep 23. Groep 24. Op wandel 25. Theo 26. Brug 27. Wolken. We hebben het getroffen met het weer."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1937457.html"

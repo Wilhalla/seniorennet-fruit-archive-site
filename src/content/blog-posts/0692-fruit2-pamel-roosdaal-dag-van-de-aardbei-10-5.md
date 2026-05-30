@@ -6,7 +6,7 @@ title: "Pamel –Roosdaal Dag van de Aardbei (10/5)"
 date: "16-05-2015"
 isoDate: "2015-05-16T13:30:00"
 time: "13:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Pamel –Roosdaal Dag van de Aardbei (10/5) Om de 2 jaar gaat hier in het Pajottenland op het Proefcetrum Biologische Teelt Aardbeien en Kleinfruit van de Provincie Brabant ‘De Dag van de Aardbei’ door. Volgend jaar in het Hageland te Diest. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1765081.html"

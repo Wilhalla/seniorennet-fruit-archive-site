@@ -6,7 +6,7 @@ title: "Internationale PflanzenMesse (IPM) Essen"
 date: "24-02-2015"
 isoDate: "2015-02-24T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Internationale PflanzenMesse (IPM) Essen Met Vincent en Andre de grote Tuinbeurs in het Duitse Essen bezocht: 12 zalen, 1500 standhouders, waarbij 33 op de stand Vlaanderen. (27jan) Op de Duitse stand van Artevos proefden we o.a. hun best s"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1727638.html"

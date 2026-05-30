@@ -6,7 +6,7 @@ title: "Op-gede-grond (Vincent)"
 date: "17-10-2017"
 isoDate: "2017-10-17T10:50:00"
 time: "10:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Op-goede-grond (Vincent)"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2083107.html"

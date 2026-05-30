@@ -6,7 +6,7 @@ title: "Wuustwezelnaar eet bananen uit eigen tuin"
 date: "18-08-2015"
 isoDate: "2015-08-18T19:20:00"
 time: "19:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wuustwezelnaar eet bananen uit eigen tuin Vandaag om 17:05 | Bron: ATV Print Delen Tweet Google+ Mail Shares Wuustwezel - Bananen in Wuustwezel... Het lijkt vreemd, maar aan de bananenplant in de tuin van Felix Hendriks groeit sinds een paa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1803337.html"

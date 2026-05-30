@@ -6,7 +6,7 @@ title: "Vervolg 3"
 date: "01-08-2015"
 isoDate: "2015-08-01T11:17:00"
 time: "11:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg 3 Bezoekerscentrum ‘De oude Pastorie’ met interessante boomgaard Knotwilgenlaantje Idem Dit is geen wilg doch een geknotte populier Boudewijnkanaal naar Brugge De toren in de verte Toots Tielemans Willy Slabinck Brugge De Tiendensch"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797277.html"

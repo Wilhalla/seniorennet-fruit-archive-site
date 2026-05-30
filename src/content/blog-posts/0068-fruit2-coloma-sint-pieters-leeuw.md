@@ -6,7 +6,7 @@ title: "Coloma Sint- Pieters- Leeuw"
 date: "18-08-2019"
 isoDate: "2019-08-18T16:36:00"
 time: "16:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Coloma Sint- Pieters- Leeuw Met een select gezelschap fruitgeïnteresseerden (16/2019) Een gedeelte van het 15 Ha grote domein wordt ingenomen door een fenomenale Rozentuin; een schoonheidsbeleving. FOTO’S 1. Gracht 2. Het kasteel Hier vond "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2261055.html"

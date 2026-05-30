@@ -6,7 +6,7 @@ title: "De CHUCKLEBERRY"
 date: "13-12-2018"
 isoDate: "2018-12-13T22:39:00"
 time: "22:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De CHUCKLEBERRY van Welsh Fruit Stocks Vandaag ging een lang gekoesterde droom in vervulling. Eindelijk heb ik de plant. Een Engelse vriend van Paul Bekaert bracht die mee. Ze is al uitgeplant. In het Berry Yearbook 2012 las ik over deze bi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2200279.html"

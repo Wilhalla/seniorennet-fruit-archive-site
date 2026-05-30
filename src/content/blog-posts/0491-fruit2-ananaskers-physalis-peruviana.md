@@ -6,7 +6,7 @@ title: "Ananaskers (Physalis peruviana)"
 date: "20-06-2016"
 isoDate: "2016-06-20T12:35:00"
 time: "12:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ananaskers (Physalis peruviana) Vorige zaterdag bezochten we met de moestuingroep Velt-Voorkempen de Velttuin Schoten. Het regenweer speelde ons wel parten. Naast het complex loopt een afvalbeek. Tweemaal in de voorbije weken liep de tuin g"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927493.html"

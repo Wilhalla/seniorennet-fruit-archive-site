@@ -6,7 +6,7 @@ title: "De leemte over de onderstammen!"
 date: "06-12-2016"
 isoDate: "2016-12-06T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De leemte over de onderstammen! Ik ben op het verkeerde been gezet. Bij de beschrijving van de onderstammen: hoogstam, halfstam (zeer ongenuanceerd) en laagstam (of struik, doch dit woord gebruikt men niet), vond ik niets over de gebruikeli"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1984308.html"

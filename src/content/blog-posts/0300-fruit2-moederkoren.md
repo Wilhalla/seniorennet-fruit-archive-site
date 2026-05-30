@@ -6,7 +6,7 @@ title: "Moederkoren"
 date: "21-08-2017"
 isoDate: "2017-08-21T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Moederkoren ? Zonet een rijpe suikermaïskolf ontdekt met paddenstoelachtig uitgroeisel. Wellicht is dit het gevreesde moederkoren? Moederkoorn (Wikepedia) Moederkoorn (Claviceps purpurea) of moederkoren is een schimmel uit de klasse van de "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2066366.html"

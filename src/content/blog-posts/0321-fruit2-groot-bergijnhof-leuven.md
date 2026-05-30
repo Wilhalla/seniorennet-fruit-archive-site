@@ -6,7 +6,7 @@ title: "Groot Bergijnhof Leuven"
 date: "13-06-2017"
 isoDate: "2017-06-13T16:21:00"
 time: "16:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Groot Bergijnhof Leuven Architecturale schoonheid Met de groep Egenhoven (19/05/2017) Gids was Benedicte Verstraete, in begijnenhabijt als Grootmeesteres. Precies echt. We startten aan de grote poort. Bij het binnenkomen was er rechts tijde"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2046189.html"

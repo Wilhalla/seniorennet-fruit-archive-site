@@ -6,7 +6,7 @@ title: "Colapuy"
 date: "04-11-2019"
 isoDate: "2019-11-04T22:13:00"
 time: "22:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Colapuy De Colapuy werd aangeraden voor een biotuin Ik ben niet akkoord. De Colapuy heb ik leren kennen in de Verger Conservatoire te Villeneuve d”Ascq (Lille) in 1987 op de eerste Open deur daar. Wellicht was het toen al nov. Twee rassen v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2279303.html"

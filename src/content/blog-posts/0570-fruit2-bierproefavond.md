@@ -6,7 +6,7 @@ title: "Bierproefavond"
 date: "20-11-2015"
 isoDate: "2015-11-20T19:23:00"
 time: "19:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bierproefavond van Art Fan Met Zythofiel (bierliefhebber) Jacques 4 Trappistenbieren en 4 abdijbieren Momenteel zijn er 11 trappistenbieren, d.w.z. bieren gebrouwen in een trappistenabdij. En 22 erkende abdijbieren. Dit houdt in erkend lid "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1841300.html"

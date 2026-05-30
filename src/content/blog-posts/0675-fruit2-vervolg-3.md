@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "13-06-2015"
 isoDate: "2015-06-13T21:56:00"
 time: "21:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Een van de beelden Beelden Evenwicht Godin Shiva Doeken Doek (1912) van de Franse schilder Francis Picobia 1879-1953 Beelden Brievenbussen of vogelkooitjes Figuren"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776917.html"

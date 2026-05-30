@@ -6,7 +6,7 @@ title: "Nonkel Andre Lagrou 90"
 date: "19-02-2019"
 isoDate: "2019-02-19T21:39:00"
 time: "21:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nonkel Andre Lagrou 90 (6-2-1929) Voor onze kinderen en kleinkinderen is nonkel Andre een begrip. Eigenlijk is hij een kozijn van mijn vrouw Aleide. Gans zijn leven heeft hij geboerd op het Laurierhof te Leffinge. Mijn zoon Peter is er heel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2217329.html"

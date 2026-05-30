@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "10-03-2017"
 isoDate: "2017-03-10T22:20:00"
 time: "22:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. De madam op het terras, foto van Michiel 11. Christusbeeld op het zuidereinde van dr 25 aprilbrug (M) 12. We komen in de LXFactorystraat 13. In de straat (P) 14. Idem met Michiel 15. Brug met er onder de Spoorweg, afgeschermd vo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2016658.html"

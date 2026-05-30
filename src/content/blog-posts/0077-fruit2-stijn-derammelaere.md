@@ -6,7 +6,7 @@ title: "Stijn Derammelaere"
 date: "24-07-2019"
 isoDate: "2019-07-24T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Stijn Derammelaere De Aaankondiging. wij : Alma, Akiko en Stijn geven een open tuin weekend, dit op 21 en 22juli. Je bent van harte uitgenodigd. Inkom is gratis. Telkens van 9u tot het donker is. Je kan dus afkomen en vertrekken wanneer je "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2255607.html"

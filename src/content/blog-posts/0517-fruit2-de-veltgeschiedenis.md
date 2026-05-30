@@ -6,7 +6,7 @@ title: "De Veltgeschiedenis"
 date: "29-04-2016"
 isoDate: "2016-04-29T12:15:00"
 time: "12:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Veltgeschiedenis Op 22/4 kwam Dries De Wilde, universiteit Gent mij, als stichtende secretaries van Velt vzw interviewen. Voor zijn masters geschiedenis nam hij de Velt als onderwerp. Hij doet pionierswerk; niemand is hem voorgegaan. Ik "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1908245.html"

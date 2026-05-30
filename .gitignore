@@ -12,6 +12,7 @@ s3_credentials.json
 public/archive-images/
 public/archive-thumbs/
 public/archive-thumbs-240/
+public/archive-thumbs-96/
 src/assets/archive-images/
 __pycache__/
 *.pyc

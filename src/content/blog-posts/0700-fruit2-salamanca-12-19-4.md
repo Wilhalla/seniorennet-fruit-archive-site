@@ -6,7 +6,7 @@ title: "Salamanca 12-19/4"
 date: "11-05-2015"
 isoDate: "2015-05-11T09:53:00"
 time: "09:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Salamanca 12-19/4 Het leren van Spaans begon ik toen ik met pensioen ging in 1995 met de Cursos de la Rioja te Santo Domingo de la Calzada, een stadje op de pelgrimsroute naar Santiago de Compostela, bekend om het kippenpaar in de kerk. Twi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1762747.html"

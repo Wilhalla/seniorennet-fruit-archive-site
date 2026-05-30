@@ -6,7 +6,7 @@ title: "Abdij van het Park Heverlee en tentoonstelling Parcum"
 date: "21-11-2017"
 isoDate: "2017-11-21T15:45:00"
 time: "15:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Abdij van het Park en tentoonstelling Parcum 17/11 met groep Egenhoven De Parkabdij werd gesticht in 1129, op initiatief van Godfried I met de Baard, graaf van Leuven en hertog van Neder-Lotharingen. Hij vroeg aan de toenmalige abt van de N"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2094212.html"

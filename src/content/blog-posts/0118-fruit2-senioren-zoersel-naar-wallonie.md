@@ -6,7 +6,7 @@ title: "Senioren Zoersel naar Wallonië"
 date: "21-04-2019"
 isoDate: "2019-04-21T23:11:00"
 time: "23:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Senioren Zoersel naar Wallonië 3 april In de voormiddag bezoek aan een struisvogelfarm in de streek van Dinant. Het is de grootste levenden vogel. Komt uit Afrika. De dieren leven jaar in jaar uit buiten. Ze leven hoofdzakelijk van gras met"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232580.html"

@@ -6,7 +6,7 @@ title: "Topaz"
 date: "04-12-2019"
 isoDate: "2019-12-04T22:02:00"
 time: "22:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Topaz Laatst proefde ik mijn Topaz appel en was verrukt over de smaak. In het bio-circuit is dit resistent ras tamelijk bekend, doch in de liefhebberswereld lijkt mij dit onvoldoende het geval. De ziekteresistentie is bij mij nog ok, want i"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2285978.html"

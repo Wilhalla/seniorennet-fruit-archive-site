@@ -6,7 +6,7 @@ title: "Parkinson en Bestrijdingsmiddelen"
 date: "25-09-2019"
 isoDate: "2019-09-25T13:17:00"
 time: "13:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Parkinson en Bestrijdingsmiddelen Een belangwekkende documentaire op de Nederlands TV, over het verband tussen pesticidengebruik en de ziekte van Parkinson. Indien U ze heeft gemist kan U ze hier herbekijken, en verdere informatie vinden: h"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2269750.html"

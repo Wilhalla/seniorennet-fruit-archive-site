@@ -6,7 +6,7 @@ title: "Ferienstrasse 13-14-15 dec."
 date: "18-12-2019"
 isoDate: "2019-12-18T21:56:00"
 time: "21:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ferienstrasse 13-14-15 dec. Met Verhoeven We bezochten de streek voorbij Kassel, het grensgebied van Hessen en Thüringen. Alhoewel vooraan in de bus zittend op plaats 2 met op plaats 1 Luc, is buiten haast niets te zien met de regendruppels"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2289167.html"

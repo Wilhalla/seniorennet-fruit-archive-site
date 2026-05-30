@@ -6,7 +6,7 @@ title: "Lente 2015"
 date: "22-04-2015"
 isoDate: "2015-04-22T12:54:00"
 time: "12:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lente 2015 Deze week terug thuis na mijn laatste taalvacantie Spaans te Salamanca. Tot mijn genoegen gezien dat Marcel vorige week de tuin had geploegd. Ik kan verder zaaien en planten. Tussen haakjes: Bij permacultuur kan en mag men niet p"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1754324.html"

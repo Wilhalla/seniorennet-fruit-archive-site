@@ -6,7 +6,7 @@ title: "Normandië Terugreis"
 date: "22-09-2015"
 isoDate: "2015-09-22T16:50:00"
 time: "16:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Normandië Terugreis 4/9 De eerste stop is te Lisieux met de pompeuse basiliek van de heilige Theresia, in nearomaans-Byzantijnse stijl. Te vergelijken met bij ons Koekelberg. De vele mosaieken zijn wel mooi. Te Rouen hebben we eerst een fij"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1816598.html"

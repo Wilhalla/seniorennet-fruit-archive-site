@@ -6,7 +6,7 @@ title: "VERGETEN PEREN"
 date: "25-01-2016"
 isoDate: "2016-01-25T13:36:00"
 time: "13:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERGETEN PEREN Lieven Decrick –De Tuin van toen – 2016 Stelde een geïllustreerde brochure ‘Vergeten Peren’ samen. Zeer de moeite Vergeten PEREN (1) (1).pdf"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1868727.html"

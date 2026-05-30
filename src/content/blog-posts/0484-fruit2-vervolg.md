@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "20-06-2016"
 isoDate: "2016-06-20T22:16:00"
 time: "22:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Stephansdom Interieur Predikstoel Pilgrim, de beeldhouwer Kaisersgruft, de keizerlijke begraafplaats Grafmonument van Sisi en Franz Josph I Uitleg Verpozen in het Mozartcafé In de zijstraat de Sacher gebouwen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927713.html"

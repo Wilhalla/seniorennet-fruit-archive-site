@@ -6,7 +6,7 @@ title: "Proefveldbezoek frambozen te Pamel Submitted by carmen on 13 12 2018 - 1
 date: "20-12-2018"
 isoDate: "2018-12-20T23:56:00"
 time: "23:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Proefveldbezoek frambozen te Pamel Submitted by carmen on 13 12 2018 - 16:12 Sam Neefs (Proefcentrum Pamel) Op 20 november was iedereen met interesse in biologische frambozen welkom op Proefcentrum Pamel om een toelichting te krijgen rond d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2202056.html"

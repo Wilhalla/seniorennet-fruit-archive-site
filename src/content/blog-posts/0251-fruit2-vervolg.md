@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "21-11-2017"
 isoDate: "2017-11-21T15:33:00"
 time: "15:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. De initiatiefnemers van Egenhoven 11. Religieuze tentoonstelling Parcum 12. Kruisbeeld uit de elfde eeuw 13. Bekoring van een kluizenaar (niet van H. Bosch) 14. Gidse 15. In de 17de eeuw kreeg de romaanse kerk een barokkoor 16. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2094210.html"

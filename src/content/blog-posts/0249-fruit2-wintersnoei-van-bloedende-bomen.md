@@ -6,7 +6,7 @@ title: "Wintersnoei van bloedende bomen"
 date: "21-11-2017"
 isoDate: "2017-11-21T21:10:00"
 time: "21:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wintersnoei van bloedende bomen (Seizoenen 6 blz 31) Onbegrijpelijk. Ik heb sterk de indruk dat de auteur van dit stukje de klok heeft horen luiden, maar de klepel niet weet hangen. ABC: Acer, Betula, Carpinus Dat klinkt geleerd! Op zijn mi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2094329.html"

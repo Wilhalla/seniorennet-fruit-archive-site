@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "13-06-2015"
 isoDate: "2015-06-13T22:06:00"
 time: "22:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg Oude plataan Charles met wilg, niet dat hij ze omver had gestoten. Moerascipres Alternerend ingeplante blaadjes Luchtwortels Koekoeksbloem Idem Dagkoekoeksbloem Nachtkoekoeksbloem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776931.html"

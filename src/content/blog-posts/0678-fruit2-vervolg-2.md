@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "12-06-2015"
 isoDate: "2015-06-12T18:50:00"
 time: "18:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Het lijkt precies of St. Salvator, zetel van de bisschop, scheef staat. Rechts profiel van Willem Het formidabele dak van het Oud-St. Janshospitaal. Belfort Oude huizen De middeleeuwse beurs met standbeeldd van Jan Van Eyck O.L. V"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776469.html"

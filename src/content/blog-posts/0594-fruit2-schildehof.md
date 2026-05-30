@@ -6,7 +6,7 @@ title: "Schildehof"
 date: "02-10-2015"
 isoDate: "2015-10-02T23:28:00"
 time: "23:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Schildehof Wandeling met de Koninklijke Vlaamse Dendrologische Vereniging 20/9 De ‘zotte’ baron Van de Werve stierf in 1924 zonder directe erfgenamen. De vele gronden gingen naar een immobiliën maatschappij. De gemeente kocht het kasteel en"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1821183.html"

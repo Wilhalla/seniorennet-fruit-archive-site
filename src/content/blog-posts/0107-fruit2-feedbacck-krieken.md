@@ -6,7 +6,7 @@ title: "Feedbacck Krieken"
 date: "12-05-2019"
 isoDate: "2019-05-12T08:58:00"
 time: "08:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedbacck Krieken Ik heb de resistente Noordkriek van De Bock dus in november 2014 aangeplant. We zijn nu 4 en een half jaar verder en de struik doet het, zonder enig spuiten tegen monilia, nog steeds heel goed. Hij groeit goed en elk jaar "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2237513.html"

@@ -6,7 +6,7 @@ title: "Vervolg Amsterdam"
 date: "29-05-2016"
 isoDate: "2016-05-29T16:13:00"
 time: "16:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Ingang Begijnhof 11. Houten huis 12. Het wapen van Amsterdam bestaat uit een vaandel waarop drie kruizen te herkennen zijn. Aan weerszijden van het vaandel bevinden zich twee leeuwen en erboven is een kroon te zien. De drie krui"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1919788.html"

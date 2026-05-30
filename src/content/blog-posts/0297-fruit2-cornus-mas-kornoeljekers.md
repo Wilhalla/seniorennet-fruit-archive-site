@@ -6,7 +6,7 @@ title: "Cornus mas Kornoeljekers"
 date: "03-09-2017"
 isoDate: "2017-09-03T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Cornus mas Kornoeljekers De Cornus mas leerde ik kennen op reis in augustus in Duitsland, op een Raststätte, snelwegrestaurant langs de autoweg. Ik heb mijn eerste Kornoeljekers van een zekere imker De Blieck uit het Waasland op de eerste e"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2069413.html"

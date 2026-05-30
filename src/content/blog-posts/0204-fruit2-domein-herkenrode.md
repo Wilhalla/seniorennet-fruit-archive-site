@@ -6,7 +6,7 @@ title: "Domein Herkenrode"
 date: "14-06-2018"
 isoDate: "2018-06-14T21:14:00"
 time: "21:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Domein Herkenrode De nonnenabdij van de jaren 1100 werd opgeheven met de Franse revolutie. Het klooster is eveneens afgebroken. Resten nog de indrukwekkende hoevegebouwen, in handen van de Vlaamse gemeenschap en bestuurd door diverse instan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2154855.html"

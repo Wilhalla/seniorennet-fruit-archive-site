@@ -6,7 +6,7 @@ title: "Wezel"
 date: "29-12-2017"
 isoDate: "2017-12-29T14:01:00"
 time: "14:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wezel Toen ik enkele dagen geleden in de nu lege beerput kwam, vond ik een uitgedroogde wezel. Tot dan toe stond het luik open waardoor hij er ingekomen is en normaal weer naar buiten kon. Misschien een ouder exemplaar dat er kwam sterven? "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2106209.html"

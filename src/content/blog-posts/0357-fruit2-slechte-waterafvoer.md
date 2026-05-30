@@ -6,7 +6,7 @@ title: "Slechte Waterafvoer"
 date: "15-01-2017"
 isoDate: "2017-01-15T17:35:00"
 time: "17:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Slechte Waterafvoer Op vrijdagmorgen (13/1/2017) stond ik verrast te kijken naar de grote plas water voor de inrit van de schuur. Dit is zeer ongewoon. Ik schat dat er een 30mm gevallen is. Tijdens de uitzonderlijke, zeer zware regenval in "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1997957.html"

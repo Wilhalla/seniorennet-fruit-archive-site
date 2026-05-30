@@ -6,7 +6,7 @@ title: "Eind juni rijpende Braambozen"
 date: "28-06-2016"
 isoDate: "2016-06-28T22:20:00"
 time: "22:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Eind juni rijpende Braambozen De eerst rijpende zijn de Taybessen, zowel de gestekelde als de ongestekelde mutatie, de Buckingham Taybes. De gestekelde Taybes naast de Buckingham is nog niet zo goed hersteld van de wintervorsten. De andere "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1930486.html"

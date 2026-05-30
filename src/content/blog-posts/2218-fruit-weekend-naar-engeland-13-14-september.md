@@ -52,7 +52,7 @@ zondag.</p>
 <p>Verdere info en
 inschrijven:</p>
 
-<p>Daniel Willaeys, Lage Weg
+<p>Daniël Willaeys, Lage Weg
 60 2980 Halle-Zoersel Tel 03-383 12 37 rek. 000 -0875684 – 65 <a href="mailto:daniel@willaeys.be">daniel@willaeys.be</a> </p>
 
 </div>

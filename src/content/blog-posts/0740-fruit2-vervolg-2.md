@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "23-03-2015"
 isoDate: "2015-03-23T11:38:00"
 time: "11:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Terrassen en dorp 20. Appelbomen 21. Okker – of walnoot 22. Aankomst bij het Berbergezin 23. We vertrekken weer 24. Doorkijk 25. Nog een dorp 26. Het gezamelijke voorraadhuis"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1740545.html"

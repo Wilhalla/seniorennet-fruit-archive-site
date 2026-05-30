@@ -6,7 +6,7 @@ title: "Geschubde Inktzwam (Coprinus comatus)"
 date: "16-09-2018"
 isoDate: "2018-09-16T14:57:00"
 time: "14:57"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Geschubde Inktzwam (Coprinus comatus) Dochter Tinneke had een Sanseveria gestekt in een emmer met grond. Na enkele dagen staken 2 geschubde inktzwammen de kop op. Een jonge geschubde inktzwam zou uitstekend smaken, maar die moet je wel dire"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178120.html"

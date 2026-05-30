@@ -6,7 +6,7 @@ title: "Namiddag 3/9"
 date: "20-09-2015"
 isoDate: "2015-09-20T22:52:00"
 time: "22:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Namiddag 3/9 Nade lunch in het hotel staat het bezoek aan de cider & calvados van de ‘Vergers de Romilly’ op het programma. Eerst zien we een film over het maken van cider en het stoken van Calvados, gevolgd door de proefsessie. De cider vi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1815910.html"

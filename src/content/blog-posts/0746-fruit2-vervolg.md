@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "10-03-2015"
 isoDate: "2015-03-10T21:37:00"
 time: "21:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Hier de zaal met zowel Rothko als Mondriaan Rotko wou enkel alleen tentoongesteld worden. Hier is echter een speciale zaal met Rotko en Mondriaan, beiden met hun allerlaatste werken. Met als apotheose Mondriaans onvoltooid gebleven "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1734818.html"

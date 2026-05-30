@@ -6,7 +6,7 @@ title: "Essex Farm Cemetry met ernaast de site van John Mc Crae"
 date: "08-11-2016"
 isoDate: "2016-11-08T20:47:00"
 time: "20:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Terug te Ieper stoppen we aan Essex Farm Cemetry met ernaast de site van John Mc Crae Het kerkhof Britse schoolkinderen Stone of Rememberance Graf van de 15 jarige V.J. Strudwick Naast de begraafplaats ligt de medische post van John Mc Crae"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1974638.html"

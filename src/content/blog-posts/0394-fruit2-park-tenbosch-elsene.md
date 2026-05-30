@@ -6,7 +6,7 @@ title: "Park Tenbosch Elsene"
 date: "01-11-2016"
 isoDate: "2016-11-01T22:09:00"
 time: "22:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Park Tenbosch Elsene Bezoek op zo 16/10, een warme, zonnige herfstdag met de Koninklijke Vlaamse Dendrologische Vereniging Jean-Louis Semet, dendroloog erfde de herenwoning van zijn ouders in 1953 en kocht nog gronden bij waarop hij een uit"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1972099.html"

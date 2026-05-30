@@ -6,7 +6,7 @@ title: "VERVOLG 2 19. De groep 20. Border 21. Schuin palmet 22. Horizontaal palm
 date: "21-09-2016"
 isoDate: "2016-09-21T22:42:00"
 time: "22:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. De groep 20. Border 21. Schuin palmet 22. Horizontaal palmet 23. Is dit een General Leclerc peer? 24. Tuinzicht vanaf de Vivier 25. Vivier: bewaarvijver van de vis voor de keuken, gevangen in vijvers buiten het domein. 26. Est"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958483.html"

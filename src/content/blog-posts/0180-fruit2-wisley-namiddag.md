@@ -6,7 +6,7 @@ title: "WISLEY Namiddag"
 date: "10-09-2018"
 isoDate: "2018-09-10T22:18:00"
 time: "22:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "WISLEY Namiddag Een oudere gidse neemt ons op sleeptouw en leidt ons ook naar plaatsen waar we nog nooit kwamen. 1. Jeanpuerre met de gidse 2. Prachtige bast van een oude, tamme kastanje 3. Wollemia novilis, een in 1994 ontdekte boom in Aus"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2176503.html"

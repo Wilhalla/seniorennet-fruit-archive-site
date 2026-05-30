@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "18-08-2019"
 isoDate: "2019-08-18T18:14:00"
 time: "18:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Het geheel 11. De huwelijksgriffeling 12. Formidabele foto van Elena Rodenko, echtgenote van Alexander Kerbusch 13. Jean Pierre Billen, de man van de NBS-reizen 14. Eric De Bruyne 15. Johan Baecke en de gidse 16. Vaasvorm met no"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2261068.html"

@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
-import { Archive, BarChart3, Images, Map, Menu, Search, X } from 'lucide-react'
+import { Archive, BarChart3, Database, Home, Images, Map, Menu, Search, X } from 'lucide-react'
 
 const navLink = 'inline-flex min-h-9 items-center gap-2 rounded-full px-3 text-body font-normal tracking-[0.01em] text-obsidian no-underline transition-colors hover:bg-powder hover:text-obsidian'
 const mobileNavLink = 'group inline-flex min-h-12 items-center justify-center gap-3 text-center text-[28px] font-medium leading-none tracking-[-0.05em] text-obsidian no-underline transition-colors hover:text-gravel'
 
 const navItems = [
+  { href: '/', label: 'Home', icon: Home },
   { href: '/archive/', label: 'Alle berichten', icon: Archive },
   { href: '/stats/', label: 'Statistieken', icon: BarChart3 },
   { href: '/atlas/', label: 'Atlas', icon: Map },
+  { href: '/data/', label: 'Data', icon: Database },
   { href: '/gallery/', label: 'Beeldarchief', icon: Images },
 ]
 
@@ -25,8 +27,7 @@ export default function SiteHeader() {
       <div className="mx-auto flex min-h-14 w-full max-w-page items-center justify-between gap-4 px-8 py-2 max-md:px-4">
         <a className="flex min-w-0 items-center gap-2 text-body font-medium tracking-[0.01em] text-obsidian no-underline hover:text-obsidian" href="/" aria-label="Naar de startpagina" onClick={() => setMenuOpen(false)}>
           <img className="apple-image brand-apple" src="/apple-assets/apple-1-192.png" alt="" aria-hidden="true" loading="eager" decoding="async" />
-          <span className="truncate whitespace-nowrap font-bold tracking-[0.05em]">Daniel Willaeys</span>
-          <span className="shrink-0 text-gravel max-sm:hidden">archief</span>
+          <span className="truncate whitespace-nowrap font-heading text-[15px] font-normal leading-none tracking-normal">Blogarchief Daniël Willaeys</span>
         </a>
         <nav className="hidden items-center justify-center gap-1 sm:flex" aria-label="Hoofdnavigatie">
           {navItems.map(({ href, label, icon: Icon }) => (

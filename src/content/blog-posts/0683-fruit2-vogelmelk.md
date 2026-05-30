@@ -6,7 +6,7 @@ title: "Vogelmelk"
 date: "01-06-2015"
 isoDate: "2015-06-01T10:25:00"
 time: "10:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vogelmelk Vorige week sprong vogelfotograag Marcel Couwels (85) nog eens binnen. In het gazon bemerkte ik een mooie bloem. Vogelmelk wist hij. Ze groeit ook in zijn tuin te Oelegem. ’s Avonds vouwen de bloemblaadjes zich toe en ontvouwen zi"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1771998.html"

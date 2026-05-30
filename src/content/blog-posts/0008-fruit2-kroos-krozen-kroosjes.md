@@ -6,7 +6,7 @@ title: "Kroos Krozen Kroosjes"
 date: "14-03-2020"
 isoDate: "2020-03-14T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kroos Krozen Kroosjes Voor mij is dat lange tijd niet duidelijk geweest. In Vlaanderen worden die benamingen niet gebruikt. Een zeer deskundige fruitvriend raadde mij aan het handboek ‘Pruimen’ (1941) van Edmond Van Cauwenberghe, eminente l"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2308631.html"

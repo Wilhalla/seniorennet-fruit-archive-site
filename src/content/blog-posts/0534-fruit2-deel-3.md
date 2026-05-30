@@ -6,7 +6,7 @@ title: "Deel 3"
 date: "11-04-2016"
 isoDate: "2016-04-11T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: ""
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1901327.html"

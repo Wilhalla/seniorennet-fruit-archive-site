@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "02-12-2015"
 isoDate: "2015-12-02T23:42:00"
 time: "23:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Voorplein Kunstwerk : de boom in de rotonde Middengedeelte van de gebouwen Sint-Joris met klein draakje Schilderij Uitleg Kostbare Reliekhouder Uitleg Sint-Joris en de draak, het mooiste kunstwerk"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1846652.html"

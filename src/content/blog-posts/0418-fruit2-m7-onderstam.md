@@ -6,7 +6,7 @@ title: "M7 onderstam"
 date: "22-09-2016"
 isoDate: "2016-09-22T20:08:00"
 time: "20:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "M7 onderstam Toen ik in Zoersel, meer dan 50 jaar geleden kwam, kocht ik mijn halfstam appelbomen bij Mampay in Viersel. Hij kweekte zijn bomen op M7, “De beste onderstam voor appelbomen in de Kempische zandgrond” zei hij. Met mijn ladder v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958736.html"

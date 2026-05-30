@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "02-12-2015"
 isoDate: "2015-12-02T23:38:00"
 time: "23:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Nog een Sint-Joris en de draak Voorplein Middenplein met de kunstboom Gebouw van de rotonde Idem Standbeeld van Henri De Gorge (1774-1832) Werkmanshuizen en schoorsteen van de machinekamer Werkmanshuizen De lege ruimte van de mach"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1846645.html"

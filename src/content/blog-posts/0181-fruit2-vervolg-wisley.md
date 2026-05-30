@@ -6,7 +6,7 @@ title: "Vervolg Wisley"
 date: "09-09-2018"
 isoDate: "2018-09-09T23:18:00"
 time: "23:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg Wisley We hadden geluk met de gids die ons naar het fruit leidde. Eerst naar de appelen. De oudste aanplant op onderstam M7 dateert nog van voor 1950. Daarna had het pruimenperceel aantrek. Terug over het leifruit naar het kleinfrui"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2176252.html"

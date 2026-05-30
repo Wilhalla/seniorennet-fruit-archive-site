@@ -6,7 +6,7 @@ title: "De Hagelstormramp van21/06"
 date: "28-06-2016"
 isoDate: "2016-06-28T23:02:00"
 time: "23:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Hagelstormramp van 21/06 De Hagelstormramp die St-Tuiden en Haspengouw trof richtte verder vernieling aan in Noord Brabant Ger Van Santvoort 21/06 Donderdag avond is Someren getroffen door een zeer zware hagelbui met stenen als tennisbal"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1930544.html"

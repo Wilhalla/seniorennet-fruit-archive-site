@@ -6,7 +6,7 @@ title: "Morgana - Kizuri"
 date: "10-12-2018"
 isoDate: "2018-12-10T21:53:00"
 time: "21:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Morgana - Kizuri woensdag 5 dec 2018 Morgana - Kizuri Tijdens de Fructura vakbeurs werd vorig weekend het nieuwe appelras Morgana aan het publiek voogesteld. Het door het veredelingsbedrijf Better3Fruit ontwikkeld ras (eigenlijke rasnaam Ki"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2199552.html"

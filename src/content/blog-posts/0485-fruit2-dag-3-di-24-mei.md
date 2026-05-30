@@ -6,7 +6,7 @@ title: "Dag 3 di. 24 mei"
 date: "20-06-2016"
 isoDate: "2016-06-20T22:11:00"
 time: "22:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dag 3 di. 24 mei Uitstap in het Wienerwalt naar de oude Benedictijner (Cisterciëncer)abdij of Stift Heiligenkreuz. De abdij bestaat al van 1133. Er zijn nog elementen te zien van de romaanse bouwstijl van toen. Genoten van het bezoek. We ri"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927711.html"

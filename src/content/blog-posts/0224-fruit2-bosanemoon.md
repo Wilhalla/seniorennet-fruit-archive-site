@@ -6,7 +6,7 @@ title: "Bosanemoon"
 date: "17-04-2018"
 isoDate: "2018-04-17T22:22:00"
 time: "22:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bosanemoon Elk voorjaar verschijnen ze terug op een bepaalde plaats tegen de Lage Weg en bij uitbreiding aan beide kanten van de weg. Dit zou er op wijzen dat hier vele jaren terug een houtkant of bos stond. Maar er is ook een verrassing: e"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2139332.html"

@@ -6,7 +6,7 @@ title: "Beeldhouwer Jan Dries"
 date: "18-01-2016"
 isoDate: "2016-01-18T22:38:00"
 time: "22:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Beeldhouwer Jan Dries Mol 8/12/1925 – Zoersel 25/11/2014 In De Bijl loopt tot 31 jan een herdenkingstentoonstelling. Op de opening werd hij door burgemeester Liesbeth Verstreken tot ereburger van Zoersel verklaard. Hij begon als keramieker "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1865939.html"

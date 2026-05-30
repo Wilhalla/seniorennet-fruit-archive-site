@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "06-12-2019"
 isoDate: "2019-12-06T16:51:00"
 time: "16:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Frontalen. Hier geshcilderde panelen die voor een altaar geplaatst werden 20. Frontaal uit Noorwegen De heilige Olaf 21. Frontaal uit Catalonië Maria met kind omgeven door scènes uit het leven van de heilge Margaretha 22. Fron"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2286309.html"

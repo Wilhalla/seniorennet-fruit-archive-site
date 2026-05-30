@@ -6,7 +6,7 @@ title: "2de VERVOLG"
 date: "22-10-2018"
 isoDate: "2018-10-22T23:22:00"
 time: "23:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "2de VERVOLG Houtsnijwerk biechtstoel: boven, jongentje trekt aan de staart vzan een muis; onder een andere aabn de staart van een kat. Nagebouwde houten gevel, naar een oorspronkelijk huis verdwenen met de rechttrekking van de Schelde. Enke"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2187326.html"

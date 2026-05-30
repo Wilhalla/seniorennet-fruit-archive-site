@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "15-01-2017"
 isoDate: "2017-01-15T17:30:00"
 time: "17:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. De overstroomde boomgaard. De drie grote bomen zijn okkernoten, 2 Coenen (geënte bomen) en een zaailing. Dit is niet bevorderlijk voor hun gezondheid. Op dit ogenblik (bomen in winterrust) kan het wel iets minder kwaad. 11. Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1997953.html"

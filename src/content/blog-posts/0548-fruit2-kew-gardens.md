@@ -6,7 +6,7 @@ title: "Kew Gardens"
 date: "09-02-2016"
 isoDate: "2016-02-09T21:04:00"
 time: "21:04"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kew Gardens Werelderfgoed Londen (4-1) Deel 1 Turner’s Oak Uitleg Cacao vruchten Uitleg cacao Chocolade Orchldee Darwin’s Orchid De vlinder met de superlange tong Robin Beyers"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1875565.html"

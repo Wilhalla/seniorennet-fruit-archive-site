@@ -6,7 +6,7 @@ title: "Terug naar Ichtegem"
 date: "28-07-2015"
 isoDate: "2015-07-28T16:44:00"
 time: "16:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Terug naar Ichtegem Vorige zaterdagmorgen reed ik door de striemende regen en wind naar Gerard Bolle in het ‘Bollehuisje’, de oude woning van zijn ouders Arthur Bolle en Celestina Vermeersch aan de Zuster Clarastraat op De Reiger te Ichtege"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1795962.html"

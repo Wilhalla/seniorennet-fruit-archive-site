@@ -6,7 +6,7 @@ title: "Dag 2 La Coupole"
 date: "08-11-2016"
 isoDate: "2016-11-08T20:41:00"
 time: "20:41"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dag 2 La Coupole Dit bunkermuseum ligt op 5 km van St-Omer. Het is een diep in de krijtrotsen uitgehouwen gangensysteem met een centrale koepel van 5m in gewapend beton. De bedoeling was er de V1 en V2 te lanceren naar Engeland, doch dit is"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1974636.html"

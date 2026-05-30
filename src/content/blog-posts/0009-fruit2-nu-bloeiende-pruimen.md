@@ -6,7 +6,7 @@ title: "Nu bloeiende pruimen"
 date: "11-03-2020"
 isoDate: "2020-03-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nu bloeiende Pruimen De pruimen die nu bloeien zijn de kerspruimen of myrobolanen, Prunus cerasifera. Het zijn kleinere pruimen, in diverse kleuren; van geel tot bijna blauw-zwart. Er zijn er ook rode bij met roodachtig blad. De gele worden"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2307862.html"

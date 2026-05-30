@@ -6,7 +6,7 @@ title: "De witte abeel (Populus alba) en zijn fantastische worteluitlopers"
 date: "02-08-2018"
 isoDate: "2018-08-02T18:14:00"
 time: "18:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De witte abeel (Populus alba) en zijn fantastische worteluitlopers Dat de wortels van een boom zich ver kunnen uitstrekken wist ik, doch zo ver! In het najaar 1962, het eerste jaar dat we hier kwamen, plantte ik deze witte abeel naast de sc"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2166990.html"

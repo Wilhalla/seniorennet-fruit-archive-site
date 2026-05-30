@@ -6,7 +6,7 @@ title: "De onbekende Zuil- of Kolomboom"
 date: "06-12-2016"
 isoDate: "2016-12-06T12:27:00"
 time: "12:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De onbekende Zuil- of Kolomboom In het Fruitboek lees ik: …’kolombomen enkel voor appelen beschikbaar en heb je tot nog toe weinig keuze in variëteiten’. Meer dan 20 jaar geleden was Velt de grote pionier voor de Ecologische Siertuin. Toen "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1984112.html"

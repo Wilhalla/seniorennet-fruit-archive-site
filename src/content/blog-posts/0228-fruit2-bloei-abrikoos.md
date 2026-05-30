@@ -6,7 +6,7 @@ title: "Bloei Abrikoos"
 date: "15-03-2018"
 isoDate: "2018-03-15T16:17:00"
 time: "16:17"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De prachtige Bloei van Abrikoos in Serre"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2129094.html"

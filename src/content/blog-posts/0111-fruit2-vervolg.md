@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "03-05-2019"
 isoDate: "2019-05-03T23:23:00"
 time: "23:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg Op wandel Op wandel Bij de terugkomst begon het weer te sneeuwen De verjaardagstaarten van Keda We laden weer ib Idem De 3 Maaren bij Daun Schalkenmehrener Maar Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2235539.html"

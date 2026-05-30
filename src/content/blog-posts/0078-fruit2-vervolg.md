@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "24-07-2019"
 isoDate: "2019-07-24T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10 Doorsnee roodvlezige appel 11. Paul Verbeke 12. Guaveboompje 13. Appel Roter Mond, oud Russisch ras van Mitsurin . Blijkbaar zeer productief 14. De moeder van Stijn 15. Landschap van de Mille Collines, verlengde van de Vlaamse Ar"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2255606.html"

@@ -6,7 +6,7 @@ title: "XANTEN OKRA 21/8/2018"
 date: "19-11-2018"
 isoDate: "2018-11-19T20:30:00"
 time: "20:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "XANTEN OKRA 21/8/2018 Vorig jaar bezocht ik op de Davidsfondsreis de Romeinse villa Borg in Saarland. (blog van 22-09-2017) Xanten is een oud stadje in het Noorden van Duitsland, niet ver van en ter hoogte van Nijmegen.. Je wandelt eerst ee"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2193893.html"

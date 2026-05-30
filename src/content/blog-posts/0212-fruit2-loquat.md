@@ -6,7 +6,7 @@ title: "Loquat"
 date: "19-05-2018"
 isoDate: "2018-05-19T23:25:00"
 time: "23:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Loquat De loquat (Eriobotrya japonica), Japanse (wol)mispel of neffel is een vruchtuit derozenfamilie. De plant staat in het Spaans bekend als nísperero del Japón en de vrucht als níspero japonés. Het is een groenblijvende, 5-10 m hoge boom"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2147859.html"

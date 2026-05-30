@@ -6,7 +6,7 @@ title: "Met OKRA Zoersel naar Visserijmuseum Oostduinkerke"
 date: "20-06-2019"
 isoDate: "2019-06-20T22:28:00"
 time: "22:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Met OKRA Zoersel naar Visserijmuseum Oostduinkerke, Diksmuide en Nieuwpoort Bad 18-6-2019 Fantastisch weer en een uitstekende gids-chauffeur Theo Verhoeven. Het visserijmuseum is echt de moeite. Lekker gegeten en gedronken. Genoten van een "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247412.html"

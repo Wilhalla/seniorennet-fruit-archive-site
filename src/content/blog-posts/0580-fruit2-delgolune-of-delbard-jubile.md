@@ -6,7 +6,7 @@ title: "Delgolune of Delbard Jubilé"
 date: "08-11-2015"
 isoDate: "2015-11-08T00:15:00"
 time: "00:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Delgolune of Delbard Jubilé Nog een appel die het uitstekend deed en prachtige, grote vruchten, rood op gele achtergrond levert. Deze appel van de Franse firma Georges Delbard kwam in 1985 op de markt. Het is een kruising Golden Delicious x"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1836012.html"

@@ -6,7 +6,7 @@ title: "Waterloo"
 date: "14-11-2015"
 isoDate: "2015-11-14T00:21:00"
 time: "00:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Waterloo Met Gespreksgroep Heverlee (29/10/15) Jaren geleden heb ik Waterloo bezocht, maar nu is het veel interessanter. Met een ticket bezoek je meerdere locaties: In het centrum van Waterloo het museum-hoofdkwartier van de hertog van Well"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1838741.html"

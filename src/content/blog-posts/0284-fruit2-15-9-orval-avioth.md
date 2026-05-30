@@ -6,7 +6,7 @@ title: "15/9 Orval, Avioth"
 date: "28-09-2017"
 isoDate: "2017-09-28T22:18:00"
 time: "22:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "15/9 Orval, Avioth We rijden Luxemburg door naar de abdij van Orval die beneden in België ligt, niet ver van Virton. Met een charmante gidse gaan we op stap naar de ruiïnevan de eerste kerk. We steken een pleintje over met een 300 jarige zo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2077088.html"

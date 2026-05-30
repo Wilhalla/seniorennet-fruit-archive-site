@@ -6,7 +6,7 @@ title: "EUROPOM te Alden Biezen"
 date: "23-10-2019"
 isoDate: "2019-10-23T23:47:00"
 time: "23:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "EUROPOM te Alden Biezen De internationale fruittentoonstelling 18-20/10/2019 Op zondag een ganse dag regen! Vele bekenden teruggezien. Jean Pierre Billen, de beslagen reisleider van de NBS stond aan de receptie. Een gelegenheid om hem een e"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2276564.html"

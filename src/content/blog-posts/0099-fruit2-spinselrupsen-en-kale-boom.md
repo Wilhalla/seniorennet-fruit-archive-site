@@ -6,7 +6,7 @@ title: "Spinselrupsen en kale Boom"
 date: "10-06-2019"
 isoDate: "2019-06-10T15:44:00"
 time: "15:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Spinselrupsen en kale Boom Tijdens de pinksterdagen was ik in Boedapest. In het hooggelegen deel Buda bezochten we het kasteel, het vroegere koninklijk paleis. Bij het afdalen naar de Donau, via een beboste flank, bemerkte ik deze kaalgevre"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2244861.html"

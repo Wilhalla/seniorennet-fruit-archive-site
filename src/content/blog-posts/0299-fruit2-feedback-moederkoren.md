@@ -6,7 +6,7 @@ title: "Feedback Moederkoren?"
 date: "23-08-2017"
 isoDate: "2017-08-23T09:07:00"
 time: "09:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback Moederkoren? Twee personen brachten de oplossing. Waarvoor mijn dank Geert Van de Wiele van de univ. Gent “Ik herinner me uit mijn jeugd, waarin ik tijdens een scoutskamp nog moederkoren zag op onbespoten graanvelden in de Ardennen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2066794.html"

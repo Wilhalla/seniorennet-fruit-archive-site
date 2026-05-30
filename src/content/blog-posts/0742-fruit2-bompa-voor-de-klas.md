@@ -6,7 +6,7 @@ title: "Bompa voor de Klas"
 date: "21-03-2015"
 isoDate: "2015-03-21T22:48:00"
 time: "22:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bompa voor de Klas Stagiaire Elin had mij vorige donderdag uitgenodigd om wat te komen vertellen over fruit in het 5de leerjaar van St. Elisabeth te Zoersel. Toen ik hen vroeg wie bosbessen kende waren dit er maar twee van de zestien. ‘krak"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1739703.html"

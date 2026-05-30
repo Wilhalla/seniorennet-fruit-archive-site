@@ -6,7 +6,7 @@ title: "Haagsysteem Fruitbomen"
 date: "15-03-2018"
 isoDate: "2018-03-15T16:10:00"
 time: "16:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Haagsysteem Fruitbomen Het haagsysteem voor fruitbomen op 1m of nog minder, leent zich om op kleine oppervlakte toch meertdere bomen te planten. Op de foto staan er bij Ger Van Santvoort te Someren, Noord-Brabant, Ned. 360 rassen appel bij "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2129086.html"

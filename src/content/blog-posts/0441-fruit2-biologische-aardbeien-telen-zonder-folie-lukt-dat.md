@@ -6,7 +6,7 @@ title: "Biologische aardbeien telen zonder folie, lukt dat?"
 date: "18-08-2016"
 isoDate: "2016-08-18T21:54:00"
 time: "21:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Biologische aardbeien telen zonder folie, lukt dat? Nu is het een optimale tijd om aardbeien te planten. Onderstaande proefondervinding van het proefcentrum Pamel is zeer welkom. Conclusie Voor de biologische teelt van aardbeien onder tunne"
 reactionCount: 2
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1946744.html"

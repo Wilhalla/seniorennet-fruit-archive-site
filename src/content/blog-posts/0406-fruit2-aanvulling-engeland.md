@@ -6,7 +6,7 @@ title: "Aanvulling Engeland"
 date: "05-10-2016"
 isoDate: "2016-10-05T18:44:00"
 time: "18:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Aanvulling Engeland 10 september Wisley Foto's Ann Meskens"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1963286.html"

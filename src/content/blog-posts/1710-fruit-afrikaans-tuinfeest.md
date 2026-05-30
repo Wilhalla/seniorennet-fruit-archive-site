@@ -59,7 +59,7 @@ CoZoeGoprojecten Aleide lagrou</strong></p>
 u DJ Esprit Werelddansmuziek van 16u tot
 20u </strong></p>
 <p><strong>17u
-Tuinrondleidingen Daniel Willaeys </strong></p>
+Tuinrondleidingen Daniël Willaeys </strong></p>
 <p><strong>Er
 zijn doorlopend hapjes en dranken verkrijgbaar </strong></p>
 <p><strong>18

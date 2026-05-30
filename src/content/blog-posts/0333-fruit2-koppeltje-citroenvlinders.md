@@ -6,7 +6,7 @@ title: "Koppeltje Citroenvlinders"
 date: "30-04-2017"
 isoDate: "2017-04-30T19:43:00"
 time: "19:43"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Koppeltje Citroenvlinders Vanmiddag werd mijn aandacht getrokken door een koppeltje dartelende citroenvlinders. Eindelijk gingen ze zitten op de Judaspenning. Het vrouwtje is veel minder opvallend. Het was precies de dag van de Citroenvlind"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2032176.html"

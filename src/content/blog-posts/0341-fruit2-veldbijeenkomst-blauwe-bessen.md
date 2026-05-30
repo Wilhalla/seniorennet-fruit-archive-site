@@ -6,7 +6,7 @@ title: "Veldbijeenkomst blauwe bessen"
 date: "09-04-2017"
 isoDate: "2017-04-09T23:45:00"
 time: "23:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Veldbijeenkomst blauwe bessen In samenwerking met de Nederlandse Fruittelers Organisatie (NFO) organiseerde Vlamings op donderdagmiddag 6 april een veldbijeenkomst bij Anja & Leon Schrijnwerkers op hun nieuwe bedrijfslocatie in Horst. Ik ko"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2025807.html"

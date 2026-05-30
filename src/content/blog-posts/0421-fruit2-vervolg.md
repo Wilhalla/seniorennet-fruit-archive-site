@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "21-09-2016"
 isoDate: "2016-09-21T22:50:00"
 time: "22:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. De wijnpers 11. Idem 12. Het machtige aandrijfwiel 13. Wijnvat 14. Dakgebinte 15. Interieur duiventoren 16. De gids, hoofdtuinier. Hij vertelde gedreven over de bloemen van de border 17. Hij koestert de bloemen 18. De border lan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958485.html"

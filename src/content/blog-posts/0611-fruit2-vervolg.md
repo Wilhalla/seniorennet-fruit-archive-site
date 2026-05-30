@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "19-09-2015"
 isoDate: "2015-09-19T14:18:00"
 time: "14:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG De toegang Tot halverwege De teruggetrokken zee Idem Idem De groep Top Nog een kijk achteruit Uitkijkpunt langs de kustweg naar Granville, waar we nog een wandeling zullen maken."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1815378.html"

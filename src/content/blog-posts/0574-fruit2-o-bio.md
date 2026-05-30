@@ -6,7 +6,7 @@ title: "O'Bio"
 date: "16-11-2015"
 isoDate: "2015-11-16T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Open Deur O’Bio te Sint-Baafs-Vijve (zo. 15/11/2015) Het grootste Bio-Kleinfruitbedrijf, begonnen in 1983 als ‘De Bezigaard’ te Wakken De grote Loods is pas nieuw. Hier gebeurt de verwerking. Hendrik roemde de gezondsheidselementen van klei"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1839859.html"

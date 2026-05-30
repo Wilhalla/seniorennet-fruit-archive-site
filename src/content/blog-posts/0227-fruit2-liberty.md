@@ -6,7 +6,7 @@ title: "Liberty"
 date: "04-04-2018"
 isoDate: "2018-04-04T22:56:00"
 time: "22:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Liberty Sinds gisterenavond, 3 /4 ben ik terug van 2 weken bij mijn dochter Veerle in Vancouver, Brittish Columbia, west Kanada. In een tuincentrum zag ik een grote Liberty in pot, reeds vol bloembotten. Bij mijn vertrek heb ik die cadeau g"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2135315.html"

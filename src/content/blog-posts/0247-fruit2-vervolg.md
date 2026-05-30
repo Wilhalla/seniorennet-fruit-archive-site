@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "26-11-2017"
 isoDate: "2017-11-26T22:09:00"
 time: "22:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Begijnhof Als we er buiten kwamen stonden we op de vrijdagse boekenmarkt van het Spuy 11. Zoon Peter en Paul 12. Hotel Breukelen 13. UTRECHT Park Lepelenburg 14. Nieuwe gracht 15. Groep 16. Paushuys 17.Uitleg Paushuis 18. Dom"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2096043.html"

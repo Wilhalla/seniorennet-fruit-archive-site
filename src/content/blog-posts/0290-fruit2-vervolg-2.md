@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "23-09-2017"
 isoDate: "2017-09-23T22:23:00"
 time: "22:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19 Naar de Dom 20 Dom 21 Romaanse Dom met ernaast de gothische Liebfrauenkirche 22 Interieur Dom 23 Idem 24 Interieur Gothische Liebfrauenkirche 25 Toren Dom Acheraf uitrusten en genieten van een Benediktiner Weissbier in goed gez"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2075528.html"

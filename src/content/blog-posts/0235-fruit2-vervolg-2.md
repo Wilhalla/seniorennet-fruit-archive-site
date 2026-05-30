@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "29-01-2018"
 isoDate: "2018-01-29T22:52:00"
 time: "22:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Nynke Zijlstra en Vincent Turkelboom Nynke Vincent Nynke Vincent Nynke en ik Idem Frits en Jet Doornenbal Frits"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2115973.html"

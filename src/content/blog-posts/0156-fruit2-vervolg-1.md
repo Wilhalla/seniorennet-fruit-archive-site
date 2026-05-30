@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "05-10-2018"
 isoDate: "2018-10-05T20:21:00"
 time: "20:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 1. Buitenaanzicht Wieskirche 2. Stadswandeling in Füssen Huis vioolbouwer 3. Groep 4. Abdij 5. Stadhuis 6. Marktplein 7. Op wandel 8. Fontein 9. Oude apotheek"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2182896.html"

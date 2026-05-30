@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "02-08-2015"
 isoDate: "2015-08-02T22:10:00"
 time: "22:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Bij de bus Johan Kortleven en Herman Van Bastelaere Portula aardbei Bij het perceel van de Portula aardbeien Conference peren De Maas met spaarbekken De Maas Bij de tunnels Waterbekken"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797800.html"

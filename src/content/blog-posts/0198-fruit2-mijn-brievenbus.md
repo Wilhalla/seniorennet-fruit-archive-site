@@ -6,7 +6,7 @@ title: "Mijn Brievenbus"
 date: "07-07-2018"
 isoDate: "2018-07-07T13:07:00"
 time: "13:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: ""
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2160611.html"

@@ -6,7 +6,7 @@ title: "Nederlandse Huiszwaluwentillen in 2015"
 date: "17-12-2015"
 isoDate: "2015-12-17T08:14:00"
 time: "08:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nederlandse Huiszwaluwentillen in 2015 Boomkweker Ger van Santvoort, bij wie ik zo’n til had leren kennen (blog van 15/07/2015) stuurde mij het jaarverslag. Hij vroeg of bij ons ook iets dergelijks bestaat? Na Duitsland, is men in 2008 in N"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1852248.html"

@@ -6,7 +6,7 @@ title: "Museum Dr Guislain – Graanstokerij Filliers"
 date: "27-03-2015"
 isoDate: "2015-03-27T10:57:00"
 time: "10:57"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Museum Dr Guislain – Graanstokerij Filliers Gisteren, 26/3 met de Senioren van Zoersel het museum Dr Guislain, grondlegger van het in de 20 ste eeuw befaamd, psychiatrisch instituut te Gent en de graanstokerij Filliers te Bachte-Maria-Leern"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1742459.html"

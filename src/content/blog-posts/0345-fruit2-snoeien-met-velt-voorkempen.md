@@ -6,7 +6,7 @@ title: "Snoeien met Velt Voorkempen"
 date: "26-03-2017"
 isoDate: "2017-03-26T22:46:00"
 time: "22:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Snoeien met Velt Voorkempen Zat 18/3 De snoeidemonstratie van Velt Voorkempen ging dit jaar hier door met Jerry Kloeck. Naar aanleiding van de uitgave Fruit heeft Velt Lesgevers opgeleid. Jerry Kloeck van Borsbeek, tevens een van de twee be"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2021502.html"

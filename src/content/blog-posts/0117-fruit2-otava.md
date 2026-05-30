@@ -6,7 +6,7 @@ title: "OTAVA"
 date: "22-04-2019"
 isoDate: "2019-04-22T22:40:00"
 time: "22:40"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "OTAVA Otava vind ik een van mijn lekkerste appels en die uitstekend bewaart tot nu. De smaak voldoet nog min of meer. Otava is afkomstig uit Tchechië en werd bekomen uit een kruising van Shampion x Jolana (1979) Het is een schurfttolerant, "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232776.html"

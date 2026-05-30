@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "14-05-2015"
 isoDate: "2015-05-14T20:30:00"
 time: "20:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Restboomgaard Stadhuis van Ameide 1644 Op de kerk heeft een ooievaar zijn nest De brede Merwede bij Gorinchem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1764357.html"

@@ -6,7 +6,7 @@ title: "Gele Knolamaniet"
 date: "15-08-2017"
 isoDate: "2017-08-15T23:14:00"
 time: "23:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gele Knolamaniet (Amanita citrina var. Citrina) Beschrijving Hoed bolvormig, dan gewelfd tot vlak, Ø 4-10 cm, glad, ivoorwit tot bleek citroengeel in het centrum, vaak bedekt met witte tot gelig-bruine plakjes. Lamellen wit. Steel 6-8 cm x "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2064734.html"

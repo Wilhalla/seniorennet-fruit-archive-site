@@ -6,7 +6,7 @@ title: "Wilde Postelein"
 date: "13-08-2015"
 isoDate: "2015-08-13T14:24:00"
 time: "14:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wilde Postelein Met dit warme weer is dit een vervelend onkruid geworden. Als je het afhakt en laat liggen sterft dit in dit warme, droge weer niet af! Zelfs stukjes hergroeien. In de flora Heimans en Thijsse spreken ze van een liggende ond"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1801517.html"

@@ -6,7 +6,7 @@ title: "Refractometer en Brix"
 date: "15-10-2017"
 isoDate: "2017-10-15T23:15:00"
 time: "23:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Refractometer en Brix (Zaterdag 14/10) Met eerst een bezoek aan ‘OP-GOEDE-GROND’ Jef Peeters, Vincent Turkelboom en ik bezochten Op-goede-Grond te Rijsbergen bij Zundert. Het was er opendag. Je komt er in een hippie paradijs: 2 Ha grond in "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2082708.html"

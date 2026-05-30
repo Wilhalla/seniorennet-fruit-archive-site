@@ -6,7 +6,7 @@ title: "Museumtuin Gaasbeek"
 date: "18-08-2019"
 isoDate: "2019-08-18T18:16:00"
 time: "18:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Museumtuin Gaasbeek De Museumtuin is een tuin van topniveau, naar het voorbeeld van de kasteeltuinen uit de 18de en 19de eeuw; een sterk staaltje van levend, cultureel erfgoed met zowel (oude) groenten als een fenomenaal voorbeeld van leifr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2261065.html"

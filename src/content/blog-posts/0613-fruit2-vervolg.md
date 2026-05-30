@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "18-09-2015"
 isoDate: "2015-09-18T22:59:00"
 time: "22:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Inkom van het Amerikaans kerkhof te Colleville-sur-Mer Beeld als zinnebeeld van de moed van de jongens Idem Overzicht Onze groep Longues Idem Idem Arromanches"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1815212.html"

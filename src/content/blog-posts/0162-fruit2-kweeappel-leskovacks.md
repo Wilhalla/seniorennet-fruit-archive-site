@@ -6,7 +6,7 @@ title: "Kweeappel Leskovacks"
 date: "02-10-2018"
 isoDate: "2018-10-02T09:57:00"
 time: "09:57"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kweeappel Leskovacks Was vorig jaar de enige die ontsnapte aan de lentenachtvorst. Droeg dit jaar geweldig. Groeit het meest gezond onder de kweepeerrassen die ik heb. Op de foto’s zie je ook een paar peervormige vruchten, meer groen nog, v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2181918.html"

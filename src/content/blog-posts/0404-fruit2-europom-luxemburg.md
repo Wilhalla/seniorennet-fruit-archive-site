@@ -6,7 +6,7 @@ title: "Europom Luxemburg"
 date: "06-10-2016"
 isoDate: "2016-10-06T22:29:00"
 time: "22:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Europom Luxemburg 24/09 Dit heb ik nog nooit meegemaakt: een expo waarnaar niet verwezen wordt op wegwijzers. Gelukkig dat de GPS ons naar de juiste straat bracht. Een paar keer ter plaatse de weg gevraagd. We kwamen aan het gebouw, gedeelt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1963681.html"

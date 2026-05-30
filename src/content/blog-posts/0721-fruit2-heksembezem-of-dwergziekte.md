@@ -6,7 +6,7 @@ title: "Heksembezem of Dwergziekte"
 date: "07-04-2015"
 isoDate: "2015-04-07T21:55:00"
 time: "21:55"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Heksembezem of Dwergziekte Ik was mijn braambozen aan ‘t verzorgen en kwam tot een onaangename ontdekking. De Obsidian is verloren. Een bos korte, dicht bijeen opschietende takjes. De enkele lange ranken tonen misvormde bladeren. De oorzaak"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1748131.html"

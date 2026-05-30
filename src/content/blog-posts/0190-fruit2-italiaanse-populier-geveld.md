@@ -6,7 +6,7 @@ title: "Italiaanse Populier geveld"
 date: "09-08-2018"
 isoDate: "2018-08-09T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Italiaanse Populier geveld Op 7/8/18 kwam er na middernaacht onweer met hevige rukwinden. Die deden de boom afkraken Geen wonder: binnenin was de boom gedeeltelijk hol en rot. Ik had aan de buitenkant nog niets bemerkt. Eind der zestigerjar"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2168481.html"

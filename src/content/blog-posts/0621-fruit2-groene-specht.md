@@ -6,7 +6,7 @@ title: "Groene Specht"
 date: "22-08-2015"
 isoDate: "2015-08-22T17:12:00"
 time: "17:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Groene Specht Daarnet kwam dochter Mieke in de veranda en ontdekte er een dode Groene Specht op de vloer. Hoe is die binnengeraakt? De deur is er op slot. Hij moet dus door de schoorsteen binnengekomen zijn. Jaren terug zijn er langs die we"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1804662.html"

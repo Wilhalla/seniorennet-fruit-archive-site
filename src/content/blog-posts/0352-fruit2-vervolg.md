@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "04-03-2017"
 isoDate: "2017-03-04T00:22:00"
 time: "00:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1. Mummie uit Zuid Amerika (M) 2. Bij Pessoa (P) 3. Peter naast Pessoa (M) 4. Idem met mij (P) 5. Café Nicola (P) 6. Kijkje in kerk in een zijstr. van de Rossio (P) 7. Meeuwen aan de Taag (M) 8. Meeuwen aan de Taag (M) 9. Aalscholve"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2014133.html"

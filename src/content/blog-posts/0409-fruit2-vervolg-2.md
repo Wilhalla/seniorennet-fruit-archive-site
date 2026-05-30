@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "04-10-2016"
 isoDate: "2016-10-04T23:45:00"
 time: "23:45"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Groep De man met het statief is François Lardinoit van Halle, amateurcineast. Wellicht krijgen we later zijn beeldverslag te zien. Groep Hier liggen wel heel veel appelen Appelen proeven Idem Vlaanderens Roem, wellicht een herbena"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1963087.html"

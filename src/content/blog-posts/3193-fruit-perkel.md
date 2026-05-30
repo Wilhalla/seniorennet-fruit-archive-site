@@ -33,7 +33,7 @@ fruitbomen verkoopt vanaf begin november te Stabroek Andre Hendrickx ( een van d
 vrienden uit onze vroegere fruitwerkgroep) Tel : 03 665 32 15 
 GSM 0475 902122 -E-post : fruitbomenhendrickx@telenet.be-
 Vriendelijke groeten
-Daniel Willaeys
+Daniël Willaeys
 
 &gt; Bericht:
 &gt; Daantje,

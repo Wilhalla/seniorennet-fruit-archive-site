@@ -6,7 +6,7 @@ title: "Pensioneringsfeest Luk Van Der Auwera op Coloma"
 date: "25-03-2015"
 isoDate: "2015-03-25T19:32:00"
 time: "19:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Pensioneringsfeest Luk Van Der Auwera op Coloma Op 10/3 de collaga-directeurs van PMS en CLB teruggezien te Mechelen. We vierden de pensionering van Luk Van Der Auwera van het CLB Mortsel, opvolger van mijn dorpsgenoot Luc. Zelf ben ik de o"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1741665.html"

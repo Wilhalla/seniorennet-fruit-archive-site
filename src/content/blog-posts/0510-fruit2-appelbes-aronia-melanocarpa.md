@@ -6,7 +6,7 @@ title: "Appelbes (Aronia melanocarpa)"
 date: "13-05-2016"
 isoDate: "2016-05-13T23:44:00"
 time: "23:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Appelbes (Aronia melanocarpa) Op Tuinkriebels in Vrieselhof zag ik deze struikplant met kaartje ‘Aronia melanocarpa’. De verkoper kon er weinig over vertellen, zeker geen rasnaam. Hij dacht een plant uit Canada? Ik vond de vele takken eigen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1913965.html"

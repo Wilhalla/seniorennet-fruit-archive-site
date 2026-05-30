@@ -6,7 +6,7 @@ title: "STAM"
 date: "04-04-2016"
 isoDate: "2016-04-04T22:38:00"
 time: "22:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "STAM www.stamgent.be Voor het namiddaggedeelte reden we naar Gent. Lunch in het Griekse restaurant Myconos in de Vlaanderenstraat, gestart in 1974. Ik was er in de beginjaren nog eens geweest met Aleide, een aangename herinnering. In het ST"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1898385.html"

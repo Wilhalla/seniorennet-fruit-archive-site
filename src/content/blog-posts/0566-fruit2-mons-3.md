@@ -6,7 +6,7 @@ title: "Mons 3"
 date: "03-12-2015"
 isoDate: "2015-12-03T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mons 3 ( Nu met Art Travel) Stonden op het Programma: het pas geopende ‘Memorial Museum’ betreffende de geschiedenis van Mons van in de Middeleeuwen tot en met de tweede wereldoorlog, zeer uitgebreid gedocumenteerd. Ik was verrast dat de be"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1847083.html"

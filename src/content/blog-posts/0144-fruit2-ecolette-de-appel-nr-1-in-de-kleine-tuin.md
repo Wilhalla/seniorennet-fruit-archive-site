@@ -6,7 +6,7 @@ title: "ECOLETTE De appel nr 1 in de (kleine) Tuin"
 date: "10-12-2018"
 isoDate: "2018-12-10T22:28:00"
 time: "22:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "ECOLETTE De appel nr 1 in de (kleine) Tuin Voor mij is de Vereniging voor Ecologisch Leven en Tuinieren ontstaan uit de behoefte om van elkaar te leren. Die wens is ruimschoots in vervulling gegaan. Op 20 januari 1974 werd hier ten huize in"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2199565.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "29-09-2015"
 isoDate: "2015-09-29T23:01:00"
 time: "23:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Nieuwe, lichte, doch sterke plastiekvaatjes gaan de zware metalen vervangen. De Bosteelsbieren Willem met Fons De Meutter, tot vorig jaar 15 jaar voorzitter van Okra Willem heeft geen bier nodig om vrolijk te zijn Met de mevrouw die"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819884.html"

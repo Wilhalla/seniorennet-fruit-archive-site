@@ -6,7 +6,7 @@ title: "FREDERIKSOORD"
 date: "12-10-2016"
 isoDate: "2016-10-12T00:13:00"
 time: "00:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "FREDERIKSOORD 1/10 De Fruithof Souvenirs van Eeuwen ‘De Smaak van het Noorden’ Om de twee jaar gaat deze tentoonstelling door. De ingang van het tentoonstellingsgebouw was half versperd door de mobiele fruitpers. Toch wat vreemd. Binnenin k"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1965163.html"

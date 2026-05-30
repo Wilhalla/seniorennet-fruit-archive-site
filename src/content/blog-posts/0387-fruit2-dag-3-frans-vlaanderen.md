@@ -6,7 +6,7 @@ title: "DAG 3 Frans-Vlaanderen"
 date: "08-11-2016"
 isoDate: "2016-11-08T20:35:00"
 time: "20:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "DAG 3 Frans-Vlaanderen Stop aan kerkhof Lyssenthoek, Poperinge. In die tijd lag hier een hospitaal. Het bezoekerscentrum in de vorm van twee naast elkaar gebouwde barakken doet er aan herinneren. Te Godewaertsvelde bezoeken we het Douanemus"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1974634.html"

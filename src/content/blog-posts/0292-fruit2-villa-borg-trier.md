@@ -6,7 +6,7 @@ title: "Villa Borg - Trier"
 date: "22-09-2017"
 isoDate: "2017-09-22T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "14 september Villa Borg - Trier We bezoeken de volledig heropgebouwde Romeinse villa Borg te Perl. In de vruchtbare streek Moezel-Saar waren veel Romeinse nederzettingen. Dat de streek geschikt was voor wijnbouw zal wel een pluspunt geweest"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2075250.html"

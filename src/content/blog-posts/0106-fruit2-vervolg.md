@@ -6,7 +6,7 @@ title: "Vervolg"
 date: "12-05-2019"
 isoDate: "2019-05-12T12:20:00"
 time: "12:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Ik ging een kijkje nemen, verder in de boomgaard. Inlandse vogelkers in bloei Idem Sleedoorn. Ik heb de indruk dat de pruimachtigen het dit jaar goed doen, in tegenstelling met de appelen. Bolderik De bolderik (Agrostemma githago) i"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2237573.html"

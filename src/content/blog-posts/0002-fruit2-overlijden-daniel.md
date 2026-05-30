@@ -6,7 +6,7 @@ title: "overlijden Daniël"
 date: "08-04-2020"
 isoDate: "2020-04-08T16:03:00"
 time: "16:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Maandagmorgen 6/4/2020 om 8u30 is Daniel, ons vake, plots van ons weggegaan door een hartfalen. Hij was net aan het genezen van een hardnekkige virus. Hij was in de laatste weken heel dankbaar voor de zorgen van Tinneke. Hij stak ons allema"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2314541.html"

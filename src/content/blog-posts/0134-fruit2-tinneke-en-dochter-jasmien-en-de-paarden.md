@@ -6,7 +6,7 @@ title: "Tinneke en dochter Jasmien en de Paarden"
 date: "03-02-2019"
 isoDate: "2019-02-03T11:16:00"
 time: "11:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tinneke en dochter Jasmien en de Paarden Na het overlijden van Aleide op 7 juli 2014 leefde ik hier 3,5 jaar alleen. Dan kwam dochter Tinneke gedeeltelijk weer bij mij wonen. Op slag had ik een beter leven. Ex-man Werner Dhondt zien we hier"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2212789.html"

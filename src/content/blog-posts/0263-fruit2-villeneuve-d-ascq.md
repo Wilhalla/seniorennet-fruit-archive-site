@@ -6,7 +6,7 @@ title: "Villeneuve d’Ascq ("
 date: "31-10-2017"
 isoDate: "2017-10-31T21:12:00"
 time: "21:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Villeneuve d’Ascq (zat. 21/10) Om de twee jaar gaat te Villeneuve d’Ascq de Pomexpo door op zaterdag en zondag. Eraan verbonden is een markt voor regionale producten. Bio is opvallend aanwezig met de meeste aantrek. We kwamen voor ’t eerst "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2087890.html"

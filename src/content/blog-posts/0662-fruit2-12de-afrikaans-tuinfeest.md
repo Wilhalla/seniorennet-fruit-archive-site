@@ -6,7 +6,7 @@ title: "12de Afrikaans Tuinfeest"
 date: "22-06-2015"
 isoDate: "2015-06-22T18:44:00"
 time: "18:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "12de Afrikaans Tuinfeest na 2 jaar onderbreking wegens beenbreuk en ziekte Aleide. Oudste dochter Leen beloofde aan haar moeder de traditie verder te zetten. Op zaterdag 4 juli Afrikaans Tuinfeest te Halle-Zoersel, Lage weg 60! Laat je meev"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1781071.html"

@@ -6,7 +6,7 @@ title: "Jonathan Dhondt 18"
 date: "18-11-2019"
 isoDate: "2019-11-18T21:58:00"
 time: "21:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Jonathan Dhondt 18 Vorige zaterdag 16/11 was het feest. Jonathan, de jongste van de 14 kleinkinderen werd meerderjarig. Dit jaar zijn 2 nichtjes hem voorgegaan. Sarah in het verre Vancouver en Isis in Poederlee. ‘s Namiddags speelde Jonatha"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2282502.html"

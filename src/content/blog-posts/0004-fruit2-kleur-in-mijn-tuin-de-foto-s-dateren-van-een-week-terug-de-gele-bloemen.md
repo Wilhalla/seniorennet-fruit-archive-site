@@ -6,7 +6,7 @@ title: "Kleur in mijn Tuin De foto’s dateren van een week terug De gele bloeme
 date: "20-03-2020"
 isoDate: "2020-03-20T15:07:00"
 time: "15:07"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kleur in mijn Tuin De foto’s dateren van een week terug De gele bloemen van de kornoeljebessen, Cornus mas zijn nu ver uitgebloeid. Ook de kerspruimen, myrobolanen, Prunus cerasifera naderen de vruchtzetting. Vorig jaar was een zeer zwak vr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2310069.html"

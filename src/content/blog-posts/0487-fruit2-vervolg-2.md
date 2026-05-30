@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "20-06-2016"
 isoDate: "2016-06-20T22:03:00"
 time: "22:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Karelskerk Musikverein waar het jaarlijks Nieuwjaarsconcert wordt opgenomen Karelskerk Idem met zuilen Zuil Decoratie op de zuil Hoogaltaar Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927699.html"

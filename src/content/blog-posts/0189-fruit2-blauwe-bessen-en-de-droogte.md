@@ -6,7 +6,7 @@ title: "Blauwe bessen en de Droogte"
 date: "13-08-2018"
 isoDate: "2018-08-13T21:42:00"
 time: "21:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Blauwe bessen en de Droogte De blauwe bessen leden sterk onder de felle zonnestralen en serieuze droogte (gans de maand juli: slechts 8 l.regen) Toch had het Nieuw-Zeelands ras Reka opvallend minder last. Ook het buitenbeentje Pink Lemonade"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2169569.html"

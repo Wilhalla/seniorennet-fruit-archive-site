@@ -6,7 +6,7 @@ title: "Bioliologische landbouw een ideologie?"
 date: "14-02-2018"
 isoDate: "2018-02-14T10:11:00"
 time: "10:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De jaarlijkse landbouwstudiedag van de vakgroep Landbouweconomie van de UGent focuste dit jaar op biolandbouw. Al tijdens de verwelkoming gooide Patric Buggenhout, voorzitter van de landbouwstudiedag, de knuppel in het hoenderhok door de vr"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2120326.html"

@@ -6,7 +6,7 @@ title: "Vandaar rijden we naar het in tuinmiddens gerenommeerde Chateau Chaumont
 date: "21-09-2016"
 isoDate: "2016-09-21T21:39:00"
 time: "21:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vandaar rijden we naar het in tuinmiddens gerenommeerde Chateau Chaumont sur Loire Voor het kasteel staan een prachtige ceders met takken op de grond. Het lijkt of ze er wortel geschoten hebben, maar dit is niet zo. Met gidse bezoeken we he"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1958439.html"

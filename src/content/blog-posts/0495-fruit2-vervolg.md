@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "13-06-2016"
 isoDate: "2016-06-13T11:15:00"
 time: "11:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Het Gulden Vlies (Ridderorde in 1430, ingesteld te Brugge door Filips de Goede, hertog van Bourgondië) Uitleg Vanop het panoramisch plein op de Albertina: een fiaker, koets getrokken door 2 paarden Mooi zicht op de opera aan de ande"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1925009.html"

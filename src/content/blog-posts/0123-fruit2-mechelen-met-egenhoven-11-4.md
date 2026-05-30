@@ -6,7 +6,7 @@ title: "Mechelen met Egenhoven 11/4"
 date: "11-04-2019"
 isoDate: "2019-04-11T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mechelen met Egenhoven 11/4 Na de koffie in De Witte Vos op de Grote Markt wandelen we naar het Hof van Busleyden, een Renaisance paleis uit de jaren 1500. De zonovergoten grote markt imponeert met St Rombouts , het stadhuis en veel andere "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2230196.html"

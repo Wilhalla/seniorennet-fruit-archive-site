@@ -6,7 +6,7 @@ title: "Cornus mas Gele Kornoelje"
 date: "25-02-2019"
 isoDate: "2019-02-25T11:05:00"
 time: "11:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Cornus mas Gele Kornoelje Met het zeer warme weer beginnen de kornoeljes zeer vroeg te bloeien. Daarbij valt op dat het ras Jolico vroeger bloeit dan de Schönbrunner Dirnl Gourmet. Zo gourmet vind ik ze anderns niet. Misschien zat het zeer "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2218629.html"

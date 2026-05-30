@@ -6,7 +6,7 @@ title: "Nieuwe exoot: tamme-kastanjegalwesp in Nederland"
 date: "09-07-2015"
 isoDate: "2015-07-09T10:58:00"
 time: "10:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuwe exoot: tamme-kastanjegalwesp in Nederland Bericht uitgegeven door Alterra Wageningen UR op donderdag 9 juli 2015 Zie http://www.natuurbericht.nl"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1788357.html"

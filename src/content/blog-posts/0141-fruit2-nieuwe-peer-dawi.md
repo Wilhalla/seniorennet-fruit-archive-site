@@ -6,7 +6,7 @@ title: "Nieuwe Peer DAWI"
 date: "02-01-2019"
 isoDate: "2019-01-02T18:08:00"
 time: "18:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuwe Peer DAWI De proef op de som Van de gelegenheid van de vele gasten op de nieuwsjaarsfestiviteiten heb ik gebruik gemaakt om mijn zailingpeer Dawi te laten proeven. De vruchten bewaren zeer goed. Slechts een paar met rot moeten verwij"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2204896.html"

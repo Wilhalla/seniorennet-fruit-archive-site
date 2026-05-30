@@ -74,8 +74,8 @@ the sawfly caterpillars <i>(Nematus ribesii) </i>can be a problem, but they
 cannot eat the whole bush, as they might do with gooseberries!</p>
 
 <p>Fruit News Summer 2004</p>
-<p>Daniel Willaeys
-Daniel Willaeys gardens in Halle-Zoersel, nr Antwerp, Belgium. The garden has been totally organic for 41 years.</p>
+<p>Daniël Willaeys
+Daniël Willaeys gardens in Halle-Zoersel, nr Antwerp, Belgium. The garden has been totally organic for 41 years.</p>
 </article>
 
 <section class="materialized-reactions">

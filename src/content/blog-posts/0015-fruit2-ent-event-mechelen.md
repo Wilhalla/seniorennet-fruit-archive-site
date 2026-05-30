@@ -6,7 +6,7 @@ title: "Ent- Event Mechelen"
 date: "28-01-2020"
 isoDate: "2020-01-28T13:20:00"
 time: "13:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ent- Event Mechelen Telkens eind jan (25 -1-2020) De fruitliefhebbers zijn blij met dit initiatief van de afdeling Mechelen van de Nationale BoomgaardenStichting dat nu al een heel aantal jaren bestaat en enig is in zijn soort. Enerzijds is"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2298038.html"

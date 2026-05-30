@@ -6,7 +6,7 @@ title: "Persmobiel Kempenland"
 date: "15-10-2017"
 isoDate: "2017-10-15T22:29:00"
 time: "22:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Persmobiel Kempenland Vorige week woensdag had ik mij opgegeven om mijn fruit te laten persen te Schoten. Vorig jaar was ik er ook geweest. Man perste er toen 2 dagen. Dit jaar kon men echter geen dag gevuld krijgen: zo weinig fruit. In pla"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2082721.html"

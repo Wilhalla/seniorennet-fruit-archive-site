@@ -6,7 +6,7 @@ title: "Van Waaslandhaven, Doel, Liefkenshoekfort tot Cortewalle in Beveren."
 date: "15-06-2017"
 isoDate: "2017-06-15T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Van Waaslandhaven, Doel, Liefkenshoekfort tot Cortewalle in Beveren. Met Egenhoven 14/6/2017 We startten met koffie en een koek in het café van de Golfclub bij de Kallosluis. Met de gids werd de sluis ons eerste bezoek en tevens goede uitee"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2046841.html"

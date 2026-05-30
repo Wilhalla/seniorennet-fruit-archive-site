@@ -6,7 +6,7 @@ title: "Een grote Leemte in het Fruitboek"
 date: "03-12-2016"
 isoDate: "2016-12-03T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een grote Leemte in het Fruitboek Je gaat naar een boomkweker en vraagt een bepaald ras zoals het boek terecht suggereert. “Op een M26?” zal een goede boomkweker vragen “of wil je een sterker groeiende halfstam op MM106 of MM111?” Als je en"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1983244.html"

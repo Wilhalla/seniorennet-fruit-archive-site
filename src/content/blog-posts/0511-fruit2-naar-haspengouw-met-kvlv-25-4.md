@@ -6,7 +6,7 @@ title: "Naar Haspengouw met KVLV 25/4"
 date: "02-05-2016"
 isoDate: "2016-05-02T23:48:00"
 time: "23:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Naar Haspengouw met KVLV 25/4 Een koude, natte voorjaarsdag Op de grote markt van Sint- Truiden gaan we eerst koffie drinken. Er zijn grote werkzaamheden bezig. We stoppen bij Pipo, het fruitsappenbedrijf van Piet Porreye, zijn vrouw en de "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1909849.html"

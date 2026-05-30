@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "24-09-2019"
 isoDate: "2019-09-24T22:09:00"
 time: "22:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Fuchsia 11. Engel 12. Papieresdoorn (Acer griseum) 13. Doorkijk 14. Zegekruid Nicandra physaloides, een nachtschadige 15. Bloem “ 16. Katsuraboom (Cercidiphyllum japonica ‘Rotfuchs’ 17. Idem 18. Een bloem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2269619.html"

@@ -6,7 +6,7 @@ title: "VAN DEN GROOTEN OORLOG"
 date: "29-03-2016"
 isoDate: "2016-03-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De nieuwe, uitgebreide uitgave van het boek Van Den Grooten Oorlog Formaat 17 x 24 cm 360 Bladzijden 27 € Toezending mits storting van 33 € (portkost inbegrepen) Uitgeverij Malegijs 11nov.org@gmail.com Iban BE48 5230 8077 6827 Bic TRIOBEBB "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1895985.html"

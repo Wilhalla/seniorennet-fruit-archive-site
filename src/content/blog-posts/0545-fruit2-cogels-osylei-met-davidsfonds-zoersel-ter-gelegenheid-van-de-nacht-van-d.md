@@ -6,7 +6,7 @@ title: "Cogels-Osylei Met Davidsfonds Zoersel ter gelegenheid van de Nacht van d
 date: "25-03-2016"
 isoDate: "2016-03-25T22:03:00"
 time: "22:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Cogels-Osylei Met Davidsfonds Zoersel ter gelegenheid van de Nacht van de Geschiedenis (22/3) – gelukkig was het nog geen nacht en zonnig- het voornaamste stuk van de wijk Zurenborg bezocht. Onze gids was Alex Elaut, auteur van Op Wandel do"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1894427.html"

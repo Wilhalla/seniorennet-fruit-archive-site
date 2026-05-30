@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "28-09-2015"
 isoDate: "2015-09-28T21:49:00"
 time: "21:49"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Louis Hoegaerts Yacon is een zoet knolgewas. Ook diabetici hebben er baat bij, net als van aardperen. Idem Kweepeer Champion Idem Appel Louis Eelen, Johan Ramaekers uit Maaseik, Leo Aerts Druif Druif"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1819447.html"

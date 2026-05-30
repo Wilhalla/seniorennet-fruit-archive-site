@@ -6,7 +6,7 @@ title: "Voedselbos en Kanker"
 date: "28-01-2019"
 isoDate: "2019-01-28T22:27:00"
 time: "22:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Voedselbos en Kanker Heden ten dage spreek je over een voedselbos als er er iets eetbaars in je bos groeit. Toen ik hier in 1962 kwam, wou ik een bosje voor de vogels aanplanten. Door een overvloed aan pas ontsproten zwarte els waren die ve"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2211427.html"

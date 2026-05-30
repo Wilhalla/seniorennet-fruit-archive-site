@@ -6,7 +6,7 @@ title: "Tuin - of Labbonen"
 date: "05-02-2017"
 isoDate: "2017-02-05T12:54:00"
 time: "12:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tuin - of Labbonen Met verwondering las ik in Seizoenen 1/2017: ‘Tuinbonen...erg gevoelig voor kruisbestuiving, dus mogen er in de verste verte geen andere tuinboonrassen worden geteeld’. Het betreft wel vermeerdering van zaad voor de Herit"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2005231.html"

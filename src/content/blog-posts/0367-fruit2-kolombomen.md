@@ -6,7 +6,7 @@ title: "kolombomen"
 date: "15-12-2016"
 isoDate: "2016-12-15T14:59:00"
 time: "14:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "kolombomen Reacties op bericht (1) 10-12-2016 Hallo Daniël, ik heb een 30-tal zuilappels om mijn huis heen staan. Het kan prima langs de straatkant en levert leuke reacties op. Velen vallen qua kwaliteit wat tegen, maar er zijn ook een paar"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1987330.html"

@@ -6,7 +6,7 @@ title: "VERVOLG 4"
 date: "30-09-2019"
 isoDate: "2019-09-30T22:54:00"
 time: "22:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 4 Beeld Giethoorn Kampen stadspoort Idem Stadspoort Elburg Hoofdstraat Kerk Vissershaven"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2270982.html"

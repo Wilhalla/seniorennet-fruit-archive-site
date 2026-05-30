@@ -6,7 +6,7 @@ title: "VERVOLG WOUDRICHEM"
 date: "02-07-2016"
 isoDate: "2016-07-02T15:26:00"
 time: "15:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG WOUDRICHEM Dan met de veer naar Woudrichem, eveneens een middeleeuws vestingsstadje, aan de westkant van de Waal, nog omsloten door vestingen. Van de aanlegplaats wandelden we eerst een eind op de vestingwal met in de verte het wate"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1931765.html"

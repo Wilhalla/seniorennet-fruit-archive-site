@@ -6,7 +6,7 @@ title: "Kweereren"
 date: "19-09-2018"
 isoDate: "2018-09-19T10:18:00"
 time: "10:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kweeperen te koop Deze peren zijn van de rassen Vranja en Rhea’s Mammoth (de meer ronde van vorm). Vorig jaar geen enkele vrucht, dit jaar een dracht als nooit tevoren en met het droge, warme weer geen last van ziektes."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178896.html"

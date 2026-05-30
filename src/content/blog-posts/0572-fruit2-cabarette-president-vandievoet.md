@@ -6,7 +6,7 @@ title: "Cabarette - President Vandievoet"
 date: "18-11-2015"
 isoDate: "2015-11-18T23:34:00"
 time: "23:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Cabarette - President Vandievoet Gisterenavond laat waaide het geweldig. Ik was benieuwd of de appelen van de President Vandievoet niet afgewaaid waren, maar de meeste hingen nog aan de boom. Bij Ontario bv was dit totaal niet het geval: al"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1840584.html"

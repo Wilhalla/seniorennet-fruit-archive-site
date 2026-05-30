@@ -6,7 +6,7 @@ title: "Fruitkooi"
 date: "13-06-2016"
 isoDate: "2016-06-13T14:47:00"
 time: "14:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Fruitkooi We hebben het fenomenaal getroffen met het tijdstip voor het aanbrengen van het net. Werner kon geen beter tijdstip gesuggereerd hebben: gisteren zo. 12/06 om 11uur. Waren op de afspraak: Werner, Peter, Michiel, Mieke Gommeren, Le"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1925064.html"

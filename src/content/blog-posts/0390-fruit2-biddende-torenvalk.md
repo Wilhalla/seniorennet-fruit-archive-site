@@ -6,7 +6,7 @@ title: "Biddende Torenvalk"
 date: "06-11-2016"
 isoDate: "2016-11-06T14:26:00"
 time: "14:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Biddende Torenvalk Foto van kleizoon Michiel Willaeys"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1973730.html"

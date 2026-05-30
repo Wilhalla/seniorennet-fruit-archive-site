@@ -6,7 +6,7 @@ title: "Wandeling in de Hoge Atlas"
 date: "23-03-2015"
 isoDate: "2015-03-23T11:48:00"
 time: "11:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wandeling in de Hoge Atlas (Zondag 15 maart) Brahim kwam ons stipt om 7u45 ophalen en bracht ons naar de klaarstaande wagen met chauffeur. Dichter bij de bergen hielden we halt voor een panoramisch zicht. Het is nog wat nevelig. Brahim wijs"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1740548.html"

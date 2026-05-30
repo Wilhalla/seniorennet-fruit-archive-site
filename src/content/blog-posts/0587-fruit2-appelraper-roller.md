@@ -6,7 +6,7 @@ title: "Appelraper-roller"
 date: "19-10-2015"
 isoDate: "2015-10-19T22:52:00"
 time: "22:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Appelraper-roller Al een paar jaar terug zag ik dit toestel aangeraden in een Duits Fruittijdschrift. Daar ik - in tegenstelling met vorig jaar- een overweldigende oogst heb, heb ik dit toestel aangeschaft: €75, doch in Beervelde vroeg men "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1828471.html"

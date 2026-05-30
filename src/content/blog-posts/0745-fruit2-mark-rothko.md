@@ -6,7 +6,7 @@ title: "Mark Rothko"
 date: "10-03-2015"
 isoDate: "2015-03-10T21:46:00"
 time: "21:46"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mark Rothko (1903 – 1970) Voor Mark Rothko worden we gegidst door Eva Lefever, kinsthistorica. Rothko, komt als tienjarige met het gezin uit Letland naar de V.S. Als kunstenaar evolueert hij van een soort fauvistisch realisme en een zeer ei"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1734825.html"

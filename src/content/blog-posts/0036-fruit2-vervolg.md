@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "23-10-2019"
 isoDate: "2019-10-23T23:40:00"
 time: "23:40"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG St Mathieu, de stoofpeer waarmee men altijd uitpakt op de expo te Villeneuve d’Ascq . Madame Verté Marbrée de Watervliet Eshing, een zeer laat bewaarbare appel van De Block, Oudenaarde Winterrambour Galloway Pippin Uitleg “ “ Gallow"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2276562.html"

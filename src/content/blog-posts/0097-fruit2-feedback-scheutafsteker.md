@@ -6,7 +6,7 @@ title: "Feedback Scheutafsteker"
 date: "17-06-2019"
 isoDate: "2019-06-17T13:16:00"
 time: "13:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback Scheutafsteker Eigenlijk heb ik wat laat uw laatste blogs gelezen, waardoor ik de opendeurdagen 1 en 2 juni gemist heb. Het was vooral het artikel over de twijg- of scheutafsteker dat meer dan mijn volledige aandacht kreeg. Dit jaa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2246501.html"

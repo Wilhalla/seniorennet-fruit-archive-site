@@ -6,7 +6,7 @@ title: "Zaainoten"
 date: "09-05-2018"
 isoDate: "2018-05-09T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zaainoten Her en der hebben eekhoorntjes noten verborgen. Die zijn gaan groeien. Ik heb er al een zestal uitgeplant. Vorig jaar bevroren mijn meeste noten. Nu heb ik bemerkt dat een van die noten beduidend later uitloopt. Het is nog een jon"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2145161.html"

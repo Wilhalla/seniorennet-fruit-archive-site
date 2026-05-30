@@ -6,7 +6,7 @@ title: "Appelvink"
 date: "02-11-2017"
 isoDate: "2017-11-02T22:08:00"
 time: "22:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Appelvink Vanavond hoorde ik een special geluid. De kat had de Appelvink gevangen. De vogel direct afgepakt en die plantte zijn grote bek in mijn vel. Ferm moeten trekken om die los te krijgen. Toch geen huidbeschadiging. De vogel naar het "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2088501.html"

@@ -6,7 +6,7 @@ title: "Snelweg naar Compostela"
 date: "01-04-2017"
 isoDate: "2017-04-01T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Snelweg naar Compostela De Standaard Weekblad 1/4 Ik lees: 2016 opnieuw een recordjaar 277.913 mensen in Santiago de Compostela. Ter vergelijking in 1978 waren het er 13. Ik wist niet dat we zo doorwogen, want 8 personen waren van ons gezin"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2023270.html"

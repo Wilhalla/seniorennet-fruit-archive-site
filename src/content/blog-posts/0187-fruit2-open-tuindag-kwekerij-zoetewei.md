@@ -6,7 +6,7 @@ title: "Open Tuindag Kwekerij Zoetewei"
 date: "14-08-2018"
 isoDate: "2018-08-14T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Open Tuindag Kwekerij Zoetewei 12/08/18 De kwekerij Zoetewei nr 120 op de straat Zoetewei te Putte, Mechelen is twee maal te bezoeken, in het voorjaar half mei en half augustus. Dimitri Jacobs heeft tropische landbouw gestudeerd in Wagening"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2169847.html"

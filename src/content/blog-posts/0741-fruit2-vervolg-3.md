@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "23-03-2015"
 isoDate: "2015-03-23T11:34:00"
 time: "11:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 27. Voorzichtig 28. Idem 29. Het voorraadhuis ligt al een stuk achter ons 30. Even uitblazen 31. Vrouw met 2 runderen 32. Oude okkernoot 33. Idem 34. Wellicht lavabommen? 35 Brahim"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1740544.html"

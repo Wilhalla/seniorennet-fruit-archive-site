@@ -6,7 +6,7 @@ title: "Bloody Ploughman"
 date: "08-10-2018"
 isoDate: "2018-10-08T20:49:00"
 time: "20:49"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bloody Ploughman Oud Schots ras, triploid, sterk geribd, pluk midden sept., bewaart tot nov. Eerder zoete, knapperige,sappige appel, lichte smaak."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2183722.html"

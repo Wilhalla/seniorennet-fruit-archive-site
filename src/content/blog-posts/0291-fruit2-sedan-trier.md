@@ -6,7 +6,7 @@ title: "Sedan - Trier"
 date: "22-09-2017"
 isoDate: "2017-09-22T22:11:00"
 time: "22:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Sedan - Trier In de namiddag bezoeken we de burcht van Sedan, de grootste van Europa, een oppervlakte van 35000 m2 en 7 verdiepingen, begonnen in het begin van de 15de eeuw. Graaf van Turenne, kleinzoon van Willem van Oranje en later veldhe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2075054.html"

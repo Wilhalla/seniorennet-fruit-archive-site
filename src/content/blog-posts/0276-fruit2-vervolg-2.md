@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "05-10-2017"
 isoDate: "2017-10-05T21:18:00"
 time: "21:18"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 19. Universiteit Limburg (1976) 20. Idem 21. Henric Van Veldeke, de eerste dichter in het Nederlands 22. St. Servatius 23. Interieur 24. Crypte met graf van St. Servatius 25. Biechtstoel 26. Kloostergang 27. En als laatste: een mo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2079116.html"

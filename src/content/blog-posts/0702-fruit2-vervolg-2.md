@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "11-05-2015"
 isoDate: "2015-05-11T00:40:00"
 time: "00:40"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Jezuietenkerk De groep Idem Lunes de Aguas, volksfeest bij de rivier Veel volk bij de Romaanse brug Ook aan de andedre kant Volk Zicht op de kathedralen: links de nieuwe; rechts de oude De Tuna-muzikanten"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1762745.html"

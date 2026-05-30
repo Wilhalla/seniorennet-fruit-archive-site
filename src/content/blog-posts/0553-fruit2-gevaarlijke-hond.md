@@ -6,7 +6,7 @@ title: "Gevaarlijke hond"
 date: "25-01-2016"
 isoDate: "2016-01-25T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gevaarlijke hond Deze voormiddag zat ik de krant ter lezen en werd ik opgeschrikt door angstkreten van een kip aan de zuidkant van het huis. Ik naar buiten en zag de hond, wit en met een paar vlekken achteraan, kleiner formaat en loddervet,"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1868936.html"

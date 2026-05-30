@@ -6,7 +6,7 @@ title: "\"Gewasbeschermingsmiddelen niet essentieel voor wereldvoedselvraagstuk\
 date: "13-03-2017"
 isoDate: "2017-03-13T09:30:00"
 time: "09:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VN expert: \"Gewasbeschermingsmiddelen niet essentieel voor wereldvoedselvraagstuk\" Het idee dat gewasbeschermingsmiddelen essentieel zijn om de snel groeiende wereldbevolking te voeden is volgens voedsel- en vervuilingsexperts van de VN een"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2017240.html"

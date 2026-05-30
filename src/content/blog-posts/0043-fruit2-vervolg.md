@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "15-10-2019"
 isoDate: "2019-10-15T20:58:00"
 time: "20:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Groep 11. Cercidiphyllum japonica arbre à caramel Katsura (soms karamelboom genoemd vanwege de lichte karamelgeur die hij afgeeft tijdens de bladval). 12. De groep der machtige sequoia’s 13. De zaaier van constantin Meunier (189"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2274540.html"

@@ -1,0 +1,44 @@
+# Block Google crawlers from crawling this site.
+# Other crawlers are not restricted by this file.
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Google-InspectionTool
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: GoogleOther-Image
+Disallow: /
+
+User-agent: GoogleOther-Video
+Disallow: /
+
+User-agent: Storebot-Google
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+User-agent: APIs-Google
+Disallow: /
+
+User-agent: FeedFetcher-Google
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /

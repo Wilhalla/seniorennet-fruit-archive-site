@@ -6,7 +6,7 @@ title: "Wilfried D’Hondt"
 date: "29-04-2015"
 isoDate: "2015-04-29T23:25:00"
 time: "23:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wilfried D’Hondt In Gallerij ’t Kallemunt in het zorgcentrum WZC Sint Jozef, Kruizemunt te Wommelgem. ‘Bister-noten’: met bister uitgewassen tekeningen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1757705.html"

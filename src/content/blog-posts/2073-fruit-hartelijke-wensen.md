@@ -7,7 +7,7 @@ date: "01-01-2009"
 isoDate: "2009-01-01T00:00:00"
 time: "00:00"
 author: "Daantje"
-excerpt: "Hartelijke wensen voor een fijn, gelukkig, gezond, voorspoedig, vruchtbaar 2009 Daniel Willaeys Hier de tuin van een verre voorvader François Willaeys, Brugs raadslid en zijn vrouw Anne-Thérèse Vleys. De tuin paalde aan deze van Eekhouteabd"
+excerpt: "Hartelijke wensen voor een fijn, gelukkig, gezond, voorspoedig, vruchtbaar 2009 Daniël Willaeys Hier de tuin van een verre voorvader François Willaeys, Brugs raadslid en zijn vrouw Anne-Thérèse Vleys. De tuin paalde aan deze van Eekhouteabd"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit/archief.php?ID=213146.html"
 images:
@@ -20,7 +20,7 @@ reactions: []
 <p><b>Hartelijke wensen voor een fijn,
 gelukkig, gezond, voorspoedig, vruchtbaar 2009</b></p>
 
-<p><b>Daniel Willaeys</b></p>
+<p><b>Daniël Willaeys</b></p>
 
 <p>Hier
 de tuin van een verre voorvader François Willaeys, Brugs raadslid en zijn vrouw Anne-Thérèse Vleys.

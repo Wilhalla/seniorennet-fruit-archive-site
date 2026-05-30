@@ -6,7 +6,7 @@ title: "Vlinders"
 date: "01-07-2017"
 isoDate: "2017-07-01T18:51:00"
 time: "18:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vlinders Op zaterdag 24/6 maakte ik de vlinderwandeling met Wim Veraghtert mee in het Natuurpunt Reservaat te Wechelderzande. Met de overtrokken lucht en neiging tot motregen en wat wind vroeg ik mij af of we wat te zien zouden krijgen. We "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2051644.html"

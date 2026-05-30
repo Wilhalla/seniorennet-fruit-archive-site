@@ -6,7 +6,7 @@ title: "Natuurgebonden Franky Michielsen & Griet Van Steen"
 date: "17-06-2015"
 isoDate: "2015-06-17T23:54:00"
 time: "23:54"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Natuurgebonden Franky Michielsen & Griet Van Steen De Bijl 3 mei – 21 juni FOTO’S op de vernissage 1. Voorzitter Eddy De Raedt 2. Inleider 3. Dode uil 4. Meisje 5.Doek Franky 6. Idem 7. Vogel 8. Doek 9. Doek"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1778669.html"

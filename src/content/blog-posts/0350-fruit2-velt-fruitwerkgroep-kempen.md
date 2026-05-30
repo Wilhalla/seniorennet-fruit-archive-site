@@ -6,7 +6,7 @@ title: "Velt Fruitwerkgroep Kempen"
 date: "05-03-2017"
 isoDate: "2017-03-05T23:38:00"
 time: "23:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Velt Fruitwerkgroep Kempen Ben jij een fruitliefhebber? Dan ben je erg welkom op 11 maart in het Tuinfruitcafé van Hoebenschot Plant en Tuin in Lichtaart (Kasterlee). Met als belangrijkste programmapunt: een brainstorm over de oprichting va"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2014554.html"

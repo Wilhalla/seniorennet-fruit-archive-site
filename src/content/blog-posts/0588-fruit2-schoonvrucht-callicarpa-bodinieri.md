@@ -6,7 +6,7 @@ title: "Schoonvrucht (Callicarpa bodinieri)"
 date: "14-10-2015"
 isoDate: "2015-10-14T23:41:00"
 time: "23:41"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Schoonvrucht (Callicarpa bodinieri) In de volksmond vaak 'Paarse besjesplant' genoemd, is een struik uit het geslacht Callicarpa en behoort bijgevolg tot de ijzerhardfamilie. Callicarpa bodinieri var. giralii subsp. 'Profusion' is een culti"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1826359.html"

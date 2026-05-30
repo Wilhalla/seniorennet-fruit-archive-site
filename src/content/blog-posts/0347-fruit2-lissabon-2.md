@@ -6,7 +6,7 @@ title: "Lissabon 2"
 date: "10-03-2017"
 isoDate: "2017-03-10T22:58:00"
 time: "22:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lissabon 2 Dag 2 do.23/2 We staan om 8u30 op; de jeugd een uur later. Portugal is echter een uur later dan wij. (7u30). Het Spaanse ontbijt kennende, vielen de vaste broodjes (wit en volkoren) mij danig mee. Daarbij kaas en hesp en confituu"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2016668.html"

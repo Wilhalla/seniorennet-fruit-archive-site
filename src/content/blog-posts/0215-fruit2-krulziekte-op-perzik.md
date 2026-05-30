@@ -6,7 +6,7 @@ title: "Krulziekte op Perzik"
 date: "09-05-2018"
 isoDate: "2018-05-09T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Krulziekte Karel Martinet (streek Hulst Zeeland) “Ondanks zware aantasting van krulziekte is de vruchtzetting op deze perzik dit jaar toch redelijk. Nu vraag ik me al lang iets af. Elk jaar probeer ik de gekrulde bladeren volledig te verwij"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2144930.html"

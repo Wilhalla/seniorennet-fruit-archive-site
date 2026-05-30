@@ -6,7 +6,7 @@ title: "Sleedoorn of Sleepruim (Prunus spinosa)"
 date: "19-06-2017"
 isoDate: "2017-06-19T15:19:00"
 time: "15:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Sleedoorn of Sleepruim (Prunus spinosa) Vorige zaterdag zag ik in de grote tuin van nicht Christiane een rij sleepruimen. Mij trof het dat sommige struiken overvol hingen, naast andere totaal vruchtenloos. We begonnen al te speculeren op tw"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2048036.html"

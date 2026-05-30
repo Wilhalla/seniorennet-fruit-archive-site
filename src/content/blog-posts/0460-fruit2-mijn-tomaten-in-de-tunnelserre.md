@@ -6,7 +6,7 @@ title: "Mijn tomaten in de Tunnelserre."
 date: "22-07-2016"
 isoDate: "2016-07-22T22:27:00"
 time: "22:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mijn tomaten in de Tunnelserre. In de vorige dagen heb ik de schimmeltakken al afgeplukt. Vandaag heb ik de lege plekken aangevuld met links en rechts uitgeschoten planten. In de gekregen compost die ik onder de blauwe bessen had gestrooid "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1938299.html"

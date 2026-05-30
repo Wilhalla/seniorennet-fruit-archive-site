@@ -6,7 +6,7 @@ title: "Familiefoto's Asverstrooiing 5 juli"
 date: "23-07-2015"
 isoDate: "2015-07-23T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Familiefoto's Asverstrooiing 5 juli https://www.youtube.com/watch?v=Gp-oHrFvmBY"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1793986.html"

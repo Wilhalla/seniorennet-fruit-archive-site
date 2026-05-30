@@ -6,7 +6,7 @@ title: "Look"
 date: "03-07-2016"
 isoDate: "2016-07-03T14:25:00"
 time: "14:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Look Al vele jaren plant ik van mijn eigen look. Telkens selecteer ik de dikste knolletjes om te planten. Het planten gebeurt ongeveer half oktober. Wat later kan ook nog. Veel vroeger plantte ik in de lente; maar de opbrengst is heel laag."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1932235.html"

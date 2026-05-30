@@ -6,7 +6,7 @@ title: "Ecotuindagen 2018"
 date: "10-06-2018"
 isoDate: "2018-06-10T23:13:00"
 time: "23:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ecotuindagen 2018 Mede dankzij het goede weer zijn de ecotuindagen met een 130 tal bezoekers weer uitstekend verlopen. Ik heb mijn enthoesiasme voor groot – en kleinfruit kunnen doorgeven. Bovenal heb ik de Ecolette appel gepromoot. Ecolett"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2153844.html"

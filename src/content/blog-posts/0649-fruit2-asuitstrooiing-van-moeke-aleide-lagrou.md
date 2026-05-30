@@ -6,7 +6,7 @@ title: "Asuitstrooiing van moeke Aleide Lagrou"
 date: "11-07-2015"
 isoDate: "2015-07-11T15:29:00"
 time: "15:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Asuitstrooiing van moeke Aleide Lagrou Zondag, 5 juli 2015 Beste familie, lieve mensen, We zijn hier vandaag samengekomen, om een laatste maal hulde te brengen aan moeke We nemen afscheid op een bijzondere plaats van een bijzondere vrouw. E"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1789220.html"

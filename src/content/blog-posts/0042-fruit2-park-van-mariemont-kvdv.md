@@ -6,7 +6,7 @@ title: "Park van Mariemont KVDV"
 date: "15-10-2019"
 isoDate: "2019-10-15T21:02:00"
 time: "21:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Park van Mariemont KVDV 6 okt Koninklijke Vlaamse Dendrologische Vereniging, opgericht in het Rivierenhof Deurne in 1937. Aldus de oudste vereniging voor bomenliefhebbers. Voor €10 wordt je lid. Een regendag, doch we hadden geluk, geen rege"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2274541.html"

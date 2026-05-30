@@ -6,7 +6,7 @@ title: "The Book of Pears"
 date: "08-03-2015"
 isoDate: "2015-03-08T10:02:00"
 time: "10:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Perenboek The Book of Pears Joan Morgan Verschijnt op 3 september en zal £40 kosten. http://www.randomhouse.co.uk/editions/book-of-pears-the-definitive-guide-including-over-500-varieties/9781785031472 Synopsis This extraordinary and unique "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1733376.html"

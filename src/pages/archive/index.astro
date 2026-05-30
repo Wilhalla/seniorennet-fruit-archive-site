@@ -3,11 +3,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import ArchiveVirtualList from '../../components/ArchiveVirtualList'
 import { archiveStats } from '../../lib/postIndex'
 ---
-<BaseLayout title="Alle berichten · Daniel Willaeys archief">
+<BaseLayout title="Alle berichten · Blogarchief Daniël Willaeys">
+  <div id="archive-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Archief laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Blogarchief Daniël Willaeys</span>
+      <small>archief laden</small>
+    </div>
+  </div>
   <section class="site-shell relative overflow-hidden py-16 md:py-20">
     <img class="apple-image section-apple absolute right-8 top-10 hidden rotate-6 md:block" src="/apple-assets/apple-2-192.png" alt="" aria-hidden="true" loading="eager" decoding="async" />
-    <p class="eyebrow">Daniel Willaeys</p>
-    <h1 class="display-title">Archiefindex</h1>
+    <p class="eyebrow">Blogarchief Daniël Willaeys</p>
+    <h1 class="display-title">Alle berichten</h1>
     <p class="section-kicker">
       {archiveStats.postCount.toLocaleString('nl-BE')} berichten.
     </p>

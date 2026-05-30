@@ -6,7 +6,7 @@ title: "Water in de Tuin II"
 date: "01-06-2016"
 isoDate: "2016-06-01T21:14:00"
 time: "21:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Water in de Tuin II Nu staat er veel meer water in de tuin dan 2 dagen terug, na de vele neerslag. (Zie blog Wateroverlast). Er heeft zich namelijk een fenomeen voorgedaan dat ik in de 50 jaar dat ik hier woon nog nooit gezien heb. Het wate"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1921055.html"

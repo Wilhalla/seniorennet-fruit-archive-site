@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "14-06-2018"
 isoDate: "2018-06-14T21:11:00"
 time: "21:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. De hoeve van de vroegere watermolen, nu een ontvangst ruimte. 11. Plaats van de vroegere watermolen. Men zal er opnieuw een rad plaatsen met het oog op elektriciteitsopwekking. 12. Speciaal. De balken zijn in ruitvorm gelegd ter"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2154857.html"

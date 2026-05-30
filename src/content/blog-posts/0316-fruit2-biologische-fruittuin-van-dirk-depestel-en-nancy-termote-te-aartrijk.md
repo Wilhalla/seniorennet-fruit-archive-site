@@ -6,7 +6,7 @@ title: "Biologische Fruittuin van Dirk Depestel en Nancy Termote te Aartrijk"
 date: "19-06-2017"
 isoDate: "2017-06-19T17:44:00"
 time: "17:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Biologische Fruittuin van Dirk Depestel en Nancy Termote te Aartrijke 16/6/2017 Samen met mijn goede vriend Louis Eelen – superkrak wat enten betreft: de meer dan 10 entingen bij mij allemaal gelukt – sloten we ons aan bij de uitstap van de"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2048096.html"

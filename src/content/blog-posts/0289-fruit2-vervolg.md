@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "23-09-2017"
 isoDate: "2017-09-23T22:35:00"
 time: "22:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10 De fontein 11 Kruis 12 Grote markt 13 Idem Oudste apotheek van Duitsland 14 Huis met Moorse invloeden. 15 Porta Nigra 16 Idem 17 Romaanse colonade van een vroeger klooster 18 Paul Koop, gids en Walter Vereycken, organisator"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2075530.html"

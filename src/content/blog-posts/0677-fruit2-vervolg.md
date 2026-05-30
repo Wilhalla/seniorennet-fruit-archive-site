@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "12-06-2015"
 isoDate: "2015-06-12T18:53:00"
 time: "18:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Landschap; tarweveld Idem, naar het zuiden met de kerk van Gistel Aaltaar van de madonna De madonna van Michel Angelo, het enige werk dat Italië verliet tijdens zijn leven, gekocht door een Bruggeling. Prachtige preekstoel Een van d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776470.html"

@@ -6,7 +6,7 @@ title: "Bosreservaat Regenwoud op Vancouver Eiland"
 date: "01-05-2018"
 isoDate: "2018-05-01T12:02:00"
 time: "12:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bosreservaat Regenwoud op Vancouver Eiland 1. Bosreservaat op Vancouver Island 2. Wij bezochten Rainforest Trail A 3. Met Veerle en Rene 4. Loopbruggetje op en af, 1,2 km 5. Boom 6. Een zware storm in 1987 had vele bomen geveld en meteen wa"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2142935.html"

@@ -6,7 +6,7 @@ title: "Leiden in de Sneeuw"
 date: "13-02-2017"
 isoDate: "2017-02-13T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Leiden in de Sneeuw Met Ver. Oostind. Compagnie Antwerpen 11 febr. 2017 In het Rijksmuseum van Oudheden te Leiden loopt de tentoonstelling Koninginnen van de Nijl, Faraovrouwen in Egypte (1500-1000 VC) Na het vertrek in Merksem begon het te"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2008158.html"

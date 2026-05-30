@@ -6,7 +6,7 @@ title: "Bloei Japanse Wijnbes – Dorman Red"
 date: "26-06-2016"
 isoDate: "2016-06-26T11:38:00"
 time: "11:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bloei Japanse Wijnbes – Dorman Red De wijnbes heeft nog witte bloemblaadjes, dorman red niet. De bloem kruipt als het ware naar binnen en kruipt er later weer uit om te rijpen. De vrucht is tweemaal groter dan deze van de Japanse wijnbes, i"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1929691.html"

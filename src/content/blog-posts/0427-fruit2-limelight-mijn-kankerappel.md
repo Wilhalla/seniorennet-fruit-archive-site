@@ -6,7 +6,7 @@ title: "Limelight, mijn kankerappel"
 date: "13-09-2016"
 isoDate: "2016-09-13T22:33:00"
 time: "22:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Limelight, mijn kankerappel Limelight is een appel van Hugh Ermen, die na zijn pensionering als onderezoeker op Brogdale, verder actief bleef met het ontwikkelen van nieuwe appelrassen. Limelight werd samen met Red Devil in 2000 op de markt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1955390.html"

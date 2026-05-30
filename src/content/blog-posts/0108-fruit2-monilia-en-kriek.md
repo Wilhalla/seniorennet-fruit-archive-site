@@ -6,7 +6,7 @@ title: "Monilia en Kriek"
 date: "08-05-2019"
 isoDate: "2019-05-08T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Monilia en Kriek Schaarbeekse Kriek’ (‘Griotte de Schaerbeek’) (RGF-Gblx) : Zeer oud ras, traditioneel gebruikt voor het maken van kriekbier, vooral wegens het sterk roodkleurend sap, middelmatig grote,donkerrode vruchten in trossen, zoetzu"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2236740.html"

@@ -6,7 +6,7 @@ title: "Het verdronken Land van Saeftinghe"
 date: "25-06-2015"
 isoDate: "2015-06-25T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Het verdronken Land van Saeftinghe Met KVLV (21/06) Het verdronken Land van Saeftinghe werd voor mij een openbaring. Gidse Carla wist ons (29) allemaal te boeien. Eerst een algemene uitleg, nog eens de voorwaarden herhaald, o.a. een goede f"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1782453.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "09-11-2015"
 isoDate: "2015-11-09T22:23:00"
 time: "22:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Reinette Rouge Parmentier Jules Labitte Sturmer Pippin General Tottleben Frangipanne, bakpeer Catillac, bakpeer St-Mathieu, bakpeer. Twee bereidingen waren te proeven; lekker Idem Cider, uitstekende kwaliteit"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1837039.html"

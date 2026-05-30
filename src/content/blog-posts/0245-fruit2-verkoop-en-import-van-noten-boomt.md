@@ -6,7 +6,7 @@ title: "Verkoop en import van noten boomt"
 date: "29-11-2017"
 isoDate: "2017-11-29T09:32:00"
 time: "09:32"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Verkoop en import van noten boomt dankzij gezond imago De verkoop van noten zit in de lift. Volgens cijfers van de FOD Economie spendeerden Belgische gezinnen in 2016 gemiddeld 30 euro aan noten, terwijl dat in 2012 slechts 19 euro was. In "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2096842.html"

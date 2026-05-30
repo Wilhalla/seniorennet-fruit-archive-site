@@ -6,7 +6,7 @@ title: "Normandië Dag 3"
 date: "19-09-2015"
 isoDate: "2015-09-19T14:51:00"
 time: "14:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Normandië Dag 3 Vandaag staat Le Mont St.Michel, op de grens Normandië en Bretagne, op het programma. Er is een eerste stop te Villedieu-les-Poêles, een vroeger koperstadje. We bezoeken de kerk en kijken wat rond. We rijden verder naar Avra"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1815396.html"

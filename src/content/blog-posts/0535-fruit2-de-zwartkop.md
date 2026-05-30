@@ -6,7 +6,7 @@ title: "De Zwartkop"
 date: "11-04-2016"
 isoDate: "2016-04-11T14:47:00"
 time: "14:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "De Zwartkop, een lentevogel bij uitstek Vandaag, een heerlijke lentedag. Sinds vorige zaterdag, 9/4, is de zwartkop terug. Zijn klare, melodieuze zang vervult mij telkens met vreugde. Nu heet hij zwartkopgrasmus, vroeger zwartkoptuinfluiter"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1901140.html"

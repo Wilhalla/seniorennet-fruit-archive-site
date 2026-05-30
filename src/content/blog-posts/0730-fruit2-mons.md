@@ -6,7 +6,7 @@ title: "Mons"
 date: "29-03-2015"
 isoDate: "2015-03-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mons Na de middag bezoeken we Mons, dit jaar samen met Pilsen in Tsjechië, culturele hoofstad van Europa. We krijgen een 2 u durende, gegidste wandeling door het historische Mons, beginnende met het Middeleeuwse ijzeren aapje in de voorgeve"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743525.html"

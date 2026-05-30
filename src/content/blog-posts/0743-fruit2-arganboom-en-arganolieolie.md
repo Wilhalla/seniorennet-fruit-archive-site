@@ -6,7 +6,7 @@ title: "Arganboom en Arganolieolie"
 date: "20-03-2015"
 isoDate: "2015-03-20T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Arganboom en Arganolie Op terugweg naar Marrakech stopten we bij een coöperatieve van Berbervrouwen voor arganolie. De arganboom groeit slechts op een beperkte oppervlakte in het zuidwesten van Marokko in semiwoestijngebied. De vruchten zij"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1739238.html"

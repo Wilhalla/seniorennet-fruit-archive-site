@@ -44,7 +44,7 @@ reactions: []
 
 <p><em>Ik zie er tevens een waardering in voor het werk van vele vrouwen in onze te mannelijke Velt. </em></p>
 
-<p><em> Daniel Willaeys, Halle-Zoersel 11 april ’99</em></p>
+<p><em> Daniël Willaeys, Halle-Zoersel 11 april ’99</em></p>
 
 <p><em>P.S. Mijn voorstel kwam niet bij de beheerders en verder. De toenmalige voorzitter en een paar stafleden, met wie ik niet de beste maatjes was, beslisten hierover.</em></p>
 </article>

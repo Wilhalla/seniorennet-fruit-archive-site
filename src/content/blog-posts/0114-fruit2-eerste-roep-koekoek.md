@@ -6,7 +6,7 @@ title: "Eerste Roep Koekoek"
 date: "23-04-2019"
 isoDate: "2019-04-23T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Eerste Roep Koekoek 20/4/2019 Deze keer was het niet ik maar dochter Tinneke die de koekoek hoorde en zag bij het verzorgen van haar paarden. Na een periode met schraal, droog weer en vorst aan de grond, eenmaal ook nachtvorst tot -1,7° en "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2232985.html"

@@ -6,7 +6,7 @@ title: "Artikel Libelle"
 date: "23-06-2019"
 isoDate: "2019-06-23T08:22:00"
 time: "08:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Artikel Libelle"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247841.html"

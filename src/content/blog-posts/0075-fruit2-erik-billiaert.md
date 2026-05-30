@@ -6,7 +6,7 @@ title: "Erik Billiaert"
 date: "26-07-2019"
 isoDate: "2019-07-26T21:42:00"
 time: "21:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Volgende woensdag 31 juli 2019 wordt collega PMS directeur en dorpsgenoot Erik Billiaert begraven, geboren te Oostende op 29 april 1943. Sonnet Hoeveel dagen resten mij nog? Was het de bliksem bij helder weer Of was het Boreas die het nieuw"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2255941.html"

@@ -6,7 +6,7 @@ title: "Trezeke Meyers Feedback"
 date: "27-10-2017"
 isoDate: "2017-10-27T13:15:00"
 time: "13:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Trezeke Meyers Feedback Ik zag zopas uw bericht ivm Trezeke Meyers op uw blog. Als bijlage een afbeelding van de gerenoveerde hovenierswoning te Landeghem alwaar Trezeke voorheen woonde. De oorspronkelijke boom is weg maar er werd jong exem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2086449.html"

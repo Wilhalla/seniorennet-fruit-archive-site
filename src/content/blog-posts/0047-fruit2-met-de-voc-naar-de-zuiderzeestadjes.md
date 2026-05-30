@@ -6,7 +6,7 @@ title: "Met de VOC naar de Zuiderzeestadjes"
 date: "30-09-2019"
 isoDate: "2019-09-30T23:50:00"
 time: "23:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Met de VOC naar de Zuiderzeestadjes Davidsfonds Ekeren 19 – 22 sept. Rond het Ijselmeer, een stuk van de vroegere zuiderzee, liggen een aantal historische stadjes en plaatsen waarvan sommige al deel uitmaakten van de Hanzesteden uit de 14de"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2271003.html"

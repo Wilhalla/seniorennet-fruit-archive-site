@@ -6,7 +6,7 @@ title: "Minister Joke Schauvliege: Géén subsidieroof voor biologische landbouw
 date: "19-11-2017"
 isoDate: "2017-11-19T16:56:00"
 time: "16:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Minister Joke Schauvliege: Géén subsidieroof voor biologische landbouworganisatie Biologische landbouw is de voortrekker van duurzame landbouw door aan te tonen dat ook zonder chemisch‐synthetische hulpmiddelen geteeld kan worden. Terwijl i"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2093610.html"

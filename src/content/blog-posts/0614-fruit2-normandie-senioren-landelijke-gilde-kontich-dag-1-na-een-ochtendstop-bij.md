@@ -6,7 +6,7 @@ title: "Normandië Senioren Landelijke Gilde Kontich Dag 1 Na een ochtendstop bi
 date: "14-09-2015"
 isoDate: "2015-09-14T22:19:00"
 time: "22:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Normandië Senioren Landelijke Gilde Kontich Dag 1 Na een ochtendstop bij Valenciennes, bereiken we tegen de middag Amiens. Na het fijne middagmaal gaan we de gotische Notre-Dame kathedraal bezoeken. Het is de grootste, gotische katedraal va"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1813573.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "11-05-2015"
 isoDate: "2015-05-11T00:44:00"
 time: "00:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG De ineengebouwde kathedralen Toehoorders Ingang kathedralen, Idem Een cosmonout bij een restauratie ingewerkt Portaal universiteit Jezuietenschool Casa de conchas (schelpenhuis) Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1762746.html"

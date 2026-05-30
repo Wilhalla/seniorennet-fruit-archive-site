@@ -6,7 +6,7 @@ title: "Proeftuin Daniël Willaeys"
 date: "26-04-2018"
 isoDate: "2018-04-26T23:37:00"
 time: "23:37"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ik doe weer mee met de ECO-Tuindagen van Velt Proeftuin Daniël Willaeys Lage Weg 60 2980 Halle-Zoersel Maak kennis met een landschappelijke, een bloemrijke, een eetbare, een bos-, een moes- en een zeer diverse enorme fruittuin. Op 1 hectare"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2141719.html"

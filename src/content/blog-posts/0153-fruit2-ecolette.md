@@ -6,7 +6,7 @@ title: "Ecolette"
 date: "08-10-2018"
 isoDate: "2018-10-08T21:31:00"
 time: "21:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ecolette Sinds deze appel vorig jaar ontsnapte aan de lentenachtvorsten en een volle dracht leverde, krijgt die mijn volle aandacht. U U kunt hem als enige in een kleine tuin planten daar hij voldoende zelfbestuivend is. De boom groeit nog "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2183737.html"

@@ -6,7 +6,7 @@ title: "Ecolette"
 date: "27-10-2015"
 isoDate: "2015-10-27T09:27:00"
 time: "09:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ecolette Deze bewaarappel is een kruising van Elstar en Prima (een resistent, Amerikaans ras) van het opzoekingsstation te Wageningen, Centre for Plant Breeding and Reproduction Research (CPRO, 1978). Eerst dacht men het ras voor te behoude"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1831450.html"

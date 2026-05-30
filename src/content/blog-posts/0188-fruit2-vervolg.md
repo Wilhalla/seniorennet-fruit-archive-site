@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "14-08-2018"
 isoDate: "2018-08-14T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Hij legt zich eveneens toe op de zoete aardappel die meer en meer in de belangstelling komt. Hij zoekt naar rassen die het bij ons goed doen naar opbrengst en smaak. Ik zag een paars ras. 11. groep 12. Enthoesiaste uitleg. 13. V"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2169842.html"

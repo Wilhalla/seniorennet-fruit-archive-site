@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "28-09-2018"
 isoDate: "2018-09-28T23:23:00"
 time: "23:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 Schoolmeisjes Rat De 2 dochters van de beeldhouwer met hun pop De gids toont de pop Mie Man, de bakel De slak duidt op een gemakkelijke bevalling Boshuisje Moeder en kind Joke Dries"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2180975.html"

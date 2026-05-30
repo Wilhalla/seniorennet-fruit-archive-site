@@ -6,7 +6,7 @@ title: "Open Dag op Zoetewei 11aug."
 date: "12-08-2019"
 isoDate: "2019-08-12T17:13:00"
 time: "17:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Open Dag op Zoetewei 11aug. Dimitri Jacobs, de zaakvoerder van de speciale kwekerij te Putte (Mechelen) voor een rijpende, speciale Cornus mas, de kornoeljekers. Groep, rechts Guy De Kinder en zijn echtgenote. Dicussie met Vincent Vincent e"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2259683.html"

@@ -6,7 +6,7 @@ title: "Landbouwlus door Zoersel"
 date: "25-06-2019"
 isoDate: "2019-06-25T19:51:00"
 time: "19:51"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Landbouwlus door Zoersel Op 23-6-2019 werd die officieel ingehuldigd, gevolgd door een culinaire rondrit. De fietslus door de 3 deelgemeenten Zoersel, St. Antonius en Halle, 31km, staat in het teken van Landbouw, Natuur en Zorg. Op 5 plaats"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2248441.html"

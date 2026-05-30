@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "24-05-2015"
 isoDate: "2015-05-24T12:25:00"
 time: "12:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Tuin Albert De Raedt met de Harde Gentse Azalea’s Idem Idem Idem De nieuwe doolhof Idem met de centrale Zilveresdoorn"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1768546.html"

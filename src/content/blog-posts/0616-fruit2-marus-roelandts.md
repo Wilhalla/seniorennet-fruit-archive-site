@@ -6,7 +6,7 @@ title: "Marus Roelandts"
 date: "14-09-2015"
 isoDate: "2015-09-14T19:58:00"
 time: "19:58"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Marus Roelandts De 85 jarige Gummarus Roelandts, beroemde inwoner van Halle-Kempen, afkomstig van Pulderbos is mijn overbuur van de ‘Mollenhoeve’, zijn buitenverblijf. Regelmatig krijgt hij bezoekers die dan een borreltje getracteerd krijge"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1813503.html"

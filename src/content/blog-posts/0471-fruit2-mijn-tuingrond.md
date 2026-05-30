@@ -6,7 +6,7 @@ title: "Mijn Tuingrond"
 date: "04-07-2016"
 isoDate: "2016-07-04T09:34:00"
 time: "09:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mijn Tuingrond Naar aanleiding van de Lookoogst op de blog vroeg iemand naar mijn tuingrond. In bio zorgt men in eerste instantie voor een goede grond. Mijn tuingrond, Kempische zandgrond te Zoersel is sinds 1970 biologisch. Er werd nooit b"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1932487.html"

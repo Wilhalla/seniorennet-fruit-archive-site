@@ -6,7 +6,7 @@ title: "Cornus mas, Kornoeljebes en imkeren"
 date: "11-10-2019"
 isoDate: "2019-10-11T10:53:00"
 time: "10:53"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Cornus mas, Kornoeljebes en imkeren Ik kreeg bezoek van een jonge man die enkele fruitrassen wou aanplanten. Meteen kon hij een aantal rassen proeven. Hij vertelde dat hij nog niet zolang aan het imkeren was. Met zijn 18 kasten trekt hij na"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2273582.html"

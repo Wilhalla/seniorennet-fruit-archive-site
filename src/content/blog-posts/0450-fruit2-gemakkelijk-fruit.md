@@ -6,7 +6,7 @@ title: "Gemakkelijk Fruit"
 date: "04-08-2016"
 isoDate: "2016-08-04T22:52:00"
 time: "22:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Gemakkelijk Fruit Uit eigen Tuin, van Terras of Balkon Guy De Kinder 2016 Kosmos Uitgevers ISBN 978 90 2156 2803 20 Fruitsoorten worden besproken, waaronder 10 soorten Kleinfruit: Aalbes, Aardbei, Blauwe bes, Braam ( ook de braambozen (krui"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1942662.html"

@@ -6,7 +6,7 @@ title: "Landgoed De Hertgang"
 date: "24-09-2019"
 isoDate: "2019-09-24T22:14:00"
 time: "22:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Landgoed De Hertgang We rijden naar Halsteren en het Landgoed De Hertgang. Eerst hebben we een verfijnde lunch. Daarna gidst de eigenaar ons door het domein van 5,5 ha. Gedeeltelijk ligt het op de steilrand (12m) van de Brabantse Wal. Het m"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2269620.html"

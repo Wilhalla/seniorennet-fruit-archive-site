@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "12-08-2009"
 isoDate: "2009-08-12T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Gamma uiltje, een nachtvlinder. De antennes zijn anders. Bij dagvlinders eindigen die op een bolletje. Landkaartje (zomervorm) “ ondervleugel die doet denken aan een kaart. Boomblauwtje, in de vlucht een klein blauw vlindertje. De a"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit/archief.php?ID=410227.html"

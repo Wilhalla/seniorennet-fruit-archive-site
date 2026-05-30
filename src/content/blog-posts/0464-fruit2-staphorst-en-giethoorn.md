@@ -6,7 +6,7 @@ title: "Staphorst en Giethoorn"
 date: "19-07-2016"
 isoDate: "2016-07-19T23:14:00"
 time: "23:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Staphorst en Giethoorn Met OKRA Halle-Kempen 30/06 Het is wel een stuk rijden. Je komt in 9 van de 12 Nederlandse provincies. Willem is chauffeur van “De Stille Kempen” en vader Theo is gids. Hij wist bijzonderveel te vertellen. Ik hoorde h"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1937474.html"

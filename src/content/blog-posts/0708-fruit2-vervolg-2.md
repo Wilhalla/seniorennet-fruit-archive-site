@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "03-05-2015"
 isoDate: "2015-05-03T21:20:00"
 time: "21:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Edelsmeedkunst Idem Inkom Jan Van Gent Lekkies Als we binnenkomen staat de ketel al te koken. De brij wordt uitgegoten op twee koelplaten. Na voldoende afkoelen wordt de brij opgehangen en uitgerokken en per gedeelten door een vor"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1759530.html"

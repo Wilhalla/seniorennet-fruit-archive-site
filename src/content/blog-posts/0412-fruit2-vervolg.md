@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "28-09-2016"
 isoDate: "2016-09-28T20:05:00"
 time: "20:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Nestkast voor de steenuil met verlengde buis om de boommarter weg te houden. Marc bij een nieuwe proef om met de behulp van de lamp erboven de nachtelijke fruitmotten weg te vangen. Men zoekt naar een lijmstof om enkel deze vlindert"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1960664.html"

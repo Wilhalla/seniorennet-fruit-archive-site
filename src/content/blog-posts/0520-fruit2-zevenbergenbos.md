@@ -6,7 +6,7 @@ title: "Zevenbergenbos"
 date: "23-04-2016"
 isoDate: "2016-04-23T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Zevenbergenbos Koninklijke Vlaamse Dendrologische Vereniging ( 17 april ) Al vele jaren had ik dit zeer interessante bos willen bezoeken. Je hebt er leem- en zandgronden met in het voorjaar een geweldig interessante kruidenlaag, vooral in h"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1905917.html"

@@ -6,7 +6,7 @@ title: "Een zeer fruitig weekend"
 date: "26-09-2017"
 isoDate: "2017-09-26T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een zeer fruitig weekend 23-24 sept. In maart was er een samenkomst op Hoebenschot te Lichtaart als start voor een Velt Werkgroep Fruit Kempen. Om interesse te wekken en dit bekend te maken plande ik 2 samenkomsten. Een in het kader van het"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2076448.html"

@@ -6,7 +6,7 @@ title: "16/9 Echternach Luxemburg"
 date: "04-10-2017"
 isoDate: "2017-10-04T22:59:00"
 time: "22:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "16/9 Echternach Luxemburg In de voormiddag bezoeken we Echternach, de oudste stad van Luxemburg Het begin was weer een abdij (698). Bekend is de springprocessie van de dinsdag na Pinksteren. Nu springt men afwisselend op linker - en rechtev"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2078874.html"

@@ -6,7 +6,7 @@ title: "Feedback M7 onderstam"
 date: "30-12-2016"
 isoDate: "2016-12-30T13:08:00"
 time: "13:08"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback M7 onderstam Ik las op uw blog over de onderstam M7. Ik zit met mijn (commerciële)appelaanplant op een zuiderhelling met een doorwortelbare toplaag van 15 cm, daaronder 30 tot 40 meter ondoordringbare groene klei. Op de beste plaat"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1992544.html"

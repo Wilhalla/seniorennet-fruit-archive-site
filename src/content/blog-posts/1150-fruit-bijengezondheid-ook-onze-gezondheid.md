@@ -6,7 +6,7 @@ title: "BIJENGEZONDHEID, OOK ONZE GEZONDHEID"
 date: "23-03-2013"
 isoDate: "2013-03-23"
 time: ""
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een ambitieus « Bijenplan » van de FOD Volksgezondheid (U kunt dit plan oproepen. Zie verder Een ganse boterham om te lezen.) 22/03/2013 Iedereen weet dat de risico’s voor de bijen steeds groter worden. Maar welke acties neemt de overheid o"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit/archief.php?ID=1360161.html"

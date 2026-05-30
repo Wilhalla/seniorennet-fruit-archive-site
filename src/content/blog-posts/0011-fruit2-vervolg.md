@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "14-02-2020"
 isoDate: "2020-02-14T23:27:00"
 time: "23:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Breugel werd in de kerk begraven in 1569 11. Gedenkplaat met tekst van Felix Timmermans 12. Tussen Jan en Paul staat Bob Autrique van de stichting Geo Verbanck. Vorig jaar gingen we op ontdekkingstocht naar de vele beeldhouwwerk"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2302252.html"

@@ -6,7 +6,7 @@ title: "Wilde bij"
 date: "16-06-2015"
 isoDate: "2015-06-16T23:50:00"
 time: "23:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wilde bij helpt Hagelandse fruittelers met bestuiving 16.06.2015 Honingbijen zijn de bestuivers bij uitstek van fruitboomgaarden. Door de bijensterfte stijgen de kosten voor het huren van kolonies bij een imker en treden wilde bijen op de v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1778280.html"

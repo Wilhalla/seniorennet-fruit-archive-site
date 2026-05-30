@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "28-09-2018"
 isoDate: "2018-09-28T23:04:00"
 time: "23:04"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Jan en Trien Trien leidt de blinde Jan Figuren Figuren Dieren Joke Dries, De eerste vrouwelijke burgemeester van Zoersel in de dertigerjaren Figuur Zijn dochters onder het schild van Zoersel Haan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2180970.html"

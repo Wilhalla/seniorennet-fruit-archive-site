@@ -6,7 +6,7 @@ title: "afdeling Touraine van de Croqueurs de Pommes."
 date: "05-09-2016"
 isoDate: "2016-09-05T23:42:00"
 time: "23:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vrijdag 26 aug. Vanmorgen zeggen we vaarwel aan hotel Kyriad Sud te Tours. We rijden naar Veigné voor een ontmoeting met de afdeling Touraine van de Croqueurs de Pommes. Zij tellen 187 leden van de 8 000 leden van het geheel. Onze NBS telt "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1952900.html"

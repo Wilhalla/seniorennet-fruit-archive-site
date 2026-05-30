@@ -6,7 +6,7 @@ title: "Red Star"
 date: "22-06-2015"
 isoDate: "2015-06-22T17:28:00"
 time: "17:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Red Star Met Egenhoven (28/5) Eerst bezochten we het Douanemuseum in het gebouw Financiën in de Ellermansstraat. We kregen er een boeeiende rondleiding. Toen ik mijn dienstplicht vervulde in 1959 in Ieper was de derde miliciën een gast uit "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1781030.html"

@@ -6,7 +6,7 @@ title: "Permacultuurtuin Linder"
 date: "19-06-2019"
 isoDate: "2019-06-19T18:44:00"
 time: "18:44"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Permacultuurtuin Linder Te Oirschot 16 juni 2019 Met de vrijwilligers van de Open-Tuindagen en samentuinen van VELT Antwerpen naar Nederland. We hadden tevens geluk met het weer. Linder Van den Heerik is op theoretisch gebied goed onderlegd"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247030.html"

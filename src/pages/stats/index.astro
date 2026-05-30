@@ -6,8 +6,15 @@ import { buildArchiveStatsData } from '../../lib/archiveStats'
 const stats = buildArchiveStatsData()
 ---
 <BaseLayout
-  title="Statistieken · Daniel Willaeys fruitarchief"
-  description="Data-inzichten over berichten, beelden, reacties, ritme en thema’s in het fruitarchief van Daniel Willaeys."
+  title="Statistieken · Blogarchief Daniël Willaeys"
+  description="Data-inzichten over berichten, beelden, reacties, ritme en thema’s in het blogarchief van Daniël Willaeys."
 >
+  <div id="stats-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Statistieken laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Blogarchief Daniël Willaeys</span>
+      <small>statistieken laden</small>
+    </div>
+  </div>
   <StatsDashboard stats={stats} client:load />
 </BaseLayout>

@@ -6,7 +6,7 @@ title: "Biobieren proeven op de Dobbelhoeve"
 date: "09-11-2017"
 isoDate: "2017-11-09T18:39:00"
 time: "18:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Biobieren proeven op de Dobbelhoeve Met Carl Grillet van Biosano 28 /10 Op dit ogenblik zijn er al 139 biobieren We zullen er 10 proeven Nr 1 is denieuwe Gageeler Sour White - No Hops. na de Gageleer en de donkere Gageleer. Hiermee gaat men"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2090656.html"

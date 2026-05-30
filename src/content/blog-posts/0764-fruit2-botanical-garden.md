@@ -6,7 +6,7 @@ title: "BOTANICAL GARDEN"
 date: "28-01-2015"
 isoDate: "2015-01-28T23:28:00"
 time: "23:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "BOTANICAL GARDEN Vandaag (11/8) trek ik er alleen op uit. De rest bezoekt de zoutmijn van Wieliczka. Ik bezocht die ook in 2005, doch kon er maar matig van genieten met in mijn hoofd de belevenissen van het geweldige roetsjen op de lange gl"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714749.html"

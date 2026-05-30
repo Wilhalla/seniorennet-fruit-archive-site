@@ -6,7 +6,7 @@ title: "VERVOLG TV toren In het draaiend restaurant Afgedamde oude Donau. Mensen
 date: "20-06-2016"
 isoDate: "2016-06-20T21:34:00"
 time: "21:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG TV toren In het draaiend restaurant Afgedamde oude Donau. Mensen zijn maar stippen Donau en Donaukanaal met hoogbouw De UNOgebouwen naast de vorige De stad (zuidwestkant) Noordwestkant met Donau en Donaukanaal Idem De hoge gebouwen "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927670.html"

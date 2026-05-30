@@ -6,7 +6,7 @@ title: "Op bezoek bij Ger Van Santvoort op di 21/06 en de hagelstorm van do. 23/
 date: "29-06-2016"
 isoDate: "2016-06-29T10:41:00"
 time: "10:41"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Op bezoek bij Ger Van Santvoort op di 21/06 en de hagelstorm van do. 23/06 Ger heeft een prachtige collectie perziken, nectarines en abrikozen in zijn serre. We proefden o.a. de rijpe Amsden en een rode nectarine, Early Platicarpa uit Ooste"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1930650.html"

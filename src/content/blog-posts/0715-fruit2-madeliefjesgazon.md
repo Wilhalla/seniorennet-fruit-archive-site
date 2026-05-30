@@ -6,7 +6,7 @@ title: "Madeliefjesgazon"
 date: "26-04-2015"
 isoDate: "2015-04-26T09:36:00"
 time: "09:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Madeliefjesgazon Toen we hier 53 jaar terug kwamen wonen, groeide rond het huis geen sprietje gras. Als West-Vlaming leek voor mij zand in De Kempen een normale zaak. Eerst had ik niet door dat dit het gevolg was nan het gebruik van totale "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1755969.html"

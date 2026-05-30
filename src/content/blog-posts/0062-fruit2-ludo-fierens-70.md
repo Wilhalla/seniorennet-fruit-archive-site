@@ -6,7 +6,7 @@ title: "Ludo Fierens 70"
 date: "30-08-2019"
 isoDate: "2019-08-30T20:25:00"
 time: "20:25"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Ludo Fierens 70 17-8-2019 Originele viering: op een boot, met een gans bovendek voor familie, vrienden en kennissen. Een vaart van 3 uur op de Schelde. Mij trof het hoe sterk de havenintrastructuur aanwezig is aan beide kanten. Terug aangem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2263767.html"

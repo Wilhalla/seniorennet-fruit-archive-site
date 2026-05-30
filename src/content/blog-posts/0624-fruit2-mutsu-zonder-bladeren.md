@@ -6,7 +6,7 @@ title: "Mutsu zonder bladeren"
 date: "16-08-2015"
 isoDate: "2015-08-16T16:42:00"
 time: "16:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Mutsu zonder bladeren Op een vorige blog zag u hoe de bladeren van deze boom er ellendig bij hingen. De regen heeft die weggespoeld. Ik verwacht dat de vruchten niet meer zullen dikken?"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1802547.html"

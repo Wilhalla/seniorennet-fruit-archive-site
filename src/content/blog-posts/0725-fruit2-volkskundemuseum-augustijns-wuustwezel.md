@@ -6,7 +6,7 @@ title: "Volkskundemuseum Augustijns Wuustwezel"
 date: "29-03-2015"
 isoDate: "2015-03-29T23:21:00"
 time: "23:21"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Volkskundemuseum Augustijns Wuustwezel Met Landelijke Gilde Halle-St. Antonius (21/3) Dankzij deze vereniging maakte ik de vorige keer kennis met het enige museum elektriciteit te Pulderbos (op de vorige blog http://blog.seniorennet.be/frui"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743731.html"

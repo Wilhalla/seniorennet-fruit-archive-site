@@ -6,7 +6,7 @@ title: "VERVOLG 1"
 date: "17-06-2019"
 isoDate: "2019-06-17T23:20:00"
 time: "23:20"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 1 10. Op het plein, 11. De Matthiaskerk 12. Een trouwgezelschap voor de kerk 13. Verder op het plein 14. Koning Stephanus met het dubbele kruis: de goddelijke en de wereldlijke macht 15. Koning Stephanus 16. Parlement aan de overkan"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2246648.html"

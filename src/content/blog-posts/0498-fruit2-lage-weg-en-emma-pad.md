@@ -6,7 +6,7 @@ title: "Lage Weg en Emma-pad"
 date: "02-06-2016"
 isoDate: "2016-06-02T17:30:00"
 time: "17:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lage Weg en Emma-pad Gisteren (1/06) wandelde ik naar de oostkant van de Lage Weg en naar het Emma-pad, dat het Schijn kruist en verbinding geeft met de Medelaar. FOTO’S zeggen meer De tuin van buurvrouw Bernadette krijgt ook teveel vocht H"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1921322.html"

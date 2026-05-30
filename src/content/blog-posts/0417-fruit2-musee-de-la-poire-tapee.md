@@ -6,7 +6,7 @@ title: "Musée de la Poire Tapée."
 date: "23-09-2016"
 isoDate: "2016-09-23T22:38:00"
 time: "22:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Net als in 2003 bezoeken we te Rivarennes het Musée de la Poire Tapée. De enige merkbare verandering is dat de peren nu in een elektrische oven gedroogd worden en niet meer in de tijdrovende, grote, antieke oven. FOTO’S Musée de la Poire Ta"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1959118.html"

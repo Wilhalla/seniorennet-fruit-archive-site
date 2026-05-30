@@ -6,7 +6,7 @@ title: "Compost als hulp voor Chinese Kool"
 date: "07-09-2017"
 isoDate: "2017-09-07T22:38:00"
 time: "22:38"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Compost als hulp voor Chinese Kool Een paar dagen terug was ik de chinese kolen aan het wieden en uitdunnen. Na het wieden lagen de planten er maar ongelukkig bij. Hoe kon ik die recht zetten om de groei niet te onderbreken? Toen kreeg ik h"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2070855.html"

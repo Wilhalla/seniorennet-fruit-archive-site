@@ -6,7 +6,7 @@ title: "Prof Mevr Sass-Klaassen"
 date: "23-09-2019"
 isoDate: "2019-09-23T22:09:00"
 time: "22:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Prof Mevr Sass-Klaassen In de namiddag hield dr UGW Sass-Klaassen van het Dendrochronologisch Laboratorium voor ons een bijzondere cursus. Zij is gespecialiseerd in het onderzoek van de jaarringen. Er zijn nog levende bomen van 5000 jaar ou"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2269372.html"

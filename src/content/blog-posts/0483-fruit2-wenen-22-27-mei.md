@@ -6,7 +6,7 @@ title: "Wenen (22-27 mei)"
 date: "20-06-2016"
 isoDate: "2016-06-20T22:22:00"
 time: "22:22"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wenen (22-27 mei) Senioren Zoersel Terwijl het buiten regent begin ik aan het verslag over onze Wenenreis. We hebben fantastisch weer gehad, meestal zonnig en tot 25°. Een paar nachten regende het. Enkel bij het uitstappen voor het bezoek a"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1927716.html"

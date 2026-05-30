@@ -6,7 +6,7 @@ title: "Grand Champion"
 date: "27-09-2016"
 isoDate: "2016-09-27T22:19:00"
 time: "22:19"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Grand Champion Vandaag de Grand Champion peren geplukt. Mijn boom werd geplant in 1963. De onderstam ken ik niet. Ik schat de hoogte +/- 4,5m. Hij groeit opvallend gezond. De vruchtbaarheid is niet zeer groot, maar hij staat ook wat afgezon"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1960392.html"

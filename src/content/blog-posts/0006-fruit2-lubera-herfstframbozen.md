@@ -6,7 +6,7 @@ title: "Lubera Herfstframbozen"
 date: "20-03-2020"
 isoDate: "2020-03-20T13:52:00"
 time: "13:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lubera Herfstframbozen Op de IPM te Essen in januari heb ik die voor ’t eerst leren kennen. Zie de eerste foto op de blog van 6/2/2020. Een week terug kreeg ik de planten aan. Men wacht tot de planten beter uitgegroeid zijn en uitstekend do"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2310054.html"

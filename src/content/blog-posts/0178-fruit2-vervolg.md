@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "16-09-2018"
 isoDate: "2018-09-16T21:23:00"
 time: "21:23"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Kunstwerk Koninklijke vogelkooien Topiary vogel Ceder Nog een laatste blik We vertrekken De kerk van Waddesdon ziet eruit als een versterking"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178218.html"

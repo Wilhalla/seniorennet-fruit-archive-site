@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildGalleryRows, filterGalleryImages, formatImagePostDateTime, galleryFiltersFromUrlState, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageGalleryStateFromUrl, imageNumberLabel, relatedGalleryImages, shouldLoadGalleryRelated, shouldLoadGallerySpeciesTags, visibleGalleryThemes } from './imageGallerySession'
+import { buildGalleryRows, buildImageGallerySession, filterGalleryImages, formatImagePostDateTime, galleryFiltersFromUrlState, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageGalleryStateFromUrl, imageNumberLabel, relatedGalleryImages, shouldLoadGalleryRelated, shouldLoadGallerySpeciesTags, visibleGalleryThemes } from './imageGallerySession'
 
 const images = [
   { id: 'a', src: '/archive-images/a.jpg', postSlug: 'a', postTitle: 'Apple blossom', date: '2008-03-07', year: 2008, month: 3, season: 'lente', excerpt: 'first', caption: 'bloesem', visualTags: ['appels', 'bloesem'], visualClusterId: 'c1' },
@@ -57,6 +57,7 @@ describe('image gallery session', () => {
     expect(shouldLoadGalleryRelated({ viewerId: null, relatedLoaded: false, relatedLoading: false })).toBe(false)
     expect(shouldLoadGallerySpeciesTags({ speciesFilter: 'sterappel', query: '', speciesTagsLoaded: false, speciesTagsLoading: false })).toBe(true)
     expect(shouldLoadGallerySpeciesTags({ speciesFilter: 'all', query: 'appel', speciesTagsLoaded: false, speciesTagsLoading: false })).toBe(true)
+    expect(shouldLoadGallerySpeciesTags({ speciesFilter: 'all', query: 'ap', speciesTagsLoaded: false, speciesTagsLoading: false })).toBe(false)
     expect(shouldLoadGallerySpeciesTags({ speciesFilter: 'all', query: '', speciesTagsLoaded: false, speciesTagsLoading: false })).toBe(false)
   })
 
@@ -74,5 +75,25 @@ describe('image gallery session', () => {
     expect(formatImagePostDateTime({ date: '2008-03-07', isoDate: '2008-03-07T13:45:00' })).toBe('07 maart 2008 · 13:45')
     expect(imageNumberLabel({ imageIndex: 2 })).toBe(' · beeld 3')
     expect(imageDownloadFilename({ id: 'fallback', src: '/archive-images/fruit/a%20b.JPG?x=1' })).toBe('a b.JPG')
+  })
+
+  it('builds one image gallery session snapshot for callers', () => {
+    const session = buildImageGallerySession({
+      images,
+      filters: { query: '', selectedYear: '', theme: 'all', speciesFilter: 'all', season: 'all', peoplePlantsOnly: false, sortNewest: true },
+      speciesByImage: {},
+      groups,
+      columns: 2,
+      viewerId: 'b',
+      related: { b: ['c'] },
+    })
+
+    expect(session.filtered.map((image) => image.id)).toEqual(['a', 'c', 'b'])
+    expect(session.viewerImage?.id).toBe('b')
+    expect(session.previousImage?.id).toBe('c')
+    expect(session.nextImage).toBeNull()
+    expect(session.relatedImages.map((image) => image.id)).toEqual(['c', 'a'])
+    expect(session.rows.map((row) => row.type)).toEqual(['year', 'month', 'images', 'year', 'month', 'images'])
+    expect(session.visibleThemes.map((theme) => theme.id)).toEqual(['appels', 'bloesem', 'peren', 'mensen'])
   })
 })

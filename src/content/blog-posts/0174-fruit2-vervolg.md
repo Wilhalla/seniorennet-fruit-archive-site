@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "18-09-2018"
 isoDate: "2018-09-18T20:52:00"
 time: "20:52"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. David Teniers. Let in de 2de en 3de rij op de gordijntjes die voor de schilderijen kondengeschoven worden. 11. Het landschapspark 12. Nijlganzen 13. Cyriel, Piet, Jeanpierre en Johan met op de achtergrond Pethworth House. 14. De"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178780.html"

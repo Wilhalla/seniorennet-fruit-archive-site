@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "31-07-2016"
 isoDate: "2016-07-31T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Oude distileerkolom De vele katrollen en overbrengingen Citoënwiel Stoommachine Idem Kanunnik Ik stapte af in Ranst en zag vanaf de brug dit maïsveld ; een beeld van de verwoestende, uitermate zware regenval in onze streek. Ik moe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1940901.html"

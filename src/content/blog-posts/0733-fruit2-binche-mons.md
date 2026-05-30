@@ -6,7 +6,7 @@ title: "Binche – Mons"
 date: "25-03-2015"
 isoDate: "2015-03-25T23:34:00"
 time: "23:34"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Binche – Mons (met KVLV Halle-Schilde 17/3) Na twee koffiekoeken in de cafetaria zagen we eerst een uitstekende film over het carnaval in al zijn aspecten en in meerdere streken, om dan toe te spitsen op Binche, door de Unesco in 2003 werel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1741800.html"

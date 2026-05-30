@@ -6,7 +6,7 @@ title: "Japanse Kwee (Chaenomelis Japonica)"
 date: "22-09-2018"
 isoDate: "2018-09-22T20:33:00"
 time: "20:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Japanse Kwee (Chaenomelis Japonica) In het Japans Kusa-boke Bloeit prachtig roodachtig in maart, nog voor er bladeren zijn. Dit jaar had ik voor’t eerst behoorlijk wat appelvormige vruchten, die verwerkt worden als kwee. Van de vele takken "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2179678.html"

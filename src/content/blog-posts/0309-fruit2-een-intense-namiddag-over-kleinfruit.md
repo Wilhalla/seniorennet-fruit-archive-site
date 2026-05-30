@@ -6,7 +6,7 @@ title: "Een intense namiddag over Kleinfruit"
 date: "12-07-2017"
 isoDate: "2017-07-12T21:24:00"
 time: "21:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een intense namiddag over Kleinfruit o.a .40 rassen blauwe bessen zijn te beoordelen. Volgende zaterdagnamiddag, 15 juli vanaf 13u30 op de Lage Weg 60 te Halle-Zoersel. Er is hopelijk een nieuwe Velt-fruitwerkgroep Kempen groeiende. Zelf he"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2054868.html"
@@ -20,5 +20,5 @@ reactions: []
 <p>Volgende zaterdagnamiddag, 15 juli vanaf 13u30 op de Lage Weg 60 te Halle-Zoersel.</p>
 <p>Er is hopelijk een <strong>nieuwe Velt-fruitwerkgroep Kempen</strong> groeiende. Zelf heb ik de vruchten geplukt van de eerste Velt Fruit-Werkgroep Antwerpen-Voorkempen en die kennis wil ik, met nog andere leden van die groep doorgeven.</p>
 <p>Als je echt geïnteresseerd bent in kleinfruit, ben je van harte welkom. Ook niet-leden kunnen aansluiten.</p>
-<p>Daniel Willaeys <a href="mailto:daniel@willaeys.be">daniel@willaeys.be</a></p>
+<p>Daniël Willaeys <a href="mailto:daniel@willaeys.be">daniel@willaeys.be</a></p>
 </article>

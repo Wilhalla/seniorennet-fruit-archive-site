@@ -6,7 +6,7 @@ title: "\"Bijen sterven door pesticiden\""
 date: "30-06-2017"
 isoDate: "2017-06-30T09:42:00"
 time: "09:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Grootste studie ooit stelt vast: \"Bijen sterven door pesticiden\" 29/06/17 - 22u35 Bron: Nature, The Guardian © thinkstock. Uit een nieuwe studie naar het gebruik van neonicotinoïde pesticiden, blijkt dat de omstreden bestrijdingsmiddelen ge"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2051157.html"

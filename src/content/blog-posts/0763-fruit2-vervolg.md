@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "28-01-2015"
 isoDate: "2015-01-28T23:36:00"
 time: "23:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Wawel “ “ Jezuïetenkerk Op de Grote Markt voor de Lakenhal Milkbar Dagmenu in de Milkbar Tom en Lucia Nog nagenieten met een pint op de Grote Markt"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714756.html"

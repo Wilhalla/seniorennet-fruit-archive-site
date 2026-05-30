@@ -6,7 +6,7 @@ title: "Vervolg 3 Riquewihr Idem Idem Idem Nagenieten bij een wijntje Colmar Ide
 date: "12-11-2016"
 isoDate: "2016-11-12T20:26:00"
 time: "20:26"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Vervolg 3 Riquewihr Idem Idem Idem Nagenieten bij een wijntje Colmar Idem Idem Idem"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1976092.html"

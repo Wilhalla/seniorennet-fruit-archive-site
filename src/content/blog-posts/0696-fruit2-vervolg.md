@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "14-05-2015"
 isoDate: "2015-05-14T20:39:00"
 time: "20:39"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Sneeuwuil Hij slaat de vleugels uit voor de foto Let of de schuine, ongevaarlijke hoofdnagels Kop met de gele ogen, een dagvogel Havik Kerkuil Verpozen aan de Lek Idem Een grote, ongeladen tanker vaart voorbij."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1764364.html"

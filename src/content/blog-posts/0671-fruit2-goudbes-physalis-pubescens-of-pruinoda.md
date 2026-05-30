@@ -6,7 +6,7 @@ title: "Goudbes (Physalis pubescens of pruinoda)"
 date: "16-06-2015"
 isoDate: "2015-06-16T16:05:00"
 time: "16:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Goudbes (Physalis pubescens of pruinoda) In 2000, toen VELT voor de eerste maal met de verdeling van enkel biologisch zaad begon, schafte ik mij dit zaad aan. Als resultaat veel vruchten, ingepakt in een vlies. Met nieuwjaar kan ja er nog v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1778013.html"

@@ -6,7 +6,7 @@ title: "Overblijvende Ossentong, Pentaglottis sempervirens"
 date: "27-05-2015"
 isoDate: "2015-05-27T00:10:00"
 time: "00:10"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Overblijvende Ossentong, Pentaglottis sempervirens Deze blijkbaar zeldzame plant groeit hier uitstekend. Ik bracht die mee van Schildehof, toen we de plaats voor de Dodoenstuin klaar maakten in 1975. De blauwe bloemen hebben een eigen charm"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1769686.html"

@@ -6,7 +6,7 @@ title: "Vervolg 3"
 date: "24-09-2015"
 isoDate: "2015-09-24T23:47:00"
 time: "23:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Bloem Op de Trial grounds Idem Eucalyptus Moeilijke vergroeiïng van Onderstam M9 en geënt ras Lord Lambourne We proefden de lekkere vrucht Met de Nederlanfse pomologen Ger Van Santvoort en Marcel Tross. De grote serre. In 2004, naar"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1817899.html"

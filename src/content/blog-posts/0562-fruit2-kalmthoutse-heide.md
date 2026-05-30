@@ -6,7 +6,7 @@ title: "Kalmthoutse Heide"
 date: "20-12-2015"
 isoDate: "2015-12-20T19:03:00"
 time: "19:03"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kalmthoutse Heide Vanmorgen belde dochter Veerle- gisteren met het gezin aangekomen uit Canada- of ik nieit mee ging wandelen opde Kalmthoutse Heide. Zoals verrwacht is het vandaag een zonnige dag en van Veerle vernam ik dat in de zon lopen"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1853795.html"

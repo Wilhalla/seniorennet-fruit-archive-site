@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "02-05-2017"
 isoDate: "2017-05-02T22:33:00"
 time: "22:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Veel volk op de Grote straat (foto Peter 11. Gebouw van de Toeristische Dienst 12. Dominikanerkerk, nu een grote boekhandel 13. Links ernaast een vroeger kloostergebouw 14. Vrijthofplein, vroeger een militair oefenterrein (foto "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2032922.html"

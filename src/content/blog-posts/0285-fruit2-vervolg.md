@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "28-09-2017"
 isoDate: "2017-09-28T22:16:00"
 time: "22:16"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Op foto 6 zie je hoe de stenen rood gebakken werden bij de brand"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2077080.html"

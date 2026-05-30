@@ -6,7 +6,7 @@ title: "Nationale Fruittentoonstelling Hof Ter Saksen"
 date: "01-10-2018"
 isoDate: "2018-10-01T22:11:00"
 time: "22:11"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nationale Fruittentoonstelling Hof Ter Saksen (30/9) te Beveren van de Nationale Boomgaardenstichting Een prachtige locatie, zomerweer met veel volk. FOTO’S 1. Hof ter Saksen met park van 30 Ha van de gemeente Beveren. 2. Cassandra peren 3."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2181835.html"

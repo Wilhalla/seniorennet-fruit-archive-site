@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "22-10-2015"
 isoDate: "2015-10-22T00:09:00"
 time: "00:09"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Staand meisje (1922) Arnold Breker Duitser (1900-1991) Hyperrealisme (1996) Max Seelen Belg °1932 Eindeloos (2001) Milko Bozkiov Bulg. °1953 Lulin I-II (2005) Marina Marinova Bulg. °1978 Een van ons zal… Milko Bozhkov Bulg. °1953 Id"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1829332.html"

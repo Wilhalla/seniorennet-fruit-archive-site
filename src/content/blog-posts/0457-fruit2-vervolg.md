@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "24-07-2016"
 isoDate: "2016-07-24T23:01:00"
 time: "23:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG In het centrum van Houffaze: Duitse tank Idem Idem Tank in de Ourthe Vernieling Naar het kasteel van Clervaux Amerikaanse tank Furcht Burcht van Beaufort"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1939020.html"

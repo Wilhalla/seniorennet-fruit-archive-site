@@ -6,7 +6,7 @@ title: "Granny Smith"
 date: "19-01-2020"
 isoDate: "2020-01-19T23:01:00"
 time: "23:01"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Granny Smith Op 17/1 kwam ik op het einde van de Kwade straat de Heidehoeven (in mijn dorp Halle-Zoersel) ingedraaid en bij het huis aan de overkant zag ik een nog met veel vruchten beladen boom in het grasperk staan. Later ben ik met mijn "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2296088.html"

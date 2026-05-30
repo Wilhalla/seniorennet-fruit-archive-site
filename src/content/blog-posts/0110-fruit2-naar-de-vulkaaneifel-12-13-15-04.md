@@ -6,7 +6,7 @@ title: "Naar de Vulkaaneifel 12-13-15/04"
 date: "03-05-2019"
 isoDate: "2019-05-03T23:28:00"
 time: "23:28"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Naar de Vulkaaneifel 12-13-15/04 Met familie en vrienden, 22 man Dochter Leen had dit adres ontdekt en de afspraak geregeld. Ferienhaus Essingerhof, een vroeger hotel met 8 kamers, elk met eigen badkamer, wordt nu verhuurd aan groepen tot 2"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2235540.html"

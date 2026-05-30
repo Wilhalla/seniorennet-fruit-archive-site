@@ -6,7 +6,7 @@ title: "VERVOLG 4"
 date: "11-05-2015"
 isoDate: "2015-05-11T00:29:00"
 time: "00:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 4 Kathedraal (Spijtig zijn de interieurfoto’s onbruikbaar) Altaarstuk El Greco De Romeinse brug met op de achtergrond de kathedralen De steeneiken op de Fincaweiden De pata negra varkens Bij ons vertrek komt de ooievaar terug We mak"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1762742.html"

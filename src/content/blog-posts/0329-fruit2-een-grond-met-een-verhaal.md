@@ -6,7 +6,7 @@ title: "Een Grond met een Verhaal"
 date: "15-05-2017"
 isoDate: "2017-05-15T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een Grond met een Verhaal Eind maart 1962 kochten we de boerderij op de Berkemei 16 te Halle-Kempen. Boer Geysen, 60, moest stoppen wegens hartproblemen. Nog geen half jaar later is hij overleden. Hij had voor ons nog de tuin voor het huis "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2036722.html"

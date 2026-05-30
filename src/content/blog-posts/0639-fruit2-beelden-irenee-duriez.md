@@ -6,7 +6,7 @@ title: "Beelden Irénée Duriez"
 date: "28-07-2015"
 isoDate: "2015-07-28T16:29:00"
 time: "16:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Beelden Irénée Duriez"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1795956.html"

@@ -6,7 +6,7 @@ title: "Juni, bramenmaand!"
 date: "06-06-2017"
 isoDate: "2017-06-06T19:04:00"
 time: "19:04"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Juni, bramenmaand! Bramen hebben mij altijd geïnteresseerd. Pas nu weet ik dat ik een soort batoloog ben! FLORON 6-JUN-2017 - Juni, bramenmaand? Voor een lekkere bramensnoeppartij moeten we wachten tot augustus, de oogstmaand. Maar voor de "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2044091.html"

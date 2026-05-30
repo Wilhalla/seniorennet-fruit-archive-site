@@ -6,7 +6,7 @@ title: "Dag 3 Waddesdon"
 date: "16-09-2018"
 isoDate: "2018-09-16T21:30:00"
 time: "21:30"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Dag 3 Waddesdon Vandaag hebben we onze verste trip. We rijden naar Waddesdon, een kasteeldomein van de Engelse tak van de bankiersfamillie Rothschild in Buckinghamshire, boven groot Londen. Het kasteel werd gebouwd als buitenverblijf en rec"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2178222.html"

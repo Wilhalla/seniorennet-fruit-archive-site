@@ -6,7 +6,7 @@ title: "Tomatenoogst 2015"
 date: "30-08-2015"
 isoDate: "2015-08-30T17:12:00"
 time: "17:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Tomatenoogst 2015 Met uitzondering van vorig jaar heb ik steeds een grote tomatenoogst in mijn Filclair serre van 7m breed. Dit jaar is het fantastisch. Er zijn wel jaren dat de plaag op het einde van het seizoen problemen geeft. 2014 echte"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1807722.html"

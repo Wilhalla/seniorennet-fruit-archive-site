@@ -6,7 +6,7 @@ title: "Kankertakjes knippen"
 date: "27-04-2015"
 isoDate: "2015-04-27T12:48:00"
 time: "12:48"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kankertakjes knippen Nu zie je zeer duidelijk de kankertakjes: geen blaadjes. Een geschikt moment, want anders kunnen ze verder kankersporen blijven uitstoten. De meeste takjes knipte ik op de Ashmeads Kernel, een oud Engels ras, maar een v"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1756516.html"

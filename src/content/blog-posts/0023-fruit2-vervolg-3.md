@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "18-12-2019"
 isoDate: "2019-12-18T21:41:00"
 time: "21:41"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 28. Park 29. Door de poort 30. In de stad 31. Eschwege 32. Idem 33. Idem 34. De Werra 35. Rococo kasteel te Calden 36. In de Neue Gallerie te Kassel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2289162.html"

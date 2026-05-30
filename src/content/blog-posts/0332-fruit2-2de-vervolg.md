@@ -6,7 +6,7 @@ title: "2de VERVOLG"
 date: "02-05-2017"
 isoDate: "2017-05-02T22:14:00"
 time: "22:14"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "2de VERVOLG 19. Armeens aandenken aan St Servaas 20. idem 21. St Servatius 22. Idem (foto Peter) 23. Huis van de hoofdproost. Tussen beide in staat op een groen heuveltje de eerste Nederlandse dichter Hendrik van Veldeke) 24. Beeldhouwwerke"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2032918.html"

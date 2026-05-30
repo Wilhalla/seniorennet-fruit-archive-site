@@ -6,7 +6,7 @@ title: "Wandeling in Antwerpen"
 date: "20-07-2019"
 isoDate: "2019-07-20T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Wandeling in Antwerpen 18-7-2019 Met Iselin, Ole en Simon In 1986-1987 was Iselin onze AFS dochter. Ik weet nog zij zei “Hier niet zo’n zware winter als in Noorwegen”. Het draaide anders uit. Erge vrieskou. Ik zag op een morgen - 22° op de "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2254280.html"

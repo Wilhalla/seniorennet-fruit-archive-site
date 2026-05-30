@@ -6,7 +6,7 @@ title: "WROCLAW"
 date: "28-01-2015"
 isoDate: "2015-01-28T21:42:00"
 time: "21:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "WROCLAW Vandaag, 16-8 met Leen, Aminou, Keda en Isis naar Wroclaw, eveneens een grote, mooie stad, +/- 150km rijden, maar meestal autoweg. We parkeren net buiten het stadscentrum en moeten niet ver stappen naar de universiteit waar we o.a. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1714689.html"

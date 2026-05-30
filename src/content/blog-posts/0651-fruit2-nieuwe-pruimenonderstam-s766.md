@@ -6,7 +6,7 @@ title: "Nieuwe Pruimenonderstam S766"
 date: "10-07-2015"
 isoDate: "2015-07-10T08:29:00"
 time: "08:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Nieuwe Pruimenonderstam S766 Toen ik hier in 1962 kwam trof ik er 2 bomen regionale pruimen (landrassen) aan, blauwe, goed smakende pruimen op eigen wortel. Dat jaar had ik al een formidabele oogst. Ze stonden ook naast de zeer goed bemeste"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1788704.html"

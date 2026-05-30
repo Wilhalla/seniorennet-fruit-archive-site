@@ -6,7 +6,7 @@ title: "Herkomst Reinette Hernaut"
 date: "04-05-2018"
 isoDate: "2018-05-04T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Herkomst Reinette Hernaut Ik lees nu in de folder van de NBS: “De Reinette Hernaut werd begin jaren 1930 gevonden in West-Brabant op het kasteel van Wittouk in Zuun en is genoemd naar tuinman Jean Hernaut. Hij kende niet alleen in de direct"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2143804.html"

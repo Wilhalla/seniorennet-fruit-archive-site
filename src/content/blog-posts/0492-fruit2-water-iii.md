@@ -6,7 +6,7 @@ title: "Water III"
 date: "13-06-2016"
 isoDate: "2016-06-13T18:13:00"
 time: "18:13"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Water III Er viel maar liefst 50.2 mm tot nu toe op minder dan 12 uur! Er is bijna evenveel water naar beneden gekomen als normaal in 1 maand! Dit is zeer uitzonderlijk. Het is opnieuw voor velen bang afwachten hoe de beken in onze omgeving"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1925135.html"

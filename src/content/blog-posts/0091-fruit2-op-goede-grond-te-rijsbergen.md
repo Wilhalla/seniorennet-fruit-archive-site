@@ -6,7 +6,7 @@ title: "‘Op goede Grond’ te Rijsbergen"
 date: "19-06-2019"
 isoDate: "2019-06-19T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "‘Op goede Grond’ te Rijsbergen Dit is mijn tweede bezoek. Verslag van het eerste staat op de blog 15/10/2017. Met Monique was het een heel prettige rondleiding. Ze heeft er een natuurparadijs. Er lag ergens een reekalfje en te horen dat de "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2247166.html"

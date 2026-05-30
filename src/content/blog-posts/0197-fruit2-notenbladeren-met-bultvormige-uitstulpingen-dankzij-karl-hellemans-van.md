@@ -6,7 +6,7 @@ title: "Notenbladeren met bultvormige uitstulpingen. Dankzij Karl Hellemans van 
 date: "15-07-2018"
 isoDate: "2018-07-15T14:40:00"
 time: "14:40"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Notenbladeren met bultvormige uitstulpingen. Dankzij Karl Hellemans van Schilde weet ik weer iets meer. Enkele okkernotenbladeren vertonen bultvormige uitstulpingen. Veel kwaad lijkt het niet te doen. Foto’s en opzoeking van Karl Aan de bov"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2162793.html"

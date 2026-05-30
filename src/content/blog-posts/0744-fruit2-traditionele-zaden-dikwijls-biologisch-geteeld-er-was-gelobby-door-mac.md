@@ -6,7 +6,7 @@ title: "Traditionele zaden (dikwijls biologisch geteeld) Er was gelobby door mac
 date: "17-03-2015"
 isoDate: "2015-03-17T21:33:00"
 time: "21:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Traditionele zaden (dikwijls biologisch geteeld) Er was gelobby door machtige zaadfirma’s om oude zaadvaste rassen van de markt te verdringen. Ik verneem de oplossing: Die EU-Kommission hat vergangene Woche ihren Entwurf für eine neue Saatg"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1738058.html"

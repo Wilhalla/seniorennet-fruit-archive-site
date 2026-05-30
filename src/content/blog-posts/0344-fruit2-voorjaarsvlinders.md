@@ -6,7 +6,7 @@ title: "Voorjaarsvlinders"
 date: "27-03-2017"
 isoDate: "2017-03-27T22:05:00"
 time: "22:05"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Voorjaarsvlinders Met het mooie weer van de laatste week zie ik alle dagen meerdere vlinders. De meest opvallende is natuurlijk de citroenvlinder. Al enkele keren zien dartelen met een koolwitje. Een oefening als straks het bleekgele wijfje"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2021785.html"

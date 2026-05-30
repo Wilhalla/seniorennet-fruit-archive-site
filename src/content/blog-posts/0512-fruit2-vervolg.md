@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "02-05-2016"
 isoDate: "2016-05-02T23:15:00"
 time: "23:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Bedrijfsstructuur Piet Conference peren. Men hanteert een eigen, lange snoei en iets hogere bomen. De nieuwste verpakking van 1,5 l Middagmaal in ’t Speelhof, in de nabijheid van het Begijnhof Oude boomgaard aan de andere kant van d"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1909838.html"

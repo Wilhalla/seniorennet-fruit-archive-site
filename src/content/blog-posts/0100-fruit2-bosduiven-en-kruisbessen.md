@@ -6,7 +6,7 @@ title: "Bosduiven en Kruisbessen"
 date: "04-06-2019"
 isoDate: "2019-06-04T22:02:00"
 time: "22:02"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bosduiven en Kruisbessen Ik heb een kleinfruitkooi waarin momenteel nog gewerkt wordt, spanbetonpalen vervangen de houten palen. Vorig jaar is daarmee al begonnen. De houtduiven maakten daar (geen netafsluiting) gebruik van om al de kruisbe"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2243456.html"

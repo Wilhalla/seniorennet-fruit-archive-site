@@ -6,7 +6,7 @@ title: "Bewering: in een serre: groenteteelt en druiven gaat niet?"
 date: "09-03-2017"
 isoDate: "2017-03-09T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Bewering: in een serre: groenteteelt en druiven gaat niet? IK heb sinds 1990 een Filclair Plastiekserre van 7m breed. Daarin staat al die tijd de witte, pitloze Perlette (vorig jaar absoluut geen hinder van de wateroverlast). Nooit ziekte. "
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2016234.html"

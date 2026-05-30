@@ -6,7 +6,7 @@ title: "Deel 2"
 date: "09-02-2016"
 isoDate: "2016-02-09T20:47:00"
 time: "20:47"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Deel 2 Uitleg Bromelia Bromelia Cactuslandschap Tequilia Agave Uitleg Agave Nectar Uitleg Only in Madagascar Living Stones"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1875550.html"

@@ -6,7 +6,7 @@ title: "Belgica"
 date: "22-09-2018"
 isoDate: "2018-09-22T19:56:00"
 time: "19:56"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Belgica De Belgica werd ontwikkeld door Jean Moors uit Bilzen In 2010 won hij er de Innovatie-award in de land- en tuinbouw van Limburg mee. De Belgica is een kruising van de oude HOOGSTAMAPPELEN Vlijtingse kraker en Bellefleur de Hermée. D"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2179674.html"

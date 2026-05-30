@@ -6,7 +6,7 @@ title: "Paddenstoelen"
 date: "21-10-2019"
 isoDate: "2019-10-21T22:15:00"
 time: "22:15"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Paddenstoelen Dit jaar blijkt het een goed jaar voor paddenstoelen. Ne veel jaren onderbreking groeide er weer een vliegenzwam op de vroegere plaats."
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2276156.html"

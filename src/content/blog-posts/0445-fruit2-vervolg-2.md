@@ -6,7 +6,7 @@ title: "VERVOLG 2"
 date: "13-08-2016"
 isoDate: "2016-08-13T09:35:00"
 time: "09:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 2 Bloem Zicht op de tuin Sorolla Cousant la voile (1896) L’été (1904) Maria peignant au pardo (1907) Sautant à la corde La Granja (1907) Le bain à la Granja (1907) Maria dans le jardin de la Granja (1907)"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1945273.html"

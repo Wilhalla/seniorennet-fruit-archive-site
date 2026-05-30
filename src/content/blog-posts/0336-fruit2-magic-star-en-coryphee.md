@@ -6,7 +6,7 @@ title: "Magic Star en Coryphée"
 date: "28-04-2017"
 isoDate: "2017-04-28T14:12:00"
 time: "14:12"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Magic Star en Coryphée 27.04.2017 Colruyt blaast Belgische appelteelt nieuw leven in De Jonagold-appel is intussen al 40 jaar lang op de markt. Nog altijd is het de favoriete appelsoort van de Belg, maar de consument laat zich steeds vaker "
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2031609.html"

@@ -6,7 +6,7 @@ title: "International Soft Fruit Conference"
 date: "19-01-2016"
 isoDate: "2016-01-19T22:36:00"
 time: "22:36"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "International Soft Fruit Conference Den Bosch 8/1 In de Brabanthallen van ‘s Hertogenbosch gaat nu al enkele jaren de Internationale Kleinfruit Conferentie door. De grote hal staat vol men standen betreffende het kleinfruit. Mij interesseer"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1866428.html"

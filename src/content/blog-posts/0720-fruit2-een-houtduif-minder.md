@@ -6,7 +6,7 @@ title: "Een Houtduif minder"
 date: "09-04-2015"
 isoDate: "2015-04-09T13:50:00"
 time: "13:50"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Een Houtduif minder Daarstraks werd mijn aandacht getrokken door een witte plek op de grond: allemaal pluimen en pluimjes van een geslachte houtduif. Er was nog een tweede plek met minder, maar vooral enkele grotere pluimen. Ik merkte er ie"
 reactionCount: 1
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1748856.html"

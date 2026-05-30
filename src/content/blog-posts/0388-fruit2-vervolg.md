@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "08-11-2016"
 isoDate: "2016-11-08T20:27:00"
 time: "20:27"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Poort St Winoksbergen Stadhuis Koe Stadsplan Oud gebouw Idem Markt Veurne met Belfort Markt Met St. Niklaaskerk"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1974632.html"

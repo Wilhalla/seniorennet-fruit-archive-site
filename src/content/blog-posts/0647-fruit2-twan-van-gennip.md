@@ -6,7 +6,7 @@ title: "Twan Van Gennip,"
 date: "14-07-2015"
 isoDate: "2015-07-14T09:35:00"
 time: "09:35"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Twan Van Gennip, Lierop (NL) Groot in Klein fruit Vorige week hield DVL zijn voorlichtingsdag op dit bedrijf. Daar het wat regende stapte men op de bus van het bedrijf om 400-500 m verder de plantages te bezoeken. 25 Ha productieveld Frambo"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1790435.html"

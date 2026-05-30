@@ -6,7 +6,7 @@ title: "VERVOLG 3"
 date: "13-08-2016"
 isoDate: "2016-08-13T09:31:00"
 time: "09:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 3 Place de la Bastille met Colon de Juillet 1830 Place des Vosges Idem Idem Viaduct Arc de triomphe Boog van La Defence De eerste triomfboog in les Tuileries De ingangspyramide van het Louvre"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1945270.html"

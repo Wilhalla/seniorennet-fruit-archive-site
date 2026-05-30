@@ -6,7 +6,7 @@ title: "Den Haag: Mauritshuis en de tijdelijke tentoonstelling Frick"
 date: "03-03-2015"
 isoDate: "2015-03-03T23:24:00"
 time: "23:24"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Den Haag: Mauritshuis en de tijdelijke tentoonstelling Frick collectie New York – Gemeentemuseum en Mark Rotko (tot 1 ma.) 7 febr. Met Art Travel Waregem Het Mauritshuis is na een ondergrondse verbouwing van twee jaar met de helft uitgebrei"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1730997.html"

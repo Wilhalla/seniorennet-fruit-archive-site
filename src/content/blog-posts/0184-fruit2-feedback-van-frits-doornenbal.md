@@ -6,7 +6,7 @@ title: "Feedback van Frits Doornenbal,"
 date: "30-08-2018"
 isoDate: "2018-08-30T23:06:00"
 time: "23:06"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Feedback van Frits Doornenbal, die beide in de tuin heeft: Duidelijke verschillen ! De r c verte is twee keer zo groot in gewicht als st. Juul. Vreemd is dat de steen (*) van de grotere vrucht, de rc verte, kleiner is als de steen van de Ju"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2173861.html"

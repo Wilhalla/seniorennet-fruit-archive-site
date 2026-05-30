@@ -6,7 +6,7 @@ title: "Lissewege Beeldenroute"
 date: "01-08-2015"
 isoDate: "2015-08-01T11:31:00"
 time: "11:31"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Lissewege Beeldenroute met Art Fan Zoersel (19/07) Lucienne Laenen had de uirtstap verkend en gaf ons een uitstekende voorbereiding. Een nieuw initiatief is een historisch snoepwinkeltje. Ik ben er niet geraakt maar zij wel. Al de 21 ste ke"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1797284.html"

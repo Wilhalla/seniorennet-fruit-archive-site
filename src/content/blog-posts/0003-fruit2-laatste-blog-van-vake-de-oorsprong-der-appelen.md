@@ -6,7 +6,7 @@ title: "laatste blog van vake: De oorsprong der appelen"
 date: "08-04-2020"
 isoDate: "2020-04-08T15:33:00"
 time: "15:33"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Op drie velletjes volgeschreven papier heb ik vakes laatste blog gevonden en die wil ik jullie niet onthouden. Mijn excuses als er ergens een fout is ingeslopen. Ik ben geen fruitspecialist. Leen. De oorsprong der appelen Totnogtoe heb ik s"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2314530.html"

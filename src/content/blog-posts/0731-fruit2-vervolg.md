@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "29-03-2015"
 isoDate: "2015-03-29T00:00:00"
 time: "00:00"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG 10. Vgl de classic stijl in arduin op de grote markt 11. Groep 12. Idem 13. Belfort in barokstijl van 1662 (Unesco werelderfgoed). 14. Uitleg 15. Idem 16. Op de belfortheuvel 17. Ste. Waltrudis-Ste. Waudru begonnen in 1450. Gotiek 1"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1743522.html"

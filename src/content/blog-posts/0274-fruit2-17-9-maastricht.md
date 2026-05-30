@@ -6,7 +6,7 @@ title: "17/9 Maastricht"
 date: "05-10-2017"
 isoDate: "2017-10-05T21:29:00"
 time: "21:29"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "17/9 Maastricht Samen met Nijmegen, de oudste stad van Nederland. Al een Keltische nederzetting 500 V Chr. Aan de Romeinen herinnert de brug over de Maas. Door het verdrag van Londen (19 april 1839) reikte België overal tot tegen de Maas. V"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=2079121.html"

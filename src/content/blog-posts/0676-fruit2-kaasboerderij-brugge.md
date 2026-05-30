@@ -6,7 +6,7 @@ title: "Kaasboerderij – Brugge"
 date: "12-06-2015"
 isoDate: "2015-06-12T18:59:00"
 time: "18:59"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "Kaasboerderij – Brugge Met Okra Halle Kempen (11/06) Weer een gezellige uitstap met de populaire Willem, gids-chauffeur van ‘De Stille Kempen’. Mooi weer. Toen we aankwamen bij de kaasboerderij te Zandvoorde, bij Oostende vertelde voorzitte"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1776472.html"

@@ -6,7 +6,7 @@ title: "VERVOLG"
 date: "13-08-2016"
 isoDate: "2016-08-13T09:42:00"
 time: "09:42"
-author: "Daniel Willaeys"
+author: "Daniël Willaeys"
 excerpt: "VERVOLG Wegwijzer Huis Jean.François Millet Seine Met de Sacré Cœur Ons hotel Ibis-Novotel Giverny In de tuin van Claude Monet Atelier Schildersezel"
 reactionCount: 0
 sourcePath: "mirror/blog.seniorennet.be/fruit2/archief.php?ID=1945277.html"
