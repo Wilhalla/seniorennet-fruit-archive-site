@@ -63,6 +63,7 @@
     "@types/node": "^25.9.1",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
+    "@vite-pwa/astro": "^1.2.0",
     "agentation": "^3.0.2",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3",

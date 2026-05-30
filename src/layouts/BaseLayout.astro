@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import { ClientRouter } from 'astro:transitions'
+import PWAInstallPrompt from '../components/PWAInstallPrompt'
 import SiteHeader from '../components/SiteHeader'
 import { s3AssetBaseUrl, useRemoteImageAssets } from '../lib/assetUrls'
 import {
@@ -46,6 +47,7 @@ const socialImageAlt = metadataText(imageAlt, pageTitle, 420)
 const twitterTitle = metadataText(pageTitle, siteName, 70)
 const twitterDescription = metadataText(pageDescription, defaultDescription, 200)
 const isDefaultSocialImage = cleanMetadataText(image, defaultSocialImage) === defaultSocialImage
+const isProduction = import.meta.env.PROD
 
 const imageAssetOrigin = (() => {
   if (!useRemoteImageAssets || !s3AssetBaseUrl) return ''
@@ -62,9 +64,19 @@ const imageAssetOrigin = (() => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={pageDescription} />
+    <meta name="theme-color" content="#fdfcfc" />
+    <meta name="color-scheme" content="light" />
+    <meta name="application-name" content={siteName} />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Fruitarchief" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="msapplication-TileColor" content="#fdfcfc" />
     <link rel="canonical" href={canonicalHref} />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    {isProduction && <script is:inline src="/registerSW.js" defer></script>}
     {imageAssetOrigin && <link rel="dns-prefetch" href={imageAssetOrigin} />}
     {imageAssetOrigin && <link rel="preconnect" href={imageAssetOrigin} crossorigin />}
     <meta property="og:type" content={type} />
@@ -91,6 +103,7 @@ const imageAssetOrigin = (() => {
     <div class="apple-page-ornament apple-page-ornament--left" aria-hidden="true"></div>
     <div class="apple-page-ornament apple-page-ornament--right" aria-hidden="true"></div>
     <SiteHeader client:load />
+    <PWAInstallPrompt client:load />
     <main>
       <slot />
     </main>
