@@ -1,6 +1,6 @@
 import { useMemo, useRef } from 'react'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
-import { Calendar } from 'lucide-react'
+import { AlertTriangle, Calendar } from 'lucide-react'
 import YearSelector from '../YearSelector'
 import { GalleryFilterControls, GalleryHeader } from './GalleryControls'
 import GalleryVirtualFeed from './GalleryVirtualFeed'
@@ -62,7 +62,7 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
     estimateSize: (index) => {
       const row = galleryRows[index]
       if (!row) return 220
-      if (row.type === 'year') return 150
+      if (row.type === 'year') return 104
       if (row.type === 'month') return 74
       return columns >= 5 ? 220 : columns >= 4 ? 190 : 150
     },
@@ -109,7 +109,14 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
         </div>
       )}
 
-      <div className="site-shell grid min-w-0 grid-cols-[4.25rem_minmax(0,1fr)] items-start gap-4 pt-8 md:grid-cols-[14rem_minmax(0,1fr)] md:gap-8">
+      <div className="site-shell flex justify-center pt-4">
+        <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-amber-200 bg-white/70 px-3 py-1.5 text-xs text-gravel shadow-[0_8px_24px_rgba(31,29,27,0.05)] backdrop-blur" role="note">
+          <AlertTriangle className="size-3.5 shrink-0 text-amber-600" aria-hidden="true" />
+          <span>Thema-analyse en clustering bevatten fouten.</span>
+        </p>
+      </div>
+
+      <div className="site-shell grid min-w-0 grid-cols-[4.25rem_minmax(0,1fr)] items-start gap-4 pt-6 md:grid-cols-[14rem_minmax(0,1fr)] md:gap-8">
         <YearSelector
           items={groups.years.map((item) => ({ year: item.id, label: item.label, count: item.count }))}
           activeYear={activeYear}

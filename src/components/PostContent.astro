@@ -20,7 +20,7 @@ const { isSeries, parts, imageEntries, hasImages, sidebarImages } = await buildA
     <div class="post-reading-main min-w-0">
       <header class="border-b border-chalk pb-8">
         <p class="eyebrow">{formatArchiveDate(post)} · {post.time || 'tijd onbekend'} · door {post.author}</p>
-        <h1 class="m-0 mt-4 max-w-5xl font-heading text-4xl font-normal leading-[1.05] tracking-tight text-midnight-navy md:text-6xl xl:text-7xl">{post.title}</h1>
+        <h1 class="display-title mt-4 max-w-5xl">{post.title}</h1>
         <p class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-ink" aria-label={`${imageEntries.length} beelden, ${post.reactionCount} reacties${isSeries ? `, samengevoegde reeks van ${parts.length} berichten` : ''}`}>
           {isSeries && <span class="inline-flex items-center gap-1.5"><Layers2 className="size-4" aria-hidden="true" />{parts.length} delen</span>}
           <span class="inline-flex items-center gap-1.5"><ImageIcon className="size-4" aria-hidden="true" />{imageEntries.length} beelden</span>

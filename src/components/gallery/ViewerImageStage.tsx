@@ -156,11 +156,8 @@ export default function ViewerImageStage({
           <p className="m-0 mt-1 text-xs text-eggshell/70">{formatImagePostDateTime(viewerImage)}{imageNumberLabel(viewerImage)}</p>
         </div>
       )}
-      <div className="pointer-events-none absolute inset-x-3 bottom-3 top-3 z-30 grid min-w-0 grid-cols-[minmax(0,1fr)_minmax(0,auto)_minmax(0,1fr)] grid-rows-[auto_1fr_auto] items-start gap-2 lg:inset-x-4 lg:bottom-auto lg:top-4 lg:grid-rows-1">
-        <button className="pointer-events-auto inline-flex min-h-9 items-center justify-self-start gap-2 rounded-full border border-chalk bg-eggshell/90 px-3 text-sm text-obsidian disabled:opacity-30" type="button" disabled={!previousImage} onClick={() => previousImage && onOpenImage(previousImage.id)}>
-          <ArrowLeft className="size-4" aria-hidden="true" /> <span className="hidden sm:inline">Vorige</span>
-        </button>
-        <div className="pointer-events-auto col-span-3 row-start-3 flex max-w-full flex-nowrap items-center justify-start gap-2 overflow-x-auto overflow-y-hidden whitespace-nowrap rounded-full border border-chalk bg-eggshell/95 px-3 py-2 text-sm text-obsidian shadow-soft [scrollbar-width:none] backdrop-blur [&::-webkit-scrollbar]:hidden lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:max-w-[min(calc(100vw-12rem),80rem)] [&_svg]:size-4" role="toolbar" aria-label="Beeldviewer acties">
+      <div className="pointer-events-none absolute inset-x-3 top-3 z-30 flex min-w-0 justify-center lg:inset-x-4 lg:top-4">
+        <div className="pointer-events-auto flex max-w-full flex-nowrap items-center justify-start gap-2 overflow-x-auto overflow-y-hidden whitespace-nowrap rounded-full border border-chalk bg-eggshell/95 px-3 py-2 text-sm text-obsidian shadow-soft [scrollbar-width:none] backdrop-blur [&::-webkit-scrollbar]:hidden lg:max-w-[min(calc(100vw-12rem),80rem)] [&_svg]:size-4" role="toolbar" aria-label="Beeldviewer acties">
           <GallerySlideshowControls mode={slideshowMode} seconds={slideshowSeconds} disabled={filteredCount === 0} onModeChange={onSlideshowModeChange} onSecondsChange={onSlideshowSecondsChange} onStart={onStartSlideshow} />
           <Button className="h-10 w-10 shrink-0 px-0" variant="outline" size="icon" type="button" onClick={onToggleFullscreen} aria-label={viewerFullscreen ? 'Verlaat volledig scherm' : 'Volledig scherm'} title={viewerFullscreen ? 'Verlaat volledig scherm' : 'Volledig scherm'}>
             {viewerFullscreen ? <Minimize2 className="size-4" aria-hidden="true" /> : <Maximize2 className="size-4" aria-hidden="true" />}
@@ -219,8 +216,13 @@ export default function ViewerImageStage({
             </label>
           )}
         </div>
-        <button className="pointer-events-auto inline-flex min-h-9 items-center justify-self-end gap-2 rounded-full border border-chalk bg-eggshell/90 px-3 text-sm text-obsidian disabled:opacity-30" type="button" disabled={!nextImage} onClick={() => nextImage && onOpenImage(nextImage.id)}>
-          <span className="hidden sm:inline">Volgende</span> <ArrowRight className="size-4" aria-hidden="true" />
+      </div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 right-0 z-30 flex items-center justify-between px-3 lg:px-5">
+        <button className="pointer-events-auto inline-grid size-11 place-items-center rounded-full border border-chalk bg-eggshell/90 text-obsidian shadow-soft backdrop-blur transition hover:border-slate hover:bg-eggshell disabled:opacity-30" type="button" disabled={!previousImage} onClick={() => previousImage && onOpenImage(previousImage.id)} aria-label="Vorige afbeelding">
+          <ArrowLeft className="size-5" aria-hidden="true" />
+        </button>
+        <button className="pointer-events-auto inline-grid size-11 place-items-center rounded-full border border-chalk bg-eggshell/90 text-obsidian shadow-soft backdrop-blur transition hover:border-slate hover:bg-eggshell disabled:opacity-30" type="button" disabled={!nextImage} onClick={() => nextImage && onOpenImage(nextImage.id)} aria-label="Volgende afbeelding">
+          <ArrowRight className="size-5" aria-hidden="true" />
         </button>
       </div>
     </div>

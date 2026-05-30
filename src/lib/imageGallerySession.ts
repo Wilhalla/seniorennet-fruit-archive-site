@@ -128,7 +128,7 @@ export function galleryFiltersFromUrlState(state: GalleryUrlState): GalleryFilte
 export function columnsForGalleryWidth(width: number) {
   if (width >= 1024) return 5
   if (width >= 768) return 4
-  return 3
+  return 2
 }
 
 export function normalizeSpeciesGroups(groups: Array<Omit<SpeciesGroup, 'confidenceCounts'> & { confidenceCounts: Record<string, number | undefined> }> = []): SpeciesGroup[] {

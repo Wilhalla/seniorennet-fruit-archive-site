@@ -108,7 +108,12 @@
   * { @apply box-border border-border; }
   html { @apply scroll-smooth overflow-x-clip bg-eggshell text-obsidian font-sans; scroll-behavior: smooth; }
   body { @apply m-0 min-h-screen overflow-x-clip bg-eggshell text-obsidian font-sans text-body leading-body tracking-[0.01em]; scroll-behavior: smooth; }
-  body.mobile-menu-open { overflow: hidden; }
+  html.mobile-menu-open,
+  body.mobile-menu-open {
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
   main { @apply bg-eggshell; }
   a { @apply text-inherit underline-offset-4 decoration-from-font; }
   a:hover { @apply text-obsidian; }
@@ -312,6 +317,12 @@
     }
 
     .post-reading-layout.is-photo-collapsed .post-photo-panel {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .post-photo-panel {
       display: none;
     }
   }

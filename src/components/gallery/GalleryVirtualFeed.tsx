@@ -37,7 +37,7 @@ export default function GalleryVirtualFeed({
   onRememberReturnPoint,
 }: Props) {
   return (
-    <section ref={feedRef} className="scroll-mt-24 pt-6">
+    <section ref={feedRef} className="scroll-mt-24 pt-3">
       <div className="relative" style={{ height: `${totalSize}px` }}>
         {virtualItems.map((virtualItem) => {
           const row = rows[virtualItem.index]

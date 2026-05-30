@@ -34,13 +34,15 @@ export function useAtlasViewport() {
     setScaleState(nextScale)
   }, [])
 
-  const zoomAtCanvasPoint = useCallback((focus: ScreenPoint, factor: number) => {
+  const zoomFromCanvasPointToCanvasPoint = useCallback((previousFocus: ScreenPoint, nextFocus: ScreenPoint, factor: number) => {
     const scaleValue = scaleRef.current
     const panValue = panRef.current
-    const nextScale = clamp(scaleValue * factor, MIN_ATLAS_SCALE, MAX_ATLAS_SCALE)
+    const unclampedScale = scaleValue * factor
+    const nextScale = clamp(unclampedScale, MIN_ATLAS_SCALE, MAX_ATLAS_SCALE)
+    const effectiveFactor = nextScale / scaleValue
     const nextPan = {
-      x: focus.x - ((focus.x - panValue.x) / scaleValue) * nextScale,
-      y: focus.y - ((focus.y - panValue.y) / scaleValue) * nextScale,
+      x: nextFocus.x - ((previousFocus.x - panValue.x) / scaleValue) * scaleValue * effectiveFactor,
+      y: nextFocus.y - ((previousFocus.y - panValue.y) / scaleValue) * scaleValue * effectiveFactor,
     }
     scaleRef.current = nextScale
     panRef.current = nextPan
@@ -52,6 +54,10 @@ export function useAtlasViewport() {
     setScaleState(nextScale)
     setPanState(nextPan)
   }, [])
+
+  const zoomAtCanvasPoint = useCallback((focus: ScreenPoint, factor: number) => {
+    zoomFromCanvasPointToCanvasPoint(focus, focus, factor)
+  }, [zoomFromCanvasPointToCanvasPoint])
 
   scaleRef.current = scale
   if (pendingPanRef.current === null) panRef.current = pan
@@ -97,5 +103,5 @@ export function useAtlasViewport() {
     }
   }, [])
 
-  return { canvasRef, canvasSize, dragStart, pan, setPan, scale, setScale, zoomAtCanvasPoint }
+  return { canvasRef, canvasSize, dragStart, pan, setPan, scale, setScale, zoomAtCanvasPoint, zoomFromCanvasPointToCanvasPoint }
 }

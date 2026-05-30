@@ -1,5 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 
+declare global {
+  interface Window {
+    __semanticDataDiagramReady?: boolean
+  }
+}
+
 const diagram = `flowchart LR
   A[Blogberichten\nMarkdown + metadata] --> B[Tekst opschonen\ndatum, titel, inhoud]
   A --> C[Afbeeldingen\nper bericht]
@@ -57,6 +63,12 @@ export default function SemanticPipelineDiagram() {
     }
   }, [id])
 
+  useEffect(() => {
+    if (!svg && !error) return
+    window.__semanticDataDiagramReady = true
+    window.dispatchEvent(new CustomEvent('semantic-data-diagram-ready'))
+  }, [error, svg])
+
   return (
     <section className="site-shell min-w-0 py-12" aria-labelledby="semantic-setup-title">
       <div className="min-w-0 border-b border-chalk pb-10">
@@ -70,8 +82,10 @@ export default function SemanticPipelineDiagram() {
         </div>
         {svg ? (
           <div className="mt-8 min-w-0 overflow-x-auto pb-2" dangerouslySetInnerHTML={{ __html: svg }} aria-label="Mermaid diagram van de semantische preprocessing" />
+        ) : error ? (
+          <p className="mt-8 border-l border-chalk pl-4 text-gravel">{error}</p>
         ) : (
-          <pre className="mt-8 min-w-0 overflow-x-auto border-l border-chalk bg-transparent pl-4 font-mono text-sm text-obsidian">{error ?? diagram}</pre>
+          <div className="mt-8 min-h-64" aria-hidden="true" />
         )}
       </div>
     </section>

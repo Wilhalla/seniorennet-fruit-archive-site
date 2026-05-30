@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   flexRender,
   getCoreRowModel,
@@ -196,6 +196,12 @@ const columnWidthClass = (columnId: string) => {
   return 'min-w-44 max-w-[32rem]'
 }
 
+declare global {
+  interface Window {
+    __semanticDataTablesReady?: boolean
+  }
+}
+
 function RawDataTable({ dataset }: { dataset: RawDataset }) {
   const [sorting, setSorting] = useState<SortingState>([])
 
@@ -300,6 +306,11 @@ function RawDataTable({ dataset }: { dataset: RawDataset }) {
 }
 
 export default function SemanticDataTables() {
+  useEffect(() => {
+    window.__semanticDataTablesReady = true
+    window.dispatchEvent(new CustomEvent('semantic-data-tables-ready'))
+  }, [])
+
   return (
     <section className="site-shell grid min-w-0 gap-0 pb-20" aria-label="Ruwe semantische preprocessing data">
       {datasets.map((dataset) => (

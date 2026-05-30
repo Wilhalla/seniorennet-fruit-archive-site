@@ -1,24 +1,51 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Archive, BarChart3, Database, Home, Images, Map, Menu, Search, X } from 'lucide-react'
 
 const navLink = 'inline-flex min-h-9 items-center gap-2 rounded-full px-3 text-body font-normal tracking-[0.01em] text-obsidian no-underline transition-colors hover:bg-powder hover:text-obsidian'
-const mobileNavLink = 'group inline-flex min-h-12 items-center justify-center gap-3 text-center text-[28px] font-medium leading-none tracking-[-0.05em] text-obsidian no-underline transition-colors hover:text-gravel'
+const mobileNavLink = 'group inline-flex min-h-11 items-center justify-center gap-3 text-center text-[clamp(22px,7vw,28px)] font-medium leading-none tracking-[-0.05em] text-obsidian no-underline transition-colors hover:text-gravel'
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/archive/', label: 'Alle berichten', icon: Archive },
-  { href: '/stats/', label: 'Statistieken', icon: BarChart3 },
-  { href: '/atlas/', label: 'Atlas', icon: Map },
-  { href: '/data/', label: 'Data', icon: Database },
   { href: '/gallery/', label: 'Beeldarchief', icon: Images },
+  { href: '/atlas/', label: 'Atlas', icon: Map },
+  { href: '/stats/', label: 'Statistieken', icon: BarChart3 },
+  { href: '/data/', label: 'Data', icon: Database },
 ]
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const menuScrollPosition = useRef(0)
 
   useEffect(() => {
-    document.body.classList.toggle('mobile-menu-open', menuOpen)
-    return () => document.body.classList.remove('mobile-menu-open')
+    const root = document.documentElement
+    const body = document.body
+
+    if (!menuOpen) {
+      root.classList.remove('mobile-menu-open')
+      body.classList.remove('mobile-menu-open')
+      return
+    }
+
+    menuScrollPosition.current = window.scrollY
+    root.classList.add('mobile-menu-open')
+    body.classList.add('mobile-menu-open')
+    body.style.position = 'fixed'
+    body.style.top = `-${menuScrollPosition.current}px`
+    body.style.left = '0'
+    body.style.right = '0'
+    body.style.width = '100%'
+
+    return () => {
+      root.classList.remove('mobile-menu-open')
+      body.classList.remove('mobile-menu-open')
+      body.style.position = ''
+      body.style.top = ''
+      body.style.left = ''
+      body.style.right = ''
+      body.style.width = ''
+      window.scrollTo({ top: menuScrollPosition.current, left: 0, behavior: 'auto' })
+    }
   }, [menuOpen])
 
   return (
@@ -49,8 +76,8 @@ export default function SiteHeader() {
     </header>
 
     {menuOpen && (
-      <div id="mobile-navigation" className="fixed inset-x-0 bottom-0 top-14 z-50 grid bg-eggshell px-6 py-10 sm:hidden" role="dialog" aria-modal="true" aria-label="Hoofdnavigatie">
-        <nav className="mx-auto flex w-full max-w-sm flex-col items-center justify-center gap-7" aria-label="Mobiele hoofdnavigatie">
+      <div id="mobile-navigation" className="fixed inset-x-0 top-14 z-50 grid h-[calc(100dvh-3.5rem)] overflow-hidden overscroll-none bg-eggshell px-6 py-[clamp(1.5rem,6svh,2.5rem)] sm:hidden" role="dialog" aria-modal="true" aria-label="Hoofdnavigatie">
+        <nav className="mx-auto flex w-full max-w-sm flex-col items-center justify-center gap-[clamp(0.75rem,3.5svh,1.75rem)]" aria-label="Mobiele hoofdnavigatie">
           {navItems.map(({ href, label, icon: Icon }) => (
             <a className={mobileNavLink} href={href} key={href} onClick={() => setMenuOpen(false)}>
               <span>{label}</span>
@@ -58,7 +85,7 @@ export default function SiteHeader() {
             </a>
           ))}
           <div className="mt-2 h-px w-10 bg-chalk" aria-hidden="true" />
-          <a className="inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-obsidian px-7 text-center text-[22px] font-medium leading-none tracking-[-0.035em] text-eggshell no-underline shadow-blue hover:text-eggshell" href="/search/" onClick={() => setMenuOpen(false)}>
+          <a className="inline-flex min-h-11 items-center justify-center gap-3 rounded-full bg-obsidian px-7 text-center text-[22px] font-medium leading-none tracking-[-0.035em] text-eggshell no-underline shadow-blue hover:text-eggshell" href="/search/" onClick={() => setMenuOpen(false)}>
             <span>Zoeken</span>
             <Search className="size-5" aria-hidden="true" />
           </a>

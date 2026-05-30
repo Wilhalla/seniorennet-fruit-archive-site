@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import DataPageLoaderController from '../../components/data/DataPageLoaderController'
 import SemanticDataTables from '../../components/data/SemanticDataTables'
 import SemanticPipelineDiagram from '../../components/data/SemanticPipelineDiagram'
 ---
@@ -7,6 +8,14 @@ import SemanticPipelineDiagram from '../../components/data/SemanticPipelineDiagr
   title="Data · Blogarchief Daniël Willaeys"
   description="Ruwe tabellen met de uitvoer van de semantische preprocessing voor de atlas van het blogarchief."
 >
+  <div id="data-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Data laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Blogarchief Daniël Willaeys</span>
+      <small>data laden</small>
+    </div>
+  </div>
+  <DataPageLoaderController client:load />
   <SemanticPipelineDiagram client:only="react" />
   <SemanticDataTables client:only="react" />
 </BaseLayout>
