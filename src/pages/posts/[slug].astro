@@ -4,6 +4,7 @@ import PostContent from '../../components/PostContent.astro'
 import ReactionList from '../../components/ReactionList'
 import ChronologicalPosts from '../../components/ChronologicalPosts'
 import RelatedPosts from '../../components/RelatedPosts'
+import { archiveAssetUrl } from '../../lib/assetUrls'
 import { buildArchivePostReading } from '../../lib/archivePostReading'
 import { postIndex } from '../../lib/postIndex'
 
@@ -14,8 +15,18 @@ export function getStaticPaths() {
 const reading = buildArchivePostReading(Astro.params.slug ?? '')
 if (!reading) return Astro.redirect('/archive/')
 const { displayPost } = reading
+const postSocialImage = displayPost.images[0] ? archiveAssetUrl(displayPost.images[0]) : undefined
+const postDescription = displayPost.excerpt || displayPost.title
 ---
-<BaseLayout title={`${displayPost.title} · Blogarchief Daniël Willaeys`} description={displayPost.excerpt || displayPost.title}>
+<BaseLayout
+  title={`${displayPost.title} · Blogarchief Daniël Willaeys`}
+  description={postDescription}
+  image={postSocialImage}
+  imageAlt={`Foto bij “${displayPost.title}”`}
+  type="article"
+  publishedTime={displayPost.isoDate}
+  modifiedTime={displayPost.isoDate}
+>
   <PostContent reading={reading} />
   <ChronologicalPosts postId={displayPost.id} />
   <RelatedPosts postId={displayPost.id} />
