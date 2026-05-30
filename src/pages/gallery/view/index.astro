@@ -4,5 +4,12 @@ import GalleryViewerApp from '../../../components/gallery/GalleryViewerApp'
 import initialImages from '../../../data/generated/image-index.initial.json'
 ---
 <BaseLayout title="Beeldviewer · Blogarchief Daniël Willaeys" description="Bekijk een foto uit het beeldarchief op een eigen pagina." hideFooter={true}>
+  <div id="gallery-viewer-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Beeldviewer laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Blogarchief Daniël Willaeys</span>
+      <small>beeldviewer laden</small>
+    </div>
+  </div>
   <GalleryViewerApp initialImages={initialImages} client:load />
 </BaseLayout>

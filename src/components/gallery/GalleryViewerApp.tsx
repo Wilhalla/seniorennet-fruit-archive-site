@@ -6,6 +6,7 @@ import ViewerSidebar from './ViewerSidebar'
 import { useGallerySpeciesTags } from './galleryClientHooks'
 import { useCenteredVirtualItem, useElementSize, useFullscreenState, useGalleryViewerData, useGalleryViewerUrlState, useImageNeighborPrefetch, useRelatedGalleryImages, useSlideshowRouteSync, useStoredPreference, useViewerKeyboardNavigation, type ImageSize } from './galleryViewerHooks'
 import ViewerImageStage, { isImageScaleMode } from './ViewerImageStage'
+import { useDismissHydrationLoader } from './useGracefulLoader'
 import { useImageZoomPan } from './useImageZoomPan'
 import { sameOriginReferrer, writeBrowserPath } from '../../lib/browserHistory'
 import { buildImageGallerySession, formatImagePostDateTime, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageFullSrc, imageNumberLabel, type GalleryImageRecord as ImageRecord } from '../../lib/imageGallerySession'
@@ -17,9 +18,9 @@ type Props = {
 const IMAGE_SCALE_STORAGE_KEY = 'fruit-gallery-viewer-scale-mode'
 
 export default function GalleryViewerApp({ initialImages = [] }: Props) {
-  const { filters, slideshowRequestedId, setSlideshowRequestedId, slideshowRouteRef, viewerId, setViewerId } = useGalleryViewerUrlState()
+  const { filters, slideshowRequestedId, setSlideshowRequestedId, slideshowRouteRef, urlStateReady, viewerId, setViewerId } = useGalleryViewerUrlState()
   const hasRequestedImage = Boolean(viewerId)
-  const { images, imagesLoading } = useGalleryViewerData(initialImages, hasRequestedImage)
+  const { fullIndexLoaded, images, imagesLoading } = useGalleryViewerData(initialImages, hasRequestedImage)
   const { related, relatedLoading } = useRelatedGalleryImages(hasRequestedImage)
   const { speciesByImage } = useGallerySpeciesTags(filters)
   const [viewerNaturalSize, setViewerNaturalSize] = useState<(ImageSize & { imageId: string }) | null>(null)
@@ -69,6 +70,7 @@ export default function GalleryViewerApp({ initialImages = [] }: Props) {
   const previousImage = gallerySession.previousImage
   const nextImage = gallerySession.nextImage
   const similarImages = gallerySession.relatedImages
+  const viewerLoading = !urlStateReady || (hasRequestedImage && !viewerImage && !fullIndexLoaded)
   const viewerTimelineVirtualizer = useVirtualizer({
     count: filtered.length,
     getScrollElement: () => viewerTimelineRef.current,
@@ -207,6 +209,11 @@ export default function GalleryViewerApp({ initialImages = [] }: Props) {
   })
 
   useImageNeighborPrefetch(viewerImage, previousImage, nextImage)
+  useDismissHydrationLoader('gallery-viewer-hydration-loader', viewerLoading)
+
+  if (viewerLoading) {
+    return <main className="min-h-[calc(100svh-4rem)] bg-eggshell" aria-hidden="true" />
+  }
 
   if (!viewerId) {
     return (

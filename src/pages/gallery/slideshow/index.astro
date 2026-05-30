@@ -4,5 +4,12 @@ import GalleryViewerApp from '../../../components/gallery/GalleryViewerApp'
 import initialImages from '../../../data/generated/image-index.initial.json'
 ---
 <BaseLayout title="Diashow · Blogarchief Daniël Willaeys" description="Bekijk beelden uit het archief als diashow." hideFooter={true}>
+  <div id="gallery-viewer-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Diashow laden">
+    <div class="site-loader__mark" aria-hidden="true"></div>
+    <div class="site-loader__text">
+      <span>Blogarchief Daniël Willaeys</span>
+      <small>diashow laden</small>
+    </div>
+  </div>
   <GalleryViewerApp initialImages={initialImages} client:load />
 </BaseLayout>

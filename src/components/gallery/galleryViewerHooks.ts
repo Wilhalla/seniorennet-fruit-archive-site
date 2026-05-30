@@ -31,6 +31,7 @@ export function useGalleryViewerUrlState() {
   const [viewerId, setViewerId] = useState<string | null>(null)
   const [slideshowRequestedId, setSlideshowRequestedId] = useState<string | null>(null)
   const [filters, setFilters] = useState<GalleryFilters>(defaultGalleryFilters)
+  const [urlStateReady, setUrlStateReady] = useState(false)
   const slideshowRouteRef = useRef(false)
 
   useEffect(() => {
@@ -41,6 +42,7 @@ export function useGalleryViewerUrlState() {
       setViewerId(state.viewerId)
       setSlideshowRequestedId(isSlideshowRoute ? state.viewerId : null)
       setFilters(galleryFiltersFromUrlState(state))
+      setUrlStateReady(true)
     }
 
     applyUrlState()
@@ -48,18 +50,20 @@ export function useGalleryViewerUrlState() {
     return () => window.removeEventListener('popstate', applyUrlState)
   }, [])
 
-  return { filters, setFilters, slideshowRequestedId, setSlideshowRequestedId, slideshowRouteRef, viewerId, setViewerId }
+  return { filters, setFilters, slideshowRequestedId, setSlideshowRequestedId, slideshowRouteRef, urlStateReady, viewerId, setViewerId }
 }
 
 export function useGalleryViewerData(initialImages: GalleryImageRecord[], enabled: boolean) {
   const [images, setImages] = useState<GalleryImageRecord[]>(initialImages)
   const [imagesLoading, setImagesLoading] = useState(false)
+  const [fullIndexLoaded, setFullIndexLoaded] = useState(false)
 
   useEffect(() => {
     if (!enabled) return undefined
 
     const controller = new AbortController()
     setImagesLoading(true)
+    setFullIndexLoaded(false)
     fetchGalleryJson<GalleryImageRecord[]>('/generated/image-index.client.json', 'high', controller.signal)
       .catch((error) => {
         if (isAbortError(error)) throw error
@@ -70,12 +74,15 @@ export function useGalleryViewerData(initialImages: GalleryImageRecord[], enable
         if (!isAbortError(error)) console.error(error)
       })
       .finally(() => {
-        if (!controller.signal.aborted) setImagesLoading(false)
+        if (!controller.signal.aborted) {
+          setImagesLoading(false)
+          setFullIndexLoaded(true)
+        }
       })
     return () => controller.abort()
   }, [enabled])
 
-  return { images, imagesLoading }
+  return { fullIndexLoaded, images, imagesLoading }
 }
 
 export function useRelatedGalleryImages(enabled: boolean) {
