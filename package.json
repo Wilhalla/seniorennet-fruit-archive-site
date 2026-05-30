@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
-    "build": "astro check && astro build && pnpm compressStatic",
+    "build": "astro check && astro build",
+    "build:compressed": "astro check && astro build && pnpm compressStatic",
     "test": "vitest run",
     "preview": "astro preview --host 127.0.0.1",
     "extract": "tsx scripts/extract-archive.ts",
@@ -30,6 +31,7 @@
   "packageManager": "pnpm@10.33.4",
   "dependencies": {
     "@astrojs/react": "^5.0.5",
+    "@astrojs/vercel": "^10.0.8",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource-variable/fraunces": "^5.2.9",
     "@fontsource-variable/geist": "^5.2.9",
