@@ -73,7 +73,7 @@ export default function SearchApp() {
             <article className="grid min-w-0 items-start gap-5 border-b border-chalk py-7 md:grid-cols-[minmax(0,1fr)_9rem]" key={result.id}>
               <div className="min-w-0">
                 <p className="mb-2 flex min-w-0 flex-wrap items-center gap-2 text-xs leading-snug tracking-tight text-slate-ink">{formatArchiveDate(result)}{typeof result.blockIndex === 'number' ? ` · blok ${result.blockIndex + 1}` : ' · titelindex'}{typeof result.score === 'number' ? ` · score ${Math.round(result.score)}` : ''}</p>
-                <h2 className="m-0 break-words font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy [overflow-wrap:anywhere] md:text-4xl">{highlight(result.title, terms)}</h2>
+                <h2 className="m-0 break-words font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy [overflow-wrap:anywhere] md:text-4xl"><a className="text-inherit no-underline hover:underline" href={result.url}>{highlight(result.title, terms)}</a></h2>
                 <p className="my-3 max-w-5xl break-words text-slate-ink [overflow-wrap:anywhere]">{highlight(text, terms)}</p>
                 <p className="m-0 flex min-w-0 flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-ink">
                   <span className="inline-flex shrink-0 items-center gap-1.5"><ImageIcon className="size-3.5" aria-hidden="true" />{result.imageCount} beelden</span>

@@ -1,6 +1,6 @@
 import { useMemo, useRef } from 'react'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
-import { AlertTriangle, Calendar } from 'lucide-react'
+import { AlertTriangle } from 'lucide-react'
 import YearSelector from '../YearSelector'
 import { GalleryFilterControls, GalleryHeader } from './GalleryControls'
 import GalleryVirtualFeed from './GalleryVirtualFeed'
@@ -126,18 +126,6 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
           onSelect={jumpToYear}
           onClear={() => setFilter('selectedYear', '')}
           clearLabel="Alle"
-          footer={
-            <button
-              className="inline-flex min-h-8 items-center gap-2 text-sm text-gravel hover:text-obsidian"
-              type="button"
-              onClick={() => {
-                setFilter('selectedYear', '')
-                window.scrollTo({ top: 0, behavior: 'smooth' })
-              }}
-            >
-              Naar heden <Calendar className="size-4" aria-hidden="true" />
-            </button>
-          }
         />
 
         <main className="min-w-0 overflow-visible">

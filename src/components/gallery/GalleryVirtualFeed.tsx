@@ -92,7 +92,7 @@ function GalleryVirtualRowView({ columns, eagerThumbnailIds, groups, highPriorit
   }
 
   return (
-    <div className="flex h-full flex-wrap justify-center gap-2 border-b border-chalk py-2">
+    <div className="flex h-full flex-wrap justify-start gap-2 border-b border-chalk py-2">
       {row.images.map((image) => {
         const highPriority = highPriorityThumbnailIds.has(image.id)
         const eager = highPriority || eagerThumbnailIds.has(image.id)
