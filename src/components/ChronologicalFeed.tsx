@@ -1,4 +1,3 @@
-import { Images, Search } from "lucide-react";
 import { archiveAssetUrl } from "../lib/assetUrls";
 import { archiveDayLabel, archiveTimestamp, archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate } from "../lib/archiveDateTime";
 import type { PostSummary } from "../lib/postIndex";
@@ -6,6 +5,62 @@ import type { PostSummary } from "../lib/postIndex";
 type Props = { posts: PostSummary[]; limit?: number };
 const countPill =
   "inline-flex min-h-6 items-center rounded-full px-2.5 font-mono text-[11px] leading-none";
+const yearLinkClass =
+  "flex min-h-8 w-full items-center justify-center gap-3 whitespace-nowrap rounded-full px-2 text-center text-sm text-slate-ink no-underline hover:bg-powder hover:text-obsidian data-[active=true]:bg-obsidian data-[active=true]:font-medium data-[active=true]:text-eggshell data-[active=true]:hover:bg-obsidian data-[active=true]:hover:text-eggshell md:justify-between md:px-3 md:text-left md:text-base";
+const activeYearScript = `
+(() => {
+  const root = document.currentScript?.closest('[data-chronology-feed]')
+  if (!root) return
+
+  const links = Array.from(root.querySelectorAll('[data-chronology-year-link]'))
+  const sections = Array.from(root.querySelectorAll('[data-chronology-month][data-year]'))
+  let activeYear = ''
+
+  const setActiveYear = (year) => {
+    if (!year || year === activeYear) return
+    activeYear = year
+    for (const link of links) {
+      const isActive = link.getAttribute('data-year') === year
+      link.setAttribute('data-active', isActive ? 'true' : 'false')
+      if (isActive) link.setAttribute('aria-current', 'true')
+      else link.removeAttribute('aria-current')
+    }
+  }
+
+  const activeYearFromViewport = () => {
+    const offset = 112
+    let selectedYear = sections[0]?.getAttribute('data-year') || ''
+    for (const section of sections) {
+      const rect = section.getBoundingClientRect()
+      const year = section.getAttribute('data-year') || ''
+      if (rect.top <= offset && rect.bottom > offset) return year
+      if (rect.top <= offset) selectedYear = year
+      else break
+    }
+    return selectedYear
+  }
+
+  let ticking = false
+  const update = () => {
+    ticking = false
+    setActiveYear(activeYearFromViewport())
+  }
+  const scheduleUpdate = () => {
+    if (ticking) return
+    ticking = true
+    window.requestAnimationFrame(update)
+  }
+
+  for (const link of links) {
+    link.addEventListener('click', () => setActiveYear(link.getAttribute('data-year') || ''), { passive: true })
+  }
+  window.addEventListener('scroll', scheduleUpdate, { passive: true })
+  window.addEventListener('resize', scheduleUpdate)
+  update()
+  window.requestAnimationFrame(update)
+  window.setTimeout(update, 250)
+})()
+`;
 
 export default function ChronologicalFeed({ posts, limit }: Props) {
   const { chronologicalItems: chronologicalPosts, yearGroups, monthGroups } = buildArchiveChronology(
@@ -21,54 +76,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
     post.time && post.time !== "00:00" ? post.time : "";
 
   return (
-    <section className="w-full pb-24" aria-labelledby="chronology-title">
-      <div className="relative w-full overflow-hidden border-b border-chalk bg-eggshell px-8 py-20 max-md:px-4 max-md:text-center md:py-32">
-        <img
-          className="apple-image absolute right-[7vw] top-8 hidden w-28 rotate-6 opacity-90 md:block"
-          src="/apple-assets/apple-1-192.png"
-          alt=""
-          aria-hidden="true"
-          loading="eager"
-          decoding="async"
-        />
-        <div className="mx-auto grid max-w-page items-end justify-items-center gap-10 md:grid-cols-[minmax(0,0.62fr)_minmax(18rem,0.38fr)] md:justify-items-stretch">
-          <div className="max-md:grid max-md:justify-items-center">
-            <h1
-              id="chronology-title"
-              className="display-title max-w-3xl max-md:mx-auto"
-            >
-              Blogarchief Daniël Willaeys
-            </h1>
-          </div>
-          <div className="max-w-md justify-self-center md:justify-self-end md:pb-2">
-            <img
-              className="apple-image section-apple mx-auto mb-5 md:hidden"
-              src="/apple-assets/apple-1-192.png"
-              alt=""
-              aria-hidden="true"
-              loading="eager"
-              decoding="async"
-            />
-            <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
-              <a
-                className="inline-flex min-h-9 items-center gap-2 rounded-full bg-obsidian px-4 text-body font-medium text-eggshell no-underline shadow-blue hover:text-eggshell"
-                href="/search/"
-              >
-                <Search className="size-4" aria-hidden="true" strokeWidth={2.2} />
-                Zoeken
-              </a>
-              <a
-                className="inline-flex min-h-9 items-center gap-2 rounded-full border border-chalk bg-pure-surface px-3 text-body font-medium text-obsidian no-underline shadow-blue hover:text-obsidian"
-                href="/gallery/"
-              >
-                <Images className="size-4" aria-hidden="true" strokeWidth={2.2} />
-                Beeldarchief
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <section className="w-full pb-24" aria-labelledby="chronology-title" data-chronology-feed>
       <div className="site-shell relative z-10 overflow-x-clip py-16">
         <div className="grid min-w-0 grid-cols-[4.25rem_minmax(0,1fr)] items-start gap-4 md:grid-cols-[14rem_minmax(0,1fr)] md:gap-8">
           <aside className="sticky top-16 self-start pr-2 md:top-16 md:pr-6" aria-label="Tijdlijnnavigatie">
@@ -80,12 +88,12 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
               >
                 {yearGroups.map((group) => (
                   <a
-                    className={
-                      group.year === firstYear
-                        ? "flex min-h-8 w-full items-center justify-center gap-3 whitespace-nowrap rounded-full bg-obsidian px-2 text-center text-sm font-medium text-eggshell no-underline hover:text-eggshell md:justify-between md:px-3 md:text-left md:text-base"
-                        : "flex min-h-8 w-full items-center justify-center gap-3 whitespace-nowrap rounded-full px-2 text-center text-sm text-slate-ink no-underline hover:bg-powder hover:text-obsidian md:justify-between md:px-3 md:text-left md:text-base"
-                    }
+                    className={yearLinkClass}
+                    data-active={group.year === firstYear ? "true" : "false"}
+                    data-chronology-year-link
+                    data-year={group.year}
                     key={group.year}
+                    aria-current={group.year === firstYear ? "true" : undefined}
                     aria-label={`Spring naar ${displayArchiveYear(group.year)}, ${group.count} berichten`}
                     href={`#year-${group.year}`}
                   >
@@ -105,8 +113,9 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
           >
             {monthGroups.map((month) => (
               <section
-                className="grid min-w-0 gap-3 md:grid-cols-[3.5rem_minmax(0,1fr)]"
+                className="grid min-w-0 gap-3 [content-visibility:auto] [contain-intrinsic-size:1px_1200px] md:grid-cols-[3.5rem_minmax(0,1fr)]"
                 id={month.key}
+                data-chronology-month
                 data-year={month.year}
                 aria-label={month.label}
                 key={month.key}
@@ -148,7 +157,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                     const timeLabel = displayTime(post);
                     return (
                       <article
-                        className={`group min-w-0 py-6 transition-colors ${month.startsYear && index === 0 ? "" : "border-t border-chalk hover:border-slate/70"}`}
+                        className={`group min-w-0 py-6 transition-colors [content-visibility:auto] [contain-intrinsic-size:1px_9rem] ${month.startsYear && index === 0 ? "" : "border-t border-chalk hover:border-slate/70"}`}
                         key={post.id}
                       >
                         <a
@@ -233,6 +242,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
             ))}
           </div>
         </div>
+        <script dangerouslySetInnerHTML={{ __html: activeYearScript }} />
       </div>
     </section>
   );
