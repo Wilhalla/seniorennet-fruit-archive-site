@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import { ClientRouter } from 'astro:transitions'
+import Analytics from '@vercel/analytics/astro'
 import PWAInstallPrompt from '../components/PWAInstallPrompt'
 import SiteHeader from '../components/SiteHeader'
 import { s3AssetBaseUrl, useRemoteImageAssets } from '../lib/assetUrls'
@@ -97,6 +98,7 @@ const imageAssetOrigin = (() => {
     {type === 'article' && publishedTime && <meta property="article:published_time" content={publishedTime} />}
     {type === 'article' && modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
     <title>{pageTitle}</title>
+    <Analytics />
     <ClientRouter />
   </head>
   <body>
