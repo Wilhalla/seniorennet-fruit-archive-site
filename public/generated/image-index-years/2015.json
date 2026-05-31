@@ -15,7 +15,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -35,7 +35,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-24"
   },
@@ -55,7 +55,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-24"
   },
@@ -75,7 +75,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -95,7 +95,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-40"
   },
@@ -115,7 +116,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-40"
   },
@@ -135,7 +137,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-40"
   },
@@ -155,7 +158,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-40"
   },
@@ -175,7 +179,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -195,7 +200,8 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-49"
   },
@@ -215,7 +221,8 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-49"
   },
@@ -235,7 +242,8 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -255,7 +263,8 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie"
+      "familie",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -415,7 +424,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-41"
   },
@@ -435,7 +444,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-41"
   },
@@ -455,7 +464,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -695,7 +704,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -715,7 +724,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -735,7 +744,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -755,7 +764,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -775,7 +784,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -795,7 +804,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -815,7 +824,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -835,7 +844,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -855,7 +864,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -875,7 +884,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -895,7 +904,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -915,7 +924,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -935,7 +944,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -955,7 +964,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -975,7 +984,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -995,7 +1004,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -1015,7 +1024,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -1035,7 +1044,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -1235,9 +1244,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -1257,9 +1264,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1279,9 +1284,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1301,9 +1304,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1323,9 +1324,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1345,9 +1344,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1367,9 +1364,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1389,9 +1384,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1411,9 +1404,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie",
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -1434,7 +1425,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -1455,7 +1446,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -1476,7 +1467,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -1497,7 +1488,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -1518,7 +1509,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -1539,7 +1530,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -1560,7 +1551,7 @@
     "ok": true,
     "visualTags": [
       "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -1580,7 +1571,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -1600,7 +1591,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -1620,7 +1611,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -1640,7 +1631,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -1660,7 +1651,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -1680,7 +1671,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -1700,10 +1691,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -1723,10 +1711,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -1746,10 +1731,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -1769,10 +1751,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -1792,10 +1771,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -1815,10 +1791,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -1838,10 +1811,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -1861,10 +1831,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -1884,10 +1851,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -1907,7 +1871,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-55"
   },
@@ -1927,7 +1891,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -1947,7 +1911,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -1967,7 +1931,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -1987,7 +1951,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -2007,7 +1971,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -2027,7 +1991,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -2047,7 +2011,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -2067,7 +2031,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -2087,6 +2051,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-19"
@@ -2107,6 +2072,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-26"
@@ -2127,6 +2093,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-26"
@@ -2147,6 +2114,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-14"
@@ -2167,6 +2135,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-54"
@@ -2187,6 +2156,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-33"
@@ -2207,6 +2177,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-08"
@@ -2227,6 +2198,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-05"
@@ -2247,6 +2219,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-48"
@@ -2267,7 +2240,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -2287,7 +2260,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -2307,7 +2280,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -2327,7 +2300,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -2347,7 +2320,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -2367,7 +2340,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -2387,7 +2360,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -2407,7 +2380,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -2427,7 +2400,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -2627,8 +2600,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -2648,8 +2620,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -2669,8 +2640,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -2690,8 +2660,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -2711,8 +2680,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-12"
   },
@@ -2732,8 +2700,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -2753,8 +2720,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -2774,8 +2740,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -2795,8 +2760,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -3642,7 +3606,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -3662,7 +3626,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -3682,7 +3646,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -3702,7 +3666,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -3722,7 +3686,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -3742,7 +3706,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -3762,7 +3726,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -3782,7 +3746,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-08"
@@ -3803,7 +3766,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-28"
@@ -3824,7 +3786,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-16"
@@ -3845,7 +3806,6 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-06"
@@ -3866,7 +3826,6 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-03"
@@ -3887,7 +3846,6 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-04"
@@ -3908,7 +3866,6 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-08"
@@ -3929,7 +3886,6 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-51"
@@ -3950,7 +3906,6 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-01"
@@ -4091,9 +4046,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -4113,9 +4066,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -4135,7 +4086,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
+      "tuinwerk",
       "fruit"
     ],
     "visualClusterId": "image-cluster-01"
@@ -4156,7 +4107,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
+      "tuinwerk",
       "fruit"
     ],
     "visualClusterId": "image-cluster-31"
@@ -4357,7 +4308,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -4377,7 +4328,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -4397,7 +4348,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-35"
   },
@@ -4417,7 +4368,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -4437,7 +4388,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -4457,7 +4408,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -4477,7 +4428,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -4497,7 +4448,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-26"
@@ -4518,7 +4468,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-17"
@@ -4539,7 +4488,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-17"
@@ -4560,7 +4508,6 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-26"
@@ -4581,7 +4528,6 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-14"
@@ -4602,7 +4548,6 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-08"
@@ -4623,7 +4568,6 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-36"
@@ -4644,7 +4588,6 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-08"
@@ -4665,7 +4608,6 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-17"
@@ -4806,7 +4748,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -4826,7 +4768,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -4846,7 +4788,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -4866,7 +4808,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -4886,7 +4828,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -4906,7 +4848,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -4926,7 +4868,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -4946,7 +4888,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -4966,7 +4908,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -5886,6 +5828,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-15"
@@ -5906,6 +5849,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-15"
@@ -6086,7 +6030,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -6106,7 +6050,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -6126,7 +6070,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -6146,7 +6090,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -6166,7 +6110,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -6186,7 +6130,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -6206,7 +6150,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -6226,7 +6170,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -6246,7 +6190,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -6266,8 +6210,9 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -6287,8 +6232,9 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -6308,8 +6254,9 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -6329,8 +6276,9 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -6350,8 +6298,9 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -6371,8 +6320,9 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -6392,8 +6342,9 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -6413,8 +6364,9 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -6434,8 +6386,9 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit",
-      "kennis"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -6635,6 +6588,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-22"
@@ -6655,6 +6609,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-19"
@@ -6675,6 +6630,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-44"
@@ -6695,6 +6651,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-19"
@@ -6715,6 +6672,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-19"
@@ -6735,6 +6693,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-13"
@@ -6755,6 +6714,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-03"
@@ -6775,6 +6735,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-22"
@@ -6795,6 +6756,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-22"
@@ -6815,8 +6777,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -6836,8 +6797,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-44"
   },
@@ -6857,8 +6817,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-44"
   },
@@ -6878,8 +6837,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-23"
   },
@@ -6899,8 +6857,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -6920,8 +6877,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -6941,8 +6897,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -6962,8 +6917,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -6983,8 +6937,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -7184,7 +7137,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -7204,7 +7157,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -7224,7 +7177,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -7244,7 +7197,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -7264,7 +7217,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -7284,7 +7237,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -7304,7 +7257,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -7324,7 +7277,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -7344,7 +7297,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -7544,6 +7497,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-27"
@@ -7564,6 +7518,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-27"
@@ -7584,6 +7539,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-33"
@@ -7604,6 +7560,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-03"
@@ -7624,6 +7581,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-05"
@@ -7644,6 +7602,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-27"
@@ -7664,6 +7623,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-05"
@@ -7684,6 +7644,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-03"
@@ -7704,6 +7665,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-36"
@@ -7724,6 +7686,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-48"
@@ -7744,6 +7707,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-04"
@@ -7764,6 +7728,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-43"
@@ -7784,6 +7749,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-08"
@@ -7804,6 +7770,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-05"
@@ -7824,6 +7791,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-03"
@@ -7844,6 +7812,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-23"
@@ -7864,6 +7833,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-23"
@@ -7884,7 +7854,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -7904,7 +7874,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -7924,7 +7894,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -7944,7 +7914,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -7964,7 +7934,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -7984,7 +7954,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -8004,7 +7974,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -8024,7 +7994,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -8044,7 +8014,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -8424,7 +8394,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -8444,7 +8414,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -8504,8 +8474,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -8525,8 +8494,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -8546,8 +8514,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -8567,8 +8534,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -8588,8 +8554,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -8609,8 +8574,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -8630,8 +8594,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -8651,8 +8614,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -8672,8 +8634,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -8693,8 +8654,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -8714,8 +8674,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -8735,8 +8694,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -8756,7 +8714,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -8776,7 +8734,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -8876,7 +8834,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-02"
@@ -8897,7 +8854,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-02"
@@ -8918,7 +8874,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-02"
@@ -9180,7 +9135,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -9201,7 +9156,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -9222,7 +9177,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -9243,7 +9198,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -9347,8 +9302,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
-      "fruit"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-56"
   },
@@ -10269,8 +10223,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -10291,8 +10244,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -10313,8 +10265,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-06"
   },
@@ -10335,8 +10286,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-06"
   },
@@ -10357,8 +10307,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -10379,8 +10328,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -10401,8 +10349,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -10423,8 +10370,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -10445,8 +10391,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -10586,7 +10531,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -10606,7 +10551,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -10626,7 +10571,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -10646,7 +10591,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -10666,7 +10611,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -10686,7 +10631,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -10706,7 +10651,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -10726,7 +10671,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -10746,7 +10691,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -11106,7 +11051,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -11126,7 +11071,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -11146,7 +11091,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-49"
   },
@@ -11166,7 +11111,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -11186,7 +11131,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -11206,7 +11151,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -11226,7 +11171,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-40"
   },
@@ -11246,7 +11191,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-49"
   },
@@ -11266,7 +11211,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -11286,7 +11231,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -11306,7 +11251,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -11326,7 +11271,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -11346,7 +11291,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -11366,7 +11311,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -11386,7 +11331,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -11406,7 +11351,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -11426,7 +11371,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -11446,7 +11391,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -11646,9 +11591,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -11668,9 +11611,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -11690,9 +11631,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -11712,9 +11651,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -11734,9 +11671,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -11756,9 +11691,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -11778,9 +11711,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -11800,9 +11731,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -11822,9 +11751,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit",
-      "natuur"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -11844,7 +11771,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-05"
@@ -11865,7 +11791,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-34"
@@ -11886,7 +11811,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-34"
@@ -11907,7 +11831,6 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-34"
@@ -11928,7 +11851,6 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-46"
@@ -11949,7 +11871,6 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-18"
@@ -11970,7 +11891,6 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-34"
@@ -11991,7 +11911,6 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-10"
@@ -12012,7 +11931,6 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-48"
@@ -12193,8 +12111,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-55"
   },
@@ -12214,8 +12131,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -12235,8 +12151,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -12256,8 +12171,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -12277,8 +12191,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -12298,8 +12211,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -12319,8 +12231,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -12340,8 +12251,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -12361,8 +12271,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -12382,7 +12291,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -12403,7 +12311,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-21"
@@ -12424,7 +12331,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-21"
@@ -12445,7 +12351,6 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-04"
@@ -12466,7 +12371,6 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-06"
@@ -12487,7 +12391,6 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-16"
@@ -12508,7 +12411,6 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-06"
@@ -12529,7 +12431,6 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-16"
@@ -12550,7 +12451,6 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-08"
@@ -12931,7 +12831,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -12951,7 +12851,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -12971,7 +12871,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -12991,7 +12891,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -13011,7 +12911,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -13031,7 +12931,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -13051,7 +12951,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-35"
   },
@@ -13071,7 +12971,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -13091,7 +12991,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -13111,7 +13011,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -13131,7 +13031,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -13151,7 +13051,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -13171,7 +13071,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -13191,7 +13091,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -13211,7 +13111,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -13231,7 +13131,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -13251,7 +13151,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -13271,7 +13171,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -13291,7 +13191,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -13311,7 +13211,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -13331,7 +13231,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -13351,7 +13251,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -13371,7 +13271,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -13391,7 +13291,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -13411,7 +13311,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -13431,7 +13331,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -13451,7 +13351,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -13511,8 +13411,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -13532,8 +13431,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -13553,8 +13451,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -13574,8 +13471,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -13595,8 +13491,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-40"
   },
@@ -13616,8 +13511,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -13637,8 +13531,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -13658,8 +13551,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -13679,8 +13571,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -13700,7 +13591,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -13720,7 +13611,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -13740,7 +13631,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -13760,7 +13651,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -13780,7 +13671,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -13800,7 +13691,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -13820,7 +13711,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-23"
   },
@@ -13840,7 +13731,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-23"
   },
@@ -13860,7 +13751,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-23"
   },
@@ -13882,7 +13773,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-24"
   },
@@ -13904,7 +13795,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -13926,7 +13817,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -13948,7 +13839,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -13970,7 +13861,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -13992,7 +13883,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14014,7 +13905,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14036,7 +13927,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -14058,7 +13949,7 @@
     "visualTags": [
       "tuin",
       "fruit",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14078,7 +13969,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -14098,7 +13989,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -14118,7 +14009,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14138,7 +14029,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14158,7 +14049,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14178,7 +14069,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14198,7 +14089,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14218,7 +14109,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -14238,7 +14129,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14258,7 +14149,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -14278,7 +14169,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14298,7 +14189,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14318,7 +14209,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14338,7 +14229,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-35"
   },
@@ -14358,7 +14249,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -14378,7 +14269,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -14398,7 +14289,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -14418,7 +14309,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -14438,7 +14329,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14459,7 +14349,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14480,7 +14369,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14501,7 +14389,6 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14522,7 +14409,6 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14543,7 +14429,6 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14564,7 +14449,6 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14585,6 +14469,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14605,6 +14490,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "tuinwerk",
       "fruit"
     ],
     "visualClusterId": "image-cluster-07"
@@ -14626,7 +14512,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -14647,7 +14533,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -14668,7 +14554,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -14689,7 +14575,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -14710,7 +14596,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -14731,7 +14617,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -14752,7 +14638,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -14773,7 +14659,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14794,7 +14680,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "natuur"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -14814,8 +14700,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -14835,8 +14720,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -14856,8 +14740,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-06"
   },
@@ -14877,8 +14760,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -14898,8 +14780,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -14919,8 +14800,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14940,8 +14820,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14961,8 +14840,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -14982,8 +14860,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -15003,7 +14880,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -15023,7 +14900,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -15043,7 +14920,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -15063,7 +14940,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -15083,7 +14960,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -15103,7 +14980,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -15123,7 +15000,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -15143,7 +15020,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -15163,7 +15040,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -15183,7 +15060,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -15203,7 +15080,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -15223,7 +15100,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -15243,7 +15120,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -15263,7 +15140,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -15283,7 +15160,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -15303,7 +15180,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-16"
   },
@@ -15323,7 +15200,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -15343,7 +15220,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -15543,7 +15420,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -15563,7 +15441,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -15583,7 +15462,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -15603,7 +15483,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -15623,7 +15504,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -15643,7 +15525,8 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -15663,7 +15546,8 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -15683,7 +15567,8 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -15703,7 +15588,8 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -15905,7 +15791,8 @@
     "visualTags": [
       "reizen",
       "tuin",
-      "kennis"
+      "tuinwerk",
+      "documenten"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -15925,8 +15812,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "kennis",
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-53"
   },
@@ -15946,8 +15832,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "kennis",
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-53"
   },
@@ -15967,8 +15852,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "kennis",
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -15988,8 +15872,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "kennis",
-      "natuur"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -16010,7 +15893,7 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16031,7 +15914,7 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16052,7 +15935,7 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "natuur"
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16072,7 +15955,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16092,7 +15976,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16112,7 +15997,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16132,7 +16018,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16152,8 +16039,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -16173,8 +16059,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -16194,8 +16079,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -16215,8 +16099,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -16236,8 +16119,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -16257,8 +16139,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -16278,8 +16159,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -16299,8 +16179,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -16320,8 +16199,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -16701,8 +16579,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -16722,8 +16599,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -16743,8 +16619,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -16764,8 +16639,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16785,8 +16659,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -16806,8 +16679,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -16827,8 +16699,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -16848,8 +16719,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -16869,8 +16739,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -17010,7 +16879,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-46"
@@ -17031,7 +16899,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-09"
@@ -17052,7 +16919,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-46"
@@ -17233,8 +17099,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -17254,8 +17119,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -17275,8 +17139,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-34"
   },
@@ -17296,8 +17159,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "fruit"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -17317,7 +17179,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-24"
@@ -17338,7 +17199,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-01"
@@ -17359,7 +17219,6 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-11"
@@ -17380,7 +17239,6 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-21"
@@ -17401,7 +17259,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -17421,7 +17279,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -17441,7 +17299,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17461,7 +17319,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -17481,7 +17339,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17501,7 +17359,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17521,7 +17379,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17541,7 +17399,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17561,7 +17419,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17581,8 +17439,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17602,8 +17459,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17623,8 +17479,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17644,8 +17499,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17665,8 +17519,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17686,8 +17539,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -17707,8 +17559,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -17728,8 +17579,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-11"
   },
@@ -17749,8 +17599,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -17770,7 +17619,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -17790,7 +17639,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -17810,7 +17659,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -17830,7 +17679,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -17850,7 +17699,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -17870,7 +17719,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -17890,7 +17739,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -17910,7 +17759,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-33"
   },
@@ -17930,7 +17779,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -17951,7 +17800,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -17972,7 +17821,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -17993,7 +17842,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -18014,7 +17863,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
-      "tuin"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -18034,8 +17883,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -18055,8 +17903,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -18076,8 +17923,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -18097,8 +17943,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-35"
   },
@@ -18118,8 +17963,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -18139,8 +17983,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -18160,8 +18003,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -18181,8 +18023,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -18202,8 +18043,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -18223,8 +18063,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18244,8 +18083,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -18265,8 +18103,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -18286,8 +18123,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -18307,8 +18143,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -18328,8 +18163,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18349,8 +18183,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18370,8 +18203,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18391,8 +18223,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -18413,7 +18244,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -18434,7 +18265,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -18455,7 +18286,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-49"
   },
@@ -18476,7 +18307,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -18497,7 +18328,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -18518,7 +18349,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -18539,7 +18370,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -18560,7 +18391,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18581,7 +18412,7 @@
     "ok": true,
     "visualTags": [
       "familie",
-      "reizen"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -18781,7 +18612,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18801,7 +18632,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -18821,7 +18652,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -18841,7 +18672,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -18861,7 +18692,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -18881,7 +18712,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -18901,7 +18732,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -18921,7 +18752,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-25"
   },
@@ -18941,7 +18772,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-47"
   },
@@ -19681,8 +19512,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -19702,8 +19532,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -19723,8 +19552,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -19744,6 +19572,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-17"
@@ -19764,6 +19593,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-17"
@@ -19784,6 +19614,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-32"
@@ -19804,6 +19635,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-19"
@@ -19824,6 +19656,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-20"
@@ -19844,6 +19677,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-08"
@@ -19864,6 +19698,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-04"
@@ -19884,6 +19719,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-17"
@@ -19904,6 +19740,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
+      "familie",
       "reizen"
     ],
     "visualClusterId": "image-cluster-20"
@@ -19924,8 +19761,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -19945,8 +19782,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -19966,8 +19803,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -19987,8 +19824,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -20008,8 +19845,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-14"
   },
@@ -20029,8 +19866,8 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -20050,8 +19887,8 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -20071,8 +19908,8 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "fruit"
+      "familie",
+      "reizen"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -20252,7 +20089,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20272,7 +20109,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -20292,7 +20129,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20312,7 +20149,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-06"
   },
@@ -20332,7 +20169,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -20352,7 +20189,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -20572,7 +20409,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-28"
@@ -20593,7 +20429,6 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-28"
@@ -20614,7 +20449,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20634,7 +20470,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20654,7 +20491,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20674,7 +20512,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20694,7 +20533,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20714,7 +20554,8 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -20734,7 +20575,8 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -20754,7 +20596,8 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "tuin",
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -20774,8 +20617,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-06"
   },
@@ -20795,8 +20637,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -20816,8 +20657,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -20837,8 +20677,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -20858,8 +20697,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-31"
   },
@@ -20879,8 +20717,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -20900,8 +20737,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -20921,8 +20757,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -20942,8 +20777,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -21143,8 +20977,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -21164,8 +20997,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -21185,8 +21017,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -21206,8 +21037,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -21227,8 +21057,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -21248,8 +21077,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -21269,8 +21097,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -21290,8 +21117,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -21311,8 +21137,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -21512,8 +21337,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -21533,8 +21357,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -21554,8 +21377,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -21575,8 +21397,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -21596,8 +21417,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -21617,8 +21437,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -21638,8 +21457,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -21659,8 +21477,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -21680,8 +21497,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "natuur"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -21701,7 +21517,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -21721,7 +21537,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -21741,7 +21557,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -21761,7 +21577,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -21781,7 +21597,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -21801,7 +21617,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -21821,7 +21637,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -21841,7 +21657,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -21861,7 +21677,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -21881,7 +21697,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -21901,7 +21717,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -21921,7 +21737,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -21941,7 +21757,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -21961,7 +21777,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -21981,7 +21797,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -22001,7 +21817,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -22021,7 +21837,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -22041,7 +21857,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "fruit"
+      "familie"
     ],
     "visualClusterId": "image-cluster-38"
   },
@@ -22241,8 +22057,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -22262,8 +22077,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -22283,8 +22097,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -22304,8 +22117,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -22325,8 +22137,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -22346,8 +22157,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -22367,8 +22177,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -22388,8 +22197,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -22409,8 +22217,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -22610,8 +22417,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -22631,8 +22437,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -22652,8 +22457,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-13"
   },
@@ -22673,8 +22477,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -22694,8 +22497,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -22715,8 +22517,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-03"
   },
@@ -22736,8 +22537,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -22757,8 +22557,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "kennis"
+      "familie"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -23498,7 +23297,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -23518,7 +23317,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -23538,7 +23337,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -23558,7 +23357,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-42"
   },
@@ -23578,7 +23377,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-35"
   },
@@ -23598,7 +23397,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-35"
   },
@@ -23618,7 +23417,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -23638,7 +23437,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -23658,7 +23457,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-30"
   },
@@ -24378,7 +24177,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24398,7 +24197,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24418,7 +24217,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24438,7 +24237,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24458,7 +24257,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24478,7 +24277,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24498,7 +24297,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24518,7 +24317,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -24538,7 +24337,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-48"
   },
@@ -24558,7 +24357,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -24578,7 +24377,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-06"
   },
@@ -24598,7 +24397,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -24618,7 +24417,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -24638,7 +24437,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -24658,7 +24457,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -24678,7 +24477,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -24698,7 +24497,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -24718,8 +24517,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -24739,8 +24537,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -24760,8 +24557,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24781,8 +24577,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -24802,8 +24597,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24823,8 +24617,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24844,8 +24637,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24865,8 +24657,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -24886,8 +24677,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24907,7 +24697,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -24927,7 +24717,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24947,7 +24737,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24967,7 +24757,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -24987,7 +24777,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25007,7 +24797,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25027,7 +24817,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25047,7 +24837,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25067,7 +24857,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -25087,7 +24877,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25107,7 +24897,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25127,7 +24917,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25147,7 +24937,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25167,7 +24957,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -25187,7 +24977,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -25207,7 +24997,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25227,7 +25017,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25247,7 +25037,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "kennis"
+      "landschap"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25267,7 +25057,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -25287,7 +25078,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25307,7 +25099,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25327,7 +25120,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25347,7 +25141,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25367,7 +25162,8 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25387,7 +25183,8 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25407,7 +25204,8 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25427,7 +25225,8 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "familie",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25727,7 +25526,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -25747,7 +25546,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25767,7 +25566,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25787,7 +25586,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25807,7 +25606,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25827,7 +25626,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25847,7 +25646,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -25867,7 +25666,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -25887,7 +25686,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-36"
   },
@@ -26627,7 +26426,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -26647,7 +26446,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -26667,7 +26466,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -26687,7 +26486,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -26707,7 +26506,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-09"
   },
@@ -26727,7 +26526,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -26747,7 +26546,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -26767,7 +26566,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -26787,7 +26586,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -26987,7 +26786,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-44"
   },
@@ -27007,7 +26806,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -27027,7 +26826,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-44"
   },
@@ -27047,7 +26846,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -27067,7 +26866,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-49"
   },
@@ -27087,7 +26886,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-52"
   },
@@ -27107,7 +26906,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-50"
   },
@@ -27127,7 +26926,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -27147,7 +26946,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "tuin"
     ],
     "visualClusterId": "image-cluster-32"
   },
@@ -27167,7 +26966,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -27187,7 +26986,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -27207,7 +27006,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -27227,7 +27026,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -27247,7 +27046,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -27267,7 +27066,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-54"
   },
@@ -27287,7 +27086,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -27307,7 +27106,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -27327,7 +27126,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-51"
   },
@@ -27347,8 +27146,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-37"
   },
@@ -27368,8 +27166,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-46"
   },
@@ -27389,8 +27186,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -27410,8 +27206,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-18"
   },
@@ -27431,8 +27226,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-44"
   },
@@ -27452,8 +27246,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -27473,8 +27266,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-43"
   },
@@ -27494,8 +27286,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-44"
   },
@@ -27515,8 +27306,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "kennis"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-27"
   },
@@ -28915,7 +28705,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -28936,7 +28728,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-23"
   },
@@ -28957,7 +28751,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-23"
   },
@@ -28978,7 +28774,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -28999,7 +28797,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-22"
   },
@@ -29020,7 +28820,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-05"
   },
@@ -29041,7 +28843,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-02"
   },
@@ -29062,7 +28866,9 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen",
+      "landschap"
     ],
     "visualClusterId": "image-cluster-19"
   },
@@ -29082,8 +28888,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -29103,8 +28908,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29124,8 +28928,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29145,8 +28948,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29166,8 +28968,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29187,8 +28988,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29208,8 +29008,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29229,8 +29028,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29250,8 +29048,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "familie",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29451,7 +29248,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29471,7 +29268,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29491,7 +29288,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29511,7 +29308,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29531,7 +29328,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29551,7 +29348,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29571,7 +29368,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29591,7 +29388,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29611,7 +29408,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "tuin"
+      "familie"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29811,7 +29608,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29831,7 +29629,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29851,7 +29650,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29871,7 +29671,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29891,7 +29692,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29911,7 +29713,8 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29931,7 +29734,8 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-45"
   },
@@ -29951,7 +29755,8 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -29971,7 +29776,8 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "tuin"
     ],
     "visualClusterId": "image-cluster-04"
   }

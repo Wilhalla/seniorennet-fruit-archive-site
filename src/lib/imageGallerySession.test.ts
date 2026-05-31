@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { buildGalleryRows, buildImageGallerySession, filterGalleryImages, formatImagePostDateTime, galleryFiltersFromUrlState, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageGalleryStateFromUrl, imageNumberLabel, relatedGalleryImages, shouldLoadGalleryRelated, shouldLoadGallerySpeciesTags, visibleGalleryThemes } from './imageGallerySession'
 
 const images = [
-  { id: 'a', src: '/archive-images/a.jpg', postSlug: 'a', postTitle: 'Apple blossom', date: '2008-03-07', year: 2008, month: 3, season: 'lente', excerpt: 'first', caption: 'bloesem', visualTags: ['fruit', 'tuin'], visualClusterId: 'c1' },
+  { id: 'a', src: '/archive-images/a.jpg', postSlug: 'a', postTitle: 'Apple blossom', date: '2008-03-07', year: 2008, month: 3, season: 'lente', excerpt: 'first', caption: 'bloesem', visualTags: ['fruit', 'bloemen'], visualClusterId: 'c1' },
   { id: 'b', src: '/archive-images/b.jpg', postSlug: 'b', postTitle: 'Pear harvest', date: '2007-09-02', year: 2007, month: 9, season: 'herfst', excerpt: 'second', caption: 'peer', visualTags: ['fruit'], visualClusterId: 'c1' },
   { id: 'c', src: '/archive-images/c.jpg', postSlug: 'c', postTitle: 'Visitors', date: '2007-09-03', year: 2007, month: 9, season: 'herfst', excerpt: 'third', caption: 'mensen', visualTags: ['familie'], visualClusterId: 'c2' },
 ]
@@ -12,7 +12,7 @@ const groups = {
   seasons: [],
   themes: [
     { id: 'fruit', label: 'Fruit & rassen', icon: '🍐', count: 0 },
-    { id: 'tuin', label: 'Tuin & boomgaard', icon: '🌿', count: 0 },
+    { id: 'bloemen', label: 'Bloesem & bloemen', icon: '🌸', count: 0 },
     { id: 'familie', label: 'Familie & mensen', icon: '👥', count: 0 },
   ],
 }
@@ -39,7 +39,7 @@ describe('image gallery session', () => {
     expect(rows.map((row) => row.type)).toEqual(['year', 'month', 'images', 'year', 'month', 'images'])
     expect(themes.map((theme) => [theme.id, theme.count])).toEqual([
       ['fruit', 2],
-      ['tuin', 1],
+      ['bloemen', 1],
       ['familie', 1],
     ])
   })
@@ -92,6 +92,6 @@ describe('image gallery session', () => {
     expect(session.nextImage).toBeNull()
     expect(session.relatedImages.map((image) => image.id)).toEqual(['c', 'a'])
     expect(session.rows.map((row) => row.type)).toEqual(['year', 'month', 'images', 'year', 'month', 'images'])
-    expect(session.visibleThemes.map((theme) => theme.id)).toEqual(['fruit', 'tuin', 'familie'])
+    expect(session.visibleThemes.map((theme) => theme.id)).toEqual(['fruit', 'bloemen', 'familie'])
   })
 })

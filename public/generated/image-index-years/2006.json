@@ -77,8 +77,7 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit",
-      "natuur"
+      "dieren"
     ],
     "visualClusterId": "image-cluster-04"
   },
@@ -160,7 +159,6 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "familie",
       "tuin",
       "fruit"
     ],
@@ -223,6 +221,7 @@
     "ok": true,
     "visualTags": [
       "reizen",
+      "tuin",
       "fruit"
     ],
     "visualClusterId": "image-cluster-39"
@@ -243,9 +242,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "fruit",
-      "kennis",
-      "natuur"
+      "documenten"
     ],
     "visualClusterId": "image-cluster-39"
   },
@@ -265,8 +262,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-39"
   },

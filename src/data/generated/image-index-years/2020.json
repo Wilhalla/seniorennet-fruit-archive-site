@@ -16,7 +16,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-24"
   },
@@ -37,7 +38,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -58,7 +60,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-24"
   },
@@ -79,7 +82,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-10"
   },
@@ -100,7 +104,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -121,7 +126,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -142,7 +148,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-21"
   },
@@ -163,7 +170,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -184,7 +192,8 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -204,8 +213,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -225,8 +234,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -246,8 +255,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -267,8 +276,8 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-28"
   },
@@ -288,8 +297,8 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "fruit",
+      "bloemen"
     ],
     "visualClusterId": "image-cluster-01"
   },
@@ -310,7 +319,7 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -331,7 +340,7 @@
     "ok": true,
     "visualTags": [
       "tuin",
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-07"
   },
@@ -351,8 +360,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -372,8 +380,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -393,8 +400,7 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -414,8 +420,7 @@
     "imageIndex": 3,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -435,8 +440,7 @@
     "imageIndex": 4,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -456,8 +460,7 @@
     "imageIndex": 5,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-17"
   },
@@ -477,8 +480,7 @@
     "imageIndex": 6,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -498,8 +500,7 @@
     "imageIndex": 7,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-08"
   },
@@ -519,8 +520,7 @@
     "imageIndex": 8,
     "ok": true,
     "visualTags": [
-      "reizen",
-      "tuin"
+      "reizen"
     ],
     "visualClusterId": "image-cluster-29"
   },
@@ -540,7 +540,8 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "documenten"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -560,7 +561,8 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "documenten"
     ],
     "visualClusterId": "image-cluster-26"
   },
@@ -580,7 +582,8 @@
     "imageIndex": 2,
     "ok": true,
     "visualTags": [
-      "reizen"
+      "reizen",
+      "documenten"
     ],
     "visualClusterId": "image-cluster-20"
   },
@@ -980,8 +983,7 @@
     "imageIndex": 0,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-15"
   },
@@ -1001,8 +1003,7 @@
     "imageIndex": 1,
     "ok": true,
     "visualTags": [
-      "tuin",
-      "fruit"
+      "tuinwerk"
     ],
     "visualClusterId": "image-cluster-15"
   },

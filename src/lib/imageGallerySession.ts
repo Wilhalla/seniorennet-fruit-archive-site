@@ -64,7 +64,7 @@ export type GalleryVirtualRow<T extends GalleryImageRecord = GalleryImageRecord>
   | { type: 'month'; key: string; year: string; label: string; count: number }
   | { type: 'images'; key: string; year: string; images: T[] }
 
-const peoplePlantTags = ['familie', 'tuin', 'fruit', 'natuur']
+const peoplePlantTags = ['familie', 'tuin', 'tuinwerk', 'fruit', 'bloemen', 'dieren', 'landschap']
 
 export const emptyGalleryGroups: GalleryGroups = { years: [], seasons: [], themes: [] }
 export const MIN_HIGH_PRIORITY_THUMBNAILS = 6

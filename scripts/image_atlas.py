@@ -27,63 +27,79 @@ from PIL import Image, ImageStat, UnidentifiedImageError
 THEMES = [
     {
         "id": "familie",
-        "label": "Familie & mensen",
+        "label": "Mensen & familie",
         "icon": "👥",
         "topics": ["topic-17", "topic-30", "topic-39", "topic-43", "topic-45", "topic-46"],
-        "terms": ["familie", "dochter", "kind", "kinderen", "kleinkind", "kleinzoon", "vriend", "vrienden", "feest", "rouw", "leen", "keda", "tinneke", "mieke", "vake"],
+        "terms": ["familie", "dochter", "kind", "kinderen", "kleinkind", "kleinzoon", "vriend", "vrienden", "feest", "tuinfeest", "bezoek", "groep", "portret", "leen", "keda", "tinneke", "mieke", "vake"],
     },
     {
         "id": "reizen",
         "label": "Reizen & erfgoed",
         "icon": "🧭",
         "topics": ["topic-01", "topic-04", "topic-08", "topic-15", "topic-29", "topic-34"],
-        "terms": ["reis", "reizen", "uitstap", "wandeling", "museum", "kerk", "kasteel", "abdij", "stad", "toren", "erfgoed", "engeland", "frankrijk", "duitsland", "antwerpen", "brussel"],
+        "terms": ["reis", "reizen", "uitstap", "wandeling", "museum", "kerk", "kasteel", "abdij", "kathedraal", "stad", "stadhuis", "toren", "monument", "erfgoed", "engeland", "frankrijk", "duitsland", "antwerpen", "brussel"],
     },
     {
         "id": "tuin",
         "label": "Tuin & boomgaard",
         "icon": "🌿",
-        "topics": ["topic-02", "topic-03", "topic-12", "topic-16", "topic-23", "topic-25", "topic-27", "topic-32", "topic-34"],
-        "terms": ["tuin", "boomgaard", "moestuin", "serre", "compost", "plant", "planten", "snoei", "snoeien", "enten", "bloei", "bloesem", "vorst", "regen"],
+        "topics": ["topic-02", "topic-12", "topic-16", "topic-23", "topic-25", "topic-32", "topic-34"],
+        "terms": ["tuin", "boomgaard", "moestuin", "serre", "border", "perk", "haag", "plant", "planten", "bomen", "struik", "struiken", "compost"],
+    },
+    {
+        "id": "tuinwerk",
+        "label": "Tuinwerk & teelt",
+        "icon": "🪴",
+        "topics": ["topic-03", "topic-07", "topic-16", "topic-23", "topic-25", "topic-27", "topic-32"],
+        "terms": ["snoei", "snoeien", "enten", "ent", "onderstam", "zaaien", "zaad", "zaden", "stek", "stekken", "planten", "oogsten", "brix", "proefveld", "wateroverlast", "vorst", "schade", "ziekte", "plagen"],
     },
     {
         "id": "fruit",
-        "label": "Fruit & rassen",
+        "label": "Fruit & oogst",
         "icon": "🍐",
-        "topics": ["topic-05", "topic-06", "topic-07", "topic-09", "topic-11", "topic-13", "topic-14", "topic-18", "topic-20", "topic-28", "topic-31", "topic-38", "topic-41", "topic-47"],
+        "topics": ["topic-05", "topic-06", "topic-09", "topic-11", "topic-13", "topic-14", "topic-20", "topic-28", "topic-31", "topic-38", "topic-41"],
         "terms": ["fruit", "vrucht", "vruchten", "oogst", "appel", "appels", "malus", "reinette", "jonagold", "pinova", "rubin", "boskoop", "elstar", "topaz", "ecolette", "granny", "peer", "peren", "beurré", "doyenné", "catillac", "comtesse", "kwee", "pruim", "pruimen", "prunus", "reine claude", "kerspruim", "myrobolaan", "bes", "bessen", "braam", "bramen", "framboos", "frambozen", "taybes", "wijnbes", "kruisbes", "aardbei", "kers", "kersen", "walnoot", "noten", "ras", "rassen", "pomolog"],
     },
     {
-        "id": "kennis",
-        "label": "Kennis & advies",
-        "icon": "📚",
-        "topics": ["topic-03", "topic-07", "topic-10", "topic-24", "topic-31", "topic-40", "topic-44", "topic-47"],
-        "terms": ["vraag", "vragen", "feedback", "advies", "uitleg", "artikel", "publicatie", "onderzoek", "studie", "proef", "probleem", "problemen", "ziekte", "aantasting", "schade", "determinatie", "lezing", "schema", "tabel"],
+        "id": "bloemen",
+        "label": "Bloesem & bloemen",
+        "icon": "🌸",
+        "topics": ["topic-18"],
+        "terms": ["bloesem", "bloei", "bloemen", "bloem", "paasbloemen", "roos", "rozen", "kornoelje", "cornus mas", "lentebloei"],
     },
     {
-        "id": "opinie",
-        "label": "Opinie & samenleving",
-        "icon": "💬",
-        "topics": ["topic-24", "topic-40", "topic-44"],
-        "terms": ["mening", "opinie", "politiek", "samenleving", "ggo", "genetisch", "pesticide", "pesticiden", "bestrijdingsmiddelen", "parkinson", "voeding", "wetgeving", "protest", "kritiek", "consument"],
-    },
-    {
-        "id": "natuur",
-        "label": "Natuur & dieren",
+        "id": "dieren",
+        "label": "Dieren & insecten",
         "icon": "🐦",
-        "topics": ["topic-19", "topic-21", "topic-22", "topic-26", "topic-33", "topic-35", "topic-36", "topic-37", "topic-42"],
-        "terms": ["natuur", "vogel", "vogels", "bijen", "vlinder", "vlinders", "rups", "rupsen", "wesp", "kip", "kippen", "uil", "kauw", "koekoek", "wezel", "muis", "insect", "insecten"],
+        "topics": ["topic-19", "topic-22", "topic-26", "topic-33", "topic-35", "topic-36", "topic-37", "topic-42"],
+        "terms": ["vogel", "vogels", "bijen", "vlinder", "vlinders", "rups", "rupsen", "wesp", "kip", "kippen", "haan", "uil", "kauw", "koekoek", "wezel", "muis", "insect", "insecten", "nest"],
+    },
+    {
+        "id": "landschap",
+        "label": "Landschap & natuur",
+        "icon": "🏞️",
+        "topics": ["topic-21"],
+        "terms": ["natuur", "landschap", "bos", "park", "water", "vijver", "rivier", "heide", "dreef", "veld", "weide", "sneeuw"],
+    },
+    {
+        "id": "documenten",
+        "label": "Documenten & labels",
+        "icon": "🏷️",
+        "topics": ["topic-40", "topic-47"],
+        "terms": ["artikel", "publicatie", "schema", "tabel", "kaart", "etiket", "label", "bord", "affiche", "poster", "tekening", "grafiek", "tekst", "folder"],
     },
 ]
 
 CLIP_TEXT_PROMPTS = {
-    "familie": "a photograph of family, people, children, visitors, friends, a party or social gathering",
-    "reizen": "a travel photograph of a heritage place, church, castle, museum, historic town, city walk or landscape",
-    "tuin": "a photograph of a garden, orchard, vegetable garden, greenhouse, plants, blossom, pruning or gardening work",
-    "fruit": "a photograph of fruit varieties, apples, pears, plums, berries, nuts, harvest or a fruit collection",
-    "kennis": "a photograph or scan of horticultural advice, research, a lecture, document, chart, table, labels or educational material",
-    "opinie": "a photograph or scan about food politics, organic farming, pesticides, society, protest, opinion or public debate",
-    "natuur": "a photograph of nature, birds, bees, butterflies, insects, chickens, wildlife, trees, forest or countryside",
+    "familie": "a photograph of people, family, children, visitors, friends, a group portrait, party or social gathering",
+    "reizen": "a travel photograph of a heritage place, church, castle, museum, historic town, city walk or monument",
+    "tuin": "a photograph of a garden, orchard, vegetable garden, greenhouse, plants, trees, beds or borders",
+    "tuinwerk": "a photograph of gardening work, pruning, grafting, tools, planting, cultivation, crop damage or trial fields",
+    "fruit": "a photograph of fruit, apples, pears, plums, berries, nuts, harvest or fruit varieties",
+    "bloemen": "a close-up photograph of fruit tree blossom, flowers, flowering shrubs or spring bloom",
+    "dieren": "a photograph of animals, birds, bees, butterflies, insects, caterpillars, chickens or wildlife",
+    "landschap": "a photograph of landscape, nature, park, forest, water, countryside, fields or snow",
+    "documenten": "a scan or photograph of a document, label, sign, poster, drawing, chart, table or printed text",
 }
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tif", ".tiff"}
@@ -301,9 +317,7 @@ def build_provider(backend: str, model: str, batch_size: int) -> ImageEmbeddingP
 
 
 def term_matches(haystack: str, term: str) -> bool:
-    if " " in term or len(term) <= 3:
-        return re.search(rf"(?<!\w){re.escape(term)}(?!\w)", haystack) is not None
-    return term in haystack
+    return re.search(rf"(?<!\w){re.escape(term)}(?!\w)", haystack) is not None
 
 
 def heuristic_tags(record: dict[str, Any]) -> list[str]:

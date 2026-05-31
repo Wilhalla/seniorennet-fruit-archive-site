@@ -54,7 +54,7 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
   } = gallerySession
   const peopleCount = visibleThemes.find((item) => item.id === 'familie')?.count ?? 0
   const plantCount = visibleThemes
-    .filter((item) => ['tuin', 'fruit'].includes(item.id))
+    .filter((item) => ['tuin', 'tuinwerk', 'fruit', 'bloemen'].includes(item.id))
     .reduce((sum, item) => sum + item.count, 0)
 
   const galleryVirtualizer = useWindowVirtualizer({
