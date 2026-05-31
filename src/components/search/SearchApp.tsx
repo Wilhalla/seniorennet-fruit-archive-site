@@ -1,7 +1,8 @@
+import { useState } from 'react'
 import { ArrowRight, FileSearch, ImageIcon, Loader2, Search, Sparkles } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { formatArchiveDate } from '../../lib/archiveDateTime'
-import { useLazySearchIndex, useSearchManifest, useSearchResults, useUrlBackedSearchQuery } from './searchClientHooks'
+import { useLazySearchIndex, useSearchManifest, useSearchResults, useTitleSearchResults, useUrlBackedSearchQuery } from './searchClientHooks'
 
 function snippet(block: string, terms: string[] = []) {
   const lower = block.toLowerCase()
@@ -25,32 +26,41 @@ function highlight(text: string, terms: string[] = []) {
 
 export default function SearchApp() {
   const { query, setQuery } = useUrlBackedSearchQuery()
+  const [fullTextEnabled, setFullTextEnabled] = useState(false)
   const manifest = useSearchManifest()
-  const { index, loading } = useLazySearchIndex(query)
-  const results = useSearchResults(index, query)
+  const titleSearch = useTitleSearchResults(query)
+  const { chunks, loading: fullTextLoading, loaded: fullTextLoaded } = useLazySearchIndex(query, fullTextEnabled, manifest)
+  const fullTextResults = useSearchResults(chunks, query)
+  const results = fullTextLoaded ? fullTextResults : titleSearch.results
+  const loading = fullTextLoaded ? fullTextLoading : titleSearch.loading
 
   return (
     <section className="site-shell py-20" aria-labelledby="search-title">
       <header className="relative grid gap-8 overflow-hidden border-b border-chalk pb-10 md:grid-cols-[minmax(0,0.72fr)_minmax(16rem,0.28fr)]">
-        <img className="apple-image absolute right-0 top-0 hidden w-24 rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-192.png" alt="" aria-hidden="true" loading="eager" decoding="async" />
+        <img className="apple-image absolute right-0 top-0 hidden w-24 rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-160.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
         <div>
           <p className="eyebrow mb-3 inline-flex items-center gap-2"><FileSearch className="size-4" aria-hidden="true" /> Tekst zoeken</p>
           <h1 id="search-title" className="display-title">Zoeken</h1>
           <p className="mt-4 max-w-2xl text-body-lg leading-body-lg text-slate-ink">Zoek op titel, tekst of trefwoord.</p>
         </div>
         <div className="self-end pr-28 text-sm text-slate-ink max-md:pr-0">
-          {loading ? <span className="inline-flex items-center gap-1.5"><Loader2 className="size-4 animate-spin" /> Index laden…</span> : <span className="inline-flex items-center gap-1.5"><Sparkles className="size-4" /> {manifest?.postCount.toLocaleString('nl-BE')} berichten doorzoekbaar</span>}
+          {fullTextLoading ? <span className="inline-flex items-center gap-1.5"><Loader2 className="size-4 animate-spin" /> Volledige index laden…</span> : <span className="inline-flex items-center gap-1.5"><Sparkles className="size-4" /> {manifest?.postCount.toLocaleString('nl-BE')} berichten doorzoekbaar</span>}
         </div>
       </header>
 
       <div className="min-w-0 border-b border-chalk py-6">
         <label className="flex min-h-14 min-w-0 items-center gap-3 bg-transparent">
           <Search className="size-5 shrink-0 text-slate-ink" aria-hidden="true" />
-          <Input className="min-w-0 flex-1 border-0 bg-transparent px-0 text-xl shadow-none outline-none placeholder:text-slate-ink/60 focus-visible:ring-0 md:text-2xl" autoFocus type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Zoek bv. sterappel, bijen, compost, boskoop…" />
+          <Input className="min-w-0 flex-1 border-0 bg-transparent px-0 text-xl shadow-none outline-none placeholder:text-slate-ink/60 focus-visible:ring-0 md:text-2xl" autoFocus type="search" value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') setFullTextEnabled(true) }} placeholder="Zoek bv. sterappel, bijen, compost, boskoop…" />
         </label>
         <div className="mt-3 flex flex-wrap justify-between gap-3 text-sm text-slate-ink">
-          <span>{query.trim().length < 2 ? 'Typ minstens twee letters.' : loading ? 'Zoekindex laden…' : `${results.length.toLocaleString('nl-BE')} resultaten`}</span>
-          {query.trim().length >= 2 && <span>Gesorteerd op relevantie</span>}
+          <span>{query.trim().length < 2 ? 'Typ minstens twee letters.' : loading ? 'Zoekindex laden…' : `${results.length.toLocaleString('nl-BE')} resultaten${fullTextLoaded ? '' : ' in titels'}`}</span>
+          {query.trim().length >= 2 && (
+            <span className="inline-flex flex-wrap items-center gap-3">
+              {!fullTextLoaded && <button className="font-medium text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" type="button" onClick={() => setFullTextEnabled(true)}>{fullTextLoading ? 'Volledige tekst laden…' : 'Zoek ook in volledige tekst'}</button>}
+              <span>Gesorteerd op relevantie</span>
+            </span>
+          )}
         </div>
       </div>
 
@@ -58,11 +68,11 @@ export default function SearchApp() {
         {query.trim().length >= 2 && !loading && results.length === 0 && <p className="m-0 border-b border-chalk py-10 text-slate-ink">Geen resultaten.</p>}
         {results.map((result) => {
           const terms = result.terms ?? []
-          const text = snippet(result.block, terms)
+          const text = result.block ? snippet(result.block, terms) : 'Titelmatch. Laad de volledige tekstindex om in berichtinhoud en fragmenten te zoeken.'
           return (
             <article className="grid min-w-0 items-start gap-5 border-b border-chalk py-7 md:grid-cols-[minmax(0,1fr)_9rem]" key={result.id}>
               <div className="min-w-0">
-                <p className="mb-2 flex min-w-0 flex-wrap items-center gap-2 text-xs leading-snug tracking-tight text-slate-ink">{formatArchiveDate(result)} · blok {result.blockIndex + 1} · score {Math.round(result.score)}</p>
+                <p className="mb-2 flex min-w-0 flex-wrap items-center gap-2 text-xs leading-snug tracking-tight text-slate-ink">{formatArchiveDate(result)}{typeof result.blockIndex === 'number' ? ` · blok ${result.blockIndex + 1}` : ' · titelindex'}{typeof result.score === 'number' ? ` · score ${Math.round(result.score)}` : ''}</p>
                 <h2 className="m-0 break-words font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy [overflow-wrap:anywhere] md:text-4xl">{highlight(result.title, terms)}</h2>
                 <p className="my-3 max-w-5xl break-words text-slate-ink [overflow-wrap:anywhere]">{highlight(text, terms)}</p>
                 <p className="m-0 flex min-w-0 flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-ink">

@@ -34,8 +34,8 @@
 
 :root {
   color-scheme: light;
-  --apple-asset-1: url('/apple-assets/apple-1-512.webp');
-  --apple-asset-2: url('/apple-assets/apple-2-512.webp');
+  --apple-asset-1: url('/apple-assets/apple-1-160.webp');
+  --apple-asset-2: url('/apple-assets/apple-2-160.webp');
   --background: var(--color-eggshell);
   --foreground: var(--color-obsidian);
   --card: var(--color-pure-surface);

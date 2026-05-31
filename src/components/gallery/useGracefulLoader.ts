@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
-export const LOADER_SHOW_DELAY_MS = 420
-export const LOADER_MIN_VISIBLE_MS = 520
-export const LOADER_FADE_MS = 220
+export const LOADER_SHOW_DELAY_MS = 180
+export const LOADER_MIN_VISIBLE_MS = 80
+export const LOADER_FADE_MS = 140
 
 export function useGracefulLoader(active: boolean) {
   const [shouldRender, setShouldRender] = useState(active)

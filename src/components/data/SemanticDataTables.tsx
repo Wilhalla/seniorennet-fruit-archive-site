@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   flexRender,
   getCoreRowModel,
@@ -19,13 +19,6 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import entitiesJson from '../../data/generated/entities.json'
-import manifestJson from '../../data/generated/manifest.json'
-import mapPointsJson from '../../data/generated/map-points.json'
-import postsIndexJson from '../../data/generated/posts-index.json'
-import relatedPostsJson from '../../data/generated/related-posts.json'
-import topicCalendarJson from '../../data/generated/topic-calendar.json'
-import topicsJson from '../../data/generated/topics.json'
 
 type RawRow = Record<string, unknown>
 
@@ -35,6 +28,16 @@ type RawDataset = {
   file: string
   columns: string[]
   rows: RawRow[]
+}
+
+type DatasetDefinition = {
+  id: string
+  title: string
+  file: string
+  url: string
+  preferredColumns: string[]
+  rowsFromData: (value: unknown) => RawRow[]
+  autoLoad?: boolean
 }
 
 const isRecord = (value: unknown): value is RawRow => (
@@ -97,73 +100,73 @@ const downloadDataset = (dataset: RawDataset) => {
   URL.revokeObjectURL(url)
 }
 
-const topicsRows = rowsFromArray(topicsJson)
-const mapPointRows = rowsFromArray(mapPointsJson)
-const postRows = rowsFromArray(postsIndexJson)
-const topicCalendar = topicCalendarJson as RawRow
-const topicCalendarTopicRows = Array.isArray(topicCalendar.topics) ? rowsFromArray(topicCalendar.topics) : []
+const generated = (file: string) => `/generated/${file}`
 
-const relatedPostRows = Object.entries(relatedPostsJson as Record<string, string[]>).map(([postId, relatedPostIds]) => ({
-  postId,
-  relatedPostIds,
-}))
-
-const datasets: RawDataset[] = [
+const datasetDefinitions: DatasetDefinition[] = [
   {
     id: 'manifest',
     title: 'Pipeline manifest',
     file: 'manifest.json',
-    columns: ['key', 'value'],
-    rows: keyValueRows(manifestJson),
+    url: generated('manifest.json'),
+    preferredColumns: ['key', 'value'],
+    rowsFromData: keyValueRows,
+    autoLoad: true,
   },
   {
     id: 'topics',
     title: 'Topics',
     file: 'topics.json',
-    columns: collectColumns(topicsRows, ['id', 'label', 'generatedLabel', 'postCount', 'visualKeywords', 'textKeywords', 'representativePostIds']),
-    rows: topicsRows,
+    url: generated('topics.json'),
+    preferredColumns: ['id', 'label', 'generatedLabel', 'postCount', 'visualKeywords', 'textKeywords', 'representativePostIds'],
+    rowsFromData: rowsFromArray,
   },
   {
     id: 'map-points',
     title: 'Map points',
     file: 'map-points.json',
-    columns: collectColumns(mapPointRows, ['id', 'slug', 'title', 'date', 'year', 'month', 'season', 'topicId', 'x', 'y', 'imageCount', 'image', 'excerpt']),
-    rows: mapPointRows,
+    url: generated('map-points.json'),
+    preferredColumns: ['id', 'slug', 'title', 'date', 'year', 'month', 'season', 'topicId', 'x', 'y', 'imageCount', 'image', 'excerpt'],
+    rowsFromData: rowsFromArray,
   },
   {
     id: 'posts-index',
     title: 'Posts index',
     file: 'posts-index.json',
-    columns: collectColumns(postRows, ['id', 'slug', 'title', 'date', 'isoDate', 'year', 'month', 'season', 'topicId', 'imageCount', 'url', 'excerpt', 'cleanedText', 'images', 'tags']),
-    rows: postRows,
+    url: generated('posts-index.json'),
+    preferredColumns: ['id', 'slug', 'title', 'date', 'isoDate', 'year', 'month', 'season', 'topicId', 'imageCount', 'url', 'excerpt', 'cleanedText', 'images', 'tags'],
+    rowsFromData: rowsFromArray,
   },
   {
     id: 'related-posts',
     title: 'Related posts',
     file: 'related-posts.json',
-    columns: ['postId', 'relatedPostIds'],
-    rows: relatedPostRows,
+    url: generated('related-posts.json'),
+    preferredColumns: ['postId', 'relatedPostIds'],
+    rowsFromData: (value) => Object.entries(value as Record<string, string[]>).map(([postId, relatedPostIds]) => ({ postId, relatedPostIds })),
   },
   {
     id: 'topic-calendar-summary',
     title: 'Topic calendar summary',
     file: 'topic-calendar.json',
-    columns: ['key', 'value'],
-    rows: keyValueRows(topicCalendarJson, ['topics']),
+    url: generated('topic-calendar.json'),
+    preferredColumns: ['key', 'value'],
+    rowsFromData: (value) => keyValueRows(value, ['topics']),
   },
   {
     id: 'topic-calendar-topics',
     title: 'Topic calendar by topic',
     file: 'topic-calendar.json · topics[]',
-    columns: collectColumns(topicCalendarTopicRows, ['topicId', 'label', 'generatedLabel', 'postCount', 'total', 'monthsAllYears', 'seasonsAllYears', 'years']),
-    rows: topicCalendarTopicRows,
+    url: generated('topic-calendar.json'),
+    preferredColumns: ['topicId', 'label', 'generatedLabel', 'postCount', 'total', 'monthsAllYears', 'seasonsAllYears', 'years'],
+    rowsFromData: (value) => isRecord(value) && Array.isArray(value.topics) ? rowsFromArray(value.topics) : [],
   },
   {
     id: 'entities',
     title: 'Entities',
     file: 'entities.json',
-    columns: collectColumns(rowsFromArray(entitiesJson), ['index', 'value']),
-    rows: rowsFromArray(entitiesJson),
+    url: generated('entities.json'),
+    preferredColumns: ['index', 'value'],
+    rowsFromData: rowsFromArray,
   },
 ]
 
@@ -202,8 +205,59 @@ declare global {
   }
 }
 
-function RawDataTable({ dataset }: { dataset: RawDataset }) {
+function RawDataTable({ definition }: { definition: DatasetDefinition }) {
   const [sorting, setSorting] = useState<SortingState>([])
+  const [rows, setRows] = useState<RawRow[] | null>(null)
+  const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+  const sectionRef = useRef<HTMLElement | null>(null)
+
+  const columnsList = useMemo(
+    () => collectColumns(rows ?? [], definition.preferredColumns),
+    [definition.preferredColumns, rows],
+  )
+
+  const dataset = useMemo<RawDataset>(() => ({
+    id: definition.id,
+    title: definition.title,
+    file: definition.file,
+    columns: columnsList,
+    rows: rows ?? [],
+  }), [columnsList, definition.file, definition.id, definition.title, rows])
+
+  const loadDataset = async () => {
+    if (rows || loading) return
+    setLoading(true)
+    setError(null)
+    try {
+      const response = await fetch(definition.url, { priority: 'low' as RequestInit['priority'] })
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`)
+      const value = await response.json()
+      setRows(definition.rowsFromData(value))
+    } catch (loadError) {
+      console.error(loadError)
+      setError(loadError instanceof Error ? loadError.message : 'Dataset kon niet geladen worden')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    const element = sectionRef.current
+    if (!definition.autoLoad || !element || rows || loading) return undefined
+    if (!('IntersectionObserver' in window)) {
+      loadDataset()
+      return undefined
+    }
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        observer.disconnect()
+        loadDataset()
+      }
+    }, { rootMargin: '700px 0px' })
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [definition.autoLoad, loading, rows])
 
   const columns = useMemo<ColumnDef<RawRow>[]>(() => [
     {
@@ -212,17 +266,17 @@ function RawDataTable({ dataset }: { dataset: RawDataset }) {
       cell: ({ row }) => row.index + 1,
       enableSorting: false,
     },
-    ...dataset.columns.map((column) => ({
+    ...columnsList.map((column) => ({
       id: column,
       accessorFn: (row: RawRow) => stringifyCell(row[column]),
       header: column,
       cell: ({ row }: { row: { original: RawRow } }) => <RawCell value={row.original[column]} />,
       sortingFn: 'alphanumeric' as const,
     })),
-  ], [dataset.columns])
+  ], [columnsList])
 
   const table = useReactTable({
-    data: dataset.rows,
+    data: rows ?? [],
     columns,
     state: { sorting },
     onSortingChange: setSorting,
@@ -231,76 +285,97 @@ function RawDataTable({ dataset }: { dataset: RawDataset }) {
   })
 
   return (
-    <section id={dataset.id} className="min-w-0 border-t border-chalk py-8" aria-labelledby={`${dataset.id}-title`}>
+    <section ref={sectionRef} id={definition.id} className="min-w-0 border-t border-chalk py-8" aria-labelledby={`${definition.id}-title`}>
       <div className="grid min-w-0 gap-4 pb-5 md:grid-cols-[minmax(12rem,1fr)_auto] md:items-end">
         <div className="min-w-0">
-          <p className="mb-1 font-mono text-xs text-slate">{dataset.file}</p>
-          <h2 id={`${dataset.id}-title`} className="m-0 font-heading text-[clamp(1.7rem,3vw,2.45rem)] font-light leading-none tracking-[-0.04em] text-obsidian">
-            {dataset.title}
+          <p className="mb-1 font-mono text-xs text-slate">{definition.file}</p>
+          <h2 id={`${definition.id}-title`} className="m-0 font-heading text-[clamp(1.7rem,3vw,2.45rem)] font-light leading-none tracking-[-0.04em] text-obsidian">
+            {definition.title}
           </h2>
+          {!rows && !error && <p className="mt-2 text-sm text-gravel">Deze dataset wordt pas geladen wanneer je dit blok opent.</p>}
+          {error && <p className="mt-2 text-sm text-destructive">Kon niet laden: {error}</p>}
         </div>
-        <Button
-          className="h-auto justify-self-start rounded-none px-0 py-0 text-sm font-medium text-obsidian hover:bg-transparent hover:text-gravel md:justify-self-end"
-          type="button"
-          variant="ghost"
-          onClick={() => downloadDataset(dataset)}
-          aria-label={`Download ${dataset.title} als JSON`}
-        >
-          <Download className="size-4" aria-hidden="true" />
-          <span>download</span>
-        </Button>
+        <div className="flex flex-wrap gap-3 md:justify-end">
+          {!rows && (
+            <Button
+              className="h-auto justify-self-start rounded-none px-0 py-0 text-sm font-medium text-obsidian hover:bg-transparent hover:text-gravel md:justify-self-end"
+              type="button"
+              variant="ghost"
+              onClick={loadDataset}
+              disabled={loading}
+            >
+              {loading ? 'laden…' : 'laad tabel'}
+            </Button>
+          )}
+          {rows && (
+            <Button
+              className="h-auto justify-self-start rounded-none px-0 py-0 text-sm font-medium text-obsidian hover:bg-transparent hover:text-gravel md:justify-self-end"
+              type="button"
+              variant="ghost"
+              onClick={() => downloadDataset(dataset)}
+              aria-label={`Download ${definition.title} als JSON`}
+            >
+              <Download className="size-4" aria-hidden="true" />
+              <span>download</span>
+            </Button>
+          )}
+        </div>
       </div>
 
-      {dataset.rows.length === 0 ? (
-        <p className="py-5 text-gravel">Geen rijen in deze dataset.</p>
-      ) : (
-        <div className="min-w-0 max-w-full overflow-hidden">
-            <Table
-              containerClassName="max-h-[78vh] min-w-0 max-w-full overflow-auto"
-              className="w-max min-w-full border-separate border-spacing-0"
-              aria-label={`${dataset.title} tabel`}
-            >
-              <TableHeader className="sticky top-0 z-20 bg-eggshell/95 backdrop-blur [&_tr]:border-b-0">
-                {table.getHeaderGroups().map((headerGroup) => (
-                  <TableRow key={headerGroup.id} className="border-b border-chalk hover:bg-transparent">
-                    {headerGroup.headers.map((header) => (
-                      <TableHead
-                        key={header.id}
-                        className={`${columnWidthClass(header.column.id)} border-b border-chalk bg-eggshell/95 px-3 text-xs font-medium uppercase tracking-[0.08em] text-slate`}
-                      >
-                        {header.isPlaceholder ? null : (
-                          <button
-                            className="inline-flex items-center gap-1 text-left disabled:cursor-default"
-                            type="button"
-                            disabled={!header.column.getCanSort()}
-                            onClick={header.column.getToggleSortingHandler()}
-                          >
-                            {flexRender(header.column.columnDef.header, header.getContext())}
-                            {{ asc: '↑', desc: '↓' }[header.column.getIsSorted() as string] ?? null}
-                          </button>
-                        )}
-                      </TableHead>
-                    ))}
-                  </TableRow>
-                ))}
-              </TableHeader>
-              <TableBody>
-                {table.getRowModel().rows.map((row) => (
-                  <TableRow key={row.id} className="border-b border-chalk/80 hover:bg-powder/20">
-                    {row.getVisibleCells().map((cell, cellIndex) => (
-                      <TableCell
-                        key={cell.id}
-                        className={`${columnWidthClass(cell.column.id)} px-3 py-2 align-top whitespace-normal ${cellIndex === 0 ? 'sticky left-0 z-10 bg-eggshell font-mono text-xs text-slate' : ''}`}
-                      >
-                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                      </TableCell>
-                    ))}
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+      {loading && !rows ? (
+        <div className="grid gap-2 py-5" aria-live="polite">
+          {Array.from({ length: 4 }).map((_, index) => <div className="h-9 animate-pulse rounded bg-powder/60" key={index} />)}
         </div>
-      )}
+      ) : rows && rows.length === 0 ? (
+        <p className="py-5 text-gravel">Geen rijen in deze dataset.</p>
+      ) : rows ? (
+        <div className="min-w-0 max-w-full overflow-hidden">
+          <Table
+            containerClassName="max-h-[78vh] min-w-0 max-w-full overflow-auto"
+            className="w-max min-w-full border-separate border-spacing-0"
+            aria-label={`${definition.title} tabel`}
+          >
+            <TableHeader className="sticky top-0 z-20 bg-eggshell/95 backdrop-blur [&_tr]:border-b-0">
+              {table.getHeaderGroups().map((headerGroup) => (
+                <TableRow key={headerGroup.id} className="border-b border-chalk hover:bg-transparent">
+                  {headerGroup.headers.map((header) => (
+                    <TableHead
+                      key={header.id}
+                      className={`${columnWidthClass(header.column.id)} border-b border-chalk bg-eggshell/95 px-3 text-xs font-medium uppercase tracking-[0.08em] text-slate`}
+                    >
+                      {header.isPlaceholder ? null : (
+                        <button
+                          className="inline-flex items-center gap-1 text-left disabled:cursor-default"
+                          type="button"
+                          disabled={!header.column.getCanSort()}
+                          onClick={header.column.getToggleSortingHandler()}
+                        >
+                          {flexRender(header.column.columnDef.header, header.getContext())}
+                          {{ asc: '↑', desc: '↓' }[header.column.getIsSorted() as string] ?? null}
+                        </button>
+                      )}
+                    </TableHead>
+                  ))}
+                </TableRow>
+              ))}
+            </TableHeader>
+            <TableBody>
+              {table.getRowModel().rows.map((row) => (
+                <TableRow key={row.id} className="border-b border-chalk/80 hover:bg-powder/20">
+                  {row.getVisibleCells().map((cell, cellIndex) => (
+                    <TableCell
+                      key={cell.id}
+                      className={`${columnWidthClass(cell.column.id)} px-3 py-2 align-top whitespace-normal ${cellIndex === 0 ? 'sticky left-0 z-10 bg-eggshell font-mono text-xs text-slate' : ''}`}
+                    >
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </TableCell>
+                  ))}
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+      ) : null}
     </section>
   )
 }
@@ -313,8 +388,8 @@ export default function SemanticDataTables() {
 
   return (
     <section className="site-shell grid min-w-0 gap-0 pb-20" aria-label="Ruwe semantische preprocessing data">
-      {datasets.map((dataset) => (
-        <RawDataTable key={dataset.id} dataset={dataset} />
+      {datasetDefinitions.map((definition) => (
+        <RawDataTable key={definition.id} definition={definition} />
       ))}
     </section>
   )

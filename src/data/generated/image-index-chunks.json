@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-05-31T20:53:52Z",
+  "imageCount": 13144,
+  "contractVersion": 1,
+  "chunks": [
+    {
+      "id": "unknown",
+      "year": "unknown",
+      "file": "image-index-years/unknown.json",
+      "imageCount": 3
+    },
+    {
+      "id": "2020",
+      "year": "2020",
+      "file": "image-index-years/2020.json",
+      "imageCount": 58
+    },
+    {
+      "id": "2019",
+      "year": "2019",
+      "file": "image-index-years/2019.json",
+      "imageCount": 722
+    },
+    {
+      "id": "2018",
+      "year": "2018",
+      "file": "image-index-years/2018.json",
+      "imageCount": 499
+    },
+    {
+      "id": "2017",
+      "year": "2017",
+      "file": "image-index-years/2017.json",
+      "imageCount": 603
+    },
+    {
+      "id": "2016",
+      "year": "2016",
+      "file": "image-index-years/2016.json",
+      "imageCount": 1131
+    },
+    {
+      "id": "2015",
+      "year": "2015",
+      "file": "image-index-years/2015.json",
+      "imageCount": 1477
+    },
+    {
+      "id": "2014",
+      "year": "2014",
+      "file": "image-index-years/2014.json",
+      "imageCount": 1161
+    },
+    {
+      "id": "2013",
+      "year": "2013",
+      "file": "image-index-years/2013.json",
+      "imageCount": 1199
+    },
+    {
+      "id": "2012",
+      "year": "2012",
+      "file": "image-index-years/2012.json",
+      "imageCount": 1373
+    },
+    {
+      "id": "2011",
+      "year": "2011",
+      "file": "image-index-years/2011.json",
+      "imageCount": 1012
+    },
+    {
+      "id": "2010",
+      "year": "2010",
+      "file": "image-index-years/2010.json",
+      "imageCount": 1397
+    },
+    {
+      "id": "2009",
+      "year": "2009",
+      "file": "image-index-years/2009.json",
+      "imageCount": 1376
+    },
+    {
+      "id": "2008",
+      "year": "2008",
+      "file": "image-index-years/2008.json",
+      "imageCount": 809
+    },
+    {
+      "id": "2007",
+      "year": "2007",
+      "file": "image-index-years/2007.json",
+      "imageCount": 309
+    },
+    {
+      "id": "2006",
+      "year": "2006",
+      "file": "image-index-years/2006.json",
+      "imageCount": 14
+    },
+    {
+      "id": "2005",
+      "year": "2005",
+      "file": "image-index-years/2005.json",
+      "imageCount": 1
+    }
+  ]
+}

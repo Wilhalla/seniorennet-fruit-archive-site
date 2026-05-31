@@ -53,6 +53,22 @@ export function useGalleryViewerUrlState() {
   return { filters, setFilters, slideshowRequestedId, setSlideshowRequestedId, slideshowRouteRef, urlStateReady, viewerId, setViewerId }
 }
 
+type ImageIndexChunkManifest = {
+  imageCount: number
+  chunks: Array<{ id: string; file: string; imageCount: number }>
+}
+
+function mergeViewerImages(current: GalleryImageRecord[], next: GalleryImageRecord[]) {
+  const seen = new Set<string>()
+  const merged: GalleryImageRecord[] = []
+  for (const image of [...current, ...next]) {
+    if (seen.has(image.id)) continue
+    seen.add(image.id)
+    merged.push(image)
+  }
+  return merged
+}
+
 export function useGalleryViewerData(initialImages: GalleryImageRecord[], enabled: boolean) {
   const [images, setImages] = useState<GalleryImageRecord[]>(initialImages)
   const [imagesLoading, setImagesLoading] = useState(false)
@@ -62,24 +78,50 @@ export function useGalleryViewerData(initialImages: GalleryImageRecord[], enable
     if (!enabled) return undefined
 
     const controller = new AbortController()
+    let cancelled = false
     setImagesLoading(true)
     setFullIndexLoaded(false)
-    fetchGalleryJson<GalleryImageRecord[]>('/generated/image-index.client.json', 'high', controller.signal)
-      .catch((error) => {
-        if (isAbortError(error)) throw error
-        return fetchGalleryJson<GalleryImageRecord[]>('/generated/image-index.json', 'high', controller.signal)
-      })
-      .then(setImages)
-      .catch((error) => {
-        if (!isAbortError(error)) console.error(error)
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) {
-          setImagesLoading(false)
-          setFullIndexLoaded(true)
+
+    async function loadImages() {
+      try {
+        const manifest = await fetchGalleryJson<ImageIndexChunkManifest>('/generated/image-index-chunks.json', 'high', controller.signal)
+        if (!manifest.chunks?.length) throw new Error('Geen beeldarchief-chunks gevonden')
+        let loadedCount = 0
+        for (const chunk of manifest.chunks) {
+          if (controller.signal.aborted || cancelled) return
+          const chunkImages = await fetchGalleryJson<GalleryImageRecord[]>(`/generated/${chunk.file}`, 'high', controller.signal)
+          loadedCount += chunkImages.length
+          setImages((current) => mergeViewerImages(current, chunkImages))
+          await new Promise((resolve) => window.setTimeout(resolve, 0))
         }
-      })
-    return () => controller.abort()
+        if (!cancelled && !controller.signal.aborted) setFullIndexLoaded(loadedCount >= manifest.imageCount)
+      } catch (error) {
+        if (isAbortError(error)) return
+        console.error(error)
+        try {
+          const fallbackImages = await fetchGalleryJson<GalleryImageRecord[]>('/generated/image-index.client.json', 'high', controller.signal)
+            .catch((fallbackError) => {
+              if (isAbortError(fallbackError)) throw fallbackError
+              return fetchGalleryJson<GalleryImageRecord[]>('/generated/image-index.json', 'high', controller.signal)
+            })
+          if (!cancelled && !controller.signal.aborted) {
+            setImages(fallbackImages)
+            setFullIndexLoaded(true)
+          }
+        } catch (fallbackError) {
+          if (!isAbortError(fallbackError)) console.error(fallbackError)
+        }
+      } finally {
+        if (!controller.signal.aborted && !cancelled) setImagesLoading(false)
+      }
+    }
+
+    loadImages()
+
+    return () => {
+      cancelled = true
+      controller.abort()
+    }
   }, [enabled])
 
   return { fullIndexLoaded, images, imagesLoading }

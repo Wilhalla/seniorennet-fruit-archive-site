@@ -2,6 +2,8 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import MiniSearch from 'minisearch'
 
+// ... existing types
+
 type Post = {
   id: string
   slug: string
@@ -30,10 +32,19 @@ type SearchDoc = {
   topicId: string
 }
 
+type SearchChunkManifestEntry = {
+  id: string
+  year: string
+  file: string
+  postCount: number
+  blockCount: number
+}
+
 const ROOT = process.cwd()
 const INPUT = path.join(ROOT, 'src/data/generated/posts-index.json')
 const PUBLIC_OUT = path.join(ROOT, 'public/generated')
 const DATA_OUT = path.join(ROOT, 'src/data/generated')
+const CHUNK_DIR = 'search-index-chunks'
 const MAX_BLOCK_CHARS = 950
 const OVERLAP_SENTENCES = 1
 
@@ -44,6 +55,16 @@ const DUTCH_STOP_WORDS = new Set([
   'ook', 'op', 'over', 'te', 'tot', 'uit', 'uw', 'van', 'voor', 'was', 'wat', 'we', 'wel', 'werd',
   'wij', 'worden', 'wordt', 'ze', 'zijn', 'zo', 'zal', 'zou', 'www', 'http', 'https', 'html',
 ])
+
+const searchOptions = {
+  boost: { title: 5, excerpt: 2.5, block: 1 },
+  prefix: true,
+  fuzzy: 0.18,
+  combineWith: 'AND' as const,
+}
+
+const storeFields = ['postId', 'slug', 'url', 'title', 'date', 'isoDate', 'excerpt', 'block', 'blockIndex', 'imageCount', 'topicId']
+const fields = ['title', 'excerpt', 'block']
 
 function normalizeWhitespace(value: string) {
   return value.replace(/\s+/g, ' ').trim()
@@ -99,46 +120,77 @@ function chunkPost(post: Post): SearchDoc[] {
     }))
 }
 
+function createMiniSearch(docs: SearchDoc[]) {
+  const miniSearch = new MiniSearch<SearchDoc>({
+    fields,
+    storeFields,
+    searchOptions,
+    processTerm: (term) => {
+      const normalized = term.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+      if (normalized.length < 2 || DUTCH_STOP_WORDS.has(normalized)) return null
+      return normalized
+    },
+  })
+  miniSearch.addAll(docs)
+  return miniSearch
+}
+
+function archiveYear(value: string) {
+  const match = value.match(/^(\d{4})/)
+  return match?.[1] ?? 'unknown'
+}
+
 async function writeJson(outDir: string, filename: string, data: unknown) {
-  await fs.mkdir(outDir, { recursive: true })
+  await fs.mkdir(path.dirname(path.join(outDir, filename)), { recursive: true })
   await fs.writeFile(path.join(outDir, filename), `${JSON.stringify(data)}\n`, 'utf8')
+}
+
+async function resetChunkDir(outDir: string) {
+  await fs.rm(path.join(outDir, CHUNK_DIR), { recursive: true, force: true })
+  await fs.mkdir(path.join(outDir, CHUNK_DIR), { recursive: true })
 }
 
 const posts = JSON.parse(await fs.readFile(INPUT, 'utf8')) as Post[]
 const docs = posts.flatMap(chunkPost)
+const docsByYear = new Map<string, SearchDoc[]>()
+for (const doc of docs) {
+  const year = archiveYear(doc.isoDate || doc.date)
+  const yearDocs = docsByYear.get(year) ?? []
+  yearDocs.push(doc)
+  docsByYear.set(year, yearDocs)
+}
 
-const miniSearch = new MiniSearch<SearchDoc>({
-  fields: ['title', 'excerpt', 'block'],
-  storeFields: ['postId', 'slug', 'url', 'title', 'date', 'isoDate', 'excerpt', 'block', 'blockIndex', 'imageCount', 'topicId'],
-  searchOptions: {
-    boost: { title: 5, excerpt: 2.5, block: 1 },
-    prefix: true,
-    fuzzy: 0.18,
-    combineWith: 'AND',
-  },
-  processTerm: (term) => {
-    const normalized = term.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
-    if (normalized.length < 2 || DUTCH_STOP_WORDS.has(normalized)) return null
-    return normalized
-  },
-})
-
-miniSearch.addAll(docs)
+const chunks: SearchChunkManifestEntry[] = [...docsByYear.entries()]
+  .sort(([a], [b]) => b.localeCompare(a))
+  .map(([year, yearDocs]) => ({
+    id: year,
+    year,
+    file: `${CHUNK_DIR}/${year}.json`,
+    postCount: new Set(yearDocs.map((doc) => doc.postId)).size,
+    blockCount: yearDocs.length,
+  }))
 
 const manifest = {
   generatedAt: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
   postCount: posts.length,
   blockCount: docs.length,
-  algorithm: 'MiniSearch BM25-like full-text index with prefix + fuzzy matching',
+  algorithm: 'Chunked MiniSearch BM25-like full-text index with prefix + fuzzy matching',
   fuzzy: 0.18,
-  contractVersion: 1,
+  contractVersion: 2,
+  chunks,
 }
 
 await writeJson(DATA_OUT, 'search-docs.json', docs)
 
 for (const outDir of [PUBLIC_OUT, DATA_OUT]) {
-  await writeJson(outDir, 'search-index.json', miniSearch.toJSON())
+  await resetChunkDir(outDir)
+  for (const chunk of chunks) {
+    const yearDocs = docsByYear.get(chunk.year) ?? []
+    await writeJson(outDir, chunk.file, createMiniSearch(yearDocs).toJSON())
+  }
+  // Keep the legacy monolithic index available for compatibility/manual downloads, but the app uses chunks.
+  await writeJson(outDir, 'search-index.json', createMiniSearch(docs).toJSON())
   await writeJson(outDir, 'search-manifest.json', manifest)
 }
 
-console.log(`[search-index] indexed ${docs.length} content blocks from ${posts.length} posts`)
+console.log(`[search-index] indexed ${docs.length} content blocks from ${posts.length} posts into ${chunks.length} chunks`)

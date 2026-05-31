@@ -12,7 +12,7 @@ export default function Hero({ leadPost, postCount }: Props) {
 
   return (
     <section className="site-shell relative grid min-h-[32rem] items-end gap-14 overflow-hidden py-14 md:grid-cols-[minmax(0,1fr)_minmax(20rem,0.6fr)]">
-      <img className="apple-image absolute right-8 top-8 hidden w-28 rotate-6 md:block" src="/apple-assets/apple-2-192.png" alt="" aria-hidden="true" loading="eager" decoding="async" />
+      <img className="apple-image absolute right-8 top-8 hidden w-28 rotate-6 md:block" src="/apple-assets/apple-2-160.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
       <div className="grid gap-5">
         <p className="eyebrow">Bewaarde blogberichten</p>
         <h1 className="display-title">Blogarchief Daniël Willaeys</h1>

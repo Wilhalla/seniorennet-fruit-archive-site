@@ -29,9 +29,9 @@ type Props = {
 
 export default function GalleryApp({ initialImages, initialGroups }: Props) {
   const galleryFeedRef = useRef<HTMLElement>(null)
-  const { images, groups, initialDataLoading, fullIndexLoaded } = useGalleryData(initialImages, initialGroups)
   const { filters, hasActiveFilters, replaceFilters, resetFilters, setFilter } = useGalleryFilters()
   const { query, selectedYear, theme, speciesFilter, season, sortNewest } = filters
+  const { images, groups, initialDataLoading, fullIndexLoaded } = useGalleryData(initialImages, initialGroups, true)
   const { speciesByImage, speciesTagsLoading } = useGallerySpeciesTags({ query, speciesFilter })
   const columns = useResponsiveGalleryColumns()
 
@@ -52,9 +52,9 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
     highPriorityThumbnailIds,
     eagerThumbnailIds,
   } = gallerySession
-  const peopleCount = visibleThemes.find((item) => item.id === 'mensen')?.count ?? 0
+  const peopleCount = visibleThemes.find((item) => item.id === 'familie')?.count ?? 0
   const plantCount = visibleThemes
-    .filter((item) => ['appels', 'peren', 'pruimen', 'bessen', 'bloesem', 'tuin'].includes(item.id))
+    .filter((item) => ['tuin', 'fruit'].includes(item.id))
     .reduce((sum, item) => sum + item.count, 0)
 
   const galleryVirtualizer = useWindowVirtualizer({

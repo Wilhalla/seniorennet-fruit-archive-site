@@ -26,7 +26,7 @@ export default function RelatedPosts({ postId }: Props) {
   return (
     <section className="site-shell border-t border-rule py-14" aria-labelledby="related-atlas-title">
       <div className="relative">
-        <img className="apple-image absolute right-0 top-0 hidden w-20 -rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-192.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+        <img className="apple-image absolute right-0 top-0 hidden w-20 -rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-160.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
         <p className="eyebrow">Verder lezen</p>
         <h2 id="related-atlas-title" className="section-title">Nabije berichten</h2>
         <p className="section-kicker">Thema: <strong>{topicLabel}</strong>.</p>
@@ -36,7 +36,7 @@ export default function RelatedPosts({ postId }: Props) {
         <div className="mt-8 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {related.map((post) => {
             const image = post.images[0]
-            const thumbnailSrc = image ? archiveSmallThumbUrl(image) : '/apple-assets/apple-1-192.png'
+            const thumbnailSrc = image ? archiveSmallThumbUrl(image) : '/apple-assets/apple-1-160.webp'
             const thumbnailClass = image
               ? 'h-36 w-full object-cover transition-transform duration-300 group-hover:scale-105'
               : 'h-36 w-full object-contain p-8 opacity-75 transition-transform duration-300 group-hover:scale-105'

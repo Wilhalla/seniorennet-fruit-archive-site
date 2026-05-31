@@ -2,19 +2,18 @@ import { describe, expect, it } from 'vitest'
 import { buildGalleryRows, buildImageGallerySession, filterGalleryImages, formatImagePostDateTime, galleryFiltersFromUrlState, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageGalleryStateFromUrl, imageNumberLabel, relatedGalleryImages, shouldLoadGalleryRelated, shouldLoadGallerySpeciesTags, visibleGalleryThemes } from './imageGallerySession'
 
 const images = [
-  { id: 'a', src: '/archive-images/a.jpg', postSlug: 'a', postTitle: 'Apple blossom', date: '2008-03-07', year: 2008, month: 3, season: 'lente', excerpt: 'first', caption: 'bloesem', visualTags: ['appels', 'bloesem'], visualClusterId: 'c1' },
-  { id: 'b', src: '/archive-images/b.jpg', postSlug: 'b', postTitle: 'Pear harvest', date: '2007-09-02', year: 2007, month: 9, season: 'herfst', excerpt: 'second', caption: 'peer', visualTags: ['peren'], visualClusterId: 'c1' },
-  { id: 'c', src: '/archive-images/c.jpg', postSlug: 'c', postTitle: 'Visitors', date: '2007-09-03', year: 2007, month: 9, season: 'herfst', excerpt: 'third', caption: 'mensen', visualTags: ['mensen'], visualClusterId: 'c2' },
+  { id: 'a', src: '/archive-images/a.jpg', postSlug: 'a', postTitle: 'Apple blossom', date: '2008-03-07', year: 2008, month: 3, season: 'lente', excerpt: 'first', caption: 'bloesem', visualTags: ['fruit', 'tuin'], visualClusterId: 'c1' },
+  { id: 'b', src: '/archive-images/b.jpg', postSlug: 'b', postTitle: 'Pear harvest', date: '2007-09-02', year: 2007, month: 9, season: 'herfst', excerpt: 'second', caption: 'peer', visualTags: ['fruit'], visualClusterId: 'c1' },
+  { id: 'c', src: '/archive-images/c.jpg', postSlug: 'c', postTitle: 'Visitors', date: '2007-09-03', year: 2007, month: 9, season: 'herfst', excerpt: 'third', caption: 'mensen', visualTags: ['familie'], visualClusterId: 'c2' },
 ]
 
 const groups = {
   years: [],
   seasons: [],
   themes: [
-    { id: 'appels', label: 'Appels', icon: '🍏', count: 0 },
-    { id: 'bloesem', label: 'Bloesem', icon: '🌸', count: 0 },
-    { id: 'peren', label: 'Peren', icon: '🍐', count: 0 },
-    { id: 'mensen', label: 'Mensen', icon: '👥', count: 0 },
+    { id: 'fruit', label: 'Fruit & rassen', icon: '🍐', count: 0 },
+    { id: 'tuin', label: 'Tuin & boomgaard', icon: '🌿', count: 0 },
+    { id: 'familie', label: 'Familie & mensen', icon: '👥', count: 0 },
   ],
 }
 
@@ -23,7 +22,7 @@ describe('image gallery session', () => {
     const filtered = filterGalleryImages(images, {
       query: 'apple',
       selectedYear: '',
-      theme: 'appels',
+      theme: 'fruit',
       speciesFilter: 'all',
       season: 'lente',
       peoplePlantsOnly: true,
@@ -39,10 +38,9 @@ describe('image gallery session', () => {
 
     expect(rows.map((row) => row.type)).toEqual(['year', 'month', 'images', 'year', 'month', 'images'])
     expect(themes.map((theme) => [theme.id, theme.count])).toEqual([
-      ['appels', 1],
-      ['bloesem', 1],
-      ['peren', 1],
-      ['mensen', 1],
+      ['fruit', 2],
+      ['tuin', 1],
+      ['familie', 1],
     ])
   })
 
@@ -62,13 +60,13 @@ describe('image gallery session', () => {
   })
 
   it('round-trips URL state without losing the selected image', () => {
-    const state = imageGalleryStateFromUrl('?q=appel&theme=appels&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old&img=a')
+    const state = imageGalleryStateFromUrl('?q=appel&theme=fruit&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old&img=a')
 
-    expect(state).toMatchObject({ query: 'appel', theme: 'appels', speciesFilter: 'sterappel', selectedYear: '2008', season: 'lente', peoplePlantsOnly: true, sortNewest: false, viewerId: 'a' })
-    expect(galleryFiltersFromUrlState(state)).toEqual({ query: 'appel', theme: 'appels', speciesFilter: 'sterappel', selectedYear: '2008', season: 'lente', peoplePlantsOnly: true, sortNewest: false })
-    expect(galleryUrlFromState('/gallery/', state)).toBe('/gallery/?q=appel&theme=appels&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old')
-    expect(galleryViewerPageUrl(state)).toBe('/gallery/view/?q=appel&theme=appels&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old&img=a')
-    expect(gallerySlideshowPageUrl(state)).toBe('/gallery/slideshow/?q=appel&theme=appels&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old&img=a')
+    expect(state).toMatchObject({ query: 'appel', theme: 'fruit', speciesFilter: 'sterappel', selectedYear: '2008', season: 'lente', peoplePlantsOnly: true, sortNewest: false, viewerId: 'a' })
+    expect(galleryFiltersFromUrlState(state)).toEqual({ query: 'appel', theme: 'fruit', speciesFilter: 'sterappel', selectedYear: '2008', season: 'lente', peoplePlantsOnly: true, sortNewest: false })
+    expect(galleryUrlFromState('/gallery/', state)).toBe('/gallery/?q=appel&theme=fruit&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old')
+    expect(galleryViewerPageUrl(state)).toBe('/gallery/view/?q=appel&theme=fruit&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old&img=a')
+    expect(gallerySlideshowPageUrl(state)).toBe('/gallery/slideshow/?q=appel&theme=fruit&species=sterappel&year=2008&season=lente&peoplePlants=1&sort=old&img=a')
   })
 
   it('keeps shared viewer image labels behind the gallery session module', () => {
@@ -94,6 +92,6 @@ describe('image gallery session', () => {
     expect(session.nextImage).toBeNull()
     expect(session.relatedImages.map((image) => image.id)).toEqual(['c', 'a'])
     expect(session.rows.map((row) => row.type)).toEqual(['year', 'month', 'images', 'year', 'month', 'images'])
-    expect(session.visibleThemes.map((theme) => theme.id)).toEqual(['appels', 'bloesem', 'peren', 'mensen'])
+    expect(session.visibleThemes.map((theme) => theme.id)).toEqual(['fruit', 'tuin', 'familie'])
   })
 })

@@ -1,12 +1,11 @@
 import { archiveAssetUrl } from "../lib/assetUrls";
 import { archiveDayLabel, archiveTimestamp, archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate } from "../lib/archiveDateTime";
 import type { PostSummary } from "../lib/postIndex";
+import { yearPickerCountClass, yearPickerItemClass } from "./yearPickerStyles";
 
 type Props = { posts: PostSummary[]; limit?: number };
 const countPill =
   "inline-flex min-h-6 items-center rounded-full px-2.5 font-mono text-[11px] leading-none";
-const yearLinkClass =
-  "flex min-h-8 w-full items-center justify-center gap-3 whitespace-nowrap rounded-full px-2 text-center text-sm text-slate-ink no-underline hover:bg-powder hover:text-obsidian data-[active=true]:bg-obsidian data-[active=true]:font-medium data-[active=true]:text-eggshell data-[active=true]:hover:bg-obsidian data-[active=true]:hover:text-eggshell md:justify-between md:px-3 md:text-left md:text-base";
 const activeYearScript = `
 (() => {
   const root = document.currentScript?.closest('[data-chronology-feed]')
@@ -88,7 +87,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
               >
                 {yearGroups.map((group) => (
                   <a
-                    className={yearLinkClass}
+                    className={yearPickerItemClass}
                     data-active={group.year === firstYear ? "true" : "false"}
                     data-chronology-year-link
                     data-year={group.year}
@@ -98,7 +97,7 @@ export default function ChronologicalFeed({ posts, limit }: Props) {
                     href={`#year-${group.year}`}
                   >
                     <span>{displayArchiveYear(group.year)}</span>
-                    <span className="hidden shrink-0 font-mono text-xs md:inline">
+                    <span className={yearPickerCountClass}>
                       {group.count}
                     </span>
                   </a>

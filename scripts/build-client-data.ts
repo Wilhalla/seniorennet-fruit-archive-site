@@ -84,4 +84,8 @@ for (const outDir of OUT_DIRS) {
   await fs.writeFile(path.join(outDir, 'archive-posts.client.json'), `${JSON.stringify(payload)}\n`, 'utf8')
 }
 
+// The data explorer fetches these large tables lazily from /generated/ so they do not get bundled into JS.
+await fs.copyFile(path.join(ROOT, 'src/data/generated/posts-index.json'), path.join(ROOT, 'public/generated/posts-index.json'))
+await fs.copyFile(path.join(ROOT, 'src/data/generated/related-posts.json'), path.join(ROOT, 'public/generated/related-posts.json'))
+
 console.log(`[client-data] wrote archive client index: ${payload.aggregated.length} aggregated, ${payload.all.length} all`)

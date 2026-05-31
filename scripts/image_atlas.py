@@ -25,29 +25,65 @@ import numpy as np
 from PIL import Image, ImageStat, UnidentifiedImageError
 
 THEMES = [
-    {"id": "bloesem", "label": "Bloesem", "icon": "🌸", "terms": ["bloesem", "bloei", "bloemen", "flower", "blossom"]},
-    {"id": "appels", "label": "Appels", "icon": "🍏", "terms": ["appel", "appels", "malus", "reinette", "jonagold", "pinova", "rubin", "boskoop", "elstar"]},
-    {"id": "peren", "label": "Peren", "icon": "🍐", "terms": ["peer", "peren", "beurré", "doyenné", "catillac", "comtesse"]},
-    {"id": "pruimen", "label": "Pruimen", "icon": "🟣", "terms": ["pruim", "pruimen", "prunus", "reine claude", "kerspruim", "myrobolaan"]},
-    {"id": "bessen", "label": "Bessen", "icon": "🫐", "terms": ["bes", "bessen", "braam", "bramen", "framboos", "frambozen", "taybes", "wijnbes", "kruisbes"]},
-    {"id": "tuin", "label": "Tuin & teelt", "icon": "🌿", "terms": ["tuin", "boomgaard", "serre", "snoei", "enten", "plant", "planten", "compost", "moestuin"]},
-    {"id": "mensen", "label": "Mensen", "icon": "👥", "terms": ["familie", "dochter", "kleinzoon", "bezoek", "vriend", "vrienden", "feest", "groep", "gastvrouw"]},
-    {"id": "dieren", "label": "Dieren & insecten", "icon": "🐝", "terms": ["vogel", "mees", "vlinder", "bij", "bijen", "rups", "wesp", "kip", "kippen", "nest", "koekoek"]},
-    {"id": "erfgoed", "label": "Reizen & erfgoed", "icon": "🏛️", "terms": ["kerk", "kasteel", "abdij", "museum", "wandeling", "engeland", "antwerpen", "reis", "uitstap"]},
-    {"id": "documenten", "label": "Documenten", "icon": "📜", "terms": ["artikel", "tekening", "kaart", "schema", "tabel", "bericht"]},
+    {
+        "id": "familie",
+        "label": "Familie & mensen",
+        "icon": "👥",
+        "topics": ["topic-17", "topic-30", "topic-39", "topic-43", "topic-45", "topic-46"],
+        "terms": ["familie", "dochter", "kind", "kinderen", "kleinkind", "kleinzoon", "vriend", "vrienden", "feest", "rouw", "leen", "keda", "tinneke", "mieke", "vake"],
+    },
+    {
+        "id": "reizen",
+        "label": "Reizen & erfgoed",
+        "icon": "🧭",
+        "topics": ["topic-01", "topic-04", "topic-08", "topic-15", "topic-29", "topic-34"],
+        "terms": ["reis", "reizen", "uitstap", "wandeling", "museum", "kerk", "kasteel", "abdij", "stad", "toren", "erfgoed", "engeland", "frankrijk", "duitsland", "antwerpen", "brussel"],
+    },
+    {
+        "id": "tuin",
+        "label": "Tuin & boomgaard",
+        "icon": "🌿",
+        "topics": ["topic-02", "topic-03", "topic-12", "topic-16", "topic-23", "topic-25", "topic-27", "topic-32", "topic-34"],
+        "terms": ["tuin", "boomgaard", "moestuin", "serre", "compost", "plant", "planten", "snoei", "snoeien", "enten", "bloei", "bloesem", "vorst", "regen"],
+    },
+    {
+        "id": "fruit",
+        "label": "Fruit & rassen",
+        "icon": "🍐",
+        "topics": ["topic-05", "topic-06", "topic-07", "topic-09", "topic-11", "topic-13", "topic-14", "topic-18", "topic-20", "topic-28", "topic-31", "topic-38", "topic-41", "topic-47"],
+        "terms": ["fruit", "vrucht", "vruchten", "oogst", "appel", "appels", "malus", "reinette", "jonagold", "pinova", "rubin", "boskoop", "elstar", "topaz", "ecolette", "granny", "peer", "peren", "beurré", "doyenné", "catillac", "comtesse", "kwee", "pruim", "pruimen", "prunus", "reine claude", "kerspruim", "myrobolaan", "bes", "bessen", "braam", "bramen", "framboos", "frambozen", "taybes", "wijnbes", "kruisbes", "aardbei", "kers", "kersen", "walnoot", "noten", "ras", "rassen", "pomolog"],
+    },
+    {
+        "id": "kennis",
+        "label": "Kennis & advies",
+        "icon": "📚",
+        "topics": ["topic-03", "topic-07", "topic-10", "topic-24", "topic-31", "topic-40", "topic-44", "topic-47"],
+        "terms": ["vraag", "vragen", "feedback", "advies", "uitleg", "artikel", "publicatie", "onderzoek", "studie", "proef", "probleem", "problemen", "ziekte", "aantasting", "schade", "determinatie", "lezing", "schema", "tabel"],
+    },
+    {
+        "id": "opinie",
+        "label": "Opinie & samenleving",
+        "icon": "💬",
+        "topics": ["topic-24", "topic-40", "topic-44"],
+        "terms": ["mening", "opinie", "politiek", "samenleving", "ggo", "genetisch", "pesticide", "pesticiden", "bestrijdingsmiddelen", "parkinson", "voeding", "wetgeving", "protest", "kritiek", "consument"],
+    },
+    {
+        "id": "natuur",
+        "label": "Natuur & dieren",
+        "icon": "🐦",
+        "topics": ["topic-19", "topic-21", "topic-22", "topic-26", "topic-33", "topic-35", "topic-36", "topic-37", "topic-42"],
+        "terms": ["natuur", "vogel", "vogels", "bijen", "vlinder", "vlinders", "rups", "rupsen", "wesp", "kip", "kippen", "uil", "kauw", "koekoek", "wezel", "muis", "insect", "insecten"],
+    },
 ]
 
 CLIP_TEXT_PROMPTS = {
-    "bloesem": "a close-up photograph of fruit tree blossom flowers in spring",
-    "appels": "a photograph of apples or an apple tree in an orchard",
-    "peren": "a photograph of pears or a pear tree",
-    "pruimen": "a photograph of plums or a plum tree",
-    "bessen": "a photograph of berries, raspberries, blackberries or currants",
-    "tuin": "a photograph of a garden, orchard, greenhouse, plants or gardening work",
-    "mensen": "a photograph with people, family or visitors",
-    "dieren": "a photograph of animals, birds, insects, bees, butterflies or chickens",
-    "erfgoed": "a travel photograph of a church, castle, museum, town, heritage place or landscape",
-    "documenten": "a scan or photograph of a document, poster, drawing, table or text",
+    "familie": "a photograph of family, people, children, visitors, friends, a party or social gathering",
+    "reizen": "a travel photograph of a heritage place, church, castle, museum, historic town, city walk or landscape",
+    "tuin": "a photograph of a garden, orchard, vegetable garden, greenhouse, plants, blossom, pruning or gardening work",
+    "fruit": "a photograph of fruit varieties, apples, pears, plums, berries, nuts, harvest or a fruit collection",
+    "kennis": "a photograph or scan of horticultural advice, research, a lecture, document, chart, table, labels or educational material",
+    "opinie": "a photograph or scan about food politics, organic farming, pesticides, society, protest, opinion or public debate",
+    "natuur": "a photograph of nature, birds, bees, butterflies, insects, chickens, wildlife, trees, forest or countryside",
 }
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tif", ".tiff"}
@@ -264,12 +300,18 @@ def build_provider(backend: str, model: str, batch_size: int) -> ImageEmbeddingP
     return HandcraftedProvider()
 
 
+def term_matches(haystack: str, term: str) -> bool:
+    if " " in term or len(term) <= 3:
+        return re.search(rf"(?<!\w){re.escape(term)}(?!\w)", haystack) is not None
+    return term in haystack
+
+
 def heuristic_tags(record: dict[str, Any]) -> list[str]:
     haystack = f"{record.get('postTitle','')} {record.get('excerpt','')} {record.get('caption','')}".lower()
-    tags = []
-    for theme in THEMES:
-        if any(term in haystack for term in theme["terms"]):
-            tags.append(theme["id"])
+    topic_id = str(record.get("topicId") or "")
+    tags = [theme["id"] for theme in THEMES if any(term_matches(haystack, term) for term in theme["terms"])]
+    if not tags:
+        tags = [theme["id"] for theme in THEMES if topic_id in theme.get("topics", [])]
     if not tags:
         tags.append("tuin")
     return tags[:4]
@@ -373,6 +415,39 @@ def write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def client_chunks_by_year(client_records: list[dict[str, Any]]) -> tuple[dict[str, Any], dict[str, list[dict[str, Any]]]]:
+    chunks_by_year: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for record in client_records:
+        year = str(record.get("year") or "unknown")
+        chunks_by_year[year].append(record)
+    chunks = [
+        {
+            "id": year,
+            "year": year,
+            "file": f"image-index-years/{year}.json",
+            "imageCount": len(records),
+        }
+        for year, records in sorted(chunks_by_year.items(), reverse=True)
+    ]
+    manifest = {
+        "generatedAt": datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "imageCount": len(client_records),
+        "contractVersion": 1,
+        "chunks": chunks,
+    }
+    return manifest, chunks_by_year
+
+
+def write_client_chunks(out_dir: Path, manifest: dict[str, Any], chunks_by_year: dict[str, list[dict[str, Any]]]) -> None:
+    chunk_dir = out_dir / "image-index-years"
+    if chunk_dir.exists():
+        for old_file in chunk_dir.glob("*.json"):
+            old_file.unlink()
+    for year, records in chunks_by_year.items():
+        write_json(chunk_dir / f"{year}.json", records)
+    write_json(out_dir / "image-index-chunks.json", manifest)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate static image gallery embeddings and JSON")
     parser.add_argument("--posts", type=Path, default=Path("src/data/generated/posts-index.json"))
@@ -385,11 +460,37 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--related-k", type=int, default=8)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--retag-only", action="store_true", help="Reuse the existing image index and rewrite gallery theme tags/groups without recomputing embeddings.")
+    parser.add_argument("--existing-index", type=Path, default=Path("src/data/generated/image-index.json"))
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    if args.retag_only:
+        records = load_posts(args.existing_index)
+        if args.limit:
+            records = records[: args.limit]
+        for record in records:
+            record["visualTags"] = heuristic_tags(record)
+        client_records = [client_image_record(record) for record in records]
+        chunk_manifest, chunks_by_year = client_chunks_by_year(client_records)
+        outputs = {
+            "image-index.json": [strip_internal(record) for record in records],
+            "image-index.client.json": client_records,
+            "image-index.initial.json": client_records[:INITIAL_CLIENT_IMAGE_COUNT],
+            "gallery-groups.json": group_payload(records),
+            "image-index-chunks.json": chunk_manifest,
+        }
+        for filename, payload in outputs.items():
+            if filename != "image-index.json":
+                write_json(args.output_public / filename, payload)
+            write_json(args.output_data / filename, payload)
+        write_client_chunks(args.output_public, chunk_manifest, chunks_by_year)
+        write_client_chunks(args.output_data, chunk_manifest, chunks_by_year)
+        print(f"[image-atlas] retagged {len(records)} image records and rewrote gallery theme JSON")
+        return
+
     posts = load_posts(args.posts)
     records = make_image_records(posts, args.public_dir)
     if args.limit:
@@ -424,6 +525,7 @@ def main() -> None:
         "contractVersion": 1,
     }
     client_records = [client_image_record(record) for record in records]
+    chunk_manifest, chunks_by_year = client_chunks_by_year(client_records)
     outputs = {
         "image-index.json": [strip_internal(record) for record in records],
         "image-index.client.json": client_records,
@@ -432,12 +534,15 @@ def main() -> None:
         "image-clusters.json": [{k: v for k, v in cluster.items() if k != "sourceLabel"} for cluster in clusters],
         "gallery-groups.json": group_payload(records),
         "image-manifest.json": manifest,
+        "image-index-chunks.json": chunk_manifest,
     }
     public_outputs = {filename: payload for filename, payload in outputs.items() if filename != "image-index.json"}
     for filename, payload in public_outputs.items():
         write_json(args.output_public / filename, payload)
     for filename, payload in outputs.items():
         write_json(args.output_data / filename, payload)
+    write_client_chunks(args.output_public, chunk_manifest, chunks_by_year)
+    write_client_chunks(args.output_data, chunk_manifest, chunks_by_year)
     print(f"[image-atlas] wrote runtime JSON to {args.output_public} and full JSON to {args.output_data}")
 
 

@@ -7,6 +7,7 @@ import { activeArchiveTopicFromSearch, archiveTopicFilterLabel, filterArchivePos
 import { fetchJson, isAbortError } from '../lib/clientFetch'
 import { useDismissHydrationLoader } from './gallery/useGracefulLoader'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
+import { yearPickerCountClass, yearPickerItemClass } from './yearPickerStyles'
 
 type ArchivePost = {
   id: string
@@ -160,12 +161,22 @@ export default function ArchiveVirtualList() {
         <aside className="sticky top-16 self-start border-r border-chalk/80 pr-2 md:top-20 md:border-r-0 md:pr-0" aria-label="Archiefjaren">
           {loading && <div className="text-sm text-slate-ink max-md:sr-only">Laden…</div>}
           <nav className={`${loading ? 'mt-4 ' : ''}grid max-h-[calc(100svh-4rem)] gap-1 overflow-auto md:max-h-[calc(100vh-5rem)] md:gap-2`} aria-label="Spring naar jaar">
-            {yearGroups.map((group) => (
-              <button className={group.year === displayedActiveYear ? 'flex min-h-8 w-full items-center justify-center gap-2 whitespace-nowrap rounded-full bg-obsidian px-2 text-center text-sm font-bold text-eggshell md:justify-between md:bg-transparent md:px-0 md:text-left md:text-base md:text-obsidian' : 'flex min-h-8 w-full items-center justify-center gap-2 whitespace-nowrap rounded-full px-2 text-center text-sm text-slate-ink hover:bg-powder hover:text-obsidian md:justify-between md:px-0 md:text-left md:text-base'} key={group.year} type="button" onClick={() => jumpToYear(group.year)}>
-                <span>{displayArchiveYear(group.year)}</span>
-                <span className="hidden font-mono text-xs md:inline">{group.count}</span>
-              </button>
-            ))}
+            {yearGroups.map((group) => {
+              const isActive = group.year === displayedActiveYear
+              return (
+                <button
+                  className={yearPickerItemClass}
+                  data-active={isActive ? 'true' : 'false'}
+                  key={group.year}
+                  type="button"
+                  aria-current={isActive ? 'true' : undefined}
+                  onClick={() => jumpToYear(group.year)}
+                >
+                  <span>{displayArchiveYear(group.year)}</span>
+                  <span className={yearPickerCountClass}>{group.count}</span>
+                </button>
+              )
+            })}
           </nav>
         </aside>
 

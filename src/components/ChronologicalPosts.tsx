@@ -42,7 +42,7 @@ export default function ChronologicalPosts({ postId }: Props) {
       <div className="mt-8 grid gap-3 md:grid-cols-3">
         {suggestions.map((post) => {
           const image = post.images[0]
-          const thumbnailSrc = image ? archiveSmallThumbUrl(image) : '/apple-assets/apple-1-192.png'
+          const thumbnailSrc = image ? archiveSmallThumbUrl(image) : '/apple-assets/apple-1-160.webp'
           const thumbnailClass = image
             ? 'h-32 w-full object-cover transition-transform duration-300 group-hover:scale-105'
             : 'h-32 w-full object-contain p-8 opacity-75 transition-transform duration-300 group-hover:scale-105'

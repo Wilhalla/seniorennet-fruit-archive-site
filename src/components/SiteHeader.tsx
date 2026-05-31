@@ -55,8 +55,8 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-[60] w-full border-b border-chalk bg-eggshell/95 backdrop-blur-md">
       <div className="mx-auto flex min-h-14 w-full max-w-page items-center justify-between gap-4 px-8 py-2 max-md:px-4">
         <a className="flex min-w-0 items-center gap-2 text-body font-medium tracking-[0.01em] text-obsidian no-underline hover:text-obsidian" href="/" aria-label="Naar de startpagina" onClick={() => setMenuOpen(false)}>
-          <img className="apple-image brand-apple" src="/apple-assets/apple-1-192.png" alt="" aria-hidden="true" loading="eager" decoding="async" />
-          <span className="truncate whitespace-nowrap font-heading text-[15px] font-normal leading-none tracking-normal">Blogarchief Daniël Willaeys</span>
+          <img className="apple-image brand-apple" src="/apple-assets/apple-1-160.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
+          <span className="truncate whitespace-nowrap py-0.5 font-heading text-[15px] font-normal leading-[1.3] tracking-normal">Blogarchief Daniël Willaeys</span>
         </a>
         <nav className="hidden items-center justify-center gap-1 sm:flex" aria-label="Hoofdnavigatie">
           {navItems.map(({ href, label, icon: Icon }) => (
