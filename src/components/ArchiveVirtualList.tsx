@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { ImageIcon, Layers2, MessageCircle } from 'lucide-react'
+import { ACTIVE_YEAR_VIEWPORT_OFFSET, activeYearFromVirtualItems } from '../lib/activeVirtualYear'
 import { archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate } from '../lib/archiveDateTime'
 import { activeArchiveTopicFromSearch, archiveTopicFilterLabel, filterArchivePostsByTopic } from '../lib/archiveTopicFilter'
 import { fetchJson, isAbortError } from '../lib/clientFetch'
@@ -103,9 +104,9 @@ export default function ArchiveVirtualList() {
   const displayedActiveYear = yearGroups.some((group) => group.year === activeYear) ? activeYear : yearGroups[0]?.year || ''
 
   useEffect(() => {
-    const first = virtualItems[0]
-    const post = first ? posts[first.index] : posts[0]
-    if (post) setActiveYear(archiveYear(post))
+    const viewportTop = typeof window === 'undefined' ? 0 : window.scrollY + ACTIVE_YEAR_VIEWPORT_OFFSET
+    const year = activeYearFromVirtualItems(posts, virtualItems, archiveYear, viewportTop)
+    if (year) setActiveYear(year)
   }, [virtualItems, posts])
 
   function changeMode(nextMode: Mode) {

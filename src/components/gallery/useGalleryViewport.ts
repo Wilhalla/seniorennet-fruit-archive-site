@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { ACTIVE_YEAR_VIEWPORT_OFFSET, activeYearFromVirtualItems, type VirtualYearItem } from '../../lib/activeVirtualYear'
 import { columnsForGalleryWidth, type GalleryGroups, type GalleryImageRecord, type GalleryVirtualRow } from '../../lib/imageGallerySession'
 
 export function useResponsiveGalleryColumns() {
@@ -14,7 +15,7 @@ export function useResponsiveGalleryColumns() {
   return columns
 }
 
-export function useActiveGalleryYear<TImage extends GalleryImageRecord>(initialYear: string, groups: GalleryGroups, rows: GalleryVirtualRow<TImage>[], virtualItems: Array<{ index: number }>) {
+export function useActiveGalleryYear<TImage extends GalleryImageRecord>(initialYear: string, groups: GalleryGroups, rows: GalleryVirtualRow<TImage>[], virtualItems: VirtualYearItem[]) {
   const [activeYear, setActiveYear] = useState(initialYear)
 
   useEffect(() => {
@@ -22,10 +23,8 @@ export function useActiveGalleryYear<TImage extends GalleryImageRecord>(initialY
   }, [activeYear, groups.years])
 
   useEffect(() => {
-    const firstVirtualItem = virtualItems[0]
-    const year = firstVirtualItem
-      ? rows[firstVirtualItem.index]?.year
-      : rows.find((row) => row.type === 'year')?.year
+    const viewportTop = typeof window === 'undefined' ? 0 : window.scrollY + ACTIVE_YEAR_VIEWPORT_OFFSET
+    const year = activeYearFromVirtualItems(rows, virtualItems, (row) => row.year, viewportTop)
     if (year) setActiveYear(year)
   }, [virtualItems, rows])
 
