@@ -18,6 +18,8 @@ import {
 import {
   buildImageGallerySession,
   galleryViewerPageUrl,
+  imageShowsPeople,
+  imageShowsPlants,
   type GalleryGroups,
   type GalleryImageRecord as ImageRecord,
 } from '../../lib/imageGallerySession'
@@ -51,8 +53,8 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
     highPriorityThumbnailIds,
     eagerThumbnailIds,
   } = gallerySession
-  const peopleCount = filtered.filter((image) => image.visualTags.includes('mensen')).length
-  const plantCount = filtered.filter((image) => image.visualTags.some((tag) => ['tuin', 'fruit'].includes(tag))).length
+  const peopleCount = filtered.filter(imageShowsPeople).length
+  const plantCount = filtered.filter(imageShowsPlants).length
 
   const galleryVirtualizer = useWindowVirtualizer({
     count: galleryRows.length,

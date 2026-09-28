@@ -35,9 +35,9 @@ export default function ViewerSidebar({ filtered, relatedLoading, similarImages,
         <a className="mt-4 inline-flex min-h-9 items-center gap-2 rounded-full border border-obsidian bg-obsidian px-3 text-sm font-medium text-eggshell no-underline hover:text-eggshell" href={`/posts/${viewerImage.postSlug}/`}>
           Lees het artikel bij deze foto <ExternalLink className="size-4" aria-hidden="true" />
         </a>
-        <div className="mt-4 flex flex-wrap gap-2" aria-label="Beeldtags">
+        <div className="mt-4 flex flex-wrap gap-2" aria-label="Beeldcategorieën">
           {viewerImage.visualTags.slice(0, 6).map((tag) => (
-            <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 text-xs text-obsidian" key={tag}>{categoryLabels.get(tag) ?? tag}</span>
+            <a className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 text-xs text-obsidian no-underline hover:border-slate hover:text-obsidian" href={`/gallery/?theme=${encodeURIComponent(tag)}`} key={tag}>{categoryLabels.get(tag) ?? tag}</a>
           ))}
           <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 font-mono text-xs text-gravel">{viewerImage.season}</span>
           {viewerImage.year && <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 font-mono text-xs text-gravel">{viewerImage.year}</span>}

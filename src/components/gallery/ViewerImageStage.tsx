@@ -126,7 +126,7 @@ export default function ViewerImageStage({
           className={`${imageElementClassName(imageScaleMode, zoomEnabled, imageZoom)} touch-none`}
           style={imageStyle}
           src={viewerImageFullSrc}
-          alt={viewerImage.caption || viewerImage.postTitle}
+          alt={viewerImage.visualDescription || viewerImage.postTitle}
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -152,7 +152,7 @@ export default function ViewerImageStage({
       )}
       {viewerFullscreen && (
         <div className="pointer-events-none absolute bottom-4 left-4 z-20 max-w-[min(34rem,calc(100%-2rem))] rounded-2xl border border-eggshell/20 bg-obsidian/75 px-4 py-3 text-eggshell shadow-soft backdrop-blur">
-          <p className="m-0 line-clamp-2 text-sm font-medium leading-5">{viewerImage.caption || viewerImage.postTitle}</p>
+          <p className="m-0 line-clamp-2 text-sm font-medium leading-5">{viewerImage.visualDescription || viewerImage.postTitle}</p>
           <p className="m-0 mt-1 text-xs text-eggshell/70">{formatImagePostDateTime(viewerImage)}{imageNumberLabel(viewerImage)}</p>
         </div>
       )}

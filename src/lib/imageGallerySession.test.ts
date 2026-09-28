@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildGalleryRows, buildImageGallerySession, filterGalleryImages, formatImagePostDateTime, galleryFiltersFromUrlState, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageGalleryStateFromUrl, imageNumberLabel, relatedGalleryImages, shouldLoadGalleryRelated, shouldLoadGallerySpeciesTags, visibleGalleryThemes } from './imageGallerySession'
+import { buildGalleryRows, buildImageGallerySession, filterGalleryImages, formatImagePostDateTime, galleryFiltersFromUrlState, gallerySlideshowPageUrl, galleryUrlFromState, galleryViewerPageUrl, imageDownloadFilename, imageGalleryStateFromUrl, imageNumberLabel, imageShowsPeople, imageShowsPlants, relatedGalleryImages, shouldLoadGalleryRelated, shouldLoadGallerySpeciesTags, visibleGalleryThemes } from './imageGallerySession'
 
 const images = [
   { id: 'a', src: '/archive-images/a.jpg', postSlug: 'a', postTitle: 'Apple blossom', date: '2008-03-07', year: 2008, month: 3, season: 'lente', excerpt: 'first', caption: 'bloesem', visualTags: ['fruit', 'bloemen'], visualClusterId: 'c1' },
@@ -18,6 +18,13 @@ const groups = {
 }
 
 describe('image gallery session', () => {
+  it('counts pictured people and plants from fine image tags when available', () => {
+    expect(imageShowsPeople({ visualTags: ['familie'], imageTagIds: ['kunst'] })).toBe(false)
+    expect(imageShowsPeople({ visualTags: ['familie'], imageTagIds: ['mensen'] })).toBe(true)
+    expect(imageShowsPlants({ visualTags: ['fruit'], imageTagIds: ['eten'] })).toBe(false)
+    expect(imageShowsPlants({ visualTags: ['fruit'], imageTagIds: ['appels'] })).toBe(true)
+  })
+
   it('filters and sorts image records by current gallery state', () => {
     const filtered = filterGalleryImages(images, {
       query: 'apple',

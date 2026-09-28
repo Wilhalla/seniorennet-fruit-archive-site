@@ -70,6 +70,7 @@ export type GalleryVirtualRow<T extends GalleryImageRecord = GalleryImageRecord>
   | { type: 'images'; key: string; year: string; images: T[] }
 
 const peoplePlantTags = ['mensen', 'familie', 'tuin', 'tuinwerk', 'fruit', 'bloemen', 'dieren', 'landschap', 'teelt', 'planten', 'natuur']
+const plantImageTagIds = new Set(['fruit', 'appels', 'peren', 'ander_fruit', 'groenten', 'bloemen', 'bomen', 'tuinplanten', 'tuinwerk', 'plantschade'])
 
 export const emptyGalleryGroups: GalleryGroups = { years: [], seasons: [], themes: [] }
 export const MIN_HIGH_PRIORITY_THUMBNAILS = 6
@@ -116,6 +117,14 @@ export function imageDownloadFilename(image: Pick<GalleryImageRecord, 'id' | 'sr
   const sourcePath = image.src.split(/[?#]/)[0]
   const filename = sourcePath.split('/').filter(Boolean).at(-1)
   return filename ? decodeURIComponent(filename) : `${image.id}.jpg`
+}
+
+export function imageShowsPeople(image: Pick<GalleryImageRecord, 'imageTagIds' | 'visualTags'>) {
+  return image.imageTagIds ? image.imageTagIds.includes('mensen') : image.visualTags.some((tag) => ['mensen', 'familie'].includes(tag))
+}
+
+export function imageShowsPlants(image: Pick<GalleryImageRecord, 'imageTagIds' | 'visualTags'>) {
+  return image.imageTagIds ? image.imageTagIds.some((tag) => plantImageTagIds.has(tag)) : image.visualTags.some((tag) => ['tuin', 'tuinwerk', 'fruit', 'bloemen', 'planten', 'teelt'].includes(tag))
 }
 
 export function galleryFiltersFromUrlState(state: GalleryUrlState): GalleryFilters {

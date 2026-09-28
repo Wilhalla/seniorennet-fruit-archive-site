@@ -11,6 +11,7 @@ export type GallerySlideshowImage = {
   postTitle: string
   postSlug?: string
   caption: string
+  visualDescription?: string
 }
 
 export const SLIDESHOW_SECONDS_MIN = 2

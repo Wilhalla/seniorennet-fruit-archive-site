@@ -143,7 +143,7 @@ export function GallerySlideshowOverlay({ image, imageSrc, imageMeta, preloadSrc
       <header className={`absolute inset-x-0 top-0 z-20 flex min-h-16 items-center justify-between gap-3 border-b border-eggshell/15 bg-black/90 px-4 backdrop-blur transition-opacity duration-300 md:px-6 ${controlsVisibilityClass}`}>
         <div className="min-w-0">
           <div className="flex min-w-0 items-center gap-2">
-            <p className="m-0 truncate text-sm font-medium text-eggshell">{currentSlide.image.caption || currentSlide.image.postTitle}</p>
+            <p className="m-0 truncate text-sm font-medium text-eggshell">{currentSlide.image.visualDescription || currentSlide.image.postTitle}</p>
             {currentSlide.image.postSlug && (
               <a className="inline-grid size-7 shrink-0 place-items-center rounded-full border border-eggshell/20 text-eggshell/75 no-underline transition hover:bg-eggshell/10 hover:text-eggshell" href={`/posts/${currentSlide.image.postSlug}/`} target="_blank" rel="noreferrer" aria-label="Open artikel in nieuw tabblad" title="Open artikel in nieuw tabblad">
                 <ExternalLink className="size-3.5" aria-hidden="true" />
@@ -181,7 +181,7 @@ export function GallerySlideshowOverlay({ image, imageSrc, imageMeta, preloadSrc
             key={`current-${currentSlide.id}-${currentSlide.index}`}
             className="absolute inset-0 h-full w-full animate-in bg-black object-contain shadow-[0_24px_90px_rgba(0,0,0,0.45)] duration-700 ease-in-out fade-in-0"
             src={currentSlide.imageSrc}
-            alt={currentSlide.image.caption || currentSlide.image.postTitle}
+            alt={currentSlide.image.visualDescription || currentSlide.image.postTitle}
             loading="eager"
             fetchPriority="high"
             decoding="async"
