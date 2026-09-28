@@ -79,28 +79,17 @@ def author_text(post: dict[str, Any]) -> str:
 
 
 def make_sample(post_count: int, image_count: int, output: Path) -> None:
-    posts = sample_evenly(load_json(POSTS), post_count, "topicId", 42)
+    source_posts = load_json(POSTS)
     images = load_json(IMAGES)
+    source_hashes = {"posts": digest(source_posts), "images": digest(images)}
+    old_manifest = output / "sample-manifest.json"
+    if old_manifest.exists() and load_json(old_manifest).get("sourceHashes") != source_hashes:
+        raise ValueError("source JSON changed; archive the existing review labels before regenerating the sample")
+    posts = sample_evenly(source_posts, post_count, "topicId", 42)
     selected_post_ids = {post["slug"] for post in posts}
     associated = [image for image in images if image.get("postSlug") in selected_post_ids]
-    image_pool = sample_evenly(associated, image_count // 2, "year", 43)
-    image_pool += sample_evenly(images, image_count, "year", 44)
-    sampled_images: list[dict[str, Any]] = []
-    used_ids: set[str] = set()
-    used_posts: set[str] = set()
-    for image in image_pool:
-        if image["id"] not in used_ids and image.get("postSlug") not in used_posts:
-            sampled_images.append(image)
-            used_ids.add(image["id"])
-            used_posts.add(image.get("postSlug"))
-        if len(sampled_images) == image_count:
-            break
-    for image in image_pool:
-        if len(sampled_images) == image_count:
-            break
-        if image["id"] not in used_ids:
-            sampled_images.append(image)
-            used_ids.add(image["id"])
+    image_pool = associated + [image for image in images if image.get("postSlug") not in selected_post_ids]
+    sampled_images = sample_evenly(image_pool, image_count, "year", 43)
     post_rows = [{
         "id": post["id"], "split": split_for(post["id"]), "title": post["title"],
         "text": author_text(post)[:3500], "date": post.get("date"),
@@ -113,10 +102,20 @@ def make_sample(post_count: int, image_count: int, output: Path) -> None:
         "legacyTags": image.get("visualTags", []), "description": None,
         "visibleTags": [], "descriptionModel": None, "reviewNotes": "",
     } for image in sampled_images]
+    old_posts = {row["id"]: row for row in load_json(output / "posts.json")} if (output / "posts.json").exists() else {}
+    old_images = {row["id"]: row for row in load_json(output / "images.json")} if (output / "images.json").exists() else {}
+    for row in post_rows:
+        for key in ("goldCategoryId", "goldFacets", "reviewNotes"):
+            if row["id"] in old_posts and key in old_posts[row["id"]]:
+                row[key] = old_posts[row["id"]][key]
+    for row in image_rows:
+        for key in ("description", "visibleTags", "descriptionModel", "descriptionStatus", "unclear", "reviewNotes", "goldVisibleTags"):
+            if row["id"] in old_images and key in old_images[row["id"]]:
+                row[key] = old_images[row["id"]][key]
     write_json(output / "posts.json", post_rows)
     write_json(output / "images.json", image_rows)
     write_json(output / "sample-manifest.json", {
-        "sourceHashes": {"posts": digest(load_json(POSTS)), "images": digest(images)},
+        "sourceHashes": source_hashes,
         "seed": 42, "postCount": len(post_rows), "imageCount": len(image_rows),
         "note": "Legacy labels are sampling metadata, not ground truth. Holdout labels must stay unseen during taxonomy and threshold tuning.",
     })

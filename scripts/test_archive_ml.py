@@ -26,8 +26,28 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(archive_ml.split_for("123"), archive_ml.split_for("123"))
 
     def test_reactions_do_not_enter_model_input(self):
-        post = {"title": "Appels", "cleanedText": "Mijn appels zijn rijp. Reacties 22-04-2020 · reclame"}
+        post = {"title": "Appels", "slug": "appels", "cleanedText": "Mijn appels zijn rijp. Reacties 22-04-2020 · reclame"}
         self.assertEqual(archive_ml.classification_input(post)["text"], "Mijn appels zijn rijp.")
+
+    def test_regenerating_sample_preserves_review_work(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            posts = root / "posts.json"
+            images = root / "images.json"
+            archive_ml.write_json(posts, [{"id": "one", "slug": "post-one", "title": "Appels", "cleanedText": "Appels", "topicId": "fruit"}])
+            archive_ml.write_json(images, [{"id": "image-one", "src": "/archive-images/a.jpg", "postSlug": "post-one"}])
+            with patch.object(archive_ml, "POSTS", posts), patch.object(archive_ml, "IMAGES", images):
+                output = root / "review"
+                archive_ml.make_sample(1, 1, output)
+                reviewed_posts = archive_ml.load_json(output / "posts.json")
+                reviewed_posts[0]["goldCategoryId"] = "fruit"
+                archive_ml.write_json(output / "posts.json", reviewed_posts)
+                reviewed_images = archive_ml.load_json(output / "images.json")
+                reviewed_images[0]["description"] = "Een appel."
+                archive_ml.write_json(output / "images.json", reviewed_images)
+                archive_ml.make_sample(1, 1, output)
+                self.assertEqual(archive_ml.load_json(output / "posts.json")[0]["goldCategoryId"], "fruit")
+                self.assertEqual(archive_ml.load_json(output / "images.json")[0]["description"], "Een appel.")
 
     def test_question_contract_separates_category_and_facets(self):
         payload = archive_ml.jev_payload({"title": "Appels"}, TAXONOMY)
