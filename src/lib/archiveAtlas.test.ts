@@ -2,9 +2,9 @@ import { describe, expect, it } from 'vitest'
 import { buildAtlasBrowse, buildAtlasSpatialIndex, categoryFor, colorMix, queryAtlasSpatialIndex, rawAtlasUnitCoordinate, shortLabel, topicDisplayLabel, topicKeywords, type AtlasFilters, type MapPoint, type Topic } from './archiveAtlas'
 
 describe('archive atlas renderer module', () => {
-  it('maps archive topics onto stable atlas categories', () => {
-    expect(categoryFor({ id: 't1', label: 'Appels', generatedLabel: 'appel, boomgaard', postCount: 1, representativePostIds: [] })?.id).toBe('fruit')
-    expect(categoryFor({ id: 't2', label: 'Nog te benoemen', generatedLabel: 'dieren & insecten, vogel', postCount: 1, representativePostIds: [] })?.id).toBe('animals')
+  it('uses explicit category IDs instead of guessing from labels', () => {
+    expect(categoryFor({ id: 'fruit', label: 'Fruit', generatedLabel: '', postCount: 1, representativePostIds: [] })?.id).toBe('fruit')
+    expect(categoryFor({ id: 'familie', label: 'Mensen', generatedLabel: '', postCount: 1, representativePostIds: [] })?.id).toBe('familie')
   })
 
   it('derives compact display labels and keywords without leaking broad visual terms', () => {
@@ -33,23 +33,24 @@ describe('archive atlas renderer module', () => {
 
   it('builds atlas browse facts behind one module interface', () => {
     const topics: Topic[] = [
-      { id: 'fruit-topic', label: 'Appels', generatedLabel: 'appel', postCount: 2, representativePostIds: [] },
-      { id: 'animal-topic', label: 'Dieren', generatedLabel: 'vogel', postCount: 1, representativePostIds: [] },
+      { id: 'fruit', label: 'Fruit', generatedLabel: '', postCount: 2, representativePostIds: [] },
+      { id: 'natuur', label: 'Natuur', generatedLabel: '', postCount: 1, representativePostIds: [] },
     ]
     const points: MapPoint[] = [
-      { id: 'a', slug: 'a', title: 'Appel', date: '2008-01-01', year: 2008, month: 1, season: 'winter', topicId: 'fruit-topic', x: 0.2, y: 0.3, imageCount: 1, image: '/archive-images/a.jpg', excerpt: 'boomgaard' },
-      { id: 'b', slug: 'b', title: 'Peer', date: '2007-01-01', year: 2007, month: 1, season: 'winter', topicId: 'fruit-topic', x: 0.25, y: 0.35, imageCount: 0, excerpt: 'fruit' },
-      { id: 'c', slug: 'c', title: 'Vogel', date: '2007-02-01', year: 2007, month: 2, season: 'winter', topicId: 'animal-topic', x: 0.8, y: 0.7, imageCount: 1, excerpt: 'merel' },
+      { id: 'a', slug: 'a', title: 'Appel', date: '2008-01-01', year: 2008, month: 1, season: 'winter', topicId: 'fruit', categoryIds: ['fruit', 'natuur'], neighbors: ['c'], x: 0.2, y: 0.3, imageCount: 1, image: '/archive-images/a.jpg', excerpt: 'boomgaard' },
+      { id: 'b', slug: 'b', title: 'Peer', date: '2007-01-01', year: 2007, month: 1, season: 'winter', topicId: 'fruit', x: 0.25, y: 0.35, imageCount: 0, excerpt: 'fruit' },
+      { id: 'c', slug: 'c', title: 'Vogel', date: '2007-02-01', year: 2007, month: 2, season: 'winter', topicId: 'natuur', x: 0.8, y: 0.7, imageCount: 1, excerpt: 'merel' },
     ]
-    const filters: AtlasFilters = { topic: 'fruit-topic', year: 'all', season: 'winter', imagesOnly: false, search: 'fruit' }
+    const filters: AtlasFilters = { topic: 'fruit', year: 'all', season: 'winter', imagesOnly: false, search: 'fruit' }
 
-    const browse = buildAtlasBrowse({ points, topics, filters, selectedPoint: points[0]!, selectedClusterId: 'fruit-topic' })
+    const browse = buildAtlasBrowse({ points, topics, filters, selectedPoint: points[0]!, selectedClusterId: 'fruit' })
 
     expect(browse.visible.map((point) => point.id)).toEqual(['b'])
     expect(browse.years).toEqual([2008, 2007])
-    expect(browse.sortedTopics.map((topic) => topic.id)).toEqual(['fruit-topic', 'animal-topic'])
-    expect(browse.relatedPointIds.has('b')).toBe(true)
+    expect(browse.sortedTopics.map((topic) => topic.id)).toEqual(['fruit', 'natuur'])
+    expect(browse.relatedPointIds.has('c')).toBe(true)
     expect(browse.selectedClusterStats?.imageCount).toBe(1)
     expect(browse.categoryBounds.get('fruit')).toMatchObject({ minX: 0.2, maxX: 0.25 })
+    expect(buildAtlasBrowse({ points, topics, filters: { ...filters, topic: 'natuur', search: '' }, selectedPoint: null, selectedClusterId: 'natuur' }).visible.map((point) => point.id)).toEqual(['a', 'c'])
   })
 })

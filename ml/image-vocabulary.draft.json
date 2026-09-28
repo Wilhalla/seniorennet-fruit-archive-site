@@ -1,0 +1,24 @@
+{
+  "version": "image-draft-1",
+  "status": "draft",
+  "tags": [
+    {
+      "id": "mensen_zichtbaar",
+      "label": "Mensen",
+      "question": "Zijn er mensen zichtbaar in `visual_evidence.description`?",
+      "definition": "Gebruik alleen de beoordeelde beeldbeschrijving. Een vermelding van personen in `linked_context` is geen bewijs dat zij op deze afbeelding staan."
+    },
+    {
+      "id": "familie",
+      "label": "Familie",
+      "question": "Is er expliciete familiecontext voor deze specifieke afbeelding?",
+      "definition": "Een passend bijschrift of gekoppeld bericht benoemt een familierelatie of gezinsmoment, en de beeldbeschrijving past bij die context. Alleen zichtbare mensen, of een familievermelding bij een andere foto, volstaan niet."
+    },
+    {
+      "id": "familiefeest",
+      "label": "Familiefeest",
+      "question": "Hoort deze specifieke afbeelding aantoonbaar bij een familiefeest?",
+      "definition": "Een passend bijschrift of gekoppeld bericht benoemt bijvoorbeeld een verjaardag, communie of huwelijksjubileum binnen de familie, en de beeldbeschrijving past daarbij."
+    }
+  ]
+}

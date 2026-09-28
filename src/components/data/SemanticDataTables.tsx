@@ -113,8 +113,16 @@ const datasetDefinitions: DatasetDefinition[] = [
     autoLoad: true,
   },
   {
+    id: 'categories',
+    title: 'Categorieën en aantallen',
+    file: 'categories.json · categories[]',
+    url: generated('categories.json'),
+    preferredColumns: ['id', 'label', 'description', 'tagIds', 'unitCount', 'postCount'],
+    rowsFromData: (value) => isRecord(value) && Array.isArray(value.categories) ? rowsFromArray(value.categories) : [],
+  },
+  {
     id: 'topics',
-    title: 'Topics',
+    title: 'Atlas categorieën',
     file: 'topics.json',
     url: generated('topics.json'),
     preferredColumns: ['id', 'label', 'generatedLabel', 'postCount', 'visualKeywords', 'textKeywords', 'representativePostIds'],
@@ -125,7 +133,7 @@ const datasetDefinitions: DatasetDefinition[] = [
     title: 'Map points',
     file: 'map-points.json',
     url: generated('map-points.json'),
-    preferredColumns: ['id', 'slug', 'title', 'date', 'year', 'month', 'season', 'topicId', 'x', 'y', 'imageCount', 'image', 'excerpt'],
+    preferredColumns: ['id', 'slug', 'title', 'date', 'year', 'month', 'season', 'topicId', 'categoryIds', 'tagIds', 'postIds', 'neighbors', 'x', 'y', 'imageCount', 'image', 'excerpt'],
     rowsFromData: rowsFromArray,
   },
   {
@@ -137,6 +145,14 @@ const datasetDefinitions: DatasetDefinition[] = [
     rowsFromData: rowsFromArray,
   },
   {
+    id: 'post-categories',
+    title: 'Berichtcategorieën',
+    file: 'post-categories.json',
+    url: generated('post-categories.json'),
+    preferredColumns: ['postId', 'unitId', 'categoryIds', 'primaryCategoryId', 'tagIds'],
+    rowsFromData: (value) => Object.entries(value as Record<string, RawRow>).map(([postId, row]) => ({ postId, ...row })),
+  },
+  {
     id: 'related-posts',
     title: 'Related posts',
     file: 'related-posts.json',
@@ -146,7 +162,7 @@ const datasetDefinitions: DatasetDefinition[] = [
   },
   {
     id: 'topic-calendar-summary',
-    title: 'Topic calendar summary',
+    title: 'Categorie kalender',
     file: 'topic-calendar.json',
     url: generated('topic-calendar.json'),
     preferredColumns: ['key', 'value'],
@@ -154,7 +170,7 @@ const datasetDefinitions: DatasetDefinition[] = [
   },
   {
     id: 'topic-calendar-topics',
-    title: 'Topic calendar by topic',
+    title: 'Categorie kalender per categorie',
     file: 'topic-calendar.json · topics[]',
     url: generated('topic-calendar.json'),
     preferredColumns: ['topicId', 'label', 'generatedLabel', 'postCount', 'total', 'monthsAllYears', 'seasonsAllYears', 'years'],

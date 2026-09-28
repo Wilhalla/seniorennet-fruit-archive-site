@@ -1,18 +1,7 @@
 import { useEffect, useState } from 'react'
 import { emptyGalleryGroups, fetchGalleryJson, type GalleryGroups, type GalleryImageRecord } from '../../lib/imageGallerySession'
 import { isAbortError, type FetchPriority } from '../../lib/clientFetch'
-
-type ImageIndexChunk = {
-  id: string
-  year: string
-  file: string
-  imageCount: number
-}
-
-type ImageIndexChunkManifest = {
-  imageCount: number
-  chunks: ImageIndexChunk[]
-}
+import { loadGalleryIndexChunks } from '../../lib/galleryIndexLoader'
 
 async function fetchGalleryImageIndex(priority?: FetchPriority, signal?: AbortSignal) {
   try {
@@ -21,17 +10,6 @@ async function fetchGalleryImageIndex(priority?: FetchPriority, signal?: AbortSi
     if (isAbortError(error)) throw error
     return fetchGalleryJson<GalleryImageRecord[]>('/generated/image-index.json', priority, signal)
   }
-}
-
-function mergeImages(current: GalleryImageRecord[], next: GalleryImageRecord[]) {
-  const seen = new Set<string>()
-  const merged: GalleryImageRecord[] = []
-  for (const image of [...current, ...next]) {
-    if (seen.has(image.id)) continue
-    seen.add(image.id)
-    merged.push(image)
-  }
-  return merged
 }
 
 export function useGalleryData(initialImages?: GalleryImageRecord[], initialGroups?: GalleryGroups, shouldLoadFullIndex = false) {
@@ -121,21 +99,18 @@ export function useGalleryData(initialImages?: GalleryImageRecord[], initialGrou
 
     const controller = new AbortController()
     let cancelled = false
+    const seedImages = initialImages
     setFullIndexLoading(true)
 
     async function loadChunkedIndex() {
       try {
-        const manifest = await fetchGalleryJson<ImageIndexChunkManifest>('/generated/image-index-chunks.json', 'low', controller.signal)
-        if (!manifest.chunks?.length) throw new Error('Geen beeldarchief-chunks gevonden')
-        let loadedCount = 0
-        for (const chunk of manifest.chunks) {
-          if (controller.signal.aborted || cancelled) return
-          const chunkImages = await fetchGalleryJson<GalleryImageRecord[]>(`/generated/${chunk.file}`, 'low', controller.signal)
-          loadedCount += chunkImages.length
-          setImages((current) => mergeImages(current, chunkImages))
-          await new Promise((resolve) => window.setTimeout(resolve, 0))
-        }
-        if (!cancelled && !controller.signal.aborted) setFullIndexLoaded(loadedCount >= manifest.imageCount)
+        const complete = await loadGalleryIndexChunks({
+          initialImages: seedImages,
+          onBatch: setImages,
+          priority: 'low',
+          signal: controller.signal,
+        })
+        if (!cancelled && !controller.signal.aborted) setFullIndexLoaded(complete)
       } catch (error) {
         if (isAbortError(error)) return
         console.error(error)

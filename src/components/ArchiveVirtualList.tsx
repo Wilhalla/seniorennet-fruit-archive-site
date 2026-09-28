@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { ImageIcon, Layers2, MessageCircle } from 'lucide-react'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { ACTIVE_YEAR_VIEWPORT_OFFSET, activeYearFromVirtualItems } from '../lib/activeVirtualYear'
 import { archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate } from '../lib/archiveDateTime'
 import { activeArchiveTopicFromSearch, archiveTopicFilterLabel, filterArchivePostsByTopic } from '../lib/archiveTopicFilter'
 import { fetchJson, isAbortError } from '../lib/clientFetch'
 import { useDismissHydrationLoader } from './gallery/useGracefulLoader'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
+import ArchiveViewToggle, { type ArchiveViewMode } from './ArchiveViewToggle'
 import { yearPickerCountClass, yearPickerItemClass } from './yearPickerStyles'
 
 type ArchivePost = {
@@ -35,15 +36,11 @@ type ArchivePayload = {
   topics?: ArchiveTopic[]
 }
 
-type Mode = 'aggregated' | 'all'
-
 const emptyPayload: ArchivePayload = { aggregated: [], all: [] }
 const archiveRow = 'group relative grid min-h-[4.75rem] grid-cols-[6ch_12rem_minmax(0,1fr)_13rem] items-center gap-4 rounded-xl border border-transparent px-4 py-3 text-inherit no-underline outline-none transition-[background-color,border-color,box-shadow] duration-150 ease-out before:absolute before:inset-y-3 before:left-0 before:w-px before:rounded-full before:bg-transparent before:transition-colors hover:border-chalk/80 hover:bg-pure-surface/75 hover:shadow-subtle hover:before:bg-obsidian/25 focus-visible:border-obsidian/30 focus-visible:shadow-blue focus-visible:before:bg-obsidian max-md:min-h-[10rem] max-md:grid-cols-1 max-md:items-start max-md:gap-2 max-md:px-0 max-md:py-4'
 const metaText = 'font-mono text-xs text-gravel transition-colors group-hover:text-cinder'
 const countPill = 'inline-flex min-h-6 items-center gap-1.5 rounded-md border border-chalk/70 bg-powder/50 px-2 font-mono text-[11px] leading-none text-gravel transition-colors group-hover:border-chalk group-hover:bg-pure-surface group-hover:text-obsidian'
 const countIcon = 'size-3.5 text-fog transition-colors group-hover:text-gravel'
-const aggregatedTooltip = 'Bundelt vervolg-, aanvulling- en deelberichten tot één reeks, zodat lange verhalen als één bericht verschijnen.'
-const allPostsTooltip = 'Toont elk oorspronkelijk geïmporteerd blogbericht apart, ook vervolg-, aanvulling- en deelberichten.'
 
 function fetchArchive(signal?: AbortSignal): Promise<ArchivePayload> {
   return fetchJson<ArchivePayload>('/generated/archive-posts.client.json', { signal })
@@ -71,7 +68,7 @@ function useArchivePayload() {
 
 export default function ArchiveVirtualList() {
   const { payload, loading } = useArchivePayload()
-  const [mode, setMode] = useState<Mode>('aggregated')
+  const [mode, setMode] = useState<ArchiveViewMode>('aggregated')
   const [activeYear, setActiveYear] = useState('')
   const [topicFilter, setTopicFilter] = useState('')
   const listRef = useRef<HTMLElement | null>(null)
@@ -86,8 +83,23 @@ export default function ArchiveVirtualList() {
   const yearGroups = useMemo(() => buildArchiveChronology(posts, { sort: false }).yearGroups, [posts])
 
   useEffect(() => {
-    setTopicFilter(activeArchiveTopicFromSearch(window.location.search))
+    const sync = () => setTopicFilter(activeArchiveTopicFromSearch(window.location.search))
+    sync()
+    window.addEventListener('popstate', sync)
+    return () => window.removeEventListener('popstate', sync)
   }, [])
+
+  function changeCategory(categoryId: string) {
+    const next = categoryId === 'all' ? '' : categoryId
+    setTopicFilter(next)
+    const url = new URL(window.location.href)
+    url.searchParams.delete('topic')
+    if (next) url.searchParams.set('category', next)
+    else url.searchParams.delete('category')
+    window.history.pushState(null, '', `${url.pathname}${url.search}${url.hash}`)
+    setActiveYear('')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const virtualizer = useWindowVirtualizer({
     count: posts.length,
@@ -110,7 +122,7 @@ export default function ArchiveVirtualList() {
     if (year) setActiveYear(year)
   }, [virtualItems, posts])
 
-  function changeMode(nextMode: Mode) {
+  function changeMode(nextMode: ArchiveViewMode) {
     setMode(nextMode)
     setActiveYear('')
   }
@@ -125,36 +137,25 @@ export default function ArchiveVirtualList() {
   return (
     <>
       <section className="site-shell flex flex-wrap items-center justify-between gap-4 border-b border-rule py-6" aria-label="Archiefweergave">
-        {topicFilter ? (
-          <div className="rounded-2xl border border-chalk bg-pure-surface px-4 py-3 text-sm text-slate-ink shadow-soft">
-            <span>Gefilterd op thema <strong className="text-obsidian">{activeTopicLabel}</strong>: {posts.length.toLocaleString('nl-BE')} berichten.</span>{' '}
-            <a className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" href="/archive/">Wis filter</a>
-          </div>
-        ) : <span />}
-        <TooltipProvider>
-          <div className="inline-flex rounded-full bg-pure-surface p-1 shadow-soft" role="group" aria-label="Kies archiefweergave">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button type="button" className={`rounded-full px-4 py-2 text-sm transition ${mode === 'aggregated' ? 'bg-obsidian text-eggshell' : 'text-slate-ink hover:bg-powder hover:text-obsidian'}`} onClick={() => changeMode('aggregated')}>
-                  Samengevoegd <span className="font-mono">{(topicFilter ? filterArchivePostsByTopic(payload.aggregated, topicFilter).length : payload.aggregated.length).toLocaleString('nl-BE')}</span>
-                </button>
-              </TooltipTrigger>
-              <TooltipContent side="bottom" sideOffset={8} className="max-w-72 text-center leading-snug">
-                {aggregatedTooltip}
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button type="button" className={`rounded-full px-4 py-2 text-sm transition ${mode === 'all' ? 'bg-obsidian text-eggshell' : 'text-slate-ink hover:bg-powder hover:text-obsidian'}`} onClick={() => changeMode('all')}>
-                  Losse berichten <span className="font-mono">{(topicFilter ? filterArchivePostsByTopic(payload.all, topicFilter).length : payload.all.length).toLocaleString('nl-BE')}</span>
-                </button>
-              </TooltipTrigger>
-              <TooltipContent side="bottom" sideOffset={8} className="max-w-72 text-center leading-snug">
-                {allPostsTooltip}
-              </TooltipContent>
-            </Tooltip>
-          </div>
-        </TooltipProvider>
+        <div className="flex min-w-0 flex-wrap items-center gap-3">
+          <label className="text-sm text-gravel" htmlFor="archive-category">Categorie</label>
+          <Select value={topicFilter || 'all'} onValueChange={changeCategory}>
+            <SelectTrigger id="archive-category" className="min-w-48 rounded-none border-0 border-b border-chalk bg-transparent px-0 shadow-none">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">Alle categorieën</SelectItem>
+              {payload.topics?.map((topic) => <SelectItem key={topic.id} value={topic.id}>{archiveTopicFilterLabel(topic, topic.id)}</SelectItem>)}
+            </SelectContent>
+          </Select>
+          {topicFilter && <span className="text-sm text-gravel">{posts.length.toLocaleString('nl-BE')} verhalen in {activeTopicLabel}</span>}
+        </div>
+        <ArchiveViewToggle
+          mode={mode}
+          aggregatedCount={topicFilter ? filterArchivePostsByTopic(payload.aggregated, topicFilter).length : payload.aggregated.length}
+          allCount={topicFilter ? filterArchivePostsByTopic(payload.all, topicFilter).length : payload.all.length}
+          onChange={changeMode}
+        />
       </section>
 
       <section className="site-shell grid grid-cols-[4.25rem_minmax(0,1fr)] items-start gap-4 pb-56 pt-6 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-8">
@@ -183,7 +184,7 @@ export default function ArchiveVirtualList() {
         <section ref={listRef} className="min-w-0 scroll-mt-24" aria-label="Alle blogberichten">
           {!loading && topicFilter && posts.length === 0 && (
             <div className="rounded-2xl border border-dashed border-chalk bg-powder/40 p-8 text-slate-ink">
-              Geen berichten gevonden voor thema <strong className="text-obsidian">{activeTopicLabel}</strong>. <a className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" href="/archive/">Toon alle berichten</a>.
+              Geen berichten gevonden in categorie <strong className="text-obsidian">{activeTopicLabel}</strong>. <button className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" type="button" onClick={() => changeCategory('all')}>Toon alle berichten</button>.
             </div>
           )}
           {loading ? (

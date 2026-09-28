@@ -9,8 +9,8 @@ export type ArchiveTopicLabel = {
 }
 
 export function activeArchiveTopicFromSearch(search: string) {
-  const topic = new URLSearchParams(search).get('topic')?.trim() ?? ''
-  return topic
+  const params = new URLSearchParams(search)
+  return (params.get('category') ?? params.get('topic') ?? '').trim()
 }
 
 export function filterArchivePostsByTopic<T extends TopicTaggedArchivePost>(posts: readonly T[], topicId: string) {

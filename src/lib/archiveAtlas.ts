@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { Apple, Archive, Flower2, Leaf, Sprout, Users } from 'lucide-react'
+import { Apple, Archive, Bug, Leaf, MapPinned, Sprout, Utensils, Users } from 'lucide-react'
 import { archiveSmallThumbUrl, archiveThumbUrl, archiveTinyThumbUrl } from './assetUrls'
 import { fetchJson as fetchClientJson } from './clientFetch'
 
@@ -12,6 +12,10 @@ export type MapPoint = {
   month: number | null
   season: string
   topicId: string
+  categoryIds?: string[]
+  tagIds?: string[]
+  postIds?: string[]
+  neighbors?: string[]
   x: number
   y: number
   imageCount: number
@@ -27,6 +31,8 @@ export type Topic = {
   textKeywords?: string[]
   postCount: number
   representativePostIds: string[]
+  description?: string
+  unitCount?: number
 }
 
 export type AtlasFilters = {
@@ -76,36 +82,32 @@ export type AtlasCategory = {
   label: string
   description: string
   Icon: LucideIcon
-  match: RegExp
 }
 
 const dateFormatter = new Intl.DateTimeFormat('nl-BE', { day: '2-digit', month: 'long', year: 'numeric' })
 
 export const atlasCategories: AtlasCategory[] = [
-  { id: 'fruit', label: 'Appels & fruit', description: 'Rassen, oogst, boomgaard en fruitteelt.', Icon: Apple, match: /appel|appels|fruit|peer|peren|pruim|pruimen|kers|kersen|bes|bessen|framboos|druif|druiven|boomgaard/i },
-  { id: 'garden', label: 'Tuin & teelt', description: 'Werk in de tuin, bodem, seizoenen en groei.', Icon: Sprout, match: /tuin|teelt|groei|plant|bodem|bloei|oogst|veld|snoei|zaai/i },
-  { id: 'people', label: 'Mensen & reizen', description: 'Familie, uitstappen, steden en ontmoetingen.', Icon: Users, match: /mensen|reis|reizen|stad|kerk|museum|familie|bezoek|erfgoed|document/i },
-  { id: 'animals', label: 'Dieren & insecten', description: 'Vogels, bijen, rupsen en ander tuinleven.', Icon: Flower2, match: /dier|dieren|insect|bij|bijen|vogel|vogels|koekoek|steenuil|rups|rupsen|vlinder|mees|merel/i },
-  { id: 'heritage', label: 'Erfgoed & documenten', description: 'Geschiedenis, archiefsporen en bronnen.', Icon: Archive, match: /erfgoed|document|geschiedenis|archief|kerk|oude|bron/i },
-  { id: 'landscape', label: 'Landschap', description: 'Plekken, parken, natuur en omgeving.', Icon: Leaf, match: /park|landschap|natuur|bos|veld|water|wandeling/i },
+  { id: 'fruit', label: 'Fruit & rassen', description: 'Fruitsoorten, rassen, bloei en oogst.', Icon: Apple },
+  { id: 'teelt', label: 'Tuin & teelt', description: 'Tuinwerk, bodem, enten en teelt.', Icon: Sprout },
+  { id: 'plantgezondheid', label: 'Plantenproblemen', description: 'Schade, ziekten en plagen.', Icon: Bug },
+  { id: 'natuur', label: 'Natuur & seizoenen', description: 'Weer, vogels, insecten en tuinleven.', Icon: Leaf },
+  { id: 'reizen', label: 'Reizen & bezoeken', description: 'Uitstappen, tuinen en evenementen.', Icon: MapPinned },
+  { id: 'erfgoed', label: 'Erfgoed & verhalen', description: 'Geschiedenis, kunst en herinneringen.', Icon: Archive },
+  { id: 'familie', label: 'Familie', description: 'Expliciete familieverhalen en vieringen.', Icon: Users },
+  { id: 'eten', label: 'Eten & gezondheid', description: 'Fruitgerechten en voeding.', Icon: Utensils },
+  { id: 'overig', label: 'Overig', description: 'Verhalen zonder geselecteerde inhoudelijke tag.', Icon: Archive },
 ]
 
 export const atlasCategoryColors: Record<string, string> = {
   fruit: '#8b5a2b',
-  garden: '#567a4b',
-  people: '#3f6f9f',
-  animals: '#b7644a',
-  heritage: '#8a7c65',
-  landscape: '#c09035',
-}
-
-export const atlasTerritories: Record<string, { cx: number; cy: number; width: number; height: number }> = {
-  people: { cx: 0.28, cy: 0.28, width: 0.28, height: 0.28 },
-  heritage: { cx: 0.50, cy: 0.26, width: 0.24, height: 0.24 },
-  animals: { cx: 0.75, cy: 0.34, width: 0.26, height: 0.27 },
-  fruit: { cx: 0.36, cy: 0.68, width: 0.30, height: 0.30 },
-  garden: { cx: 0.61, cy: 0.58, width: 0.30, height: 0.30 },
-  landscape: { cx: 0.78, cy: 0.74, width: 0.24, height: 0.24 },
+  teelt: '#567a4b',
+  plantgezondheid: '#b7644a',
+  natuur: '#6f8052',
+  reizen: '#3f6f9f',
+  erfgoed: '#8a7c65',
+  familie: '#806398',
+  eten: '#bd8742',
+  overig: '#7c8589',
 }
 
 export const ATLAS_X_SPREAD = 0.9
@@ -136,21 +138,7 @@ export function topicSearchText(topic?: Topic) {
 }
 
 export function categoryFor(topic?: Topic) {
-  const search = topicSearchText(topic)
-  const label = `${topic?.label ?? ''} ${topic?.generatedLabel ?? ''}`.toLowerCase().trim()
-  if (/^(appel|appels|fruit|peer|peren|pruim|pruimen|kers|bessen|druif|druiven|boomgaard)/.test(label)) return atlasCategories.find((category) => category.id === 'fruit')
-  if (/^(dier|dieren|insect|insecten|koekoek|steenuil|vogel|vlinder|bij)/.test(label)) return atlasCategories.find((category) => category.id === 'animals')
-  if (/^(mens|mensen|reis|reizen|familie|stad|bezoek)/.test(label)) return atlasCategories.find((category) => category.id === 'people')
-  if (/^(erfgoed|document|geschiedenis|archief)/.test(label)) return atlasCategories.find((category) => category.id === 'heritage')
-  if (/^(landschap|natuur|park|bos|wandeling)/.test(label)) return atlasCategories.find((category) => category.id === 'landscape')
-  if (/^(tuin|teelt|bodem|snoei|zaai)/.test(label)) return atlasCategories.find((category) => category.id === 'garden')
-  if (/appel|fruit|peer|peren|pruim|kers|bes|framboos|druif|boomgaard/.test(search)) return atlasCategories.find((category) => category.id === 'fruit')
-  if (/dieren\s*&\s*insecten|dier|insect|vogel|bij|koekoek|steenuil|vlinder/.test(search)) return atlasCategories.find((category) => category.id === 'animals')
-  if (/mensen\s*&\s*reizen|reis|reizen|familie|stad|bezoek/.test(search)) return atlasCategories.find((category) => category.id === 'people')
-  if (/erfgoed|document|geschiedenis|archief/.test(search)) return atlasCategories.find((category) => category.id === 'heritage')
-  if (/landschap|natuur|park|bos|wandeling/.test(search)) return atlasCategories.find((category) => category.id === 'landscape')
-  if (/tuin\s*&\s*teelt|tuin|teelt|bodem|snoei|zaai/.test(search)) return atlasCategories.find((category) => category.id === 'garden')
-  return atlasCategories.find((category) => category.match.test(search))
+  return atlasCategories.find((category) => category.id === topic?.id)
 }
 
 function titleCaseTopicLabel(value: string) {
@@ -211,17 +199,9 @@ export function rawAtlasUnitCoordinate(rawX: number, rawY: number): ScreenPoint 
   }
 }
 
-export function macroAtlasUnitCoordinate(categoryId: string, rawX: number, rawY: number, categoryBounds: AtlasCategoryBounds): ScreenPoint {
-  const territory = atlasTerritories[categoryId] ?? atlasTerritories.heritage
-  const bounds = categoryBounds.get(categoryId)
-  const spanX = bounds && Number.isFinite(bounds.maxX - bounds.minX) ? Math.max(0.001, bounds.maxX - bounds.minX) : 1
-  const spanY = bounds && Number.isFinite(bounds.maxY - bounds.minY) ? Math.max(0.001, bounds.maxY - bounds.minY) : 1
-  const nx = bounds ? (rawX - bounds.minX) / spanX : rawX
-  const ny = bounds ? (rawY - bounds.minY) / spanY : rawY
-  return {
-    x: clamp(territory.cx + (nx - 0.5) * territory.width, 0.035, 0.965),
-    y: clamp(territory.cy + (ny - 0.5) * territory.height, 0.055, 0.945),
-  }
+export function macroAtlasUnitCoordinate(_categoryId: string, rawX: number, rawY: number, _categoryBounds: AtlasCategoryBounds): ScreenPoint {
+  // Category overlays use the same embedding geography as individual stories.
+  return rawAtlasUnitCoordinate(rawX, rawY)
 }
 
 export function atlasViewportBounds(rect: { width: number; height: number }, scale: number, pan: ScreenPoint, overscan = 120): AtlasViewportBounds {
@@ -303,7 +283,7 @@ export function buildAtlasBrowse<TPoint extends MapPoint, TTopic extends Topic>(
   const categoryBounds: AtlasCategoryBounds = new Map()
 
   for (const point of points) {
-    const categoryId = categoryFor(topicsById.get(point.topicId))?.id ?? 'heritage'
+    const categoryId = categoryFor(topicsById.get(point.topicId))?.id ?? 'overig'
     const current = categoryBounds.get(categoryId) ?? { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity }
     current.minX = Math.min(current.minX, point.x)
     current.maxX = Math.max(current.maxX, point.x)
@@ -314,7 +294,7 @@ export function buildAtlasBrowse<TPoint extends MapPoint, TTopic extends Topic>(
 
   const query = filters.search.trim().toLowerCase()
   const visible = points.filter((point) => {
-    if (filters.topic !== 'all' && point.topicId !== filters.topic) return false
+    if (filters.topic !== 'all' && !(point.categoryIds ?? [point.topicId]).includes(filters.topic)) return false
     if (filters.year !== 'all' && String(point.year) !== filters.year) return false
     if (filters.season !== 'all' && point.season !== filters.season) return false
     if (filters.imagesOnly && point.imageCount < 1) return false
@@ -323,7 +303,7 @@ export function buildAtlasBrowse<TPoint extends MapPoint, TTopic extends Topic>(
   })
 
   const relatedPointIds = selectedPoint ? new Set(
-    points
+    selectedPoint.neighbors?.length ? selectedPoint.neighbors : points
       .filter((point) => point.id !== selectedPoint.id)
       .map((point) => ({ id: point.id, distance: (point.x - selectedPoint.x) ** 2 + (point.y - selectedPoint.y) ** 2 }))
       .sort((a, b) => a.distance - b.distance)
@@ -332,7 +312,7 @@ export function buildAtlasBrowse<TPoint extends MapPoint, TTopic extends Topic>(
   ) : new Set<string>()
 
   const selectedCluster = selectedClusterId ? topicsById.get(selectedClusterId) ?? null : null
-  const selectedClusterPoints = selectedClusterId ? points.filter((point) => point.topicId === selectedClusterId) : []
+  const selectedClusterPoints = selectedClusterId ? points.filter((point) => (point.categoryIds ?? [point.topicId]).includes(selectedClusterId)) : []
   const selectedClusterStats = selectedClusterPoints.length ? (() => {
     const clusterYears = selectedClusterPoints.map((point) => point.year).filter(Boolean) as number[]
     const seasons = new Map<string, number>()

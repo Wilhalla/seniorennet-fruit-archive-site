@@ -72,10 +72,10 @@ export function GalleryFilterControls({
         </label>
         <Select value={theme} onValueChange={onThemeChange}>
           <SelectTrigger className="h-10 rounded-none border-b border-chalk px-0 lg:border-b-0 lg:border-r lg:px-3">
-            <SelectValue placeholder="Thema" />
+            <SelectValue placeholder="Beeldinhoud" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">Alle thema’s</SelectItem>
+            <SelectItem value="all">Alle beeldinhouden</SelectItem>
             {groups.themes.map((item) => (
               <SelectItem key={item.id} value={item.id}>{item.label}</SelectItem>
             ))}

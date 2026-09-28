@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import SiteLoader from '../../components/SiteLoader.astro'
 import { postIndex } from '../../lib/postIndex'
 import { sitePath } from '../../lib/sitePaths'
 
@@ -10,13 +11,7 @@ const fallbackPostPath = randomPostPaths[0] ?? sitePath('/archive/')
   title="Willekeurig bericht · Blogarchief Daniël Willaeys"
   description="Open een willekeurig bericht uit het blogarchief van Daniël Willaeys."
 >
-  <div id="random-redirect-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Willekeurig bericht laden">
-    <div class="site-loader__mark" aria-hidden="true"></div>
-    <div class="site-loader__text">
-      <span>Blogarchief Daniël Willaeys</span>
-      <small>bericht kiezen</small>
-    </div>
-  </div>
+  <SiteLoader id="random-redirect-loader" label="Willekeurig bericht laden" message="bericht kiezen" />
   <noscript>
     <style>#random-redirect-loader { display: none; }</style>
     <section class="site-shell relative grid min-h-[55vh] place-items-center overflow-hidden py-16 text-center md:py-24" aria-live="polite">
@@ -24,7 +19,7 @@ const fallbackPostPath = randomPostPaths[0] ?? sitePath('/archive/')
         <h1 class="display-title">Een archiefbericht kiezen…</h1>
         <p class="section-kicker">JavaScript is nodig om echt willekeurig te kiezen. Deze knop opent een vast archiefbericht.</p>
         <p>
-          <a class="inline-flex min-h-11 items-center justify-center rounded-full bg-obsidian px-6 text-body font-medium text-eggshell no-underline shadow-blue hover:text-eggshell" href={fallbackPostPath}>
+          <a class="button-link min-h-11 px-6" href={fallbackPostPath}>
             Open een bericht
           </a>
         </p>

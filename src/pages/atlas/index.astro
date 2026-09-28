@@ -1,14 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import SiteLoader from '../../components/SiteLoader.astro'
 import SemanticAtlasApp from '../../components/atlas/SemanticAtlasApp'
 ---
 <BaseLayout title="Atlas · Blogarchief Daniël Willaeys" description="Verwante berichten uit het blogarchief.">
-  <div id="atlas-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Atlas laden">
-    <div class="site-loader__mark" aria-hidden="true"></div>
-    <div class="site-loader__text">
-      <span>Blogarchief Daniël Willaeys</span>
-      <small>atlas laden</small>
-    </div>
-  </div>
+  <SiteLoader id="atlas-hydration-loader" label="Atlas laden" message="atlas laden" />
   <SemanticAtlasApp client:load />
 </BaseLayout>

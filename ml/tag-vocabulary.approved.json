@@ -1,0 +1,338 @@
+{
+  "version": "archive-tags-1",
+  "status": "approved",
+  "tags": [
+    {
+      "id": "appels",
+      "label": "Appels",
+      "question": "Gaat de eenheid inhoudelijk over appels of appelbomen?",
+      "definition": "Appelvruchten, appelbomen, hun bloei, teelt of eigenschappen."
+    },
+    {
+      "id": "peren",
+      "label": "Peren",
+      "question": "Gaat de eenheid inhoudelijk over peren of perenbomen?",
+      "definition": "Perenvruchten, perenbomen, hun teelt of eigenschappen."
+    },
+    {
+      "id": "pruimen",
+      "label": "Pruimen",
+      "question": "Gaat de eenheid inhoudelijk over pruimen of pruimenbomen?",
+      "definition": "Pruimen, kerspruimen en sleepruimen, met hun bomen of struiken."
+    },
+    {
+      "id": "bessen",
+      "label": "Bessen",
+      "question": "Gaat de eenheid inhoudelijk over eetbare bessen aan struiken?",
+      "definition": "Onder meer blauwe bessen, kruisbessen, appelbessen en rode bessen."
+    },
+    {
+      "id": "bramen",
+      "label": "Bramen",
+      "question": "Gaat de eenheid inhoudelijk over bramen of bramenstruiken?",
+      "definition": "Bramen als vrucht of plant, inclusief bloei en verzorging."
+    },
+    {
+      "id": "aardbeien",
+      "label": "Aardbeien",
+      "question": "Gaat de eenheid inhoudelijk over aardbeien of aardbeienteelt?",
+      "definition": "Aardbeien als vrucht, gewas of teelt; een terloopse vermelding als taartingrediënt volstaat niet."
+    },
+    {
+      "id": "noten",
+      "label": "Noten",
+      "question": "Gaat de eenheid inhoudelijk over eetbare noten of notenbomen?",
+      "definition": "Onder meer walnoten, hazelnoten en pecannoten."
+    },
+    {
+      "id": "overig_fruit",
+      "label": "Overig fruit",
+      "question": "Gaat de eenheid inhoudelijk over fruit buiten de afzonderlijk benoemde fruitgroepen?",
+      "definition": "Bijvoorbeeld kweeperen, mispels, mini-kiwi's en wijnbessen."
+    },
+    {
+      "id": "groenten",
+      "label": "Groenten",
+      "question": "Gaat de eenheid inhoudelijk over groenten of groenteteelt?",
+      "definition": "Groentegewassen zoals pompoenen, tuinbonen, venkel en uien."
+    },
+    {
+      "id": "fruitrassen",
+      "label": "Fruitrassen",
+      "question": "Bespreekt de eenheid eigenschappen of verschillen van fruitrassen?",
+      "definition": "Rasbeschrijvingen en vergelijkingen van smaak, uiterlijk, groei of geschiktheid."
+    },
+    {
+      "id": "rasidentificatie",
+      "label": "Rasidentificatie",
+      "question": "Probeert de eenheid de identiteit van een fruitras vast te stellen?",
+      "definition": "Herkennen, benoemen of verifiëren van een onbekend of betwijfeld ras."
+    },
+    {
+      "id": "nieuwe_rassen",
+      "label": "Nieuwe rassen",
+      "question": "Bespreekt de eenheid de introductie of veredeling van nieuwe fruitrassen?",
+      "definition": "Nieuwe selecties, kruisingen en hun beschikbaarheid."
+    },
+    {
+      "id": "zaailingen",
+      "label": "Zaailingen",
+      "question": "Gaat de eenheid inhoudelijk over fruitbomen die uit zaad zijn opgekweekt?",
+      "definition": "Eigen of andermans zaailingbomen en hun vruchtbaarheid of vruchtkwaliteit."
+    },
+    {
+      "id": "onderstammen",
+      "label": "Onderstammen",
+      "question": "Bespreekt de eenheid onderstammen voor fruitbomen?",
+      "definition": "Keuze, eigenschappen of onderzoek van onderstammen waarop fruitbomen worden geënt."
+    },
+    {
+      "id": "boomvormen",
+      "label": "Boomvormen",
+      "question": "Bespreekt de eenheid de vorm of omvang waarin fruitbomen worden geteeld?",
+      "definition": "Onder meer hoogstam, halfstam, laagstam, vaasvorm en leifruit."
+    },
+    {
+      "id": "fruitcollecties",
+      "label": "Fruitcollecties",
+      "question": "Gaat de eenheid inhoudelijk over het verzamelen of bewaren van fruitvariëteiten?",
+      "definition": "Collecties, conservatietuinen en behoud van rasdiversiteit."
+    },
+    {
+      "id": "bloei",
+      "label": "Bloei",
+      "question": "Beschrijft de eenheid de bloei van fruitgewassen?",
+      "definition": "Bloemknoppen, bloesem, bloeitijd of het uiterlijk van bloemen."
+    },
+    {
+      "id": "bestuiving",
+      "label": "Bestuiving",
+      "question": "Bespreekt de eenheid bestuiving of bestuivers van gewassen?",
+      "definition": "Bestuivingsbehoefte, bestuivende dieren of geschikte bestuivende rassen."
+    },
+    {
+      "id": "vruchtzetting",
+      "label": "Vruchtzetting",
+      "question": "Bespreekt de eenheid of bloemen zich tot vruchten ontwikkelen?",
+      "definition": "Vruchtbaarheid, uitblijvende vruchten en oorzaken daarvan."
+    },
+    {
+      "id": "oogst",
+      "label": "Oogst",
+      "question": "Beschrijft de eenheid het plukken, binnenhalen of resultaat van een oogst?",
+      "definition": "Oogstwerk, opbrengst en opvallend rijke of magere oogsten."
+    },
+    {
+      "id": "fruitbewaring",
+      "label": "Fruitbewaring",
+      "question": "Bespreekt de eenheid hoe lang of onder welke omstandigheden fruit bewaard wordt?",
+      "definition": "Houdbaarheid, bewaarkwaliteit en bewaring na de oogst."
+    },
+    {
+      "id": "snoeien",
+      "label": "Snoeien",
+      "question": "Bespreekt de eenheid het snoeien van fruitgewassen?",
+      "definition": "Snoeiwerk, snoeivormen en het effect van snoei."
+    },
+    {
+      "id": "aanplant_en_verplanting",
+      "label": "Aanplant en verplanting",
+      "question": "Beschrijft de eenheid het planten of verplanten van gewassen?",
+      "definition": "Aanleg van beplanting en het verplaatsen van bestaande planten."
+    },
+    {
+      "id": "bodembeheer",
+      "label": "Bodembeheer",
+      "question": "Bespreekt de eenheid de bewerking of afdekking van tuingrond?",
+      "definition": "Ploegen, grond afschrapen, mulch en andere fysieke bodemmaatregelen."
+    },
+    {
+      "id": "compost_en_bemesting",
+      "label": "Compost en bemesting",
+      "question": "Bespreekt de eenheid compost, meststoffen of voeding van de bodem?",
+      "definition": "Organisch materiaal en middelen die worden gebruikt om de bodem te voeden."
+    },
+    {
+      "id": "biologische_teelt",
+      "label": "Biologische teelt",
+      "question": "Bespreekt de eenheid biologische teeltpraktijken of biologische landbouwbedrijven?",
+      "definition": "Teelt volgens biologische uitgangspunten, inclusief ervaringen bij biotelers."
+    },
+    {
+      "id": "gewasschade",
+      "label": "Gewasschade",
+      "question": "Beschrijft de eenheid schade aan planten of vruchten?",
+      "definition": "Aangevreten, aangetaste, bevroren of afgestorven gewassen en vruchten."
+    },
+    {
+      "id": "plaagdieren",
+      "label": "Plaagdieren",
+      "question": "Bespreekt de eenheid dieren die gewassen aantasten?",
+      "definition": "Onder meer luizen, rupsen, slakken, mijten en knaagdieren wanneer hun schade centraal staat."
+    },
+    {
+      "id": "schimmelziekten",
+      "label": "Schimmelziekten",
+      "question": "Bespreekt de eenheid een schimmelaantasting van planten of vruchten?",
+      "definition": "Herkenning, gevolgen of verloop van ziekten die door schimmels worden veroorzaakt."
+    },
+    {
+      "id": "schadebestrijding",
+      "label": "Schadebestrijding",
+      "question": "Bespreekt de eenheid een maatregel tegen gewasschade?",
+      "definition": "Preventie of aanpak van schade door dieren, ziekten of andere oorzaken."
+    },
+    {
+      "id": "pesticiden",
+      "label": "Pesticiden",
+      "question": "Bespreekt de eenheid bestrijdingsmiddelen voor landbouw of tuin?",
+      "definition": "Gebruik, werking, promotie of kritiek op chemische en biologische middelen."
+    },
+    {
+      "id": "weer_en_seizoenen",
+      "label": "Weer en seizoenen",
+      "question": "Is een weersituatie of seizoensverloop een inhoudelijk onderwerp van de eenheid?",
+      "definition": "Temperatuur, vorst, droogte en andere weersomstandigheden, ook wanneer die de tuin beïnvloeden."
+    },
+    {
+      "id": "vogels",
+      "label": "Vogels",
+      "question": "Gaat de eenheid inhoudelijk over vogels of hun gedrag?",
+      "definition": "Waarnemingen, broeden, voeden, aantallen en contact met de tuin."
+    },
+    {
+      "id": "vlinders",
+      "label": "Vlinders",
+      "question": "Gaat de eenheid inhoudelijk over vlinders of hun rupsen?",
+      "definition": "Waarnemingen, levenscyclus, waardplanten en voorkomen van vlinders."
+    },
+    {
+      "id": "bijen",
+      "label": "Bijen",
+      "question": "Gaat de eenheid inhoudelijk over bijen?",
+      "definition": "Honingbijen en solitaire bijen, hun verblijf, gezondheid of rol in de tuin."
+    },
+    {
+      "id": "overige_dieren",
+      "label": "Overige dieren",
+      "question": "Gaat de eenheid inhoudelijk over dieren buiten vogels, vlinders en bijen?",
+      "definition": "Bijvoorbeeld woelmuizen of andere zoogdieren als onderwerp op zichzelf."
+    },
+    {
+      "id": "natuurbeheer",
+      "label": "Natuurbeheer",
+      "question": "Bespreekt de eenheid het behoud of beheer van natuurlijke leefgebieden?",
+      "definition": "Beheer van reservaten, bos, grasland of landschapselementen om natuurwaarden te behouden."
+    },
+    {
+      "id": "tuinbezoek",
+      "label": "Tuinbezoeken",
+      "question": "Beschrijft de eenheid een bezoek aan een tuin of boomgaard?",
+      "definition": "Een tuin of boomgaard die tijdens een bezoek wordt bekeken of toegelicht."
+    },
+    {
+      "id": "reizen_en_uitstappen",
+      "label": "Reizen en uitstappen",
+      "question": "Doet de eenheid verslag van een reis of uitstap buiten de eigen omgeving?",
+      "definition": "Reisverhalen en bezoeken aan bezienswaardigheden, ongeacht of tuinen erbij horen."
+    },
+    {
+      "id": "erfgoed",
+      "label": "Erfgoed",
+      "question": "Gaat de eenheid inhoudelijk over historische gebouwen, tuinen of voorwerpen?",
+      "definition": "Cultureel of bouwkundig erfgoed dat wordt bezocht of beschreven."
+    },
+    {
+      "id": "tentoonstellingen",
+      "label": "Tentoonstellingen",
+      "question": "Beschrijft of kondigt de eenheid een tentoonstelling aan?",
+      "definition": "Publieke presentaties van fruit, kunst of andere werken."
+    },
+    {
+      "id": "tuinevenementen",
+      "label": "Tuinevenementen",
+      "question": "Beschrijft of kondigt de eenheid een publiek evenement over tuinieren of fruit aan?",
+      "definition": "Fruitdagen, tuindagen, studiedagen en vergelijkbare bijeenkomsten."
+    },
+    {
+      "id": "kunst",
+      "label": "Kunst",
+      "question": "Gaat de eenheid inhoudelijk over beeldende kunst of kunstenaarswerk?",
+      "definition": "Onder meer tekeningen, beelden en tentoongestelde kunstwerken."
+    },
+    {
+      "id": "familie",
+      "label": "Familie",
+      "threshold": 0.7,
+      "question": "Zijn familieleden of het gezinsleven een inhoudelijk onderwerp van de eenheid?",
+      "definition": "Persoonlijke familieverhalen en momenten waarop verwantschap centraal staat."
+    },
+    {
+      "id": "familiefeesten",
+      "label": "Familiefeesten",
+      "threshold": 0.7,
+      "question": "Beschrijft de eenheid een viering binnen de familie?",
+      "definition": "Onder meer verjaardagen, communies en huwelijksjubilea."
+    },
+    {
+      "id": "herinneringen",
+      "label": "Herinneringen",
+      "question": "Vertelt de eenheid hoofdzakelijk over gebeurtenissen of personen uit het verleden?",
+      "definition": "Persoonlijke terugblikken en herinneringen, inclusief in memoriam."
+    },
+    {
+      "id": "fruitgerechten",
+      "label": "Fruitgerechten",
+      "question": "Gaat de eenheid inhoudelijk over eten of drinken dat met fruit is bereid?",
+      "definition": "Bijvoorbeeld fruittaart, confituur, sap, wijn en likeur."
+    },
+    {
+      "id": "voeding_en_gezondheid",
+      "label": "Voeding en gezondheid",
+      "question": "Bespreekt de eenheid een verband tussen voeding en gezondheid?",
+      "definition": "Gezondheidsclaims, onderzoek en voedingsstoffen in voedsel."
+    },
+    {
+      "id": "voedselsysteem",
+      "label": "Voedselsysteem",
+      "question": "Bespreekt de eenheid maatschappelijke keuzes rond voedselproductie?",
+      "definition": "Debat over landbouw, genetische modificatie en de manier waarop voedsel wordt geproduceerd."
+    },
+    {
+      "id": "tuin_en_infrastructuur",
+      "label": "Tuin en infrastructuur",
+      "question": "Bespreekt de eenheid bouwwerken, leidingen of werken die een tuin raken?",
+      "definition": "Fysieke ingrepen en voorzieningen in of nabij de tuin, inclusief schade door infrastructuurwerken."
+    },
+    {
+      "id": "enten",
+      "label": "Enten",
+      "question": "Gaat de eenheid inhoudelijk over enten of oculeren van planten?",
+      "definition": "Enttechnieken, entplaatsen, enten en oculeren; onderstammen kunnen tegelijk getagd worden."
+    },
+    {
+      "id": "moestuin",
+      "label": "Moestuin",
+      "question": "Gaat de eenheid inhoudelijk over het beheer van een moestuin?",
+      "definition": "Inrichting en werkzaamheden van een moestuin; afzonderlijke groenten kunnen tegelijk getagd worden."
+    },
+    {
+      "id": "serre_en_kas",
+      "label": "Serre en kas",
+      "question": "Gaat de eenheid inhoudelijk over een serre of kas als teeltomgeving?",
+      "definition": "Gebruik, inrichting en omstandigheden van serres en kassen voor plantenteelt."
+    },
+    {
+      "id": "kippen",
+      "label": "Kippen",
+      "question": "Gaat de eenheid inhoudelijk over kippen of ander gehouden pluimvee?",
+      "definition": "Kippen, hanen en ander pluimvee als onderwerp; wilde vogels vallen onder Vogels."
+    }
+  ],
+  "discovery": {
+    "method": "gpt-6-sol-low + word-frequency spot check across all browse units",
+    "developmentUnits": 119,
+    "holdoutExcluded": true,
+    "note": "No tag counts yet; proposals require review before Jev."
+  }
+}

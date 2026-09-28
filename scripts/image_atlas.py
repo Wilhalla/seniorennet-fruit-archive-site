@@ -27,7 +27,7 @@ from PIL import Image, ImageStat, UnidentifiedImageError
 THEMES = [
     {
         "id": "familie",
-        "label": "Mensen & familie",
+        "label": "Mensen",
         "icon": "👥",
         "topics": ["topic-17", "topic-30", "topic-39", "topic-43", "topic-45", "topic-46"],
         "terms": ["familie", "dochter", "kind", "kinderen", "kleinkind", "kleinzoon", "vriend", "vrienden", "feest", "tuinfeest", "bezoek", "groep", "portret", "leen", "keda", "tinneke", "mieke", "vake"],

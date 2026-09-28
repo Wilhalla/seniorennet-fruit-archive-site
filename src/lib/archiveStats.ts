@@ -1,6 +1,7 @@
 import generatedPostsData from '../data/generated/posts-index.json'
 import postIndexData from '../data/post-index.json'
 import topicsData from '../data/generated/topics.json'
+import mapPointsData from '../data/generated/map-points.json'
 import topicCalendarData from '../data/generated/topic-calendar.json'
 
 import type { ArchiveStatsData, CalendarBurst, HeatmapCell, RankPost, StatsPost, TopicCalendarData, TopicStat, YearStat } from './archiveStatsTypes'
@@ -32,6 +33,7 @@ type TopicRecord = {
   label?: string
   generatedLabel?: string
 }
+type AtlasPointRecord = { id: string; postIds?: string[]; topicId: string }
 
 const MONTH_LABELS = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec']
 const WEEKDAY_LABELS = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za']
@@ -121,12 +123,17 @@ function buildPosts(): StatsPost[] {
   const topicLabelById = new Map(
     (topicsData as TopicRecord[]).map((topic) => [topic.id, topic.label || topic.generatedLabel || topic.id])
   )
+  const categoryByPostId = new Map(
+    (mapPointsData as AtlasPointRecord[]).flatMap((point) =>
+      (point.postIds?.length ? point.postIds : [point.id]).map((id) => [id, point.topicId] as const)
+    )
+  )
 
   return (generatedPostsData as GeneratedPost[]).map((post) => {
     const text = authorText(post.cleanedText || post.excerpt || post.title)
     const date = new Date(post.isoDate)
     const day = post.isoDate.slice(0, 10)
-    const topicId = post.topicId || 'unknown'
+    const topicId = categoryByPostId.get(String(post.id)) || post.topicId || 'unknown'
     return {
       id: String(post.id),
       slug: post.slug,

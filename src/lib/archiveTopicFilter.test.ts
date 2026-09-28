@@ -3,6 +3,8 @@ import { activeArchiveTopicFromSearch, archiveTopicFilterLabel, filterArchivePos
 
 describe('archive topic filtering', () => {
   it('reads the atlas topic query parameter from archive URLs', () => {
+    expect(activeArchiveTopicFromSearch('?category=familie')).toBe('familie')
+    expect(activeArchiveTopicFromSearch('?topic=reizen&category=familie')).toBe('familie')
     expect(activeArchiveTopicFromSearch('?topic=topic-03')).toBe('topic-03')
     expect(activeArchiveTopicFromSearch('?year=2008')).toBe('')
   })
