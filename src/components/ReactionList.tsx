@@ -21,7 +21,6 @@ export default function ReactionList({ reactions }: Props) {
       <div className="mx-auto max-w-5xl">
         <header className="grid gap-6 border-b border-chalk pb-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
           <div>
-            <p className="eyebrow">Reacties</p>
             <h2 id="reactions-title" className="section-title">Reacties</h2>
             <p className="section-kicker">Bewaarde reacties bij dit bericht, als doorlopende gesprekslaag onder de post.</p>
           </div>

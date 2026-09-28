@@ -174,8 +174,7 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
       <section>
         <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow">Vorm van de collectie</p>
-            <h2 className="section-title mt-2">Lengte, beeld en gesprek.</h2>
+            <h2 className="section-title">Lengte, beeld en gesprek.</h2>
           </div>
           <p className="max-w-xl text-sm leading-6 text-gravel">Distributies maken zichtbaar of het archief bestaat uit korte notities, fotoreeksen of lange pomologische essays.</p>
         </div>
@@ -195,8 +194,7 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
       <section className="mt-10">
         <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow">Extra grafieken</p>
-            <h2 className="section-title mt-2">Tempo, beeld, reactie.</h2>
+            <h2 className="section-title">Tempo, beeld, reactie.</h2>
           </div>
           <p className="max-w-xl text-sm leading-6 text-gravel">Meer ratio’s dan ruwe volumes: jaren met veel posts per actieve dag, visuele jaargangen en thema’s die relatief veel reactie kregen.</p>
         </div>

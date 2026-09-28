@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowRight, FileSearch, ImageIcon, Loader2, Search, Sparkles } from 'lucide-react'
+import { ArrowRight, ImageIcon, Loader2, Search, Sparkles } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { formatArchiveDate } from '../../lib/archiveDateTime'
 import { useLazySearchIndex, useSearchManifest, useSearchResults, useTitleSearchResults, useUrlBackedSearchQuery } from './searchClientHooks'
@@ -39,7 +39,6 @@ export default function SearchApp() {
       <header className="relative grid gap-8 overflow-hidden border-b border-chalk pb-10 md:grid-cols-[minmax(0,0.72fr)_minmax(16rem,0.28fr)]">
         <img className="apple-image absolute right-0 top-0 hidden w-24 rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-160.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
         <div>
-          <p className="eyebrow mb-3 inline-flex items-center gap-2"><FileSearch className="size-4" aria-hidden="true" /> Tekst zoeken</p>
           <h1 id="search-title" className="display-title">Zoeken</h1>
           <p className="mt-4 max-w-2xl text-body-lg leading-body-lg text-slate-ink">Zoek op titel, tekst of trefwoord.</p>
         </div>

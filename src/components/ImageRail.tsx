@@ -9,7 +9,6 @@ export default function ImageRail({ images }: Props) {
   return (
     <section id="beelden" className="site-shell py-14">
       <div className="mb-8">
-        <p className="eyebrow">Uit de fotocollectie</p>
         <h2 className="section-title">Boomgaard, serre, tafel.</h2>
         <p className="section-kicker">Afbeeldingen bij dit bericht.</p>
       </div>

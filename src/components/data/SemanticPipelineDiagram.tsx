@@ -86,8 +86,7 @@ export default function SemanticPipelineDiagram() {
     <section className="site-shell min-w-0 py-12" aria-labelledby="semantic-setup-title">
       <div className="min-w-0 border-b border-chalk pb-10">
         <div className="max-w-3xl">
-          <p className="eyebrow">Semantische preprocessing</p>
-          <h1 id="semantic-setup-title" className="display-title mt-2">Data</h1>
+          <h1 id="semantic-setup-title" className="display-title">Data</h1>
           <p className="mt-5 text-body-lg leading-body-lg text-gravel">
             Eerst worden tekst en afbeeldingen uit elk blogbericht apart gelezen. Daarna zet de pipeline beide om naar
             “betekenis-getallen”, combineert die, zoekt onderwerpen en verwante berichten, en schrijft alles weg als JSON.

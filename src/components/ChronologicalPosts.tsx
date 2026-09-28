@@ -32,7 +32,6 @@ export default function ChronologicalPosts({ postId }: Props) {
     <section className="site-shell border-t border-rule py-14" aria-labelledby="chronological-posts-title">
       <div className="flex items-end justify-between gap-6 max-md:flex-col max-md:items-start">
         <div>
-          <p className="eyebrow">Verder lezen</p>
           <h2 id="chronological-posts-title" className="section-title">Chronologisch verder</h2>
           <p className="section-kicker">Eén bericht net ervoor, en tot twee berichten net erna in het archief.</p>
         </div>

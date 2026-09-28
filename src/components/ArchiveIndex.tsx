@@ -19,7 +19,6 @@ export default function ArchiveIndex({ aggregatedPosts, allPosts }: Props) {
     <>
       <section className="site-shell flex items-end justify-between gap-6 border-b border-rule py-6 max-md:flex-col max-md:items-start" aria-label="Archiefweergave">
         <div>
-          <p className="eyebrow">Weergave</p>
           <h2 className="m-0 font-heading text-3xl font-normal tracking-tight">Reeksen samenvoegen?</h2>
           <p className="section-kicker">
             Samengevoegd toont vervolg-, aanvulling- en deelberichten als één reeks. Losse berichten toont de originele import.

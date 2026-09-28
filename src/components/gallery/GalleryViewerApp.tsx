@@ -218,7 +218,6 @@ export default function GalleryViewerApp({ initialImages = [] }: Props) {
   if (!viewerId) {
     return (
       <main className="site-shell py-16 text-midnight-navy">
-        <p className="eyebrow">Beeldviewer</p>
         <h1 className="display-title">Geen beeld gekozen</h1>
         <a className="mt-6 inline-flex min-h-10 items-center rounded-full border border-obsidian px-4 text-sm font-medium no-underline" href="/gallery/">Naar het beeldarchief</a>
       </main>
@@ -236,7 +235,6 @@ export default function GalleryViewerApp({ initialImages = [] }: Props) {
 
     return (
       <main className="site-shell py-16 text-midnight-navy">
-        <p className="eyebrow">Beeldviewer</p>
         <h1 className="display-title">{imagesLoading ? 'Beeld laden…' : 'Beeld niet gevonden'}</h1>
         <p className="mt-4 max-w-xl text-sm leading-6 text-gravel">{imagesLoading ? 'We zoeken de foto in het beeldarchief.' : 'Deze link verwijst naar een beeld dat niet in de index staat.'}</p>
         <a className="mt-6 inline-flex min-h-10 items-center rounded-full border border-obsidian px-4 text-sm font-medium no-underline" href="/gallery/">Naar het beeldarchief</a>

@@ -32,8 +32,7 @@ const { isSeries, parts, imageEntries, hasImages, sidebarImages } = await buildA
         <nav class="border-b border-chalk py-6" aria-label="Reeksindex">
           <div class="mb-4 flex items-end justify-between gap-4">
             <div>
-              <p class="eyebrow">Reeksindex</p>
-              <h2 class="m-0 mt-1 font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy">Samengevoegde berichten</h2>
+              <h2 class="m-0 font-heading text-3xl font-normal leading-tight tracking-tight text-midnight-navy">Samengevoegde berichten</h2>
             </div>
             <span class="text-sm text-slate-ink">{parts.length} delen</span>
           </div>
@@ -81,7 +80,6 @@ const { isSeries, parts, imageEntries, hasImages, sidebarImages } = await buildA
         <div class="post-photo-panel__content">
           <div class="mb-4 flex items-end justify-between gap-4 border-b border-chalk pb-3">
             <div>
-              <p class="eyebrow">Beelden</p>
               <h2 class="m-0 font-heading text-4xl font-normal leading-none tracking-tight text-midnight-navy">Fotoreeks</h2>
             </div>
             <p class="m-0 text-sm text-slate-ink">{imageEntries.length.toLocaleString('nl-BE')}</p>

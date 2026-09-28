@@ -27,7 +27,6 @@ export default function RelatedPosts({ postId }: Props) {
     <section className="site-shell border-t border-rule py-14" aria-labelledby="related-atlas-title">
       <div className="relative">
         <img className="apple-image absolute right-0 top-0 hidden w-20 -rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-160.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
-        <p className="eyebrow">Verder lezen</p>
         <h2 id="related-atlas-title" className="section-title">Nabije berichten</h2>
         <p className="section-kicker">Thema: <strong>{topicLabel}</strong>.</p>
       </div>

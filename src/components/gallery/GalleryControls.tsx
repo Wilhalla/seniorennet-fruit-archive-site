@@ -27,7 +27,6 @@ export function GalleryHeader({ filteredCount, peopleCount, plantCount, sortNewe
   return (
     <header className="grid gap-6 border-b border-chalk pb-7 lg:grid-cols-[minmax(0,1fr)_auto]">
       <div className="min-w-0">
-        <p className="eyebrow mb-3">Beeldarchief</p>
         <h1 className="display-title max-w-3xl break-words">Beeldarchief</h1>
         <p className="m-0 mt-3 max-w-2xl text-sm leading-6 text-gravel">
           {filteredCount.toLocaleString('nl-BE')} foto’s · {peopleCount} met personen · {plantCount.toLocaleString('nl-BE')} met planten
