@@ -240,9 +240,10 @@ class ArchiveMlTests(unittest.TestCase):
 
     def test_published_categories_keep_series_together_and_overlap(self):
         posts = [{"id": post_id, "slug": post_id, "title": post_id, "date": "2020-01-01", "year": 2020,
-                  "month": 1, "season": "winter", "imageCount": 0, "images": [], "excerpt": ""}
+                  "month": 1, "season": "winter", "imageCount": 1 if post_id == "b" else 0,
+                  "images": ["/image-b.jpg"] if post_id == "b" else [], "excerpt": ""}
                  for post_id in ("a", "b", "c")]
-        units = [{"id": "series-a", "primaryPostId": "a", "postIds": ["a", "b"], "title": "Familiefruit", "imageCount": 0},
+        units = [{"id": "series-a", "primaryPostId": "a", "postIds": ["a", "b"], "title": "Familiefruit", "imageCount": 1},
                  {"id": "post-c", "primaryPostId": "c", "postIds": ["c"], "title": "Overig", "imageCount": 0}]
         predictions = {
             "series-a": {"vocabularyHash": archive_ml.question_hash(VOCABULARY), "tagScores": {"fruit": 0.9, "visit": 0.8}},
@@ -258,6 +259,7 @@ class ArchiveMlTests(unittest.TestCase):
         ]}
         result = build_outputs(posts, units, predictions, VOCABULARY, mapping, atlas)
         self.assertEqual(len(result["map-points.json"]), 2)
+        self.assertEqual(result["map-points.json"][0]["image"], "/image-b.jpg")
         self.assertEqual(result["post-categories.json"]["b"]["categoryIds"], ["fruit", "visit"])
         self.assertEqual(result["post-category-ids.json"]["b"], ["fruit", "visit"])
         self.assertEqual(result["post-categories.json"]["c"]["categoryIds"], ["overig"])

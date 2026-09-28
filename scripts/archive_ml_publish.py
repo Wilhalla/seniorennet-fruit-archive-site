@@ -50,6 +50,8 @@ def build_outputs(posts: list[dict], units: list[dict], predictions: dict, vocab
             member_units["overig"].append((0, unit))
 
         primary_post = post_by_id[unit["primaryPostId"]]
+        representative_image = next((post_by_id[post_id]["images"][0] for post_id in unit["postIds"]
+                                     if post_by_id[post_id].get("images")), None)
         position = atlas_by_id[unit_id]
         related = [primary_by_unit[neighbor] for neighbor in position["neighbors"] if neighbor in primary_by_unit]
         for post_id in unit["postIds"]:
@@ -63,7 +65,7 @@ def build_outputs(posts: list[dict], units: list[dict], predictions: dict, vocab
             "month": primary_post["month"], "season": primary_post["season"],
             "topicId": primary_category, "categoryIds": matches or ["overig"], "tagIds": sorted(tags),
             "x": position["x"], "y": position["y"], "neighbors": position["neighbors"],
-            "imageCount": unit["imageCount"], "image": (primary_post.get("images") or [None])[0],
+            "imageCount": unit["imageCount"], "image": representative_image,
             "excerpt": primary_post.get("excerpt") or "",
         })
 
