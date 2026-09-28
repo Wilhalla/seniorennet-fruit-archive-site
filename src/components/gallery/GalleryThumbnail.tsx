@@ -18,6 +18,7 @@ export default function GalleryThumbnail({ image, alt, onError, ...props }: Prop
       alt={alt ?? (image.caption || image.postTitle)}
       onError={(event) => {
         event.currentTarget.onerror = null
+        event.currentTarget.srcset = ''
         event.currentTarget.src = event.currentTarget.dataset.fallbackSrc || image.src
         onError?.(event)
       }}

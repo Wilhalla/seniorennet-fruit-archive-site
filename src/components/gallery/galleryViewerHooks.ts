@@ -9,6 +9,7 @@ import {
 } from '../../lib/imageGallerySession'
 import { currentBrowserPath, writeBrowserPath } from '../../lib/browserHistory'
 import { isAbortError } from '../../lib/clientFetch'
+import { loadGalleryIndexChunks } from '../../lib/galleryIndexLoader'
 import { defaultGalleryFilters } from './galleryClientHooks'
 
 export type ImageSize = {
@@ -53,22 +54,6 @@ export function useGalleryViewerUrlState() {
   return { filters, setFilters, slideshowRequestedId, setSlideshowRequestedId, slideshowRouteRef, urlStateReady, viewerId, setViewerId }
 }
 
-type ImageIndexChunkManifest = {
-  imageCount: number
-  chunks: Array<{ id: string; file: string; imageCount: number }>
-}
-
-function mergeViewerImages(current: GalleryImageRecord[], next: GalleryImageRecord[]) {
-  const seen = new Set<string>()
-  const merged: GalleryImageRecord[] = []
-  for (const image of [...current, ...next]) {
-    if (seen.has(image.id)) continue
-    seen.add(image.id)
-    merged.push(image)
-  }
-  return merged
-}
-
 export function useGalleryViewerData(initialImages: GalleryImageRecord[], enabled: boolean) {
   const [images, setImages] = useState<GalleryImageRecord[]>(initialImages)
   const [imagesLoading, setImagesLoading] = useState(false)
@@ -84,17 +69,13 @@ export function useGalleryViewerData(initialImages: GalleryImageRecord[], enable
 
     async function loadImages() {
       try {
-        const manifest = await fetchGalleryJson<ImageIndexChunkManifest>('/generated/image-index-chunks.json', 'high', controller.signal)
-        if (!manifest.chunks?.length) throw new Error('Geen beeldarchief-chunks gevonden')
-        let loadedCount = 0
-        for (const chunk of manifest.chunks) {
-          if (controller.signal.aborted || cancelled) return
-          const chunkImages = await fetchGalleryJson<GalleryImageRecord[]>(`/generated/${chunk.file}`, 'high', controller.signal)
-          loadedCount += chunkImages.length
-          setImages((current) => mergeViewerImages(current, chunkImages))
-          await new Promise((resolve) => window.setTimeout(resolve, 0))
-        }
-        if (!cancelled && !controller.signal.aborted) setFullIndexLoaded(loadedCount >= manifest.imageCount)
+        const complete = await loadGalleryIndexChunks({
+          initialImages,
+          onBatch: setImages,
+          priority: 'high',
+          signal: controller.signal,
+        })
+        if (!cancelled && !controller.signal.aborted) setFullIndexLoaded(complete)
       } catch (error) {
         if (isAbortError(error)) return
         console.error(error)

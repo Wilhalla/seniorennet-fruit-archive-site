@@ -13,6 +13,7 @@ export default defineConfig({
   output: 'static',
   adapter: vercel(),
   integrations: [react()],
+  prefetch: { prefetchAll: false, defaultStrategy: 'hover' },
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
