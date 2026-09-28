@@ -1,0 +1,11 @@
+#!/bin/sh
+
+subject=$(sed -n '1p' "$1")
+
+if printf '%s\n' "$subject" | LC_ALL=C grep -Eq '^[[:alpha:]][[:alnum:]-]*(\([[:alnum:]][[:alnum:]/._-]*\))?!?: [^[:space:]].*$'; then
+  exit 0
+fi
+
+printf '%s\n' 'Commit subject must follow Conventional Commits: type(scope)!: summary' >&2
+printf '%s\n' 'Example: feat(gallery): add image captions' >&2
+exit 1
