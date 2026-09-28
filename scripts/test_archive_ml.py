@@ -93,6 +93,17 @@ class ArchiveMlTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "visit"):
             archive_ml.validate_batch_answers(response, VOCABULARY, 2)
 
+    def test_long_posts_are_complete_and_get_smaller_batches(self):
+        posts = [{"id": str(index), "slug": str(index), "title": "Lang verhaal",
+                  "cleanedText": "Appels " * (1300 if index == 0 else 20)} for index in range(3)]
+        units = build_units(posts, [])
+        self.assertEqual(unit_state(units[0])["post_text"].count("Appels"), 1300)
+        solo_size = len(archive_ml.json.dumps(archive_ml.jev_batch_payload([unit_state(units[0])], VOCABULARY)))
+        batches = archive_ml.planned_tag_batches(units, {}, VOCABULARY, 3, solo_size + 100)
+        self.assertEqual([len(batch) for batch in batches], [1, 2])
+        with self.assertRaisesRegex(ValueError, "above limit"):
+            archive_ml.planned_tag_batches(units, {}, VOCABULARY, 3, solo_size - 1)
+
     def test_tagging_batches_units_and_reuses_per_unit_cache(self):
         units = [
             {"id": f"post-{index}", "postIds": [str(index)], "title": f"Post {index}",

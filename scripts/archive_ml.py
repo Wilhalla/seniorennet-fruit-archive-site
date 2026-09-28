@@ -290,6 +290,45 @@ def load_all_units() -> list[dict[str, Any]]:
     return build_units(load_json(POSTS), load_json(SERIES)["series"])
 
 
+def planned_tag_batches(units: list[dict[str, Any]], observations: dict[str, list[dict[str, Any]]],
+                        vocabulary: dict[str, Any], batch_size: int, max_payload_chars: int
+                        ) -> list[list[tuple[dict[str, Any], dict[str, Any]]]]:
+    """Keep complete units together while limiting the size of each Jev request."""
+    if not 1 <= batch_size <= 8 or max_payload_chars <= 0:
+        raise ValueError("batch-size must be 1-8 and max-payload-chars must be positive")
+    batches: list[list[tuple[dict[str, Any], dict[str, Any]]]] = []
+    current: list[tuple[dict[str, Any], dict[str, Any]]] = []
+    for unit in units:
+        record = (unit, unit_state(unit, observations))
+        proposed = [*current, record]
+        if current and (len(proposed) > batch_size or
+                        len(json.dumps(jev_batch_payload([state for _, state in proposed], vocabulary))) > max_payload_chars):
+            batches.append(current)
+            proposed = [record]
+        size = len(json.dumps(jev_batch_payload([state for _, state in proposed], vocabulary)))
+        if size > max_payload_chars:
+            raise ValueError(f"unit {unit['id']} needs {size} payload characters, above limit {max_payload_chars}")
+        current = proposed
+    if current:
+        batches.append(current)
+    return batches
+
+
+def plan_tags(args: argparse.Namespace) -> None:
+    vocabulary = load_json(args.vocabulary)
+    validate_vocabulary(vocabulary)
+    selected = {row["id"] for row in load_json(args.sample)} if args.sample else None
+    all_units = load_all_units()
+    if selected is not None and selected - {unit["id"] for unit in all_units}:
+        raise ValueError(f"sample has unknown browse units: {sorted(selected - {unit['id'] for unit in all_units})}")
+    units = [unit for unit in all_units if selected is None or unit["id"] in selected]
+    batches = planned_tag_batches(units, load_observations(args.observations), vocabulary,
+                                  args.batch_size, args.max_payload_chars)
+    largest = max((len(json.dumps(jev_batch_payload([state for _, state in batch], vocabulary)))
+                   for batch in batches), default=0)
+    print(f"Planned {len(batches)} Jev requests for {len(units)} complete browse units; largest payload {largest} characters")
+
+
 def classify(args: argparse.Namespace) -> None:
     vocabulary = load_json(args.vocabulary)
     validate_vocabulary(vocabulary)
@@ -300,15 +339,17 @@ def classify(args: argparse.Namespace) -> None:
     if vocabulary.get("status") != "approved":
         if not (getattr(args, "trial", False) and args.sample and args.max_items <= 20 and args.max_usd <= 0.10):
             raise ValueError("draft vocabulary requires --trial, --sample, --max-items <= 20 and --max-usd <= 0.10")
-    if not 1 <= args.batch_size <= 8:
-        raise ValueError("batch-size must be between 1 and 8 browse units")
     observations = load_observations(args.observations)
     all_units = load_all_units()
     valid_unit_ids = {unit["id"] for unit in all_units}
     units = all_units
     selected = {row["id"] for row in load_json(args.sample)} if args.sample else None
     if selected is not None:
+        if selected - valid_unit_ids:
+            raise ValueError(f"sample has unknown browse units: {sorted(selected - valid_unit_ids)}")
         units = [unit for unit in units if unit["id"] in selected]
+    batches = planned_tag_batches(units, observations, vocabulary, args.batch_size,
+                                  getattr(args, "max_payload_chars", 64000))
     vocabulary_hash = question_hash(vocabulary)
     output = load_json(args.output) if args.output.exists() else {}
     output = {unit_id: row for unit_id, row in output.items()
@@ -324,12 +365,11 @@ def classify(args: argparse.Namespace) -> None:
     spent = sum(float(cost) for cost in paid_requests.values())
     completed = 0
     requests = 0
-    for start in range(0, len(units), args.batch_size):
-        batch = units[start:start + args.batch_size]
-        states = [unit_state(unit, observations) for unit in batch]
+    for batch in batches:
+        states = [state for _, state in batch]
         payload = jev_batch_payload(states, vocabulary)
         batch_hash = digest(payload)
-        if all(output.get(unit["id"], {}).get("batchHash") == batch_hash for unit in batch):
+        if all(output.get(unit["id"], {}).get("batchHash") == batch_hash for unit, _ in batch):
             continue
         if completed + len(batch) > args.max_items or spent + args.reserve_usd > args.max_usd:
             break
@@ -351,7 +391,7 @@ def classify(args: argparse.Namespace) -> None:
             spent += paid_requests[batch_hash]
             write_json(spend_path, paid_requests)
         results = validate_batch_answers(raw_response, vocabulary, len(batch))
-        for unit, state, result in zip(batch, states, results, strict=True):
+        for (unit, state), result in zip(batch, results, strict=True):
             output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"],
                                   "vocabularyVersion": vocabulary["version"], "vocabularyHash": vocabulary_hash,
                                   "inputHash": digest(state), "batchHash": batch_hash}
@@ -502,8 +542,15 @@ def main() -> None:
     classification.add_argument("--trial", action="store_true", help="Allow a draft vocabulary only for a capped 20-unit sample")
     classification.add_argument("--max-items", type=int)
     classification.add_argument("--batch-size", type=int, default=4, help="Browse units per Jev request (1-8; default 4)")
+    classification.add_argument("--max-payload-chars", type=int, default=64000, help="Conservative complete-request size limit")
     classification.add_argument("--max-usd", type=float)
     classification.add_argument("--reserve-usd", type=float, default=0.01, help="Minimum remaining budget before each request")
+    tag_plan = commands.add_parser("tag-plan", help="Count Jev requests for full text without spending")
+    tag_plan.add_argument("--vocabulary", type=Path, required=True)
+    tag_plan.add_argument("--sample", type=Path)
+    tag_plan.add_argument("--observations", type=Path)
+    tag_plan.add_argument("--batch-size", type=int, default=4)
+    tag_plan.add_argument("--max-payload-chars", type=int, default=64000)
     embeddings = commands.add_parser("embed", help="Paid text embeddings for browse-unit similarity")
     embeddings.add_argument("--sample", type=Path, help="Browse-unit review sample JSON; omit for full archive")
     embeddings.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
@@ -543,6 +590,7 @@ def main() -> None:
     args = parser.parse_args()
     try:
         if args.command == "sample": make_sample(args.posts, args.images, args.output)
+        elif args.command == "tag-plan": plan_tags(args)
         elif args.command == "validate-tags":
             validate_vocabulary(load_json(args.vocabulary))
             print("Tag vocabulary is valid")

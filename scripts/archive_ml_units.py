@@ -33,9 +33,8 @@ def build_units(posts: list[dict[str, Any]], series_records: list[dict[str, Any]
         if series and series["primaryPostId"] != post["id"]:
             continue
         members = [by_id[post_id] for post_id in series["postIds"]] if series else [post]
-        part_limit = min(2500, max(350, 3600 // len(members)))
         parts = [{"id": member["id"], "slug": member["slug"], "title": member["title"],
-                  "text": author_text(member)[:part_limit], "imageCount": member.get("imageCount", 0)}
+                  "text": author_text(member), "imageCount": member.get("imageCount", 0)}
                  for member in members]
         units.append({
             "id": series["id"] if series else f"post-{post['id']}",
@@ -53,7 +52,7 @@ def build_units(posts: list[dict[str, Any]], series_records: list[dict[str, Any]
 def unit_state(unit: dict[str, Any], observations: dict[str, list[dict[str, Any]]] | None = None) -> dict[str, Any]:
     parts = unit["parts"]
     text = "\n".join(f"Deel {index}: {part['title']} — {part['text']}" for index, part in enumerate(parts, 1))
-    state = {"title": unit["title"], "post_text": text[:4500]}
+    state = {"title": unit["title"], "post_text": text}
     reviewed_images = [
         {"image_id": image["imageId"], "source_post_id": image.get("sourcePostId"),
          "visual_description": image["visualDescription"], "linked_context": image.get("linkedText", [])}
