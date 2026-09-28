@@ -1,0 +1,63 @@
+{
+  "version": "archive-image-categories-1",
+  "status": "approved",
+  "derivedFrom": "ml/image-tag-counts.full.json",
+  "categories": [
+    {
+      "id": "familie",
+      "label": "Familie",
+      "description": "Mensen of vieringen met expliciete familiecontext in het bronbericht of het beeldbijschrift.",
+      "icon": "👪",
+      "tagIds": ["familie", "familiefeest"]
+    },
+    {
+      "id": "mensen",
+      "label": "Mensen",
+      "description": "Echte mensen die op de foto staan, ook zonder bekende familieband.",
+      "icon": "👥",
+      "tagIds": ["mensen", "portret", "groep"]
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit & eten",
+      "description": "Zichtbaar fruit, groenten, oogst en bereide gerechten.",
+      "icon": "🍐",
+      "tagIds": ["fruit", "appels", "peren", "ander_fruit", "groenten", "eten"]
+    },
+    {
+      "id": "tuin",
+      "label": "Planten & tuin",
+      "description": "Bloemen, bomen, tuinplanten, tuinwerk en zichtbare plantschade.",
+      "icon": "🌿",
+      "tagIds": ["bloemen", "bomen", "tuinplanten", "tuinwerk", "plantschade"]
+    },
+    {
+      "id": "dieren",
+      "label": "Dieren",
+      "description": "Vogels, insecten en andere echte dieren op de foto.",
+      "icon": "🐦",
+      "tagIds": ["vogels", "insecten", "andere_dieren"]
+    },
+    {
+      "id": "landschap",
+      "label": "Landschap & natuur",
+      "description": "Buitenlandschappen en natuurlijke uitzichten als hoofdonderwerp.",
+      "icon": "🏞️",
+      "tagIds": ["landschap"]
+    },
+    {
+      "id": "plaatsen",
+      "label": "Gebouwen & plaatsen",
+      "description": "Gebouwen, monumenten, straten en gebouwde plekken.",
+      "icon": "🏛️",
+      "tagIds": ["gebouw"]
+    },
+    {
+      "id": "kunst_documenten",
+      "label": "Kunst & documenten",
+      "description": "Kunstwerken, prenten, kaarten, borden en documenten.",
+      "icon": "🖼️",
+      "tagIds": ["kunst", "document"]
+    }
+  ]
+}
