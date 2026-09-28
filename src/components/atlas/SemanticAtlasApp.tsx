@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import {
-  AlertTriangle,
   ArrowRight,
   ExternalLink,
   Home,
@@ -44,7 +43,6 @@ import {
   tinyThumbImage,
   topicDisplayLabel,
   topicKeywords,
-  topicSearchText,
   type AtlasCategory as Category,
   type AtlasFilters as Filters,
   type AtlasViewMode as ViewMode,
@@ -171,8 +169,8 @@ export default function SemanticAtlasApp({
   function colorFor(topicId: string) {
     const category = categoryFor(topicsById.get(topicId));
     return (
-      atlasCategoryColors[category?.id ?? "heritage"] ??
-      atlasCategoryColors.heritage
+      atlasCategoryColors[category?.id ?? "overig"] ??
+      atlasCategoryColors.overig
     );
   }
 
@@ -224,8 +222,9 @@ export default function SemanticAtlasApp({
     if (typeof window === "undefined") return;
     const url = new URL(window.location.href);
 
-    if (nextFilters.topic === "all") url.searchParams.delete("topic");
-    else url.searchParams.set("topic", nextFilters.topic);
+    url.searchParams.delete("topic");
+    if (nextFilters.topic === "all") url.searchParams.delete("category");
+    else url.searchParams.set("category", nextFilters.topic);
     if (nextFilters.year === "all") url.searchParams.delete("year");
     else url.searchParams.set("year", nextFilters.year);
     if (nextFilters.season === "all") url.searchParams.delete("season");
@@ -393,7 +392,7 @@ export default function SemanticAtlasApp({
   }
 
   function categoryIdFor(topicId: string) {
-    return categoryFor(topicsById.get(topicId))?.id ?? "heritage";
+    return categoryFor(topicsById.get(topicId))?.id ?? "overig";
   }
 
   function atlasUnitPoint(point: MapPoint): ScreenPoint {
@@ -451,12 +450,13 @@ export default function SemanticAtlasApp({
       }
     >();
     for (const point of visibleViewportPoints) {
-      if (topicFilter && point.topicId !== topicFilter) continue;
+      if (topicFilter && !(point.categoryIds ?? [point.topicId]).includes(topicFilter)) continue;
+      const categoryId = topicFilter ?? point.topicId;
       const cellX = clamp(Math.floor(point.x * gridW), 0, gridW - 1);
       const cellY = clamp(Math.floor(point.y * gridH), 0, gridH - 1);
-      const key = `${point.topicId}:${cellX}:${cellY}`;
+      const key = `${categoryId}:${cellX}:${cellY}`;
       const cell = cells.get(key) ?? {
-        topicId: point.topicId,
+        topicId: categoryId,
         cellX,
         cellY,
         count: 0,
@@ -569,7 +569,7 @@ export default function SemanticAtlasApp({
     const gridH = 36;
     const grids = new Map<string, Float32Array>();
     for (const point of visibleViewportPoints) {
-      const categoryId = categoryIdFor(point.topicId);
+      const categoryId = filters.topic === "all" ? categoryIdFor(point.topicId) : filters.topic;
       const grid = grids.get(categoryId) ?? new Float32Array(gridW * gridH);
       const cx = clamp(Math.floor(point.x * gridW), 0, gridW - 1);
       const cy = clamp(Math.floor(point.y * gridH), 0, gridH - 1);
@@ -593,7 +593,7 @@ export default function SemanticAtlasApp({
       for (const value of grid) max = Math.max(max, value);
       if (max <= 0) continue;
       const color =
-        atlasCategoryColors[categoryId] ?? atlasCategoryColors.heritage;
+        atlasCategoryColors[categoryId] ?? atlasCategoryColors.overig;
       for (let y = 0; y < gridH; y += 1) {
         for (let x = 0; x < gridW; x += 1) {
           const value = grid[y * gridW + x];
@@ -685,7 +685,8 @@ export default function SemanticAtlasApp({
     >();
     for (const point of visible) {
       const unit = atlasUnitPoint(point);
-      const group = groups.get(point.topicId) ?? {
+      const categoryId = filters.topic === "all" ? point.topicId : filters.topic;
+      const group = groups.get(categoryId) ?? {
         unitX: 0,
         unitY: 0,
         count: 0,
@@ -693,7 +694,7 @@ export default function SemanticAtlasApp({
       group.unitX += unit.x;
       group.unitY += unit.y;
       group.count += 1;
-      groups.set(point.topicId, group);
+      groups.set(categoryId, group);
     }
     return [...groups.entries()]
       .map(([topicId, group]) => {
@@ -1150,7 +1151,7 @@ export default function SemanticAtlasApp({
       const isRelated = relatedPointIds.has(point.id);
       const activeTopic =
         selectedPoint?.topicId ?? selectedClusterId ?? hoverClusterId;
-      const isSameCluster = point.topicId === activeTopic;
+      const isSameCluster = activeTopic != null && (point.categoryIds ?? [point.topicId]).includes(activeTopic);
       const hasFocus = Boolean(
         selectedPoint || selectedClusterId || hoverClusterId,
       );
@@ -1294,8 +1295,8 @@ export default function SemanticAtlasApp({
     for (const point of visible) {
       const p = atlasPoint(point, miniRect);
       const isSelected = point.id === selectedPoint?.id;
-      const isSameCluster =
-        point.topicId === (selectedPoint?.topicId ?? selectedClusterId);
+      const activeCategory = selectedPoint?.topicId ?? selectedClusterId;
+      const isSameCluster = activeCategory != null && (point.categoryIds ?? [point.topicId]).includes(activeCategory);
       context.fillStyle = colorFor(point.topicId);
       context.globalAlpha = isSelected ? 1 : isSameCluster ? 0.78 : 0.42;
       context.beginPath();
@@ -1477,24 +1478,19 @@ export default function SemanticAtlasApp({
   }
 
   const startpointTopics = useMemo(() => {
-    const used = new Set<string>();
     const items = atlasCategories
+      .filter((category) => category.id !== "overig")
       .map((category) => {
-        const topic = sortedTopics.find(
-          (candidate) =>
-            !used.has(candidate.id) &&
-            category.match.test(topicSearchText(candidate)),
-        );
+        const topic = sortedTopics.find((candidate) => candidate.id === category.id);
         if (!topic) return null;
-        used.add(topic.id);
         const point =
           points.find(
-            (candidate) => candidate.topicId === topic.id && candidate.image,
-          ) ?? points.find((candidate) => candidate.topicId === topic.id);
+            (candidate) => (candidate.categoryIds ?? [candidate.topicId]).includes(topic.id) && candidate.image,
+          ) ?? points.find((candidate) => (candidate.categoryIds ?? [candidate.topicId]).includes(topic.id));
         return { category, topic, point, Icon: category.Icon };
       })
       .filter(Boolean);
-    return items.slice(0, 6) as Array<{
+    return items as Array<{
       category: Category;
       topic: Topic;
       point?: MapPoint;
@@ -1502,7 +1498,7 @@ export default function SemanticAtlasApp({
     }>;
   }, [points, sortedTopics]);
 
-  const visibleStatus = `${visible.length.toLocaleString("nl-BE")} van ${points.length.toLocaleString("nl-BE")} berichten zichtbaar`;
+  const visibleStatus = `${visible.length.toLocaleString("nl-BE")} van ${points.length.toLocaleString("nl-BE")} verhalen zichtbaar`;
   const hasDetailSelection = Boolean(selectedPoint || selectedCluster);
 
   return (
@@ -1520,19 +1516,6 @@ export default function SemanticAtlasApp({
           <span className="font-mono text-xs">{dataError}</span>
         </div>
       )}
-
-      <div className="mb-4 flex justify-center">
-        <p
-          className="inline-flex max-w-full items-center gap-2 rounded-full border border-amber-200 bg-white/70 px-3 py-1.5 text-xs text-gravel shadow-[0_8px_24px_rgba(31,29,27,0.05)] backdrop-blur"
-          role="note"
-        >
-          <AlertTriangle
-            className="size-3.5 shrink-0 text-amber-600"
-            aria-hidden="true"
-          />
-          <span>Thema-analyse en clustering bevatten fouten.</span>
-        </p>
-      </div>
 
       <header className="grid gap-4 border-b border-chalk pb-3 lg:grid-cols-[15rem_minmax(0,1fr)] lg:items-end">
         <div className="min-w-0">
@@ -1552,7 +1535,7 @@ export default function SemanticAtlasApp({
                 <ol className="m-0 grid list-none gap-2 p-0">
                   <li>
                     <strong className="text-obsidian">Punten.</strong> Elke stip
-                    is een archiefbericht.
+                    is een verhaal; vervolgdelen staan samen.
                   </li>
                   <li>
                     <strong className="text-obsidian">Nabijheid.</strong>{" "}
@@ -1560,15 +1543,15 @@ export default function SemanticAtlasApp({
                   </li>
                   <li>
                     <strong className="text-obsidian">Eilanden.</strong> Zachte
-                    velden tonen dichte thema’s.
+                    velden tonen dichte groepen op dezelfde kaart.
                   </li>
                 </ol>
               </div>
             </details>
           </div>
           <p className="mt-2 font-mono text-sm text-gravel">
-            {points.length.toLocaleString("nl-BE")} berichten ·{" "}
-            {sortedTopics.length.toLocaleString("nl-BE")} thema’s
+            {points.length.toLocaleString("nl-BE")} verhalen ·{" "}
+            {sortedTopics.length.toLocaleString("nl-BE")} categorieën
           </p>
         </div>
         <div className="grid gap-3 lg:grid-cols-[minmax(17rem,26rem)_minmax(0,1fr)] lg:items-end">
@@ -1593,7 +1576,7 @@ export default function SemanticAtlasApp({
           </label>
           <nav
             className="flex flex-wrap items-center gap-2 lg:justify-end"
-            aria-label="Thema startpunten"
+            aria-label="Categorieën"
           >
             {startpointTopics.map(({ category, topic }) => (
               <button
@@ -1608,7 +1591,7 @@ export default function SemanticAtlasApp({
                 />
                 <span>{category.label}</span>
                 <span className="font-mono text-[10px] text-gravel/80">
-                  {topic.postCount.toLocaleString("nl-BE")}
+                  {(topic.unitCount ?? topic.postCount).toLocaleString("nl-BE")}
                 </span>
               </button>
             ))}
@@ -1630,7 +1613,7 @@ export default function SemanticAtlasApp({
               </p>
               <div className="grid gap-3">
                 <label className="grid gap-1 text-xs text-gravel">
-                  Thema
+                  Categorie
                   <Select
                     value={filters.topic}
                     onValueChange={(value) =>
@@ -1644,10 +1627,10 @@ export default function SemanticAtlasApp({
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="all">Alle thema’s</SelectItem>
+                      <SelectItem value="all">Alle categorieën</SelectItem>
                       {sortedTopics.map((topic) => (
                         <SelectItem key={topic.id} value={topic.id}>
-                          {topicDisplayLabel(topic)} ({topic.postCount})
+                          {topicDisplayLabel(topic)} ({topic.unitCount ?? topic.postCount})
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -1738,7 +1721,7 @@ export default function SemanticAtlasApp({
                     <span aria-hidden="true">
                       {viewMode === mode ? "•" : "○"}
                     </span>
-                    {mode === "points" ? "Punten" : "Thema’s"}
+                    {mode === "points" ? "Punten" : "Categorieën"}
                   </button>
                 ))}
               </div>
@@ -1894,13 +1877,13 @@ export default function SemanticAtlasApp({
             <div className="absolute bottom-4 left-4 z-10 flex flex-wrap items-center gap-3 bg-eggshell/80 px-3 py-2 text-xs text-gravel backdrop-blur">
               <span className="inline-flex items-center gap-2">
                 <span className="size-2 rounded-full bg-obsidian" />
-                Stip = bericht
+                Stip = verhaal
               </span>
               <span className="inline-flex items-center gap-2">
                 <span className="h-3 w-5 rounded-full border border-obsidian/10 bg-obsidian/5" />
-                Eiland = dicht thema
+                Eiland = dichte groep
               </span>
-              <span>{sortedTopics.length.toLocaleString("nl-BE")} thema’s</span>
+              <span>{sortedTopics.length.toLocaleString("nl-BE")} categorieën</span>
             </div>
             {showMiniMap ? (
               <div
@@ -1988,7 +1971,7 @@ export default function SemanticAtlasApp({
             {selectedPoint ? (
               <section>
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-gravel">
-                  Geselecteerd bericht
+                  Geselecteerd verhaal
                 </p>
                 {selectedPoint.image ? (
                   <img
@@ -2027,7 +2010,7 @@ export default function SemanticAtlasApp({
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs text-gravel">
                   {[
-                    ...topicKeywords(topicsById.get(selectedPoint.topicId), 3),
+                    ...(selectedPoint.categoryIds ?? [selectedPoint.topicId]).map((id) => topicDisplayLabel(topicsById.get(id))),
                     selectedPoint.season,
                     selectedPoint.imageCount ? "met beelden" : "tekst",
                   ].map((tag) => (
@@ -2063,7 +2046,7 @@ export default function SemanticAtlasApp({
             ) : selectedCluster ? (
               <section>
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-gravel">
-                  Cluster
+                  Categorie
                 </p>
                 <div className="mt-4 flex items-center gap-3">
                   <span
@@ -2075,12 +2058,12 @@ export default function SemanticAtlasApp({
                   </h2>
                 </div>
                 <p className="mt-3 text-sm leading-6 text-gravel">
-                  {categoryFor(selectedCluster)?.description ??
+                  {selectedCluster.description ?? categoryFor(selectedCluster)?.description ??
                     "Een groep inhoudelijk verwante berichten uit het archief."}
                 </p>
                 <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 border-y border-chalk py-4 text-sm">
                   <div>
-                    <dt className="text-gravel">Berichten</dt>
+                    <dt className="text-gravel">Verhalen</dt>
                     <dd className="m-0 font-mono">
                       {selectedClusterPoints.length.toLocaleString("nl-BE")}
                     </dd>
@@ -2110,7 +2093,7 @@ export default function SemanticAtlasApp({
                 </dl>
                 <div className="mt-4">
                   <p className="mb-2 text-sm text-gravel">
-                    Veel voorkomende woorden
+                    Onderliggende tags
                   </p>
                   <div className="flex flex-wrap gap-2 text-xs text-gravel">
                     {topicKeywords(selectedCluster).map((keyword) => (
@@ -2147,12 +2130,12 @@ export default function SemanticAtlasApp({
                     type="button"
                     onClick={isolateSelectedCluster}
                   >
-                    Isoleer cluster{" "}
+                    Toon categorie{" "}
                     <LocateFixed className="size-4" aria-hidden="true" />
                   </button>
                   <a
                     className="flex min-h-10 items-center justify-between bg-transparent px-0 text-sm text-obsidian no-underline"
-                    href={`/archive/?topic=${encodeURIComponent(selectedCluster.id)}`}
+                    href={`/archive/?category=${encodeURIComponent(selectedCluster.id)}`}
                   >
                     Bekijk berichten{" "}
                     <ArrowRight className="size-4" aria-hidden="true" />

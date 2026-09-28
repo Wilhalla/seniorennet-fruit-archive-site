@@ -40,6 +40,8 @@ export type SearchListResult = Partial<SearchResult> & Pick<SearchDoc, 'id' | 'p
   blockIndex?: number
   terms?: string[]
 }
+export type SearchCategory = { id: string; label: string; postCount: number }
+export type PostCategoryIds = Record<string, string[]>
 
 type SerializedMiniSearch = Parameters<typeof MiniSearch.loadJS<SearchDoc>>[0]
 type LoadedSearchChunk = { id: string; index: MiniSearch<SearchDoc> }
@@ -105,6 +107,52 @@ export function useUrlBackedSearchQuery() {
   return { query, setQuery }
 }
 
+export function useSearchCategoryFilter() {
+  const [category, setCategory] = useState('all')
+  const [categories, setCategories] = useState<SearchCategory[]>([])
+  const [postCategoryIds, setPostCategoryIds] = useState<PostCategoryIds | null>(null)
+  const [categoryError, setCategoryError] = useState(false)
+
+  useEffect(() => {
+    const sync = () => { setCategory(new URLSearchParams(window.location.search).get('category') || 'all'); setCategoryError(false) }
+    sync()
+    window.addEventListener('popstate', sync)
+    return () => window.removeEventListener('popstate', sync)
+  }, [])
+
+  useEffect(() => {
+    const controller = new AbortController()
+    fetchJson<{ categories: SearchCategory[] }>('/generated/categories.json', { signal: controller.signal })
+      .then((value) => setCategories(value.categories))
+      .catch((error) => { if (!isAbortError(error)) console.error(error) })
+    return () => controller.abort()
+  }, [])
+
+  useEffect(() => {
+    if (category === 'all' || postCategoryIds) return undefined
+    const controller = new AbortController()
+    fetchJson<PostCategoryIds>('/generated/post-category-ids.json', { signal: controller.signal })
+      .then((value) => { setPostCategoryIds(value); setCategoryError(false) })
+      .catch((error) => { if (!isAbortError(error)) { console.error(error); setCategoryError(true) } })
+    return () => controller.abort()
+  }, [category, postCategoryIds])
+
+  function changeCategory(next: string) {
+    setCategory(next)
+    setCategoryError(false)
+    const url = new URL(window.location.href)
+    if (next === 'all') url.searchParams.delete('category')
+    else url.searchParams.set('category', next)
+    writeBrowserPath(`${url.pathname}${url.search}${url.hash}`, 'push')
+  }
+
+  return { category, categories, postCategoryIds, categoryLoading: category !== 'all' && !postCategoryIds && !categoryError, categoryError, changeCategory }
+}
+
+export function matchesSearchCategory(postId: string, category: string, postCategoryIds: PostCategoryIds | null) {
+  return category === 'all' || Boolean(postCategoryIds?.[postId]?.includes(category))
+}
+
 export function useSearchManifest() {
   const [manifest, setManifest] = useState<SearchManifest | null>(null)
 
@@ -121,7 +169,7 @@ export function useSearchManifest() {
   return manifest
 }
 
-export function useTitleSearchResults(query: string) {
+export function useTitleSearchResults(query: string, category = 'all', postCategoryIds: PostCategoryIds | null = null) {
   const [index, setIndex] = useState<MiniSearch<SearchListResult> | null>(null)
   const [loading, setLoading] = useState(false)
   const shouldLoad = !index && query.trim().length >= 2
@@ -165,11 +213,11 @@ export function useTitleSearchResults(query: string) {
 
   return useMemo(() => {
     const q = query.trim()
-    if (!index || q.length < 2) return { results: [] as SearchListResult[], loading }
+    if (!index || q.length < 2 || (category !== 'all' && !postCategoryIds)) return { results: [] as SearchListResult[], loading }
     const strict = index.search(q, titleSearchOptions) as SearchListResult[]
     const loose = strict.length ? strict : index.search(q, { ...titleSearchOptions, fuzzy: 0.24, combineWith: 'OR' }) as SearchListResult[]
-    return { results: loose.slice(0, 40), loading }
-  }, [index, loading, query])
+    return { results: loose.filter((result) => matchesSearchCategory(result.postId, category, postCategoryIds)).slice(0, 40), loading }
+  }, [index, loading, query, category, postCategoryIds])
 }
 
 export function useLazySearchIndex(query: string, enabled: boolean, manifest: SearchManifest | null) {
@@ -223,19 +271,20 @@ export function useLazySearchIndex(query: string, enabled: boolean, manifest: Se
   return { chunks, loading, loaded, allLoaded }
 }
 
-export function useSearchResults(chunks: LoadedSearchChunk[], query: string) {
+export function useSearchResults(chunks: LoadedSearchChunk[], query: string, category = 'all', postCategoryIds: PostCategoryIds | null = null) {
   return useMemo(() => {
     const q = query.trim()
-    if (!chunks.length || q.length < 2) return [] as SearchListResult[]
+    if (!chunks.length || q.length < 2 || (category !== 'all' && !postCategoryIds)) return [] as SearchListResult[]
     const bestByPost = new Map<string, SearchResultDoc>()
     for (const chunk of chunks) {
       const strict = chunk.index.search(q, searchOptions) as SearchResultDoc[]
       const loose = strict.length ? strict : chunk.index.search(q, { ...searchOptions, boost: { title: 5, excerpt: 2, block: 1 }, fuzzy: 0.24, combineWith: 'OR' }) as SearchResultDoc[]
       for (const result of loose) {
+        if (!matchesSearchCategory(result.postId, category, postCategoryIds)) continue
         const previous = bestByPost.get(result.postId)
         if (!previous || result.score > previous.score) bestByPost.set(result.postId, result)
       }
     }
     return [...bestByPost.values()].sort((a, b) => b.score - a.score).slice(0, 40)
-  }, [chunks, query])
+  }, [chunks, query, category, postCategoryIds])
 }

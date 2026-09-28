@@ -29,6 +29,8 @@ type ArchiveClientPost = Pick<PostSummary, 'id' | 'slug' | 'title' | 'date' | 'i
 type MapPoint = {
   id: string
   topicId?: string
+  postIds?: string[]
+  categoryIds?: string[]
 }
 
 type TopicRecord = {
@@ -45,11 +47,15 @@ const postSeries = (postSeriesData as { series: Array<{ id: string; title: strin
 const mapPoints = mapPointsData as MapPoint[]
 const topics = topicsData as TopicRecord[]
 const archiveSeries = buildArchiveSeries(postIndex, postSeries)
-const topicIdByPostId = new Map(mapPoints.map((point) => [point.id, point.topicId || '']))
+const categoryIdsByPostId = new Map(mapPoints.flatMap((point) =>
+  (point.postIds?.length ? point.postIds : [point.id]).map((postId) =>
+    [postId, point.categoryIds?.length ? point.categoryIds : point.topicId ? [point.topicId] : []] as const,
+  ),
+))
 
 function topicIdsFor(post: PostSummary) {
   const postIds = post.seriesPostIds?.length ? post.seriesPostIds : [post.id]
-  return Array.from(new Set(postIds.map((postId) => topicIdByPostId.get(postId)).filter((topicId): topicId is string => Boolean(topicId)))).sort()
+  return Array.from(new Set(postIds.flatMap((postId) => categoryIdsByPostId.get(postId) ?? []))).sort()
 }
 
 function slim(post: PostSummary): ArchiveClientPost {

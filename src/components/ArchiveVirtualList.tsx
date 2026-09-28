@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { ImageIcon, Layers2, MessageCircle } from 'lucide-react'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { ACTIVE_YEAR_VIEWPORT_OFFSET, activeYearFromVirtualItems } from '../lib/activeVirtualYear'
 import { archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveDate } from '../lib/archiveDateTime'
 import { activeArchiveTopicFromSearch, archiveTopicFilterLabel, filterArchivePostsByTopic } from '../lib/archiveTopicFilter'
@@ -82,8 +83,23 @@ export default function ArchiveVirtualList() {
   const yearGroups = useMemo(() => buildArchiveChronology(posts, { sort: false }).yearGroups, [posts])
 
   useEffect(() => {
-    setTopicFilter(activeArchiveTopicFromSearch(window.location.search))
+    const sync = () => setTopicFilter(activeArchiveTopicFromSearch(window.location.search))
+    sync()
+    window.addEventListener('popstate', sync)
+    return () => window.removeEventListener('popstate', sync)
   }, [])
+
+  function changeCategory(categoryId: string) {
+    const next = categoryId === 'all' ? '' : categoryId
+    setTopicFilter(next)
+    const url = new URL(window.location.href)
+    url.searchParams.delete('topic')
+    if (next) url.searchParams.set('category', next)
+    else url.searchParams.delete('category')
+    window.history.pushState(null, '', `${url.pathname}${url.search}${url.hash}`)
+    setActiveYear('')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const virtualizer = useWindowVirtualizer({
     count: posts.length,
@@ -121,12 +137,19 @@ export default function ArchiveVirtualList() {
   return (
     <>
       <section className="site-shell flex flex-wrap items-center justify-between gap-4 border-b border-rule py-6" aria-label="Archiefweergave">
-        {topicFilter ? (
-          <div className="rounded-2xl border border-chalk bg-pure-surface px-4 py-3 text-sm text-slate-ink shadow-soft">
-            <span>Gefilterd op thema <strong className="text-obsidian">{activeTopicLabel}</strong>: {posts.length.toLocaleString('nl-BE')} berichten.</span>{' '}
-            <a className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" href="/archive/">Wis filter</a>
-          </div>
-        ) : <span />}
+        <div className="flex min-w-0 flex-wrap items-center gap-3">
+          <label className="text-sm text-gravel" htmlFor="archive-category">Categorie</label>
+          <Select value={topicFilter || 'all'} onValueChange={changeCategory}>
+            <SelectTrigger id="archive-category" className="min-w-48 rounded-none border-0 border-b border-chalk bg-transparent px-0 shadow-none">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">Alle categorieën</SelectItem>
+              {payload.topics?.map((topic) => <SelectItem key={topic.id} value={topic.id}>{archiveTopicFilterLabel(topic, topic.id)}</SelectItem>)}
+            </SelectContent>
+          </Select>
+          {topicFilter && <span className="text-sm text-gravel">{posts.length.toLocaleString('nl-BE')} verhalen in {activeTopicLabel}</span>}
+        </div>
         <ArchiveViewToggle
           mode={mode}
           aggregatedCount={topicFilter ? filterArchivePostsByTopic(payload.aggregated, topicFilter).length : payload.aggregated.length}
@@ -161,7 +184,7 @@ export default function ArchiveVirtualList() {
         <section ref={listRef} className="min-w-0 scroll-mt-24" aria-label="Alle blogberichten">
           {!loading && topicFilter && posts.length === 0 && (
             <div className="rounded-2xl border border-dashed border-chalk bg-powder/40 p-8 text-slate-ink">
-              Geen berichten gevonden voor thema <strong className="text-obsidian">{activeTopicLabel}</strong>. <a className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" href="/archive/">Toon alle berichten</a>.
+              Geen berichten gevonden in categorie <strong className="text-obsidian">{activeTopicLabel}</strong>. <button className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" type="button" onClick={() => changeCategory('all')}>Toon alle berichten</button>.
             </div>
           )}
           {loading ? (

@@ -6,19 +6,22 @@ import { archiveSmallThumbUrl } from '../lib/assetUrls'
 import { postIndex, formatDate, type PostSummary } from '../lib/postIndex'
 
 type Props = { postId: string }
-type MapPoint = { id: string; topicId: string; x: number; y: number }
+type MapPoint = { id: string; postIds?: string[]; topicId: string; categoryIds?: string[]; x: number; y: number }
 type Topic = { id: string; label: string; generatedLabel: string }
 
 const countPill = 'inline-flex min-h-6 items-center gap-1 rounded-full bg-pure-surface px-2 font-mono text-xs text-midnight-navy shadow-soft'
+const relatedPosts = relatedPostsData as Record<string, string[]>
+const topicsById = new Map((topicsData as Topic[]).map((topic) => [topic.id, topic]))
+const postsById = new Map<string, PostSummary>(postIndex.map((post) => [post.id, post]))
+const pointsByPostId = new Map<string, MapPoint>(
+  (mapPointsData as MapPoint[]).flatMap((point) => (point.postIds?.length ? point.postIds : [point.id]).map((id) => [id, point] as const)),
+)
 
 export default function RelatedPosts({ postId }: Props) {
-  const relatedPosts = relatedPostsData as Record<string, string[]>
-  const mapPoints = mapPointsData as MapPoint[]
-  const topics = topicsData as Topic[]
-  const postsById = new Map<string, PostSummary>(postIndex.map((post) => [post.id, post]))
-  const point = mapPoints.find((item) => item.id === postId)
-  const topic = point ? topics.find((item) => item.id === point.topicId) : undefined
-  const topicLabel = topic ? (topic.label && topic.label !== 'Nog te benoemen' ? topic.label : topic.generatedLabel) : 'Nog te plaatsen in de atlas'
+  const point = pointsByPostId.get(postId)
+  const categories = (point?.categoryIds ?? [point?.topicId].filter((id): id is string => Boolean(id)))
+    .map((id) => ({ id, label: topicsById.get(id)?.label }))
+    .filter((category): category is { id: string; label: string } => Boolean(category.label))
   const related = (relatedPosts[postId] ?? []).map((id) => postsById.get(id)).filter(Boolean).slice(0, 6) as PostSummary[]
 
   if (!point && related.length === 0) return null
@@ -28,7 +31,7 @@ export default function RelatedPosts({ postId }: Props) {
       <div className="relative">
         <img className="apple-image absolute right-0 top-0 hidden w-20 -rotate-6 opacity-80 md:block" src="/apple-assets/apple-1-160.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
         <h2 id="related-atlas-title" className="section-title">Nabije berichten</h2>
-        <p className="section-kicker">Thema: <strong>{topicLabel}</strong>.</p>
+        {categories.length > 0 && <p className="section-kicker">Categorieën: {categories.map((category, index) => <span key={category.id}>{index > 0 && ' · '}<a className="font-semibold text-inherit underline decoration-chalk underline-offset-2 hover:decoration-obsidian" href={`/archive/?category=${encodeURIComponent(category.id)}`}>{category.label}</a></span>)}</p>}
       </div>
 
       {related.length > 0 && (

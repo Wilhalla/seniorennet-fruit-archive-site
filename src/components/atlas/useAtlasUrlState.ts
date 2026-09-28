@@ -21,7 +21,7 @@ export function useAtlasUrlState({
 
     const syncFromUrl = () => {
       const params = new URLSearchParams(window.location.search)
-      const topicParam = params.get('topic')
+      const topicParam = params.get('category') ?? params.get('topic')
       const yearParam = params.get('year')
       const seasonParam = params.get('season')
       const nextFilters: AtlasFilters = {

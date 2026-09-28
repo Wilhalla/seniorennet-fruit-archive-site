@@ -196,7 +196,7 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
           <div>
             <h2 className="section-title">Tempo, beeld, reactie.</h2>
           </div>
-          <p className="max-w-xl text-sm leading-6 text-gravel">Meer ratio’s dan ruwe volumes: jaren met veel posts per actieve dag, visuele jaargangen en thema’s die relatief veel reactie kregen.</p>
+          <p className="max-w-xl text-sm leading-6 text-gravel">Meer ratio’s dan ruwe volumes: jaren met veel posts per actieve dag, visuele jaargangen en categorieën die relatief veel reactie kregen.</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
           <ChartBlock title="Hoogste blogtempo per jaar" description="Berichten gedeeld door actieve blogdagen. Dit toont batch- of dagritme, niet alleen jaartotaal.">
@@ -205,7 +205,7 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
           <ChartBlock title="Meest visuele jaren" description="Gemiddeld aantal beelden per bericht. Jaren met excursies en fotoreeksen springen eruit.">
             <ValueBarChart data={visualYears} height={280} labelWidth={48} />
           </ChartBlock>
-          <ChartBlock title="Reactiedichte thema’s" description="Reacties per 100 berichten binnen de grootste themaclusters.">
+          <ChartBlock title="Reactiedichte categorieën" description="Reacties per 100 berichten, volgens de primaire categorie van elk bericht.">
             <ValueBarChart data={discussionTopics} height={320} labelWidth={150} />
           </ChartBlock>
           <ChartBlock title="Weekdagvolume" description="Aantal publicaties per weekdag, inclusief posts zonder specifiek uur.">
@@ -223,7 +223,7 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
       <Separator className="my-10 bg-chalk" />
 
       <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-        <ChartBlock title="Thema’s als zwaartepunten" description="De grootste semantische clusters uit het archief. Balklengte is volume; grijze markering toont beeldintensiteit.">
+        <ChartBlock title="Categorieën als zwaartepunten" description="Elk bericht telt hier in zijn primaire categorie. Balklengte is volume; grijze markering toont beeldintensiteit.">
           <ChartContainer config={topicChartConfig} className="h-[520px] w-full aspect-auto">
             <BarChart data={stats.topics} layout="vertical" margin={{ top: 0, right: 38, left: 8, bottom: 0 }}>
               <CartesianGrid horizontal={false} stroke="var(--color-chalk)" />
@@ -239,8 +239,8 @@ export default function StatsDashboard({ stats }: { stats: ArchiveStatsData }) {
 
         <MinimalCard>
           <CardHeader className="px-0 pb-4">
-            <CardTitle>Topic-details</CardTitle>
-            <CardDescription className="text-gravel">Gemiddelde lengte en beelden per thema.</CardDescription>
+            <CardTitle>Categoriedetails</CardTitle>
+            <CardDescription className="text-gravel">Gemiddelde lengte en beelden per primaire categorie.</CardDescription>
           </CardHeader>
           <CardContent className="px-0">
             <div className="grid gap-3">

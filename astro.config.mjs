@@ -12,7 +12,7 @@ const siteUrl =
 export default defineConfig({
   output: 'static',
   adapter: vercel(),
-  integrations: [react()],
+  integrations: [react({ babel: { plugins: ['babel-plugin-react-compiler'] } })],
   prefetch: { prefetchAll: false, defaultStrategy: 'hover' },
   vite: {
     plugins: [tailwindcss()],

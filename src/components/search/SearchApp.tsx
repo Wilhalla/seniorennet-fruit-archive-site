@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { ArrowRight, ImageIcon, Loader2, Search, Sparkles } from 'lucide-react'
 import { Input } from '@/components/ui/input'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { formatArchiveDate } from '../../lib/archiveDateTime'
-import { useLazySearchIndex, useSearchManifest, useSearchResults, useTitleSearchResults, useUrlBackedSearchQuery } from './searchClientHooks'
+import { useLazySearchIndex, useSearchCategoryFilter, useSearchManifest, useSearchResults, useTitleSearchResults, useUrlBackedSearchQuery } from './searchClientHooks'
 
 function snippet(block: string, terms: string[] = []) {
   const lower = block.toLowerCase()
@@ -26,13 +27,14 @@ function highlight(text: string, terms: string[] = []) {
 
 export default function SearchApp() {
   const { query, setQuery } = useUrlBackedSearchQuery()
+  const { category, categories, postCategoryIds, categoryLoading, categoryError, changeCategory } = useSearchCategoryFilter()
   const [fullTextEnabled, setFullTextEnabled] = useState(false)
   const manifest = useSearchManifest()
-  const titleSearch = useTitleSearchResults(query)
+  const titleSearch = useTitleSearchResults(query, category, postCategoryIds)
   const { chunks, loading: fullTextLoading, loaded: fullTextLoaded } = useLazySearchIndex(query, fullTextEnabled, manifest)
-  const fullTextResults = useSearchResults(chunks, query)
+  const fullTextResults = useSearchResults(chunks, query, category, postCategoryIds)
   const results = fullTextLoaded ? fullTextResults : titleSearch.results
-  const loading = fullTextLoaded ? fullTextLoading : titleSearch.loading
+  const loading = categoryLoading || (fullTextLoaded ? fullTextLoading : titleSearch.loading)
 
   return (
     <section className="site-shell py-20" aria-labelledby="search-title">
@@ -52,8 +54,18 @@ export default function SearchApp() {
           <Search className="size-5 shrink-0 text-slate-ink" aria-hidden="true" />
           <Input className="min-w-0 flex-1 border-0 bg-transparent px-0 text-xl shadow-none outline-none placeholder:text-slate-ink/60 focus-visible:ring-0 md:text-2xl" autoFocus type="search" value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === 'Enter') setFullTextEnabled(true) }} placeholder="Zoek bv. sterappel, bijen, compost, boskoop…" />
         </label>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <label className="text-sm text-gravel" htmlFor="search-category">Categorie</label>
+          <Select value={category} onValueChange={changeCategory}>
+            <SelectTrigger id="search-category" className="min-w-52 rounded-none border-0 border-b border-chalk bg-transparent px-0 shadow-none"><SelectValue /></SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">Alle categorieën</SelectItem>
+              {categories.map((item) => <SelectItem key={item.id} value={item.id}>{item.label} ({item.postCount})</SelectItem>)}
+            </SelectContent>
+          </Select>
+        </div>
         <div className="mt-3 flex flex-wrap justify-between gap-3 text-sm text-slate-ink">
-          <span>{query.trim().length < 2 ? 'Typ minstens twee letters.' : loading ? 'Zoekindex laden…' : `${results.length.toLocaleString('nl-BE')} resultaten${fullTextLoaded ? '' : ' in titels'}`}</span>
+          <span>{categoryError ? 'Categorieën konden niet worden geladen.' : query.trim().length < 2 ? 'Typ minstens twee letters.' : loading ? 'Zoekindex laden…' : `${results.length.toLocaleString('nl-BE')} resultaten${fullTextLoaded ? '' : ' in titels'}`}</span>
           {query.trim().length >= 2 && (
             <span className="inline-flex flex-wrap items-center gap-3">
               {!fullTextLoaded && <button className="font-medium text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" type="button" onClick={() => setFullTextEnabled(true)}>{fullTextLoading ? 'Volledige tekst laden…' : 'Zoek ook in volledige tekst'}</button>}
@@ -64,7 +76,7 @@ export default function SearchApp() {
       </div>
 
       <div className="grid" aria-live="polite">
-        {query.trim().length >= 2 && !loading && results.length === 0 && <p className="m-0 border-b border-chalk py-10 text-slate-ink">Geen resultaten.</p>}
+        {query.trim().length >= 2 && !loading && !categoryError && results.length === 0 && <p className="m-0 border-b border-chalk py-10 text-slate-ink">Geen resultaten.</p>}
         {results.map((result) => {
           const terms = result.terms ?? []
           const text = result.block ? snippet(result.block, terms) : 'Titelmatch. Laad de volledige tekstindex om in berichtinhoud en fragmenten te zoeken.'
