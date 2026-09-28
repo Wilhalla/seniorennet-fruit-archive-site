@@ -4,7 +4,8 @@
   "notes": [
     "Curated aggregation map for multi-part archive posts.",
     "Primary post remains canonical; continuation/deel/aanvulling posts remain individually addressable.",
-    "This file intentionally lives outside the ML topic pipeline."
+    "This file intentionally lives outside the ML topic pipeline.",
+    "Manual corrections connect explicit continuations to matching source posts, including pear gall midge, autumn raspberries, Rolhak, turkeys, Brogdale and Maaseik."
   ],
   "seriesCount": 361,
   "aggregatedPostCount": 964,
@@ -4565,30 +4566,30 @@
       "source": "same-day continuation curation"
     },
     {
-      "id": "series-199340",
-      "title": "Hebt u nog plaats voor een okkernoot?",
-      "primaryPostId": "199340",
+      "id": "series-198245",
+      "title": "Maaseik, Terracota leger van de eerste keizer van China te Xi'an",
+      "primaryPostId": "198245",
       "postIds": [
-        "199340",
+        "198245",
         "199060"
       ],
       "postCount": 2,
-      "imageCount": 10,
+      "imageCount": 18,
       "reactionCount": 0,
-      "source": "same-day continuation curation"
+      "source": "manual correction of explicit continuation"
     },
     {
-      "id": "series-119110",
-      "title": "Ballonkaartje uit Nederland",
-      "primaryPostId": "119110",
+      "id": "series-118171",
+      "title": "Brogdale 14 sept.",
+      "primaryPostId": "118171",
       "postIds": [
-        "119110",
+        "118171",
         "119131"
       ],
       "postCount": 2,
-      "imageCount": 11,
+      "imageCount": 18,
       "reactionCount": 0,
-      "source": "same-day continuation curation"
+      "source": "manual correction of explicit continuation"
     },
     {
       "id": "series-106647",
@@ -4671,17 +4672,17 @@
       "source": "LLM-curated cross-date/title continuation"
     },
     {
-      "id": "series-746",
-      "title": "TAART VAN YAMSI",
-      "primaryPostId": "746",
+      "id": "series-743",
+      "title": "PERENGALMUG CONTARINIA PYRIVORA",
+      "primaryPostId": "743",
       "postIds": [
-        "746",
+        "743",
         "745"
       ],
       "postCount": 2,
-      "imageCount": 1,
+      "imageCount": 0,
       "reactionCount": 0,
-      "source": "same-day continuation curation"
+      "source": "manual correction of explicit continuation"
     },
     {
       "id": "series-689",
@@ -4822,17 +4823,17 @@
       "source": "same-day continuation curation"
     },
     {
-      "id": "series-210",
-      "title": "RUBINOLA",
-      "primaryPostId": "210",
+      "id": "series-203",
+      "title": "HERFSTFRAMBOZEN",
+      "primaryPostId": "203",
       "postIds": [
-        "210",
+        "203",
         "211"
       ],
       "postCount": 2,
       "imageCount": 0,
       "reactionCount": 0,
-      "source": "same-day continuation curation"
+      "source": "manual correction of explicit continuation"
     },
     {
       "id": "series-196",
@@ -4862,17 +4863,17 @@
       "source": "LLM-curated cross-date/title continuation"
     },
     {
-      "id": "series-184",
-      "title": "NIEUWE KLEREN, OUDE STREKEN",
-      "primaryPostId": "184",
+      "id": "series-181",
+      "title": "KALKOENEN",
+      "primaryPostId": "181",
       "postIds": [
-        "184",
+        "181",
         "183"
       ],
       "postCount": 2,
       "imageCount": 0,
-      "reactionCount": 0,
-      "source": "same-day continuation curation"
+      "reactionCount": 1,
+      "source": "manual correction of explicit continuation"
     },
     {
       "id": "series-144",
@@ -4915,17 +4916,17 @@
       "source": "LLM-curated cross-date/title continuation"
     },
     {
-      "id": "series-84",
-      "title": "WELKE BRAAM HEB IN JE TUIN?",
-      "primaryPostId": "84",
+      "id": "series-82",
+      "title": "DE ROLHAK",
+      "primaryPostId": "82",
       "postIds": [
-        "84",
+        "82",
         "85"
       ],
       "postCount": 2,
       "imageCount": 0,
-      "reactionCount": 1,
-      "source": "same-day continuation curation"
+      "reactionCount": 2,
+      "source": "manual correction of explicit continuation"
     },
     {
       "id": "series-6",
@@ -5838,10 +5839,10 @@
     "294462": "series-294453",
     "294490": "series-294490",
     "294482": "series-294490",
-    "199340": "series-199340",
-    "199060": "series-199340",
-    "119110": "series-119110",
-    "119131": "series-119110",
+    "198245": "series-198245",
+    "199060": "series-198245",
+    "118171": "series-118171",
+    "119131": "series-118171",
     "106647": "series-106647",
     "108256": "series-106647",
     "1135": "series-1135",
@@ -5856,8 +5857,8 @@
     "1070": "series-1061",
     "780": "series-780",
     "792": "series-780",
-    "746": "series-746",
-    "745": "series-746",
+    "743": "series-743",
+    "745": "series-743",
     "689": "series-689",
     "690": "series-689",
     "693": "series-689",
@@ -5886,15 +5887,15 @@
     "282": "series-283",
     "270": "series-270",
     "271": "series-270",
-    "210": "series-210",
-    "211": "series-210",
+    "203": "series-203",
+    "211": "series-203",
     "196": "series-196",
     "198": "series-196",
     "188": "series-188",
     "190": "series-188",
     "192": "series-188",
-    "184": "series-184",
-    "183": "series-184",
+    "181": "series-181",
+    "183": "series-181",
     "144": "series-144",
     "145": "series-144",
     "140": "series-140",
@@ -5902,8 +5903,8 @@
     "142": "series-140",
     "137": "series-137",
     "138": "series-137",
-    "84": "series-84",
-    "85": "series-84",
+    "82": "series-82",
+    "85": "series-82",
     "6": "series-6",
     "73": "series-6",
     "472": "series-6",

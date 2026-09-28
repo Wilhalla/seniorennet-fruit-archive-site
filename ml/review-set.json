@@ -3,7 +3,7 @@
     "posts": "2e3007af4cff75dcdceabaaa0f10b2fd300ac36d5261c9865176d522b93d4df9",
     "images": "4fb77459ae48decefef86b238a55be82d779e9b5051d97bc3d65ea5d069b0309",
     "rawPosts": "1939b7a15110764470b97ff9a8734521cb906b26379b50e2cf99c4698c6f960b",
-    "series": "c09a0a3a98af1939179df46f7b442b11c16442e541dfce690a835c9d270c595a"
+    "series": "53e7898c743c6488789de0e7ec1d7768144fa276bccd3d52900cf6f625bcaf6a"
   },
   "seed": 42,
   "unitCount": 150,
@@ -99,10 +99,9 @@
       "split": "holdout"
     },
     {
-      "id": "series-746",
+      "id": "post-746",
       "postIds": [
-        "746",
-        "745"
+        "746"
       ],
       "split": "development"
     },
@@ -371,10 +370,9 @@
       "split": "development"
     },
     {
-      "id": "series-84",
+      "id": "post-84",
       "postIds": [
-        "84",
-        "85"
+        "84"
       ],
       "split": "development"
     },
