@@ -1,3 +1,7 @@
+# Legacy semantic Atlas pipeline
+
+This document describes the former local-model workflow. The live site now uses the tag-first categories and embedding projection described in [ML_PIPELINE.md](./ML_PIPELINE.md). The `semanticAtlas` package script invokes the new publisher.
+
 # Semantische atlas
 
 De publieke website blijft volledig statisch. Alle AI/ML-stappen gebeuren éénmalig lokaal tijdens preprocessing; de browser laadt alleen JSON uit `public/generated/` en tekent een canvas.

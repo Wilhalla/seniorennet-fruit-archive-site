@@ -4,18 +4,17 @@ Static Astro archive site.
 
 ## Semantic atlas
 
-The replacement, tag-first classification and similarity workflow is in [`ML_PIPELINE.md`](./ML_PIPELINE.md). Its tag vocabulary is a draft and has not changed the live site data.
+The live site uses the tag-first classification and similarity workflow in [`ML_PIPELINE.md`](./ML_PIPELINE.md). It publishes nine filterable categories, groups continuation posts into stories, and places those stories in the Atlas with a text embedding projection.
 
-The existing semantic atlas preprocessing pipeline, JSON contracts, rerun commands, and topic-label workflow are documented in [`SEMANTIC_ATLAS.md`](./SEMANTIC_ATLAS.md).
+The former local-model pipeline is documented in [`SEMANTIC_ATLAS.md`](./SEMANTIC_ATLAS.md) for historical reference. Running `semanticAtlas` now republishes the new pipeline from the cached tag scores and embeddings in `ml-work/`; see `ML_PIPELINE.md` for prerequisites and paid request commands.
 
 The image gallery preprocessing pipeline and local CLIP image embedding workflow are documented in [`IMAGE_ATLAS.md`](./IMAGE_ATLAS.md).
 
-Legacy data rerun from this directory (the tag-first pipeline is prepared separately):
+Rebuild the Atlas from cached classification and embedding results:
 
 ```bash
-pnpm semanticAtlas
-pnpm imageAtlas
-pnpm build
+nub run semanticAtlas
+nub run build
 ```
 
-The public UI remains static: it fetches `/generated/map-points.json` and `/generated/topics.json` and renders a canvas map in `/atlas/`.
+The gallery still uses its separate image processing workflow; image-level family classification awaits reviewed image descriptions.

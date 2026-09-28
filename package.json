@@ -16,7 +16,7 @@
     "copyImages": "tsx scripts/copy-images.ts",
     "clientData": "tsx scripts/build-client-data.ts",
     "compressStatic": "tsx scripts/compress-static.ts",
-    "semanticAtlas": ".venv/bin/python scripts/semantic_atlas.py && .venv/bin/python scripts/topic_calendar.py",
+    "semanticAtlas": ".venv/bin/python scripts/archive_ml_similarity.py && python3 scripts/archive_ml_publish.py && python3 scripts/topic_calendar.py && tsx scripts/build-client-data.ts",
     "imageAtlas": ".venv/bin/python scripts/image_atlas.py && .venv/bin/python scripts/species_atlas.py",
     "imageAtlas:bg": "nohup sh -c '.venv/bin/python scripts/image_atlas.py && .venv/bin/python scripts/species_atlas.py' > image-atlas.log 2>&1 & echo $! > image-atlas.pid",
     "speciesAtlas": ".venv/bin/python scripts/species_atlas.py",
