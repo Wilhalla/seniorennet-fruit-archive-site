@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import SiteLoader from '../../components/SiteLoader.astro'
 import StatsDashboard from '../../components/stats/StatsDashboard'
 import { buildArchiveStatsData } from '../../lib/archiveStats'
 
@@ -9,12 +10,6 @@ const stats = buildArchiveStatsData()
   title="Statistieken · Blogarchief Daniël Willaeys"
   description="Data-inzichten over berichten, beelden, reacties, ritme en thema’s in het blogarchief van Daniël Willaeys."
 >
-  <div id="stats-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Statistieken laden">
-    <div class="site-loader__mark" aria-hidden="true"></div>
-    <div class="site-loader__text">
-      <span>Blogarchief Daniël Willaeys</span>
-      <small>statistieken laden</small>
-    </div>
-  </div>
+  <SiteLoader id="stats-hydration-loader" label="Statistieken laden" message="statistieken laden" />
   <StatsDashboard stats={stats} client:load />
 </BaseLayout>

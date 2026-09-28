@@ -1,0 +1,16 @@
+---
+interface Props {
+  id: string
+  label: string
+  message: string
+}
+
+const { id, label, message } = Astro.props
+---
+<div id={id} class="site-loader site-loader--active" role="status" aria-live="polite" aria-label={label}>
+  <div class="site-loader__mark" aria-hidden="true"></div>
+  <div class="site-loader__text">
+    <span>Blogarchief Daniël Willaeys</span>
+    <small>{message}</small>
+  </div>
+</div>

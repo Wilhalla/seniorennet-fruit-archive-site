@@ -1,16 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import SiteLoader from '../../components/SiteLoader.astro'
 import ArchiveVirtualList from '../../components/ArchiveVirtualList'
 import { archiveStats } from '../../lib/postIndex'
 ---
 <BaseLayout title="Alle berichten · Blogarchief Daniël Willaeys">
-  <div id="archive-hydration-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Archief laden">
-    <div class="site-loader__mark" aria-hidden="true"></div>
-    <div class="site-loader__text">
-      <span>Blogarchief Daniël Willaeys</span>
-      <small>archief laden</small>
-    </div>
-  </div>
+  <SiteLoader id="archive-hydration-loader" label="Archief laden" message="archief laden" />
   <section class="site-shell relative overflow-hidden py-16 md:py-20">
     <img class="apple-image section-apple absolute right-8 top-10 hidden rotate-6 md:block" src="/apple-assets/apple-2-160.webp" alt="" aria-hidden="true" loading="eager" decoding="async" />
     <h1 class="display-title">Alle berichten</h1>

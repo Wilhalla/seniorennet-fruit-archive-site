@@ -6,7 +6,7 @@ import { archiveYear, buildArchiveChronology, displayArchiveYear, formatArchiveD
 import { activeArchiveTopicFromSearch, archiveTopicFilterLabel, filterArchivePostsByTopic } from '../lib/archiveTopicFilter'
 import { fetchJson, isAbortError } from '../lib/clientFetch'
 import { useDismissHydrationLoader } from './gallery/useGracefulLoader'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
+import ArchiveViewToggle, { type ArchiveViewMode } from './ArchiveViewToggle'
 import { yearPickerCountClass, yearPickerItemClass } from './yearPickerStyles'
 
 type ArchivePost = {
@@ -35,15 +35,11 @@ type ArchivePayload = {
   topics?: ArchiveTopic[]
 }
 
-type Mode = 'aggregated' | 'all'
-
 const emptyPayload: ArchivePayload = { aggregated: [], all: [] }
 const archiveRow = 'group relative grid min-h-[4.75rem] grid-cols-[6ch_12rem_minmax(0,1fr)_13rem] items-center gap-4 rounded-xl border border-transparent px-4 py-3 text-inherit no-underline outline-none transition-[background-color,border-color,box-shadow] duration-150 ease-out before:absolute before:inset-y-3 before:left-0 before:w-px before:rounded-full before:bg-transparent before:transition-colors hover:border-chalk/80 hover:bg-pure-surface/75 hover:shadow-subtle hover:before:bg-obsidian/25 focus-visible:border-obsidian/30 focus-visible:shadow-blue focus-visible:before:bg-obsidian max-md:min-h-[10rem] max-md:grid-cols-1 max-md:items-start max-md:gap-2 max-md:px-0 max-md:py-4'
 const metaText = 'font-mono text-xs text-gravel transition-colors group-hover:text-cinder'
 const countPill = 'inline-flex min-h-6 items-center gap-1.5 rounded-md border border-chalk/70 bg-powder/50 px-2 font-mono text-[11px] leading-none text-gravel transition-colors group-hover:border-chalk group-hover:bg-pure-surface group-hover:text-obsidian'
 const countIcon = 'size-3.5 text-fog transition-colors group-hover:text-gravel'
-const aggregatedTooltip = 'Bundelt vervolg-, aanvulling- en deelberichten tot één reeks, zodat lange verhalen als één bericht verschijnen.'
-const allPostsTooltip = 'Toont elk oorspronkelijk geïmporteerd blogbericht apart, ook vervolg-, aanvulling- en deelberichten.'
 
 function fetchArchive(signal?: AbortSignal): Promise<ArchivePayload> {
   return fetchJson<ArchivePayload>('/generated/archive-posts.client.json', { signal })
@@ -71,7 +67,7 @@ function useArchivePayload() {
 
 export default function ArchiveVirtualList() {
   const { payload, loading } = useArchivePayload()
-  const [mode, setMode] = useState<Mode>('aggregated')
+  const [mode, setMode] = useState<ArchiveViewMode>('aggregated')
   const [activeYear, setActiveYear] = useState('')
   const [topicFilter, setTopicFilter] = useState('')
   const listRef = useRef<HTMLElement | null>(null)
@@ -110,7 +106,7 @@ export default function ArchiveVirtualList() {
     if (year) setActiveYear(year)
   }, [virtualItems, posts])
 
-  function changeMode(nextMode: Mode) {
+  function changeMode(nextMode: ArchiveViewMode) {
     setMode(nextMode)
     setActiveYear('')
   }
@@ -131,30 +127,12 @@ export default function ArchiveVirtualList() {
             <a className="font-bold text-obsidian underline decoration-chalk underline-offset-4 hover:decoration-obsidian" href="/archive/">Wis filter</a>
           </div>
         ) : <span />}
-        <TooltipProvider>
-          <div className="inline-flex rounded-full bg-pure-surface p-1 shadow-soft" role="group" aria-label="Kies archiefweergave">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button type="button" className={`rounded-full px-4 py-2 text-sm transition ${mode === 'aggregated' ? 'bg-obsidian text-eggshell' : 'text-slate-ink hover:bg-powder hover:text-obsidian'}`} onClick={() => changeMode('aggregated')}>
-                  Samengevoegd <span className="font-mono">{(topicFilter ? filterArchivePostsByTopic(payload.aggregated, topicFilter).length : payload.aggregated.length).toLocaleString('nl-BE')}</span>
-                </button>
-              </TooltipTrigger>
-              <TooltipContent side="bottom" sideOffset={8} className="max-w-72 text-center leading-snug">
-                {aggregatedTooltip}
-              </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button type="button" className={`rounded-full px-4 py-2 text-sm transition ${mode === 'all' ? 'bg-obsidian text-eggshell' : 'text-slate-ink hover:bg-powder hover:text-obsidian'}`} onClick={() => changeMode('all')}>
-                  Losse berichten <span className="font-mono">{(topicFilter ? filterArchivePostsByTopic(payload.all, topicFilter).length : payload.all.length).toLocaleString('nl-BE')}</span>
-                </button>
-              </TooltipTrigger>
-              <TooltipContent side="bottom" sideOffset={8} className="max-w-72 text-center leading-snug">
-                {allPostsTooltip}
-              </TooltipContent>
-            </Tooltip>
-          </div>
-        </TooltipProvider>
+        <ArchiveViewToggle
+          mode={mode}
+          aggregatedCount={topicFilter ? filterArchivePostsByTopic(payload.aggregated, topicFilter).length : payload.aggregated.length}
+          allCount={topicFilter ? filterArchivePostsByTopic(payload.all, topicFilter).length : payload.all.length}
+          onChange={changeMode}
+        />
       </section>
 
       <section className="site-shell grid grid-cols-[4.25rem_minmax(0,1fr)] items-start gap-4 pb-56 pt-6 md:grid-cols-[11rem_minmax(0,1fr)] md:gap-8">

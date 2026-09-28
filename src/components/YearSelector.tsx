@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { yearPickerCountClass, yearPickerItemClass } from './yearPickerStyles'
 
 export type YearSelectorItem = {
   year: string
@@ -60,14 +61,16 @@ export default function YearSelector({
             const label = item.label ?? formatYear(item.year)
             return (
               <button
-                className={isActive ? 'grid min-h-8 w-full grid-cols-1 items-center justify-items-center gap-2 whitespace-nowrap rounded-full bg-obsidian px-2 text-center text-sm font-medium text-eggshell md:min-h-7 md:grid-cols-[1fr_auto] md:justify-items-stretch md:px-3 md:text-left md:text-base' : 'grid min-h-8 w-full grid-cols-1 items-center justify-items-center gap-2 whitespace-nowrap rounded-full px-2 text-center text-sm text-slate-ink hover:bg-powder hover:text-obsidian md:min-h-7 md:grid-cols-[1fr_auto] md:justify-items-stretch md:px-3 md:text-left md:text-base'}
+                className={yearPickerItemClass}
+                data-active={isActive ? 'true' : 'false'}
                 type="button"
                 key={item.year}
                 aria-label={`Spring naar ${label}, ${item.count} items`}
+                aria-current={isActive ? 'true' : undefined}
                 onClick={() => onSelect(item.year)}
               >
                 <span>{label}</span>
-                <span className="hidden font-mono text-xs md:inline">{item.count}</span>
+                <span className={yearPickerCountClass}>{item.count}</span>
               </button>
             )
           })}

@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import SiteLoader from '../components/SiteLoader.astro'
 import ChronologicalFeed from '../components/ChronologicalFeed'
 import portraitDaniel from '../assets/portrait_daniel_willaeys.jpg'
 import { aggregatedPostIndex } from '../lib/postIndex'
@@ -9,13 +10,7 @@ import { aggregatedPostIndex } from '../lib/postIndex'
   title="Chronologische tijdlijn · Blogarchief Daniël Willaeys"
   description="Alle berichten uit het blogarchief van Daniël Willaeys."
 >
-  <div id="home-page-loader" class="site-loader site-loader--active" role="status" aria-live="polite" aria-label="Tijdlijn laden">
-    <div class="site-loader__mark" aria-hidden="true"></div>
-    <div class="site-loader__text">
-      <span>Blogarchief Daniël Willaeys</span>
-      <small>tijdlijn laden</small>
-    </div>
-  </div>
+  <SiteLoader id="home-page-loader" label="Tijdlijn laden" message="tijdlijn laden" />
   <div class="relative w-full overflow-hidden border-b border-chalk bg-eggshell px-8 py-14 max-md:px-4 md:py-18 lg:py-22">
     <img
       class="apple-image absolute right-[6vw] top-10 hidden w-24 rotate-6 opacity-80 lg:block"
@@ -61,7 +56,7 @@ import { aggregatedPostIndex } from '../lib/postIndex'
         </p>
         <div class="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
           <a
-            class="inline-flex min-h-9 items-center gap-2 rounded-full bg-obsidian px-4 text-body font-medium text-eggshell no-underline shadow-blue hover:text-eggshell"
+            class="button-link gap-2"
             href="/search/"
           >
             <svg class="size-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
