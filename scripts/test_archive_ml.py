@@ -77,6 +77,64 @@ class ArchiveMlTests(unittest.TestCase):
         response["usage"] = {"cost": 0.001}
         self.assertEqual(archive_ml.validate_answer(response, VOCABULARY)["tagScores"]["fruit"], 0.8)
 
+    def test_jev_batch_scores_named_records_and_allocates_exact_total_cost(self):
+        payload = archive_ml.jev_batch_payload([{"title": "Appels"}, {"title": "Bezoek"}], VOCABULARY)
+        self.assertEqual(set(payload["questions"]), {"r0__fruit", "r0__visit", "r1__fruit", "r1__visit"})
+        self.assertEqual(payload["state"]["records"][1]["id"], "r1")
+        response = {"answers": {
+            "r0__fruit": {"type": "noul", "noul": 0.9}, "r0__visit": {"type": "noul", "noul": 0.1},
+            "r1__fruit": {"type": "noul", "noul": 0.2}, "r1__visit": {"type": "noul", "noul": 0.8},
+        }, "usage": {"cost": 0.002}}
+        results = archive_ml.validate_batch_answers(response, VOCABULARY, 2)
+        self.assertEqual(results[0]["tagScores"], {"fruit": 0.9, "visit": 0.1})
+        self.assertEqual(results[1]["tagScores"], {"fruit": 0.2, "visit": 0.8})
+        self.assertAlmostEqual(sum(row["usage"]["cost"] for row in results), 0.002)
+        del response["answers"]["r1__visit"]
+        with self.assertRaisesRegex(ValueError, "visit"):
+            archive_ml.validate_batch_answers(response, VOCABULARY, 2)
+
+    def test_tagging_batches_units_and_reuses_per_unit_cache(self):
+        units = [
+            {"id": f"post-{index}", "postIds": [str(index)], "title": f"Post {index}",
+             "parts": [{"slug": str(index), "title": f"Post {index}", "text": "Appels"}]}
+            for index in range(3)
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            vocabulary = root / "tags.json"
+            output = root / "scores.json"
+            archive_ml.write_json(vocabulary, VOCABULARY)
+            args = argparse.Namespace(vocabulary=vocabulary, paid=True, max_items=3, max_usd=1,
+                                      reserve_usd=0.01, batch_size=2, observations=None,
+                                      sample=None, output=output)
+            payload_sizes = []
+
+            def respond(payload, _key):
+                size = len(payload["state"]["records"])
+                payload_sizes.append(size)
+                return {"answers": {f"r{index}__{tag['id']}": {"type": "noul", "noul": 0.8}
+                                    for index in range(size) for tag in VOCABULARY["tags"]},
+                        "usage": {"cost": size * 0.001}}
+
+            with patch.object(archive_ml, "WORK", root / "work"), \
+                 patch.object(archive_ml, "load_all_units", return_value=units), \
+                 patch.object(archive_ml, "openrouter_key", return_value="test-key"), \
+                 patch.object(archive_ml, "request_jev", side_effect=respond):
+                archive_ml.classify(args)
+                self.assertEqual(payload_sizes, [2, 1])
+                rows = archive_ml.load_json(output)
+                self.assertEqual(len(rows), 3)
+                self.assertAlmostEqual(sum(row["usage"]["cost"] for row in rows.values()), 0.003)
+                archive_ml.classify(args)
+                self.assertEqual(payload_sizes, [2, 1])
+                args.batch_size = 1
+                archive_ml.classify(args)
+                # The original final unit was already sent alone, so its raw
+                # request is reused while the two grouped units are rescored.
+                self.assertEqual(payload_sizes, [2, 1, 1, 1])
+                ledger = archive_ml.load_json(root / "work/cache/jev/paid-requests.json")
+                self.assertAlmostEqual(sum(ledger.values()), 0.005)
+
     def test_paid_tagging_requires_approved_vocabulary_and_limits(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "tags.json"

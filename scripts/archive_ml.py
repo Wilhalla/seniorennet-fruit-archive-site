@@ -159,6 +159,23 @@ def jev_payload(state: dict[str, str], vocabulary: dict[str, Any]) -> dict[str, 
     return {"model": JEV_MODEL, "state": state, "questions": questions}
 
 
+def jev_batch_payload(states: list[dict[str, str]], vocabulary: dict[str, Any]) -> dict[str, Any]:
+    """Ask the same independent tag questions about each named archive unit."""
+    if not states:
+        raise ValueError("Jev batch must contain at least one unit")
+    base_questions = jev_payload({}, vocabulary)["questions"]
+    questions = {
+        f"r{index}__{tag_id}": {
+            "type": "noul",
+            "instructions": f'For the record with id "r{index}", and only that record: {question["instructions"]}',
+        }
+        for index in range(len(states))
+        for tag_id, question in base_questions.items()
+    }
+    records = [{"id": f"r{index}", **state} for index, state in enumerate(states)]
+    return {"model": JEV_MODEL, "state": {"records": records}, "questions": questions}
+
+
 def question_hash(vocabulary: dict[str, Any]) -> str:
     """Threshold or display-label edits do not invalidate paid Jev scores."""
     return digest(jev_payload({}, vocabulary)["questions"])
@@ -191,6 +208,23 @@ def validate_answer(response: dict[str, Any], vocabulary: dict[str, Any]) -> dic
     if not isinstance(cost, (int, float)) or cost < 0 or not math.isfinite(cost):
         raise ValueError("Jev response lacks usable cost; stop batch to protect budget")
     return {"tagScores": scores, "model": response.get("model"), "usage": usage}
+
+
+def validate_batch_answers(response: dict[str, Any], vocabulary: dict[str, Any], count: int) -> list[dict[str, Any]]:
+    """Validate every answer before writing any per-unit result."""
+    usage = response.get("usage") or {}
+    cost = usage.get("cost")
+    if not isinstance(cost, (int, float)) or cost < 0 or not math.isfinite(cost):
+        raise ValueError("Jev response lacks usable cost; stop batch to protect budget")
+    answers = response.get("answers") or {}
+    results = []
+    for index in range(count):
+        item_answers = {tag["id"]: answers.get(f'r{index}__{tag["id"]}') for tag in vocabulary["tags"]}
+        per_unit = validate_answer({"answers": item_answers, "model": response.get("model"),
+                                    "usage": {"cost": cost / count}}, vocabulary)
+        per_unit["usage"]["batchCostUsd"] = cost
+        results.append(per_unit)
+    return results
 
 
 def request_jev(payload: dict[str, Any], key: str) -> dict[str, Any]:
@@ -261,6 +295,8 @@ def classify(args: argparse.Namespace) -> None:
         raise ValueError("Paid classification requires --paid, --max-items and --max-usd")
     if args.max_items <= 0 or args.max_usd <= 0:
         raise ValueError("max-items and max-usd must be positive")
+    if not 1 <= args.batch_size <= 8:
+        raise ValueError("batch-size must be between 1 and 8 browse units")
     key = openrouter_key()
     if not key:
         raise ValueError("OPENROUTER_API_KEY is missing")
@@ -272,12 +308,22 @@ def classify(args: argparse.Namespace) -> None:
     vocabulary_hash = question_hash(vocabulary)
     output = load_json(args.output) if args.output.exists() else {}
     output = {unit_id: row for unit_id, row in output.items() if row.get("vocabularyHash") == vocabulary_hash}
-    spent = sum(float(row["usage"]["cost"]) for row in output.values() if "usage" in row)
     cache_dir = WORK / "cache" / "jev"
-    completed = 0
+    spend_path = cache_dir / "paid-requests.json"
+    if spend_path.exists():
+        paid_requests = load_json(spend_path)
+    else:
+        # Carry forward costs from older per-unit runs that had no request ledger.
+        legacy_cost = sum(float(row["usage"]["cost"]) for row in output.values() if "usage" in row)
+        paid_requests = {"legacy-output": legacy_cost} if legacy_cost else {}
+    spent = sum(float(cost) for cost in paid_requests.values())
+    pending = []
     for unit in units:
-        payload = jev_payload(unit_state(unit, observations), vocabulary)
-        cache_key = digest(payload)
+        state = unit_state(unit, observations)
+        # Keep solo and grouped scores separate so a quality comparison can run
+        # without silently reusing the other method's cached answers.
+        cache_key = digest({"model": JEV_MODEL, "state": state, "questionsHash": vocabulary_hash,
+                            "batchingVersion": 1, "batchSize": args.batch_size})
         previous = output.get(unit["id"])
         if previous and previous.get("cacheKey") == cache_key:
             continue
@@ -286,19 +332,42 @@ def classify(args: argparse.Namespace) -> None:
             output[unit["id"]] = load_json(cache_path)
             write_json(args.output, output)
             continue
-        if completed >= args.max_items or spent + args.reserve_usd > args.max_usd:
+        if len(pending) >= args.max_items:
             break
-        response = validate_answer(request_jev(payload, key), vocabulary)
-        spent += float(response["usage"]["cost"])
-        output[unit["id"]] = {**response, "unitId": unit["id"], "postIds": unit["postIds"], "cacheKey": cache_key,
-                              "vocabularyVersion": vocabulary["version"], "vocabularyHash": vocabulary_hash,
-                              "inputHash": digest(payload["state"])}
-        write_json(cache_path, output[unit["id"]])
-        write_json(args.output, output)
-        completed += 1
+        pending.append((unit, state, cache_key, cache_path))
+    completed = 0
+    requests = 0
+    for start in range(0, len(pending), args.batch_size):
+        if spent + args.reserve_usd > args.max_usd:
+            break
+        batch = pending[start:start + args.batch_size]
+        payload = jev_batch_payload([state for _, state, _, _ in batch], vocabulary)
+        batch_hash = digest(payload)
+        batch_cache = cache_dir / "batches" / f"{batch_hash}.json"
+        if batch_cache.exists():
+            raw_response = load_json(batch_cache)
+        else:
+            raw_response = request_jev(payload, key)
+            write_json(batch_cache, raw_response)
+            requests += 1
+        reported_cost = (raw_response.get("usage") or {}).get("cost")
+        if not isinstance(reported_cost, (int, float)) or reported_cost < 0 or not math.isfinite(reported_cost):
+            raise ValueError("Jev response lacks usable cost; stop batch to protect budget")
+        if batch_hash not in paid_requests:
+            paid_requests[batch_hash] = float(reported_cost)
+            spent += paid_requests[batch_hash]
+            write_json(spend_path, paid_requests)
+        results = validate_batch_answers(raw_response, vocabulary, len(batch))
+        for (unit, state, cache_key, cache_path), result in zip(batch, results, strict=True):
+            output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"], "cacheKey": cache_key,
+                                  "vocabularyVersion": vocabulary["version"], "vocabularyHash": vocabulary_hash,
+                                  "inputHash": digest(state), "batchHash": batch_hash}
+            write_json(cache_path, output[unit["id"]])
+            write_json(args.output, output)
+            completed += 1
         if spent > args.max_usd:
             raise RuntimeError("Reported cost exceeded ceiling; stop and use a provider key spending limit for a hard cap")
-    print(f"Tagged {completed} new browse units; recorded total ${spent:.6f}; {len(output)} cached records")
+    print(f"Tagged {completed} new browse units in {requests} paid requests; recorded total ${spent:.6f}; {len(output)} cached records")
 
 
 def embed(args: argparse.Namespace) -> None:
@@ -432,6 +501,7 @@ def main() -> None:
     classification.add_argument("--output", type=Path, default=WORK / "tag-scores.json")
     classification.add_argument("--paid", action="store_true")
     classification.add_argument("--max-items", type=int)
+    classification.add_argument("--batch-size", type=int, default=8, help="Browse units per Jev request (1-8; default 8)")
     classification.add_argument("--max-usd", type=float)
     classification.add_argument("--reserve-usd", type=float, default=0.01, help="Minimum remaining budget before each request")
     embeddings = commands.add_parser("embed", help="Paid text embeddings for browse-unit similarity")
