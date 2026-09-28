@@ -16,6 +16,7 @@ worktree-rm name force='false':
 
 setup:
     nub install --prefer-frozen-lockfile
+    git config --local core.hooksPath .githooks
 
 dev: setup
     jp dev --port 4321 -- nub run dev -- --host 127.0.0.1 --port 4321
@@ -26,6 +27,7 @@ test:
 check:
     nub run build
     nub run test
+    python3 -m unittest discover -s scripts -p 'test_archive_ml.py'
 
 clean:
     rm -rf dist .astro
