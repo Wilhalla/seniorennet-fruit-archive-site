@@ -28,7 +28,12 @@ BROAD_VISUAL_TAGS: dict[str, dict[str, str]] = {
     "bessen": {"label": "bes / kleinfruit", "type": "fruit_kind"},
     "bloesem": {"label": "bloesem", "type": "plant_stage"},
     "tuin": {"label": "tuin / boomgaard", "type": "place_or_habitat"},
+    "tuinplanten": {"label": "tuin / boomgaard", "type": "place_or_habitat"},
+    "tuinwerk": {"label": "tuin / boomgaard", "type": "place_or_habitat"},
     "dieren": {"label": "dier / insect", "type": "animal_broad"},
+    "vogels": {"label": "dier / insect", "type": "animal_broad"},
+    "insecten": {"label": "dier / insect", "type": "animal_broad"},
+    "andere_dieren": {"label": "dier / insect", "type": "animal_broad"},
 }
 
 # Seed list: deliberately restricted to species/cultivars likely in this archive.
@@ -289,13 +294,14 @@ def tag_image(image: dict[str, Any], post_tags: list[dict[str, Any]], candidates
         )
         tags[tag.candidateId or slugify(tag.label)] = tag
 
-    for visual_tag in image.get("visualTags", []):
+    visual_field = "imageTagIds" if "imageTagIds" in image else "visualTags"
+    for visual_tag in image.get(visual_field, []):
         broad = BROAD_VISUAL_TAGS.get(visual_tag)
         if not broad:
             continue
         key = slugify(broad["label"])
         tag = tags.setdefault(key, EvidenceTag(broad["label"], broad["type"], "medium", candidateId=key))
-        tag.add("visual_context", "visualTags", visual_tag)
+        tag.add("visual_context", visual_field, visual_tag)
 
     # Image-local evidence: caption and filename. These are cheap and can differ
     # per image, unlike post text.

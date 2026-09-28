@@ -11,9 +11,10 @@ from typing import Any
 from archive_ml import (WORK, digest, image_state, load_json, openrouter_key, question_hash,
                         request_jev, validate_batch_answers, validate_vocabulary, write_json)
 from archive_ml_counts import selected_tags
+from archive_ml_units import meaningful_image_text
 
 
-FAMILY_TITLE = re.compile(r"\b(familie|familiefeest|dochter|zoon|kleinkind|kleindochter|kleinzoon|broer|zus|moeder|vader|mama|papa|nonkel|tante|communie|huwelijk|trouwfeest)\b", re.I)
+FAMILY_TITLE = re.compile(r"\b(familie|familiefeest|dochter|zoon|kleinkind(?:eren)?|kleindochter|kleinzoon|broer|zus|moeder|vader|mama|papa|opa|oma|nonkel|tante|nicht(?:je)?s?|neef(?:je)?s?|communie|huwelijk|trouwfeest)\b", re.I)
 CELEBRATION_TITLE = re.compile(r"\b(familiefeest|verjaardag|communie|jubileum|trouwfeest|huwelijk|nieuwjaarsfeest)\b", re.I)
 
 
@@ -23,9 +24,17 @@ def selected_image_tags(observation: dict[str, Any], prediction: dict[str, Any],
     scores = prediction["tagScores"]
     tags = selected_tags(scores, vocabulary)
     post = post_categories.get(str(observation["postId"]), {})
-    title = (observation.get("linkedContext") or {}).get("postTitle") or ""
+    context = observation.get("linkedContext") or {}
+    title = " ".join(value for value in (context.get("postTitle"), context.get("seriesTitle")) if value)
+    image_specific_text = any(link.get("kind") in {"image-alt", "image-title", "numbered-caption"}
+                              and link.get("sourcePostId") == observation["postId"]
+                              and meaningful_image_text(link.get("text") or "")
+                              for link in context.get("linkedText", []))
+    excerpt_relation = FAMILY_TITLE.search(context.get("postExcerpt") or "") and image_specific_text
     real_people = scores.get("mensen", 0) >= 0.65
-    if real_people and "familie" in post.get("categoryIds", []) and FAMILY_TITLE.search(title):
+    if not real_people:
+        tags.discard("familie")
+    if real_people and "familie" in post.get("categoryIds", []) and (FAMILY_TITLE.search(title) or excerpt_relation):
         tags.add("familie")
     if real_people and "familiefeesten" in post.get("tagIds", []) and CELEBRATION_TITLE.search(title):
         tags.add("familiefeest")

@@ -8,6 +8,7 @@ from pathlib import Path
 
 from archive_ml import WORK, load_json, question_hash, write_json
 from archive_ml_image_tags import selected_image_tags
+from archive_ml_units import meaningful_image_text
 
 
 OUT_DIRS = (Path("src/data/generated"), Path("public/generated"))
@@ -52,7 +53,8 @@ def build_image_outputs(source_images: list[dict], client_images: list[dict], ob
         context = observation["linkedContext"]
         specific_text = [link["text"] for link in context.get("linkedText", [])
                          if link.get("kind") in {"image-alt", "image-title", "numbered-caption"}
-                         and link.get("sourcePostId") == observation["postId"]][:2]
+                         and link.get("sourcePostId") == observation["postId"]
+                         and meaningful_image_text(link.get("text") or "")][:2]
         assignment = selected_by_id[row["id"]]
         return {**row, "postId": observation["postId"], "seriesId": context.get("seriesId"),
                 "visualDescription": observation["description"],

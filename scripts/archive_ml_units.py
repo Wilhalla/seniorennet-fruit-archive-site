@@ -75,9 +75,13 @@ def usable_image_links(context: dict[str, Any]) -> list[dict[str, str]]:
          "sourcePostId": link["sourcePostId"], "role": "linked-context-only"}
         for link in context.get("linkedText", [])
         if link.get("kind") in {"image-alt", "image-title", "numbered-caption"}
-        and isinstance(link.get("text"), str) and link["text"].strip()
+        and isinstance(link.get("text"), str) and meaningful_image_text(link["text"])
         and link.get("sourcePostId") == context.get("postId")
     ][:2]
+
+
+def meaningful_image_text(value: str) -> bool:
+    return sum(character.isalnum() for character in value) >= 2
 
 
 def image_state(image: dict[str, Any]) -> dict[str, Any]:
@@ -93,6 +97,8 @@ def image_state(image: dict[str, Any]) -> dict[str, Any]:
         "linked_context": {
             "role": "source-text-not-visual-evidence", "source_post_id": context.get("postId"),
             "post_title": (context.get("postTitle") or "")[:160],
+            "series_title": (context.get("seriesTitle") or "")[:160]
+            if context.get("seriesTitle") != context.get("postTitle") else "",
             "post_excerpt": (context.get("postExcerpt") or "")[:500],
             "image_specific_text": usable_image_links(context),
         },
@@ -156,7 +162,7 @@ def image_text_links(raw_post: dict[str, Any], image_src: str, image_index: int)
         if first <= ordinal <= last and last - first < 10:
             links.append({"kind": "numbered-caption", "text": match.group(3).strip(),
                           "sourcePostId": raw_post["id"], "imageOrdinal": ordinal})
-    return links
+    return [link for link in links if meaningful_image_text(link["text"])]
 
 
 def image_context(image: dict[str, Any], raw_post: dict[str, Any], series: dict[str, Any] | None) -> dict[str, Any]:

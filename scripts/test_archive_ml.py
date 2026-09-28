@@ -219,6 +219,8 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(state["visual_evidence"]["description"], "Twee mensen aan tafel.")
         self.assertNotIn("opa", str(state["visual_evidence"]).lower())
         self.assertEqual(state["linked_context"]["image_specific_text"][0]["text"], "Opa en zijn kleinkind")
+        row["linkedContext"]["seriesTitle"] = "Familiefeest van opa"
+        self.assertEqual(image_state(row)["linked_context"]["series_title"], "Familiefeest van opa")
         row["descriptionStatus"] = "auto-accepted"
         self.assertEqual(image_state(row)["visual_evidence"]["role"], "auto-caption-visible-content")
         row["descriptionStatus"] = "unreviewed"
@@ -236,6 +238,21 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertNotIn("familie", selected_image_tags(observation, prediction, vocabulary,
                                                         {"one": {"categoryIds": ["reizen"], "tagIds": []}}))
         prediction["tagScores"]["mensen"] = 0.2
+        prediction["tagScores"]["familie"] = 0.9
+        self.assertNotIn("familie", selected_image_tags(observation, prediction, vocabulary, categories))
+
+    def test_family_context_follows_continuation_and_matched_image_text(self):
+        vocabulary = {"tags": [{"id": "mensen", "threshold": 0.5},
+                               {"id": "familie", "threshold": 0.65}]}
+        prediction = {"tagScores": {"mensen": 0.9, "familie": 0.1}}
+        categories = {"one": {"categoryIds": ["familie"], "tagIds": []}}
+        observation = {"postId": "one", "linkedContext": {"postTitle": "Vervolg",
+                        "seriesTitle": "Familiefeest met André", "postExcerpt": ""}}
+        self.assertIn("familie", selected_image_tags(observation, prediction, vocabulary, categories))
+        observation["linkedContext"] = {"postTitle": "Jonathan 18", "postExcerpt": "Ons kleinkind viert feest.",
+                                        "linkedText": [{"kind": "numbered-caption", "text": "Het koppel", "sourcePostId": "one"}]}
+        self.assertIn("familie", selected_image_tags(observation, prediction, vocabulary, categories))
+        observation["linkedContext"]["linkedText"] = []
         self.assertNotIn("familie", selected_image_tags(observation, prediction, vocabulary, categories))
 
     def test_caption_response_requires_one_ordered_caption_per_image(self):
@@ -249,6 +266,8 @@ class ArchiveMlTests(unittest.TestCase):
     def test_repeated_image_source_keeps_its_own_html_alt(self):
         post = {"id": "one", "html": '<img src="/archive-images/a.jpg" alt="Eerste"><img src="/archive-images/a.jpg" alt="Tweede">'}
         self.assertEqual(image_text_links(post, "/archive-images/a.jpg", 1)[0]["text"], "Tweede")
+        post["html"] = '<p>1. "</p><img src="/archive-images/a.jpg" alt="?">'
+        self.assertEqual(image_text_links(post, "/archive-images/a.jpg", 0), [])
 
     def test_many_image_observations_are_sampled_across_the_story(self):
         observations = {"one": [{"imageId": str(i), "visualDescription": f"Foto {i}"} for i in range(30)]}

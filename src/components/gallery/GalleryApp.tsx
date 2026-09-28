@@ -48,14 +48,11 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
   const {
     filtered,
     rows: galleryRows,
-    visibleThemes,
     highPriorityThumbnailIds,
     eagerThumbnailIds,
   } = gallerySession
-  const peopleCount = visibleThemes.find((item) => item.id === 'familie')?.count ?? 0
-  const plantCount = visibleThemes
-    .filter((item) => ['tuin', 'tuinwerk', 'fruit', 'bloemen'].includes(item.id))
-    .reduce((sum, item) => sum + item.count, 0)
+  const peopleCount = filtered.filter((image) => image.visualTags.includes('mensen')).length
+  const plantCount = filtered.filter((image) => image.visualTags.some((tag) => ['tuin', 'fruit'].includes(tag))).length
 
   const galleryVirtualizer = useWindowVirtualizer({
     count: galleryRows.length,
