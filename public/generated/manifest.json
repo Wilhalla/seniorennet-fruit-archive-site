@@ -1,18 +1,13 @@
 {
-  "generatedAt": "2026-05-28T22:08:40Z",
+  "contractVersion": 3,
   "postCount": 3281,
-  "embeddingModel": "BAAI/bge-m3",
-  "textEmbeddingModel": "BAAI/bge-m3",
-  "imageEmbeddingModel": "sentence-transformers/clip-ViT-B-32",
-  "imageCount": 13144,
-  "imagePostCoverage": 0.6574,
-  "fusionMethod": "balanced-text-visual-concept-fusion-image-concat",
-  "textWeight": 1.0,
-  "imageWeight": 1.0,
-  "visualSemanticWeight": 1.0,
-  "clusterMethod": "category+agglomerative-cosine",
-  "clusterMode": "category",
-  "projectionMethod": "umap",
-  "relatedK": 10,
-  "contractVersion": 2
+  "browseUnitCount": 2678,
+  "tagVocabularyVersion": "archive-tags-1",
+  "tagCount": 54,
+  "categoryMapVersion": "archive-categories-1",
+  "categoryCount": 9,
+  "embeddingModel": "Qwen/Qwen3-Embedding-8B",
+  "projectionMethod": "umap-cosine-v1",
+  "relatedMethod": "exact-cosine-embedding-neighbors",
+  "embeddingInput": "post-text-and-reviewed-image-descriptions"
 }

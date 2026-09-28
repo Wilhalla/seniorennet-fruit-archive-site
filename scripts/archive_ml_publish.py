@@ -90,12 +90,18 @@ def build_outputs(posts: list[dict], units: list[dict], predictions: dict, vocab
                "textKeywords": [tag_labels[tag_id] for tag_id in category["tagIds"][:8]]}
               for category in published_categories]
     return {
+        "manifest.json": {"contractVersion": 3, "postCount": len(posts), "browseUnitCount": len(units),
+                          "tagVocabularyVersion": vocabulary["version"], "tagCount": len(known_tags),
+                          "categoryMapVersion": mapping["version"], "categoryCount": len(published_categories),
+                          "embeddingModel": atlas["model"], "projectionMethod": atlas["method"],
+                          "relatedMethod": "exact-cosine-embedding-neighbors", "embeddingInput": "post-text-and-reviewed-image-descriptions"},
         "categories.json": {"version": mapping["version"], "vocabularyVersion": vocabulary["version"],
                             "embeddingModel": atlas["model"], "embeddingMethod": atlas["method"],
                             "categories": published_categories},
         "map-points.json": map_points,
         "topics.json": topics,
         "post-categories.json": post_categories,
+        "post-category-ids.json": {post_id: row["categoryIds"] for post_id, row in post_categories.items()},
         "related-posts.json": related_posts,
     }
 

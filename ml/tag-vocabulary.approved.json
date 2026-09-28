@@ -263,12 +263,14 @@
     {
       "id": "familie",
       "label": "Familie",
+      "threshold": 0.7,
       "question": "Zijn familieleden of het gezinsleven een inhoudelijk onderwerp van de eenheid?",
       "definition": "Persoonlijke familieverhalen en momenten waarop verwantschap centraal staat."
     },
     {
       "id": "familiefeesten",
       "label": "Familiefeesten",
+      "threshold": 0.7,
       "question": "Beschrijft de eenheid een viering binnen de familie?",
       "definition": "Onder meer verjaardagen, communies en huwelijksjubilea."
     },
