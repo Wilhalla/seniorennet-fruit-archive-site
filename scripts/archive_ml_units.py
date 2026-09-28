@@ -89,11 +89,14 @@ def image_state(image: dict[str, Any]) -> dict[str, Any]:
     if image.get("descriptionStatus") not in {"reviewed", "auto-accepted"} or not image.get("description"):
         raise ValueError(f"image {image.get('id')} needs an accepted visual description")
     context = image.get("linkedContext") or {}
+    visual_evidence = {"description": image["description"].strip()[:240],
+                       "visible_tags": image.get("visibleTags", [])[:6],
+                       "role": "auto-caption-visible-content" if image["descriptionStatus"] == "auto-accepted" else "reviewed-visible-content"}
+    if image.get("unclear"):
+        visual_evidence["unclear"] = True
     return {
         "image_id": image["id"],
-        "visual_evidence": {"description": image["description"].strip()[:240],
-                            "visible_tags": image.get("visibleTags", [])[:6],
-                            "role": "auto-caption-visible-content" if image["descriptionStatus"] == "auto-accepted" else "reviewed-visible-content"},
+        "visual_evidence": visual_evidence,
         "linked_context": {
             "role": "source-text-not-visual-evidence", "source_post_id": context.get("postId"),
             "post_title": (context.get("postTitle") or "")[:160],

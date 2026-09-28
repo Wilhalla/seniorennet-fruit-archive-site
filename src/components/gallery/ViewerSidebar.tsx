@@ -27,6 +27,7 @@ export default function ViewerSidebar({ filtered, relatedLoading, similarImages,
     <aside className="bg-eggshell lg:min-h-0 lg:overflow-y-auto lg:overscroll-contain">
       <section className="border-b border-chalk p-4 md:p-5">
         <h1 className="m-0 text-base font-medium leading-snug text-obsidian">{viewerImage.postTitle}</h1>
+        {viewerImage.seriesTitle && <p className="m-0 mt-1 text-xs text-gravel">Uit de reeks: {viewerImage.seriesTitle}</p>}
         <p className="m-0 mt-1 text-xs text-gravel">{formatImagePostDateTime(viewerImage)}</p>
         {viewerImage.visualDescription && <p className="m-0 mt-3 text-sm leading-6 text-obsidian"><span className="font-medium">Op het beeld:</span> {viewerImage.visualDescription}</p>}
         {(viewerImage.imageSpecificText ?? []).length > 0 && <p className="m-0 mt-3 text-sm leading-6 text-gravel"><span className="font-medium text-obsidian">Bijschrift bij dit beeld:</span> {viewerImage.imageSpecificText?.join(' · ')}</p>}

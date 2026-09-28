@@ -21,6 +21,7 @@ export type GalleryImageRecord = {
   imageSpecificText?: string[]
   imageTagIds?: string[]
   seriesId?: string | null
+  seriesTitle?: string | null
   imageIndex?: number
   width?: number | null
   height?: number | null
@@ -164,7 +165,7 @@ export function filterGalleryImages<T extends GalleryImageRecord>(images: readon
     .filter((image) => filters.theme === 'all' || image.visualTags.includes(filters.theme))
     .filter((image) => filters.speciesFilter === 'all' || (speciesByImage[image.id] ?? []).some((tag) => tag.candidateId === filters.speciesFilter))
     .filter((image) => !filters.peoplePlantsOnly || image.visualTags.some((tag) => peoplePlantTags.includes(tag)))
-    .filter((image) => !q || `${image.postTitle} ${image.caption} ${image.visualDescription ?? ''} ${(image.imageSpecificText ?? []).join(' ')} ${image.excerpt} ${image.visualTags.join(' ')} ${(image.imageTagIds ?? []).join(' ')} ${(speciesByImage[image.id] ?? []).map((tag) => tag.label).join(' ')}`.toLowerCase().includes(q))
+    .filter((image) => !q || `${image.postTitle} ${image.seriesTitle ?? ''} ${image.caption} ${image.visualDescription ?? ''} ${(image.imageSpecificText ?? []).join(' ')} ${image.excerpt} ${image.visualTags.join(' ')} ${(image.imageTagIds ?? []).join(' ')} ${(speciesByImage[image.id] ?? []).map((tag) => tag.label).join(' ')}`.toLowerCase().includes(q))
     .sort((a, b) => {
       const byDate = Date.parse(b.date) - Date.parse(a.date)
       return filters.sortNewest ? byDate : -byDate

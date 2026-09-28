@@ -109,7 +109,7 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
       <div className="site-shell flex justify-center pt-4">
         <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-amber-200 bg-white/70 px-3 py-1.5 text-xs text-gravel shadow-[0_8px_24px_rgba(31,29,27,0.05)] backdrop-blur" role="note">
           <AlertTriangle className="size-3.5 shrink-0 text-amber-600" aria-hidden="true" />
-          <span>Thema-analyse en clustering bevatten fouten.</span>
+          <span>Beeldbeschrijvingen en filters zijn automatisch gemaakt; het bronbericht geeft meer context.</span>
         </p>
       </div>
 

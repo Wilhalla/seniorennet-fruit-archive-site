@@ -57,6 +57,7 @@ def build_image_outputs(source_images: list[dict], client_images: list[dict], ob
                          and meaningful_image_text(link.get("text") or "")][:2]
         assignment = selected_by_id[row["id"]]
         return {**row, "postId": observation["postId"], "seriesId": context.get("seriesId"),
+                "seriesTitle": context.get("seriesTitle") if context.get("seriesTitle") != row.get("postTitle") else None,
                 "visualDescription": observation["description"],
                 "imageSpecificText": specific_text, "imageTagIds": assignment["tagIds"],
                 "visualTags": assignment["categoryIds"]}

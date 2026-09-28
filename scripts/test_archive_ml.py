@@ -223,6 +223,8 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(image_state(row)["linked_context"]["series_title"], "Familiefeest van opa")
         row["descriptionStatus"] = "auto-accepted"
         self.assertEqual(image_state(row)["visual_evidence"]["role"], "auto-caption-visible-content")
+        row["unclear"] = True
+        self.assertTrue(image_state(row)["visual_evidence"]["unclear"])
         row["descriptionStatus"] = "unreviewed"
         with self.assertRaisesRegex(ValueError, "accepted"):
             image_state(row)
@@ -328,7 +330,7 @@ class ArchiveMlTests(unittest.TestCase):
         source = [{"id": "a", "src": "/archive-images/a.jpg", "year": 2020, "season": "lente"},
                   {"id": "b", "src": "/archive-images/b.jpg", "year": 2020, "season": "lente"}]
         observations = [{"id": image_id, "postId": "post-1", "description": description,
-                         "descriptionModel": "vision-test", "linkedContext": {"seriesId": "series-1", "linkedText": [
+                         "descriptionModel": "vision-test", "linkedContext": {"seriesId": "series-1", "seriesTitle": "Familie op reis", "linkedText": [
                              {"kind": "numbered-caption", "text": text, "sourcePostId": "post-1"},
                              {"kind": "numbered-caption", "text": "Other post", "sourcePostId": "post-2"}]}}
                         for image_id, description, text in (("a", "Een appel.", "Appel van opa"),
@@ -346,7 +348,10 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(first["imageSpecificText"], ["Appel van opa"])
         self.assertEqual(first["visualTags"], ["fruit"])
         self.assertEqual(first["seriesId"], "series-1")
+        self.assertEqual(first["seriesTitle"], "Familie op reis")
         self.assertEqual(result["gallery-groups.json"]["themes"][0]["count"], 1)
+        with self.assertRaisesRegex(ValueError, "cover every gallery image"):
+            build_image_outputs(source, source, observations, {"a": predictions["a"]}, VOCABULARY, mapping, {})
 
 
 if __name__ == "__main__":

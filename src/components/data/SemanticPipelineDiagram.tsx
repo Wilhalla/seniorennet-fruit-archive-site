@@ -10,19 +10,21 @@ declare global {
 }
 
 const diagram = `flowchart LR
-  A[Blogberichten\nMarkdown + metadata] --> B[Tekst opschonen\ndatum, titel, inhoud]
-  A --> C[Afbeeldingen\nper bericht]
-  B --> D[Tekst betekenis\nembedding model]
-  C --> E[Beeld betekenis\nCLIP model]
-  D --> F[Betekenissen combineren\ntekst + beeld]
-  E --> F
-  F --> G[Onderwerpen maken\nclustering]
-  F --> H[Kaartpositie maken\n2D projectie]
-  F --> I[Verwante berichten zoeken\nnearest neighbours]
-  G --> J[JSON data]
-  H --> J
-  I --> J
-  J --> K[Atlas + deze datatabellen]
+  A[Blogberichten\nmet vervolgberichten] --> B[Tekst per verhaal]
+  A --> C[Afbeeldingen\nmet bronlink]
+  C --> D[Beschrijving van\nzichtbare inhoud]
+  B --> E[Verhaal met\nbeeldbeschrijvingen]
+  D --> E
+  E --> F[Fijne teksttags\nJev scores]
+  D --> G[Fijne beeldtags\nJev scores]
+  F --> H[Tags tellen en\ncategorieën bundelen]
+  G --> H
+  E --> I[Tekstembedding\nper verhaal]
+  I --> J[Verwante verhalen\ncosinusafstand]
+  I --> K[Atlaspositie\nUMAP projectie]
+  H --> L[JSON voor Atlas\nen beeldarchief]
+  J --> L
+  K --> L
 `
 
 const mirrorArchiveDownloadUrl = 'https://objects.janpeterdhalle.com/wilhalla-vake-blog/downloads/seniorennet-fruit-archive.zip'
@@ -88,8 +90,9 @@ export default function SemanticPipelineDiagram() {
         <div className="max-w-3xl">
           <h1 id="semantic-setup-title" className="display-title">Data</h1>
           <p className="mt-5 text-body-lg leading-body-lg text-gravel">
-            Eerst worden tekst en afbeeldingen uit elk blogbericht apart gelezen. Daarna zet de pipeline beide om naar
-            “betekenis-getallen”, combineert die, zoekt onderwerpen en verwante berichten, en schrijft alles weg als JSON.
+            Vervolgberichten vormen samen één verhaal. Afbeeldingen krijgen een beschrijving van wat zichtbaar is en blijven
+            gekoppeld aan hun bronbericht. Fijne tags worden geteld en samengevoegd tot filters; tekstembeddings bepalen
+            verwante verhalen en de positie in de Atlas.
           </p>
           <div className="mt-7 rounded-2xl border border-chalk bg-pure-surface p-5 shadow-subtle">
             <div className="grid gap-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
