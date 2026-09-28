@@ -1,0 +1,108 @@
+{
+  "version": "archive-image-categories-1",
+  "categories": [
+    {
+      "id": "familie",
+      "label": "Familie",
+      "description": "Mensen of vieringen met expliciete familiecontext in het bronbericht of het beeldbijschrift.",
+      "icon": "👪",
+      "tagIds": [
+        "familie",
+        "familiefeest"
+      ],
+      "count": 193
+    },
+    {
+      "id": "mensen",
+      "label": "Mensen",
+      "description": "Echte mensen die op de foto staan, ook zonder bekende familieband.",
+      "icon": "👥",
+      "tagIds": [
+        "mensen",
+        "portret",
+        "groep"
+      ],
+      "count": 4975
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit & eten",
+      "description": "Zichtbaar fruit, groenten, oogst en bereide gerechten.",
+      "icon": "🍐",
+      "tagIds": [
+        "fruit",
+        "appels",
+        "peren",
+        "ander_fruit",
+        "groenten",
+        "eten"
+      ],
+      "count": 2305
+    },
+    {
+      "id": "tuin",
+      "label": "Planten & tuin",
+      "description": "Bloemen, bomen, tuinplanten, tuinwerk en zichtbare plantschade.",
+      "icon": "🌿",
+      "tagIds": [
+        "bloemen",
+        "bomen",
+        "tuinplanten",
+        "tuinwerk",
+        "plantschade"
+      ],
+      "count": 5593
+    },
+    {
+      "id": "dieren",
+      "label": "Dieren",
+      "description": "Vogels, insecten en andere echte dieren op de foto.",
+      "icon": "🐦",
+      "tagIds": [
+        "vogels",
+        "insecten",
+        "andere_dieren"
+      ],
+      "count": 481
+    },
+    {
+      "id": "landschap",
+      "label": "Landschap & natuur",
+      "description": "Buitenlandschappen en natuurlijke uitzichten als hoofdonderwerp.",
+      "icon": "🏞️",
+      "tagIds": [
+        "landschap"
+      ],
+      "count": 887
+    },
+    {
+      "id": "plaatsen",
+      "label": "Gebouwen & plaatsen",
+      "description": "Gebouwen, monumenten, straten en gebouwde plekken.",
+      "icon": "🏛️",
+      "tagIds": [
+        "gebouw"
+      ],
+      "count": 2603
+    },
+    {
+      "id": "kunst_documenten",
+      "label": "Kunst & documenten",
+      "description": "Kunstwerken, prenten, kaarten, borden en documenten.",
+      "icon": "🖼️",
+      "tagIds": [
+        "kunst",
+        "document"
+      ],
+      "count": 2147
+    },
+    {
+      "id": "overig",
+      "label": "Overig",
+      "description": "Beelden zonder geselecteerde inhoudelijke tag",
+      "icon": "▦",
+      "tagIds": [],
+      "count": 581
+    }
+  ]
+}

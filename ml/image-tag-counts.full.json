@@ -1,0 +1,307 @@
+{
+  "vocabularyVersion": "archive-image-tags-1",
+  "imagesInArchive": 13144,
+  "imagesClassified": 13144,
+  "imagesWithAnyTag": 12563,
+  "tags": [
+    {
+      "id": "mensen",
+      "label": "Mensen",
+      "threshold": 0.5,
+      "imageCount": 4969,
+      "scoreSum": 4792.79,
+      "sweep": {
+        "0.3": 5010,
+        "0.5": 4969,
+        "0.7": 4850,
+        "0.9": 3953
+      }
+    },
+    {
+      "id": "portret",
+      "label": "Portret",
+      "threshold": 0.5,
+      "imageCount": 3879,
+      "scoreSum": 3719.48,
+      "sweep": {
+        "0.3": 4268,
+        "0.5": 3879,
+        "0.7": 3275,
+        "0.9": 1840
+      }
+    },
+    {
+      "id": "tuinplanten",
+      "label": "Tuinplanten",
+      "threshold": 0.5,
+      "imageCount": 2959,
+      "scoreSum": 3501.82,
+      "sweep": {
+        "0.3": 3924,
+        "0.5": 2959,
+        "0.7": 2255,
+        "0.9": 1164
+      }
+    },
+    {
+      "id": "bomen",
+      "label": "Bomen en boomgaard",
+      "threshold": 0.5,
+      "imageCount": 2792,
+      "scoreSum": 3031.86,
+      "sweep": {
+        "0.3": 3428,
+        "0.5": 2792,
+        "0.7": 2133,
+        "0.9": 1094
+      }
+    },
+    {
+      "id": "gebouw",
+      "label": "Gebouwen en plaatsen",
+      "threshold": 0.5,
+      "imageCount": 2603,
+      "scoreSum": 3039.94,
+      "sweep": {
+        "0.3": 3264,
+        "0.5": 2603,
+        "0.7": 2083,
+        "0.9": 1433
+      }
+    },
+    {
+      "id": "groep",
+      "label": "Groep mensen",
+      "threshold": 0.5,
+      "imageCount": 2580,
+      "scoreSum": 2496.57,
+      "sweep": {
+        "0.3": 2730,
+        "0.5": 2580,
+        "0.7": 2209,
+        "0.9": 991
+      }
+    },
+    {
+      "id": "fruit",
+      "label": "Fruit",
+      "threshold": 0.5,
+      "imageCount": 1996,
+      "scoreSum": 2174.23,
+      "sweep": {
+        "0.3": 2083,
+        "0.5": 1996,
+        "0.7": 1881,
+        "0.9": 1294
+      }
+    },
+    {
+      "id": "kunst",
+      "label": "Kunstwerk",
+      "threshold": 0.5,
+      "imageCount": 1486,
+      "scoreSum": 2026.04,
+      "sweep": {
+        "0.3": 1867,
+        "0.5": 1486,
+        "0.7": 1222,
+        "0.9": 889
+      }
+    },
+    {
+      "id": "bloemen",
+      "label": "Bloemen en bloesem",
+      "threshold": 0.5,
+      "imageCount": 1219,
+      "scoreSum": 1615.24,
+      "sweep": {
+        "0.3": 1261,
+        "0.5": 1219,
+        "0.7": 1167,
+        "0.9": 989
+      }
+    },
+    {
+      "id": "landschap",
+      "label": "Landschap en natuur",
+      "threshold": 0.5,
+      "imageCount": 887,
+      "scoreSum": 1526.23,
+      "sweep": {
+        "0.3": 1418,
+        "0.5": 887,
+        "0.7": 564,
+        "0.9": 164
+      }
+    },
+    {
+      "id": "document",
+      "label": "Documenten en tekst",
+      "threshold": 0.5,
+      "imageCount": 783,
+      "scoreSum": 1169.33,
+      "sweep": {
+        "0.3": 974,
+        "0.5": 783,
+        "0.7": 655,
+        "0.9": 437
+      }
+    },
+    {
+      "id": "ander_fruit",
+      "label": "Ander fruit",
+      "threshold": 0.5,
+      "imageCount": 630,
+      "scoreSum": 1158.67,
+      "sweep": {
+        "0.3": 903,
+        "0.5": 630,
+        "0.7": 398,
+        "0.9": 164
+      }
+    },
+    {
+      "id": "appels",
+      "label": "Appels",
+      "threshold": 0.5,
+      "imageCount": 625,
+      "scoreSum": 967.88,
+      "sweep": {
+        "0.3": 794,
+        "0.5": 625,
+        "0.7": 428,
+        "0.9": 267
+      }
+    },
+    {
+      "id": "tuinwerk",
+      "label": "Tuinwerk",
+      "threshold": 0.5,
+      "imageCount": 570,
+      "scoreSum": 1342.69,
+      "sweep": {
+        "0.3": 1189,
+        "0.5": 570,
+        "0.7": 227,
+        "0.9": 68
+      }
+    },
+    {
+      "id": "groenten",
+      "label": "Groenten",
+      "threshold": 0.5,
+      "imageCount": 249,
+      "scoreSum": 683.34,
+      "sweep": {
+        "0.3": 345,
+        "0.5": 249,
+        "0.7": 178,
+        "0.9": 75
+      }
+    },
+    {
+      "id": "plantschade",
+      "label": "Zichtbare plantschade",
+      "threshold": 0.5,
+      "imageCount": 223,
+      "scoreSum": 753.49,
+      "sweep": {
+        "0.3": 322,
+        "0.5": 223,
+        "0.7": 141,
+        "0.9": 31
+      }
+    },
+    {
+      "id": "peren",
+      "label": "Peren",
+      "threshold": 0.5,
+      "imageCount": 201,
+      "scoreSum": 612.84,
+      "sweep": {
+        "0.3": 290,
+        "0.5": 201,
+        "0.7": 160,
+        "0.9": 123
+      }
+    },
+    {
+      "id": "insecten",
+      "label": "Insecten",
+      "threshold": 0.5,
+      "imageCount": 185,
+      "scoreSum": 582.57,
+      "sweep": {
+        "0.3": 208,
+        "0.5": 185,
+        "0.7": 176,
+        "0.9": 104
+      }
+    },
+    {
+      "id": "familie",
+      "label": "Familie",
+      "threshold": 0.65,
+      "imageCount": 181,
+      "scoreSum": 365.94,
+      "sweep": {
+        "0.3": 208,
+        "0.5": 79,
+        "0.7": 30,
+        "0.9": 1
+      }
+    },
+    {
+      "id": "andere_dieren",
+      "label": "Andere dieren",
+      "threshold": 0.5,
+      "imageCount": 153,
+      "scoreSum": 926.08,
+      "sweep": {
+        "0.3": 229,
+        "0.5": 153,
+        "0.7": 131,
+        "0.9": 58
+      }
+    },
+    {
+      "id": "vogels",
+      "label": "Vogels",
+      "threshold": 0.5,
+      "imageCount": 149,
+      "scoreSum": 501.3,
+      "sweep": {
+        "0.3": 156,
+        "0.5": 149,
+        "0.7": 145,
+        "0.9": 94
+      }
+    },
+    {
+      "id": "eten",
+      "label": "Eten en gerechten",
+      "threshold": 0.5,
+      "imageCount": 138,
+      "scoreSum": 461.19,
+      "sweep": {
+        "0.3": 179,
+        "0.5": 138,
+        "0.7": 98,
+        "0.9": 30
+      }
+    },
+    {
+      "id": "familiefeest",
+      "label": "Familiefeest",
+      "threshold": 0.65,
+      "imageCount": 76,
+      "scoreSum": 356.19,
+      "sweep": {
+        "0.3": 212,
+        "0.5": 123,
+        "0.7": 35,
+        "0.9": 3
+      }
+    }
+  ]
+}

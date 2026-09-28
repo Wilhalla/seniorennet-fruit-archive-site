@@ -8,7 +8,7 @@ The gallery uses static JSON generated before the Astro build. The pipeline keep
 
 `scripts/archive_ml_image_tags.py` sends groups of eight observations to Jev on OpenRouter. Its [image tag vocabulary](./ml/image-vocabulary.approved.json) has independent scores for visible subjects such as people, fruit, plants, animals, buildings, art, and documents. Linked post text may establish an explicit family relationship, but it cannot establish that a person or object is visible. The complete Jev responses, per-image scores, and request costs remain in ignored `ml-work/` files. Scores are model estimates, not calibrated probabilities.
 
-After all images are scored, `scripts/archive_ml_image_counts.py` counts selected fine tags. The [image category map](./ml/image-category-map.approved.json) groups those tags into the broader filters used in the gallery. `scripts/archive_ml_publish_images.py` checks full coverage and matching vocabulary hashes, then writes the client index, category counts, source links, descriptions, and image-specific text to `src/data/generated/` and `public/generated/`. `scripts/chunk-gallery-index.ts` refreshes the smaller year payloads. `nub run imageAtlas` repeats the publication steps from cached results.
+After all images are scored, `scripts/archive_ml_image_counts.py` counts selected fine tags. The full [tag count report](./ml/image-tag-counts.full.json) covers all 13,144 image records; the [image category map](./ml/image-category-map.approved.json) groups its 23 tags into eight broader filters plus `Overig`. `scripts/archive_ml_publish_images.py` checks full coverage and matching vocabulary hashes, then writes the client index, category counts, source links, descriptions, and image-specific text to `src/data/generated/` and `public/generated/`. `scripts/chunk-gallery-index.ts` refreshes the smaller year payloads. `nub run imageAtlas` repeats the publication steps from cached results.
 
 The archive has 13,144 image records and 13,048 distinct source files. For a full run from the project root:
 
@@ -20,6 +20,8 @@ nub run imageAtlas
 ```
 
 The Jev command requires `OPENROUTER_API_KEY`; the caption command uses the Codex login. Both are resumable through cached batches. The cost limit includes previously recorded image-classifier requests in `ml-work/cache/image-jev/paid-requests.json`.
+
+The published filters are `Familie`, `Mensen`, `Fruit & eten`, `Planten & tuin`, `Dieren`, `Landschap & natuur`, `Gebouwen & plaatsen`, `Kunst & documenten`, and `Overig`. Memberships overlap. `Familie` requires explicit family evidence; `Mensen` accepts photographed people without a known relationship.
 
 ## Related images and species
 

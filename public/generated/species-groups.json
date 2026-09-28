@@ -3,81 +3,54 @@
     "id": "tuin-boomgaard",
     "label": "tuin / boomgaard",
     "type": "place_or_habitat",
-    "count": 9750,
+    "count": 3207,
     "confidenceCounts": {
-      "medium": 9750
-    }
-  },
-  {
-    "id": "dier-insect",
-    "label": "dier / insect",
-    "type": "animal_broad",
-    "count": 8097,
-    "confidenceCounts": {
-      "medium": 8097
-    }
-  },
-  {
-    "id": "peer",
-    "label": "peer",
-    "type": "fruit_kind",
-    "count": 4330,
-    "confidenceCounts": {
-      "medium": 4330
+      "medium": 3207
     }
   },
   {
     "id": "appel",
     "label": "appel",
     "type": "fruit_kind",
-    "count": 3682,
+    "count": 625,
     "confidenceCounts": {
-      "medium": 3682
-    }
-  },
-  {
-    "id": "pruim",
-    "label": "pruim",
-    "type": "fruit_kind",
-    "count": 2918,
-    "confidenceCounts": {
-      "medium": 2918
-    }
-  },
-  {
-    "id": "bes-kleinfruit",
-    "label": "bes / kleinfruit",
-    "type": "fruit_kind",
-    "count": 2327,
-    "confidenceCounts": {
-      "medium": 2327
-    }
-  },
-  {
-    "id": "bloesem",
-    "label": "bloesem",
-    "type": "plant_stage",
-    "count": 1132,
-    "confidenceCounts": {
-      "medium": 1132
+      "medium": 625
     }
   },
   {
     "id": "braam",
     "label": "Braam",
     "type": "berry_species",
-    "count": 553,
+    "count": 562,
     "confidenceCounts": {
-      "high": 553
+      "high": 562
+    }
+  },
+  {
+    "id": "dier-insect",
+    "label": "dier / insect",
+    "type": "animal_broad",
+    "count": 481,
+    "confidenceCounts": {
+      "medium": 481
     }
   },
   {
     "id": "reinette",
     "label": "Reinette",
     "type": "apple_cultivar_group",
-    "count": 452,
+    "count": 456,
     "confidenceCounts": {
-      "high": 452
+      "high": 456
+    }
+  },
+  {
+    "id": "taybes",
+    "label": "Taybes",
+    "type": "berry_cultivar",
+    "count": 272,
+    "confidenceCounts": {
+      "high": 272
     }
   },
   {
@@ -87,15 +60,6 @@
     "count": 251,
     "confidenceCounts": {
       "high": 251
-    }
-  },
-  {
-    "id": "taybes",
-    "label": "Taybes",
-    "type": "berry_cultivar",
-    "count": 246,
-    "confidenceCounts": {
-      "high": 246
     }
   },
   {
@@ -132,6 +96,15 @@
     "count": 203,
     "confidenceCounts": {
       "high": 203
+    }
+  },
+  {
+    "id": "peer",
+    "label": "peer",
+    "type": "fruit_kind",
+    "count": 201,
+    "confidenceCounts": {
+      "medium": 201
     }
   },
   {
@@ -172,12 +145,21 @@
     }
   },
   {
+    "id": "kip",
+    "label": "Kip",
+    "type": "animal_species_group",
+    "count": 152,
+    "confidenceCounts": {
+      "high": 152
+    }
+  },
+  {
     "id": "bellefleur",
     "label": "Bellefleur",
     "type": "apple_cultivar",
-    "count": 148,
+    "count": 150,
     "confidenceCounts": {
-      "high": 148
+      "high": 150
     }
   },
   {
@@ -190,30 +172,21 @@
     }
   },
   {
-    "id": "kip",
-    "label": "Kip",
-    "type": "animal_species_group",
-    "count": 143,
+    "id": "merel",
+    "label": "Merel",
+    "type": "bird_species",
+    "count": 147,
     "confidenceCounts": {
-      "high": 143
+      "high": 147
     }
   },
   {
     "id": "conference",
     "label": "Conference",
     "type": "pear_cultivar",
-    "count": 136,
+    "count": 137,
     "confidenceCounts": {
-      "high": 136
-    }
-  },
-  {
-    "id": "merel",
-    "label": "Merel",
-    "type": "bird_species",
-    "count": 133,
-    "confidenceCounts": {
-      "high": 133
+      "high": 137
     }
   },
   {
@@ -238,9 +211,9 @@
     "id": "kweepeer",
     "label": "Kweepeer",
     "type": "plant_species",
-    "count": 117,
+    "count": 118,
     "confidenceCounts": {
-      "high": 117
+      "high": 118
     }
   },
   {
@@ -271,21 +244,21 @@
     }
   },
   {
+    "id": "ecolette",
+    "label": "Ecolette",
+    "type": "apple_cultivar",
+    "count": 100,
+    "confidenceCounts": {
+      "high": 100
+    }
+  },
+  {
     "id": "elstar",
     "label": "Elstar",
     "type": "apple_cultivar",
     "count": 96,
     "confidenceCounts": {
       "high": 96
-    }
-  },
-  {
-    "id": "ecolette",
-    "label": "Ecolette",
-    "type": "apple_cultivar",
-    "count": 95,
-    "confidenceCounts": {
-      "high": 95
     }
   },
   {
@@ -523,6 +496,15 @@
     }
   },
   {
+    "id": "transparente-blanche",
+    "label": "Transparente Blanche",
+    "type": "apple_cultivar",
+    "count": 22,
+    "confidenceCounts": {
+      "high": 22
+    }
+  },
+  {
     "id": "james-grieve",
     "label": "James Grieve",
     "type": "apple_cultivar",
@@ -556,15 +538,6 @@
     "count": 18,
     "confidenceCounts": {
       "high": 18
-    }
-  },
-  {
-    "id": "transparente-blanche",
-    "label": "Transparente Blanche",
-    "type": "apple_cultivar",
-    "count": 13,
-    "confidenceCounts": {
-      "high": 13
     }
   },
   {

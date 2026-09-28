@@ -4,14 +4,14 @@
     "label": "Fruit & rassen",
     "generatedLabel": "",
     "description": "Fruitsoorten, rassen, bloei, bestuiving en oogst",
-    "postCount": 1785,
-    "unitCount": 1554,
+    "postCount": 1803,
+    "unitCount": 1564,
     "representativePostIds": [
       "2236537",
-      "2199565",
+      "2186940",
       "1946744",
-      "1937362",
-      "1831450"
+      "1831450",
+      "1413046"
     ],
     "textKeywords": [
       "Appels",
@@ -29,14 +29,14 @@
     "label": "Tuin & teelt",
     "generatedLabel": "",
     "description": "Werk in de tuin, bodem, enten en teeltomstandigheden",
-    "postCount": 1188,
-    "unitCount": 985,
+    "postCount": 1234,
+    "unitCount": 1017,
     "representativePostIds": [
-      "1350582",
+      "2059158",
+      "2016234",
       "1932487",
       "1904455",
-      "1548708",
-      "1503081"
+      "1548708"
     ],
     "textKeywords": [
       "Groenten",
@@ -54,14 +54,14 @@
     "label": "Plantenproblemen",
     "generatedLabel": "",
     "description": "Schade, ziekten, plagen en bestrijding",
-    "postCount": 1060,
-    "unitCount": 905,
+    "postCount": 1043,
+    "unitCount": 881,
     "representativePostIds": [
       "1819408",
-      "894287",
-      "650912",
-      "640102",
-      "501407"
+      "598242",
+      "501407",
+      "45367",
+      "620"
     ],
     "textKeywords": [
       "Gewasschade",
@@ -76,14 +76,14 @@
     "label": "Natuur & seizoenen",
     "generatedLabel": "",
     "description": "Weer, vogels, insecten en ander tuinleven",
-    "postCount": 1467,
-    "unitCount": 1195,
+    "postCount": 1510,
+    "unitCount": 1218,
     "representativePostIds": [
       "2232551",
-      "2029566",
-      "1582742",
+      "1903788",
       "1573668",
-      "1526159"
+      "1353933",
+      "1318169"
     ],
     "textKeywords": [
       "Weer en seizoenen",
@@ -100,14 +100,14 @@
     "label": "Reizen & bezoeken",
     "generatedLabel": "",
     "description": "Uitstappen, tuinen en publieke evenementen",
-    "postCount": 1522,
-    "unitCount": 998,
+    "postCount": 1590,
+    "unitCount": 1068,
     "representativePostIds": [
       "2271003",
-      "2246649",
-      "2149455",
-      "2096047",
-      "2077500"
+      "2077500",
+      "1976147",
+      "1945280",
+      "1939023"
     ],
     "textKeywords": [
       "Tuinbezoeken",
@@ -120,14 +120,14 @@
     "label": "Erfgoed & verhalen",
     "generatedLabel": "",
     "description": "Geschiedenis, kunst, tentoonstellingen en herinneringen",
-    "postCount": 1254,
-    "unitCount": 806,
+    "postCount": 1305,
+    "unitCount": 851,
     "representativePostIds": [
-      "2181835",
+      "2180977",
       "2180131",
       "2178782",
-      "2094212",
-      "1966972"
+      "2075535",
+      "2075250"
     ],
     "textKeywords": [
       "Erfgoed",
@@ -141,14 +141,14 @@
     "label": "Familie",
     "generatedLabel": "",
     "description": "Expliciete familieverhalen en vieringen",
-    "postCount": 150,
-    "unitCount": 113,
+    "postCount": 168,
+    "unitCount": 122,
     "representativePostIds": [
-      "532462",
       "2232787",
-      "1589269",
       "1378516",
-      "1312282"
+      "1312282",
+      "922649",
+      "616762"
     ],
     "textKeywords": [
       "Familie",
@@ -160,14 +160,14 @@
     "label": "Eten & gezondheid",
     "generatedLabel": "",
     "description": "Fruitgerechten, voeding en voedselsystemen",
-    "postCount": 281,
-    "unitCount": 224,
+    "postCount": 298,
+    "unitCount": 232,
     "representativePostIds": [
       "1438024",
       "1284481",
-      "995773",
       "723602",
-      "1173"
+      "1173",
+      "1014"
     ],
     "textKeywords": [
       "Fruitgerechten",
@@ -180,14 +180,14 @@
     "label": "Overig",
     "generatedLabel": "",
     "description": "Berichten zonder geselecteerd inhoudelijk tag",
-    "postCount": 168,
-    "unitCount": 162,
+    "postCount": 136,
+    "unitCount": 133,
     "representativePostIds": [
       "2289786",
       "2289681",
       "2269900",
-      "2248441",
-      "2247841"
+      "2247841",
+      "2178508"
     ],
     "textKeywords": []
   }

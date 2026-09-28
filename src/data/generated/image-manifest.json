@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-05-27T13:12:34Z",
+  "generatedAt": "2026-09-28T19:55:57Z",
   "imageCount": 13144,
   "embeddingModel": "sentence-transformers/clip-ViT-B-32",
-  "contractVersion": 1
+  "contractVersion": 1,
+  "captionModel": "gpt-6-luna",
+  "captionCoverage": 13144,
+  "imageTagModel": "typesafe/jev-1.13-20260917",
+  "imageTagVocabularyVersion": "archive-image-tags-1",
+  "imageCategoryMapVersion": "archive-image-categories-1",
+  "categoryCount": 9
 }

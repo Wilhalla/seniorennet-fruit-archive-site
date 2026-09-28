@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-27T14:22:36Z",
+  "generatedAt": "2026-09-28T19:53:16Z",
   "imageCount": 13144,
-  "taggedImageCount": 12933,
+  "taggedImageCount": 6146,
   "candidateCount": 65,
   "method": "text-caption-filename-visual-context-evidence-resolver",
   "contractVersion": 1

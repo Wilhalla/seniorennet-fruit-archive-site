@@ -106,57 +106,57 @@
   "themes": [
     {
       "id": "familie",
+      "label": "Familie",
+      "icon": "👪",
+      "count": 193
+    },
+    {
+      "id": "mensen",
       "label": "Mensen",
       "icon": "👥",
-      "count": 2083
-    },
-    {
-      "id": "reizen",
-      "label": "Reizen & erfgoed",
-      "icon": "🧭",
-      "count": 5761
-    },
-    {
-      "id": "tuin",
-      "label": "Tuin & boomgaard",
-      "icon": "🌿",
-      "count": 2709
-    },
-    {
-      "id": "tuinwerk",
-      "label": "Tuinwerk & teelt",
-      "icon": "🪴",
-      "count": 803
+      "count": 4975
     },
     {
       "id": "fruit",
-      "label": "Fruit & oogst",
+      "label": "Fruit & eten",
       "icon": "🍐",
-      "count": 2776
+      "count": 2305
     },
     {
-      "id": "bloemen",
-      "label": "Bloesem & bloemen",
-      "icon": "🌸",
-      "count": 574
+      "id": "tuin",
+      "label": "Planten & tuin",
+      "icon": "🌿",
+      "count": 5593
     },
     {
       "id": "dieren",
-      "label": "Dieren & insecten",
+      "label": "Dieren",
       "icon": "🐦",
-      "count": 371
+      "count": 481
     },
     {
       "id": "landschap",
       "label": "Landschap & natuur",
       "icon": "🏞️",
-      "count": 844
+      "count": 887
     },
     {
-      "id": "documenten",
-      "label": "Documenten & labels",
-      "icon": "🏷️",
-      "count": 130
+      "id": "plaatsen",
+      "label": "Gebouwen & plaatsen",
+      "icon": "🏛️",
+      "count": 2603
+    },
+    {
+      "id": "kunst_documenten",
+      "label": "Kunst & documenten",
+      "icon": "🖼️",
+      "count": 2147
+    },
+    {
+      "id": "overig",
+      "label": "Overig",
+      "icon": "▦",
+      "count": 581
     }
   ]
 }
