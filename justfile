@@ -27,6 +27,7 @@ test:
 check:
     nub run build
     nub run test
+    python3 -m unittest discover -s scripts -p 'test_archive_ml.py'
 
 clean:
     rm -rf dist .astro

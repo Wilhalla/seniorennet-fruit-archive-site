@@ -1,0 +1,1014 @@
+{
+  "sourceHashes": {
+    "posts": "2e3007af4cff75dcdceabaaa0f10b2fd300ac36d5261c9865176d522b93d4df9",
+    "images": "4fb77459ae48decefef86b238a55be82d779e9b5051d97bc3d65ea5d069b0309"
+  },
+  "seed": 42,
+  "postCount": 150,
+  "imageCount": 100,
+  "note": "Legacy labels are sampling metadata, not ground truth. Holdout labels must stay unseen during taxonomy and threshold tuning.",
+  "posts": [
+    {
+      "id": "1251446",
+      "split": "holdout"
+    },
+    {
+      "id": "1647938",
+      "split": "development"
+    },
+    {
+      "id": "2165698",
+      "split": "development"
+    },
+    {
+      "id": "1740545",
+      "split": "development"
+    },
+    {
+      "id": "1514713",
+      "split": "development"
+    },
+    {
+      "id": "2200279",
+      "split": "holdout"
+    },
+    {
+      "id": "1665113",
+      "split": "development"
+    },
+    {
+      "id": "2182896",
+      "split": "development"
+    },
+    {
+      "id": "831",
+      "split": "development"
+    },
+    {
+      "id": "516",
+      "split": "development"
+    },
+    {
+      "id": "656992",
+      "split": "development"
+    },
+    {
+      "id": "736503",
+      "split": "development"
+    },
+    {
+      "id": "193358",
+      "split": "development"
+    },
+    {
+      "id": "149",
+      "split": "holdout"
+    },
+    {
+      "id": "1762746",
+      "split": "holdout"
+    },
+    {
+      "id": "1677666",
+      "split": "holdout"
+    },
+    {
+      "id": "1175",
+      "split": "development"
+    },
+    {
+      "id": "1754324",
+      "split": "holdout"
+    },
+    {
+      "id": "878",
+      "split": "holdout"
+    },
+    {
+      "id": "666",
+      "split": "development"
+    },
+    {
+      "id": "671076",
+      "split": "development"
+    },
+    {
+      "id": "876914",
+      "split": "development"
+    },
+    {
+      "id": "3",
+      "split": "development"
+    },
+    {
+      "id": "1703278",
+      "split": "development"
+    },
+    {
+      "id": "1921320",
+      "split": "development"
+    },
+    {
+      "id": "76991",
+      "split": "development"
+    },
+    {
+      "id": "522570",
+      "split": "development"
+    },
+    {
+      "id": "616734",
+      "split": "development"
+    },
+    {
+      "id": "599292",
+      "split": "holdout"
+    },
+    {
+      "id": "1380344",
+      "split": "development"
+    },
+    {
+      "id": "1837039",
+      "split": "holdout"
+    },
+    {
+      "id": "643675",
+      "split": "development"
+    },
+    {
+      "id": "1360161",
+      "split": "development"
+    },
+    {
+      "id": "745854",
+      "split": "development"
+    },
+    {
+      "id": "62",
+      "split": "development"
+    },
+    {
+      "id": "886224",
+      "split": "development"
+    },
+    {
+      "id": "889154",
+      "split": "development"
+    },
+    {
+      "id": "569",
+      "split": "holdout"
+    },
+    {
+      "id": "679466",
+      "split": "development"
+    },
+    {
+      "id": "950",
+      "split": "holdout"
+    },
+    {
+      "id": "326",
+      "split": "development"
+    },
+    {
+      "id": "1247795",
+      "split": "holdout"
+    },
+    {
+      "id": "353037",
+      "split": "holdout"
+    },
+    {
+      "id": "1296221",
+      "split": "development"
+    },
+    {
+      "id": "992414",
+      "split": "development"
+    },
+    {
+      "id": "817",
+      "split": "development"
+    },
+    {
+      "id": "1580272",
+      "split": "development"
+    },
+    {
+      "id": "1396494",
+      "split": "development"
+    },
+    {
+      "id": "783",
+      "split": "holdout"
+    },
+    {
+      "id": "2048096",
+      "split": "development"
+    },
+    {
+      "id": "1940901",
+      "split": "development"
+    },
+    {
+      "id": "312",
+      "split": "development"
+    },
+    {
+      "id": "925",
+      "split": "development"
+    },
+    {
+      "id": "541949",
+      "split": "development"
+    },
+    {
+      "id": "2302252",
+      "split": "development"
+    },
+    {
+      "id": "956",
+      "split": "holdout"
+    },
+    {
+      "id": "884",
+      "split": "development"
+    },
+    {
+      "id": "1427275",
+      "split": "development"
+    },
+    {
+      "id": "768896",
+      "split": "development"
+    },
+    {
+      "id": "958",
+      "split": "development"
+    },
+    {
+      "id": "390",
+      "split": "development"
+    },
+    {
+      "id": "1238305",
+      "split": "development"
+    },
+    {
+      "id": "2149455",
+      "split": "development"
+    },
+    {
+      "id": "1312282",
+      "split": "development"
+    },
+    {
+      "id": "1389896",
+      "split": "development"
+    },
+    {
+      "id": "1537440",
+      "split": "development"
+    },
+    {
+      "id": "139",
+      "split": "development"
+    },
+    {
+      "id": "709123",
+      "split": "development"
+    },
+    {
+      "id": "879",
+      "split": "holdout"
+    },
+    {
+      "id": "318419",
+      "split": "development"
+    },
+    {
+      "id": "858638",
+      "split": "development"
+    },
+    {
+      "id": "830234",
+      "split": "development"
+    },
+    {
+      "id": "877928",
+      "split": "development"
+    },
+    {
+      "id": "215891",
+      "split": "development"
+    },
+    {
+      "id": "688",
+      "split": "development"
+    },
+    {
+      "id": "798812",
+      "split": "development"
+    },
+    {
+      "id": "1646036",
+      "split": "development"
+    },
+    {
+      "id": "2087890",
+      "split": "development"
+    },
+    {
+      "id": "1610940",
+      "split": "development"
+    },
+    {
+      "id": "759",
+      "split": "development"
+    },
+    {
+      "id": "2174728",
+      "split": "development"
+    },
+    {
+      "id": "135",
+      "split": "development"
+    },
+    {
+      "id": "1105507",
+      "split": "holdout"
+    },
+    {
+      "id": "320558",
+      "split": "development"
+    },
+    {
+      "id": "507",
+      "split": "development"
+    },
+    {
+      "id": "1781071",
+      "split": "development"
+    },
+    {
+      "id": "201289",
+      "split": "holdout"
+    },
+    {
+      "id": "249",
+      "split": "development"
+    },
+    {
+      "id": "404006",
+      "split": "development"
+    },
+    {
+      "id": "895562",
+      "split": "development"
+    },
+    {
+      "id": "392",
+      "split": "development"
+    },
+    {
+      "id": "1193963",
+      "split": "development"
+    },
+    {
+      "id": "1588289",
+      "split": "development"
+    },
+    {
+      "id": "196",
+      "split": "development"
+    },
+    {
+      "id": "1150",
+      "split": "holdout"
+    },
+    {
+      "id": "364962",
+      "split": "holdout"
+    },
+    {
+      "id": "918283",
+      "split": "holdout"
+    },
+    {
+      "id": "1396486",
+      "split": "development"
+    },
+    {
+      "id": "80447",
+      "split": "development"
+    },
+    {
+      "id": "1429761",
+      "split": "development"
+    },
+    {
+      "id": "2281235",
+      "split": "development"
+    },
+    {
+      "id": "1901327",
+      "split": "development"
+    },
+    {
+      "id": "1012",
+      "split": "development"
+    },
+    {
+      "id": "284",
+      "split": "development"
+    },
+    {
+      "id": "458244",
+      "split": "development"
+    },
+    {
+      "id": "1793986",
+      "split": "development"
+    },
+    {
+      "id": "11263",
+      "split": "development"
+    },
+    {
+      "id": "1666850",
+      "split": "holdout"
+    },
+    {
+      "id": "999363",
+      "split": "development"
+    },
+    {
+      "id": "175907",
+      "split": "development"
+    },
+    {
+      "id": "1168",
+      "split": "development"
+    },
+    {
+      "id": "563501",
+      "split": "development"
+    },
+    {
+      "id": "732",
+      "split": "development"
+    },
+    {
+      "id": "650",
+      "split": "holdout"
+    },
+    {
+      "id": "813",
+      "split": "development"
+    },
+    {
+      "id": "1128",
+      "split": "development"
+    },
+    {
+      "id": "1155976",
+      "split": "development"
+    },
+    {
+      "id": "1274484",
+      "split": "development"
+    },
+    {
+      "id": "890",
+      "split": "development"
+    },
+    {
+      "id": "483",
+      "split": "holdout"
+    },
+    {
+      "id": "2232551",
+      "split": "development"
+    },
+    {
+      "id": "758",
+      "split": "development"
+    },
+    {
+      "id": "428669",
+      "split": "holdout"
+    },
+    {
+      "id": "921517",
+      "split": "development"
+    },
+    {
+      "id": "2090656",
+      "split": "development"
+    },
+    {
+      "id": "819",
+      "split": "development"
+    },
+    {
+      "id": "1161",
+      "split": "development"
+    },
+    {
+      "id": "1112374",
+      "split": "development"
+    },
+    {
+      "id": "1773198",
+      "split": "development"
+    },
+    {
+      "id": "81",
+      "split": "holdout"
+    },
+    {
+      "id": "1560400",
+      "split": "holdout"
+    },
+    {
+      "id": "573",
+      "split": "development"
+    },
+    {
+      "id": "88362",
+      "split": "holdout"
+    },
+    {
+      "id": "1545348",
+      "split": "development"
+    },
+    {
+      "id": "1298366",
+      "split": "development"
+    },
+    {
+      "id": "1748856",
+      "split": "development"
+    },
+    {
+      "id": "2246649",
+      "split": "development"
+    },
+    {
+      "id": "520534",
+      "split": "holdout"
+    },
+    {
+      "id": "603909",
+      "split": "development"
+    },
+    {
+      "id": "1588290",
+      "split": "development"
+    },
+    {
+      "id": "1578320",
+      "split": "development"
+    },
+    {
+      "id": "2074730",
+      "split": "development"
+    },
+    {
+      "id": "910029",
+      "split": "development"
+    },
+    {
+      "id": "1214391",
+      "split": "holdout"
+    },
+    {
+      "id": "294462",
+      "split": "development"
+    },
+    {
+      "id": "1008",
+      "split": "development"
+    },
+    {
+      "id": "907518",
+      "split": "development"
+    },
+    {
+      "id": "105396",
+      "split": "development"
+    },
+    {
+      "id": "1776469",
+      "split": "development"
+    },
+    {
+      "id": "124",
+      "split": "development"
+    }
+  ],
+  "images": [
+    {
+      "id": "img-7dbea19886af7a07",
+      "split": "development"
+    },
+    {
+      "id": "img-fa1679484e362683",
+      "split": "development"
+    },
+    {
+      "id": "img-f53ee1c5f2f4fd59",
+      "split": "development"
+    },
+    {
+      "id": "img-8697050e53f91cc4",
+      "split": "development"
+    },
+    {
+      "id": "img-ebd6d3ff052c6f29",
+      "split": "development"
+    },
+    {
+      "id": "img-c140804bc6a58543",
+      "split": "development"
+    },
+    {
+      "id": "img-69cc4299c60b200d",
+      "split": "development"
+    },
+    {
+      "id": "img-a8fd0be54a0c18c6",
+      "split": "holdout"
+    },
+    {
+      "id": "img-89a7025bc3d4f477",
+      "split": "development"
+    },
+    {
+      "id": "img-a0834e54b2369850",
+      "split": "development"
+    },
+    {
+      "id": "img-210182033beaeea2",
+      "split": "development"
+    },
+    {
+      "id": "img-6c765f4afe5b8102",
+      "split": "holdout"
+    },
+    {
+      "id": "img-87a777fd3e1821d4",
+      "split": "development"
+    },
+    {
+      "id": "img-576ebe3f53a36734",
+      "split": "development"
+    },
+    {
+      "id": "img-15b3cc012730fd77",
+      "split": "development"
+    },
+    {
+      "id": "img-1961d79d6cd3d160",
+      "split": "development"
+    },
+    {
+      "id": "img-030f11d56cdd8024",
+      "split": "development"
+    },
+    {
+      "id": "img-e70596ec55ceb9bb",
+      "split": "development"
+    },
+    {
+      "id": "img-11d35a6a7dd0f1e6",
+      "split": "holdout"
+    },
+    {
+      "id": "img-6e4ce3d945275128",
+      "split": "development"
+    },
+    {
+      "id": "img-09bc53719f099818",
+      "split": "development"
+    },
+    {
+      "id": "img-d7d2eeb5b77a8271",
+      "split": "development"
+    },
+    {
+      "id": "img-d3227c9e4e2edeaa",
+      "split": "development"
+    },
+    {
+      "id": "img-6f1cc21581ef47ea",
+      "split": "holdout"
+    },
+    {
+      "id": "img-c94549f56c665e48",
+      "split": "development"
+    },
+    {
+      "id": "img-f1702501d0cd2664",
+      "split": "development"
+    },
+    {
+      "id": "img-5c29487d2617ff62",
+      "split": "development"
+    },
+    {
+      "id": "img-29ec7e302a8f609a",
+      "split": "development"
+    },
+    {
+      "id": "img-6594abc6e16500c2",
+      "split": "development"
+    },
+    {
+      "id": "img-c70410f519723005",
+      "split": "holdout"
+    },
+    {
+      "id": "img-843183bfe45e3d24",
+      "split": "development"
+    },
+    {
+      "id": "img-95e23c85f98d96eb",
+      "split": "development"
+    },
+    {
+      "id": "img-7421b235dec5c389",
+      "split": "holdout"
+    },
+    {
+      "id": "img-9082f2b6b146757f",
+      "split": "development"
+    },
+    {
+      "id": "img-e71615f14741cbdb",
+      "split": "holdout"
+    },
+    {
+      "id": "img-dc539e304021d603",
+      "split": "holdout"
+    },
+    {
+      "id": "img-386deb6e182e0001",
+      "split": "development"
+    },
+    {
+      "id": "img-8c2b0ca9a40dd010",
+      "split": "development"
+    },
+    {
+      "id": "img-67c56499ed6f7851",
+      "split": "development"
+    },
+    {
+      "id": "img-c2836f442fa0809c",
+      "split": "development"
+    },
+    {
+      "id": "img-a882cbb23876dc15",
+      "split": "development"
+    },
+    {
+      "id": "img-99551e6dfe30f607",
+      "split": "development"
+    },
+    {
+      "id": "img-27a3568c9f76938f",
+      "split": "development"
+    },
+    {
+      "id": "img-0ae8363e4f348387",
+      "split": "holdout"
+    },
+    {
+      "id": "img-1479e08b68b33434",
+      "split": "holdout"
+    },
+    {
+      "id": "img-5a711b4f2bcefb01",
+      "split": "holdout"
+    },
+    {
+      "id": "img-3c9051d7a4578cb2",
+      "split": "development"
+    },
+    {
+      "id": "img-44eb54edf8ea7f0f",
+      "split": "holdout"
+    },
+    {
+      "id": "img-829936711c26345e",
+      "split": "development"
+    },
+    {
+      "id": "img-4b219447d7e01906",
+      "split": "development"
+    },
+    {
+      "id": "img-55714b22c9ff2a4c",
+      "split": "development"
+    },
+    {
+      "id": "img-168b64badd29a821",
+      "split": "development"
+    },
+    {
+      "id": "img-954ed21f5d0a09d9",
+      "split": "development"
+    },
+    {
+      "id": "img-d3318ef4cc377818",
+      "split": "development"
+    },
+    {
+      "id": "img-d62f273da08ac62f",
+      "split": "holdout"
+    },
+    {
+      "id": "img-959b72b9f1440674",
+      "split": "development"
+    },
+    {
+      "id": "img-048623205a03979d",
+      "split": "development"
+    },
+    {
+      "id": "img-09a022675f391626",
+      "split": "development"
+    },
+    {
+      "id": "img-c9e5d8bd9eb6946f",
+      "split": "development"
+    },
+    {
+      "id": "img-dcbf283bf424de9a",
+      "split": "development"
+    },
+    {
+      "id": "img-fe1ffbdcd35bb197",
+      "split": "development"
+    },
+    {
+      "id": "img-656d731da36cf6cf",
+      "split": "development"
+    },
+    {
+      "id": "img-8580b02f1d1a87c7",
+      "split": "development"
+    },
+    {
+      "id": "img-52a699106639f7ff",
+      "split": "development"
+    },
+    {
+      "id": "img-650da1165cecdc58",
+      "split": "development"
+    },
+    {
+      "id": "img-e309b78d901cc8a0",
+      "split": "development"
+    },
+    {
+      "id": "img-119ea9ea73db6ca2",
+      "split": "holdout"
+    },
+    {
+      "id": "img-85bcd3fdeb6e57f0",
+      "split": "development"
+    },
+    {
+      "id": "img-1072d867daba256e",
+      "split": "development"
+    },
+    {
+      "id": "img-d796f1d497d35eaf",
+      "split": "holdout"
+    },
+    {
+      "id": "img-582212a6f6090e0c",
+      "split": "development"
+    },
+    {
+      "id": "img-96dcedbbc7a7cc62",
+      "split": "development"
+    },
+    {
+      "id": "img-95453e81bbcf6ea4",
+      "split": "development"
+    },
+    {
+      "id": "img-7a6867811713b6fa",
+      "split": "holdout"
+    },
+    {
+      "id": "img-4d9c930e43007371",
+      "split": "development"
+    },
+    {
+      "id": "img-d4503aa35976a147",
+      "split": "development"
+    },
+    {
+      "id": "img-bc35045aaa1bf02c",
+      "split": "development"
+    },
+    {
+      "id": "img-fb456e8b6cdb7a33",
+      "split": "development"
+    },
+    {
+      "id": "img-3dddd96f1bd7d0f9",
+      "split": "development"
+    },
+    {
+      "id": "img-b86e3dada94ca26a",
+      "split": "development"
+    },
+    {
+      "id": "img-67ab033828845135",
+      "split": "development"
+    },
+    {
+      "id": "img-ebe159a5cedf075e",
+      "split": "holdout"
+    },
+    {
+      "id": "img-cbb43bbda8333bdb",
+      "split": "development"
+    },
+    {
+      "id": "img-9faaa8b100926c32",
+      "split": "holdout"
+    },
+    {
+      "id": "img-ac045d0a4b8f1b58",
+      "split": "development"
+    },
+    {
+      "id": "img-1153c03307f2e432",
+      "split": "development"
+    },
+    {
+      "id": "img-d15394a806bfceb9",
+      "split": "development"
+    },
+    {
+      "id": "img-88fe10e2779d10a3",
+      "split": "development"
+    },
+    {
+      "id": "img-b8d3f23189c8eb2b",
+      "split": "development"
+    },
+    {
+      "id": "img-19061abc6a8ddb05",
+      "split": "development"
+    },
+    {
+      "id": "img-742d2e5493f7490e",
+      "split": "development"
+    },
+    {
+      "id": "img-5c2fa92355396be9",
+      "split": "development"
+    },
+    {
+      "id": "img-07f25d1c28e78b4a",
+      "split": "development"
+    },
+    {
+      "id": "img-7d04d34822b91458",
+      "split": "development"
+    },
+    {
+      "id": "img-a0bf581a434615e8",
+      "split": "development"
+    },
+    {
+      "id": "img-4376e72699f41977",
+      "split": "development"
+    },
+    {
+      "id": "img-8306496d39ba991b",
+      "split": "development"
+    },
+    {
+      "id": "img-7072341c5c43d194",
+      "split": "holdout"
+    },
+    {
+      "id": "img-6ca7ce09da99dce0",
+      "split": "development"
+    },
+    {
+      "id": "img-9603ab1cc32a0bc9",
+      "split": "development"
+    }
+  ]
+}
