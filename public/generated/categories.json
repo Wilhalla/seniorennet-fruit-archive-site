@@ -1,0 +1,205 @@
+{
+  "version": "archive-categories-1",
+  "vocabularyVersion": "archive-tags-1",
+  "embeddingModel": "Qwen/Qwen3-Embedding-8B",
+  "embeddingMethod": "umap-cosine-v1",
+  "categories": [
+    {
+      "id": "fruit",
+      "label": "Fruit & rassen",
+      "description": "Fruitsoorten, rassen, bloei, bestuiving en oogst",
+      "tagIds": [
+        "appels",
+        "peren",
+        "pruimen",
+        "bessen",
+        "bramen",
+        "aardbeien",
+        "noten",
+        "overig_fruit",
+        "fruitrassen",
+        "rasidentificatie",
+        "nieuwe_rassen",
+        "zaailingen",
+        "onderstammen",
+        "boomvormen",
+        "fruitcollecties",
+        "bloei",
+        "bestuiving",
+        "vruchtzetting",
+        "oogst",
+        "fruitbewaring"
+      ],
+      "unitCount": 1554,
+      "postCount": 1785,
+      "representativePostIds": [
+        "2236537",
+        "2199565",
+        "1946744",
+        "1937362",
+        "1831450"
+      ]
+    },
+    {
+      "id": "teelt",
+      "label": "Tuin & teelt",
+      "description": "Werk in de tuin, bodem, enten en teeltomstandigheden",
+      "tagIds": [
+        "groenten",
+        "snoeien",
+        "aanplant_en_verplanting",
+        "bodembeheer",
+        "compost_en_bemesting",
+        "biologische_teelt",
+        "tuin_en_infrastructuur",
+        "enten",
+        "moestuin",
+        "serre_en_kas"
+      ],
+      "unitCount": 985,
+      "postCount": 1188,
+      "representativePostIds": [
+        "1350582",
+        "1932487",
+        "1904455",
+        "1548708",
+        "1503081"
+      ]
+    },
+    {
+      "id": "plantgezondheid",
+      "label": "Plantenproblemen",
+      "description": "Schade, ziekten, plagen en bestrijding",
+      "tagIds": [
+        "gewasschade",
+        "plaagdieren",
+        "schimmelziekten",
+        "schadebestrijding",
+        "pesticiden"
+      ],
+      "unitCount": 905,
+      "postCount": 1060,
+      "representativePostIds": [
+        "1819408",
+        "894287",
+        "650912",
+        "640102",
+        "501407"
+      ]
+    },
+    {
+      "id": "natuur",
+      "label": "Natuur & seizoenen",
+      "description": "Weer, vogels, insecten en ander tuinleven",
+      "tagIds": [
+        "weer_en_seizoenen",
+        "vogels",
+        "vlinders",
+        "bijen",
+        "overige_dieren",
+        "natuurbeheer",
+        "kippen"
+      ],
+      "unitCount": 1195,
+      "postCount": 1467,
+      "representativePostIds": [
+        "2232551",
+        "2029566",
+        "1582742",
+        "1573668",
+        "1526159"
+      ]
+    },
+    {
+      "id": "reizen",
+      "label": "Reizen & bezoeken",
+      "description": "Uitstappen, tuinen en publieke evenementen",
+      "tagIds": [
+        "tuinbezoek",
+        "reizen_en_uitstappen",
+        "tuinevenementen"
+      ],
+      "unitCount": 998,
+      "postCount": 1522,
+      "representativePostIds": [
+        "2271003",
+        "2246649",
+        "2149455",
+        "2096047",
+        "2077500"
+      ]
+    },
+    {
+      "id": "erfgoed",
+      "label": "Erfgoed & verhalen",
+      "description": "Geschiedenis, kunst, tentoonstellingen en herinneringen",
+      "tagIds": [
+        "erfgoed",
+        "tentoonstellingen",
+        "kunst",
+        "herinneringen"
+      ],
+      "unitCount": 806,
+      "postCount": 1254,
+      "representativePostIds": [
+        "2181835",
+        "2180131",
+        "2178782",
+        "2094212",
+        "1966972"
+      ]
+    },
+    {
+      "id": "familie",
+      "label": "Familie",
+      "description": "Expliciete familieverhalen en vieringen",
+      "tagIds": [
+        "familie",
+        "familiefeesten"
+      ],
+      "unitCount": 113,
+      "postCount": 150,
+      "representativePostIds": [
+        "532462",
+        "2232787",
+        "1589269",
+        "1378516",
+        "1312282"
+      ]
+    },
+    {
+      "id": "eten",
+      "label": "Eten & gezondheid",
+      "description": "Fruitgerechten, voeding en voedselsystemen",
+      "tagIds": [
+        "fruitgerechten",
+        "voeding_en_gezondheid",
+        "voedselsysteem"
+      ],
+      "unitCount": 224,
+      "postCount": 281,
+      "representativePostIds": [
+        "1438024",
+        "1284481",
+        "995773",
+        "723602",
+        "1173"
+      ]
+    },
+    {
+      "id": "overig",
+      "label": "Overig",
+      "description": "Berichten zonder geselecteerd inhoudelijk tag",
+      "tagIds": [],
+      "unitCount": 162,
+      "postCount": 168,
+      "representativePostIds": [
+        "2289786",
+        "2289681",
+        "2269900",
+        "2248441",
+        "2247841"
+      ]
+    }
+  ]
+}

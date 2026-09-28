@@ -244,6 +244,10 @@ def request_jev(payload: dict[str, Any], key: str) -> dict[str, Any]:
             if error.code not in (429, 500, 502, 503, 504, 520, 524) or attempt == 3:
                 raise RuntimeError(f"Jev HTTP {error.code}: {error.read().decode()[:500]}") from error
             time.sleep(min(15, 2 ** attempt))
+        except (TimeoutError, urllib.error.URLError) as error:
+            if attempt == 3:
+                raise RuntimeError("Jev request failed after four network attempts") from error
+            time.sleep(min(15, 2 ** attempt))
     raise RuntimeError("Jev retry limit reached")
 
 
@@ -258,6 +262,10 @@ def request_embedding(payload: dict[str, Any], key: str) -> dict[str, Any]:
         except urllib.error.HTTPError as error:
             if error.code not in (429, 500, 502, 503, 504, 520, 524) or attempt == 3:
                 raise RuntimeError(f"Embeddings HTTP {error.code}: {error.read().decode()[:500]}") from error
+            time.sleep(min(15, 2 ** attempt))
+        except (TimeoutError, urllib.error.URLError) as error:
+            if attempt == 3:
+                raise RuntimeError("Embedding request failed after four network attempts") from error
             time.sleep(min(15, 2 ** attempt))
     raise RuntimeError("Embeddings retry limit reached")
 

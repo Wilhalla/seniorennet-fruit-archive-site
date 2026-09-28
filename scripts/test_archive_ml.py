@@ -259,8 +259,10 @@ class ArchiveMlTests(unittest.TestCase):
         result = build_outputs(posts, units, predictions, VOCABULARY, mapping, atlas)
         self.assertEqual(len(result["map-points.json"]), 2)
         self.assertEqual(result["post-categories.json"]["b"]["categoryIds"], ["fruit", "visit"])
+        self.assertEqual(result["post-category-ids.json"]["b"], ["fruit", "visit"])
         self.assertEqual(result["post-categories.json"]["c"]["categoryIds"], ["overig"])
         self.assertEqual(result["related-posts.json"]["b"], ["a", "c"])
+        self.assertEqual(result["manifest.json"]["browseUnitCount"], 2)
 
 
 if __name__ == "__main__":

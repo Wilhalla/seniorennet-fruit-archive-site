@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build a semantic Atlas preview from paid, cached text embeddings.
+"""Project cached browse-unit embeddings and compute exact cosine neighbors.
 
-This does not write site JSON. The preview can be reviewed before a cutover.
-Install numpy and umap-learn from requirements-archive-ml.txt for the map projection.
+The resulting Atlas data is published separately by archive_ml_publish.py.
+Install numpy and umap-learn from requirements-archive-ml.txt for the projection.
 """
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ def normalized_vectors(rows: list[list[float]]) -> np.ndarray:
 
 def nearest_neighbors(vectors: np.ndarray, ids: list[str], k: int = 5) -> dict[str, list[str]]:
     result: dict[str, list[str]] = {}
-    # Blocked multiplication keeps memory bounded on the full 3,281-post archive.
+    # Blocked multiplication keeps memory bounded on the 2,678-unit archive.
     for start in range(0, len(ids), 128):
         similarities = vectors[start:start + 128] @ vectors.T
         for offset, scores in enumerate(similarities):
