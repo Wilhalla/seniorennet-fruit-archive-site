@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+from datetime import UTC, datetime
 from pathlib import Path
 
 from archive_ml import WORK, load_json, question_hash, write_json
@@ -77,7 +78,8 @@ def build_image_outputs(source_images: list[dict], client_images: list[dict], ob
                           for season in ("lente", "zomer", "herfst", "winter")],
               "themes": [{"id": category["id"], "label": category["label"], "icon": category["icon"],
                           "count": category["count"]} for category in published_categories]}
-    manifest = {**old_manifest, "captionModel": observations[0]["descriptionModel"],
+    manifest = {**old_manifest, "generatedAt": datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+                "captionModel": observations[0]["descriptionModel"],
                 "captionCoverage": len(observations), "imageTagModel": predictions[observations[0]["id"]]["model"],
                 "imageTagVocabularyVersion": vocabulary["version"], "imageCategoryMapVersion": mapping["version"],
                 "categoryCount": len(published_categories)}
