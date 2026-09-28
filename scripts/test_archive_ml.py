@@ -5,9 +5,12 @@ from pathlib import Path
 from unittest.mock import patch
 
 import archive_ml
+from archive_ml_caption import thumbnail_path, validate_captions
+from archive_ml_image_tags import selected_image_tags
 from archive_ml_publish import build_outputs
+from archive_ml_publish_images import build_image_outputs
 from archive_ml_counts import bundle_categories, evaluate_tags, summarize_tags
-from archive_ml_units import build_units, image_context, image_state, unit_state
+from archive_ml_units import build_units, image_context, image_state, image_text_links, unit_state
 
 
 VOCABULARY = {"version": "test-1", "status": "approved", "tags": [
@@ -186,13 +189,13 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(bundle["categories"][0]["unitCount"], 1)
         self.assertEqual(bundle["unmappedTagIds"], ["visit"])
 
-    def test_unreviewed_image_descriptions_are_excluded(self):
+    def test_auto_accepted_image_descriptions_keep_linked_text_separate(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "images.json"
             archive_ml.write_json(path, [
                 {"id": "one", "postSlug": "post-a", "description": "Een appel.", "descriptionModel": "test", "descriptionStatus": "unreviewed"},
                 {"id": "two", "postSlug": "post-b", "description": "Een peer.", "descriptionModel": "test",
-                 "descriptionStatus": "reviewed", "linkedContext": {"postId": "b", "linkedText": [
+                 "descriptionStatus": "auto-accepted", "linkedContext": {"postId": "b", "linkedText": [
                      {"kind": "numbered-caption", "text": "Peer van opa", "sourcePostId": "b"},
                      {"kind": "numbered-caption", "text": "Wrong post", "sourcePostId": "a"},
                  ]}},
@@ -216,9 +219,45 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(state["visual_evidence"]["description"], "Twee mensen aan tafel.")
         self.assertNotIn("opa", str(state["visual_evidence"]).lower())
         self.assertEqual(state["linked_context"]["image_specific_text"][0]["text"], "Opa en zijn kleinkind")
+        row["descriptionStatus"] = "auto-accepted"
+        self.assertEqual(image_state(row)["visual_evidence"]["role"], "auto-caption-visible-content")
         row["descriptionStatus"] = "unreviewed"
-        with self.assertRaisesRegex(ValueError, "reviewed"):
+        with self.assertRaisesRegex(ValueError, "accepted"):
             image_state(row)
+
+    def test_family_image_requires_photographed_people_and_family_post(self):
+        vocabulary = {"tags": [{"id": "mensen", "threshold": 0.5},
+                               {"id": "familie", "threshold": 0.65},
+                               {"id": "familiefeest", "threshold": 0.65}]}
+        observation = {"postId": "one", "linkedContext": {"postTitle": "Dochter Leen op bezoek"}}
+        prediction = {"tagScores": {"mensen": 0.9, "familie": 0.3, "familiefeest": 0.2}}
+        categories = {"one": {"categoryIds": ["familie"], "tagIds": []}}
+        self.assertIn("familie", selected_image_tags(observation, prediction, vocabulary, categories))
+        self.assertNotIn("familie", selected_image_tags(observation, prediction, vocabulary,
+                                                        {"one": {"categoryIds": ["reizen"], "tagIds": []}}))
+        prediction["tagScores"]["mensen"] = 0.2
+        self.assertNotIn("familie", selected_image_tags(observation, prediction, vocabulary, categories))
+
+    def test_caption_response_requires_one_ordered_caption_per_image(self):
+        rows = {"captions": [{"id": "a", "description": "Een boom.", "visibleTags": ["boom"], "unclear": False},
+                             {"id": "b", "description": "Een vogel.", "visibleTags": ["vogel"], "unclear": False}]}
+        self.assertEqual(len(validate_captions(rows, ["a", "b"])), 2)
+        with self.assertRaisesRegex(ValueError, "order"):
+            validate_captions(rows, ["b", "a"])
+        self.assertEqual(thumbnail_path("/archive-images/x/y.jpg"), "/archive-thumbs/x/y.webp")
+
+    def test_repeated_image_source_keeps_its_own_html_alt(self):
+        post = {"id": "one", "html": '<img src="/archive-images/a.jpg" alt="Eerste"><img src="/archive-images/a.jpg" alt="Tweede">'}
+        self.assertEqual(image_text_links(post, "/archive-images/a.jpg", 1)[0]["text"], "Tweede")
+
+    def test_many_image_observations_are_sampled_across_the_story(self):
+        observations = {"one": [{"imageId": str(i), "visualDescription": f"Foto {i}"} for i in range(30)]}
+        unit = {"title": "Fotoreeks", "parts": [{"slug": "one", "title": "Fotoreeks", "text": ""}]}
+        state = unit_state(unit, observations)
+        self.assertEqual(state["image_observation_count"], 30)
+        self.assertEqual(len(state["reviewed_images"]), 12)
+        self.assertEqual([state["reviewed_images"][0]["image_id"], state["reviewed_images"][-1]["image_id"]], ["0", "29"])
+        self.assertIn("Afbeelding 29", archive_ml.embedding_text(unit, observations))
 
     def test_embedding_requires_usage_for_budget(self):
         with self.assertRaisesRegex(ValueError, "token count"):
@@ -265,6 +304,30 @@ class ArchiveMlTests(unittest.TestCase):
         self.assertEqual(result["post-categories.json"]["c"]["categoryIds"], ["overig"])
         self.assertEqual(result["related-posts.json"]["b"], ["a", "c"])
         self.assertEqual(result["manifest.json"]["browseUnitCount"], 2)
+
+    def test_published_images_keep_visual_description_and_matched_text_distinct(self):
+        source = [{"id": "a", "src": "/archive-images/a.jpg", "year": 2020, "season": "lente"},
+                  {"id": "b", "src": "/archive-images/b.jpg", "year": 2020, "season": "lente"}]
+        observations = [{"id": image_id, "postId": "post-1", "description": description,
+                         "descriptionModel": "vision-test", "linkedContext": {"seriesId": "series-1", "linkedText": [
+                             {"kind": "numbered-caption", "text": text, "sourcePostId": "post-1"},
+                             {"kind": "numbered-caption", "text": "Other post", "sourcePostId": "post-2"}]}}
+                        for image_id, description, text in (("a", "Een appel.", "Appel van opa"),
+                                                            ("b", "Een straat.", "In de stad"))]
+        predictions = {image_id: {"vocabularyHash": archive_ml.question_hash(VOCABULARY),
+                                  "model": "jev-test", "tagScores": scores}
+                       for image_id, scores in (("a", {"fruit": 0.9, "visit": 0.1}),
+                                                ("b", {"fruit": 0.1, "visit": 0.8}))}
+        mapping = {"version": "image-test", "categories": [
+            {"id": "fruit", "label": "Fruit", "description": "Fruit", "icon": "🍎", "tagIds": ["fruit"]},
+            {"id": "reizen", "label": "Reizen", "description": "Reizen", "icon": "🧭", "tagIds": ["visit"]}]}
+        result = build_image_outputs(source, source, observations, predictions, VOCABULARY, mapping, {})
+        first = result["image-index.client.json"][0]
+        self.assertEqual(first["visualDescription"], "Een appel.")
+        self.assertEqual(first["imageSpecificText"], ["Appel van opa"])
+        self.assertEqual(first["visualTags"], ["fruit"])
+        self.assertEqual(first["seriesId"], "series-1")
+        self.assertEqual(result["gallery-groups.json"]["themes"][0]["count"], 1)
 
 
 if __name__ == "__main__":

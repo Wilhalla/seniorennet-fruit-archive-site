@@ -1,0 +1,29 @@
+{
+  "version": "archive-image-tags-1",
+  "status": "approved",
+  "tags": [
+    {"id": "mensen", "label": "Mensen", "question": "Zijn echte mensen gefotografeerd in visual_evidence?", "definition": "Personen afgebeeld op een prent, scherm, schilderij, foto-in-foto, standbeeld of glas-in-lood tellen niet. Iemand die alleen in linked_context genoemd wordt telt niet."},
+    {"id": "portret", "label": "Portret", "question": "Zijn een of enkele echte gefotografeerde mensen duidelijk het hoofdonderwerp?", "definition": "Geen portret als het hoofdonderwerp een prent, schilderij, beeld of scherm is."},
+    {"id": "groep", "label": "Groep mensen", "question": "Zijn minstens drie echte mensen samen gefotografeerd?", "definition": "Personen die alleen op een prent, schilderij, bord of scherm staan tellen niet; leid geen familieband af."},
+    {"id": "familie", "label": "Familie", "threshold": 0.65, "question": "Toont deze specifieke afbeelding echte gefotografeerde mensen in een expliciet aangeduide familiecontext?", "definition": "Een relatie is beeldspecifiek als image_specific_text die benoemt, of dezelfde naam in image_specific_text en een familierelatie in post_title staat (bijvoorbeeld 'Leen' en 'dochter Leen'). Een bericht dat geheel over een familiefeest gaat kan passende foto's van deelnemers ondersteunen. Een losse familievermelding elders in een gemengd bericht of alleen zichtbare mensen volstaat niet."},
+    {"id": "familiefeest", "label": "Familiefeest", "threshold": 0.65, "question": "Toont deze specifieke afbeelding een expliciet aangeduide viering binnen de familie?", "definition": "Vereis een zichtbare passende viering of deelnemers en beeldspecifieke tekst, of een bronbericht dat geheel over een familiefeest, verjaardag, communie of jubileum gaat. Een los feest of een familielid elders in een gemengd bericht volstaat niet."},
+    {"id": "fruit", "label": "Fruit", "question": "Zijn vruchten duidelijk zichtbaar?", "definition": "Rijp of onrijp fruit aan een boom, in een mand of los; gebruik uitsluitend visual_evidence."},
+    {"id": "appels", "label": "Appels", "question": "Zijn duidelijk herkenbare appels zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence; vul geen soort in op basis van de berichttitel."},
+    {"id": "peren", "label": "Peren", "question": "Zijn duidelijk herkenbare peren zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence."},
+    {"id": "ander_fruit", "label": "Ander fruit", "question": "Zijn duidelijk herkenbare andere fruitsoorten dan appels en peren zichtbaar?", "definition": "Bijvoorbeeld pruimen, bessen, kersen of noten; gebruik uitsluitend visual_evidence."},
+    {"id": "groenten", "label": "Groenten", "question": "Zijn groenten of een groenteoogst zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence; een tuin zonder zichtbare groente volstaat niet."},
+    {"id": "bloemen", "label": "Bloemen en bloesem", "question": "Zijn bloemen of bloesems duidelijk zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence."},
+    {"id": "bomen", "label": "Bomen en boomgaard", "question": "Zijn echte bomen, boomtakken of een boomgaard een duidelijk gefotografeerd onderwerp?", "definition": "Een boom op een prent, schilderij of kaart telt niet; een boom ver op de achtergrond volstaat niet."},
+    {"id": "tuinplanten", "label": "Tuinplanten", "question": "Zijn struiken, planten, bedden of een aangelegde tuin duidelijk zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence."},
+    {"id": "tuinwerk", "label": "Tuinwerk", "question": "Zijn tuinwerk, teelthandelingen of specifiek tuingereedschap zichtbaar?", "definition": "Bijvoorbeeld planten, snoeien, enten, oogsten of een gereedschap in gebruik; gebruik uitsluitend visual_evidence."},
+    {"id": "plantschade", "label": "Zichtbare plantschade", "question": "Is duidelijke schade of ziekte aan planten of fruit zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence; vermoed geen ziekte op basis van de berichttekst."},
+    {"id": "vogels", "label": "Vogels", "question": "Zijn echte vogels gefotografeerd?", "definition": "Een vogel op een prent, beeld of bord telt niet."},
+    {"id": "insecten", "label": "Insecten", "question": "Zijn echte insecten of spinachtigen gefotografeerd?", "definition": "Afbeeldingen op een bord, prent of schilderij tellen niet; tekstvermeldingen tellen niet."},
+    {"id": "andere_dieren", "label": "Andere dieren", "question": "Zijn echte andere dieren dan vogels en insecten gefotografeerd?", "definition": "Dierfiguren op een beeld, prent of bord tellen niet."},
+    {"id": "landschap", "label": "Landschap en natuur", "question": "Is een echt buitenlandschap, bos, heide of natuurlijk uitzicht gefotografeerd als hoofdonderwerp?", "definition": "Een landschap op een prent of scherm en een kleine achtergrond tellen niet."},
+    {"id": "gebouw", "label": "Gebouwen en plaatsen", "question": "Is een echt gebouw, monument, straat of gebouwde plaats gefotografeerd als hoofdonderwerp?", "definition": "Een gebouw op een plattegrond, prent of scherm telt niet; raad de locatie niet uit linked_context."},
+    {"id": "document", "label": "Documenten en tekst", "question": "Is een document, kaart, bord, etiket of gedrukte tekst het hoofdonderwerp?", "definition": "Gebruik uitsluitend visual_evidence."},
+    {"id": "kunst", "label": "Kunstwerk", "question": "Is een kunstwerk of tentoongesteld object duidelijk zichtbaar?", "definition": "Bijvoorbeeld een schilderij, beeld of prent; gebruik uitsluitend visual_evidence."},
+    {"id": "eten", "label": "Eten en gerechten", "question": "Zijn bereide gerechten, gebak of eetwaren als maaltijd zichtbaar?", "definition": "Gebruik uitsluitend visual_evidence; los fruit valt onder fruit, tenzij het als gerecht is bereid."}
+  ]
+}

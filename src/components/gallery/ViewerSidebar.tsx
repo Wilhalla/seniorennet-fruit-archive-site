@@ -1,7 +1,10 @@
 import { Calendar, ExternalLink, Images } from 'lucide-react'
 import type { Key, RefObject } from 'react'
 import GalleryThumbnail from './GalleryThumbnail'
+import galleryGroupsData from '../../data/generated/gallery-groups.json'
 import { formatImagePostDateTime, type GalleryImageRecord as ImageRecord } from '../../lib/imageGallerySession'
+
+const categoryLabels = new Map(galleryGroupsData.themes.map((theme) => [theme.id, theme.label]))
 
 type TimelineVirtualizer = {
   getTotalSize: () => number
@@ -23,15 +26,17 @@ export default function ViewerSidebar({ filtered, relatedLoading, similarImages,
   return (
     <aside className="bg-eggshell lg:min-h-0 lg:overflow-y-auto lg:overscroll-contain">
       <section className="border-b border-chalk p-4 md:p-5">
-        <h1 className="m-0 text-base font-medium leading-snug text-obsidian">{viewerImage.caption || viewerImage.postTitle}</h1>
+        <h1 className="m-0 text-base font-medium leading-snug text-obsidian">{viewerImage.postTitle}</h1>
         <p className="m-0 mt-1 text-xs text-gravel">{formatImagePostDateTime(viewerImage)}</p>
-        {viewerImage.excerpt && <p className="m-0 mt-3 text-sm leading-6 text-gravel">{viewerImage.excerpt}</p>}
+        {viewerImage.visualDescription && <p className="m-0 mt-3 text-sm leading-6 text-obsidian"><span className="font-medium">Op het beeld:</span> {viewerImage.visualDescription}</p>}
+        {(viewerImage.imageSpecificText ?? []).length > 0 && <p className="m-0 mt-3 text-sm leading-6 text-gravel"><span className="font-medium text-obsidian">Bijschrift bij dit beeld:</span> {viewerImage.imageSpecificText?.join(' · ')}</p>}
+        {viewerImage.excerpt && <p className="m-0 mt-3 text-sm leading-6 text-gravel"><span className="font-medium text-obsidian">In het bericht:</span> {viewerImage.excerpt}</p>}
         <a className="mt-4 inline-flex min-h-9 items-center gap-2 rounded-full border border-obsidian bg-obsidian px-3 text-sm font-medium text-eggshell no-underline hover:text-eggshell" href={`/posts/${viewerImage.postSlug}/`}>
           Lees het artikel bij deze foto <ExternalLink className="size-4" aria-hidden="true" />
         </a>
         <div className="mt-4 flex flex-wrap gap-2" aria-label="Beeldtags">
           {viewerImage.visualTags.slice(0, 6).map((tag) => (
-            <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 text-xs text-obsidian" key={tag}>{tag}</span>
+            <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 text-xs text-obsidian" key={tag}>{categoryLabels.get(tag) ?? tag}</span>
           ))}
           <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 font-mono text-xs text-gravel">{viewerImage.season}</span>
           {viewerImage.year && <span className="inline-flex min-h-7 items-center rounded-full border border-chalk px-2.5 font-mono text-xs text-gravel">{viewerImage.year}</span>}

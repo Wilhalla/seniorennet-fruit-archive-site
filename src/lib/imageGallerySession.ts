@@ -17,6 +17,10 @@ export type GalleryImageRecord = {
   topicId?: string
   excerpt: string
   caption: string
+  visualDescription?: string
+  imageSpecificText?: string[]
+  imageTagIds?: string[]
+  seriesId?: string | null
   imageIndex?: number
   width?: number | null
   height?: number | null
@@ -64,7 +68,7 @@ export type GalleryVirtualRow<T extends GalleryImageRecord = GalleryImageRecord>
   | { type: 'month'; key: string; year: string; label: string; count: number }
   | { type: 'images'; key: string; year: string; images: T[] }
 
-const peoplePlantTags = ['familie', 'tuin', 'tuinwerk', 'fruit', 'bloemen', 'dieren', 'landschap']
+const peoplePlantTags = ['mensen', 'familie', 'tuin', 'tuinwerk', 'fruit', 'bloemen', 'dieren', 'landschap', 'teelt', 'planten', 'natuur']
 
 export const emptyGalleryGroups: GalleryGroups = { years: [], seasons: [], themes: [] }
 export const MIN_HIGH_PRIORITY_THUMBNAILS = 6
@@ -160,7 +164,7 @@ export function filterGalleryImages<T extends GalleryImageRecord>(images: readon
     .filter((image) => filters.theme === 'all' || image.visualTags.includes(filters.theme))
     .filter((image) => filters.speciesFilter === 'all' || (speciesByImage[image.id] ?? []).some((tag) => tag.candidateId === filters.speciesFilter))
     .filter((image) => !filters.peoplePlantsOnly || image.visualTags.some((tag) => peoplePlantTags.includes(tag)))
-    .filter((image) => !q || `${image.postTitle} ${image.caption} ${image.excerpt} ${image.visualTags.join(' ')} ${(speciesByImage[image.id] ?? []).map((tag) => tag.label).join(' ')}`.toLowerCase().includes(q))
+    .filter((image) => !q || `${image.postTitle} ${image.caption} ${image.visualDescription ?? ''} ${(image.imageSpecificText ?? []).join(' ')} ${image.excerpt} ${image.visualTags.join(' ')} ${(speciesByImage[image.id] ?? []).map((tag) => tag.label).join(' ')}`.toLowerCase().includes(q))
     .sort((a, b) => {
       const byDate = Date.parse(b.date) - Date.parse(a.date)
       return filters.sortNewest ? byDate : -byDate

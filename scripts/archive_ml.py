@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Review-first, tag-first archive pipeline. Run from the repository root.
+"""Tag-first archive pipeline. Run from the repository root.
 
 No command contacts a paid service unless --paid, --max-items and --max-usd are
 all supplied. Results are cached by source and vocabulary hashes.
@@ -187,13 +187,15 @@ def load_observations(path: Path | None) -> dict[str, list[dict[str, Any]]]:
     rows = load_json(path)
     result: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
-        if row.get("description") and row.get("postSlug") and row.get("descriptionStatus") == "reviewed":
+        if (row.get("description") and row.get("postSlug")
+                and row.get("descriptionStatus") in {"reviewed", "auto-accepted"}):
             if not row.get("descriptionModel"):
                 raise ValueError(f"image {row.get('id')} needs descriptionModel provenance")
             context = row.get("linkedContext") or {}
             result[row["postSlug"]].append({
                 "imageId": row["id"], "visualDescription": row["description"].strip()[:240],
                 "sourcePostId": context.get("postId"), "linkedText": usable_image_links(context),
+                "visibleTags": row.get("visibleTags", []), "descriptionStatus": row["descriptionStatus"],
             })
     return dict(result)
 
@@ -430,8 +432,9 @@ def classify(args: argparse.Namespace) -> None:
 def embedding_text(unit: dict[str, Any], observations: dict[str, list[dict[str, Any]]]) -> str:
     state = unit_state(unit, observations)
     text_value = f"Titel: {state['title']}\nTekst: {state['post_text']}"
-    for image in state.get("reviewed_images", []):
-        text_value += f"\nAfbeelding {image['image_id']}: {image['visual_description']}"
+    for part in unit["parts"]:
+        for image in observations.get(part["slug"], []):
+            text_value += f"\nAfbeelding {image['imageId']} (bericht {image.get('sourcePostId')}): {image['visualDescription'][:180]}"
     return text_value
 
 
@@ -545,7 +548,8 @@ def preview_bundles(args: argparse.Namespace) -> None:
 
 def preview_image_inputs(args: argparse.Namespace) -> None:
     rows = load_json(args.sample)
-    states = {row["id"]: image_state(row) for row in rows if row.get("descriptionStatus") == "reviewed"}
+    states = {row["id"]: image_state(row) for row in rows
+              if row.get("descriptionStatus") in {"reviewed", "auto-accepted"}}
     write_json(args.output, states)
     print(f"Prepared {len(states)} reviewed image inputs at {args.output}")
 
@@ -607,7 +611,7 @@ def main() -> None:
     classification = commands.add_parser("tag", help="Paid Jev multi-label run; requires explicit limits")
     classification.add_argument("--vocabulary", type=Path, required=True)
     classification.add_argument("--sample", type=Path, help="Browse-unit review sample JSON; omit for full archive")
-    classification.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
+    classification.add_argument("--observations", type=Path, help="Accepted image descriptions JSON")
     classification.add_argument("--output", type=Path, default=WORK / "tag-scores.json")
     classification.add_argument("--paid", action="store_true")
     classification.add_argument("--trial", action="store_true", help="Allow a draft vocabulary only for a capped 20-unit sample")
@@ -624,7 +628,7 @@ def main() -> None:
     tag_plan.add_argument("--max-payload-chars", type=int, default=64000)
     embeddings = commands.add_parser("embed", help="Paid text embeddings for browse-unit similarity")
     embeddings.add_argument("--sample", type=Path, help="Browse-unit review sample JSON; omit for full archive")
-    embeddings.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
+    embeddings.add_argument("--observations", type=Path, help="Accepted image descriptions JSON")
     embeddings.add_argument("--output", type=Path, default=WORK / "embeddings.json")
     embeddings.add_argument("--model", default="qwen/qwen3-embedding-8b")
     embeddings.add_argument("--batch-size", type=int, default=8)

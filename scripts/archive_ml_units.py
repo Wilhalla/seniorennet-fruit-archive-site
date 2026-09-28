@@ -55,11 +55,16 @@ def unit_state(unit: dict[str, Any], observations: dict[str, list[dict[str, Any]
     state = {"title": unit["title"], "post_text": text}
     reviewed_images = [
         {"image_id": image["imageId"], "source_post_id": image.get("sourcePostId"),
-         "visual_description": image["visualDescription"], "linked_context": image.get("linkedText", [])}
+         "visual_description": image["visualDescription"], "linked_context": image.get("linkedText", []),
+         "visible_tags": image.get("visibleTags", [])}
         for part in parts for image in (observations or {}).get(part["slug"], [])
     ]
     if reviewed_images:
-        state["reviewed_images"] = reviewed_images[:5]
+        # Spread a bounded sample over the whole story, including continuation parts.
+        count = min(12, len(reviewed_images))
+        indices = [round(index * (len(reviewed_images) - 1) / (count - 1)) for index in range(count)] if count > 1 else [0]
+        state["image_observation_count"] = len(reviewed_images)
+        state["reviewed_images"] = [reviewed_images[index] for index in indices]
     return state
 
 
@@ -77,12 +82,14 @@ def usable_image_links(context: dict[str, Any]) -> list[dict[str, str]]:
 
 def image_state(image: dict[str, Any]) -> dict[str, Any]:
     """Keep what the photo shows separate from claims in linked source text."""
-    if image.get("descriptionStatus") != "reviewed" or not image.get("description"):
-        raise ValueError(f"image {image.get('id')} needs a reviewed visual description")
+    if image.get("descriptionStatus") not in {"reviewed", "auto-accepted"} or not image.get("description"):
+        raise ValueError(f"image {image.get('id')} needs an accepted visual description")
     context = image.get("linkedContext") or {}
     return {
         "image_id": image["id"],
-        "visual_evidence": {"description": image["description"].strip()[:240], "role": "reviewed-visible-content"},
+        "visual_evidence": {"description": image["description"].strip()[:240],
+                            "visible_tags": image.get("visibleTags", [])[:6],
+                            "role": "auto-caption-visible-content" if image["descriptionStatus"] == "auto-accepted" else "reviewed-visible-content"},
         "linked_context": {
             "role": "source-text-not-visual-evidence", "source_post_id": context.get("postId"),
             "post_title": (context.get("postTitle") or "")[:160],
@@ -131,7 +138,10 @@ def image_text_links(raw_post: dict[str, Any], image_src: str, image_index: int)
     matches = [image for image in parser.images if _image_path(str(image["src"])) == _image_path(image_src)]
     if not matches:
         return []
-    image = matches[0]
+    image = (parser.images[image_index]
+             if image_index < len(parser.images)
+             and _image_path(str(parser.images[image_index]["src"])) == _image_path(image_src)
+             else matches[0])
     links: list[dict[str, Any]] = []
     for field in ("alt", "title"):
         value = str(image[field]).strip()
