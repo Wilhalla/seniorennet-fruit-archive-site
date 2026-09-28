@@ -12,7 +12,23 @@
       "landschap"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "1704802",
+      "postSlug": "fruit-1704802",
+      "postTitle": "VERVOLG 1 De wonderbaarlijke Paddenstoelen-Falussen Vallei",
+      "postExcerpt": "VERVOLG 1 De wonderbaarlijke Paddenstoelen-Falussen Vallei De volgende haltes zijn de meest wonderbaarlijke: restkegels als paddenstoelen, andere als versteende fallussen. Zie de foto’s. De kegels zijn hier afgedekt met een harde, taaie lavalaag.",
+      "seriesId": "series-1704803",
+      "seriesTitle": "De wonderbaarlijke Dag 2 in Cappadocië",
+      "seriesPostIds": [
+        "1704803",
+        "1704802",
+        "1704800"
+      ],
+      "linkedText": [],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-fa1679484e362683",
@@ -28,7 +44,30 @@
       "gras"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "768905",
+      "postSlug": "fruit-768905",
+      "postTitle": "Te gast op de Terp bij Frits en Jet Doornenbal-Steinmetz",
+      "postExcerpt": "Te gast op de Terp bij Frits en Jet Doornenbal-Steinmetz Hun huis is op een terp gebouwd, een sinds eeuwen bewoonde, verhoogde plaats, te midden het weidse polderlandschap dat 2,5 m onder de zeespiegel ligt. Frits is secretaris van de Stichting Fruit Yn Fryslän samen met Nynke Zijlstra en Auke Kleefstra ijveren ze voor het behoud, en vooral de heraanplant van de Friese - en Nederlandse rassen. Zie: http://www.fruitynfryslan.nl FOTO’S 1. Aankomst 2. Huis op de terp 3. Weidse omgeving 4. De Ambro,",
+      "seriesId": "series-768905",
+      "seriesTitle": "Te gast op de Terp bij Frits en Jet Doornenbal-Steinmetz",
+      "seriesPostIds": [
+        "768905",
+        "768901",
+        "768584"
+      ],
+      "linkedText": [
+        {
+          "kind": "numbered-caption",
+          "text": "Haagsysteem, zoals gepropageerd door Willy Mahieu. Ze hadden er al de lange rit vanuit Friesland voor over om hem aan het woord te horen bij een snoeidemonstratie op zijn kwekerij te Jabbeke. Het West-Vlaams vormde toch een moeilijkheid! Ze hadden mij kunnen inschakelen als tolk, maar toen kenden we elkaar nog niet.",
+          "sourcePostId": "768905",
+          "imageOrdinal": 5
+        }
+      ],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-f53ee1c5f2f4fd59",
@@ -44,7 +83,22 @@
       "appels"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "412511",
+      "postSlug": "fruit-412511",
+      "postTitle": "VERVOLG",
+      "postExcerpt": "VERVOLG Het perfect ineenschuiven bij de verbeterde plakenting, als je de techniek beheerst. Het intapen bij het chipbudden van het gesneden oog op de onderstam. MO-Nectar pruimen “ “ “ “ Sîngled Piros, vooral voor appelmoes Georges Cooman",
+      "seriesId": "series-412534",
+      "seriesTitle": "Bij Georges Cooman te Lochristi 14/08",
+      "seriesPostIds": [
+        "412534",
+        "412511"
+      ],
+      "linkedText": [],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-8697050e53f91cc4",
@@ -60,7 +114,26 @@
       "tent"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "1251446",
+      "postSlug": "fruit-1251446",
+      "postTitle": "10 de Fruithappening van het Regionaal Landschap Vlaamse Ardennen",
+      "postExcerpt": "10 de Fruithappening van het Regionaal Landschap Vlaamse Ardennen 7 okt. Vandaag was ik voor de zoveelste keer van de partij op de fruithappening. De locatie was wel heel speciaal bij een nieuwe onderneming ‘Enjoy Today’ in een oude vierkantshoeve te Melden, Oudenaarde. De burgemeester van Oudenaarde, Marnix De Meulemeester was uitgenodigd voor de opening. De Sakervalk kwam aanvliegen met de sleutel. Wellicht de eerste maal dat de burgemeester een valk op zijn arm kreeg. De Sakervalk (Falco cher",
+      "seriesId": null,
+      "seriesTitle": null,
+      "seriesPostIds": [],
+      "linkedText": [
+        {
+          "kind": "numbered-caption",
+          "text": "Op de pomologenstand kleifruitspecialist Karl Serroels en de valkenier die uit Bouillon kwam; woonde vroeger in Rupelmonde.",
+          "sourcePostId": "1251446",
+          "imageOrdinal": 8
+        }
+      ],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-ebd6d3ff052c6f29",
@@ -75,7 +148,25 @@
       "stenen"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "1427258",
+      "postSlug": "fruit-1427258",
+      "postTitle": "VERVOLG 4 Stratenbegijnhof van Diest",
+      "postExcerpt": "VERVOLG 4 StratenBegijnhof van Diest Gids links Herman Van Bastelaere Detail Ijzerzandsteen De toegangspoort van 1673 Detail Verder straatbeelden",
+      "seriesId": "series-1427278",
+      "seriesTitle": "PPV OVL te Bekkevoort",
+      "seriesPostIds": [
+        "1427278",
+        "1427276",
+        "1427275",
+        "1427260",
+        "1427258"
+      ],
+      "linkedText": [],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-c140804bc6a58543",
@@ -91,7 +182,26 @@
       "tent"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "1588281",
+      "postSlug": "fruit-1588281",
+      "postTitle": "KEDA VERVOLG 5",
+      "postExcerpt": "KEDA VERVOLG 5 Mieke had ook een tekst Leen en Aleide Tinneke en Jasmien In de partytent van de Woongemeenschap Hulsbos Veerle Aan tafel Tom De Verjaardagstaart De moeder is nog niet uitgeput van de festiviteiten",
+      "seriesId": "series-1585848",
+      "seriesTitle": "Keda, 21 lentes, 13 april",
+      "seriesPostIds": [
+        "1585848",
+        "1588296",
+        "1588295",
+        "1588290",
+        "1588289",
+        "1588281"
+      ],
+      "linkedText": [],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-69cc4299c60b200d",
@@ -107,7 +217,23 @@
       "hek"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "1973290",
+      "postSlug": "fruit2-1973290",
+      "postTitle": "Lac du Der",
+      "postExcerpt": "Lac du Der met Natuurpunt Voorkempen 22-25 okt. We reden met 3 busjes Vivaro en Eric met zijn Camper. Het gaat over Brussel, Namen, Bouillon en verder voor een stop aan het Lac du Belval. Natuurpunt had een hand in de aanleg van de kijkhutten met o.a. Nederlands op de Uitlegborden. Verre buur, Eddy D’Huyvetter was bestuurder van ons busje. Hij maakt ons attent op de kenmerken en toont ons de waargenomen vogels. Verder in de streek zijn veel meren; vooral ontstaan door het ontgrinden. In de valle",
+      "seriesId": "series-1973290",
+      "seriesTitle": "Lac du Der",
+      "seriesPostIds": [
+        "1973290",
+        "1973287",
+        "1973286"
+      ],
+      "linkedText": [],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   },
   {
     "id": "img-a8fd0be54a0c18c6",
@@ -123,6 +249,26 @@
       "muur"
     ],
     "descriptionModel": "gpt-6-sol-low",
-    "descriptionStatus": "unreviewed"
+    "descriptionStatus": "unreviewed",
+    "linkedContext": {
+      "postId": "943446",
+      "postSlug": "fruit-943446",
+      "postTitle": "ZWALM DEEL 7",
+      "postExcerpt": "DEEL 7 De Zwalm is een zeer geschikte beek voor watermolens met zijn constant debiet en het grote verval van gemiddeld 6 m per km. In de loop der tijden werden er dan ook verschillende gebouwd. De Zwalm-molen is een “bovenslag-molen”. Het water stort van boven op de raderen en oefent aldus meer kracht uit dan de onderaan aangedreven molens in De Kempen. De zeer beslagen ingenieur Frans Verlaect met molenaarsbrevet, in dienst van de provincie, laat ons uitgebreid kennismaken met de geschiedenis e",
+      "seriesId": "series-943521",
+      "seriesTitle": "Davidsfonds Halle-in-de-Kempen Zwalm, Vlaamse Ardennen 20 juni 2011",
+      "seriesPostIds": [
+        "943521",
+        "943515",
+        "943509",
+        "943501",
+        "943489",
+        "943479",
+        "943446"
+      ],
+      "linkedText": [],
+      "provenance": "archive-html-v1",
+      "role": "linked-context-only"
+    }
   }
 ]

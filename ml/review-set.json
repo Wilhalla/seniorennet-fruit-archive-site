@@ -1,611 +1,1088 @@
 {
   "sourceHashes": {
     "posts": "2e3007af4cff75dcdceabaaa0f10b2fd300ac36d5261c9865176d522b93d4df9",
-    "images": "4fb77459ae48decefef86b238a55be82d779e9b5051d97bc3d65ea5d069b0309"
+    "images": "4fb77459ae48decefef86b238a55be82d779e9b5051d97bc3d65ea5d069b0309",
+    "rawPosts": "1939b7a15110764470b97ff9a8734521cb906b26379b50e2cf99c4698c6f960b",
+    "series": "c09a0a3a98af1939179df46f7b442b11c16442e541dfce690a835c9d270c595a"
   },
   "seed": 42,
-  "postCount": 150,
+  "unitCount": 150,
   "imageCount": 100,
-  "note": "Legacy labels are sampling metadata, not ground truth. Holdout labels must stay unseen during taxonomy and threshold tuning.",
-  "posts": [
+  "note": "Series are browse units. Legacy labels are sampling metadata, not ground truth. Keep holdout labels unseen during tag discovery and threshold tuning.",
+  "version": 2,
+  "units": [
     {
-      "id": "1251446",
+      "id": "post-1251446",
+      "postIds": [
+        "1251446"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-166617",
+      "postIds": [
+        "166617"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-1086118",
+      "postIds": [
+        "1086118",
+        "1086114",
+        "1086107"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-110",
+      "postIds": [
+        "110"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-5",
+      "postIds": [
+        "5"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-663472",
+      "postIds": [
+        "663472",
+        "663471"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-72684",
+      "postIds": [
+        "72684"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-595749",
+      "postIds": [
+        "595749"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-2183749",
+      "postIds": [
+        "2183749"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-988609",
+      "postIds": [
+        "988609"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-595",
+      "postIds": [
+        "595"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1647938",
-      "split": "development"
-    },
-    {
-      "id": "2165698",
-      "split": "development"
-    },
-    {
-      "id": "1740545",
-      "split": "development"
-    },
-    {
-      "id": "1514713",
-      "split": "development"
-    },
-    {
-      "id": "2200279",
+      "id": "post-1677666",
+      "postIds": [
+        "1677666"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1665113",
+      "id": "series-746",
+      "postIds": [
+        "746",
+        "745"
+      ],
       "split": "development"
     },
     {
-      "id": "2182896",
+      "id": "post-1108487",
+      "postIds": [
+        "1108487"
+      ],
       "split": "development"
     },
     {
-      "id": "831",
+      "id": "post-827",
+      "postIds": [
+        "827"
+      ],
       "split": "development"
     },
     {
-      "id": "516",
-      "split": "development"
-    },
-    {
-      "id": "656992",
-      "split": "development"
-    },
-    {
-      "id": "736503",
-      "split": "development"
-    },
-    {
-      "id": "193358",
-      "split": "development"
-    },
-    {
-      "id": "149",
+      "id": "post-1293564",
+      "postIds": [
+        "1293564"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1762746",
+      "id": "post-2026351",
+      "postIds": [
+        "2026351"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-25",
+      "postIds": [
+        "25"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1609843",
+      "postIds": [
+        "1609843"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-830395",
+      "postIds": [
+        "830395"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-103847",
+      "postIds": [
+        "103847"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-975",
+      "postIds": [
+        "975"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-967",
+      "postIds": [
+        "967"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1982056",
+      "postIds": [
+        "1982056"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-2307862",
+      "postIds": [
+        "2307862"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1677666",
+      "id": "post-1160",
+      "postIds": [
+        "1160"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1175",
-      "split": "development"
-    },
-    {
-      "id": "1754324",
+      "id": "post-99",
+      "postIds": [
+        "99"
+      ],
       "split": "holdout"
     },
     {
-      "id": "878",
+      "id": "post-129",
+      "postIds": [
+        "129"
+      ],
       "split": "holdout"
     },
     {
-      "id": "666",
+      "id": "post-109",
+      "postIds": [
+        "109"
+      ],
       "split": "development"
     },
     {
-      "id": "671076",
+      "id": "series-704432",
+      "postIds": [
+        "704432",
+        "704440",
+        "704436",
+        "704430"
+      ],
       "split": "development"
     },
     {
-      "id": "876914",
-      "split": "development"
-    },
-    {
-      "id": "3",
-      "split": "development"
-    },
-    {
-      "id": "1703278",
-      "split": "development"
-    },
-    {
-      "id": "1921320",
-      "split": "development"
-    },
-    {
-      "id": "76991",
-      "split": "development"
-    },
-    {
-      "id": "522570",
-      "split": "development"
-    },
-    {
-      "id": "616734",
-      "split": "development"
-    },
-    {
-      "id": "599292",
+      "id": "post-2051157",
+      "postIds": [
+        "2051157"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1380344",
+      "id": "post-1573280",
+      "postIds": [
+        "1573280"
+      ],
       "split": "development"
     },
     {
-      "id": "1837039",
+      "id": "post-10213",
+      "postIds": [
+        "10213"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-216173",
+      "postIds": [
+        "216173"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1781071",
+      "postIds": [
+        "1781071"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-922649",
+      "postIds": [
+        "922649",
+        "922647",
+        "922645"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-984",
+      "postIds": [
+        "984"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-249",
+      "postIds": [
+        "249"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1854681",
+      "postIds": [
+        "1854681"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1795956",
+      "postIds": [
+        "1795956"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1236476",
+      "postIds": [
+        "1236476"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-353037",
+      "postIds": [
+        "353037"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1757705",
+      "postIds": [
+        "1757705"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-237989",
+      "postIds": [
+        "237989"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1578320",
+      "postIds": [
+        "1578320"
+      ],
       "split": "holdout"
     },
     {
-      "id": "643675",
-      "split": "development"
-    },
-    {
-      "id": "1360161",
-      "split": "development"
-    },
-    {
-      "id": "745854",
-      "split": "development"
-    },
-    {
-      "id": "62",
-      "split": "development"
-    },
-    {
-      "id": "886224",
-      "split": "development"
-    },
-    {
-      "id": "889154",
-      "split": "development"
-    },
-    {
-      "id": "569",
+      "id": "post-817",
+      "postIds": [
+        "817"
+      ],
       "split": "holdout"
     },
     {
-      "id": "679466",
+      "id": "post-356984",
+      "postIds": [
+        "356984"
+      ],
       "split": "development"
     },
     {
-      "id": "950",
+      "id": "post-739",
+      "postIds": [
+        "739"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-842",
+      "postIds": [
+        "842"
+      ],
       "split": "holdout"
     },
     {
-      "id": "326",
+      "id": "post-578",
+      "postIds": [
+        "578"
+      ],
       "split": "development"
     },
     {
-      "id": "1247795",
+      "id": "series-84",
+      "postIds": [
+        "84",
+        "85"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1335686",
+      "postIds": [
+        "1335686"
+      ],
       "split": "holdout"
     },
     {
-      "id": "353037",
+      "id": "post-16",
+      "postIds": [
+        "16"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-120",
+      "postIds": [
+        "120"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-2167865",
+      "postIds": [
+        "2167865"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1296221",
+      "id": "post-292655",
+      "postIds": [
+        "292655"
+      ],
       "split": "development"
     },
     {
-      "id": "992414",
+      "id": "post-380",
+      "postIds": [
+        "380"
+      ],
       "split": "development"
     },
     {
-      "id": "817",
+      "id": "post-2149455",
+      "postIds": [
+        "2149455"
+      ],
       "split": "development"
     },
     {
-      "id": "1580272",
+      "id": "series-1266028",
+      "postIds": [
+        "1266028",
+        "1266025",
+        "1266018",
+        "1266013"
+      ],
       "split": "development"
     },
     {
-      "id": "1396494",
+      "id": "post-1754324",
+      "postIds": [
+        "1754324"
+      ],
       "split": "development"
     },
     {
-      "id": "783",
+      "id": "post-1197833",
+      "postIds": [
+        "1197833"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-443",
+      "postIds": [
+        "443"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-9203",
+      "postIds": [
+        "9203"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-532",
+      "postIds": [
+        "532"
+      ],
       "split": "holdout"
     },
     {
-      "id": "2048096",
+      "id": "series-402514",
+      "postIds": [
+        "402514",
+        "402504"
+      ],
       "split": "development"
     },
     {
-      "id": "1940901",
+      "id": "post-1298506",
+      "postIds": [
+        "1298506"
+      ],
       "split": "development"
     },
     {
-      "id": "312",
-      "split": "development"
-    },
-    {
-      "id": "925",
-      "split": "development"
-    },
-    {
-      "id": "541949",
-      "split": "development"
-    },
-    {
-      "id": "2302252",
-      "split": "development"
-    },
-    {
-      "id": "956",
+      "id": "post-483",
+      "postIds": [
+        "483"
+      ],
       "split": "holdout"
     },
     {
-      "id": "884",
+      "id": "post-433699",
+      "postIds": [
+        "433699"
+      ],
       "split": "development"
     },
     {
-      "id": "1427275",
+      "id": "post-889",
+      "postIds": [
+        "889"
+      ],
       "split": "development"
     },
     {
-      "id": "768896",
+      "id": "post-455007",
+      "postIds": [
+        "455007"
+      ],
       "split": "development"
     },
     {
-      "id": "958",
+      "id": "post-405",
+      "postIds": [
+        "405"
+      ],
       "split": "development"
     },
     {
-      "id": "390",
+      "id": "post-330630",
+      "postIds": [
+        "330630"
+      ],
       "split": "development"
     },
     {
-      "id": "1238305",
-      "split": "development"
-    },
-    {
-      "id": "2149455",
-      "split": "development"
-    },
-    {
-      "id": "1312282",
-      "split": "development"
-    },
-    {
-      "id": "1389896",
-      "split": "development"
-    },
-    {
-      "id": "1537440",
-      "split": "development"
-    },
-    {
-      "id": "139",
-      "split": "development"
-    },
-    {
-      "id": "709123",
-      "split": "development"
-    },
-    {
-      "id": "879",
+      "id": "series-1477683",
+      "postIds": [
+        "1477683",
+        "1477676"
+      ],
       "split": "holdout"
     },
     {
-      "id": "318419",
+      "id": "post-102141",
+      "postIds": [
+        "102141"
+      ],
       "split": "development"
     },
     {
-      "id": "858638",
+      "id": "post-1073",
+      "postIds": [
+        "1073"
+      ],
       "split": "development"
     },
     {
-      "id": "830234",
+      "id": "series-2077088",
+      "postIds": [
+        "2077088",
+        "2077080"
+      ],
       "split": "development"
     },
     {
-      "id": "877928",
+      "id": "post-1791275",
+      "postIds": [
+        "1791275"
+      ],
       "split": "development"
     },
     {
-      "id": "215891",
+      "id": "post-1864530",
+      "postIds": [
+        "1864530"
+      ],
       "split": "development"
     },
     {
-      "id": "688",
+      "id": "post-614",
+      "postIds": [
+        "614"
+      ],
       "split": "development"
     },
     {
-      "id": "798812",
+      "id": "post-1546465",
+      "postIds": [
+        "1546465"
+      ],
       "split": "development"
     },
     {
-      "id": "1646036",
-      "split": "development"
-    },
-    {
-      "id": "2087890",
-      "split": "development"
-    },
-    {
-      "id": "1610940",
-      "split": "development"
-    },
-    {
-      "id": "759",
-      "split": "development"
-    },
-    {
-      "id": "2174728",
-      "split": "development"
-    },
-    {
-      "id": "135",
-      "split": "development"
-    },
-    {
-      "id": "1105507",
+      "id": "post-88362",
+      "postIds": [
+        "88362"
+      ],
       "split": "holdout"
     },
     {
-      "id": "320558",
+      "id": "post-909",
+      "postIds": [
+        "909"
+      ],
       "split": "development"
     },
     {
-      "id": "507",
+      "id": "post-1364683",
+      "postIds": [
+        "1364683"
+      ],
       "split": "development"
     },
     {
-      "id": "1781071",
+      "id": "post-326",
+      "postIds": [
+        "326"
+      ],
       "split": "development"
     },
     {
-      "id": "201289",
+      "id": "post-37507",
+      "postIds": [
+        "37507"
+      ],
       "split": "holdout"
     },
     {
-      "id": "249",
-      "split": "development"
-    },
-    {
-      "id": "404006",
-      "split": "development"
-    },
-    {
-      "id": "895562",
-      "split": "development"
-    },
-    {
-      "id": "392",
-      "split": "development"
-    },
-    {
-      "id": "1193963",
-      "split": "development"
-    },
-    {
-      "id": "1588289",
-      "split": "development"
-    },
-    {
-      "id": "196",
-      "split": "development"
-    },
-    {
-      "id": "1150",
+      "id": "post-281192",
+      "postIds": [
+        "281192"
+      ],
       "split": "holdout"
     },
     {
-      "id": "364962",
+      "id": "post-645155",
+      "postIds": [
+        "645155"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-492",
+      "postIds": [
+        "492"
+      ],
       "split": "holdout"
     },
     {
-      "id": "918283",
+      "id": "post-1194118",
+      "postIds": [
+        "1194118"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-520534",
+      "postIds": [
+        "520534"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-196",
+      "postIds": [
+        "196",
+        "198"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-575629",
+      "postIds": [
+        "575629"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1396486",
+      "id": "post-359937",
+      "postIds": [
+        "359937"
+      ],
       "split": "development"
     },
     {
-      "id": "80447",
+      "id": "post-253786",
+      "postIds": [
+        "253786"
+      ],
       "split": "development"
     },
     {
-      "id": "1429761",
+      "id": "post-332",
+      "postIds": [
+        "332"
+      ],
       "split": "development"
     },
     {
-      "id": "2281235",
+      "id": "post-1344849",
+      "postIds": [
+        "1344849"
+      ],
       "split": "development"
     },
     {
-      "id": "1901327",
+      "id": "post-43384",
+      "postIds": [
+        "43384"
+      ],
       "split": "development"
     },
     {
-      "id": "1012",
+      "id": "post-122",
+      "postIds": [
+        "122"
+      ],
       "split": "development"
     },
     {
-      "id": "284",
+      "id": "post-108",
+      "postIds": [
+        "108"
+      ],
       "split": "development"
     },
     {
-      "id": "458244",
+      "id": "post-1080",
+      "postIds": [
+        "1080"
+      ],
       "split": "development"
     },
     {
-      "id": "1793986",
+      "id": "post-773",
+      "postIds": [
+        "773"
+      ],
       "split": "development"
     },
     {
-      "id": "11263",
-      "split": "development"
-    },
-    {
-      "id": "1666850",
+      "id": "post-992945",
+      "postIds": [
+        "992945"
+      ],
       "split": "holdout"
     },
     {
-      "id": "999363",
+      "id": "post-175907",
+      "postIds": [
+        "175907"
+      ],
       "split": "development"
     },
     {
-      "id": "175907",
+      "id": "post-736",
+      "postIds": [
+        "736"
+      ],
       "split": "development"
     },
     {
-      "id": "1168",
-      "split": "development"
-    },
-    {
-      "id": "563501",
-      "split": "development"
-    },
-    {
-      "id": "732",
-      "split": "development"
-    },
-    {
-      "id": "650",
+      "id": "post-775",
+      "postIds": [
+        "775"
+      ],
       "split": "holdout"
     },
     {
-      "id": "813",
-      "split": "development"
-    },
-    {
-      "id": "1128",
-      "split": "development"
-    },
-    {
-      "id": "1155976",
-      "split": "development"
-    },
-    {
-      "id": "1274484",
-      "split": "development"
-    },
-    {
-      "id": "890",
-      "split": "development"
-    },
-    {
-      "id": "483",
+      "id": "post-641",
+      "postIds": [
+        "641"
+      ],
       "split": "holdout"
     },
     {
-      "id": "2232551",
+      "id": "post-531",
+      "postIds": [
+        "531"
+      ],
       "split": "development"
     },
     {
-      "id": "758",
-      "split": "development"
-    },
-    {
-      "id": "428669",
+      "id": "post-767",
+      "postIds": [
+        "767"
+      ],
       "split": "holdout"
     },
     {
-      "id": "921517",
-      "split": "development"
-    },
-    {
-      "id": "2090656",
-      "split": "development"
-    },
-    {
-      "id": "819",
-      "split": "development"
-    },
-    {
-      "id": "1161",
-      "split": "development"
-    },
-    {
-      "id": "1112374",
-      "split": "development"
-    },
-    {
-      "id": "1773198",
-      "split": "development"
-    },
-    {
-      "id": "81",
+      "id": "post-233245",
+      "postIds": [
+        "233245"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1560400",
+      "id": "post-529",
+      "postIds": [
+        "529"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1758018",
+      "postIds": [
+        "1758018"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-474",
+      "postIds": [
+        "474"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1026",
+      "postIds": [
+        "1026"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-939",
+      "postIds": [
+        "939"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-522570",
+      "postIds": [
+        "522570"
+      ],
       "split": "holdout"
     },
     {
-      "id": "573",
+      "id": "post-173",
+      "postIds": [
+        "173"
+      ],
       "split": "development"
     },
     {
-      "id": "88362",
+      "id": "post-817427",
+      "postIds": [
+        "817427"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-2261065",
+      "postIds": [
+        "2261065",
+        "2261068"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-388",
+      "postIds": [
+        "388"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-354",
+      "postIds": [
+        "354"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-2174749",
+      "postIds": [
+        "2174749",
+        "2176252"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-741",
+      "postIds": [
+        "741"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-717",
+      "postIds": [
+        "717"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-2078293",
+      "postIds": [
+        "2078293"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1093",
+      "postIds": [
+        "1093"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-544473",
+      "postIds": [
+        "544473"
+      ],
       "split": "holdout"
     },
     {
-      "id": "1545348",
+      "id": "post-41",
+      "postIds": [
+        "41"
+      ],
       "split": "development"
     },
     {
-      "id": "1298366",
+      "id": "post-507950",
+      "postIds": [
+        "507950"
+      ],
       "split": "development"
     },
     {
-      "id": "1748856",
-      "split": "development"
-    },
-    {
-      "id": "2246649",
-      "split": "development"
-    },
-    {
-      "id": "520534",
+      "id": "post-635",
+      "postIds": [
+        "635"
+      ],
       "split": "holdout"
     },
     {
-      "id": "603909",
+      "id": "post-1647349",
+      "postIds": [
+        "1647349"
+      ],
       "split": "development"
     },
     {
-      "id": "1588290",
+      "id": "post-544",
+      "postIds": [
+        "544"
+      ],
       "split": "development"
     },
     {
-      "id": "1578320",
+      "id": "post-717653",
+      "postIds": [
+        "717653"
+      ],
       "split": "development"
     },
     {
-      "id": "2074730",
+      "id": "series-1378516",
+      "postIds": [
+        "1378516",
+        "1378512",
+        "1378508"
+      ],
       "split": "development"
     },
     {
-      "id": "910029",
+      "id": "post-1224435",
+      "postIds": [
+        "1224435"
+      ],
       "split": "development"
     },
     {
-      "id": "1214391",
+      "id": "series-1296221",
+      "postIds": [
+        "1296221",
+        "1296231"
+      ],
       "split": "holdout"
     },
     {
-      "id": "294462",
+      "id": "post-2160156",
+      "postIds": [
+        "2160156"
+      ],
       "split": "development"
     },
     {
-      "id": "1008",
+      "id": "post-235",
+      "postIds": [
+        "235"
+      ],
       "split": "development"
     },
     {
-      "id": "907518",
+      "id": "post-1984308",
+      "postIds": [
+        "1984308"
+      ],
       "split": "development"
     },
     {
-      "id": "105396",
+      "id": "post-861981",
+      "postIds": [
+        "861981"
+      ],
       "split": "development"
     },
     {
-      "id": "1776469",
+      "id": "post-146756",
+      "postIds": [
+        "146756"
+      ],
       "split": "development"
     },
     {
-      "id": "124",
+      "id": "post-1200009",
+      "postIds": [
+        "1200009"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-978165",
+      "postIds": [
+        "978165",
+        "978164"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-2059158",
+      "postIds": [
+        "2059158"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-323",
+      "postIds": [
+        "323"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-67979",
+      "postIds": [
+        "67979"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "series-1778669",
+      "postIds": [
+        "1778669",
+        "1778668"
+      ],
+      "split": "holdout"
+    },
+    {
+      "id": "post-360",
+      "postIds": [
+        "360"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-267761",
+      "postIds": [
+        "267761"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-1052",
+      "postIds": [
+        "1052"
+      ],
+      "split": "development"
+    },
+    {
+      "id": "post-24",
+      "postIds": [
+        "24"
+      ],
       "split": "development"
     }
   ],

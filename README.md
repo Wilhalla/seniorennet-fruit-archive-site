@@ -4,13 +4,13 @@ Static Astro archive site.
 
 ## Semantic atlas
 
-The replacement, review-first classification and similarity workflow is in [`ML_PIPELINE.md`](./ML_PIPELINE.md). Its taxonomy is a draft and has not changed the live site data.
+The replacement, tag-first classification and similarity workflow is in [`ML_PIPELINE.md`](./ML_PIPELINE.md). Its tag vocabulary is a draft and has not changed the live site data.
 
 The existing semantic atlas preprocessing pipeline, JSON contracts, rerun commands, and topic-label workflow are documented in [`SEMANTIC_ATLAS.md`](./SEMANTIC_ATLAS.md).
 
 The image gallery preprocessing pipeline and local CLIP image embedding workflow are documented in [`IMAGE_ATLAS.md`](./IMAGE_ATLAS.md).
 
-Quick run from this directory:
+Legacy data rerun from this directory (the tag-first pipeline is prepared separately):
 
 ```bash
 pnpm semanticAtlas

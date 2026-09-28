@@ -1,62 +1,62 @@
-# Archive classification pipeline
+# Archive tagging and category pipeline
 
-Status: **review stage**. The draft taxonomy is not approved and the site still uses its existing generated JSON. No OpenRouter request has been made for this pipeline.
+Status: **tag review**. The current site still uses its existing generated data. No OpenRouter request has been made by this pipeline.
 
-## Data model
+## The two layers
 
-- A **post category** is one stable, broad main subject for browsing the Atlas. `other` is valid when text gives too little evidence. Jev uses one `choice` question with the reviewed category definitions.
-- **Post facets** are optional yes/no questions. Jev returns their independent `noul` scores. Thresholds must be chosen on labeled development examples.
-- **Image observations** are literal descriptions and visible tags of individual photos. Post title and topic are kept separate. Model proposals have `descriptionStatus: unreviewed`; only `reviewed` observations enter post classification or embeddings.
-- **Similarity** uses hosted text embeddings of the post title, cleaned author text and any reviewed image observations. The Atlas preview uses cosine neighbors and one global UMAP projection. It never clusters inside a guessed broad bucket or moves points into label-based screen territories.
+1. **Content tags:** assign multiple fine-grained, stable tags to each browse unit. A unit is one post or a curated continuation series. The archive has 3,281 posts, including 964 posts in 361 existing series, producing 2,678 browse units. Each tag is an independent Jev `noul` question; a unit may have zero or several tags. A versioned vocabulary, per-tag thresholds and source hashes make results reproducible. `count-tags` reports classified-unit counts, raw-post counts, the sum of scores, and counts at several thresholds. Counts are not inferred from old topic names.
+2. **UI categories:** only after viewing the full tag counts, group selected tag IDs into broader, filterable categories. A category is a union of tags; overlapping categories are allowed and reported. `bundle` previews category sizes, overlap, uncovered units and tags without a category. There is intentionally **no category map yet**: inventing one before the tag count view would repeat the old problem.
 
-The pipeline keeps model responses and input hashes under ignored `ml-work/cache/` so reruns can resume. The taxonomy has stable IDs and a version. Changing the taxonomy or input text changes Jev's cache key. The static site remains unchanged until a full run passes review and its JSON consumers are migrated together.
+The draft [tag vocabulary](./ml/tag-vocabulary.draft.json) has 54 candidates discovered from 119 development units with GPT-6 Sol at low effort through the ChatGPT subscription, plus a word-frequency spot check across all browse units that found omitted topics such as grafting and greenhouses. This is a proposal, not the list of counted tags. Near-neighbor tags can be merged or split after reviewing their measured prevalence and errors. The old category-first draft has been removed.
 
-## What is ready
+## Continuations and image context
 
-`ml/review-set.json` pins a reproducible, topic-balanced sample of 150 posts and 100 images. It records the hashes of source JSON and a fixed development/holdout split (120/30 posts). Legacy topic IDs and gallery tags are included only for sampling and comparison. They are not truth labels. `ml/taxonomy.draft.json` contains 15 candidate categories derived from development posts with GPT-6 Sol at low effort through the ChatGPT subscription. Its five facets are yes/no questions. The draft needs a human pass, especially across travel, garden visits and events, and across fruit growing, plant health and harvest.
+The pipeline reads the same curated continuation groups as the UI. A series is sampled, labeled, tagged and embedded as one unit, so its parts cannot land on opposite sides of the development/holdout split. Each part remains linked through its original post ID. The series grouping is context for the whole story; it is not evidence that every photo shows every subject in the group. Counts include both **browse units** and **underlying posts** so a long series does not silently inflate category sizes. The [44 cross-date groups curated by an LLM](./ml/series-audit.json) are listed for review; any incorrect group should be fixed before a full run, since a wrong link would mix unrelated post text.
 
-`ml/caption-pilot.json` contains eight **unreviewed** image-specific descriptions from the same subscription route. The local contact sheet at `ml-work/review/images.html` can be regenerated to compare each image with its old tags. In this pilot, a rock landscape had the old tag `tuin` and a photo of two men with a bird had `landschap`. The proposed descriptions describe the visible content; they have not been accepted as ground truth.
+The image review set now links each image to its source post title and excerpt, its series title and member IDs, and any explicit image `alt`, `title` or numbered caption found in the source HTML. A numbered list such as “1 & 2 …” is linked only to images 1 and 2. Every link has `role: linked-context-only` and source provenance. These links appear in the local contact sheet at `ml-work/review/images.html`. They **never** enter the image description prompt or become visible-content tags automatically. Only a reviewed, image-specific description can support a post tag or embedding. The eight [caption proposals](./ml/caption-pilot.json) remain unreviewed.
 
-## Run the review workflow
+## Review and trial
 
-From the repository root:
+The pinned [review set](./ml/review-set.json) has 150 browse units (119 development, 31 holdout) and 100 images. It records source hashes and preserves annotations when regenerated. Legacy topic IDs are used only to balance the sample. The holdout was excluded from tag discovery. To regenerate local review files and the image contact sheet:
 
 ```bash
 python3 scripts/archive_ml.py sample
 python3 scripts/archive_ml.py image-review
-python3 scripts/archive_ml.py validate-taxonomy ml/taxonomy.draft.json
-python3 -m unittest discover -s scripts -p 'test_archive_ml.py'
+python3 scripts/archive_ml.py validate-tags ml/tag-vocabulary.draft.json
 ```
 
-Review `ml-work/review/posts.json`: fill `goldCategoryId` and optional `goldFacets` for development examples. Keep holdout labels out of taxonomy and threshold tuning. Review `ml-work/review/images.json`: confirm descriptions, correct `visibleTags`, then set `descriptionStatus` to `reviewed` for accepted observations. `import-captions --input FILE --model MODEL` safely imports a JSON array of `{id, description, visibleTags, unclear}` proposals and marks them unreviewed.
+Review `ml-work/review/units.json`: put accepted tag IDs in `goldTagIds` and set `tagReviewStatus` to `reviewed`. Empty `goldTagIds` with reviewed status explicitly means none of the proposed tags apply. In `ml-work/review/images.json`, correct any image-specific description and visible tags, then set `descriptionStatus` to `reviewed`. Only reviewed descriptions enter the unit classifier or embeddings. Keep linked post text separate from visual claims.
 
-After category names and definitions are agreed, save a new versioned taxonomy with `status: approved`. To run **a limited paid Jev trial**, specify both an item count and a USD ceiling:
+After reviewing tag definitions, save a new vocabulary version with `status: approved`. A **limited paid** Jev run requires explicit item and USD ceilings:
 
 ```bash
-python3 scripts/archive_ml.py classify --taxonomy ml/taxonomy.approved.json \
-  --sample ml-work/review/posts.json --observations ml-work/review/images.json \
+python3 scripts/archive_ml.py tag --vocabulary ml/tag-vocabulary.approved.json \
+  --sample ml-work/review/units.json --observations ml-work/review/images.json \
   --paid --max-items 20 --max-usd 0.10
-python3 scripts/archive_ml.py evaluate --taxonomy ml/taxonomy.approved.json --split development
-python3 scripts/archive_ml.py evaluate --taxonomy ml/taxonomy.approved.json \
+python3 scripts/archive_ml.py evaluate --vocabulary ml/tag-vocabulary.approved.json --split development
+python3 scripts/archive_ml.py evaluate --vocabulary ml/tag-vocabulary.approved.json \
   --split holdout --output ml-work/holdout-evaluation.json
 ```
 
-The key is read from `OPENROUTER_API_KEY` in the environment or local `.env`; it is never written to outputs. Jev's returned `usage.cost` is stored per item. The local ceiling stops subsequent requests based on recorded cost and a reserve. A strict account-level cap must be set on the OpenRouter key because an in-flight request can exceed a local estimate.
-
-For a later similarity trial, verify the embedding model's current price and pass it explicitly:
+The classifier caches each response by its source and question hash and stores OpenRouter's reported cost. Changing a threshold or display label reuses scored results; changing a question invalidates them. The local ceiling checks recorded cost before the next request; set a provider key spending cap for a strict ceiling on an in-flight request. The key is read from `OPENROUTER_API_KEY` or the local `.env` and is never written to outputs. A full run omits `--sample` after trial quality and cost have been reviewed; any wrong continuation links found in the audit must be corrected and affected units rerun before publishing categories:
 
 ```bash
-python3 scripts/archive_ml.py embed --sample ml-work/review/posts.json \
-  --observations ml-work/review/images.json --price-per-million PRICE_USD \
-  --paid --max-items 20 --max-usd 0.10
-python3 -m pip install -r requirements-archive-ml.txt
-python3 scripts/archive_ml_similarity.py --sample ml-work/review/posts.json
+python3 scripts/archive_ml.py tag --vocabulary ml/tag-vocabulary.approved.json \
+  --paid --max-items 2678 --max-usd AGREED_LIMIT
+python3 scripts/archive_ml.py count-tags --vocabulary ml/tag-vocabulary.approved.json
 ```
 
-Embeddings are billed separately. OpenRouter's embeddings response reports prompt tokens, so the script records **estimated** spend from the price supplied by the caller. Compare this against the provider's usage report before a larger run.
+Use `ml-work/tag-counts.json` to decide which tags are useful, redundant or too rare, then make a versioned category mapping with `{version, categories:[{id,label,tagIds}]}`. Preview it with:
 
-## Gate before replacing the old outputs
+```bash
+python3 scripts/archive_ml.py bundle --vocabulary ml/tag-vocabulary.approved.json \
+  --mapping ml/category-map.draft.json
+```
 
-Review category accuracy and per-category precision/recall on the frozen holdout; inspect errors by confidence band. Check how often `other` is used, and inspect neighboring posts and the UMAP map for a cross-section of short posts, photo albums and text/image disagreements. Image themes need their own reviewed sample and precision check. Only then run the remaining archive and replace `topics.json`, `map-points.json`, `related-posts.json`, gallery JSON and all dependent client indexes in one verified cutover. The old preprocessing scripts stay available during this stage so the current static site builds unchanged.
+An optional similarity trial embeds the same browse units using reviewed image observations as supporting evidence. Verify the embedding model's current price and pass it explicitly; the embedding response reports token usage but its cost is estimated from that price. `archive_ml_similarity.py` builds cosine neighbors and a global UMAP map without bucket-first clustering or forced category territories.
 
-References: [Jev classification and calibration](https://openrouter.ai/docs/cookbook/evaluate-and-optimize/jev-classification), [OpenRouter embedding request](https://openrouter.ai/docs/api/api-reference/embeddings/submit-an-embedding-request).
+## Quality and cutover gate
+
+Use human-labeled development units to tune per-tag thresholds. Check precision and recall per tag, exact tag-set agreement, zero-tag coverage, and errors among image-only and continued posts. Evaluate once on the frozen holdout. Check the five nearest browse units and Atlas map on mixed examples. For gallery themes, review and consolidate **image-visible** tags separately from post-content tags, then count them before forming gallery filter groups. The current static outputs and UI stay in place until these checks pass and all dependent JSON consumers are migrated together.
+
+References: [Jev multi-label classification and threshold calibration](https://openrouter.ai/docs/cookbook/evaluate-and-optimize/jev-classification), [OpenRouter embedding request](https://openrouter.ai/docs/api/api-reference/embeddings/submit-an-embedding-request).

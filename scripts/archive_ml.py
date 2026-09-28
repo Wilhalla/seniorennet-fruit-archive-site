@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Review-first archive classification pipeline. Run from the repository root.
+"""Review-first, tag-first archive pipeline. Run from the repository root.
 
 No command contacts a paid service unless --paid, --max-items and --max-usd are
-all supplied to `classify`. Results are cached by source and taxonomy hashes.
+all supplied. Results are cached by source and vocabulary hashes.
 """
 from __future__ import annotations
 
@@ -21,8 +21,13 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+from archive_ml_units import build_units, image_context, unit_state
+from archive_ml_counts import bundle_categories, evaluate_tags, summarize_tags
+
 POSTS = Path("src/data/generated/posts-index.json")
 IMAGES = Path("public/generated/image-index.client.json")
+SERIES = Path("src/data/post-series.json")
+RAW_POSTS = Path("src/data/posts.json")
 WORK = Path("ml-work")
 JEV_MODEL = "typesafe/jev-1.13"
 JEV_ENDPOINT = "https://openrouter.ai/api/alpha/decisions"
@@ -72,97 +77,91 @@ def split_for(identifier: str) -> str:
     return "holdout" if int(hashlib.sha256(identifier.encode()).hexdigest()[:8], 16) % 5 == 0 else "development"
 
 
-def author_text(post: dict[str, Any]) -> str:
-    """The legacy index appends imported reactions after the author's post."""
-    text = (post.get("cleanedText") or "").strip()
-    return re.split(r"\bReacties\s+(?=\d{2}-\d{2}-\d{4})", text, maxsplit=1)[0].strip()
-
-
 def make_sample(post_count: int, image_count: int, output: Path) -> None:
     source_posts = load_json(POSTS)
     images = load_json(IMAGES)
-    source_hashes = {"posts": digest(source_posts), "images": digest(images)}
+    raw_posts = load_json(RAW_POSTS)
+    series = load_json(SERIES)["series"]
+    source_hashes = {"posts": digest(source_posts), "images": digest(images),
+                     "rawPosts": digest(raw_posts), "series": digest(series)}
     old_manifest = output / "sample-manifest.json"
-    if old_manifest.exists() and load_json(old_manifest).get("sourceHashes") != source_hashes:
-        raise ValueError("source JSON changed; archive the existing review labels before regenerating the sample")
-    posts = sample_evenly(source_posts, post_count, "topicId", 42)
-    selected_post_ids = {post["slug"] for post in posts}
-    associated = [image for image in images if image.get("postSlug") in selected_post_ids]
-    image_pool = associated + [image for image in images if image.get("postSlug") not in selected_post_ids]
-    sampled_images = sample_evenly(image_pool, image_count, "year", 43)
-    post_rows = [{
-        "id": post["id"], "split": split_for(post["id"]), "title": post["title"],
-        "text": author_text(post)[:3500], "date": post.get("date"),
-        "imageCount": post.get("imageCount", 0), "legacyTopicId": post.get("topicId"),
-        "goldCategoryId": None, "goldFacets": [], "reviewNotes": "",
-    } for post in posts]
+    if old_manifest.exists():
+        old_hashes = load_json(old_manifest).get("sourceHashes", {})
+        if any(source_hashes.get(key) != value for key, value in old_hashes.items()):
+            raise ValueError("source JSON changed; archive the existing review labels before regenerating the sample")
+    units = sample_evenly(build_units(source_posts, series), post_count, "legacyTopicId", 42)
+    pinned = Path("ml/review-set.json")
+    if image_count == 100 and pinned.exists():
+        image_by_id = {image["id"]: image for image in images}
+        sampled_images = [image_by_id[row["id"]] for row in load_json(pinned)["images"]]
+    else:
+        sampled_images = sample_evenly(images, image_count, "year", 43)
+    unit_rows = [{
+        "id": unit["id"], "split": split_for(unit["id"]), "title": unit["title"],
+        "parts": unit["parts"], "postIds": unit["postIds"], "imageCount": unit["imageCount"],
+        "seriesSource": unit["seriesSource"], "legacyTopicId": unit["legacyTopicId"],
+        "goldTagIds": [], "tagReviewStatus": "unreviewed", "reviewNotes": "",
+    } for unit in units]
+    raw_by_slug = {post["slug"]: post for post in raw_posts}
+    series_by_post = {post_id: item for item in series for post_id in item["postIds"]}
     image_rows = [{
         "id": image["id"], "split": split_for(image["id"]), "src": image["src"],
         "postSlug": image.get("postSlug"), "postTitle": image.get("postTitle"),
         "legacyTags": image.get("visualTags", []), "description": None,
         "visibleTags": [], "descriptionModel": None, "reviewNotes": "",
+        "linkedContext": image_context(image, raw_by_slug[image["postSlug"]],
+                                       series_by_post.get(raw_by_slug[image["postSlug"]]["id"])),
     } for image in sampled_images]
-    old_posts = {row["id"]: row for row in load_json(output / "posts.json")} if (output / "posts.json").exists() else {}
+    old_units = {row["id"]: row for row in load_json(output / "units.json")} if (output / "units.json").exists() else {}
     old_images = {row["id"]: row for row in load_json(output / "images.json")} if (output / "images.json").exists() else {}
-    for row in post_rows:
-        for key in ("goldCategoryId", "goldFacets", "reviewNotes"):
-            if row["id"] in old_posts and key in old_posts[row["id"]]:
-                row[key] = old_posts[row["id"]][key]
+    for row in unit_rows:
+        for key in ("goldTagIds", "tagReviewStatus", "reviewNotes"):
+            if row["id"] in old_units and key in old_units[row["id"]]:
+                row[key] = old_units[row["id"]][key]
     for row in image_rows:
         for key in ("description", "visibleTags", "descriptionModel", "descriptionStatus", "unclear", "reviewNotes", "goldVisibleTags"):
             if row["id"] in old_images and key in old_images[row["id"]]:
                 row[key] = old_images[row["id"]][key]
-    write_json(output / "posts.json", post_rows)
+    write_json(output / "units.json", unit_rows)
     write_json(output / "images.json", image_rows)
     write_json(output / "sample-manifest.json", {
         "sourceHashes": source_hashes,
-        "seed": 42, "postCount": len(post_rows), "imageCount": len(image_rows),
-        "note": "Legacy labels are sampling metadata, not ground truth. Holdout labels must stay unseen during taxonomy and threshold tuning.",
+        "seed": 42, "unitCount": len(unit_rows), "imageCount": len(image_rows),
+        "note": "Series are browse units. Legacy labels are sampling metadata, not ground truth. Keep holdout labels unseen during tag discovery and threshold tuning.",
     })
-    print(f"Wrote {len(post_rows)} posts and {len(image_rows)} images to {output}")
+    print(f"Wrote {len(unit_rows)} browse units and {len(image_rows)} images to {output}")
 
 
-def validate_taxonomy(taxonomy: dict[str, Any]) -> None:
-    if not isinstance(taxonomy.get("version"), str) or not taxonomy["version"].strip():
-        raise ValueError("taxonomy.version is required")
-    categories = taxonomy.get("categories")
-    if not isinstance(categories, list) or not categories:
-        raise ValueError("taxonomy.categories must be a nonempty list")
+def validate_vocabulary(vocabulary: dict[str, Any]) -> None:
+    if not isinstance(vocabulary.get("version"), str) or not vocabulary["version"].strip():
+        raise ValueError("vocabulary.version is required")
+    tags = vocabulary.get("tags")
+    if not isinstance(tags, list) or not tags:
+        raise ValueError("vocabulary.tags must be a nonempty list")
     ids: set[str] = set()
-    for item in categories:
-        if not all(isinstance(item.get(key), str) and item[key].strip() for key in ("id", "label", "definition")):
-            raise ValueError("every category needs id, label and definition")
+    for item in tags:
+        if not all(isinstance(item.get(key), str) and item[key].strip() for key in ("id", "label", "question", "definition")):
+            raise ValueError("every tag needs id, label, question and definition")
         if item["id"] in ids:
-            raise ValueError(f"duplicate category ID: {item['id']}")
-        ids.add(item["id"])
-    if "other" not in ids:
-        raise ValueError("taxonomy must include an 'other' category")
-    for item in taxonomy.get("facets", []):
-        if not all(isinstance(item.get(key), str) and item[key].strip() for key in ("id", "question")):
-            raise ValueError("every facet needs id and question")
-        if item["id"] in ids:
-            raise ValueError(f"facet/category ID collision: {item['id']}")
+            raise ValueError(f"duplicate tag ID: {item['id']}")
+        if not re.fullmatch(r"[a-z][a-z0-9_]*", item["id"]):
+            raise ValueError(f"tag ID must be lowercase snake_case: {item['id']}")
+        threshold = item.get("threshold", 0.5)
+        if not isinstance(threshold, (int, float)) or not 0 < threshold < 1:
+            raise ValueError(f"invalid threshold for {item['id']}")
         ids.add(item["id"])
 
 
-def classification_input(post: dict[str, Any], observations: dict[str, list[str]] | None = None) -> dict[str, str]:
-    body = author_text(post)[:2500]
-    state = {"title": post["title"], "text": body or post.get("excerpt", "")}
-    visible = (observations or {}).get(post["slug"], [])
-    if visible:
-        state["observed_images"] = " | ".join(visible[:5])[:700]
-    return state
-
-
-def jev_payload(state: dict[str, str], taxonomy: dict[str, Any]) -> dict[str, Any]:
-    validate_taxonomy(taxonomy)
-    questions = {"category": {
-        "type": "choice", "instructions": "Which one category best describes the post's main subject? Use image observations only as supporting evidence; the post text and title take priority.",
-        "criteria": {item["id"]: item["definition"] for item in taxonomy["categories"]},
-    }}
-    for facet in taxonomy.get("facets", []):
-        questions[facet["id"]] = {"type": "noul", "instructions": facet["question"]}
+def jev_payload(state: dict[str, str], vocabulary: dict[str, Any]) -> dict[str, Any]:
+    validate_vocabulary(vocabulary)
+    questions = {item["id"]: {"type": "noul", "instructions": item["question"] + " " + item["definition"]}
+                 for item in vocabulary["tags"]}
     return {"model": JEV_MODEL, "state": state, "questions": questions}
+
+
+def question_hash(vocabulary: dict[str, Any]) -> str:
+    """Threshold or display-label edits do not invalidate paid Jev scores."""
+    return digest(jev_payload({}, vocabulary)["questions"])
 
 
 def load_observations(path: Path | None) -> dict[str, list[str]]:
@@ -178,28 +177,20 @@ def load_observations(path: Path | None) -> dict[str, list[str]]:
     return dict(result)
 
 
-def validate_answer(response: dict[str, Any], taxonomy: dict[str, Any]) -> dict[str, Any]:
+def validate_answer(response: dict[str, Any], vocabulary: dict[str, Any]) -> dict[str, Any]:
     answers = response.get("answers") or {}
-    choice = answers.get("category") or {}
-    valid_ids = {item["id"] for item in taxonomy["categories"]}
-    if choice.get("type") != "choice" or choice.get("choice") not in valid_ids:
-        raise ValueError("unexpected Jev category answer")
-    confidence = choice.get("confidence")
-    if confidence is not None and (not isinstance(confidence, (int, float)) or not 0 <= confidence <= 1):
-        raise ValueError("invalid category confidence")
-    facets: dict[str, float] = {}
-    for facet in taxonomy.get("facets", []):
-        answer = answers.get(facet["id"]) or {}
+    scores: dict[str, float] = {}
+    for tag in vocabulary["tags"]:
+        answer = answers.get(tag["id"]) or {}
         probability = answer.get("noul")
         if answer.get("type") != "noul" or not isinstance(probability, (int, float)) or not 0 <= probability <= 1:
-            raise ValueError(f"invalid facet answer: {facet['id']}")
-        facets[facet["id"]] = float(probability)
+            raise ValueError(f"invalid tag answer: {tag['id']}")
+        scores[tag["id"]] = float(probability)
     usage = response.get("usage") or {}
     cost = usage.get("cost")
     if not isinstance(cost, (int, float)) or cost < 0 or not math.isfinite(cost):
         raise ValueError("Jev response lacks usable cost; stop batch to protect budget")
-    return {"categoryId": choice["choice"], "confidence": confidence, "facetScores": facets,
-            "model": response.get("model"), "usage": usage}
+    return {"tagScores": scores, "model": response.get("model"), "usage": usage}
 
 
 def request_jev(payload: dict[str, Any], key: str) -> dict[str, Any]:
@@ -257,11 +248,15 @@ def openrouter_key() -> str | None:
     return None
 
 
+def load_all_units() -> list[dict[str, Any]]:
+    return build_units(load_json(POSTS), load_json(SERIES)["series"])
+
+
 def classify(args: argparse.Namespace) -> None:
-    taxonomy = load_json(args.taxonomy)
-    validate_taxonomy(taxonomy)
-    if taxonomy.get("status") != "approved":
-        raise ValueError("taxonomy.status must be 'approved' before paid classification")
+    vocabulary = load_json(args.vocabulary)
+    validate_vocabulary(vocabulary)
+    if vocabulary.get("status") != "approved":
+        raise ValueError("vocabulary.status must be 'approved' before paid classification")
     if not args.paid or args.max_items is None or args.max_usd is None:
         raise ValueError("Paid classification requires --paid, --max-items and --max-usd")
     if args.max_items <= 0 or args.max_usd <= 0:
@@ -270,40 +265,40 @@ def classify(args: argparse.Namespace) -> None:
     if not key:
         raise ValueError("OPENROUTER_API_KEY is missing")
     observations = load_observations(args.observations)
-    posts = load_json(POSTS)
+    units = load_all_units()
     selected = {row["id"] for row in load_json(args.sample)} if args.sample else None
     if selected is not None:
-        posts = [post for post in posts if post["id"] in selected]
-    taxonomy_hash = digest(taxonomy)
+        units = [unit for unit in units if unit["id"] in selected]
+    vocabulary_hash = question_hash(vocabulary)
     output = load_json(args.output) if args.output.exists() else {}
-    output = {post_id: row for post_id, row in output.items() if row.get("taxonomyHash") == taxonomy_hash}
+    output = {unit_id: row for unit_id, row in output.items() if row.get("vocabularyHash") == vocabulary_hash}
     spent = sum(float(row["usage"]["cost"]) for row in output.values() if "usage" in row)
     cache_dir = WORK / "cache" / "jev"
     completed = 0
-    for post in posts:
-        payload = jev_payload(classification_input(post, observations), taxonomy)
+    for unit in units:
+        payload = jev_payload(unit_state(unit, observations), vocabulary)
         cache_key = digest(payload)
-        previous = output.get(post["id"])
+        previous = output.get(unit["id"])
         if previous and previous.get("cacheKey") == cache_key:
             continue
         cache_path = cache_dir / f"{cache_key}.json"
         if cache_path.exists():
-            output[post["id"]] = load_json(cache_path)
+            output[unit["id"]] = load_json(cache_path)
             write_json(args.output, output)
             continue
         if completed >= args.max_items or spent + args.reserve_usd > args.max_usd:
             break
-        response = validate_answer(request_jev(payload, key), taxonomy)
+        response = validate_answer(request_jev(payload, key), vocabulary)
         spent += float(response["usage"]["cost"])
-        output[post["id"]] = {**response, "postId": post["id"], "cacheKey": cache_key,
-                              "taxonomyVersion": taxonomy["version"], "taxonomyHash": taxonomy_hash,
+        output[unit["id"]] = {**response, "unitId": unit["id"], "postIds": unit["postIds"], "cacheKey": cache_key,
+                              "vocabularyVersion": vocabulary["version"], "vocabularyHash": vocabulary_hash,
                               "inputHash": digest(payload["state"])}
-        write_json(cache_path, output[post["id"]])
+        write_json(cache_path, output[unit["id"]])
         write_json(args.output, output)
         completed += 1
         if spent > args.max_usd:
             raise RuntimeError("Reported cost exceeded ceiling; stop and use a provider key spending limit for a hard cap")
-    print(f"Classified {completed} new posts; recorded total ${spent:.6f}; {len(output)} cached records")
+    print(f"Tagged {completed} new browse units; recorded total ${spent:.6f}; {len(output)} cached records")
 
 
 def embed(args: argparse.Namespace) -> None:
@@ -315,78 +310,65 @@ def embed(args: argparse.Namespace) -> None:
     if not key:
         raise ValueError("OPENROUTER_API_KEY is missing")
     observations = load_observations(args.observations)
-    posts = load_json(POSTS)
+    units = load_all_units()
     selected = {row["id"] for row in load_json(args.sample)} if args.sample else None
     if selected is not None:
-        posts = [post for post in posts if post["id"] in selected]
+        units = [unit for unit in units if unit["id"] in selected]
     output = load_json(args.output) if args.output.exists() else {}
     spent = sum(float(row["usage"]["estimatedCostUsd"]) for row in output.values())
     completed = 0
-    for post in posts:
-        state = classification_input(post, observations)
-        input_text = f"Titel: {state['title']}\nTekst: {state['text']}"
-        if state.get("observed_images"):
-            input_text += f"\nZichtbaar op afbeeldingen: {state['observed_images']}"
+    for unit in units:
+        state = unit_state(unit, observations)
+        input_text = f"Titel: {state['title']}\nTekst: {state['post_text']}"
+        if state.get("reviewed_image_observations"):
+            input_text += f"\nZichtbaar op afbeeldingen: {state['reviewed_image_observations']}"
         payload = {"model": args.model, "input": input_text}
         cache_key = digest(payload)
-        if output.get(post["id"], {}).get("cacheKey") == cache_key:
+        if output.get(unit["id"], {}).get("cacheKey") == cache_key:
             continue
         cache_path = WORK / "cache" / "embeddings" / f"{cache_key}.json"
         if cache_path.exists():
-            output[post["id"]] = load_json(cache_path)
+            output[unit["id"]] = load_json(cache_path)
             write_json(args.output, output)
             continue
         if completed >= args.max_items or spent + args.reserve_usd > args.max_usd:
             break
         result = validate_embedding(request_embedding(payload, key), args.price_per_million)
         spent += result["usage"]["estimatedCostUsd"]
-        output[post["id"]] = {**result, "postId": post["id"], "cacheKey": cache_key,
+        output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"], "cacheKey": cache_key,
                               "inputHash": digest(input_text), "pricePerMillionUsd": args.price_per_million}
-        write_json(cache_path, output[post["id"]])
+        write_json(cache_path, output[unit["id"]])
         write_json(args.output, output)
         completed += 1
         if spent > args.max_usd:
             raise RuntimeError("Estimated embedding spend exceeded ceiling; set a provider key cap for a hard limit")
-    print(f"Embedded {completed} new posts; estimated total ${spent:.6f}; {len(output)} cached records")
+    print(f"Embedded {completed} new browse units; estimated total ${spent:.6f}; {len(output)} cached records")
 
 
 def evaluate(args: argparse.Namespace) -> None:
-    taxonomy = load_json(args.taxonomy)
-    validate_taxonomy(taxonomy)
-    taxonomy_hash = digest(taxonomy)
-    gold = [row for row in load_json(args.sample) if row.get("goldCategoryId") and row.get("split") == args.split]
-    predictions = load_json(args.predictions)
-    paired = [(row, predictions[row["id"]]) for row in gold
-              if row["id"] in predictions and predictions[row["id"]].get("taxonomyHash") == taxonomy_hash]
-    if not paired:
-        raise ValueError("no reviewed examples with predictions in selected split")
-    by_category: dict[str, dict[str, int]] = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
-    errors = []
-    confidence_bands = {"low": {"count": 0, "correct": 0}, "middle": {"count": 0, "correct": 0},
-                        "high": {"count": 0, "correct": 0}, "missing": {"count": 0, "correct": 0}}
-    for row, prediction in paired:
-        actual, predicted = row["goldCategoryId"], prediction["categoryId"]
-        confidence = prediction.get("confidence")
-        band = "missing" if confidence is None else "low" if confidence < 0.5 else "middle" if confidence < 0.8 else "high"
-        confidence_bands[band]["count"] += 1
-        confidence_bands[band]["correct"] += int(actual == predicted)
-        if actual == predicted:
-            by_category[actual]["tp"] += 1
-        else:
-            by_category[actual]["fn"] += 1
-            by_category[predicted]["fp"] += 1
-            errors.append({"id": row["id"], "title": row["title"], "gold": actual, "predicted": predicted,
-                           "confidence": prediction.get("confidence")})
-    category_metrics = {category: {**counts,
-                        "precision": counts["tp"] / (counts["tp"] + counts["fp"]) if counts["tp"] + counts["fp"] else None,
-                        "recall": counts["tp"] / (counts["tp"] + counts["fn"]) if counts["tp"] + counts["fn"] else None}
-                        for category, counts in by_category.items()}
-    report = {"split": args.split, "reviewed": len(gold), "evaluated": len(paired),
-              "coverage": len(paired) / len(gold), "accuracy": (len(paired) - len(errors)) / len(paired),
-              "byCategory": category_metrics, "confidenceBands": confidence_bands, "errors": errors,
-              "costUsd": sum(float(prediction["usage"]["cost"]) for _, prediction in paired)}
+    vocabulary = load_json(args.vocabulary)
+    validate_vocabulary(vocabulary)
+    report = evaluate_tags(vocabulary, load_json(args.predictions), load_json(args.sample),
+                           question_hash(vocabulary), args.split)
     write_json(args.output, report)
-    print(f"{args.split}: {len(paired)}/{len(gold)} covered, accuracy {report['accuracy']:.1%}, {len(errors)} errors")
+    print(f"{args.split}: {report['evaluatedUnits']}/{report['reviewedUnits']} reviewed units evaluated")
+
+
+def count_tags(args: argparse.Namespace) -> None:
+    vocabulary = load_json(args.vocabulary)
+    validate_vocabulary(vocabulary)
+    report = summarize_tags(vocabulary, load_json(args.predictions), load_all_units(), question_hash(vocabulary))
+    write_json(args.output, report)
+    print(f"Counted {report['unitsClassified']}/{report['unitsInArchive']} classified browse units")
+
+
+def preview_bundles(args: argparse.Namespace) -> None:
+    vocabulary = load_json(args.vocabulary)
+    validate_vocabulary(vocabulary)
+    report = bundle_categories(vocabulary, load_json(args.mapping), load_json(args.predictions),
+                               load_all_units(), question_hash(vocabulary))
+    write_json(args.output, report)
+    print(f"Previewed {len(report['categories'])} category bundles over {report['unitsClassified']} units")
 
 
 def import_captions(args: argparse.Namespace) -> None:
@@ -424,8 +406,11 @@ def image_review_page(args: argparse.Namespace) -> None:
         url = args.asset_base.rstrip("/") + src
         escape = html.escape
         description = row.get("description") or "Nog geen beeldbeschrijving"
-        cards.append(f'<article><img src="{escape(url)}" loading="lazy" alt=""><div><b>{escape(row["id"])}</b><p>{escape(description)}</p><small>Huidige tags: {escape(", ".join(row.get("legacyTags", [])))}</small><br><small>Nieuwe zichtbare tags: {escape(", ".join(row.get("visibleTags", [])))}</small></div></article>')
-    page = '<!doctype html><html lang="nl"><meta charset="utf-8"><title>Beeldreview</title><style>body{font:16px system-ui;max-width:1100px;margin:2rem auto;background:#faf9f5;color:#282b24}article{display:flex;gap:1rem;padding:1rem;border-bottom:1px solid #ddd}img{width:260px;height:195px;object-fit:contain;background:#eee}p{margin:.5rem 0}small{color:#666}</style><h1>Beeldreview</h1><p>Beschrijvingen met status unreviewed zijn modelvoorstellen. Pas de JSON aan na controle.</p>' + "".join(cards) + '</html>'
+        context = row.get("linkedContext") or {}
+        linked = " ".join(f'{link["kind"]}: {link["text"]}' for link in context.get("linkedText", [])) or "Geen tekst direct aan dit beeld gekoppeld"
+        series_label = f' · reeks: {context["seriesTitle"]}' if context.get("seriesTitle") else ""
+        cards.append(f'<article><img src="{escape(url)}" loading="lazy" alt=""><div><b>{escape(row["id"])}</b><p>{escape(description)}</p><small>Huidige tags: {escape(", ".join(row.get("legacyTags", [])))}</small><br><small>Nieuwe zichtbare tags: {escape(", ".join(row.get("visibleTags", [])))}</small><aside><b>Gekoppelde tekst, geen visueel bewijs</b><p>{escape(linked)}</p><small>Bericht: {escape(context.get("postTitle", ""))}{escape(series_label)}</small><p>{escape(context.get("postExcerpt", ""))}</p></aside></div></article>')
+    page = '<!doctype html><html lang="nl"><meta charset="utf-8"><title>Beeldreview</title><style>body{font:16px system-ui;max-width:1100px;margin:2rem auto;background:#faf9f5;color:#282b24}article{display:flex;gap:1rem;padding:1rem;border-bottom:1px solid #ddd}img{width:260px;height:195px;object-fit:contain;background:#eee}p{margin:.5rem 0}small{color:#666}aside{background:#eee;padding:.6rem;margin-top:.7rem;border-radius:.4rem;font-size:.85rem}aside p{margin:.3rem 0}</style><h1>Beeldreview</h1><p>Beschrijvingen met status unreviewed zijn modelvoorstellen. Gekoppelde tekst is alleen context en bewijst niet wat zichtbaar is.</p>' + "".join(cards) + '</html>'
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(page, encoding="utf-8")
     print(f"Wrote {args.output}")
@@ -435,22 +420,22 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     sample = commands.add_parser("sample", help="Build stratified, reproducible review set")
-    sample.add_argument("--posts", type=int, default=150)
+    sample.add_argument("--posts", type=int, default=150, help="Number of browse units (including curated continuation groups)")
     sample.add_argument("--images", type=int, default=100)
     sample.add_argument("--output", type=Path, default=WORK / "review")
-    validate = commands.add_parser("validate-taxonomy")
-    validate.add_argument("taxonomy", type=Path)
-    classification = commands.add_parser("classify", help="Paid Jev run; requires explicit limits")
-    classification.add_argument("--taxonomy", type=Path, required=True)
-    classification.add_argument("--sample", type=Path, help="Review sample JSON; omit for full archive")
+    validate = commands.add_parser("validate-tags")
+    validate.add_argument("vocabulary", type=Path)
+    classification = commands.add_parser("tag", help="Paid Jev multi-label run; requires explicit limits")
+    classification.add_argument("--vocabulary", type=Path, required=True)
+    classification.add_argument("--sample", type=Path, help="Browse-unit review sample JSON; omit for full archive")
     classification.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
-    classification.add_argument("--output", type=Path, default=WORK / "predictions.json")
+    classification.add_argument("--output", type=Path, default=WORK / "tag-scores.json")
     classification.add_argument("--paid", action="store_true")
     classification.add_argument("--max-items", type=int)
     classification.add_argument("--max-usd", type=float)
     classification.add_argument("--reserve-usd", type=float, default=0.01, help="Minimum remaining budget before each request")
-    embeddings = commands.add_parser("embed", help="Paid text embeddings for post similarity")
-    embeddings.add_argument("--sample", type=Path, help="Review sample JSON; omit for full archive")
+    embeddings = commands.add_parser("embed", help="Paid text embeddings for browse-unit similarity")
+    embeddings.add_argument("--sample", type=Path, help="Browse-unit review sample JSON; omit for full archive")
     embeddings.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
     embeddings.add_argument("--output", type=Path, default=WORK / "embeddings.json")
     embeddings.add_argument("--model", default="openai/text-embedding-3-small")
@@ -460,11 +445,20 @@ def main() -> None:
     embeddings.add_argument("--price-per-million", type=float, help="Current USD per million input tokens; verify from model listing")
     embeddings.add_argument("--reserve-usd", type=float, default=0.01)
     evaluation = commands.add_parser("evaluate")
-    evaluation.add_argument("--sample", type=Path, default=WORK / "review/posts.json")
-    evaluation.add_argument("--predictions", type=Path, default=WORK / "predictions.json")
-    evaluation.add_argument("--taxonomy", type=Path, required=True)
+    evaluation.add_argument("--sample", type=Path, default=WORK / "review/units.json")
+    evaluation.add_argument("--predictions", type=Path, default=WORK / "tag-scores.json")
+    evaluation.add_argument("--vocabulary", type=Path, required=True)
     evaluation.add_argument("--split", choices=["development", "holdout"], default="development")
     evaluation.add_argument("--output", type=Path, default=WORK / "evaluation.json")
+    counts = commands.add_parser("count-tags", help="Count accepted tags and probability sweeps")
+    counts.add_argument("--vocabulary", type=Path, required=True)
+    counts.add_argument("--predictions", type=Path, default=WORK / "tag-scores.json")
+    counts.add_argument("--output", type=Path, default=WORK / "tag-counts.json")
+    bundles = commands.add_parser("bundle", help="Preview UI categories as groups of counted tags")
+    bundles.add_argument("--vocabulary", type=Path, required=True)
+    bundles.add_argument("--mapping", type=Path, required=True)
+    bundles.add_argument("--predictions", type=Path, default=WORK / "tag-scores.json")
+    bundles.add_argument("--output", type=Path, default=WORK / "category-preview.json")
     captions = commands.add_parser("import-captions", help="Import model-proposed image descriptions for review")
     captions.add_argument("--sample", type=Path, default=WORK / "review/images.json")
     captions.add_argument("--input", type=Path, required=True)
@@ -476,12 +470,14 @@ def main() -> None:
     args = parser.parse_args()
     try:
         if args.command == "sample": make_sample(args.posts, args.images, args.output)
-        elif args.command == "validate-taxonomy":
-            validate_taxonomy(load_json(args.taxonomy))
-            print("Taxonomy is valid")
-        elif args.command == "classify": classify(args)
+        elif args.command == "validate-tags":
+            validate_vocabulary(load_json(args.vocabulary))
+            print("Tag vocabulary is valid")
+        elif args.command == "tag": classify(args)
         elif args.command == "embed": embed(args)
         elif args.command == "evaluate": evaluate(args)
+        elif args.command == "count-tags": count_tags(args)
+        elif args.command == "bundle": preview_bundles(args)
         elif args.command == "import-captions": import_captions(args)
         elif args.command == "image-review": image_review_page(args)
     except (ValueError, OSError) as error:

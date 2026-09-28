@@ -13,6 +13,7 @@ from pathlib import Path
 import numpy as np
 
 from archive_ml import load_json, write_json
+from archive_ml_units import build_units
 
 
 def normalized_vectors(rows: list[list[float]]) -> np.ndarray:
@@ -52,37 +53,39 @@ def map_coordinates(vectors: np.ndarray) -> np.ndarray:
     return np.clip((projection - low) / span, 0, 1)
 
 
-def preview(posts: list[dict], embeddings: dict, predictions: dict, sample_ids: set[str] | None = None) -> dict:
-    selected = [post for post in posts if post["id"] in embeddings and (sample_ids is None or post["id"] in sample_ids)]
+def preview(units: list[dict], embeddings: dict, predictions: dict, sample_ids: set[str] | None = None) -> dict:
+    selected = [unit for unit in units if unit["id"] in embeddings and (sample_ids is None or unit["id"] in sample_ids)]
     if len(selected) < 3:
-        raise ValueError("need at least three matching post embeddings")
-    models = {embeddings[post["id"]]["model"] for post in selected}
+        raise ValueError("need at least three matching browse-unit embeddings")
+    models = {embeddings[unit["id"]]["model"] for unit in selected}
     if len(models) != 1:
         raise ValueError("embeddings from different models cannot share one map")
-    ids = [post["id"] for post in selected]
-    vectors = normalized_vectors([embeddings[post_id]["vector"] for post_id in ids])
+    ids = [unit["id"] for unit in selected]
+    vectors = normalized_vectors([embeddings[unit_id]["vector"] for unit_id in ids])
     neighbors = nearest_neighbors(vectors, ids)
     coordinates = map_coordinates(vectors)
-    points = [{"id": post["id"], "title": post["title"], "x": round(float(x), 6),
-               "y": round(float(y), 6), "categoryId": predictions.get(post["id"], {}).get("categoryId"),
-               "neighbors": neighbors[post["id"]]} for post, (x, y) in zip(selected, coordinates)]
-    return {"model": next(iter(models)), "method": "umap-cosine-v1", "postCount": len(points),
-            "classifiedCount": sum(bool(point["categoryId"]) for point in points), "points": points}
+    points = [{"id": unit["id"], "title": unit["title"], "postIds": unit["postIds"],
+               "x": round(float(x), 6), "y": round(float(y), 6),
+               "topTagIds": [tag_id for tag_id, _ in sorted(predictions.get(unit["id"], {}).get("tagScores", {}).items(), key=lambda item: -item[1])[:5]],
+               "neighbors": neighbors[unit["id"]]} for unit, (x, y) in zip(selected, coordinates)]
+    return {"model": next(iter(models)), "method": "umap-cosine-v1", "unitCount": len(points), "points": points}
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--posts", type=Path, default=Path("src/data/generated/posts-index.json"))
+    parser.add_argument("--series", type=Path, default=Path("src/data/post-series.json"))
     parser.add_argument("--embeddings", type=Path, default=Path("ml-work/embeddings.json"))
-    parser.add_argument("--predictions", type=Path, default=Path("ml-work/predictions.json"))
+    parser.add_argument("--predictions", type=Path, default=Path("ml-work/tag-scores.json"))
     parser.add_argument("--sample", type=Path, help="Optional review sample JSON; omit for full archive")
     parser.add_argument("--output", type=Path, default=Path("ml-work/atlas-preview.json"))
     args = parser.parse_args()
     sample_ids = {row["id"] for row in load_json(args.sample)} if args.sample else None
     predictions = load_json(args.predictions) if args.predictions.exists() else {}
-    result = preview(load_json(args.posts), load_json(args.embeddings), predictions, sample_ids)
+    result = preview(build_units(load_json(args.posts), load_json(args.series)["series"]),
+                     load_json(args.embeddings), predictions, sample_ids)
     write_json(args.output, result)
-    print(f"Wrote {result['postCount']} points and nearest neighbors to {args.output}")
+    print(f"Wrote {result['unitCount']} points and nearest neighbors to {args.output}")
 
 
 if __name__ == "__main__":
