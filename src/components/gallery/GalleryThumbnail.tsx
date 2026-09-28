@@ -1,6 +1,5 @@
 import type { ImgHTMLAttributes } from 'react'
 import { imageFullSrc, imageThumbSrc, type GalleryImageRecord } from '../../lib/imageGallerySession'
-import { archiveThumbUrl } from '../../lib/assetUrls'
 
 type GalleryThumbnailImage = Pick<GalleryImageRecord, 'src' | 'caption' | 'postTitle'>
 
@@ -15,8 +14,6 @@ export default function GalleryThumbnail({ image, alt, onError, ...props }: Prop
     <img
       {...props}
       src={imageThumbSrc(image)}
-      srcSet={`${imageThumbSrc(image)} 240w, ${archiveThumbUrl(image.src)} 480w`}
-      sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, 50vw"
       data-fallback-src={fallbackSrc}
       alt={alt ?? (image.caption || image.postTitle)}
       onError={(event) => {
