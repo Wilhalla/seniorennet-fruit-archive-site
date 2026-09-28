@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 import archive_ml
 from archive_ml_counts import bundle_categories, evaluate_tags, summarize_tags
-from archive_ml_units import build_units, image_context, unit_state
+from archive_ml_units import build_units, image_context, image_state, unit_state
 
 
 VOCABULARY = {"version": "test-1", "status": "approved", "tags": [
@@ -125,7 +125,8 @@ class ArchiveMlTests(unittest.TestCase):
                 rows = archive_ml.load_json(output)
                 self.assertEqual(len(rows), 3)
                 self.assertAlmostEqual(sum(row["usage"]["cost"] for row in rows.values()), 0.003)
-                archive_ml.classify(args)
+                with patch.object(archive_ml, "openrouter_key", return_value=None):
+                    archive_ml.classify(args)
                 self.assertEqual(payload_sizes, [2, 1])
                 args.batch_size = 1
                 archive_ml.classify(args)
@@ -141,7 +142,13 @@ class ArchiveMlTests(unittest.TestCase):
             archive_ml.write_json(path, {**VOCABULARY, "status": "draft"})
             args = argparse.Namespace(vocabulary=path, paid=True, max_items=1, max_usd=1)
             with patch.object(archive_ml, "request_jev") as network:
-                with self.assertRaisesRegex(ValueError, "approved"):
+                with self.assertRaisesRegex(ValueError, "draft vocabulary"):
+                    archive_ml.classify(args)
+                network.assert_not_called()
+            args.trial = True
+            args.sample = path
+            with patch.object(archive_ml, "request_jev") as network:
+                with self.assertRaisesRegex(ValueError, "draft vocabulary"):
                     archive_ml.classify(args)
                 network.assert_not_called()
             archive_ml.write_json(path, VOCABULARY)
@@ -172,9 +179,34 @@ class ArchiveMlTests(unittest.TestCase):
             path = Path(directory) / "images.json"
             archive_ml.write_json(path, [
                 {"id": "one", "postSlug": "post-a", "description": "Een appel.", "descriptionModel": "test", "descriptionStatus": "unreviewed"},
-                {"id": "two", "postSlug": "post-b", "description": "Een peer.", "descriptionModel": "test", "descriptionStatus": "reviewed"},
+                {"id": "two", "postSlug": "post-b", "description": "Een peer.", "descriptionModel": "test",
+                 "descriptionStatus": "reviewed", "linkedContext": {"postId": "b", "linkedText": [
+                     {"kind": "numbered-caption", "text": "Peer van opa", "sourcePostId": "b"},
+                     {"kind": "numbered-caption", "text": "Wrong post", "sourcePostId": "a"},
+                 ]}},
             ])
-            self.assertEqual(archive_ml.load_observations(path), {"post-b": ["Een peer."]})
+            observations = archive_ml.load_observations(path)
+            self.assertEqual(set(observations), {"post-b"})
+            state = unit_state({"title": "Peren", "parts": [{"slug": "post-b", "title": "Peren", "text": ""}]}, observations)
+            self.assertEqual(state["reviewed_images"][0]["image_id"], "two")
+            self.assertEqual(state["reviewed_images"][0]["visual_description"], "Een peer.")
+            self.assertEqual(state["reviewed_images"][0]["linked_context"], [
+                {"kind": "numbered-caption", "text": "Peer van opa", "sourcePostId": "b", "role": "linked-context-only"},
+            ])
+
+    def test_image_state_separates_visual_and_family_context(self):
+        row = {"id": "image-1", "description": "Twee mensen aan tafel.", "descriptionStatus": "reviewed",
+               "linkedContext": {"postId": "post-1", "postTitle": "Verjaardag van opa",
+                                 "postExcerpt": "Opa vierde zijn verjaardag met de familie.",
+                                 "linkedText": [{"kind": "numbered-caption", "text": "Opa en zijn kleinkind",
+                                                 "sourcePostId": "post-1"}]}}
+        state = image_state(row)
+        self.assertEqual(state["visual_evidence"]["description"], "Twee mensen aan tafel.")
+        self.assertNotIn("opa", str(state["visual_evidence"]).lower())
+        self.assertEqual(state["linked_context"]["image_specific_text"][0]["text"], "Opa en zijn kleinkind")
+        row["descriptionStatus"] = "unreviewed"
+        with self.assertRaisesRegex(ValueError, "reviewed"):
+            image_state(row)
 
     def test_embedding_requires_usage_for_budget(self):
         with self.assertRaisesRegex(ValueError, "token count"):

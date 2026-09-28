@@ -21,7 +21,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
-from archive_ml_units import build_units, image_context, unit_state
+from archive_ml_units import build_units, image_context, image_state, unit_state, usable_image_links
 from archive_ml_counts import bundle_categories, evaluate_tags, summarize_tags
 
 POSTS = Path("src/data/generated/posts-index.json")
@@ -152,14 +152,14 @@ def validate_vocabulary(vocabulary: dict[str, Any]) -> None:
         ids.add(item["id"])
 
 
-def jev_payload(state: dict[str, str], vocabulary: dict[str, Any]) -> dict[str, Any]:
+def jev_payload(state: dict[str, Any], vocabulary: dict[str, Any]) -> dict[str, Any]:
     validate_vocabulary(vocabulary)
     questions = {item["id"]: {"type": "noul", "instructions": item["question"] + " " + item["definition"]}
                  for item in vocabulary["tags"]}
     return {"model": JEV_MODEL, "state": state, "questions": questions}
 
 
-def jev_batch_payload(states: list[dict[str, str]], vocabulary: dict[str, Any]) -> dict[str, Any]:
+def jev_batch_payload(states: list[dict[str, Any]], vocabulary: dict[str, Any]) -> dict[str, Any]:
     """Ask the same independent tag questions about each named archive unit."""
     if not states:
         raise ValueError("Jev batch must contain at least one unit")
@@ -181,16 +181,20 @@ def question_hash(vocabulary: dict[str, Any]) -> str:
     return digest(jev_payload({}, vocabulary)["questions"])
 
 
-def load_observations(path: Path | None) -> dict[str, list[str]]:
+def load_observations(path: Path | None) -> dict[str, list[dict[str, Any]]]:
     if path is None:
         return {}
     rows = load_json(path)
-    result: dict[str, list[str]] = defaultdict(list)
+    result: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         if row.get("description") and row.get("postSlug") and row.get("descriptionStatus") == "reviewed":
             if not row.get("descriptionModel"):
                 raise ValueError(f"image {row.get('id')} needs descriptionModel provenance")
-            result[row["postSlug"]].append(row["description"].strip())
+            context = row.get("linkedContext") or {}
+            result[row["postSlug"]].append({
+                "imageId": row["id"], "visualDescription": row["description"].strip()[:240],
+                "sourcePostId": context.get("postId"), "linkedText": usable_image_links(context),
+            })
     return dict(result)
 
 
@@ -289,25 +293,26 @@ def load_all_units() -> list[dict[str, Any]]:
 def classify(args: argparse.Namespace) -> None:
     vocabulary = load_json(args.vocabulary)
     validate_vocabulary(vocabulary)
-    if vocabulary.get("status") != "approved":
-        raise ValueError("vocabulary.status must be 'approved' before paid classification")
     if not args.paid or args.max_items is None or args.max_usd is None:
         raise ValueError("Paid classification requires --paid, --max-items and --max-usd")
     if args.max_items <= 0 or args.max_usd <= 0:
         raise ValueError("max-items and max-usd must be positive")
+    if vocabulary.get("status") != "approved":
+        if not (getattr(args, "trial", False) and args.sample and args.max_items <= 20 and args.max_usd <= 0.10):
+            raise ValueError("draft vocabulary requires --trial, --sample, --max-items <= 20 and --max-usd <= 0.10")
     if not 1 <= args.batch_size <= 8:
         raise ValueError("batch-size must be between 1 and 8 browse units")
-    key = openrouter_key()
-    if not key:
-        raise ValueError("OPENROUTER_API_KEY is missing")
     observations = load_observations(args.observations)
-    units = load_all_units()
+    all_units = load_all_units()
+    valid_unit_ids = {unit["id"] for unit in all_units}
+    units = all_units
     selected = {row["id"] for row in load_json(args.sample)} if args.sample else None
     if selected is not None:
         units = [unit for unit in units if unit["id"] in selected]
     vocabulary_hash = question_hash(vocabulary)
     output = load_json(args.output) if args.output.exists() else {}
-    output = {unit_id: row for unit_id, row in output.items() if row.get("vocabularyHash") == vocabulary_hash}
+    output = {unit_id: row for unit_id, row in output.items()
+              if unit_id in valid_unit_ids and row.get("vocabularyHash") == vocabulary_hash}
     cache_dir = WORK / "cache" / "jev"
     spend_path = cache_dir / "paid-requests.json"
     if spend_path.exists():
@@ -317,36 +322,24 @@ def classify(args: argparse.Namespace) -> None:
         legacy_cost = sum(float(row["usage"]["cost"]) for row in output.values() if "usage" in row)
         paid_requests = {"legacy-output": legacy_cost} if legacy_cost else {}
     spent = sum(float(cost) for cost in paid_requests.values())
-    pending = []
-    for unit in units:
-        state = unit_state(unit, observations)
-        # Keep solo and grouped scores separate so a quality comparison can run
-        # without silently reusing the other method's cached answers.
-        cache_key = digest({"model": JEV_MODEL, "state": state, "questionsHash": vocabulary_hash,
-                            "batchingVersion": 1, "batchSize": args.batch_size})
-        previous = output.get(unit["id"])
-        if previous and previous.get("cacheKey") == cache_key:
-            continue
-        cache_path = cache_dir / f"{cache_key}.json"
-        if cache_path.exists():
-            output[unit["id"]] = load_json(cache_path)
-            write_json(args.output, output)
-            continue
-        if len(pending) >= args.max_items:
-            break
-        pending.append((unit, state, cache_key, cache_path))
     completed = 0
     requests = 0
-    for start in range(0, len(pending), args.batch_size):
-        if spent + args.reserve_usd > args.max_usd:
-            break
-        batch = pending[start:start + args.batch_size]
-        payload = jev_batch_payload([state for _, state, _, _ in batch], vocabulary)
+    for start in range(0, len(units), args.batch_size):
+        batch = units[start:start + args.batch_size]
+        states = [unit_state(unit, observations) for unit in batch]
+        payload = jev_batch_payload(states, vocabulary)
         batch_hash = digest(payload)
+        if all(output.get(unit["id"], {}).get("batchHash") == batch_hash for unit in batch):
+            continue
+        if completed + len(batch) > args.max_items or spent + args.reserve_usd > args.max_usd:
+            break
         batch_cache = cache_dir / "batches" / f"{batch_hash}.json"
         if batch_cache.exists():
             raw_response = load_json(batch_cache)
         else:
+            key = openrouter_key()
+            if not key:
+                raise ValueError("OPENROUTER_API_KEY is missing")
             raw_response = request_jev(payload, key)
             write_json(batch_cache, raw_response)
             requests += 1
@@ -358,11 +351,10 @@ def classify(args: argparse.Namespace) -> None:
             spent += paid_requests[batch_hash]
             write_json(spend_path, paid_requests)
         results = validate_batch_answers(raw_response, vocabulary, len(batch))
-        for (unit, state, cache_key, cache_path), result in zip(batch, results, strict=True):
-            output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"], "cacheKey": cache_key,
+        for unit, state, result in zip(batch, states, results, strict=True):
+            output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"],
                                   "vocabularyVersion": vocabulary["version"], "vocabularyHash": vocabulary_hash,
                                   "inputHash": digest(state), "batchHash": batch_hash}
-            write_json(cache_path, output[unit["id"]])
             write_json(args.output, output)
             completed += 1
         if spent > args.max_usd:
@@ -389,8 +381,8 @@ def embed(args: argparse.Namespace) -> None:
     for unit in units:
         state = unit_state(unit, observations)
         input_text = f"Titel: {state['title']}\nTekst: {state['post_text']}"
-        if state.get("reviewed_image_observations"):
-            input_text += f"\nZichtbaar op afbeeldingen: {state['reviewed_image_observations']}"
+        for image in state.get("reviewed_images", []):
+            input_text += f"\nAfbeelding {image['image_id']}: {image['visual_description']}"
         payload = {"model": args.model, "input": input_text}
         cache_key = digest(payload)
         if output.get(unit["id"], {}).get("cacheKey") == cache_key:
@@ -438,6 +430,13 @@ def preview_bundles(args: argparse.Namespace) -> None:
                                load_all_units(), question_hash(vocabulary))
     write_json(args.output, report)
     print(f"Previewed {len(report['categories'])} category bundles over {report['unitsClassified']} units")
+
+
+def preview_image_inputs(args: argparse.Namespace) -> None:
+    rows = load_json(args.sample)
+    states = {row["id"]: image_state(row) for row in rows if row.get("descriptionStatus") == "reviewed"}
+    write_json(args.output, states)
+    print(f"Prepared {len(states)} reviewed image inputs at {args.output}")
 
 
 def import_captions(args: argparse.Namespace) -> None:
@@ -500,8 +499,9 @@ def main() -> None:
     classification.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
     classification.add_argument("--output", type=Path, default=WORK / "tag-scores.json")
     classification.add_argument("--paid", action="store_true")
+    classification.add_argument("--trial", action="store_true", help="Allow a draft vocabulary only for a capped 20-unit sample")
     classification.add_argument("--max-items", type=int)
-    classification.add_argument("--batch-size", type=int, default=8, help="Browse units per Jev request (1-8; default 8)")
+    classification.add_argument("--batch-size", type=int, default=4, help="Browse units per Jev request (1-8; default 4)")
     classification.add_argument("--max-usd", type=float)
     classification.add_argument("--reserve-usd", type=float, default=0.01, help="Minimum remaining budget before each request")
     embeddings = commands.add_parser("embed", help="Paid text embeddings for browse-unit similarity")
@@ -537,6 +537,9 @@ def main() -> None:
     image_review.add_argument("--sample", type=Path, default=WORK / "review/images.json")
     image_review.add_argument("--output", type=Path, default=WORK / "review/images.html")
     image_review.add_argument("--asset-base", default="https://objects.janpeterdhalle.com/wilhalla-vake-blog")
+    image_inputs = commands.add_parser("image-inputs", help="Preview visual evidence and linked text for reviewed images")
+    image_inputs.add_argument("--sample", type=Path, default=WORK / "review/images.json")
+    image_inputs.add_argument("--output", type=Path, default=WORK / "review/image-inputs.json")
     args = parser.parse_args()
     try:
         if args.command == "sample": make_sample(args.posts, args.images, args.output)
@@ -550,6 +553,7 @@ def main() -> None:
         elif args.command == "bundle": preview_bundles(args)
         elif args.command == "import-captions": import_captions(args)
         elif args.command == "image-review": image_review_page(args)
+        elif args.command == "image-inputs": preview_image_inputs(args)
     except (ValueError, OSError) as error:
         parser.exit(2, f"archive-ml: {error}\n")
 

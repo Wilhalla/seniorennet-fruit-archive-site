@@ -50,14 +50,47 @@ def build_units(posts: list[dict[str, Any]], series_records: list[dict[str, Any]
     return units
 
 
-def unit_state(unit: dict[str, Any], observations: dict[str, list[str]] | None = None) -> dict[str, str]:
+def unit_state(unit: dict[str, Any], observations: dict[str, list[dict[str, Any]]] | None = None) -> dict[str, Any]:
     parts = unit["parts"]
     text = "\n".join(f"Deel {index}: {part['title']} — {part['text']}" for index, part in enumerate(parts, 1))
     state = {"title": unit["title"], "post_text": text[:4500]}
-    visible = [description for part in parts for description in (observations or {}).get(part["slug"], [])]
-    if visible:
-        state["reviewed_image_observations"] = " | ".join(visible[:5])[:700]
+    reviewed_images = [
+        {"image_id": image["imageId"], "source_post_id": image.get("sourcePostId"),
+         "visual_description": image["visualDescription"], "linked_context": image.get("linkedText", [])}
+        for part in parts for image in (observations or {}).get(part["slug"], [])
+    ]
+    if reviewed_images:
+        state["reviewed_images"] = reviewed_images[:5]
     return state
+
+
+def usable_image_links(context: dict[str, Any]) -> list[dict[str, str]]:
+    """Keep only explicit, source-matched links with bounded text."""
+    return [
+        {"kind": link["kind"], "text": link["text"].strip()[:240],
+         "sourcePostId": link["sourcePostId"], "role": "linked-context-only"}
+        for link in context.get("linkedText", [])
+        if link.get("kind") in {"image-alt", "image-title", "numbered-caption"}
+        and isinstance(link.get("text"), str) and link["text"].strip()
+        and link.get("sourcePostId") == context.get("postId")
+    ][:2]
+
+
+def image_state(image: dict[str, Any]) -> dict[str, Any]:
+    """Keep what the photo shows separate from claims in linked source text."""
+    if image.get("descriptionStatus") != "reviewed" or not image.get("description"):
+        raise ValueError(f"image {image.get('id')} needs a reviewed visual description")
+    context = image.get("linkedContext") or {}
+    return {
+        "image_id": image["id"],
+        "visual_evidence": {"description": image["description"].strip()[:240], "role": "reviewed-visible-content"},
+        "linked_context": {
+            "role": "source-text-not-visual-evidence", "source_post_id": context.get("postId"),
+            "post_title": (context.get("postTitle") or "")[:160],
+            "post_excerpt": (context.get("postExcerpt") or "")[:500],
+            "image_specific_text": usable_image_links(context),
+        },
+    }
 
 
 class _PostImageParser(HTMLParser):
