@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a static topic × season/month heatmap from semantic atlas outputs."""
+"""Build a static category × season/month heatmap from classified posts."""
 from __future__ import annotations
 
 import argparse
@@ -34,13 +34,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Generate topic-calendar.json")
     parser.add_argument("--posts", type=Path, default=Path("src/data/generated/posts-index.json"))
     parser.add_argument("--topics", type=Path, default=Path("src/data/generated/topics.json"))
+    parser.add_argument("--post-categories", type=Path, default=Path("src/data/generated/post-categories.json"))
     parser.add_argument("--output-public", type=Path, default=Path("public/generated/topic-calendar.json"))
     parser.add_argument("--output-data", type=Path, default=Path("src/data/generated/topic-calendar.json"))
     args = parser.parse_args()
 
     posts = load_json(args.posts)
     topics = load_json(args.topics)
+    post_categories = load_json(args.post_categories)
     topics_by_id = {topic["id"]: topic for topic in topics}
+    if {str(post["id"]) for post in posts} != set(post_categories):
+        raise ValueError("post categories must cover every post before publishing the calendar")
 
     years = sorted({int(post["year"]) for post in posts if post.get("year")}, reverse=True)
     year_keys = [str(year) for year in years]
@@ -56,7 +60,6 @@ def main() -> None:
     })
 
     for post in posts:
-        topic_id = post.get("topicId") or "topic-overig"
         year = post.get("year")
         month = post.get("month")
         season = post.get("season") or "winter"
@@ -64,13 +67,14 @@ def main() -> None:
             continue
         year = str(year)
         month = int(month)
-        bucket = counts[topic_id]
-        bucket["total"] += 1
-        bucket["monthsAllYears"][month] += 1
-        bucket["seasonsAllYears"][season] += 1
-        bucket["years"][year]["total"] += 1
-        bucket["years"][year]["months"][month] += 1
-        bucket["years"][year]["seasons"][season] += 1
+        for topic_id in post_categories[str(post["id"])]["categoryIds"]:
+            bucket = counts[topic_id]
+            bucket["total"] += 1
+            bucket["monthsAllYears"][month] += 1
+            bucket["seasonsAllYears"][season] += 1
+            bucket["years"][year]["total"] += 1
+            bucket["years"][year]["months"][month] += 1
+            bucket["years"][year]["seasons"][season] += 1
 
     max_month_count = 0
     max_season_count = 0

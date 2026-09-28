@@ -241,7 +241,7 @@ def request_jev(payload: dict[str, Any], key: str) -> dict[str, Any]:
             with urllib.request.urlopen(request, timeout=60) as response:
                 return json.load(response)
         except urllib.error.HTTPError as error:
-            if error.code not in (429, 500, 502, 503, 504) or attempt == 3:
+            if error.code not in (429, 500, 502, 503, 504, 520, 524) or attempt == 3:
                 raise RuntimeError(f"Jev HTTP {error.code}: {error.read().decode()[:500]}") from error
             time.sleep(min(15, 2 ** attempt))
     raise RuntimeError("Jev retry limit reached")
@@ -256,22 +256,37 @@ def request_embedding(payload: dict[str, Any], key: str) -> dict[str, Any]:
             with urllib.request.urlopen(request, timeout=60) as response:
                 return json.load(response)
         except urllib.error.HTTPError as error:
-            if error.code not in (429, 500, 502, 503, 504) or attempt == 3:
+            if error.code not in (429, 500, 502, 503, 504, 520, 524) or attempt == 3:
                 raise RuntimeError(f"Embeddings HTTP {error.code}: {error.read().decode()[:500]}") from error
             time.sleep(min(15, 2 ** attempt))
     raise RuntimeError("Embeddings retry limit reached")
 
 
-def validate_embedding(response: dict[str, Any], price_per_million: float) -> dict[str, Any]:
+def validate_embeddings(response: dict[str, Any], count: int, price_per_million: float) -> list[dict[str, Any]]:
     data = response.get("data") or []
-    vector = data[0].get("embedding") if len(data) == 1 else None
     tokens = (response.get("usage") or {}).get("prompt_tokens")
-    if not isinstance(vector, list) or not vector or not all(isinstance(value, (int, float)) and math.isfinite(value) for value in vector):
+    indices = [row.get("index") for row in data]
+    if len(data) != count or not all(isinstance(index, int) for index in indices) or sorted(indices) != list(range(count)):
+        raise ValueError("embedding response has missing or duplicate indices")
+    ordered = sorted(data, key=lambda row: row["index"])
+    dimensions = {len(row.get("embedding") or []) for row in ordered}
+    if len(dimensions) != 1 or 0 in dimensions or any(
+        not isinstance(row.get("embedding"), list) or
+        not all(isinstance(value, (int, float)) and math.isfinite(value) for value in row["embedding"])
+        for row in ordered
+    ):
         raise ValueError("invalid embedding vector")
     if not isinstance(tokens, int) or tokens < 0:
         raise ValueError("embedding response has no prompt token count")
-    return {"vector": vector, "model": response.get("model"), "usage": {"prompt_tokens": tokens,
-            "estimatedCostUsd": tokens * price_per_million / 1_000_000}}
+    estimated_cost = tokens * price_per_million / 1_000_000
+    return [{"vector": row["embedding"], "model": response.get("model"),
+             "usage": {"batchPromptTokens": tokens, "batchEstimatedCostUsd": estimated_cost,
+                       "estimatedCostUsd": estimated_cost / count}} for row in ordered]
+
+
+def validate_embedding(response: dict[str, Any], price_per_million: float) -> dict[str, Any]:
+    """Compatibility wrapper for a single embedding response."""
+    return validate_embeddings(response, 1, price_per_million)[0]
 
 
 def openrouter_key() -> str | None:
@@ -395,11 +410,41 @@ def classify(args: argparse.Namespace) -> None:
             output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"],
                                   "vocabularyVersion": vocabulary["version"], "vocabularyHash": vocabulary_hash,
                                   "inputHash": digest(state), "batchHash": batch_hash}
-            write_json(args.output, output)
             completed += 1
+        write_json(args.output, output)
+        if requests and requests % 25 == 0:
+            print(f"Tagged {completed}/{len(units)} units; {requests} paid requests; recorded total ${spent:.4f}", flush=True)
         if spent > args.max_usd:
             raise RuntimeError("Reported cost exceeded ceiling; stop and use a provider key spending limit for a hard cap")
     print(f"Tagged {completed} new browse units in {requests} paid requests; recorded total ${spent:.6f}; {len(output)} cached records")
+
+
+def embedding_text(unit: dict[str, Any], observations: dict[str, list[dict[str, Any]]]) -> str:
+    state = unit_state(unit, observations)
+    text_value = f"Titel: {state['title']}\nTekst: {state['post_text']}"
+    for image in state.get("reviewed_images", []):
+        text_value += f"\nAfbeelding {image['image_id']}: {image['visual_description']}"
+    return text_value
+
+
+def planned_embedding_batches(units: list[dict[str, Any]], observations: dict[str, list[dict[str, Any]]],
+                              batch_size: int, max_payload_chars: int
+                              ) -> list[list[tuple[dict[str, Any], str]]]:
+    if not 1 <= batch_size <= 32 or max_payload_chars <= 0:
+        raise ValueError("embedding batch-size must be 1-32 and max-payload-chars must be positive")
+    batches: list[list[tuple[dict[str, Any], str]]] = []
+    current: list[tuple[dict[str, Any], str]] = []
+    for unit in units:
+        record = (unit, embedding_text(unit, observations))
+        if len(record[1]) > max_payload_chars:
+            raise ValueError(f"embedding input {unit['id']} exceeds {max_payload_chars} characters")
+        if current and (len(current) >= batch_size or sum(len(text_value) for _, text_value in current) + len(record[1]) > max_payload_chars):
+            batches.append(current)
+            current = []
+        current.append(record)
+    if current:
+        batches.append(current)
+    return batches
 
 
 def embed(args: argparse.Namespace) -> None:
@@ -407,43 +452,61 @@ def embed(args: argparse.Namespace) -> None:
         raise ValueError("Paid embeddings require --paid, --max-items, --max-usd and --price-per-million")
     if min(args.max_items, args.max_usd, args.price_per_million) <= 0:
         raise ValueError("embedding limits and price must be positive")
-    key = openrouter_key()
-    if not key:
-        raise ValueError("OPENROUTER_API_KEY is missing")
     observations = load_observations(args.observations)
-    units = load_all_units()
+    all_units = load_all_units()
     selected = {row["id"] for row in load_json(args.sample)} if args.sample else None
-    if selected is not None:
-        units = [unit for unit in units if unit["id"] in selected]
+    valid_unit_ids = {unit["id"] for unit in all_units}
+    if selected is not None and selected - valid_unit_ids:
+        raise ValueError(f"sample has unknown browse units: {sorted(selected - valid_unit_ids)}")
+    units = [unit for unit in all_units if selected is None or unit["id"] in selected]
+    batches = planned_embedding_batches(units, observations, args.batch_size, args.max_payload_chars)
     output = load_json(args.output) if args.output.exists() else {}
-    spent = sum(float(row["usage"]["estimatedCostUsd"]) for row in output.values())
-    completed = 0
-    for unit in units:
-        state = unit_state(unit, observations)
-        input_text = f"Titel: {state['title']}\nTekst: {state['post_text']}"
-        for image in state.get("reviewed_images", []):
-            input_text += f"\nAfbeelding {image['image_id']}: {image['visual_description']}"
-        payload = {"model": args.model, "input": input_text}
-        cache_key = digest(payload)
-        if output.get(unit["id"], {}).get("cacheKey") == cache_key:
+    output = {unit_id: row for unit_id, row in output.items()
+              if unit_id in valid_unit_ids and row.get("requestedModel", row.get("model")) == args.model}
+    cache_dir = WORK / "cache" / "embeddings" / "batches"
+    spend_path = WORK / "cache" / "embeddings" / "estimated-spend.json"
+    paid_requests = load_json(spend_path) if spend_path.exists() else {}
+    spent = sum(float(cost) for cost in paid_requests.values())
+    completed = requests = 0
+    for batch in batches:
+        payload = {"model": args.model, "input": [text_value for _, text_value in batch]}
+        batch_hash = digest(payload)
+        if all(output.get(unit["id"], {}).get("batchHash") == batch_hash for unit, _ in batch):
             continue
-        cache_path = WORK / "cache" / "embeddings" / f"{cache_key}.json"
-        if cache_path.exists():
-            output[unit["id"]] = load_json(cache_path)
-            write_json(args.output, output)
-            continue
-        if completed >= args.max_items or spent + args.reserve_usd > args.max_usd:
+        if completed + len(batch) > args.max_items:
             break
-        result = validate_embedding(request_embedding(payload, key), args.price_per_million)
-        spent += result["usage"]["estimatedCostUsd"]
-        output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"], "cacheKey": cache_key,
-                              "inputHash": digest(input_text), "pricePerMillionUsd": args.price_per_million}
-        write_json(cache_path, output[unit["id"]])
-        write_json(args.output, output)
-        completed += 1
+        cache_path = cache_dir / f"{batch_hash}.json"
+        if cache_path.exists():
+            response = load_json(cache_path)
+        else:
+            if spent + args.reserve_usd > args.max_usd:
+                break
+            key = openrouter_key()
+            if not key:
+                raise ValueError("OPENROUTER_API_KEY is missing")
+            response = request_embedding(payload, key)
+            write_json(cache_path, response)
+            requests += 1
+        results = validate_embeddings(response, len(batch), args.price_per_million)
+        estimated_cost = results[0]["usage"]["batchEstimatedCostUsd"]
+        if batch_hash not in paid_requests:
+            paid_requests[batch_hash] = estimated_cost
+            spent += estimated_cost
+            write_json(spend_path, paid_requests)
+        for (unit, text_value), result in zip(batch, results, strict=True):
+            output[unit["id"]] = {**result, "unitId": unit["id"], "postIds": unit["postIds"],
+                                  "requestedModel": args.model,
+                                  "inputHash": digest(text_value), "batchHash": batch_hash,
+                                  "pricePerMillionUsd": args.price_per_million}
+            completed += 1
+        if (requests and requests % 25 == 0) or completed == len(units):
+            write_json(args.output, output)
+            if requests:
+                print(f"Embedded {completed}/{len(units)} units; {requests} paid requests; estimated total ${spent:.4f}", flush=True)
         if spent > args.max_usd:
             raise RuntimeError("Estimated embedding spend exceeded ceiling; set a provider key cap for a hard limit")
-    print(f"Embedded {completed} new browse units; estimated total ${spent:.6f}; {len(output)} cached records")
+    write_json(args.output, output)
+    print(f"Embedded {completed} new browse units in {requests} paid requests; estimated total ${spent:.6f}; {len(output)} cached records")
 
 
 def evaluate(args: argparse.Namespace) -> None:
@@ -555,7 +618,9 @@ def main() -> None:
     embeddings.add_argument("--sample", type=Path, help="Browse-unit review sample JSON; omit for full archive")
     embeddings.add_argument("--observations", type=Path, help="Reviewed image descriptions JSON")
     embeddings.add_argument("--output", type=Path, default=WORK / "embeddings.json")
-    embeddings.add_argument("--model", default="openai/text-embedding-3-small")
+    embeddings.add_argument("--model", default="qwen/qwen3-embedding-8b")
+    embeddings.add_argument("--batch-size", type=int, default=8)
+    embeddings.add_argument("--max-payload-chars", type=int, default=100000)
     embeddings.add_argument("--paid", action="store_true")
     embeddings.add_argument("--max-items", type=int)
     embeddings.add_argument("--max-usd", type=float)

@@ -5,6 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import archive_ml
+from archive_ml_publish import build_outputs
 from archive_ml_counts import bundle_categories, evaluate_tags, summarize_tags
 from archive_ml_units import build_units, image_context, image_state, unit_state
 
@@ -221,9 +222,45 @@ class ArchiveMlTests(unittest.TestCase):
 
     def test_embedding_requires_usage_for_budget(self):
         with self.assertRaisesRegex(ValueError, "token count"):
-            archive_ml.validate_embedding({"data": [{"embedding": [0.1, 0.2]}]}, 0.02)
-        result = archive_ml.validate_embedding({"data": [{"embedding": [0.1, 0.2]}], "usage": {"prompt_tokens": 100}}, 0.02)
+            archive_ml.validate_embedding({"data": [{"index": 0, "embedding": [0.1, 0.2]}]}, 0.02)
+        result = archive_ml.validate_embedding({"data": [{"index": 0, "embedding": [0.1, 0.2]}], "usage": {"prompt_tokens": 100}}, 0.02)
         self.assertAlmostEqual(result["usage"]["estimatedCostUsd"], 0.000002)
+
+    def test_embedding_batches_keep_complete_text_and_response_order(self):
+        units = [{"id": f"post-{index}", "title": "Titel", "parts": [{"slug": str(index), "title": "Titel", "text": "appel " * (500 if index == 0 else 10)}]}
+                 for index in range(3)]
+        first_size = len(archive_ml.embedding_text(units[0], {}))
+        batches = archive_ml.planned_embedding_batches(units, {}, 3, first_size + 20)
+        self.assertEqual([len(batch) for batch in batches], [1, 2])
+        response = {"data": [{"index": 1, "embedding": [0.2, 0.8]}, {"index": 0, "embedding": [0.9, 0.1]}],
+                    "model": "test", "usage": {"prompt_tokens": 100}}
+        results = archive_ml.validate_embeddings(response, 2, 0.01)
+        self.assertEqual(results[0]["vector"], [0.9, 0.1])
+        self.assertAlmostEqual(sum(row["usage"]["estimatedCostUsd"] for row in results), 0.000001)
+
+    def test_published_categories_keep_series_together_and_overlap(self):
+        posts = [{"id": post_id, "slug": post_id, "title": post_id, "date": "2020-01-01", "year": 2020,
+                  "month": 1, "season": "winter", "imageCount": 0, "images": [], "excerpt": ""}
+                 for post_id in ("a", "b", "c")]
+        units = [{"id": "series-a", "primaryPostId": "a", "postIds": ["a", "b"], "title": "Familiefruit", "imageCount": 0},
+                 {"id": "post-c", "primaryPostId": "c", "postIds": ["c"], "title": "Overig", "imageCount": 0}]
+        predictions = {
+            "series-a": {"vocabularyHash": archive_ml.question_hash(VOCABULARY), "tagScores": {"fruit": 0.9, "visit": 0.8}},
+            "post-c": {"vocabularyHash": archive_ml.question_hash(VOCABULARY), "tagScores": {"fruit": 0.1, "visit": 0.1}},
+        }
+        mapping = {"version": "test", "categories": [
+            {"id": "fruit", "label": "Fruit", "description": "Fruit", "tagIds": ["fruit"]},
+            {"id": "visit", "label": "Bezoek", "description": "Bezoek", "tagIds": ["visit"]},
+        ]}
+        atlas = {"model": "test", "method": "umap", "points": [
+            {"id": "series-a", "x": 0.1, "y": 0.2, "neighbors": ["post-c"]},
+            {"id": "post-c", "x": 0.3, "y": 0.4, "neighbors": ["series-a"]},
+        ]}
+        result = build_outputs(posts, units, predictions, VOCABULARY, mapping, atlas)
+        self.assertEqual(len(result["map-points.json"]), 2)
+        self.assertEqual(result["post-categories.json"]["b"]["categoryIds"], ["fruit", "visit"])
+        self.assertEqual(result["post-categories.json"]["c"]["categoryIds"], ["overig"])
+        self.assertEqual(result["related-posts.json"]["b"], ["a", "c"])
 
 
 if __name__ == "__main__":

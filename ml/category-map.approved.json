@@ -1,0 +1,116 @@
+{
+  "version": "archive-categories-1",
+  "status": "approved",
+  "categories": [
+    {
+      "id": "fruit",
+      "label": "Fruit & rassen",
+      "description": "Fruitsoorten, rassen, bloei, bestuiving en oogst",
+      "tagIds": [
+        "appels",
+        "peren",
+        "pruimen",
+        "bessen",
+        "bramen",
+        "aardbeien",
+        "noten",
+        "overig_fruit",
+        "fruitrassen",
+        "rasidentificatie",
+        "nieuwe_rassen",
+        "zaailingen",
+        "onderstammen",
+        "boomvormen",
+        "fruitcollecties",
+        "bloei",
+        "bestuiving",
+        "vruchtzetting",
+        "oogst",
+        "fruitbewaring"
+      ]
+    },
+    {
+      "id": "teelt",
+      "label": "Tuin & teelt",
+      "description": "Werk in de tuin, bodem, enten en teeltomstandigheden",
+      "tagIds": [
+        "groenten",
+        "snoeien",
+        "aanplant_en_verplanting",
+        "bodembeheer",
+        "compost_en_bemesting",
+        "biologische_teelt",
+        "tuin_en_infrastructuur",
+        "enten",
+        "moestuin",
+        "serre_en_kas"
+      ]
+    },
+    {
+      "id": "plantgezondheid",
+      "label": "Plantenproblemen",
+      "description": "Schade, ziekten, plagen en bestrijding",
+      "tagIds": [
+        "gewasschade",
+        "plaagdieren",
+        "schimmelziekten",
+        "schadebestrijding",
+        "pesticiden"
+      ]
+    },
+    {
+      "id": "natuur",
+      "label": "Natuur & seizoenen",
+      "description": "Weer, vogels, insecten en ander tuinleven",
+      "tagIds": [
+        "weer_en_seizoenen",
+        "vogels",
+        "vlinders",
+        "bijen",
+        "overige_dieren",
+        "natuurbeheer",
+        "kippen"
+      ]
+    },
+    {
+      "id": "reizen",
+      "label": "Reizen & bezoeken",
+      "description": "Uitstappen, tuinen en publieke evenementen",
+      "tagIds": [
+        "tuinbezoek",
+        "reizen_en_uitstappen",
+        "tuinevenementen"
+      ]
+    },
+    {
+      "id": "erfgoed",
+      "label": "Erfgoed & verhalen",
+      "description": "Geschiedenis, kunst, tentoonstellingen en herinneringen",
+      "tagIds": [
+        "erfgoed",
+        "tentoonstellingen",
+        "kunst",
+        "herinneringen"
+      ]
+    },
+    {
+      "id": "familie",
+      "label": "Familie",
+      "description": "Expliciete familieverhalen en vieringen",
+      "tagIds": [
+        "familie",
+        "familiefeesten"
+      ]
+    },
+    {
+      "id": "eten",
+      "label": "Eten & gezondheid",
+      "description": "Fruitgerechten, voeding en voedselsystemen",
+      "tagIds": [
+        "fruitgerechten",
+        "voeding_en_gezondheid",
+        "voedselsysteem"
+      ]
+    }
+  ]
+}
