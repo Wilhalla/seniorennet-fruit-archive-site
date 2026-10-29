@@ -4,7 +4,7 @@ import SiteLoader from '../../../components/SiteLoader.astro'
 import GalleryViewerApp from '../../../components/gallery/GalleryViewerApp'
 import initialImages from '../../../data/generated/image-index.initial.json'
 ---
-<BaseLayout title="Beeldviewer · Blogarchief Daniël Willaeys" description="Bekijk een foto uit het beeldarchief op een eigen pagina." hideFooter={true}>
+<BaseLayout title="Beeldviewer · Blogarchief Daniel Willaeys" description="Bekijk een foto uit het beeldarchief op een eigen pagina." hideFooter={true}>
   <SiteLoader id="gallery-viewer-hydration-loader" label="Beeldviewer laden" message="beeldviewer laden" />
   <GalleryViewerApp initialImages={initialImages} client:load />
 </BaseLayout>

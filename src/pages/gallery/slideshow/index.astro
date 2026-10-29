@@ -4,7 +4,7 @@ import SiteLoader from '../../../components/SiteLoader.astro'
 import GalleryViewerApp from '../../../components/gallery/GalleryViewerApp'
 import initialImages from '../../../data/generated/image-index.initial.json'
 ---
-<BaseLayout title="Diashow · Blogarchief Daniël Willaeys" description="Bekijk beelden uit het archief als diashow." hideFooter={true}>
+<BaseLayout title="Diashow · Blogarchief Daniel Willaeys" description="Bekijk beelden uit het archief als diashow." hideFooter={true}>
   <SiteLoader id="gallery-viewer-hydration-loader" label="Diashow laden" message="diashow laden" />
   <GalleryViewerApp initialImages={initialImages} client:load />
 </BaseLayout>

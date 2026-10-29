@@ -102,7 +102,7 @@ export default function GalleryApp({ initialImages, initialGroups }: Props) {
         <div className={`site-loader site-loader--controlled${supplementalLoader.isVisible ? ' site-loader--visible' : ''}`} role="status" aria-live="polite" aria-label="Beeldarchief laden">
           <div className="site-loader__mark" aria-hidden="true"></div>
           <div className="site-loader__text">
-            <span>Blogarchief Daniël Willaeys</span>
+            <span>Blogarchief Daniel Willaeys</span>
             <small>beeldarchief laden</small>
           </div>
         </div>
